@@ -151,21 +151,21 @@ is_outlier = (df[col] < lower) | (df[col] > upper)
 <h3>이상치 상세 (상위 15개)</h3>
 <table class="data-table">
 <tr><th>#</th><th>피처</th><th>설명</th><th>이상치 수</th><th>비율</th><th>제거?</th></tr>
-<tr><td>1</td><td>clinic_30d</td><td>clinic_30d</td><td>8,814</td><td>26.8%</td><td>O</td></tr>
-<tr><td>2</td><td>hr_last_dist</td><td>hr_last_dist</td><td>7,318</td><td>22.2%</td><td>O</td></tr>
-<tr><td>3</td><td>birthday</td><td>birthday</td><td>6,202</td><td>18.9%</td><td>O</td></tr>
-<tr><td>4</td><td>hr_dist_chg</td><td>거리 변화</td><td>5,746</td><td>17.5%</td><td>O</td></tr>
+<tr><td>1</td><td>clinic_30d</td><td>경주 전 30일 진료 건수</td><td>8,814</td><td>26.8%</td><td>O</td></tr>
+<tr><td>2</td><td>hr_last_dist</td><td>직전 경주 거리 (m)</td><td>7,318</td><td>22.2%</td><td>O</td></tr>
+<tr><td>3</td><td>birthday</td><td>생년월일 (YYYYMMDD)</td><td>6,202</td><td>18.9%</td><td>O</td></tr>
+<tr><td>4</td><td>hr_dist_chg</td><td>직전 대비 거리 변화 (m)</td><td>5,746</td><td>17.5%</td><td>O</td></tr>
 <tr><td>5</td><td>hr_rest_days</td><td>휴양일수</td><td>5,283</td><td>16.1%</td><td>O</td></tr>
-<tr><td>6</td><td>ow_starts</td><td>ow_starts</td><td>5,204</td><td>15.8%</td><td>O</td></tr>
+<tr><td>6</td><td>ow_starts</td><td>마주 통산 출전 수</td><td>5,204</td><td>15.8%</td><td>O</td></tr>
 <tr><td>7</td><td>hr_winrate__z</td><td>승률 (z점수)</td><td>5,196</td><td>15.8%</td><td>O</td></tr>
-<tr><td>8</td><td>tr_starts</td><td>tr_starts</td><td>4,917</td><td>14.9%</td><td>O</td></tr>
+<tr><td>8</td><td>tr_starts</td><td>조교사 통산 출전 수</td><td>4,917</td><td>14.9%</td><td>O</td></tr>
 <tr><td>9</td><td>wgBudam_chg</td><td>부담중량 증감</td><td>4,447</td><td>13.5%</td><td>O</td></tr>
-<tr><td>10</td><td>jk_starts</td><td>jk_starts</td><td>4,342</td><td>13.2%</td><td>O</td></tr>
+<tr><td>10</td><td>jk_starts</td><td>기수 통산 기승 수</td><td>4,342</td><td>13.2%</td><td>O</td></tr>
 <tr><td>11</td><td>hr_starts</td><td>마필 통산 출주 횟수</td><td>3,364</td><td>10.2%</td><td>O</td></tr>
-<tr><td>12</td><td>age</td><td>age</td><td>3,216</td><td>9.8%</td><td>O</td></tr>
+<tr><td>12</td><td>age</td><td>마필 연령 (세)</td><td>3,216</td><td>9.8%</td><td>O</td></tr>
 <tr><td>13</td><td>hr_rest_days__z</td><td>휴양일수 (z점수)</td><td>2,930</td><td>8.9%</td><td>O</td></tr>
-<tr><td>14</td><td>n_run</td><td>n_run</td><td>2,765</td><td>8.4%</td><td>O</td></tr>
-<tr><td>15</td><td>jkhr_starts</td><td>jkhr_starts</td><td>2,553</td><td>7.8%</td><td>O</td></tr>
+<tr><td>14</td><td>n_run</td><td>출주두수 (이번 경주 출전 말 수)</td><td>2,765</td><td>8.4%</td><td>O</td></tr>
+<tr><td>15</td><td>jkhr_starts</td><td>기수+마필 조합 출전 횟수</td><td>2,553</td><td>7.8%</td><td>O</td></tr>
 </table>
 
 <!-- ===== 4장: 다중공선성 ===== -->
@@ -231,5 +231,5 @@ sns.heatmap(corr, cmap="RdBu_r", center=0, vmin=-1, vmax=1)</pre>
 • 트리 모델(RF, XGBoost)은 이상치에 강건하므로 v1(미제거)도 유효
 </div>
 
-<div class="footer">KHUDA 3조 · EDA 결과 보고서 · 2026-08-16 21:39</div>
+<div class="footer">KHUDA 3조 · EDA 결과 보고서 · 2026-08-16 22:23</div>
 </body></html>

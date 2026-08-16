@@ -1,0 +1,27 @@
+# 한국마사회 경주 데이터 분석 프로젝트 — 의존성
+# Python 3.10 이상 필요 (개발 환경: Python 3.13.9)
+#
+# 설치:
+#   pip install -r requirements.txt
+#
+# 버전을 고정(==)한 이유: 팀원 간 결과가 달라지지 않도록.
+# 설치가 실패하면 SETUP.md의 "문제 해결" 섹션을 확인하세요.
+
+# --- 데이터 처리 ---
+pandas==2.3.3
+numpy==2.3.5
+
+# --- 머신러닝 ---
+scikit-learn==1.9.0
+xgboost==3.4.0
+
+# --- 시각화 ---
+matplotlib==3.10.6
+seaborn==0.13.2
+
+# --- API 수집 ---
+requests==2.32.5
+python-dotenv==1.0.1
+
+# --- VIF 분석 (선택: 02_correlation_check.py --vif) ---
+statsmodels==0.14.5

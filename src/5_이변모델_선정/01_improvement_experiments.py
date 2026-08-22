@@ -1,5 +1,5 @@
 """
-11_improvement_experiments.py — 이변 모델 6단계 개선 실험
+01_improvement_experiments.py — 이변 모델 6단계 개선 실험
 
 각 단계를 순차 실행하고 결과를 출력한다.
 1단계: place 타겟 + plcOdds ROI
@@ -10,7 +10,7 @@
 6단계: 붕괴+다크호스 조합
 
 실행:
-    python src/5_이변모델_선정/11_improvement_experiments.py
+    python src/5_이변모델_선정/01_improvement_experiments.py
 """
 
 import logging

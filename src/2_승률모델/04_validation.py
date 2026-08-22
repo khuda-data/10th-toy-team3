@@ -5,7 +5,7 @@
 8단계: Favorite-Longshot Bias 분석 (기본 + 조절변수별)
 
 실행:
-    python src/pipeline/04_validation.py
+    python src/1_전처리/04_validation.py
 
 의존:
     - 02_market_gap.py 실행 후 생성된 results/market_gap.csv

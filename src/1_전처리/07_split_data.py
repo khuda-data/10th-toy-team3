@@ -7,15 +7,15 @@ data/splits/<version>/ 아래에 train.csv, valid.csv, test.csv로 저장한다.
 fold 컬럼은 이미 시간순으로 3분할되어 있으므로 섞지 않고 그대로 사용한다.
 
 실행:
-    python src/eda/07_split_data.py
-    python src/eda/07_split_data.py --version v2_standard   # 특정 버전만
+    python src/1_전처리/07_split_data.py
+    python src/1_전처리/07_split_data.py --version v2_standard   # 특정 버전만
 
 출력:
     data/splits/v1_base/{train,valid,test}.csv
     data/splits/v2_standard/{train,valid,test}.csv
     data/splits/v3_minmax/{train,valid,test}.csv
     data/splits/v4_robust/{train,valid,test}.csv
-    data/splits/split_info.md
+    data/splits/분할안내.md
 """
 
 import argparse
@@ -122,7 +122,7 @@ def write_split_info(all_stats: list):
         lines.append("│   ├── train.csv")
         lines.append("│   ├── valid.csv")
         lines.append("│   └── test.csv")
-    lines.append("└── split_info.md")
+    lines.append("└── 분할안내.md")
     lines.append("```")
     lines.append("")
 
@@ -140,7 +140,7 @@ def write_split_info(all_stats: list):
     lines.append("")
     lines.append("# Separate X and y")
     lines.append('y_train = train["win"]')
-    lines.append("# Drop ID/market/outcome columns for X (see src/pipeline/config.py)")
+    lines.append("# Drop ID/market/outcome columns for X (see src/1_전처리/config.py)")
     lines.append("```")
     lines.append("")
 
@@ -152,8 +152,8 @@ def write_split_info(all_stats: list):
     lines.append("- **test** is for final evaluation only — do not tune on it")
     lines.append("")
 
-    (SPLITS_DIR / "split_info.md").write_text("\n".join(lines), encoding="utf-8")
-    logger.info(f"  Saved: data/splits/split_info.md")
+    (SPLITS_DIR / "분할안내.md").write_text("\n".join(lines), encoding="utf-8")
+    logger.info(f"  Saved: data/splits/분할안내.md")
 
 
 def main():

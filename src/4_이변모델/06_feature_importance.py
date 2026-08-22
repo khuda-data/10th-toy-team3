@@ -6,7 +6,7 @@
 - B 모델 vs C 모델 FI 순위 비교표
 
 실행:
-    python src/upset_with_odds/06_feature_importance.py
+    python src/4_이변모델/06_feature_importance.py
 """
 
 import logging

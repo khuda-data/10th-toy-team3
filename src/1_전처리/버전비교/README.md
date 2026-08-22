@@ -6,7 +6,7 @@
 
 | 파일 | 설명 | 산출물 | 작성자 |
 |---|---|---|---|
-| `run_analysis.py` | v1~v8 버전을 각각 읽어 RF/XGBoost/Logistic을 학습·평가하고, (1) 이상치 제거 효과(v1 vs v5, v2 vs v6 등) (2) 스케일링 방식별 성능을 비교해 HTML 보고서로 종합 | `results/analysis/` → `analysis_report.docx` | 박준석 (junseok) |
-| `config.py` | 컬럼 분류·유틸리티 함수 등 파이프라인 공통 설정 모듈 (팀 공용 `src/pipeline/config.py`를 이 파이프라인에서 그대로 import해 사용) | — | 팀 공용 (원 작성자 미상) |
+| `01_run_analysis.py` | v1~v8 버전을 각각 읽어 RF/XGBoost/Logistic을 학습·평가하고, (1) 이상치 제거 효과(v1 vs v5, v2 vs v6 등) (2) 스케일링 방식별 성능을 비교해 HTML 보고서로 종합 | `results/analysis/` → `analysis_report.docx` | 박준석 (junseok) |
+| `config.py` | 컬럼 분류·유틸리티 함수 등 파이프라인 공통 설정 모듈 (팀 공용 설정. 각 파이프라인이 독립 실행되도록 같은 파일을 폴더마다 복사해 뒀습니다 — 7곳 모두 내용이 동일합니다) | — | 팀 공용 (원 작성자 미상) |
 
-`analysis_report.docx`가 이 코드의 실행 결과입니다. `전처리 데이터셋/` v1~v8이 준비된 뒤에 실행합니다.
+`analysis_report.docx`가 이 코드의 실행 결과입니다. `data/전처리_데이터셋/` v1~v8이 준비된 뒤에 실행합니다.

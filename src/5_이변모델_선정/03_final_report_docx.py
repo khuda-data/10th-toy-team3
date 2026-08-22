@@ -1,10 +1,10 @@
 """
-13_final_report_docx.py — 이변 예측 모델 최종 전략 보고서 (docx)
+03_final_report_docx.py — 이변 예측 모델 최종 전략 보고서 (docx)
 
-12_final_strategy.py의 결과를 기반으로 상세 보고서를 생성.
+02_final_strategy.py의 결과를 기반으로 상세 보고서를 생성.
 
 실행:
-    python src/5_이변모델_선정/13_final_report_docx.py
+    python src/5_이변모델_선정/03_final_report_docx.py
 
 출력:
     results/upset_improvements/이변_예측모델_최종전략_보고서.docx
@@ -371,10 +371,10 @@ def main():
 python src/5_이변모델_선정/08_full_pipeline.py
 
 # 2) 6단계 개선 실험
-python src/5_이변모델_선정/11_improvement_experiments.py
+python src/5_이변모델_선정/01_improvement_experiments.py
 
 # 3) 최종 전략 (배당 필터 + 부트스트랩)
-python src/5_이변모델_선정/12_final_strategy.py
+python src/5_이변모델_선정/02_final_strategy.py
 
 # 결과 확인
 start results/upset_with_odds_v2/report.html

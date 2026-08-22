@@ -5,7 +5,7 @@
 시장보다 나은 확률 추정이 가능한지 검증한다.
 
 실행:
-    python src/pipeline/v2_stacked/run.py
+    python src/1_전처리/02_stacked.py
 
 출력:
     results/v2_stacked/

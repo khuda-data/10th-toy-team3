@@ -4,7 +4,7 @@
 1~4단계의 결과 CSV를 읽어서 summary.md를 자동 작성한다.
 
 실행:
-    python src/eda/03_eda_summary.py
+    python src/1_전처리/03_eda_summary.py
 """
 
 import logging

@@ -1,5 +1,5 @@
 """
-run_analysis.py — 버전별 모델 비교 분석
+01_run_analysis.py — 버전별 모델 비교 분석
 
 v1~v8 전처리 버전을 직접 읽어서:
 1. 각 버전별 RF/XGBoost/Logistic 학습 + 평가
@@ -8,7 +8,7 @@ v1~v8 전처리 버전을 직접 읽어서:
 4. 최종 결과 보고서 HTML 생성
 
 실행:
-    python src/analysis/run_analysis.py
+    python src/analysis/01_run_analysis.py
 
 출력:
     results/analysis/

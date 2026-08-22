@@ -1,5 +1,5 @@
 """
-15_complete_report.py — 이변 예측 모델 최종 완결 보고서
+05_complete_report.py — 이변 예측 모델 최종 완결 보고서
 
 모든 실험 결과를 하나의 docx로 종합:
 - 모델 비교 (A/B/C)
@@ -9,7 +9,7 @@
 - 신뢰구간
 
 실행:
-    python src/5_이변모델_선정/15_complete_report.py
+    python src/5_이변모델_선정/05_complete_report.py
 
 출력:
     results/upset_improvements/이변_예측모델_완결_보고서.docx
@@ -281,9 +281,9 @@ def main():
     doc.add_heading("7. 재현 코드", level=1)
     code = """# 전체 파이프라인
 python src/5_이변모델_선정/08_full_pipeline.py     # 모델 학습 + 기본 ROI
-python src/5_이변모델_선정/11_improvement_experiments.py  # 6단계 개선
-python src/5_이변모델_선정/12_final_strategy.py    # 배당 필터 최종 전략
-python src/5_이변모델_선정/14_upset_insight_and_allocation.py  # 인사이트 + 배분"""
+python src/5_이변모델_선정/01_improvement_experiments.py  # 6단계 개선
+python src/5_이변모델_선정/02_final_strategy.py    # 배당 필터 최종 전략
+python src/5_이변모델_선정/04_upset_insight_and_allocation.py  # 인사이트 + 배분"""
 
     p = doc.add_paragraph()
     run = p.add_run(code)

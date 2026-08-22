@@ -18,7 +18,7 @@
     v8_robust_no_outlier.csv    : v5 + RobustScaler
 
 실행:
-    python src/eda/05_make_versions.py
+    python src/1_전처리/05_make_versions.py
 
 출력:
     data/versions/v1~v8.csv

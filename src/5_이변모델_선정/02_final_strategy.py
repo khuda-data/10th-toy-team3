@@ -1,11 +1,11 @@
 """
-12_final_strategy.py — 최종 전략: C모델(단승) + 배당 필터
+02_final_strategy.py — 최종 전략: C모델(단승) + 배당 필터
 
 기존 08_full_pipeline의 C모델 결과를 활용하여,
 winOdds 구간별 필터를 적용한 ROI를 계산한다.
 
 실행:
-    python src/5_이변모델_선정/12_final_strategy.py
+    python src/5_이변모델_선정/02_final_strategy.py
 """
 
 import logging

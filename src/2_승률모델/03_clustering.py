@@ -5,7 +5,7 @@
 최적 k를 실루엣 계수로 탐색하고, 군집별 피처 특성을 분석한다.
 
 실행:
-    python src/pipeline/03_clustering.py
+    python src/1_전처리/03_clustering.py
 
 의존:
     - 02_market_gap.py 실행 후 생성된 results/market_gap.csv

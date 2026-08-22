@@ -8,7 +8,7 @@ C = q + 기존 피처 (결합)
 각각 Logistic Regression, Random Forest로 학습하여 test set에서 비교.
 
 실행:
-    python src/upset_with_odds/03_train_compare.py
+    python src/4_이변모델/03_train_compare.py
 """
 
 import logging

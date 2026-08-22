@@ -1,12 +1,12 @@
 """
-06_reports_v123.py — 방향 1/2/3 각각의 HTML 보고서 생성 (개선판)
+04_reports_v123.py — 방향 1/2/3 각각의 HTML 보고서 생성 (개선판)
 
 - 그래프는 영어 (폰트 문제 회피)
 - 피처명은 한국어 설명으로 변환
 - 결과 설명을 쉬운 말로 풀어서 작성
 
 실행:
-    python src/pipeline/06_reports_v123.py
+    python src/1_전처리/04_reports_v123.py
 """
 
 import base64

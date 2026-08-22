@@ -4,7 +4,7 @@
 01~06 단계 결과를 하나의 HTML로 종합.
 
 실행:
-    python src/upset_with_odds/07_upset_report.py
+    python src/4_이변모델/07_upset_report.py
 
 출력:
     results/upset_with_odds/report.html

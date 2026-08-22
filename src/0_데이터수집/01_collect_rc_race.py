@@ -5,7 +5,7 @@
 공공데이터포털 API를 통해 수집하고 CSV로 저장한다.
 
 사용법:
-    python src/collect_rc_race.py --from 20240101 --to 20240331
+    python src/01_collect_rc_race.py --from 20240101 --to 20240331
 """
 
 import argparse
@@ -170,9 +170,9 @@ def parse_args() -> argparse.Namespace:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 사용 예시:
-  python src/collect_rc_race.py --from 20240101 --to 20240131
-  python src/collect_rc_race.py --from 20240101 --to 20240630 --output data/raw/2024_first_half.csv
-  python src/collect_rc_race.py --from 20240301 --to 20240301 --rows 50
+  python src/01_collect_rc_race.py --from 20240101 --to 20240131
+  python src/01_collect_rc_race.py --from 20240101 --to 20240630 --output data/raw/2024_first_half.csv
+  python src/01_collect_rc_race.py --from 20240301 --to 20240301 --rows 50
         """,
     )
     parser.add_argument(

@@ -14,16 +14,16 @@
 
 | 순서 | 파일 | 하는 일 |
 |---|---|---|
-| 1 | `train_market_free_model.py` | 기준 모델 학습. v1~v8 전처리 버전별로 돌립니다. 나머지 스크립트가 이 파일을 불러 씁니다 |
-| 2 | `select_rf_features.py` | 랜덤포레스트 — 피처를 30개에서 20개까지 하나씩 빼며 성능 변화 관찰 |
-| 3 | `select_xgb_features.py` | XGBoost — 30~50개 구간에서 최적 피처 수 탐색 |
-| 4 | `search_xgb_50_to_100.py` | XGBoost — 50개에서 100개까지 5개씩 늘려가며 확인 |
-| 5 | `evaluate_v2_to_v8.py` | 전처리 버전별로 맞춘 모델을 비시장 피처 전체에서 검증 |
-| 6 | `md_to_docx.py` | 마크다운 보고서를 Word 문서로 변환 |
+| 1 | `01_train_market_free_model.py` | 기준 모델 학습. v1~v8 전처리 버전별로 돌립니다. 나머지 스크립트가 이 파일을 불러 씁니다 |
+| 2 | `02_select_rf_features.py` | 랜덤포레스트 — 피처를 30개에서 20개까지 하나씩 빼며 성능 변화 관찰 |
+| 3 | `03_select_xgb_features.py` | XGBoost — 30~50개 구간에서 최적 피처 수 탐색 |
+| 4 | `04_search_xgb_50_to_100.py` | XGBoost — 50개에서 100개까지 5개씩 늘려가며 확인 |
+| 5 | `05_evaluate_v2_to_v8.py` | 전처리 버전별로 맞춘 모델을 비시장 피처 전체에서 검증 |
+| 6 | `06_md_to_docx.py` | 마크다운 보고서를 Word 문서로 변환 |
 
 ```bash
-python train_market_free_model.py --version v1
-python select_rf_features.py --version v1
+python 01_train_market_free_model.py --version v1
+python 02_select_rf_features.py --version v1
 ```
 
 ---
@@ -42,7 +42,7 @@ python select_rf_features.py --version v1
 
 같은 데이터로 만든 모델은 시장이 이미 반영한 정보를 다시 정리할 뿐이고, 시장에는 그 밖에 마방 분위기·당일 컨디션·내부 정보처럼 데이터에 없는 신호가 들어가 있습니다.
 
-이 판단의 근거가 된 문헌 조사는 [`reports/3_시장대조/문헌조사_시장대조.docx`](../../../reports/3_시장대조/문헌조사_시장대조.docx)에 정리돼 있고, 여기서 얻은 인사이트가 **5단계 이변 분석으로 방향을 트는 근거**가 됐습니다.
+이 판단의 근거가 된 문헌 조사는 [`reports/3_시장대조/06_문헌조사_시장대조.docx`](../../../reports/3_시장대조/06_문헌조사_시장대조.docx)에 정리돼 있고, 여기서 얻은 인사이트가 **5단계 이변 분석으로 방향을 트는 근거**가 됐습니다.
 
 ---
 
@@ -50,6 +50,6 @@ python select_rf_features.py --version v1
 
 | 문서 | 내용 |
 |---|---|
-| [비시장모델 중간보고서](../../../reports/3_시장대조/비시장모델_중간보고서.docx) | 피처 수 실험 경과 |
-| [문헌조사 · 시장대조](../../../reports/3_시장대조/문헌조사_시장대조.docx) | 선행 연구가 시장을 이겼는가 |
-| [3차 모델링 6종 비교](../../../reports/3_시장대조/3차모델링_6종비교) | 모델 6종 + LightGBM 5-fold 결과 |
+| [비시장모델 중간보고서](../../../reports/3_시장대조/03_비시장모델_중간보고서.docx) | 피처 수 실험 경과 |
+| [문헌조사 · 시장대조](../../../reports/3_시장대조/06_문헌조사_시장대조.docx) | 선행 연구가 시장을 이겼는가 |
+| [3차 모델링 6종 비교](../../../reports/3_시장대조/04_3차모델링_6종비교) | 모델 6종 + LightGBM 5-fold 결과 |

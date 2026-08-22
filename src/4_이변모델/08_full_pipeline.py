@@ -14,7 +14,7 @@
 10. 보고서 생성
 
 실행:
-    python src/upset_with_odds/08_full_pipeline.py
+    python src/4_이변모델/08_full_pipeline.py
 
 출력:
     results/upset_with_odds_v2/

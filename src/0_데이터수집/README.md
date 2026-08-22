@@ -7,10 +7,10 @@
 | 파일 | 설명 | 작성자 |
 |---|---|---|
 | `kra_client.py` | 한국마사회 공공데이터포털 API 공통 클라이언트. RC경마경주정보·기수 성적·경주마 성적 등 여러 API를 동일한 인터페이스로 호출 | 박준석 (junseok) |
-| `collect_rc_race.py` | 서울경마장 경주 데이터(배당률·마체중·트랙상태·날씨·착순 등)를 API로 수집해 CSV로 저장. 서비스 키는 `.env`의 `KRA_SERVICE_KEY`에서 읽음 | 박준석 (junseok) |
-| `split_by_purpose.py` | 팀원이 만든 `race_entries.csv`(156컬럼·56,648행)를 모델 학습용/배당률 분석용/사후 결과용 세 파일로 분리 | 박준석 (junseok) |
-| `config.py` | 컬럼 분류·유틸리티 함수 등 파이프라인 공통 설정 모듈 (팀 공용 `src/pipeline/config.py`를 이 파이프라인에서 그대로 import해 사용) | 팀 공용 (원 작성자 미상) |
+| `01_collect_rc_race.py` | 서울경마장 경주 데이터(배당률·마체중·트랙상태·날씨·착순 등)를 API로 수집해 CSV로 저장. 서비스 키는 `.env`의 `KRA_SERVICE_KEY`에서 읽음 | 박준석 (junseok) |
+| `02_split_by_purpose.py` | 팀원이 만든 `race_entries.csv`(156컬럼·56,648행)를 모델 학습용/배당률 분석용/사후 결과용 세 파일로 분리 | 박준석 (junseok) |
+| `config.py` | 컬럼 분류·유틸리티 함수 등 파이프라인 공통 설정 모듈 (팀 공용 설정. 각 파이프라인이 독립 실행되도록 같은 파일을 폴더마다 복사해 뒀습니다 — 7곳 모두 내용이 동일합니다) | 팀 공용 (원 작성자 미상) |
 
 ## 실행 순서
 
-`kra_client.py`는 `collect_rc_race.py`가 사용하는 라이브러리 모듈이라 직접 실행하지 않습니다. `collect_rc_race.py`로 원본 데이터를 모으고, 팀원들의 결과물을 합쳐 `race_entries.csv`가 만들어진 뒤 `split_by_purpose.py`를 실행하는 순서입니다.
+`kra_client.py`는 `01_collect_rc_race.py`가 사용하는 라이브러리 모듈이라 직접 실행하지 않습니다. `01_collect_rc_race.py`로 원본 데이터를 모으고, 팀원들의 결과물을 합쳐 `race_entries.csv`가 만들어진 뒤 `02_split_by_purpose.py`를 실행하는 순서입니다.

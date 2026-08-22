@@ -5,8 +5,8 @@ race_entries.csv 전처리 스크립트
 모델 학습용·배당률 분석용·사후 결과용 세 파일로 분리한다.
 
 사용법:
-    python src/split_by_purpose.py --input race_entries.csv
-    python src/split_by_purpose.py  # 기본: 프로젝트 루트의 race_entries.csv
+    python src/02_split_by_purpose.py --input race_entries.csv
+    python src/02_split_by_purpose.py  # 기본: 프로젝트 루트의 race_entries.csv
 """
 
 import argparse

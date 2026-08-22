@@ -6,7 +6,7 @@
 개선폭이 커지는지 확인하는 게 목적.
 
 실행:
-    python src/upset_with_odds/05_longshot_segment_eval.py
+    python src/4_이변모델/05_longshot_segment_eval.py
 """
 
 import logging

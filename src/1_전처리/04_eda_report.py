@@ -4,7 +4,7 @@
 흐름: 결측치 → 이상치 → 다중공선성 → 처리 방향 요약
 
 실행:
-    python src/eda/04_eda_report.py
+    python src/1_전처리/04_eda_report.py
 
 출력:
     results/eda/report.html

@@ -8,7 +8,7 @@
 - 피처셋 A/B/C 정의 및 저장
 
 실행:
-    python src/upset_with_odds/02_data_prep.py
+    python src/4_이변모델/02_data_prep.py
 """
 
 import logging

@@ -5,7 +5,7 @@
 5단계: feature importance + 괴리 상위 서브셋 피처 분포 분석
 
 실행:
-    python src/pipeline/02_market_gap.py
+    python src/1_전처리/02_market_gap.py
 
 의존:
     - 01_train_model.py 실행 후 생성된 results/models/ 파일들

@@ -2,7 +2,7 @@
 
 The valid set is used only to compare the 30-to-20 feature candidates.  The
 test set remains untouched.  Usage:
-    .venv\\Scripts\\python.exe select_rf_features.py --version v1
+    .venv\\Scripts\\python.exe 02_select_rf_features.py --version v1
 """
 
 from __future__ import annotations

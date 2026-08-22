@@ -5,8 +5,8 @@
 2단계: 결측률 5%+ 컬럼의 구조적/랜덤 분류
 
 실행:
-    python src/eda/01_missing_check.py
-    python src/eda/01_missing_check.py --input race_entries.csv
+    python src/1_전처리/01_missing_check.py
+    python src/1_전처리/01_missing_check.py --input race_entries.csv
 """
 
 import argparse

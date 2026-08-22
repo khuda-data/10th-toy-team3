@@ -7,7 +7,7 @@
 이 모델은 "비인기마인데 이길 가능성이 높은 말"을 탐지하는 것이 목적.
 
 실행:
-    python src/pipeline/v3_upset/run.py
+    python src/1_전처리/03_upset.py
 
 출력:
     results/v3_upset/

@@ -5,7 +5,7 @@ valid set에서 F1(Macro) 최대가 되는 임계값을 탐색하고,
 test set에서 튜닝 전후를 비교한다.
 
 실행:
-    python src/upset_with_odds/04_threshold_tuning.py
+    python src/4_이변모델/04_threshold_tuning.py
 """
 
 import logging

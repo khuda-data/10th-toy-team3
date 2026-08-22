@@ -1,7 +1,7 @@
 """Train the compact, market-free winner-probability model for v1~v8.
 
 Usage:
-    .venv\\Scripts\\python.exe train_market_free_model.py --version v1
+    .venv\\Scripts\\python.exe 01_train_market_free_model.py --version v1
 """
 
 from __future__ import annotations

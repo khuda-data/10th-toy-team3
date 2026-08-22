@@ -5,7 +5,7 @@
 대표 피처로 q(정규화 암묵적 확률)를 선정한다.
 
 실행:
-    python src/upset_with_odds/01_odds_feature_check.py
+    python src/4_이변모델/01_odds_feature_check.py
 """
 
 import logging

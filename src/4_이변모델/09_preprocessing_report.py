@@ -4,7 +4,7 @@
 08_full_pipeline.py에서 수행한 전처리 과정을 정리한 HTML 보고서.
 
 실행:
-    python src/upset_with_odds/09_preprocessing_report.py
+    python src/4_이변모델/09_preprocessing_report.py
 
 출력:
     results/upset_with_odds_v2/preprocessing_report.html

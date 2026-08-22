@@ -5,8 +5,8 @@
 4단계: (--vif 옵션) 고상관 피처 대상 VIF 계산
 
 실행:
-    python src/eda/02_correlation_check.py
-    python src/eda/02_correlation_check.py --vif
+    python src/1_전처리/02_correlation_check.py
+    python src/1_전처리/02_correlation_check.py --vif
 """
 
 import argparse

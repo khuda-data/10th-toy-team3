@@ -6,7 +6,7 @@
 3단계: Threshold 튜닝 (valid set에서 탐색 → test set에서 최종 평가)
 
 실행:
-    python src/pipeline/01_train_model.py
+    python src/1_전처리/01_train_model.py
 """
 
 import pickle

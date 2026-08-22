@@ -5,7 +5,7 @@
 results/report.html 파일을 브라우저에서 열면 전체 결과를 확인 가능.
 
 실행:
-    python src/pipeline/05_model_report.py
+    python src/1_전처리/05_model_report.py
 """
 
 import sys

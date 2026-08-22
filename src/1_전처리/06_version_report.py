@@ -2,7 +2,7 @@
 06_version_report.py — 전처리 버전 가이드 HTML 보고서
 
 실행:
-    python src/eda/06_version_report.py
+    python src/1_전처리/06_version_report.py
 
 출력:
     data/versions/report.html
@@ -178,7 +178,7 @@ valid = df[df["fold"] == "valid"]
 test  = df[df["fold"] == "test"]
 
 y_train = train["win"]
-# X: drop ID/market/outcome columns (see src/pipeline/config.py EXCLUDE_COLS)</pre>
+# X: drop ID/market/outcome columns (see src/1_전처리/config.py EXCLUDE_COLS)</pre>
 </div>
 
 <p class="code-label">또는 이미 분리된 파일 사용:</p>

@@ -5,7 +5,7 @@
 Isotonic Regression으로 보정하여, 예측확률이 실제 승률에 가까워지는지 검증한다.
 
 실행:
-    python src/pipeline/v1_calibration/run.py
+    python src/1_전처리/01_calibration.py
 
 출력:
     results/v1_calibration/

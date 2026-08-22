@@ -5,7 +5,7 @@
 winOdds 구간별 필터를 적용한 ROI를 계산한다.
 
 실행:
-    python src/upset_with_odds/12_final_strategy.py
+    python src/5_이변모델_선정/12_final_strategy.py
 """
 
 import logging
@@ -99,7 +99,7 @@ def main():
             + ["gap_h", "gap_d"]
         )
 
-        df = pd.read_csv("final.csv", low_memory=False)
+        df = pd.read_csv("race_entries.csv", low_memory=False)
         df = df[df["meet"] == "서울"].reset_index(drop=True)
         df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
         df["_winOdds"] = df["winOdds"].copy()

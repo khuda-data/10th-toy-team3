@@ -12,7 +12,7 @@ Part B: 최적 베팅 배분 전략 탐색
   - valid에서 최적 찾고 test에서 검증
 
 실행:
-    python src/upset_with_odds/14_upset_insight_and_allocation.py
+    python src/5_이변모델_선정/14_upset_insight_and_allocation.py
 """
 
 import logging
@@ -64,7 +64,7 @@ FULL_EXCLUDE = set(
 
 def load_data():
     """데이터 로드 + 전처리 (12_final_strategy와 동일)."""
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv("race_entries.csv", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
     df["_winOdds"] = df["winOdds"].copy()

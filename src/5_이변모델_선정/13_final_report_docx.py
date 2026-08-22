@@ -4,7 +4,7 @@
 12_final_strategy.py의 결과를 기반으로 상세 보고서를 생성.
 
 실행:
-    python src/upset_with_odds/13_final_report_docx.py
+    python src/5_이변모델_선정/13_final_report_docx.py
 
 출력:
     results/upset_improvements/이변_예측모델_최종전략_보고서.docx
@@ -368,13 +368,13 @@ def main():
     code = """cd "프로젝트 경로"
 
 # 1) 전체 파이프라인 (모델 학습 + 기본 ROI)
-python src/upset_with_odds/08_full_pipeline.py
+python src/5_이변모델_선정/08_full_pipeline.py
 
 # 2) 6단계 개선 실험
-python src/upset_with_odds/11_improvement_experiments.py
+python src/5_이변모델_선정/11_improvement_experiments.py
 
 # 3) 최종 전략 (배당 필터 + 부트스트랩)
-python src/upset_with_odds/12_final_strategy.py
+python src/5_이변모델_선정/12_final_strategy.py
 
 # 결과 확인
 start results/upset_with_odds_v2/report.html

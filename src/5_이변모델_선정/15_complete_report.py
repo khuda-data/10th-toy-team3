@@ -9,7 +9,7 @@
 - 신뢰구간
 
 실행:
-    python src/upset_with_odds/15_complete_report.py
+    python src/5_이변모델_선정/15_complete_report.py
 
 출력:
     results/upset_improvements/이변_예측모델_완결_보고서.docx
@@ -280,10 +280,10 @@ def main():
     # ===== 7. 코드 =====
     doc.add_heading("7. 재현 코드", level=1)
     code = """# 전체 파이프라인
-python src/upset_with_odds/08_full_pipeline.py     # 모델 학습 + 기본 ROI
-python src/upset_with_odds/11_improvement_experiments.py  # 6단계 개선
-python src/upset_with_odds/12_final_strategy.py    # 배당 필터 최종 전략
-python src/upset_with_odds/14_upset_insight_and_allocation.py  # 인사이트 + 배분"""
+python src/5_이변모델_선정/08_full_pipeline.py     # 모델 학습 + 기본 ROI
+python src/5_이변모델_선정/11_improvement_experiments.py  # 6단계 개선
+python src/5_이변모델_선정/12_final_strategy.py    # 배당 필터 최종 전략
+python src/5_이변모델_선정/14_upset_insight_and_allocation.py  # 인사이트 + 배분"""
 
     p = doc.add_paragraph()
     run = p.add_run(code)

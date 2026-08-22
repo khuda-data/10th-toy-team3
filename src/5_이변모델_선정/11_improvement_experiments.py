@@ -10,7 +10,7 @@
 6단계: 붕괴+다크호스 조합
 
 실행:
-    python src/upset_with_odds/11_improvement_experiments.py
+    python src/5_이변모델_선정/11_improvement_experiments.py
 """
 
 import logging
@@ -63,7 +63,7 @@ FULL_EXCLUDE = set(
 
 def load_and_prepare():
     """데이터 로드 + 공통 전처리."""
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv("race_entries.csv", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
 
     # 타겟 생성
@@ -292,7 +292,7 @@ def main():
     logger.info("[STAGE 5] Feature engineering (hr_trend_3, jk_recent_form)")
     logger.info("=" * 70)
     logger.info("  Note: These features need to be computed from raw data with")
-    logger.info("  expanding window. Currently not available in final.csv.")
+    logger.info("  expanding window. Currently not available in race_entries.csv.")
     logger.info("  Skipping — requires separate feature pipeline.")
     logger.info("  (Would need rolling(3) on hr_last_ord grouped by hrNo)")
 
@@ -302,7 +302,7 @@ def main():
     logger.info("=" * 70)
 
     # 인기마 붕괴 모델 (전체 데이터에서 인기마 대상)
-    df_full = pd.read_csv("final.csv", low_memory=False)
+    df_full = pd.read_csv("race_entries.csv", low_memory=False)
     df_full = df_full[df_full["meet"] == "서울"].reset_index(drop=True)
     df_full = df_full.sort_values("rcDate").reset_index(drop=True)
     df_full["fold"] = assign_time_split(df_full, "rcDate", SPLIT_RATIOS)

@@ -163,6 +163,7 @@ test  = pd.read_csv(f"{BASE}/test.csv.gz",  encoding="utf-8-sig", dtype=dtypes)
 | 윤우진 | `PLAUROS` | 데이터 수집 · 전처리 · 문헌 조사 · 저장소 정리 |
 | 박준석 | `junseok` | EDA · 전처리 · 승률 모델링 · 이변 예측 모델과 베팅 전략 |
 | 홍정의 | `a01063950463-svg` | 비시장 모델 피처 수 실험 |
+| 이종원 | `happy97908a-cmyk` | 3차 모델링 6종 비교 · LightGBM 5-fold 검증 |
 | 전유림 | `yoolim-jeon` | 이변 유형별 특징 분석 |
 
 ---

@@ -1,0 +1,64 @@
+{
+  "policy_version": 1,
+  "purpose": "Prevent deprecated row-deleted datasets from entering new model pipelines.",
+  "allowed_statuses_for_new_modeling": [
+    "canonical"
+  ],
+  "datasets": [
+    {
+      "path": "data/raw/final.csv.gz",
+      "status": "canonical",
+      "usage": "immutable raw source"
+    },
+    {
+      "path": "data/interim/seoul_entries.csv.gz",
+      "status": "canonical",
+      "usage": "Seoul feature and label audit base"
+    },
+    {
+      "path": "data/interim/split_manifest.csv",
+      "status": "canonical",
+      "usage": "only approved chronological split definition"
+    },
+    {
+      "path": "전처리 데이터셋/v1_base",
+      "status": "legacy_read_only",
+      "usage": "historical comparison only; not a new pipeline input"
+    },
+    {
+      "path": "전처리 데이터셋/v2_standard",
+      "status": "legacy_read_only",
+      "usage": "historical comparison only; not a new pipeline input"
+    },
+    {
+      "path": "전처리 데이터셋/v3_minmax",
+      "status": "legacy_read_only",
+      "usage": "historical comparison only; not a new pipeline input"
+    },
+    {
+      "path": "전처리 데이터셋/v4_robust",
+      "status": "legacy_read_only",
+      "usage": "historical comparison only; not a new pipeline input"
+    },
+    {
+      "path": "전처리 데이터셋/v5_base_no_outlier",
+      "status": "forbidden_model_input",
+      "usage": "deprecated: row-level outlier deletion breaks complete-race structure"
+    },
+    {
+      "path": "전처리 데이터셋/v6_standard_no_outlier",
+      "status": "forbidden_model_input",
+      "usage": "deprecated: row-level outlier deletion breaks complete-race structure"
+    },
+    {
+      "path": "전처리 데이터셋/v7_minmax_no_outlier",
+      "status": "forbidden_model_input",
+      "usage": "deprecated: row-level outlier deletion breaks complete-race structure"
+    },
+    {
+      "path": "전처리 데이터셋/v8_robust_no_outlier",
+      "status": "forbidden_model_input",
+      "usage": "deprecated: row-level outlier deletion breaks complete-race structure"
+    }
+  ]
+}

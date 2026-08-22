@@ -1,0 +1,11 @@
+{
+  "policy_version": 1,
+  "created_at": "2026-08-17T14:53:43.539216+00:00",
+  "selection_source": "reports/experiments/stage_12_normalization.json",
+  "selection_metric": "Train OOF Race Log Loss; Race Brier and sum method are tie-breakers",
+  "selected_methods": {
+    "M1_logistic": "sum",
+    "M2_xgboost": "sum"
+  },
+  "final_test_evaluated": false
+}

@@ -1,0 +1,121 @@
+{
+  "experiment": "stage_15_single_final_test",
+  "evaluated_at": "2026-08-17T17:07:21.937139+00:00",
+  "freeze_manifest": "data/manifests/pre_final_test_freeze.json",
+  "test_fold": {
+    "rows": 6639,
+    "races": 635,
+    "date_min": 20251228,
+    "date_max": 20260809
+  },
+  "frozen_deployment_candidate": {
+    "model": "M2_xgboost",
+    "normalization": "sum",
+    "lambda": 0.05,
+    "temperature": 0.95
+  },
+  "market_baseline": {
+    "rows": 6639,
+    "races": 635,
+    "race_log_loss": 1.8173477916449374,
+    "race_brier": 0.7779195879597051,
+    "top1_accuracy": 0.3779527559055118,
+    "mean_reciprocal_rank": 0.5721566797157348,
+    "probability_sum_max_abs_error": 9.992007221626409e-16
+  },
+  "models": {
+    "M1_logistic": {
+      "normalization_method": "sum",
+      "lambda": 0.05,
+      "temperature": 0.95,
+      "metrics": {
+        "standalone_model": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.9659888818755051,
+          "race_brier": 0.8200587750590042,
+          "top1_accuracy": 0.3102362204724409,
+          "mean_reciprocal_rank": 0.5126436468168751,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        },
+        "market_blend": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.8148853942463645,
+          "race_brier": 0.7773360314920327,
+          "top1_accuracy": 0.3779527559055118,
+          "mean_reciprocal_rank": 0.5717675063344354,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        },
+        "temperature_scaled_final": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.8149383392616947,
+          "race_brier": 0.7779069159784231,
+          "top1_accuracy": 0.3779527559055118,
+          "mean_reciprocal_rank": 0.5717675063344354,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "market_deltas_positive_is_better": {
+        "race_log_loss": 0.0024094523832427495,
+        "race_brier": 1.2671981281964229e-05,
+        "top1_accuracy": 0.0
+      },
+      "prediction_path": "data/predictions/m1_logistic_test_final.csv.gz"
+    },
+    "M2_xgboost": {
+      "normalization_method": "sum",
+      "lambda": 0.05,
+      "temperature": 0.95,
+      "metrics": {
+        "standalone_model": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.9486204685472435,
+          "race_brier": 0.8126738691474483,
+          "top1_accuracy": 0.32440944881889766,
+          "mean_reciprocal_rank": 0.520739509833998,
+          "probability_sum_max_abs_error": 1.1102230246251565e-16
+        },
+        "market_blend": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.8135019680014448,
+          "race_brier": 0.7767910972192452,
+          "top1_accuracy": 0.37480314960629924,
+          "mean_reciprocal_rank": 0.5701856760911879,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        },
+        "temperature_scaled_final": {
+          "rows": 6639,
+          "races": 635,
+          "race_log_loss": 1.813445511761758,
+          "race_brier": 0.7773180459073494,
+          "top1_accuracy": 0.37480314960629924,
+          "mean_reciprocal_rank": 0.5701856760911879,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "market_deltas_positive_is_better": {
+        "race_log_loss": 0.0039022798831793715,
+        "race_brier": 0.0006015420523556303,
+        "top1_accuracy": -0.0031496062992125706
+      },
+      "prediction_path": "data/predictions/m2_xgboost_test_final.csv.gz"
+    }
+  },
+  "primary_conclusion": {
+    "model": "M2_xgboost",
+    "beats_market_on_race_log_loss": true,
+    "beats_market_on_race_brier": true,
+    "beats_market_on_both_primary_metrics": true,
+    "statistical_significance_assessed": false,
+    "next_required_check": "race-level paired bootstrap in stage 16"
+  },
+  "post_test_policy": "No model, feature, lambda, temperature, or normalization changes are permitted based on this Test result.",
+  "test_policy": {
+    "evaluated": true,
+    "evaluation_count": 1
+  }
+}

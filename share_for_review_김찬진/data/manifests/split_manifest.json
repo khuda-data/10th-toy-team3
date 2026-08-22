@@ -1,0 +1,57 @@
+{
+  "manifest_version": 1,
+  "created_at": "2026-08-17T14:08:32.700961+00:00",
+  "source": {
+    "path": "data/interim/seoul_entries.csv.gz",
+    "sha256": "a95666ad5d6dc140397431ff01c36234b93204d550410fec7262d335b6745350"
+  },
+  "output": {
+    "path": "data/interim/split_manifest.csv",
+    "bytes": 155041,
+    "sha256": "cf1b58357f1110c0f94627299ebca0483fa95b00a6183c574a2af4141e455cf1",
+    "unit": "one row per race_id"
+  },
+  "policy": {
+    "split_method": "fixed chronological race-date boundaries",
+    "excluded_races": "retain with model_fold=excluded; never remove individual entries",
+    "test_usage": "single final evaluation only"
+  },
+  "observed": {
+    "race_count": 3172,
+    "entry_count": 32888,
+    "folds": {
+      "train": {
+        "rows": 19617,
+        "races": 1891,
+        "date_min": 20230805,
+        "date_max": 20250511
+      },
+      "calibration": {
+        "rows": 6582,
+        "races": 641,
+        "date_min": 20250517,
+        "date_max": 20251227
+      },
+      "test": {
+        "rows": 6639,
+        "races": 635,
+        "date_min": 20251228,
+        "date_max": 20260809
+      },
+      "excluded": {
+        "rows": 50,
+        "races": 5,
+        "date_min": 20240707,
+        "date_max": 20260706
+      }
+    },
+    "boundaries": {
+      "train_end": 20250511,
+      "calibration_start": 20250517,
+      "calibration_end": 20251227,
+      "test_start": 20251228
+    },
+    "same_race_single_fold": true,
+    "same_date_single_model_fold": true
+  }
+}

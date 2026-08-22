@@ -1,0 +1,29 @@
+{
+  "experiment": "M0_market",
+  "created_at": "2026-08-17T14:35:19.373854+00:00",
+  "probability": "q_market = inverse win odds normalized within race",
+  "evaluation": {
+    "train": {
+      "rows": 19617,
+      "races": 1891,
+      "race_log_loss": 1.8255950316859604,
+      "race_brier": 0.7774866016148047,
+      "top1_accuracy": 0.35589635113696455,
+      "mean_reciprocal_rank": 0.5537801525109827,
+      "probability_sum_max_abs_error": 8.881784197001252e-16
+    },
+    "calibration": {
+      "rows": 6582,
+      "races": 641,
+      "race_log_loss": 1.7760361583201236,
+      "race_brier": 0.7626361505142816,
+      "top1_accuracy": 0.39001560062402496,
+      "mean_reciprocal_rank": 0.5811766539925667,
+      "probability_sum_max_abs_error": 8.881784197001252e-16
+    }
+  },
+  "test_policy": {
+    "evaluated": false,
+    "reason": "Final test is sealed until model and calibration policy are frozen."
+  }
+}

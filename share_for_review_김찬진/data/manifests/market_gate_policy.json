@@ -1,0 +1,46 @@
+{
+  "policy_version": 1,
+  "stage": 26,
+  "created_at": "2026-08-22T08:32:17.674925+00:00",
+  "selection_source": "reports/experiments/stage_26_market_gate.json",
+  "gate_fit_fold": "train_oof_disagreements",
+  "selection_fold": "calibration",
+  "selected_threshold": 0.65,
+  "selected_lambda_switch": 0.3,
+  "selected_metrics": {
+    "race_log_loss": 1.7742414156051367,
+    "race_brier": 0.7622980923871707,
+    "top1_correct": 249,
+    "top1_accuracy": 0.38845553822152884,
+    "delta_logloss": 0.0017947427149869188,
+    "delta_brier": 0.0003380581271108518,
+    "delta_top1": 0.003120124804992186,
+    "gate_action_races": 33,
+    "actual_top1_override_races": 14
+  },
+  "policy_action": "candidate_pending_stage_27_and_future_holdout",
+  "default_action": "keep_market",
+  "opened_final_test_evaluated": false,
+  "outputs": [
+    {
+      "path": "artifacts/models/r4_market_gate_logistic.joblib",
+      "sha256": "39f89d42413ce7d4f8811d6dfbfba556d1f83dfd417e219ee23e134cbeea61b9"
+    },
+    {
+      "path": "data/analysis/stage_26_gate_train_oof.csv.gz",
+      "sha256": "04e3fefecaa1243392b8ef007b193ced3a1d95ba8e81e63db08c64f7bf424453"
+    },
+    {
+      "path": "data/analysis/stage_26_gate_calibration.csv.gz",
+      "sha256": "00c74025ea9479109f5ec615d1ca140212790ad6a7d1916cf148e7fa921b9b2b"
+    },
+    {
+      "path": "data/analysis/stage_26_gate_grid.csv",
+      "sha256": "a773de091842cb3ec72805f29e48c14e10b33539a8c1a11060d0eed5c01e9f1d"
+    },
+    {
+      "path": "data/predictions/r4_gated_calibration.csv.gz",
+      "sha256": "b8360417b02ecf186ae85049967a85b642d5ca4e24c6949855fdf0a6a6f6fd10"
+    }
+  ]
+}

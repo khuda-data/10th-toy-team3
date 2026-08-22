@@ -1,0 +1,23 @@
+{
+  "experiment": "stage_18_prediction_output_contract",
+  "created_at": "2026-08-17T17:42:48.698378+00:00",
+  "schema": "data/manifests/prediction_output_schema.json",
+  "fixture": {
+    "path": "data/predictions/stage_18_contract_fixture.csv",
+    "rows": 21,
+    "races": 2,
+    "sha256": "89d23534dbf675d88e168e7a824105b7a9426b8876d51daee6d1219823547495",
+    "purpose": "Schema demonstration only; timestamps are synthetic and odds are historical closing odds."
+  },
+  "model_version": "m2_xgboost_sum_l005_t095_v1",
+  "valid_actions": {
+    "no_bet": 21
+  },
+  "live_readiness": false,
+  "blocking_live_requirements": [
+    "real pre-race odds snapshots with timestamps",
+    "authoritative race start times and full entry lists",
+    "monitoring for schema drift and rejected races"
+  ],
+  "final_test_model_changed": false
+}

@@ -1,0 +1,33 @@
+{
+  "policy_version": 1,
+  "created_at": "2026-08-17T17:31:00.160514+00:00",
+  "selection_source": "reports/experiments/stage_17_backtest.json",
+  "selection_fold": "calibration",
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "minimum_bets": 100,
+  "deployment_policy": {
+    "action": "no_bet",
+    "threshold": null,
+    "reason": "No threshold met sample-size and positive ROI confidence-bound requirements"
+  },
+  "exploratory_threshold_not_for_deployment": null,
+  "uses_closing_odds": true,
+  "executable_live_strategy": false,
+  "final_test_model_changed": false,
+  "outputs": [
+    {
+      "path": "reports/experiments/stage_17_backtest.json",
+      "bytes": 8503,
+      "sha256": "7c57e7446a2d86564edb3a7d75cb1d7a0f1df24004c164262db584a56a7d62a5"
+    },
+    {
+      "path": "data/analysis/stage_17_bet_selections.csv.gz",
+      "bytes": 140,
+      "sha256": "9c0faf3c95ee1de43059808a20175a96e5fade0f78e5ec0ccf81809b3121a9b2"
+    }
+  ]
+}

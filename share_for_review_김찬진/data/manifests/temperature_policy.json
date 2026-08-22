@@ -1,0 +1,40 @@
+{
+  "policy_version": 1,
+  "created_at": "2026-08-17T16:18:20.172400+00:00",
+  "selection_source": "reports/experiments/stage_14_temperature_scaling.json",
+  "selection_fold": "calibration",
+  "temperature_grid": [
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    1.0,
+    1.05,
+    1.1,
+    1.2,
+    1.3,
+    1.5
+  ],
+  "selected_temperatures": {
+    "M1_logistic": 0.95,
+    "M2_xgboost": 0.95
+  },
+  "deployment_candidate": {
+    "model": "M2_xgboost",
+    "lambda": 0.05,
+    "temperature": 0.95,
+    "metrics": {
+      "rows": 6582,
+      "races": 641,
+      "race_log_loss": 1.7733579378855147,
+      "race_brier": 0.7620749222392633,
+      "top1_accuracy": 0.38221528861154447,
+      "mean_reciprocal_rank": 0.5760297424884009,
+      "probability_sum_max_abs_error": 2.220446049250313e-16
+    },
+    "reason": "lowest sequentially calibrated Race Log Loss",
+    "status": "candidate_pending_final_test_and_bootstrap"
+  },
+  "sequential_selection_warning": "Lambda and temperature were selected sequentially on the same Calibration fold; reported gain may be optimistic.",
+  "final_test_evaluated": false
+}

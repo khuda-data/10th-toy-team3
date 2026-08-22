@@ -1,0 +1,325 @@
+{
+  "experiment": "stage_14_temperature_scaling",
+  "created_at": "2026-08-17T16:18:20.172400+00:00",
+  "formula": "p_i(T) = softmax(log(p_i) / T) within race",
+  "selection_metric": "Calibration Race Log Loss; Race Brier and proximity to T=1 are tie-breakers",
+  "caution": "Lambda and temperature were selected sequentially on the same Calibration fold; reported gain may be optimistic.",
+  "models": {
+    "M1_logistic": {
+      "blend_lambda": 0.05,
+      "selection_data": "Calibration only; lambda frozen before temperature search",
+      "rows": 6582,
+      "races": 641,
+      "temperature_grid": [
+        {
+          "temperature": 0.7,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.815010919375462,
+            "race_brier": 0.7756702148153349,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.8,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.784464358127654,
+            "race_brier": 0.7659605859624292,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.9,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7741226614291048,
+            "race_brier": 0.7622799019751788,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.95,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.773767478893941,
+            "race_brier": 0.7619961591381429,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.0,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.775645692076964,
+            "race_brier": 0.7624617795358098,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.05,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7792292720424152,
+            "race_brier": 0.7635074736235336,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.1,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7841073766818742,
+            "race_brier": 0.7649954889695334,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.2,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7965330021342958,
+            "race_brier": 0.7688761491506194,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.3,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.8110995787820838,
+            "race_brier": 0.7734574977872306,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.5,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.8425778339977916,
+            "race_brier": 0.783261001470562,
+            "top1_accuracy": 0.3837753510140406,
+            "mean_reciprocal_rank": 0.5768951493990495,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        }
+      ],
+      "selected_temperature": 0.95,
+      "selected_metrics": {
+        "rows": 6582,
+        "races": 641,
+        "race_log_loss": 1.773767478893941,
+        "race_brier": 0.7619961591381429,
+        "top1_accuracy": 0.3837753510140406,
+        "mean_reciprocal_rank": 0.5768951493990495,
+        "probability_sum_max_abs_error": 2.220446049250313e-16
+      },
+      "identity_temperature_metrics": {
+        "rows": 6582,
+        "races": 641,
+        "race_log_loss": 1.775645692076964,
+        "race_brier": 0.7624617795358098,
+        "top1_accuracy": 0.3837753510140406,
+        "mean_reciprocal_rank": 0.5768951493990495,
+        "probability_sum_max_abs_error": 2.220446049250313e-16
+      },
+      "prediction_path": "data/predictions/m1_logistic_calibration_final.csv.gz"
+    },
+    "M2_xgboost": {
+      "blend_lambda": 0.05,
+      "selection_data": "Calibration only; lambda frozen before temperature search",
+      "rows": 6582,
+      "races": 641,
+      "temperature_grid": [
+        {
+          "temperature": 0.7,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.8141955510342667,
+            "race_brier": 0.7757216947888903,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.8,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7838506116546582,
+            "race_brier": 0.7660295875909339,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.9,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7736552865281974,
+            "race_brier": 0.7623568562602413,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 0.95,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7733579378855147,
+            "race_brier": 0.7620749222392633,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.0,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7752858771061522,
+            "race_brier": 0.7625413542511923,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.05,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7789123359040415,
+            "race_brier": 0.7635870896644333,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.1,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7838275233699,
+            "race_brier": 0.7650745493234017,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.2,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.7963132966160493,
+            "race_brier": 0.76895282311496,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.3,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.8109256572436496,
+            "race_brier": 0.7735307093662301,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        },
+        {
+          "temperature": 1.5,
+          "metrics": {
+            "rows": 6582,
+            "races": 641,
+            "race_log_loss": 1.8424666424061276,
+            "race_brier": 0.7833259696747229,
+            "top1_accuracy": 0.38221528861154447,
+            "mean_reciprocal_rank": 0.5760297424884009,
+            "probability_sum_max_abs_error": 2.220446049250313e-16
+          }
+        }
+      ],
+      "selected_temperature": 0.95,
+      "selected_metrics": {
+        "rows": 6582,
+        "races": 641,
+        "race_log_loss": 1.7733579378855147,
+        "race_brier": 0.7620749222392633,
+        "top1_accuracy": 0.38221528861154447,
+        "mean_reciprocal_rank": 0.5760297424884009,
+        "probability_sum_max_abs_error": 2.220446049250313e-16
+      },
+      "identity_temperature_metrics": {
+        "rows": 6582,
+        "races": 641,
+        "race_log_loss": 1.7752858771061522,
+        "race_brier": 0.7625413542511923,
+        "top1_accuracy": 0.38221528861154447,
+        "mean_reciprocal_rank": 0.5760297424884009,
+        "probability_sum_max_abs_error": 2.220446049250313e-16
+      },
+      "prediction_path": "data/predictions/m2_xgboost_calibration_final.csv.gz"
+    }
+  },
+  "deployment_candidate": {
+    "model": "M2_xgboost",
+    "lambda": 0.05,
+    "temperature": 0.95,
+    "metrics": {
+      "rows": 6582,
+      "races": 641,
+      "race_log_loss": 1.7733579378855147,
+      "race_brier": 0.7620749222392633,
+      "top1_accuracy": 0.38221528861154447,
+      "mean_reciprocal_rank": 0.5760297424884009,
+      "probability_sum_max_abs_error": 2.220446049250313e-16
+    },
+    "reason": "lowest sequentially calibrated Race Log Loss",
+    "status": "candidate_pending_final_test_and_bootstrap"
+  },
+  "test_policy": {
+    "evaluated": false,
+    "reason": "Final test remains sealed."
+  }
+}

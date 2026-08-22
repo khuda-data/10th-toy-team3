@@ -1,0 +1,37 @@
+{
+  "policy_version": 1,
+  "created_at": "2026-08-17T15:47:40.812118+00:00",
+  "selection_source": "reports/experiments/stage_13_market_blend.json",
+  "selection_fold": "calibration",
+  "lambda_grid": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "selected_lambdas": {
+    "M1_logistic": 0.05,
+    "M2_xgboost": 0.05
+  },
+  "deployment_candidate": {
+    "model": "M2_xgboost",
+    "lambda": 0.05,
+    "metrics": {
+      "rows": 6582,
+      "races": 641,
+      "race_log_loss": 1.7752858771061522,
+      "race_brier": 0.7625413542511924,
+      "top1_accuracy": 0.38221528861154447,
+      "mean_reciprocal_rank": 0.5760297424884009,
+      "probability_sum_max_abs_error": 2.220446049250313e-16
+    },
+    "reason": "lowest Calibration Race Log Loss"
+  },
+  "final_test_evaluated": false
+}

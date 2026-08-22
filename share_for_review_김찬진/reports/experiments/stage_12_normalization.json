@@ -1,0 +1,321 @@
+{
+  "experiment": "stage_12_race_normalization",
+  "created_at": "2026-08-17T14:53:43.539216+00:00",
+  "selection_metric": "Train OOF Race Log Loss; Race Brier and sum method are tie-breakers",
+  "candidate_methods": {
+    "sum": "p_raw / race sum(p_raw)",
+    "logit_softmax": "softmax(logit(p_raw)) within race"
+  },
+  "models": {
+    "M1_logistic": {
+      "selection_data": "Train walk-forward OOF only",
+      "oof_rows": 8043,
+      "oof_races": 770,
+      "folds": [
+        {
+          "fold": 1,
+          "train_date_max": 20240818,
+          "valid_date_min": 20240824,
+          "valid_date_max": 20241027,
+          "metrics": {
+            "sum": {
+              "rows": 2013,
+              "races": 193,
+              "race_log_loss": 2.0468756807999355,
+              "race_brier": 0.834250878712494,
+              "top1_accuracy": 0.23316062176165803,
+              "mean_reciprocal_rank": 0.4629124329901533,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            },
+            "logit_softmax": {
+              "rows": 2013,
+              "races": 193,
+              "race_log_loss": 2.0599464986897456,
+              "race_brier": 0.8412953669775529,
+              "top1_accuracy": 0.23316062176165803,
+              "mean_reciprocal_rank": 0.4629124329901533,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "train_date_max": 20241027,
+          "valid_date_min": 20241102,
+          "valid_date_max": 20241229,
+          "metrics": {
+            "sum": {
+              "rows": 2006,
+              "races": 196,
+              "race_log_loss": 2.0328237279880206,
+              "race_brier": 0.8390732788775349,
+              "top1_accuracy": 0.24489795918367346,
+              "mean_reciprocal_rank": 0.4751538710722385,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            },
+            "logit_softmax": {
+              "rows": 2006,
+              "races": 196,
+              "race_log_loss": 2.05186729921949,
+              "race_brier": 0.8479315062660394,
+              "top1_accuracy": 0.24489795918367346,
+              "mean_reciprocal_rank": 0.4751538710722385,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "train_date_max": 20241229,
+          "valid_date_min": 20250104,
+          "valid_date_max": 20250309,
+          "metrics": {
+            "sum": {
+              "rows": 2069,
+              "races": 194,
+              "race_log_loss": 2.0291414831727805,
+              "race_brier": 0.8317057813225679,
+              "top1_accuracy": 0.23195876288659795,
+              "mean_reciprocal_rank": 0.46729705002900873,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            },
+            "logit_softmax": {
+              "rows": 2069,
+              "races": 194,
+              "race_log_loss": 2.034164619743471,
+              "race_brier": 0.8350500274055961,
+              "top1_accuracy": 0.23195876288659795,
+              "mean_reciprocal_rank": 0.46729705002900873,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "train_date_max": 20250309,
+          "valid_date_min": 20250315,
+          "valid_date_max": 20250511,
+          "metrics": {
+            "sum": {
+              "rows": 1955,
+              "races": 187,
+              "race_log_loss": 1.9159810685753582,
+              "race_brier": 0.8065076780987467,
+              "top1_accuracy": 0.32085561497326204,
+              "mean_reciprocal_rank": 0.5280515236397589,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            },
+            "logit_softmax": {
+              "rows": 1955,
+              "races": 187,
+              "race_log_loss": 1.9140392918958897,
+              "race_brier": 0.8079809370580245,
+              "top1_accuracy": 0.32085561497326204,
+              "mean_reciprocal_rank": 0.5280515236397589,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        }
+      ],
+      "oof_metrics": {
+        "sum": {
+          "rows": 8043,
+          "races": 770,
+          "race_log_loss": 2.0070420319988975,
+          "race_brier": 0.8280995319903272,
+          "top1_accuracy": 0.2571428571428571,
+          "mean_reciprocal_rank": 0.4829526245760012,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        },
+        "logit_softmax": {
+          "rows": 8043,
+          "races": 770,
+          "race_log_loss": 2.015959673647929,
+          "race_brier": 0.8333204176640879,
+          "top1_accuracy": 0.2571428571428571,
+          "mean_reciprocal_rank": 0.4829526245760012,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "selected_method": "sum",
+      "calibration_diagnostics_not_used_for_selection": {
+        "sum": {
+          "rows": 6582,
+          "races": 641,
+          "race_log_loss": 1.9659038027693176,
+          "race_brier": 0.8174579411460632,
+          "top1_accuracy": 0.3088923556942278,
+          "mean_reciprocal_rank": 0.5121688244153143,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        },
+        "logit_softmax": {
+          "rows": 6582,
+          "races": 641,
+          "race_log_loss": 1.9730485756888714,
+          "race_brier": 0.8207146918195531,
+          "top1_accuracy": 0.3088923556942278,
+          "mean_reciprocal_rank": 0.5121688244153143,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "calibration_prediction_path": "data/predictions/m1_logistic_calibration_normalized.csv.gz"
+    },
+    "M2_xgboost": {
+      "selection_data": "Train walk-forward OOF only",
+      "oof_rows": 8043,
+      "oof_races": 770,
+      "folds": [
+        {
+          "fold": 1,
+          "train_date_max": 20240818,
+          "valid_date_min": 20240824,
+          "valid_date_max": 20241027,
+          "metrics": {
+            "sum": {
+              "rows": 2013,
+              "races": 193,
+              "race_log_loss": 2.0333046665232977,
+              "race_brier": 0.8287167221894999,
+              "top1_accuracy": 0.27461139896373055,
+              "mean_reciprocal_rank": 0.4939289265714136,
+              "probability_sum_max_abs_error": 1.1102230246251565e-16
+            },
+            "logit_softmax": {
+              "rows": 2013,
+              "races": 193,
+              "race_log_loss": 2.047468554831197,
+              "race_brier": 0.8348616723492723,
+              "top1_accuracy": 0.27461139896373055,
+              "mean_reciprocal_rank": 0.4939289265714136,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "train_date_max": 20241027,
+          "valid_date_min": 20241102,
+          "valid_date_max": 20241229,
+          "metrics": {
+            "sum": {
+              "rows": 2006,
+              "races": 196,
+              "race_log_loss": 2.005160566385478,
+              "race_brier": 0.830271418028849,
+              "top1_accuracy": 0.2857142857142857,
+              "mean_reciprocal_rank": 0.49367711370262396,
+              "probability_sum_max_abs_error": 1.1102230246251565e-16
+            },
+            "logit_softmax": {
+              "rows": 2006,
+              "races": 196,
+              "race_log_loss": 2.027059802855287,
+              "race_brier": 0.8392466333791635,
+              "top1_accuracy": 0.2857142857142857,
+              "mean_reciprocal_rank": 0.49367711370262396,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "train_date_max": 20241229,
+          "valid_date_min": 20250104,
+          "valid_date_max": 20250309,
+          "metrics": {
+            "sum": {
+              "rows": 2069,
+              "races": 194,
+              "race_log_loss": 2.047656995759932,
+              "race_brier": 0.8361284712504657,
+              "top1_accuracy": 0.24742268041237114,
+              "mean_reciprocal_rank": 0.45834579223754485,
+              "probability_sum_max_abs_error": 1.1102230246251565e-16
+            },
+            "logit_softmax": {
+              "rows": 2069,
+              "races": 194,
+              "race_log_loss": 2.065624792166984,
+              "race_brier": 0.8452076848079861,
+              "top1_accuracy": 0.24742268041237114,
+              "mean_reciprocal_rank": 0.45834579223754485,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "train_date_max": 20250309,
+          "valid_date_min": 20250315,
+          "valid_date_max": 20250511,
+          "metrics": {
+            "sum": {
+              "rows": 1955,
+              "races": 187,
+              "race_log_loss": 1.932711882106796,
+              "race_brier": 0.8101001317392007,
+              "top1_accuracy": 0.31016042780748665,
+              "mean_reciprocal_rank": 0.521231412675263,
+              "probability_sum_max_abs_error": 1.1102230246251565e-16
+            },
+            "logit_softmax": {
+              "rows": 1955,
+              "races": 187,
+              "race_log_loss": 1.9400218600869443,
+              "race_brier": 0.8148757627889629,
+              "top1_accuracy": 0.31016042780748665,
+              "mean_reciprocal_rank": 0.521231412675263,
+              "probability_sum_max_abs_error": 2.220446049250313e-16
+            }
+          }
+        }
+      ],
+      "oof_metrics": {
+        "sum": {
+          "rows": 8043,
+          "races": 770,
+          "race_log_loss": 2.0053270789375945,
+          "race_brier": 0.8264586667195438,
+          "top1_accuracy": 0.2792207792207792,
+          "mean_reciprocal_rank": 0.4915303311407208,
+          "probability_sum_max_abs_error": 1.1102230246251565e-16
+        },
+        "logit_softmax": {
+          "rows": 8043,
+          "races": 770,
+          "race_log_loss": 2.0207538311152087,
+          "race_brier": 0.8337307810389754,
+          "top1_accuracy": 0.2792207792207792,
+          "mean_reciprocal_rank": 0.4915303311407208,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "selected_method": "sum",
+      "calibration_diagnostics_not_used_for_selection": {
+        "sum": {
+          "rows": 6582,
+          "races": 641,
+          "race_log_loss": 1.9767513335579314,
+          "race_brier": 0.8217216598068372,
+          "top1_accuracy": 0.296411856474259,
+          "mean_reciprocal_rank": 0.5029018173713962,
+          "probability_sum_max_abs_error": 1.1102230246251565e-16
+        },
+        "logit_softmax": {
+          "rows": 6582,
+          "races": 641,
+          "race_log_loss": 1.99152665193248,
+          "race_brier": 0.8277112876026453,
+          "top1_accuracy": 0.296411856474259,
+          "mean_reciprocal_rank": 0.5029018173713962,
+          "probability_sum_max_abs_error": 2.220446049250313e-16
+        }
+      },
+      "calibration_prediction_path": "data/predictions/m2_xgboost_calibration_normalized.csv.gz"
+    }
+  },
+  "test_policy": {
+    "evaluated": false,
+    "reason": "Final test remains sealed."
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "experiment": "stage_24_r2_pairwise_ranker",
+  "created_at": "2026-08-22T08:09:15.383263+00:00",
+  "data_policy": {
+    "train": "four-fold chronological OOF plus full fit for Calibration",
+    "calibration": "evaluation only; no Final Test",
+    "opened_final_test": "not_loaded_not_evaluated",
+    "max_rcDate": 20251227
+  },
+  "model": {
+    "name": "R2_xgb_pairwise_ranker",
+    "parameters": {
+      "objective": "rank:pairwise",
+      "eval_metric": "ndcg@1",
+      "n_estimators": 600,
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_child_weight": 20,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 1.0,
+      "reg_lambda": 10.0,
+      "tree_method": "hist",
+      "n_jobs": -1,
+      "random_state": 42
+    },
+    "feature_count": 112,
+    "feature_role": "PRE_RACE_only",
+    "group_argument": "race-contiguous group_sizes",
+    "probability_status": "not_converted_until_stage_25"
+  },
+  "evaluation_policy": {
+    "tie_break": [
+      "score_desc",
+      "q_market_desc",
+      "entry_id_asc"
+    ],
+    "metrics": [
+      "Top-1",
+      "Hit@3",
+      "NDCG@1",
+      "NDCG@3",
+      "MRR",
+      "winner_mean_rank"
+    ],
+    "logloss_brier_status": "not_applicable_to_raw_ranking_scores"
+  },
+  "walk_forward": [
+    {
+      "fold": 1,
+      "train_rows": 11574,
+      "train_races": 1121,
+      "train_date_max": 20240818,
+      "valid_rows": 2013,
+      "valid_races": 193,
+      "valid_date_min": 20240824,
+      "valid_date_max": 20241027,
+      "evaluation": {
+        "R0_market": {
+          "rows": 2013,
+          "races": 193,
+          "top1_correct": 68,
+          "top1_accuracy": 0.35233160621761656,
+          "hit_at_3": 0.689119170984456,
+          "ndcg_at_1": 0.35233160621761656,
+          "ndcg_at_3": 0.5465043038119969,
+          "mean_reciprocal_rank": 0.5518261818779954,
+          "winner_mean_rank": 3.088082901554404,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.17820702918090553,
+          "top_score_margin_median": 0.1408149130765132
+        },
+        "R1_existing_m2": {
+          "rows": 2013,
+          "races": 193,
+          "top1_correct": 53,
+          "top1_accuracy": 0.27461139896373055,
+          "hit_at_3": 0.6010362694300518,
+          "ndcg_at_1": 0.27461139896373055,
+          "ndcg_at_3": 0.4683514969467129,
+          "mean_reciprocal_rank": 0.4939289265714136,
+          "winner_mean_rank": 3.5025906735751295,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.11453515851589754,
+          "top_score_margin_median": 0.0825856470683336
+        },
+        "R2_pairwise_ranker": {
+          "rows": 2013,
+          "races": 193,
+          "top1_correct": 50,
+          "top1_accuracy": 0.25906735751295334,
+          "hit_at_3": 0.5906735751295337,
+          "ndcg_at_1": 0.25906735751295334,
+          "ndcg_at_3": 0.45268455904885885,
+          "mean_reciprocal_rank": 0.47815067776207676,
+          "winner_mean_rank": 3.6010362694300517,
+          "winner_median_rank": 3.0,
+          "top_score_margin_mean": 0.2926043984299246,
+          "top_score_margin_median": 0.23487360775470734
+        },
+        "comparison": {
+          "r2_minus_market": {
+            "top1_correct": -18,
+            "top1_accuracy": -0.09326424870466321,
+            "hit_at_3": -0.0984455958549223,
+            "mean_reciprocal_rank": -0.07367550411591861,
+            "winner_mean_rank_improvement": -0.5129533678756477
+          },
+          "r2_minus_m2": {
+            "top1_correct": -3,
+            "top1_accuracy": -0.015544041450777202,
+            "hit_at_3": -0.010362694300518172,
+            "mean_reciprocal_rank": -0.015778248809336815,
+            "winner_mean_rank_improvement": -0.09844559585492219
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_rows": 13587,
+      "train_races": 1314,
+      "train_date_max": 20241027,
+      "valid_rows": 2006,
+      "valid_races": 196,
+      "valid_date_min": 20241102,
+      "valid_date_max": 20241229,
+      "evaluation": {
+        "R0_market": {
+          "rows": 2006,
+          "races": 196,
+          "top1_correct": 73,
+          "top1_accuracy": 0.37244897959183676,
+          "hit_at_3": 0.673469387755102,
+          "ndcg_at_1": 0.37244897959183676,
+          "ndcg_at_3": 0.5436674610240572,
+          "mean_reciprocal_rank": 0.5603095458962806,
+          "winner_mean_rank": 3.0,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.1755990688282362,
+          "top_score_margin_median": 0.13005297711755903
+        },
+        "R1_existing_m2": {
+          "rows": 2006,
+          "races": 196,
+          "top1_correct": 56,
+          "top1_accuracy": 0.2857142857142857,
+          "hit_at_3": 0.6020408163265306,
+          "ndcg_at_1": 0.2857142857142857,
+          "ndcg_at_3": 0.46859388205175473,
+          "mean_reciprocal_rank": 0.49367711370262396,
+          "winner_mean_rank": 3.479591836734694,
+          "winner_median_rank": 3.0,
+          "top_score_margin_mean": 0.10980060237829635,
+          "top_score_margin_median": 0.0920161389507672
+        },
+        "R2_pairwise_ranker": {
+          "rows": 2006,
+          "races": 196,
+          "top1_correct": 54,
+          "top1_accuracy": 0.2755102040816326,
+          "hit_at_3": 0.5867346938775511,
+          "ndcg_at_1": 0.2755102040816326,
+          "ndcg_at_3": 0.4571747979045248,
+          "mean_reciprocal_rank": 0.4843253968253968,
+          "winner_mean_rank": 3.5918367346938775,
+          "winner_median_rank": 3.0,
+          "top_score_margin_mean": 0.332254578292902,
+          "top_score_margin_median": 0.28254707530140877
+        },
+        "comparison": {
+          "r2_minus_market": {
+            "top1_correct": -19,
+            "top1_accuracy": -0.09693877551020413,
+            "hit_at_3": -0.08673469387755095,
+            "mean_reciprocal_rank": -0.07598414907088374,
+            "winner_mean_rank_improvement": -0.5918367346938775
+          },
+          "r2_minus_m2": {
+            "top1_correct": -2,
+            "top1_accuracy": -0.010204081632653073,
+            "hit_at_3": -0.015306122448979553,
+            "mean_reciprocal_rank": -0.009351716877227134,
+            "winner_mean_rank_improvement": -0.11224489795918347
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_rows": 15593,
+      "train_races": 1510,
+      "train_date_max": 20241229,
+      "valid_rows": 2069,
+      "valid_races": 194,
+      "valid_date_min": 20250104,
+      "valid_date_max": 20250309,
+      "evaluation": {
+        "R0_market": {
+          "rows": 2069,
+          "races": 194,
+          "top1_correct": 75,
+          "top1_accuracy": 0.3865979381443299,
+          "hit_at_3": 0.6855670103092784,
+          "ndcg_at_1": 0.3865979381443299,
+          "ndcg_at_3": 0.5603787171575901,
+          "mean_reciprocal_rank": 0.5745542687552997,
+          "winner_mean_rank": 2.979381443298969,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.16381449223062805,
+          "top_score_margin_median": 0.12663468253959184
+        },
+        "R1_existing_m2": {
+          "rows": 2069,
+          "races": 194,
+          "top1_correct": 48,
+          "top1_accuracy": 0.24742268041237114,
+          "hit_at_3": 0.5515463917525774,
+          "ndcg_at_1": 0.24742268041237114,
+          "ndcg_at_3": 0.4210811964653951,
+          "mean_reciprocal_rank": 0.45834579223754485,
+          "winner_mean_rank": 3.695876288659794,
+          "winner_median_rank": 3.0,
+          "top_score_margin_mean": 0.10952923558620636,
+          "top_score_margin_median": 0.07882026687478386
+        },
+        "R2_pairwise_ranker": {
+          "rows": 2069,
+          "races": 194,
+          "top1_correct": 52,
+          "top1_accuracy": 0.26804123711340205,
+          "hit_at_3": 0.5360824742268041,
+          "ndcg_at_1": 0.26804123711340205,
+          "ndcg_at_3": 0.4256832029639228,
+          "mean_reciprocal_rank": 0.4699338748307821,
+          "winner_mean_rank": 3.8092783505154637,
+          "winner_median_rank": 3.0,
+          "top_score_margin_mean": 0.3474648959866302,
+          "top_score_margin_median": 0.28900280594825745
+        },
+        "comparison": {
+          "r2_minus_market": {
+            "top1_correct": -23,
+            "top1_accuracy": -0.11855670103092786,
+            "hit_at_3": -0.14948453608247425,
+            "mean_reciprocal_rank": -0.10462039392451761,
+            "winner_mean_rank_improvement": -0.8298969072164946
+          },
+          "r2_minus_m2": {
+            "top1_correct": 4,
+            "top1_accuracy": 0.02061855670103091,
+            "hit_at_3": -0.015463917525773252,
+            "mean_reciprocal_rank": 0.011588082593237237,
+            "winner_mean_rank_improvement": -0.1134020618556697
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_rows": 17662,
+      "train_races": 1704,
+      "train_date_max": 20250309,
+      "valid_rows": 1955,
+      "valid_races": 187,
+      "valid_date_min": 20250315,
+      "valid_date_max": 20250511,
+      "evaluation": {
+        "R0_market": {
+          "rows": 1955,
+          "races": 187,
+          "top1_correct": 68,
+          "top1_accuracy": 0.36363636363636365,
+          "hit_at_3": 0.6684491978609626,
+          "ndcg_at_1": 0.36363636363636365,
+          "ndcg_at_3": 0.5412485087089437,
+          "mean_reciprocal_rank": 0.5638613020965961,
+          "winner_mean_rank": 2.877005347593583,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.17612756030724488,
+          "top_score_margin_median": 0.13716009540050603
+        },
+        "R1_existing_m2": {
+          "rows": 1955,
+          "races": 187,
+          "top1_correct": 58,
+          "top1_accuracy": 0.31016042780748665,
+          "hit_at_3": 0.6524064171122995,
+          "ndcg_at_1": 0.31016042780748665,
+          "ndcg_at_3": 0.5085896277501971,
+          "mean_reciprocal_rank": 0.521231412675263,
+          "winner_mean_rank": 3.2406417112299466,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.11643469070775579,
+          "top_score_margin_median": 0.09706939978103618
+        },
+        "R2_pairwise_ranker": {
+          "rows": 1955,
+          "races": 187,
+          "top1_correct": 60,
+          "top1_accuracy": 0.32085561497326204,
+          "hit_at_3": 0.6256684491978609,
+          "ndcg_at_1": 0.32085561497326204,
+          "ndcg_at_3": 0.49846776004584215,
+          "mean_reciprocal_rank": 0.5229884791382118,
+          "winner_mean_rank": 3.272727272727273,
+          "winner_median_rank": 2.0,
+          "top_score_margin_mean": 0.33235574945468793,
+          "top_score_margin_median": 0.24762631487101316
+        },
+        "comparison": {
+          "r2_minus_market": {
+            "top1_correct": -8,
+            "top1_accuracy": -0.04278074866310161,
+            "hit_at_3": -0.042780748663101664,
+            "mean_reciprocal_rank": -0.04087282295838435,
+            "winner_mean_rank_improvement": -0.3957219251336901
+          },
+          "r2_minus_m2": {
+            "top1_correct": 2,
+            "top1_accuracy": 0.010695187165775388,
+            "hit_at_3": -0.02673796791443861,
+            "mean_reciprocal_rank": 0.0017570664629488197,
+            "winner_mean_rank_improvement": -0.03208556149732633
+          }
+        }
+      }
+    }
+  ],
+  "evaluation": {
+    "train_oof_pooled": {
+      "R0_market": {
+        "rows": 8043,
+        "races": 770,
+        "top1_correct": 284,
+        "top1_accuracy": 0.36883116883116884,
+        "hit_at_3": 0.6792207792207792,
+        "ndcg_at_1": 0.36883116883116884,
+        "ndcg_at_3": 0.5480014224072409,
+        "mean_reciprocal_rank": 0.5626346957515789,
+        "winner_mean_rank": 2.987012987012987,
+        "winner_median_rank": 2.0,
+        "top_score_margin_mean": 0.17341199921096842,
+        "top_score_margin_median": 0.13393230438026468
+      },
+      "R1_existing_m2": {
+        "rows": 8043,
+        "races": 770,
+        "top1_correct": 215,
+        "top1_accuracy": 0.2792207792207792,
+        "hit_at_3": 0.6012987012987013,
+        "ndcg_at_1": 0.2792207792207792,
+        "ndcg_at_3": 0.4662756523330299,
+        "mean_reciprocal_rank": 0.4915303311407208,
+        "winner_mean_rank": 3.481818181818182,
+        "winner_median_rank": 3.0,
+        "top_score_margin_mean": 0.11253008120232295,
+        "top_score_margin_median": 0.08742058563022367
+      },
+      "R2_pairwise_ranker": {
+        "rows": 8043,
+        "races": 770,
+        "top1_correct": 216,
+        "top1_accuracy": 0.2805194805194805,
+        "hit_at_3": 0.5844155844155844,
+        "ndcg_at_1": 0.2805194805194805,
+        "ndcg_at_3": 0.4581433672588183,
+        "mean_reciprocal_rank": 0.48854139727516344,
+        "winner_mean_rank": 3.5714285714285716,
+        "winner_median_rank": 3.0,
+        "top_score_margin_mean": 0.32617306650885347,
+        "top_score_margin_median": 0.2634267956018448
+      },
+      "comparison": {
+        "r2_minus_market": {
+          "top1_correct": -68,
+          "top1_accuracy": -0.08831168831168834,
+          "hit_at_3": -0.09480519480519478,
+          "mean_reciprocal_rank": -0.07409329847641544,
+          "winner_mean_rank_improvement": -0.5844155844155847
+        },
+        "r2_minus_m2": {
+          "top1_correct": 1,
+          "top1_accuracy": 0.0012987012987012991,
+          "hit_at_3": -0.016883116883116944,
+          "mean_reciprocal_rank": -0.002988933865557375,
+          "winner_mean_rank_improvement": -0.0896103896103897
+        }
+      }
+    },
+    "calibration": {
+      "R0_market": {
+        "rows": 6582,
+        "races": 641,
+        "top1_correct": 247,
+        "top1_accuracy": 0.38533541341653665,
+        "hit_at_3": 0.7051482059282371,
+        "ndcg_at_1": 0.38533541341653665,
+        "ndcg_at_3": 0.5691400642244314,
+        "mean_reciprocal_rank": 0.5777705177471167,
+        "winner_mean_rank": 2.890795631825273,
+        "winner_median_rank": 2.0,
+        "top_score_margin_mean": 0.1758464443001365,
+        "top_score_margin_median": 0.1368387308150455
+      },
+      "R1_existing_m2": {
+        "rows": 6582,
+        "races": 641,
+        "top1_correct": 190,
+        "top1_accuracy": 0.296411856474259,
+        "hit_at_3": 0.6224648985959438,
+        "ndcg_at_1": 0.296411856474259,
+        "ndcg_at_3": 0.4827238563294012,
+        "mean_reciprocal_rank": 0.5029018173713962,
+        "winner_mean_rank": 3.3931357254290173,
+        "winner_median_rank": 3.0,
+        "top_score_margin_mean": 0.11053073803311378,
+        "top_score_margin_median": 0.08135204186098471
+      },
+      "R2_pairwise_ranker": {
+        "rows": 6582,
+        "races": 641,
+        "top1_correct": 193,
+        "top1_accuracy": 0.30109204368174725,
+        "hit_at_3": 0.6302652106084243,
+        "ndcg_at_1": 0.30109204368174725,
+        "ndcg_at_3": 0.48753429583798125,
+        "mean_reciprocal_rank": 0.5057798459124513,
+        "winner_mean_rank": 3.3666146645865833,
+        "winner_median_rank": 3.0,
+        "top_score_margin_mean": 0.3676710557216174,
+        "top_score_margin_median": 0.26545072346925735
+      },
+      "comparison": {
+        "r2_minus_market": {
+          "top1_correct": -54,
+          "top1_accuracy": -0.08424336973478941,
+          "hit_at_3": -0.0748829953198128,
+          "mean_reciprocal_rank": -0.07199067183466545,
+          "winner_mean_rank_improvement": -0.4758190327613101
+        },
+        "r2_minus_m2": {
+          "top1_correct": 3,
+          "top1_accuracy": 0.004680187207488251,
+          "hit_at_3": 0.007800312012480548,
+          "mean_reciprocal_rank": 0.002878028541055122,
+          "winner_mean_rank_improvement": 0.026521060842433997
+        }
+      }
+    }
+  },
+  "outputs": {
+    "artifact": "artifacts/models/r2_xgb_ranker.joblib",
+    "train_oof_predictions": "data/predictions/r2_xgb_ranker_train_oof.csv.gz",
+    "calibration_predictions": "data/predictions/r2_xgb_ranker_calibration.csv.gz"
+  },
+  "next_stage": "Convert R2 scores to race probabilities and select temperature on Calibration",
+  "output_sha256": {
+    "artifact": "dbff6f46769c282b6a9c3560e051aed13e7c9ab3bf43a3b5aebd5beb2c4e0697",
+    "train_oof_predictions": "604855ff70d9280221a9f46b832a93f8cca1128a74d688046e9e8bb6c32449bc",
+    "calibration_predictions": "73f6ceb1953f061e98b520a8a953e963dd6b1d6ceb26f745206f5a6823eb82f6"
+  }
+}

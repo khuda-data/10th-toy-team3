@@ -22,6 +22,7 @@
 !*.py
 !*.pdf
 !*.docx
+!*.ipynb
 
 # 문서 · 설정
 !*.md
@@ -29,12 +30,17 @@
 !.gitignore
 !.gitattributes
 
+# 데이터는 압축본만 (원본 csv는 [3]에서 막습니다)
+!*.csv.gz
+
+# 보고서 부속 파일
+!*.html
+!*.json
+!reports/**/*.csv
+!데이터명세서.xlsx
+
 # 필요해지면 아래 # 를 지우세요
-# !*.csv.gz      압축한 데이터 (원본 csv 대신 이걸 올릴 것)
 # !*.png         그래프 이미지
-# !*.html        리포트
-# !*.ipynb       주피터 노트북 (올리기 전 출력은 지울 것)
-# !*.json
 # !*.pptx
 
 
@@ -59,9 +65,13 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 
-# 대용량 원본 (raw/ 586MB · data/ 214MB)
+# 압축하지 않은 대용량 CSV — 반드시 .csv.gz 로 올릴 것
+*.csv
+!reports/**/*.csv
+
+# 로컬 원본 데이터 폴더 (586MB · 214MB)
 raw/
-data/
+prep/
 
 # 진행 상태 · 로그
 .checkpoint.json

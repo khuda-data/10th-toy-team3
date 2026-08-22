@@ -231,8 +231,8 @@ KHUDA 10기 토이프로젝트 3조 저장소입니다. 경주마의 1착 확률
 │   └── v5~v8_*_no_outlier/         # 이상치 제거판 (표본이 작아 참고용)
 │
 ├── 전처리 보고서/
-│   ├── eda_report.html             # 결측·이상치·다중공선성 분석
-│   └── versions_report.html        # 8버전 선택 가이드
+│   ├── eda_report.html             # 결측·이상치·다중공선성 분석 (.docx 버전 동봉)
+│   └── versions_report.html        # 8버전 선택 가이드 (.docx 버전 동봉)
 │
 ├── 전처리 코드/                     # 위 데이터셋·보고서를 만든 EDA·전처리 파이프라인 (01~07)
 │   └── (파일별 설명은 폴더 내 README 참고)
@@ -248,10 +248,10 @@ KHUDA 10기 토이프로젝트 3조 저장소입니다. 경주마의 1착 확률
 ├── v1~v3 실험 코드/                  # v1~v3_report.html을 만든 코드 (01_train_model.py 학습 결과 필요)
 │   └── (파일별 설명은 폴더 내 README 참고)
 │
-├── report.html                     # 1차 모델링 결과
-├── v1_report.html                  # 확률 보정 실험
-├── v2_report.html                  # 시장 결합 실험
-├── v3_report.html                  # 이변 예측 실험
+├── report.html                     # 1차 모델링 결과 (.docx 버전 동봉)
+├── v1_report.html                  # 확률 보정 실험 (.docx 버전 동봉)
+├── v2_report.html                  # 시장 결합 실험 (.docx 버전 동봉)
+├── v3_report.html                  # 이변 예측 실험 (.docx 버전 동봉)
 ├── report_submission.zip           # 3차 모델링 (6개 모델 비교)
 ├── 보고서                           # 피처 수 실험 기록
 ├── 경주마_모델_1차 결과보고서.docx

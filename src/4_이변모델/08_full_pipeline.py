@@ -2,7 +2,7 @@
 08_full_pipeline.py — 배당률 포함 전처리 + 이변 분석 + 수익률 시뮬레이션
 
 전체 흐름:
-1. final.csv → 서울 필터 + 비인기마 필터
+1. race_entries.csv → 서울 필터 + 비인기마 필터
 2. 결측치 처리 (구조적 0, 랜덤 중앙값)
 3. 다중공선성 제거 (배당률 간: q만 남기기, 기존 고상관 쌍 제거)
 4. 범주형 → 숫자 (LabelEncoder)
@@ -100,7 +100,7 @@ def main():
 
     # ========== 1. Load & Filter ==========
     logger.info("\n[1/10] Load & Filter")
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv("race_entries.csv", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     logger.info(f"  Seoul: {len(df):,} rows")
 

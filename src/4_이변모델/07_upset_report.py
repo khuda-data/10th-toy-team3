@@ -1,10 +1,10 @@
 """
-07_report.py — 배당률 포함 이변 예측 최종 보고서
+07_upset_report.py — 배당률 포함 이변 예측 최종 보고서
 
 01~06 단계 결과를 하나의 HTML로 종합.
 
 실행:
-    python src/upset_with_odds/07_report.py
+    python src/upset_with_odds/07_upset_report.py
 
 출력:
     results/upset_with_odds/report.html

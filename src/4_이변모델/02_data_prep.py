@@ -51,7 +51,7 @@ def main():
     logger.info("=" * 60)
 
     # Load full data
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv("race_entries.csv", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     logger.info(f"  Seoul: {len(df):,} rows")
 

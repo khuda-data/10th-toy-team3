@@ -1,15 +1,15 @@
 {
-  "manifest_version": 8,
-  "created_at": "2026-08-22T00:00:00+09:00",
-  "scope": "stage 19 documentation plus stages 21-27 Top-1 policy, ranking, market gate, challenger freeze, future validation protocol, and regression tests",
+  "manifest_version": 1,
+  "created_at": "2026-08-17T18:05:55.420048+00:00",
+  "scope": "stage 19 documentation and regression tests",
   "test_framework": "unittest discovery",
   "test_command": "python -m unittest discover -s tests -v",
-  "test_module_count": 18,
+  "test_module_count": 11,
   "files": [
     {
       "path": "README.md",
-      "bytes": 12527,
-      "sha256": "c965a8ad2e9cab08b65863ee32bda4cb94f71e26794e82bbac7e0af69d5e732e"
+      "bytes": 8187,
+      "sha256": "aea77e791d946e5f8455fe475cb78121eed6e6af6589cec13d73b08f8fc86f1a"
     },
     {
       "path": "SETUP.md",
@@ -23,8 +23,8 @@
     },
     {
       "path": "PROJECT_GUIDELINES.md",
-      "bytes": 34090,
-      "sha256": "6cc2f7f23d9cf924fcc586a566b6194892afa2eff723ce6d14e1115dfbf682c7"
+      "bytes": 26632,
+      "sha256": "d944603b9944726697bd8304209cb2b547fcc0bd50795673ebe7bdd33a89952f"
     },
     {
       "path": "requirements.txt",
@@ -58,8 +58,8 @@
     },
     {
       "path": "tests/test_documentation.py",
-      "bytes": 2128,
-      "sha256": "9354a6254ebb9563ccb874208b24bc5394316426802e4ecfadb46d71f52a79fd"
+      "bytes": 2025,
+      "sha256": "083557a01bf5d701e0f5480581c0f95d49c16d5fd5954e9c17655bd5fe85fd17"
     },
     {
       "path": "tests/test_experiment_reports.py",
@@ -95,191 +95,6 @@
       "path": "tests/test_splits.py",
       "bytes": 2688,
       "sha256": "5fd22cd63f3da8f378e1a2df7b2b0b0bd80c671a862258b3d740f19166a06c9f"
-    },
-    {
-      "path": "data/manifests/top1_research_policy.json",
-      "bytes": 3778,
-      "sha256": "11773beed82cc9531c40f968adc7714d851fe2117c594535779daeedf961c573"
-    },
-    {
-      "path": "reports/experiments/stage_21_summary.md",
-      "bytes": 1772,
-      "sha256": "898e79873ea5af3ad0222c9f211c8de1442564197383b3683a48d85f86cd8293"
-    },
-    {
-      "path": "tests/test_top1_research_policy.py",
-      "bytes": 2752,
-      "sha256": "718ec98b2c4424ca23faf9c279c28d18f580cef7256d9fc6e91a8ab00de21317"
-    },
-    {
-      "path": "reports/experiments/stage_22_summary.md",
-      "bytes": 2293,
-      "sha256": "d757044c75140c821a52bce47578b8b446e1ab0eb4979e87187244b83bbe530a"
-    },
-    {
-      "path": "reports/experiments/stage_22_top1_disagreement.json",
-      "bytes": 3274,
-      "sha256": "b9aea78e315ed766f3ab20c46214c1a762551630099f6c3f7ea36a52a9c70f7d"
-    },
-    {
-      "path": "src/evaluation/top1_disagreement.py",
-      "bytes": 11541,
-      "sha256": "9e5b4643e531008a03cfb9a62f80ef6b9b649add0ad38dd209e3e398e2b98825"
-    },
-    {
-      "path": "src/models/analyze_top1_disagreements.py",
-      "bytes": 10579,
-      "sha256": "a8eb0d65c9ad5225b9a28908a31085e94be53bf7b7f3f85927c26efbe33de476"
-    },
-    {
-      "path": "tests/test_top1_disagreement.py",
-      "bytes": 4613,
-      "sha256": "5fc95193dfc2c893c68f11a7dbeb02c2a29111b5a3ca5b12cce44c015b6b41ae"
-    },
-    {
-      "path": "reports/experiments/stage_23_summary.md",
-      "bytes": 1623,
-      "sha256": "577631130b8d80868c0cc4a775e3eb377b77d0facbda89d572ae9a4af020523a"
-    },
-    {
-      "path": "data/manifests/ranking_dataset_manifest.json",
-      "bytes": 6283,
-      "sha256": "0b94bf1293b391e23905b7e701490667070811b626d5575f56d333d1f69deb56"
-    },
-    {
-      "path": "src/data/ranking_data.py",
-      "bytes": 8964,
-      "sha256": "bcb7fc9183c1ec6de1234110c26a3882d498275b42f3ba8d121b88271eb1772f"
-    },
-    {
-      "path": "src/data/build_ranking_dataset.py",
-      "bytes": 10293,
-      "sha256": "1ad61b580e012c6e3f0515259d3d67d8fca28963b8914058b16ece4b683848b9"
-    },
-    {
-      "path": "tests/test_ranking_data.py",
-      "bytes": 3748,
-      "sha256": "ddd5dbee7fbc81d5b0f8dfea5c9b2f14f48fe08fe4f1e1fb9c3a9560a5a64fab"
-    },
-    {
-      "path": "reports/experiments/stage_24_summary.md",
-      "bytes": 2511,
-      "sha256": "44d0a9b6246a164ff08dd3555720f1d6a243a5d9e8c145f70706c86ecbd2f41b"
-    },
-    {
-      "path": "reports/experiments/stage_24_ranker.json",
-      "bytes": 16853,
-      "sha256": "4fbbd3b430483d3c0c1efc96a69fc3493bbd85628253dc0755a90539b65f6877"
-    },
-    {
-      "path": "src/evaluation/ranking_metrics.py",
-      "bytes": 4315,
-      "sha256": "194f65ae5a62a6b69c884f02ee32a87e4957ed37cc8fbaec7683e2b170c489ee"
-    },
-    {
-      "path": "src/models/train_r2_ranker.py",
-      "bytes": 14022,
-      "sha256": "53976415f5562467f5c6db6ce9a6b69596dbbacc25fc4b73e6be91d02dfd3fce"
-    },
-    {
-      "path": "tests/test_ranking_metrics.py",
-      "bytes": 3523,
-      "sha256": "6b43a7ac137f18225282e00df1defdb9332ca008bb0bd76bf4b666dd448b66cc"
-    },
-    {
-      "path": "reports/experiments/stage_25_summary.md",
-      "bytes": 2433,
-      "sha256": "6b625ee2af5aeabaf5b2ff8fe9a8207f5f69d72a70fc55fb2fc175a6ea96f714"
-    },
-    {
-      "path": "reports/experiments/stage_25_ranker_probability.json",
-      "bytes": 34844,
-      "sha256": "06a142356a87ce673552e82810af2c3285aba0b2c0fc33910d8bd472a16ff17b"
-    },
-    {
-      "path": "data/manifests/ranker_temperature_policy.json",
-      "bytes": 2074,
-      "sha256": "8d3789e82558b078a5c8dfdaafb54edc3192335703c402f948201261e2c641e8"
-    },
-    {
-      "path": "src/evaluation/ranker_probability.py",
-      "bytes": 1771,
-      "sha256": "0e325286e3063129ae5c0e547ace2994a159fe54dceb1f1d66977ac53290866b"
-    },
-    {
-      "path": "src/models/select_ranker_temperature.py",
-      "bytes": 15913,
-      "sha256": "1b87577e1e089576386d7b2c6a55eb6509a1a3c8b14812f1febcab6ef62e3575"
-    },
-    {
-      "path": "tests/test_ranker_probability.py",
-      "bytes": 4375,
-      "sha256": "c1425abf87dbc98bcb199b8d4cbf41560222efe84327aef03984b499df6401d9"
-    },
-    {
-      "path": "reports/experiments/stage_26_summary.md",
-      "bytes": 2285,
-      "sha256": "9dd91b8fd664ed172b1075bea123351b8384c1d7c062c47a2b624860824ebf84"
-    },
-    {
-      "path": "reports/experiments/stage_26_market_gate.json",
-      "bytes": 4905,
-      "sha256": "7a40f79b134ddb4802436feb8e53b16ef1f9a28a24c99603357794a5d0c1b7ff"
-    },
-    {
-      "path": "data/manifests/market_gate_policy.json",
-      "bytes": 1670,
-      "sha256": "7d96c687da198b18ea33d1882558faef8179597cb724d1f8351d2b0bcdfcefdb"
-    },
-    {
-      "path": "src/models/market_gate.py",
-      "bytes": 8064,
-      "sha256": "a4ce9237c1f9ccbae73ce93c12686e23075c44d66188547dde3d306eb1103204"
-    },
-    {
-      "path": "src/models/train_market_gate.py",
-      "bytes": 20917,
-      "sha256": "289a5da6dd947e466b8fb5840434ab371913980c35853ccb1f497f65b78ce0a2"
-    },
-    {
-      "path": "tests/test_market_gate.py",
-      "bytes": 4255,
-      "sha256": "f6af193c8aa495f11994807504b89ffcb520b5f47dcff745fee0c0997bb79685"
-    },
-    {
-      "path": "FUTURE_HOLDOUT_VALIDATION.md",
-      "bytes": 5455,
-      "sha256": "750919a08ea49060b67f62218c6d05bffa5449ede03fe9877de76d515fd6f1b0"
-    },
-    {
-      "path": "reports/experiments/stage_27_summary.md",
-      "bytes": 1663,
-      "sha256": "0f8e99aa867b77601a8f7e2db75d38555d610682f7002692be1877120b0369b1"
-    },
-    {
-      "path": "reports/experiments/stage_27_candidate_freeze.json",
-      "bytes": 7241,
-      "sha256": "18399653089898ca20705c141e701fd9057d5e637f59f4a905cb72a65eb96d8f"
-    },
-    {
-      "path": "data/manifests/top1_challenger_freeze.json",
-      "bytes": 3155,
-      "sha256": "d8871d2590092c300eab1a8d719435237e75bd8b192d464292c3a1b2552d9ff2"
-    },
-    {
-      "path": "data/analysis/stage_27_candidate_comparison.csv",
-      "bytes": 1372,
-      "sha256": "ae9575b4c04ae0b4b5b77d0291f3b89d4c17f09e31562b82067820cef0537996"
-    },
-    {
-      "path": "src/models/freeze_top1_candidate.py",
-      "bytes": 15122,
-      "sha256": "2edc59e7617173b0c693728aeac9c4319f65948a532d0d0840dca2f758dd079b"
-    },
-    {
-      "path": "tests/test_top1_candidate_freeze.py",
-      "bytes": 3901,
-      "sha256": "036f440ff22b2c2f551ce7b1c4ebce4992f4c8b56053b75f29df6633b6407b73"
     }
   ]
 }

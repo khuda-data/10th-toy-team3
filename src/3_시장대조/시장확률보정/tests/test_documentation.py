@@ -7,13 +7,7 @@ from src.data.load_raw import PROJECT_ROOT
 
 class DocumentationTests(unittest.TestCase):
     def test_required_project_guides_exist_and_are_not_placeholders(self):
-        for name in (
-            "README.md",
-            "SETUP.md",
-            "TESTING.md",
-            "PROJECT_GUIDELINES.md",
-            "FUTURE_HOLDOUT_VALIDATION.md",
-        ):
+        for name in ("README.md", "SETUP.md", "TESTING.md", "PROJECT_GUIDELINES.md"):
             path = PROJECT_ROOT / name
             self.assertTrue(path.is_file(), name)
             self.assertGreater(len(path.read_text(encoding="utf-8")), 500, name)
@@ -48,7 +42,7 @@ class DocumentationTests(unittest.TestCase):
         self.assertTrue(path.is_file())
         manifest = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(manifest["test_framework"], "unittest discovery")
-        self.assertEqual(manifest["test_module_count"], 18)
+        self.assertEqual(manifest["test_module_count"], 11)
         for item in manifest["files"]:
             self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
 

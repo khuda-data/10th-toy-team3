@@ -230,10 +230,6 @@ KHUDA 10기 토이프로젝트 3조 저장소입니다. 경주마의 1착 확률
 │   ├── v4_robust/                  # 이상치 포함 · RobustScaler
 │   └── v5~v8_*_no_outlier/         # 이상치 제거판 (표본이 작아 참고용)
 │
-├── 전처리 보고서/
-│   ├── eda_report.docx             # 결측·이상치·다중공선성 분석
-│   └── versions_report.docx        # 8버전 선택 가이드
-│
 ├── 이변 분석/                       # 이변 유형별 특징 분석
 │   ├── 이변 분석.ipynb              # 다크호스 · 인기마 붕괴의 Cohen's d 비교
 │   └── Horse_Racing_Upset_Report.pdf
@@ -244,6 +240,9 @@ KHUDA 10기 토이프로젝트 3조 저장소입니다. 경주마의 1착 확률
 │   ├── v2_report.docx              # 시장 결합 실험
 │   ├── v3_report.docx              # 이변 예측 실험
 │   ├── 경주마_모델_1차 결과보고서.docx
+│   ├── 전처리 보고서/
+│   │   ├── eda_report.docx         # 결측·이상치·다중공선성 분석
+│   │   └── versions_report.docx    # 8버전 선택 가이드
 │   ├── 전처리 코드/                 # 전처리 데이터셋·보고서를 만든 EDA 파이프라인 (01~07)
 │   ├── v1~v3 실험 코드/              # v1~v3_report.docx를 만든 코드 (01_train_model.py 학습 결과 필요)
 │   └── 이변예측모델_배당률포함/        # 배당률(q)을 피처로 추가한 이변 예측 실험 — 코드 포함

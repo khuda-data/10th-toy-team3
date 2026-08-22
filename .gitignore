@@ -61,6 +61,15 @@ env/
 ENV/
 .conda/
 
+# 압축 파일 — GitHub에서 내용을 열람·리뷰할 수 없고,
+# 큰 파일은 LFS 할당량(조직 전체가 공유)을 잠식합니다.
+# 코드와 보고서는 압축하지 말고 src/N_단계 · reports/N_단계에 그대로 넣어주세요.
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
 # 파이썬 부산물
 __pycache__/
 *.py[cod]

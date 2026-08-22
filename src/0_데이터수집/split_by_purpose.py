@@ -1,12 +1,12 @@
 """
-final.csv 전처리 스크립트
+race_entries.csv 전처리 스크립트
 
-팀원이 생성한 final.csv(156컬럼, 56,648행)를 정리하여
+팀원이 생성한 race_entries.csv(156컬럼, 56,648행)를 정리하여
 모델 학습용·배당률 분석용·사후 결과용 세 파일로 분리한다.
 
 사용법:
-    python src/preprocess_final.py --input final.csv
-    python src/preprocess_final.py  # 기본: 프로젝트 루트의 final.csv
+    python src/split_by_purpose.py --input race_entries.csv
+    python src/split_by_purpose.py  # 기본: 프로젝트 루트의 race_entries.csv
 """
 
 import argparse
@@ -109,7 +109,7 @@ def handle_rating_missing(df: pd.DataFrame) -> pd.DataFrame:
 def reassign_fold(df: pd.DataFrame) -> pd.DataFrame:
     """rcDate 기준 시간순 6:2:2로 fold를 재배정한다.
 
-    원본 final.csv의 fold는 약 33:33:33이라 학습 데이터가 너무 적으므로,
+    원본 race_entries.csv의 fold는 약 33:33:33이라 학습 데이터가 너무 적으므로,
     학습 60% / 검증 20% / 평가 20%로 다시 나눈다.
     경계는 경주일 단위로 맞춰 한 경주가 두 fold로 쪼개지지 않게 한다.
     """
@@ -257,12 +257,12 @@ def save_csv(df: pd.DataFrame, path: Path, label: str) -> None:
 # ============================================================
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="final.csv 전처리 — 모델 학습용 데이터셋 분리",
+        description="race_entries.csv 전처리 — 모델 학습용 데이터셋 분리",
     )
     parser.add_argument(
         "--input",
-        default="final.csv",
-        help="입력 CSV 경로 (기본: final.csv)",
+        default="race_entries.csv",
+        help="입력 CSV 경로 (기본: race_entries.csv)",
     )
     parser.add_argument(
         "--output-dir",

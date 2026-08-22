@@ -1,10 +1,10 @@
 """
-03_summary.py — 종합 요약 리포트 자동 생성 (5단계)
+03_eda_summary.py — 종합 요약 리포트 자동 생성 (5단계)
 
 1~4단계의 결과 CSV를 읽어서 summary.md를 자동 작성한다.
 
 실행:
-    python src/eda/03_summary.py
+    python src/eda/03_eda_summary.py
 """
 
 import logging
@@ -209,7 +209,7 @@ def main():
     logger.info(f"  Saved: {output_path}")
 
     logger.info("\n" + "=" * 60)
-    logger.info("03_summary.py Done!")
+    logger.info("03_eda_summary.py Done!")
     logger.info("=" * 60)
 
 

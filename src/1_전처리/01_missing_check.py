@@ -6,7 +6,7 @@
 
 실행:
     python src/eda/01_missing_check.py
-    python src/eda/01_missing_check.py --input final.csv
+    python src/eda/01_missing_check.py --input race_entries.csv
 """
 
 import argparse
@@ -135,7 +135,7 @@ def classify_missing_pattern(
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Missing value check")
-    parser.add_argument("--input", default="final.csv", help="Input CSV path")
+    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

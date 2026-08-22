@@ -308,7 +308,7 @@ def main():
 
     save_versions(df_clean, train_mask_clean, prefix="v5", suffix="_no_outlier", start_num=5)
 
-    # 보고서용 이상치 데이터 저장 (04_report.py, 06_version_report.py에서 읽음)
+    # 보고서용 이상치 데이터 저장 (04_eda_report.py, 06_version_report.py에서 읽음)
     outlier_df = pd.DataFrame([
         {"feature": col, "n_outliers": info["n_outliers"], "pct": round(info["pct"], 2),
          "lower": round(info["lower"], 2), "upper": round(info["upper"], 2),

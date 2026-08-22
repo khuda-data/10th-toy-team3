@@ -169,7 +169,7 @@ def compute_vif(df_numeric: pd.DataFrame, target_cols: list[str]) -> pd.DataFram
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Correlation check")
-    parser.add_argument("--input", default="final.csv", help="Input CSV path")
+    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
     parser.add_argument("--vif", action="store_true", help="Include VIF analysis (beyond textbook)")
     args = parser.parse_args()
 

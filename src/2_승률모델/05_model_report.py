@@ -1,11 +1,11 @@
 """
-05_report.py — 최종 결과 종합 보고서 생성
+05_model_report.py — 최종 결과 종합 보고서 생성
 
 모든 파이프라인 결과를 하나의 HTML 보고서와 종합 그래프로 정리한다.
 results/report.html 파일을 브라우저에서 열면 전체 결과를 확인 가능.
 
 실행:
-    python src/pipeline/05_report.py
+    python src/pipeline/05_model_report.py
 """
 
 import sys
@@ -339,7 +339,7 @@ def main():
     logger.info(f"  보고서 저장: {output_path}")
     logger.info(f"  브라우저에서 열기: file:///{output_path.as_posix()}")
     logger.info("\n" + "=" * 60)
-    logger.info("05_report.py 완료!")
+    logger.info("05_model_report.py 완료!")
     logger.info("=" * 60)
 
 

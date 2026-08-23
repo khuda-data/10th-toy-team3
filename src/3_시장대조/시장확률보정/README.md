@@ -37,14 +37,20 @@ Final Test는 2025-12-28부터 2026-08-09까지의 635경주를 최초 1회 평�
 
 ## 프로젝트 구조
 
+`○` 는 저장소에 담지 않는 것 — 원본과 manifests 로부터 코드가 다시 만들어낸다.
+자세한 복원 순서는 [data/README.md](data/README.md)에 있다.
+
 ```text
 data/
-  raw/                 동결한 원본 데이터
-  interim/             서울 데이터와 시간순 split
-  manifests/           schema, 정책, checksum, 평가 잠금
-  predictions/         Calibration/Test 예측과 출력 fixture
-  analysis/            bootstrap 반복표본과 백테스트 선택 기록
-artifacts/models/      적합된 전처리기와 모델 artifact
+  raw/                 ○ 동결한 원본 데이터 (저장소 최상위 data/raw/ 에서 복사)
+  interim/             시간순 split manifest — split_manifest.csv 는 동결값이라 유지
+                       ○ seoul_entries.csv.gz 등 중간 데이터
+  manifests/           schema, 정책, checksum, 평가 잠금 — 전부 유지
+  predictions/         출력 계약 fixture 유지
+                       ○ Calibration/Test 예측 csv.gz
+  analysis/            후보 선택 근거 요약표 유지
+                       ○ bootstrap 반복표본과 백테스트 선택 기록
+artifacts/models/      적합된 전처리기와 모델 artifact — 전부 유지
 src/
   data/                로더, schema 검증, 서울 interim, split
   features/            feature registry와 Train 전용 전처리
@@ -68,6 +74,10 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
+테스트 대부분은 **원본과 중간 데이터를 채운 뒤에** 통과한다. 원본 없이도 도는 것은
+정책·계약 검증(`test_dataset_policy`, `test_prediction_contract` 등)뿐이다.
+채우는 순서는 [data/README.md](data/README.md)를 따른다.
+
 Windows에서는 다음 스크립트도 사용할 수 있다.
 
 ```powershell
@@ -78,10 +88,10 @@ Windows에서는 다음 스크립트도 사용할 수 있다.
 
 Canonical 데이터:
 
-- 원본: `data/raw/final.csv.gz`
-- 서울 interim: `data/interim/seoul_entries.csv.gz`
-- 경주 split: `data/interim/split_manifest.csv`
-- 피처 승인 목록: `data/manifests/feature_registry.json`
+- 원본: `data/raw/final.csv.gz` — **저장소에 없다.** [data/raw/README.md](data/raw/README.md) 대로 채운다
+- 서울 interim: `data/interim/seoul_entries.csv.gz` — **저장소에 없다.** 원본에서 재생성한다
+- 경주 split: `data/interim/split_manifest.csv` — 동결값, 저장소에 있다
+- 피처 승인 목록: `data/manifests/feature_registry.json` — 동결값, 저장소에 있다
 
 고정 split:
 

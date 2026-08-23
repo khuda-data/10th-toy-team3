@@ -8,7 +8,7 @@
     python src/4_이변모델/10_make_docx_report.py
 
 출력:
-    results/upset_with_odds_v2/reports/4_이변모델/04_배당률포함_모델.docx
+    results/upset_with_odds_v2/04_배당률포함_모델.docx
 """
 
 import logging
@@ -348,7 +348,7 @@ roi = (top_20pct['upset'] * top_20pct['winOdds']).sum() / len(top_20pct) - 1"""
     doc.add_paragraph()
 
     # Save
-    output_path = OUTPUT_DIR / "reports/4_이변모델/04_배당률포함_모델.docx"
+    output_path = OUTPUT_DIR / "04_배당률포함_모델.docx"
     doc.save(str(output_path))
     logger.info(f"Saved: {output_path}")
 

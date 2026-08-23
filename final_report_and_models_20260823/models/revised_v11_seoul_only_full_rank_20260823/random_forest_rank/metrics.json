@@ -1,0 +1,32 @@
+{
+ "valid": {
+  "evaluated_races": 642,
+  "evaluated_rows": 6591,
+  "ndcg_at_1": 0.8220145379023884,
+  "ndcg_at_3": 0.8400816174293464,
+  "ndcg_at_5": 0.8608475582566959,
+  "ndcg_all": 0.9416432691789532,
+  "mean_spearman": 0.4029402038798451,
+  "mean_kendall": 0.3044914453342833,
+  "mean_absolute_rank_error": 2.4972490731836525,
+  "pairwise_accuracy": 0.6522640852858922,
+  "top1_hit_rate": 0.27414330218068533,
+  "top3_recall": 0.5031152647975078,
+  "mean_winner_predicted_rank": 3.454828660436137
+ },
+ "test": {
+  "evaluated_races": 631,
+  "evaluated_rows": 6602,
+  "ndcg_at_1": 0.8251452720549394,
+  "ndcg_at_3": 0.8350014349606234,
+  "ndcg_at_5": 0.8563808542273783,
+  "ndcg_all": 0.9404698955427528,
+  "mean_spearman": 0.3982091227915236,
+  "mean_kendall": 0.2996313571034372,
+  "mean_absolute_rank_error": 2.5409261763065247,
+  "pairwise_accuracy": 0.6498410112514709,
+  "top1_hit_rate": 0.27416798732171155,
+  "top3_recall": 0.49128367670364503,
+  "mean_winner_predicted_rank": 3.6275752773375594
+ }
+}

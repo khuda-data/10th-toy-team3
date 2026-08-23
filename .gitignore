@@ -84,6 +84,9 @@ __pycache__/
 !src/3_시장대조/시장확률보정/**/*.csv
 !src/3_시장대조/시장확률보정/**/*.joblib
 
+# 모델 학습 산출 예외 — 서울 전용 재학습 결과표
+!final_report_and_models_20260823/models/**/*.csv
+
 # 로컬 원본 데이터 폴더 (586MB · 214MB)
 # 앞의 / 는 "저장소 최상위에서만"이라는 뜻입니다.
 # 이게 없으면 하위 폴더의 raw/ 까지 전부 막힙니다.
@@ -92,6 +95,7 @@ __pycache__/
 
 # 실행하면 생기는 산출물 폴더 (저장소에 올리지 않습니다)
 /results/
+/catboost_info/
 /data/versions/
 /data/splits/
 

@@ -1,0 +1,42 @@
+{
+  "status": "H17_ALL92_DEPLOYMENT_WEIGHTS_FROZEN_BEFORE_FIRST_TARGET_T5",
+  "fit_name": "all92_deployment",
+  "ridge_lambda": 1.0,
+  "members_in_order": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "formula": "softmax_r(log(q)+sum_m w_m*log(p_m/q))",
+  "objective": "mean race winner NLL + lambda/2 * sum(w^2)",
+  "ordinary_features": [],
+  "q_role": "coefficient-one market base margin; equivalent market exponent=1-sum(w)",
+  "weights": {
+    "m6": 0.005628499122255434,
+    "xgboost": 0.0028671264603407766,
+    "lightgbm": 0.005477286648567529,
+    "deep_mlp_3seed": 0.004617189521500199
+  },
+  "weight_sum": 0.01859010175266394,
+  "market_exponent": 0.981409898247336,
+  "fit_scope": {
+    "rows": 11345,
+    "races": 1084,
+    "dates": 92,
+    "date_min": 20250517,
+    "date_max": 20251227
+  },
+  "optimizer": "scipy.optimize.minimize SLSQP with analytic gradient",
+  "protocol_sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78",
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "split_test_bytes_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0,
+  "frozen_at_kst": "2026-08-23T08:37:43.431196+09:00",
+  "first_target_t5_kst": "2026-08-23T10:30:00+09:00",
+  "frozen_before_first_target_t5": true,
+  "selection_lock_sha256": "7BB98C7A5470DB21158014096F8F89EA57216D8EE2FA70322648F6A215713010",
+  "performance_claim": "NONE; deployment parameters only"
+}

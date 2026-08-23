@@ -1,0 +1,34 @@
+{
+  "hypothesis": "linear partial pooling and nonlinear deep residuals have complementary validation errors",
+  "model": "p proportional to partial_30_plus^alpha times deep_blend^(1-alpha)",
+  "fitted_on": "VALID only",
+  "created_before_loading_test_in_this_process": true,
+  "partial_weight": 4.5085472591929965e-08,
+  "deep_weight": 0.9999999549145274,
+  "validation_winner_log_loss": 1.7637345247931122,
+  "optimizer": "scipy bounded scalar likelihood minimization",
+  "bounds": [
+    0.0,
+    1.0
+  ],
+  "success": true,
+  "iterations": 35,
+  "partial_model_source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\partial_pooling_market_challenger_20260823\\validation_models.joblib",
+  "deep_model_source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\runner_probabilities_valid.csv",
+  "valid_input_audit": {
+    "split": "valid",
+    "rows": 11345,
+    "races": 1084,
+    "date_min": 20250517,
+    "date_max": 20251227,
+    "features": 141,
+    "numeric_feature_nonfinite": 0,
+    "winner_count": 1084,
+    "max_market_probability_sum_error": 4.440892098500626e-16,
+    "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+    "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+    "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+  },
+  "test_status": "exploratory reuse of previously inspected interval"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "FITTED_CONVEX_MARKET_RESIDUAL_POOL",
+  "study": "H14_CONVEX_MARKET_RESIDUAL_POOL",
+  "fit_name": "first44_stability_checkpoint",
+  "members_in_order": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "formula": "p_w(i)=softmax_r(log(q_i)+sum_m w_m*log(p_m(i)/q_i))",
+  "ordinary_features": [],
+  "q_role": "coefficient-one market base margin/offset",
+  "weights": {
+    "m6": 0.364416549021959,
+    "xgboost": 0.036808985323414485,
+    "lightgbm": 0.21200661627943715,
+    "deep_mlp_3seed": 0.0
+  },
+  "weight_sum": 0.6132321506248106,
+  "market_exponent": 0.3867678493751894,
+  "constraints": "w_m >= 0 and sum(w_m) <= 1",
+  "fit_scope": {
+    "rows": 5102,
+    "races": 507,
+    "dates": 44,
+    "date_min": 20250517,
+    "date_max": 20250830
+  },
+  "optimizer": "scipy.optimize.minimize SLSQP with analytic gradient",
+  "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

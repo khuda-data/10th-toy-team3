@@ -1,0 +1,37 @@
+{
+  "status": "FITTED_H17_RIDGE_CONVEX_MARKET_RESIDUAL_POOL",
+  "fit_name": "first44_lambda_0p3",
+  "ridge_lambda": 0.3,
+  "members_in_order": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "formula": "softmax_r(log(q)+sum_m w_m*log(p_m/q))",
+  "objective": "mean race winner NLL + lambda/2 * sum(w^2)",
+  "ordinary_features": [],
+  "q_role": "coefficient-one market base margin; equivalent market exponent=1-sum(w)",
+  "weights": {
+    "m6": 0.01194030521381273,
+    "xgboost": 0.00717555371433583,
+    "lightgbm": 0.007456653502638314,
+    "deep_mlp_3seed": 0.007190599277372576
+  },
+  "weight_sum": 0.03376311170815945,
+  "market_exponent": 0.9662368882918405,
+  "fit_scope": {
+    "rows": 5102,
+    "races": 507,
+    "dates": 44,
+    "date_min": 20250517,
+    "date_max": 20250830
+  },
+  "optimizer": "scipy.optimize.minimize SLSQP with analytic gradient",
+  "protocol_sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78",
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "split_test_bytes_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_T5",
+  "study": "H13_MARKET_ANCHOR_NONNEGATIVE_LOG_POOL",
+  "frozen_at_kst": "2026-08-23T07:52:17.120142+09:00",
+  "formula": "p_w(i)=softmax_r(log(q_i)+sum_m w_m*log(p_m(i)/q_i))",
+  "market_anchor": "coefficient-one log(q); q is not ordinary X",
+  "members_in_order": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "weight_constraints": [
+    0.0,
+    3.0
+  ],
+  "chosen_lambda": 0.0,
+  "weights": {
+    "m6": 0.47880044309379344,
+    "xgboost": 0.0,
+    "lightgbm": 0.763307302034002,
+    "deep_mlp_3seed": 0.0
+  },
+  "fit_scope": {
+    "split": "valid",
+    "dates": 92,
+    "rows": 11345,
+    "races": 1084
+  },
+  "optimizer": "scipy.optimize.minimize L-BFGS-B with analytic gradient",
+  "protocol_sha256": "FD5311B9F1B91E15DC9C61EDCA10BCC193C43841D9A6D03A6B35989797930B65",
+  "source_prediction_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "target_20260823_scores_quotes_outcomes_results_settlement_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "live_stake": 0
+}

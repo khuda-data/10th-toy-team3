@@ -1,0 +1,43 @@
+{
+  "intercept": 0.04397672160561936,
+  "residual_scale_gamma": 0.5374540372263037,
+  "l2": 1.0,
+  "observations": 1763,
+  "positive_outcomes": 566,
+  "objective": 1074.7408218600697,
+  "gradient": [
+    -4.677499636646099e-06,
+    -3.374703916314559e-08
+  ],
+  "gradient_l2_norm": 4.67762137346287e-06,
+  "hessian": [
+    [
+      375.629585747811,
+      11.5525448592027
+    ],
+    [
+      11.5525448592027,
+      60.48678284844694
+    ]
+  ],
+  "hessian_eigenvalues": [
+    60.06385576846072,
+    376.0525128277972
+  ],
+  "optimizer_success": true,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 6,
+  "fold": "P8_test_202607_08",
+  "training_folds": [
+    "P1_valid_202505_06",
+    "P2_valid_202507_08",
+    "P3_valid_202509_10",
+    "P4_valid_202511_12",
+    "P5_test_202512_02",
+    "P6_test_202603_04",
+    "P7_test_202605_06"
+  ],
+  "evaluation_fold": "P8_test_202607_08",
+  "training_date_max": 20260628,
+  "evaluation_date_min": 20260703
+}

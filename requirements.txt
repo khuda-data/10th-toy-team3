@@ -1,0 +1,58 @@
+﻿# 한국마사회 경주 데이터 분석 프로젝트 — 의존성
+#
+# 설치:
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Windows)
+#   source .venv/bin/activate       (macOS · Linux)
+#   pip install -r requirements.txt
+#
+# ─────────────────────────────────────────────────────────────
+# 검증 기록
+#
+#   2026-08-23 · Python 3.12.8 · Windows
+#   아래 버전 조합으로 src/1_전처리, src/4_이변모델(01~10),
+#   src/5_이변모델_선정(01~05) 전부 실행 성공을 확인했습니다.
+#
+# ─────────────────────────────────────────────────────────────
+# ⚠ 버전을 함부로 올리지 마세요
+#
+#   scikit-learn 버전이 바뀌면 RandomForest 결과가 달라집니다.
+#   같은 데이터·같은 코드·같은 random_state=42 인데도 그렇습니다.
+#
+#       sklearn 1.7.2 / 1.8.0   AUC 0.743686
+#       sklearn 1.9.0           AUC 0.744294
+#
+#   AUC 차이는 0.3% 수준이지만 ROI 같은 하위 지표는 훨씬 크게
+#   흔들립니다. 팀원 간 숫자를 맞추려면 버전을 통일해야 합니다.
+#
+#   pandas 는 3.x 를 쓰면 안 됩니다.
+#   3.0.5 에서 src/5_이변모델_선정/01_improvement_experiments.py 가
+#   ValueError: could not convert string to float: '2세' 로 실패합니다.
+#   2.3.3 은 정상입니다.
+# ─────────────────────────────────────────────────────────────
+
+
+# --- 데이터 처리 ---
+pandas==2.3.3          # 3.x 금지 (위 설명 참고)
+numpy==2.5.2
+
+# --- 머신러닝 ---
+scikit-learn==1.9.0    # 버전 바꾸면 결과가 달라집니다
+scipy==1.18.1
+joblib==1.5.3
+xgboost==3.4.1
+
+# --- 시각화 ---
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# --- 보고서 생성 (docx) ---
+# 03_final_report_docx.py · 05_complete_report.py · 10_make_docx_report.py
+python-docx==1.2.0
+
+# --- API 수집 (src/0_데이터수집) ---
+requests==2.34.2
+python-dotenv==1.2.3
+
+# --- VIF 분석 (선택: 02_correlation_check.py --vif) ---
+statsmodels==0.14.6

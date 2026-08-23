@@ -68,7 +68,7 @@ def main():
 <h3>1-1. 서울 경마장만</h3>
 <table>
 <tr><th>구분</th><th>행 수</th></tr>
-<tr><td>원본 (race_entries.csv)</td><td>56,648</td></tr>
+<tr><td>원본 (data/raw/race_entries.csv.gz)</td><td>56,648</td></tr>
 <tr><td>서울만</td><td>32,888</td></tr>
 </table>
 
@@ -88,7 +88,7 @@ def main():
 <tr><td>비인기마만 (pop_pct >= 0.5)</td><td>~17,000</td><td>~14%</td></tr>
 </table>
 
-<div class="code-block"><pre>df = pd.read_csv("race_entries.csv", low_memory=False)
+<div class="code-block"><pre>df = pd.read_csv("data/raw/race_entries.csv.gz", low_memory=False)
 df = df[df["meet"] == "서울"]
 df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
 df = df[df["pop_pct"] >= 0.5]  # longshots only</pre></div>
@@ -234,7 +234,7 @@ class_weight='balanced'로 불균형 대응.</p>
 
 <div class="good">
 <table>
-<tr><th></th><th>전처리 전 (race_entries.csv)</th><th>전처리 후</th></tr>
+<tr><th></th><th>전처리 전 (data/raw/race_entries.csv.gz)</th><th>전처리 후</th></tr>
 <tr><td>행 수</td><td>56,648</td><td>~17,000 (서울 비인기마만)</td></tr>
 <tr><td>컬럼 수</td><td>156</td><td>~90 (식별자/결과/고상관 제거 후)</td></tr>
 <tr><td>배당률</td><td>14개 컬럼</td><td><strong>q 하나만 포함</strong></td></tr>

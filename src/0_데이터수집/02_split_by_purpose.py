@@ -16,7 +16,7 @@ from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import assign_time_split, SPLIT_RATIOS, RAW_ENTRIES
 
 # ============================================================

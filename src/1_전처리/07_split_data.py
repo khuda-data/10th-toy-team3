@@ -2,7 +2,7 @@
 07_split_data.py — 버전별 CSV를 train/valid/test로 물리적 분리
 
 data/versions/의 각 버전 CSV를 fold 컬럼 기준으로 분리하여
-data/splits/<version>/ 아래에 train.csv, valid.csv, test.csv로 저장한다.
+data/전처리_데이터셋/<version>/ 아래에 train.csv, valid.csv, test.csv로 저장한다.
 
 fold 컬럼은 이미 시간순으로 3분할되어 있으므로 섞지 않고 그대로 사용한다.
 
@@ -117,7 +117,7 @@ def write_split_info(all_stats: list):
     lines.append("## Directory Structure")
     lines.append("")
     lines.append("```")
-    lines.append("data/splits/")
+    lines.append("data/전처리_데이터셋/")
     for v in VERSIONS:
         lines.append(f"├── {v}/")
         lines.append("│   ├── train.csv")
@@ -154,7 +154,7 @@ def write_split_info(all_stats: list):
     lines.append("")
 
     (SPLITS_DIR / "분할안내.md").write_text("\n".join(lines), encoding="utf-8")
-    logger.info(f"  Saved: data/splits/분할안내.md")
+    logger.info(f"  Saved: {SPLITS_DIR / '분할안내.md'}")
 
 
 def main():

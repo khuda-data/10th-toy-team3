@@ -20,12 +20,17 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # config.py 는 같은 폴더
 from config import (
     ID_COLS, MARKET_COLS, DUAL_MARKET_COLS, OUTCOME_COLS,
     TARGET_COL, CATEGORICAL_COLS, RANDOM_STATE,
     assign_time_split, SPLIT_RATIOS,
 )
+
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
@@ -51,7 +56,7 @@ def main():
     logger.info("=" * 60)
 
     # Load full data
-    df = pd.read_csv("race_entries.csv", low_memory=False)
+    df = pd.read_csv(RACE_ENTRIES, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     logger.info(f"  Seoul: {len(df):,} rows")
 

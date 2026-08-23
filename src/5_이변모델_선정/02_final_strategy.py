@@ -16,11 +16,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # config.py 는 같은 폴더
 from config import (
     ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
     RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
 )
+
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
@@ -72,7 +77,7 @@ def main():
         from sklearn.preprocessing import LabelEncoder, StandardScaler
         from sklearn.ensemble import RandomForestClassifier
 
-        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+        sys.path.insert(0, str(Path(__file__).resolve().parent))  # config.py 는 같은 폴더
         from config import (
             ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
             RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
@@ -99,7 +104,7 @@ def main():
             + ["gap_h", "gap_d"]
         )
 
-        df = pd.read_csv("race_entries.csv", low_memory=False)
+        df = pd.read_csv(RACE_ENTRIES, low_memory=False)
         df = df[df["meet"] == "서울"].reset_index(drop=True)
         df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
         df["_winOdds"] = df["winOdds"].copy()

@@ -14,6 +14,11 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
@@ -88,7 +93,7 @@ def main():
 <tr><td>비인기마만 (pop_pct >= 0.5)</td><td>~17,000</td><td>~14%</td></tr>
 </table>
 
-<div class="code-block"><pre>df = pd.read_csv("race_entries.csv", low_memory=False)
+<div class="code-block"><pre>df = pd.read_csv(RACE_ENTRIES, low_memory=False)
 df = df[df["meet"] == "서울"]
 df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
 df = df[df["pop_pct"] >= 0.5]  # longshots only</pre></div>

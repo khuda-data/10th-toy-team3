@@ -24,12 +24,17 @@ from sklearn.metrics import roc_auc_score, f1_score
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import sklearn.base
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # config.py 는 같은 폴더
 from config import (
     ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
     RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
     EXCLUDE_COLS,
 )
+
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
@@ -63,7 +68,7 @@ FULL_EXCLUDE = set(
 
 def load_and_prepare():
     """데이터 로드 + 공통 전처리."""
-    df = pd.read_csv("race_entries.csv", low_memory=False)
+    df = pd.read_csv(RACE_ENTRIES, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
 
     # 타겟 생성
@@ -302,7 +307,7 @@ def main():
     logger.info("=" * 70)
 
     # 인기마 붕괴 모델 (전체 데이터에서 인기마 대상)
-    df_full = pd.read_csv("race_entries.csv", low_memory=False)
+    df_full = pd.read_csv(RACE_ENTRIES, low_memory=False)
     df_full = df_full[df_full["meet"] == "서울"].reset_index(drop=True)
     df_full = df_full.sort_values("rcDate").reset_index(drop=True)
     df_full["fold"] = assign_time_split(df_full, "rcDate", SPLIT_RATIOS)

@@ -15,6 +15,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
@@ -35,7 +40,7 @@ def main():
     logger.info("=" * 60)
 
     # Load
-    df = pd.read_csv("race_entries.csv", usecols=["meet"] + ODDS_COLS, low_memory=False)
+    df = pd.read_csv(RACE_ENTRIES, usecols=["meet"] + ODDS_COLS, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     logger.info(f"  Seoul data: {len(df):,} rows")
 

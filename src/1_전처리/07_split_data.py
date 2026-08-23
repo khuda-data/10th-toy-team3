@@ -11,11 +11,11 @@ fold 컬럼은 이미 시간순으로 3분할되어 있으므로 섞지 않고 �
     python src/1_전처리/07_split_data.py --version v2_standard   # 특정 버전만
 
 출력:
-    data/splits/v1_base/{train,valid,test}.csv
-    data/splits/v2_standard/{train,valid,test}.csv
-    data/splits/v3_minmax/{train,valid,test}.csv
-    data/splits/v4_robust/{train,valid,test}.csv
-    data/splits/분할안내.md
+    data/전처리_데이터셋/v1_base/{train,valid,test}.csv
+    data/전처리_데이터셋/v2_standard/{train,valid,test}.csv
+    data/전처리_데이터셋/v3_minmax/{train,valid,test}.csv
+    data/전처리_데이터셋/v4_robust/{train,valid,test}.csv
+    data/전처리_데이터셋/분할안내.md
 """
 
 import argparse
@@ -25,6 +25,9 @@ from pathlib import Path
 
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from config import VERSIONS_DIR, SPLITS_DIR
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -32,8 +35,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-VERSIONS_DIR = Path("data/versions")
-SPLITS_DIR = Path("data/splits")
 
 VERSIONS = [
     "v1_base", "v2_standard", "v3_minmax", "v4_robust",
@@ -134,9 +135,9 @@ def write_split_info(all_stats: list):
     lines.append("# Choose your version")
     lines.append('VERSION = "v2_standard"  # or v1_base, v3_minmax, v4_robust')
     lines.append("")
-    lines.append('train = pd.read_csv(f"data/splits/{VERSION}/train.csv", encoding="utf-8-sig")')
-    lines.append('valid = pd.read_csv(f"data/splits/{VERSION}/valid.csv", encoding="utf-8-sig")')
-    lines.append('test  = pd.read_csv(f"data/splits/{VERSION}/test.csv",  encoding="utf-8-sig")')
+    lines.append('train = pd.read_csv(f"data/전처리_데이터셋/{VERSION}/train.csv", encoding="utf-8-sig")')
+    lines.append('valid = pd.read_csv(f"data/전처리_데이터셋/{VERSION}/valid.csv", encoding="utf-8-sig")')
+    lines.append('test  = pd.read_csv(f"data/전처리_데이터셋/{VERSION}/test.csv",  encoding="utf-8-sig")')
     lines.append("")
     lines.append("# Separate X and y")
     lines.append('y_train = train["win"]')

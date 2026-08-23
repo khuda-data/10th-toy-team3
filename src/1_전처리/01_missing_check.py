@@ -17,6 +17,9 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from config import RAW_ENTRIES
+
 # 로깅 설정
 logging.basicConfig(
     level=logging.INFO,
@@ -135,7 +138,7 @@ def classify_missing_pattern(
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Missing value check")
-    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
+    parser.add_argument("--input", default=str(RAW_ENTRIES), help="Input CSV path")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

@@ -24,8 +24,9 @@ from sklearn.metrics import roc_auc_score, f1_score
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import sklearn.base
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    RAW_ENTRIES,
     ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
     RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
     EXCLUDE_COLS,
@@ -63,7 +64,7 @@ FULL_EXCLUDE = set(
 
 def load_and_prepare():
     """데이터 로드 + 공통 전처리."""
-    df = pd.read_csv("race_entries.csv", low_memory=False)
+    df = pd.read_csv(RAW_ENTRIES, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
 
     # 타겟 생성
@@ -302,7 +303,7 @@ def main():
     logger.info("=" * 70)
 
     # 인기마 붕괴 모델 (전체 데이터에서 인기마 대상)
-    df_full = pd.read_csv("race_entries.csv", low_memory=False)
+    df_full = pd.read_csv(RAW_ENTRIES, low_memory=False)
     df_full = df_full[df_full["meet"] == "서울"].reset_index(drop=True)
     df_full = df_full.sort_values("rcDate").reset_index(drop=True)
     df_full["fold"] = assign_time_split(df_full, "rcDate", SPLIT_RATIOS)

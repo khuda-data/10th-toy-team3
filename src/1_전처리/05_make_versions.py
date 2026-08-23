@@ -35,8 +35,10 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    DATA_DIR,
+    VERSIONS_DIR,
     ID_COLS, MARKET_COLS, DUAL_MARKET_COLS, OUTCOME_COLS,
     TARGET_COL, CATEGORICAL_COLS,
     assign_time_split, SPLIT_RATIOS, setup_plot_style,
@@ -50,7 +52,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = Path("data/versions")
+OUTPUT_DIR = VERSIONS_DIR
 REPORT_DIR = Path("results/eda")
 
 # ============================================================
@@ -255,7 +257,7 @@ def main():
     logger.info("=" * 60)
 
     # 데이터 로드
-    input_path = Path("data/processed/model_features.csv")
+    input_path = DATA_DIR / "model_features.csv"
     if not input_path.exists():
         logger.error(f"  {input_path} not found.")
         sys.exit(1)

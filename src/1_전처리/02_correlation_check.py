@@ -19,8 +19,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    RAW_ENTRIES,
     ID_COLS, MARKET_COLS, DUAL_MARKET_COLS, OUTCOME_COLS,
     TARGET_COL, setup_plot_style,
 )
@@ -169,7 +170,7 @@ def compute_vif(df_numeric: pd.DataFrame, target_cols: list[str]) -> pd.DataFram
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Correlation check")
-    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
+    parser.add_argument("--input", default=str(RAW_ENTRIES), help="Input CSV path")
     parser.add_argument("--vif", action="store_true", help="Include VIF analysis (beyond textbook)")
     args = parser.parse_args()
 

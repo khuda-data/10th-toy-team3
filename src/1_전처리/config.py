@@ -12,11 +12,39 @@ import pandas as pd
 
 # ============================================================
 # 경로 설정
+#
+# 이 파일은 파이프라인 폴더마다 같은 내용으로 복사돼 있다. 폴더 깊이가
+# src/4_이변모델/ 처럼 2단인 곳과 src/3_시장대조/방향실험/ 처럼 3단인 곳이
+# 섞여 있어서, parent 를 정해진 횟수만큼 올라가면 루트가 어긋난다.
+# 그래서 저장소 표식을 위로 거슬러 찾는다.
 # ============================================================
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+def _find_project_root(start: Path) -> Path:
+    """requirements.txt 와 data/전처리_데이터셋/ 이 함께 있는 가장 가까운 상위 폴더."""
+    for parent in [start, *start.parents]:
+        if (parent / "requirements.txt").is_file() and (parent / "data" / "전처리_데이터셋").is_dir():
+            return parent
+    raise RuntimeError(f"저장소 루트를 찾지 못했습니다. 시작 위치: {start}")
+
+
+PROJECT_ROOT = _find_project_root(Path(__file__).resolve().parent)
+
+# 원천 — 수집한 그대로. 파이프라인은 읽기만 한다
+RAW_DIR = PROJECT_ROOT / "data" / "raw"
+RAW_ENTRIES = RAW_DIR / "race_entries.csv.gz"
+
+# 중간 산출 — 0·1단계 스크립트가 만들어낸다 (저장소에 올리지 않음)
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
+VERSIONS_DIR = PROJECT_ROOT / "data" / "versions"
+
+# 배포용 전처리 데이터셋 — v1~v8 × train/valid/test (저장소에 올림)
+SPLITS_DIR = PROJECT_ROOT / "data" / "전처리_데이터셋"
+
+# 실행 결과 — 그림·지표·모델 (저장소에 올리지 않음)
 RESULTS_DIR = PROJECT_ROOT / "results"
 MODELS_DIR = RESULTS_DIR / "models"
+
+# 보고서
+REPORTS_DIR = PROJECT_ROOT / "reports"
 
 # ============================================================
 # 식별자 — 피처로 절대 사용 금지 (17개)

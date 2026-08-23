@@ -28,8 +28,9 @@ from sklearn.metrics import silhouette_score, roc_auc_score
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier, export_text
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    RAW_ENTRIES,
     ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
     RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
     setup_plot_style, translate_feature_name,
@@ -64,7 +65,7 @@ FULL_EXCLUDE = set(
 
 def load_data():
     """데이터 로드 + 전처리 (02_final_strategy와 동일)."""
-    df = pd.read_csv("race_entries.csv", low_memory=False)
+    df = pd.read_csv(RAW_ENTRIES, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
     df["_winOdds"] = df["winOdds"].copy()

@@ -35,8 +35,9 @@ from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBClassifier
 import matplotlib.pyplot as plt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    VERSIONS_DIR,
     EXCLUDE_COLS, CATEGORICAL_COLS, TARGET_COL, RANDOM_STATE,
     get_feature_cols, setup_plot_style,
 )
@@ -48,7 +49,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-VERSIONS_DIR = Path("data/versions")
+
 OUTPUT_DIR = Path("results/analysis")
 
 VERSIONS = {

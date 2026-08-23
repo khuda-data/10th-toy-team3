@@ -3,13 +3,28 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
+import sys
 from pathlib import Path
 
 from sklearn.metrics import roc_auc_score
 from xgboost import XGBClassifier
 
-from train_market_free_model import FEATURES_50, fit_transform, read_rows, write_selected
+# 01_train_market_free_model.py 는 파일명이 숫자로 시작해 일반 import 가 불가능하다.
+# (폴더별 01_ 번호 규칙을 지키면서 공용 함수를 쓰기 위해 경로로 직접 적재한다)
+_base_spec = importlib.util.spec_from_file_location(
+    "train_market_free_model",
+    Path(__file__).resolve().parent / "01_train_market_free_model.py",
+)
+_base = importlib.util.module_from_spec(_base_spec)
+sys.modules[_base_spec.name] = _base
+_base_spec.loader.exec_module(_base)
+
+FEATURES_50 = _base.FEATURES_50
+fit_transform = _base.fit_transform
+read_rows = _base.read_rows
+write_selected = _base.write_selected
 
 
 def xgb_model():

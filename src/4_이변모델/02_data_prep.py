@@ -20,8 +20,9 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    RAW_ENTRIES,
     ID_COLS, MARKET_COLS, DUAL_MARKET_COLS, OUTCOME_COLS,
     TARGET_COL, CATEGORICAL_COLS, RANDOM_STATE,
     assign_time_split, SPLIT_RATIOS,
@@ -51,7 +52,7 @@ def main():
     logger.info("=" * 60)
 
     # Load full data
-    df = pd.read_csv("race_entries.csv", low_memory=False)
+    df = pd.read_csv(RAW_ENTRIES, low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     logger.info(f"  Seoul: {len(df):,} rows")
 

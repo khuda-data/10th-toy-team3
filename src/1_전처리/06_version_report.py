@@ -9,13 +9,17 @@
 """
 
 import logging
+import sys
 from datetime import datetime
 from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = Path("data/versions")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from config import VERSIONS_DIR
+
+OUTPUT_DIR = VERSIONS_DIR
 
 
 def main():
@@ -183,9 +187,9 @@ y_train = train["win"]
 
 <p class="code-label">또는 이미 분리된 파일 사용:</p>
 <div class="code-block">
-<pre>train = pd.read_csv("data/splits/v6_standard_no_outlier/train.csv", encoding="utf-8-sig")
-valid = pd.read_csv("data/splits/v6_standard_no_outlier/valid.csv", encoding="utf-8-sig")
-test  = pd.read_csv("data/splits/v6_standard_no_outlier/test.csv",  encoding="utf-8-sig")</pre>
+<pre>train = pd.read_csv("data/전처리_데이터셋/v6_standard_no_outlier/train.csv", encoding="utf-8-sig")
+valid = pd.read_csv("data/전처리_데이터셋/v6_standard_no_outlier/valid.csv", encoding="utf-8-sig")
+test  = pd.read_csv("data/전처리_데이터셋/v6_standard_no_outlier/test.csv",  encoding="utf-8-sig")</pre>
 </div>
 
 <!-- ===== 6. 주의사항 ===== -->

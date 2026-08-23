@@ -17,7 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "pipeline"))
-from config import assign_time_split, SPLIT_RATIOS
+from config import assign_time_split, SPLIT_RATIOS, RAW_ENTRIES
 
 # ============================================================
 # 로깅 설정
@@ -261,8 +261,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="race_entries.csv",
-        help="입력 CSV 경로 (기본: race_entries.csv)",
+        default=str(RAW_ENTRIES),
+        help="입력 CSV 경로 (기본: data/raw/race_entries.csv.gz)",
     )
     parser.add_argument(
         "--output-dir",

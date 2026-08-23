@@ -16,8 +16,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
+    RAW_ENTRIES,
     ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
     RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
 )
@@ -72,7 +73,7 @@ def main():
         from sklearn.preprocessing import LabelEncoder, StandardScaler
         from sklearn.ensemble import RandomForestClassifier
 
-        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
         from config import (
             ID_COLS, OUTCOME_COLS, TARGET_COL, CATEGORICAL_COLS,
             RANDOM_STATE, assign_time_split, SPLIT_RATIOS,
@@ -99,7 +100,7 @@ def main():
             + ["gap_h", "gap_d"]
         )
 
-        df = pd.read_csv("race_entries.csv", low_memory=False)
+        df = pd.read_csv(RAW_ENTRIES, low_memory=False)
         df = df[df["meet"] == "서울"].reset_index(drop=True)
         df["upset"] = ((df["pop_pct"] >= 0.5) & (df["win"] == 1)).astype(int)
         df["_winOdds"] = df["winOdds"].copy()

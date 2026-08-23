@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "generated_utc": "2026-08-23T04:45:31.053516+00:00",
+  "passed_checks": 32,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "check": "solution file exists",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2.sln"
+    },
+    {
+      "check": "Python project file exists",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\PythonApplication2.pyproj"
+    },
+    {
+      "check": "recursive Python source include",
+      "status": "PASS"
+    },
+    {
+      "check": "recursive content include: data\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "recursive content include: models\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "recursive content include: outputs\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "persistent summary visible: Project_Reserach.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "persistent summary visible: Report_summary.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "AGENTS.md linked into project",
+      "status": "PASS"
+    },
+    {
+      "check": "key artifact exists: build_revised_v11_seoul_bugyeong_rank_clean_dataset.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\build_revised_v11_seoul_bugyeong_rank_clean_dataset.py"
+    },
+    {
+      "check": "key artifact exists: train_full_rank_models.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_full_rank_models.py"
+    },
+    {
+      "check": "key artifact exists: train_market_anchor_same_test.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_market_anchor_same_test.py"
+    },
+    {
+      "check": "key artifact exists: run_upset_feature_experiment.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_upset_feature_experiment.py"
+    },
+    {
+      "check": "key artifact exists: analyze_v11_venue_stratified.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_v11_venue_stratified.py"
+    },
+    {
+      "check": "key artifact exists: build_revised_v11_complete_html_report.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\build_revised_v11_complete_html_report.py"
+    },
+    {
+      "check": "key artifact exists: validate_revised_v11_complete_html_report.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_revised_v11_complete_html_report.py"
+    },
+    {
+      "check": "key artifact exists: preprocessing_manifest.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json"
+    },
+    {
+      "check": "key artifact exists: model.cbm",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model.cbm"
+    },
+    {
+      "check": "key artifact exists: index.html",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\complete_report\\index.html"
+    },
+    {
+      "check": "key artifact exists: generate_project_references.py",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\project_audit\\generate_project_references.py"
+    },
+    {
+      "check": "key artifact exists: index.html",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.html"
+    },
+    {
+      "check": "key artifact exists: index.pdf",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.pdf"
+    },
+    {
+      "check": "key artifact exists: report_manifest.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\report_manifest.json"
+    },
+    {
+      "check": "key artifact exists: report_data_snapshot.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\report_data_snapshot.json"
+    },
+    {
+      "check": "key artifact exists: report_timeline.html",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\_chronological_reports\\report_timeline.html"
+    },
+    {
+      "check": "all src files covered by recursive include",
+      "status": "PASS",
+      "evidence": {
+        "files_considered": 300,
+        "matched_by_recursive_include": 300
+      }
+    },
+    {
+      "check": "all data files covered by recursive include",
+      "status": "PASS",
+      "evidence": {
+        "files_considered": 179,
+        "matched_by_recursive_include": 179
+      }
+    },
+    {
+      "check": "all models files covered by recursive include",
+      "status": "PASS",
+      "evidence": {
+        "files_considered": 159,
+        "matched_by_recursive_include": 159
+      }
+    },
+    {
+      "check": "all outputs files covered by recursive include",
+      "status": "PASS",
+      "evidence": {
+        "files_considered": 3937,
+        "matched_by_recursive_include": 3937
+      }
+    },
+    {
+      "check": "solution references Python project",
+      "status": "PASS"
+    },
+    {
+      "check": "Solution Explorer source folder declared",
+      "status": "PASS"
+    },
+    {
+      "check": "Solution Explorer output folder declared",
+      "status": "PASS"
+    }
+  ],
+  "compile_patterns": [
+    "PythonApplication2.py",
+    "src\\**\\*.py"
+  ],
+  "content_patterns": [
+    "..\\AGENTS.md",
+    ".gitignore",
+    "archive\\**\\*",
+    "catboost_info\\**\\*",
+    "data\\**\\*",
+    "market_lookup.csv",
+    "models\\**\\*",
+    "outputs\\**\\*",
+    "Project_Reserach.txt",
+    "README.md",
+    "Report_summary.txt",
+    "requirements.txt",
+    "..\\run_log.txt"
+  ],
+  "coverage": {
+    "src": {
+      "files_considered": 300,
+      "matched_by_recursive_include": 300
+    },
+    "data": {
+      "files_considered": 179,
+      "matched_by_recursive_include": 179
+    },
+    "models": {
+      "files_considered": 159,
+      "matched_by_recursive_include": 159
+    },
+    "outputs": {
+      "files_considered": 3937,
+      "matched_by_recursive_include": 3937
+    }
+  },
+  "uncovered": [],
+  "conclusion": "All current src Python files and all data/models/outputs artifacts are covered by recursive MSBuild includes and therefore appear in Visual Studio Solution Explorer."
+}

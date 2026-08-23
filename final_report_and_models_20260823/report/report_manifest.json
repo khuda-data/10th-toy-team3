@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0",
+  "generated_at_kst": "2026-08-23T13:56:13.791438+09:00",
+  "status": "BUILT_FROM_HASHED_EXISTING_EVIDENCE",
+  "research_expansion": false,
+  "new_training": false,
+  "new_backtest": false,
+  "new_postrace_settlement": false,
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.html",
+    "bytes": 268451,
+    "sha256": "7CDDEB7AD0591ABE656E2EE5B3E4ED54D275D369D18B36A867F49009E3870A72",
+    "modified_at_kst": "2026-08-23T13:56:20.009554+09:00"
+  },
+  "snapshot": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\report_data_snapshot.json",
+    "bytes": 166848,
+    "sha256": "472D282D95DA63153C669DCFBF2CDF3E4E11E904714BFF0CFFCDA9503D9FFBB1",
+    "modified_at_kst": "2026-08-23T13:56:20.284653+09:00"
+  },
+  "evidence_inputs": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.html",
+      "bytes": 116743,
+      "sha256": "B6B0B1F8FCCB1D7C68D2CAA8D69D8A13CBB05BAF64403B74D2319B81EA5287F7",
+      "modified_at_kst": "2026-08-23T05:49:47.171464+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\betting_edge_evidence.json",
+      "bytes": 53334,
+      "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13",
+      "modified_at_kst": "2026-08-23T10:27:56.234622+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\betting_edge_evidence.md",
+      "bytes": 31682,
+      "sha256": "388A0065DAEBDFB3D4FCACC9BC2946C8F41BF9D21D1D9D0D9E2CC16FDEEF67E6",
+      "modified_at_kst": "2026-08-23T10:33:12.200494+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\data_model_evidence.json",
+      "bytes": 69515,
+      "sha256": "39E111FA629B1721416A7DDE51A96B490E25F7C92C51DBF3AB111ED177D5426B",
+      "modified_at_kst": "2026-08-23T10:41:37.982856+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\data_model_evidence.md",
+      "bytes": 22064,
+      "sha256": "506EE2EDE103D1881C5CEF77EB8C459FDD9716D4BA2A8D7109C8A8D1CE03D3FD",
+      "modified_at_kst": "2026-08-23T10:41:49.541368+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\chronology_literature_evidence.json",
+      "bytes": 80607,
+      "sha256": "D260BEF37C88DE7D8621F2C0E99388A1A010C3521A3C192EDA0E9AC5A80EA1E5",
+      "modified_at_kst": "2026-08-23T10:49:59.113123+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\chronology_literature_evidence.md",
+      "bytes": 38161,
+      "sha256": "CBCC1EB0F973E61CADC7397601218CA2D9D92008A06742FFE7DCA54E9D05B4E3",
+      "modified_at_kst": "2026-08-23T10:55:33.386688+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\report_build_spec.md",
+      "bytes": 44303,
+      "sha256": "D3E8DDB18922DFA77A265CAE4B0471309773193F29123663F0DB97EA0125218C",
+      "modified_at_kst": "2026-08-23T10:51:32.623428+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\build_final_comprehensive_research_report.py",
+      "bytes": 97646,
+      "sha256": "A37D203A3731CDEB3A4FEA96CCA99719439590B8E6BDCB375ED7D6BB1EDF5524",
+      "modified_at_kst": "2026-08-23T13:30:21.724675+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\final_report_context_supplement.py",
+      "bytes": 18129,
+      "sha256": "022A697708D724E84A3D12D09EEC66767AB829452A96FE2DC7BA0648EA86C5FA",
+      "modified_at_kst": "2026-08-23T13:55:13.019670+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\final_report_supplements.py",
+      "bytes": 55786,
+      "sha256": "E7C67410EB3316734DADA49F92A4FA23A4D72D0913AEF50C81AC861971B41A74",
+      "modified_at_kst": "2026-08-23T13:55:12.162605+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_final_comprehensive_research_report.py",
+      "bytes": 47169,
+      "sha256": "FA0CDF67B46C8FEB6FEF0B180ED204F13E249F0E427AA21068A328F2681D3147",
+      "modified_at_kst": "2026-08-23T13:04:26.641776+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\render_validate_final_comprehensive_report_pdf.py",
+      "bytes": 5874,
+      "sha256": "5441B6E00D4EAD8A14CB89BA9ECF12E795C141DEA612BCEF3E39ED9D2E33F2A7",
+      "modified_at_kst": "2026-08-23T12:03:13.074967+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\finalize_final_comprehensive_report.py",
+      "bytes": 16526,
+      "sha256": "12C2B9051AB41BE338B328F9C86B7E70B543128B9F8E0E6187957D84F1CCBE34",
+      "modified_at_kst": "2026-08-23T12:54:52.957615+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\20260823_prospective_master_registry\\independent_validation.json",
+      "bytes": 234064,
+      "sha256": "1BCD2E4A8F48ADC3CDE228D004C7E034D0E69C97D844438829075720C8634CAE",
+      "modified_at_kst": "2026-08-23T10:14:02.584967+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_h18_settlement_cross_component_audit_20260823\\cross_component_audit_v2.json",
+      "bytes": 3062,
+      "sha256": "2802DF250FA7296F863BFE37BBE091DE02EF0ABA45D6C1FC91EE900189D860AA",
+      "modified_at_kst": "2026-08-23T10:09:42.131336+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\all_bet_types\\bet_type_edge_analysis\\bet_type_model_vs_market_summary.csv",
+      "bytes": 76867,
+      "sha256": "D1ED950C1F425522FFEB8E8DD93CC55AAD64EC200BF2F23F2F05405E68C2A480",
+      "modified_at_kst": "2026-08-22T21:00:21.881234+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\locked_policy_test_results.csv",
+      "bytes": 4458,
+      "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711",
+      "modified_at_kst": "2026-08-22T21:01:18.115587+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\locked_test_results.csv",
+      "bytes": 3056,
+      "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3",
+      "modified_at_kst": "2026-08-22T21:03:10.260887+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\odds_8_15_v11_revalidation_20260823\\summary.json",
+      "bytes": 3159,
+      "sha256": "9759A61D7F033640E13A0F40A39F2E5F58A2904BC962688B805E5C8AF8172FF5",
+      "modified_at_kst": "2026-08-23T01:23:12.266841+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\benter_market_anchored_20260820\\backtest_summary.json",
+      "bytes": 572,
+      "sha256": "698998A4317C94D3F487A3F5C47C26D1BF5F1A5DEF0E1F0BE8F0284C749F4E5C",
+      "modified_at_kst": "2026-08-21T01:45:25.924042+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\base_margin_profit_20260821\\summary.json",
+      "bytes": 4724,
+      "sha256": "02FFBDF4951A8C5AB73E9589D387B473AB519CD3DF52DCFF37C7A41CAE452C2F",
+      "modified_at_kst": "2026-08-22T01:45:28.077298+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_bet_summary_independently_verified.csv",
+      "bytes": 51824,
+      "sha256": "43156E590245ED171F44DD37F625F659E914BDA9666C92E1BC62F38CCD0BD29B",
+      "modified_at_kst": "2026-08-22T21:26:18.251911+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\fresh_all_bet_summary.csv",
+      "bytes": 5555,
+      "sha256": "03AF315EF2701EF6B0F25A5A4ADAA22BAE4E5A634334718B7607B8F4B856B916",
+      "modified_at_kst": "2026-08-23T05:24:56.074199+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\fresh_all_bet_summary.csv",
+      "bytes": 5374,
+      "sha256": "9B13C791CD70B62DEE0C34B91F0BC1801C44F0AC477CB60E05857F26322F95B3",
+      "modified_at_kst": "2026-08-23T06:32:19.804601+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_rank_metrics.csv",
+      "bytes": 7331,
+      "sha256": "4A884AADA4FA9FE78258700F6C91478B161CA6ABBB3A438ED4E1D7FFE660FB93",
+      "modified_at_kst": "2026-08-22T21:30:48.295833+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_anchor_metrics.csv",
+      "bytes": 3188,
+      "sha256": "BD149ADFA809713B8EA3E45F167DAE6F7C5BB01C716DFA58B019200AE1C635C2",
+      "modified_at_kst": "2026-08-22T21:30:48.297843+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_betting_metrics.csv",
+      "bytes": 97914,
+      "sha256": "A2449917588DAE596277576917CC5CB992EAAA91E6D0419A08AD10B80E96AC14",
+      "modified_at_kst": "2026-08-22T21:30:48.303281+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv",
+      "bytes": 2154,
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6",
+      "modified_at_kst": "2026-08-22T21:02:59.865288+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\test_probability_metrics.csv",
+      "bytes": 2864,
+      "sha256": "CC325ED70906052CE11CEEE461DF35E7C9463BC4D420504F41FBA457A4035B7F",
+      "modified_at_kst": "2026-08-23T03:35:21.771139+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\test_probability_metrics.csv",
+      "bytes": 1918,
+      "sha256": "0A8577F2B08441F2B5EA7251C2961B2BC3B7B55464829F9EDE0DDD51707CFFA4",
+      "modified_at_kst": "2026-08-23T03:49:32.965805+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\test_probability_metrics.csv",
+      "bytes": 1514,
+      "sha256": "289132ACA542C0F14CB0DC4E1C1D15416C04B783706794E772D6CC90B5497017",
+      "modified_at_kst": "2026-08-23T03:57:04.463902+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_origin_market_challenger_20260823\\experiment_summary.json",
+      "bytes": 8027,
+      "sha256": "DE8A1DA5DA815D5DB930BC7C57E10ECC5C379FB3EAB0062A30DC308D99D83C3B",
+      "modified_at_kst": "2026-08-23T04:40:31.412207+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\experiment_summary.json",
+      "bytes": 7632,
+      "sha256": "2B36C14E36A3942A06CC21720A49B06BC3FABF50803C2AA2E41CD723958812DB",
+      "modified_at_kst": "2026-08-23T04:32:27.668240+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\experiment_summary.json",
+      "bytes": 2699,
+      "sha256": "F35A63957A573A07A42A8A756ABD03897330DE1BB34624E559388B7BAC8DAFD7",
+      "modified_at_kst": "2026-08-23T05:29:08.199220+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\independent_audit\\independent_locked_policy_replay.csv",
+      "bytes": 6482,
+      "sha256": "8823B7C808512F81BDB266C4A625FE684C605ED3ABCD03851A02243440C33CC8",
+      "modified_at_kst": "2026-08-23T03:36:08.816577+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\independent_audit\\independent_locked_policy_replay.csv",
+      "bytes": 6946,
+      "sha256": "F437FC0F4A245C1E578A00EEE268049209AC9644DDBF387AE2719687DD97D65F",
+      "modified_at_kst": "2026-08-23T03:50:04.290699+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\independent_audit\\independent_locked_policy_replay.csv",
+      "bytes": 6919,
+      "sha256": "6FD01EBDBC9C4ADCAD18BE43DA9EA00585CBEFC651B4475969C55069AB5A57FA",
+      "modified_at_kst": "2026-08-23T03:57:33.842982+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\feature_importance.csv",
+      "bytes": 24581,
+      "sha256": "D2689DFB398611B8CF519E1081C258A9AC2FD9E3BEEE60DCAA5CBC3B8CA6AADC",
+      "modified_at_kst": "2026-08-23T03:35:21.784148+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\validation_permutation_importance.csv",
+      "bytes": 9832,
+      "sha256": "63F8BDD2FD72E144ADACEC2BCD76449C349C15C46005069A09E2183D31831010",
+      "modified_at_kst": "2026-08-23T03:49:03.877153+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\experiment_summary.json",
+      "bytes": 8678,
+      "sha256": "25B5D46725763BA394C1EEADEB7F9A20DBDFEBCAA1669250AF5FAC064FD9C3C4",
+      "modified_at_kst": "2026-08-23T06:54:34.435706+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_cutoff_metrics.csv",
+      "bytes": 2435,
+      "sha256": "90B934640E17D6B0F679926A1CD75602F15CE5E89E851D19AFED2BB2004428F5",
+      "modified_at_kst": "2026-08-23T07:08:12.103275+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_paired_metrics.csv",
+      "bytes": 842,
+      "sha256": "60E2D3D47CA69E343DAE5F5AAEBDDE5A8FA6CF7020805CC13F02F4A43CF2C713",
+      "modified_at_kst": "2026-08-23T07:08:12.104396+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\experiment_summary.json",
+      "bytes": 13042,
+      "sha256": "E6DC0EB447578F4CFBB22149D08FDAF1999DA18B3CD060A3AAFC68C046EB680B",
+      "modified_at_kst": "2026-08-23T07:34:32.610625+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h13_market_anchor_nonnegative_log_pool_preregistered_20260823\\experiment_summary.json",
+      "bytes": 13628,
+      "sha256": "24D54C8B82DF2580C96FA783410C552C478545F82329B5B443A73E000A58CE05",
+      "modified_at_kst": "2026-08-23T07:52:17.130896+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h14_convex_market_residual_pool_preregistered_20260823\\experiment_summary.json",
+      "bytes": 18416,
+      "sha256": "E2B2105022C7EDF9BB3B13149CB9831577F74A246AEFE4A1DAEC9C12C159AFFD",
+      "modified_at_kst": "2026-08-23T08:09:45.379777+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h17_ridge_convex_market_residual_pool_preregistered_20260823\\experiment_summary.json",
+      "bytes": 25395,
+      "sha256": "C35CC9D66CA42778D6C08432905D03C62BBA9239406CAA13ED006A9E784B64BA",
+      "modified_at_kst": "2026-08-23T08:37:43.444771+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_feature_importance.csv",
+      "bytes": 14991,
+      "sha256": "DF1CCF962FAEB714686919AACE244AC0E84DAD2CD111BD27A7A738D118354DBE",
+      "modified_at_kst": "2026-08-22T21:21:15.614828+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\independent_audit\\payout_slippage_sensitivity.csv",
+      "bytes": 10870,
+      "sha256": "1508BC53124775866BD20A495BBD477F9EA09CFB1C83330C4A524C3A4074C784",
+      "modified_at_kst": "2026-08-23T03:50:04.386351+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_prospective_odds.py",
+      "bytes": 36256,
+      "sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+      "modified_at_kst": "2026-08-23T11:16:14.229014+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_installation_manifest.json",
+      "bytes": 2302,
+      "sha256": "9B905BF21A5A49BF0477D25EACB82D8D3B37173E7A67B283F21BD045C71EFA3A",
+      "modified_at_kst": "2026-08-23T07:10:20.951008+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\freeze_h16_prospective_all_model_seven_bet_tickets.py",
+      "bytes": 50196,
+      "sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+      "modified_at_kst": "2026-08-23T08:34:52.071118+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\h16_freezer_freeze_before_first_t5.json",
+      "bytes": 3054,
+      "sha256": "517E97196CEA52D0DA611B499DADBBBFBDE16687484640F0243F258E15E3F5C3",
+      "modified_at_kst": "2026-08-23T08:36:38.661403+09:00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\watcher_installation_manifest_before_first_t5.json",
+      "bytes": 3367,
+      "sha256": "18B9B4CB512911389662323550844C6E2D99CFD8F1AA256E63A985940BD1399C",
+      "modified_at_kst": "2026-08-23T08:38:45.067403+09:00"
+    }
+  ],
+  "prospective_boundary": {
+    "official_postrace_settlement": "NOT_RUN_PER_FINALIZATION_GOAL",
+    "roi": "NOT_MEASURED",
+    "downstream_target_outcome_result_dividend_reads": 0,
+    "scheduler_terminal_status": "SCHEDULER_ACTIVE",
+    "scheduler_capture_complete": false,
+    "planned_source_key_count": 170,
+    "successful_http_source_slots": 42,
+    "attempted_unique_source_slots": 76,
+    "processed_unique_source_slots": 76,
+    "network_exception_source_slots": 34,
+    "outcome_fetch_blocked_source_slots": 0,
+    "missing_planned_source_key_count": 94,
+    "unexpected_terminal_source_key_count": 0,
+    "t5_successful_http_source_slots": 8,
+    "t5_processed_source_slots": 16,
+    "t5_processed_races": 8,
+    "collector_terminal_snapshot_audits": 11,
+    "quinella_incomplete_pair_grid_records": 6,
+    "scheduled_offset_tolerance_violation_records": 2,
+    "operational_incidents": {
+      "collector": {
+        "permission_error_count": 3,
+        "fatal_times_kst": [
+          "2026-08-23T11:12:05.763173+09:00",
+          "2026-08-23T12:34:04.568799+09:00",
+          "2026-08-23T13:01:38.606360+09:00"
+        ],
+        "start_count": 4,
+        "manual_restart_count": 3,
+        "start_pids": [
+          14124,
+          20976,
+          22888,
+          14000
+        ],
+        "restart_times_kst": [
+          "2026-08-23T11:16:47.113811+09:00",
+          "2026-08-23T12:35:44.093638+09:00",
+          "2026-08-23T13:02:43.486561+09:00"
+        ],
+        "current_pid": 14000,
+        "next_due_kst": "2026-08-23T13:58:00+09:00",
+        "post_latest_restart_source_unavailable_count": 26,
+        "post_latest_restart_source_unavailable_details": [
+          "win_place meet=1 race=4 T-20 HTTP=None code=None",
+          "quinella meet=1 race=4 T-20 HTTP=None code=None",
+          "win_place meet=1 race=4 T-10 HTTP=None code=None",
+          "quinella meet=1 race=4 T-10 HTTP=None code=None",
+          "win_place meet=1 race=4 T-5 HTTP=None code=None",
+          "quinella meet=1 race=4 T-5 HTTP=None code=None",
+          "win_place meet=1 race=4 T-2 HTTP=None code=None",
+          "quinella meet=1 race=4 T-2 HTTP=None code=None",
+          "win_place meet=1 race=4 T-1 HTTP=None code=None",
+          "quinella meet=1 race=4 T-1 HTTP=None code=None",
+          "win_place meet=3 race=3 T-20 HTTP=None code=None",
+          "quinella meet=3 race=3 T-20 HTTP=None code=None",
+          "win_place meet=3 race=3 T-10 HTTP=None code=None",
+          "quinella meet=3 race=3 T-10 HTTP=None code=None",
+          "win_place meet=3 race=3 T-5 HTTP=None code=None",
+          "quinella meet=3 race=3 T-5 HTTP=None code=None",
+          "win_place meet=3 race=3 T-2 HTTP=None code=None",
+          "quinella meet=3 race=3 T-2 HTTP=None code=None",
+          "win_place meet=3 race=3 T-1 HTTP=None code=None",
+          "quinella meet=3 race=3 T-1 HTTP=None code=None",
+          "win_place meet=1 race=5 T-20 HTTP=None code=None",
+          "quinella meet=1 race=5 T-20 HTTP=None code=None",
+          "win_place meet=1 race=5 T-10 HTTP=None code=None",
+          "quinella meet=1 race=5 T-10 HTTP=None code=None",
+          "win_place meet=1 race=5 T-5 HTTP=None code=None",
+          "quinella meet=1 race=5 T-5 HTTP=None code=None"
+        ],
+        "post_latest_restart_t10_source_unavailable_count": 6,
+        "post_latest_restart_t10_source_unavailable_times_kst": [
+          "2026-08-23T13:02:52.263011+09:00",
+          "2026-08-23T13:02:54.712044+09:00",
+          "2026-08-23T13:25:02.116514+09:00",
+          "2026-08-23T13:25:04.530010+09:00",
+          "2026-08-23T13:50:02.268255+09:00",
+          "2026-08-23T13:50:04.959818+09:00"
+        ],
+        "frozen_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+        "observed_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+        "frozen_source_match": true,
+        "command_line_expected_module_output_root_markers_match": true,
+        "same_frozen_source_restart_evidenced": true,
+        "restart_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+        ],
+        "evidence_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\phase_progress.jsonl",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_installation_manifest.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_state.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\scheduler_heartbeat.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_prospective_odds.py",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+        ]
+      },
+      "h16": {
+        "permission_error_count": 3,
+        "error_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log"
+        ],
+        "activation_count": 5,
+        "activation_pids": [
+          33432,
+          33348,
+          35988,
+          31444,
+          31660
+        ],
+        "manual_restart_count": 3,
+        "manual_restart_pids": [
+          35988,
+          31444,
+          31660
+        ],
+        "current_saved_state_pid": 31660,
+        "current_saved_state_status": "WATCHER_ACTIVE",
+        "frozen_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "installation_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "observed_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "frozen_protocol_sha256": "160722007A520D4A3B4BB810927EBF9BBCFC61654ADA9D9E87C8C48C1C96EDF2",
+        "restart_protocol_prefixes": [
+          "160722007A52",
+          "160722007A52",
+          "160722007A52"
+        ],
+        "restart_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+        ],
+        "same_frozen_source_restart_evidenced": true,
+        "evidence_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\h16_freezer_freeze_before_first_t5.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\watcher_installation_manifest_before_first_t5.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\ticket_freeze_watcher.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\ticket_watcher_state.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\freeze_h16_prospective_all_model_seven_bet_tickets.py",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+        ]
+      }
+    },
+    "live_stake": 0
+  }
+}

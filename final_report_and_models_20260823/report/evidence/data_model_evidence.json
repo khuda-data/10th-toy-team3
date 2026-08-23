@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "finalization_only_data_model_evidence",
+  "generated_at_kst": "2026-08-23T10:30:06.2790497+09:00",
+  "workspace_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2",
+  "scope": {
+    "requested_inventory": [
+      "datasets and preprocessing integrity",
+      "chronology and split integrity",
+      "leakage audits",
+      "actual model-training methods, counts, artifacts, and logs",
+      "rank and probability metrics",
+      "market-baseline comparisons"
+    ],
+    "new_training_run": false,
+    "new_backtest_run": false,
+    "new_research_run": false,
+    "method": "Read-only inventory and arithmetic-free transcription of already-existing CSV, JSON, source, model, and log artifacts; only this evidence JSON and its Markdown digest were created.",
+    "evidence_rule": "A number is included only when it is present in a cited existing artifact. Current file SHA-256 values were recomputed read-only where listed."
+  },
+  "executive_verdict": {
+    "canonical_dataset": "revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+    "dataset_integrity_status": "PASS",
+    "dataset_rows": 56456,
+    "dataset_races": 5343,
+    "venues": ["서울", "부경"],
+    "model_feature_count": 141,
+    "full_rank_models_actually_trained_and_reloaded": 6,
+    "full_rank_validation_checks_passed": 203,
+    "market_columns_in_ordinary_feature_matrix": [],
+    "strict_target_encoding_checks": "60/60 PASS",
+    "best_test_ndcg_at_5": {
+      "model": "catboost_rank",
+      "value": 0.778035945383817
+    },
+    "best_test_mean_spearman": {
+      "model": "catboost_rank",
+      "value": 0.4553030268638837
+    },
+    "lowest_test_rank_mae": {
+      "model": "catboost_rank",
+      "value": 2.439986501412461
+    },
+    "best_test_top3_ordered_exact": {
+      "model": "lightgbm_rank",
+      "value": 0.017625231910946195
+    },
+    "best_test_top3_unordered_exact": {
+      "model": "deep_ranknet",
+      "value": 0.07792207792207792
+    },
+    "best_test_top1_hit": {
+      "model": "xgboost_rank",
+      "value": 0.3153564899451554
+    },
+    "market_comparison_bottom_line": "The v11 market-anchor experiments report positive retrospective delta log likelihood in several reused validation/test analyses, but ordinary full-rank model selections trail the market on test win/place hit rate and selected-event Brier. No cited result establishes pristine forward profitability; every cited deployment recommendation remains stake=0 or NO_GO.",
+    "independent_confirmation_status": "NOT ESTABLISHED: TEST and late-VALID blocks were already inspected/reused; fresh64 was an already-observed optional continuation; prospective target outcomes were not scored in the frozen artifacts cited here."
+  },
+  "canonical_dataset": {
+    "relative_root": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+    "absolute_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+    "dataset_name": "revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+    "source_chain": {
+      "raw_dataset": "data/revised_v10_seoul_bugyeong",
+      "base_dataset": "data/revised_v10_seoul_bugyeong_preprocessed",
+      "finish_order_reference": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+      "finish_order_reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+      "reference_role": "finish-order label reference; label column ord",
+      "target": "full finish order"
+    },
+    "coverage": {
+      "meet_codes": [1, 3],
+      "meet_names": ["서울", "부경"],
+      "total_rows": 56456,
+      "total_races": 5343,
+      "source_feature_count": 140,
+      "provisional_feature_count": 157,
+      "selected_model_feature_count": 141
+    },
+    "split_files": [
+      {
+        "split": "train",
+        "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 85442937,
+        "sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "rows": 33416,
+        "races": 3158,
+        "date_min": 20230805,
+        "date_max": 20250511,
+        "meet_rows": {"서울": 19617, "부경": 13799},
+        "meet_races": {"서울": 1891, "부경": 1267},
+        "complete_1_to_n_races": 3125,
+        "tied_or_gapped_races": 33,
+        "invalid_zero_or_nan_races": 0,
+        "metadata_relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/train_metadata.csv",
+        "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+      },
+      {
+        "split": "valid",
+        "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 28957996,
+        "sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "rows": 11345,
+        "races": 1084,
+        "date_min": 20250517,
+        "date_max": 20251227,
+        "meet_rows": {"서울": 6582, "부경": 4763},
+        "meet_races": {"서울": 641, "부경": 443},
+        "complete_1_to_n_races": 1076,
+        "tied_or_gapped_races": 8,
+        "invalid_zero_or_nan_races": 0,
+        "metadata_relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/valid_metadata.csv",
+        "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+      },
+      {
+        "split": "test",
+        "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 29861350,
+        "sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "rows": 11695,
+        "races": 1101,
+        "date_min": 20251228,
+        "date_max": 20260809,
+        "meet_rows": {"서울": 6639, "부경": 5056},
+        "meet_races": {"서울": 635, "부경": 466},
+        "complete_1_to_n_races": 1078,
+        "tied_or_gapped_races": 16,
+        "invalid_zero_or_nan_races": 7,
+        "rank_evaluation_rows": 11628,
+        "rank_evaluation_races": 1094,
+        "metadata_relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/test_metadata.csv",
+        "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+      }
+    ],
+    "preprocessing_integrity": {
+      "status": "PASS",
+      "fit_scope": "All imputation, scaling, target encoding, correlation pruning, and reference decisions use training data only.",
+      "selection_used_validation_or_test_statistics": false,
+      "all_split_feature_dtypes_numeric": true,
+      "nan_model_values_by_split": {"train": 0, "valid": 0, "test": 0},
+      "infinite_model_values_by_split": {"train": 0, "valid": 0, "test": 0},
+      "finish_order_aligned_with_metadata": true,
+      "win_equals_finish_order_1": true,
+      "pool_features_removed_before_selection": ["winAmt", "plcAmt", "totalAmt", "log_winAmt", "liq_per_horse"],
+      "correlation": {
+        "method": "Pearson on training model features only",
+        "threshold_absolute": 0.95,
+        "pairs_before_pruning": 16,
+        "pairs_after_pruning": 0,
+        "exact_duplicate_pairs_after_pruning": 0,
+        "constant_features_after_pruning": 0,
+        "direct_recheck_max_absolute_pairwise_correlation": 0.9378611763704204,
+        "direct_recheck_max_pair": ["jk_winrate__z", "jk_winrate__pr"],
+        "high_correlation_features_dropped": [
+          "race_field_size", "hr_last_ord", "wg__pr", "wg_diff__z", "wgBudam__z", "age__z", "rating__pr", "tr_winrate__pr", "train_runs_14__pr", "style_vs_race__missing", "race_style_mean__missing", "race_front_ratio__missing", "oh_budam_별정A", "oh_meet_서울", "hr_winrate__pr__missing"
+        ],
+        "one_hot_reference_columns_dropped": ["ageCond_연령오픈"]
+      },
+      "scaling_direct_recheck": {
+        "numeric_nonconstant_candidates": 141,
+        "standardized_columns": 127,
+        "unit_interval_columns": 14,
+        "interpretation": "Binary/unit-interval columns were not forced to zero mean and unit variance. This is not a preprocessing failure; standard scaling is also not required by tree models."
+      },
+      "strict_target_encoding": {
+        "status": "PASS",
+        "checks_passed": 60,
+        "checks_total": 60,
+        "features": ["te_jkName", "te_trName", "te_owName", "te_rank"],
+        "smoothing": 20.0,
+        "train_rule": "All entries on a date are encoded before that date's outcomes update history; only strictly earlier dates contribute.",
+        "valid_test_rule": "Full training mapping only; validation and test outcomes never update the mapping.",
+        "standardized_reproduction_max_absolute_difference": {
+          "train": 8.881784197001252e-16,
+          "valid": 4.440892098500626e-16,
+          "test": 4.440892098500626e-16
+        },
+        "same_date_and_future_counterfactual_max_difference": 0.0,
+        "validation_test_label_counterfactual_max_difference": 0.0,
+        "unseen_fallback": {
+          "te_jkName": {"valid_rows": 448, "valid_fraction": 0.039488761568973116, "test_rows": 1412, "test_fraction": 0.12073535699016674},
+          "te_trName": {"valid_rows": 350, "valid_fraction": 0.030850594975760245, "test_rows": 929, "test_fraction": 0.07943565626336041},
+          "te_owName": {"valid_rows": 142, "valid_fraction": 0.0125165271044513, "test_rows": 405, "test_fraction": 0.03463018383924754},
+          "te_rank": {"valid_rows": 0, "valid_fraction": 0.0, "test_rows": 0, "test_fraction": 0.0},
+          "all_fallback_max_absolute_difference_from_training_prior": 0.0
+        }
+      },
+      "audit_checks": {
+        "run_dataset_audit": "40/40 PASS",
+        "full_rank_final_validation": "203/203 PASS"
+      },
+      "evidence_ids": ["E01", "E02", "E03", "E04", "E05", "E06", "E14"]
+    },
+    "git_dataset_comparison": {
+      "status": "PASS_WITH_LIMITATIONS",
+      "recorded_winner": "current_revised_v11",
+      "reason": "It is the only materialized model matrix in the comparison with zero nonnumeric, missing, and infinite feature cells plus explicit train-only |Pearson| >= 0.95 pruning to zero remaining pairs.",
+      "git_canonical_runtime_transform": {
+        "rows": 32888,
+        "races": 3172,
+        "registered_pre_race_features": 112,
+        "source_string_feature_columns": 13,
+        "source_missing_feature_cells": 100754,
+        "transformed_feature_columns": 554,
+        "transformed_non_numeric_columns": 0,
+        "transformed_nan_cells": 0,
+        "transformed_infinite_cells": 0,
+        "raw_train_pairs_abs_ge_0_95": 25,
+        "raw_train_pairs_abs_ge_0_999999": 4,
+        "correlation_pruning_implemented": false
+      },
+      "comparison_limit": "Not like-for-like: Git is an interim source plus a runtime transformer; v11 is a materialized matrix. Tree pipelines may intentionally omit scaling. Pairwise Pearson pruning does not prove absence of nonlinear redundancy or multivariate collinearity.",
+      "evidence_ids": ["E14"]
+    }
+  },
+  "chronology_and_leakage": {
+    "split_order": "train 2023-08-05..2025-05-11 < valid 2025-05-17..2025-12-27 < test 2025-12-28..2026-08-09",
+    "strict_chronology": true,
+    "entry_or_race_overlap_across_splits": 0,
+    "preprocessor_fit_on_training_only": true,
+    "market_or_result_columns_in_full_rank_X": [],
+    "rank_labels_in_features": false,
+    "market_anchor_role": "q is race-normalized inverse closing win odds and enters as a fixed log(q) offset/base margin, not as an ordinary learned feature column.",
+    "market_q_identity_max_absolute_error": 2.7755575615628914e-16,
+    "known_non_pristine_evaluation_boundaries": [
+      "The v11 TEST period was inspected and reused across project rounds; it is retrospective robustness evidence, not an untouched confirmation sample.",
+      "H10A fresh64 was already observed optional-continuation data and is explicitly post hoc, not pristine confirmation.",
+      "H11D, H13, H14, and H17 use a late-VALID 28-day block that was reused after H11D; later comparisons are descriptive, not independent.",
+      "H11D parsed zero TEST rows, but a pre-analysis whole-file Get-FileHash operation physically streamed bytes covering the TEST region. No TEST row was decoded or used in metrics, but strict whole-turn TEST-region physical I/O was not zero.",
+      "Closing odds define q and odds bands. They are not timestamped executable decision-time quotes."
+    ],
+    "prospective_card_audit_at_h11b_freeze": {
+      "target_date": 20260823,
+      "entry_card_relative_path": "data/raw_prospective_oos_20260823/entry_card_rows.csv",
+      "entry_card_sha256": "F67B08A82A661B56561351E1CD7C0E833499FE6A8BBA8AF63A5A2F47458B1F20",
+      "rows": 176,
+      "races": 17,
+      "duplicate_entry_ids": 0,
+      "missing_age": 0,
+      "missing_wgBudam": 0,
+      "missing_hrNo": 0,
+      "missing_owName": 2,
+      "unknown_owner_rows_using_train_prior": 12,
+      "unknown_owner_levels": 9,
+      "burden_prior_known_rows": 157,
+      "burden_fallback_rows": 19,
+      "transformed_nonfinite_values": 0,
+      "outcome_or_market_columns_read": [],
+      "outcomes_or_settlement_read_at_freeze": false,
+      "warning": "This is a point-in-time H11B freeze artifact, not proof that later prospective watcher/scoring work remained unchanged."
+    },
+    "evidence_ids": ["E04", "E05", "E10", "E15", "E16", "E17", "E22"]
+  },
+  "actual_training_inventory": {
+    "full_rank_v11": {
+      "status": "PASS",
+      "target": "complete/full finish order from ord",
+      "ordinary_feature_count": 141,
+      "fit_train_rows": 33416,
+      "models_trained_and_reloaded": 6,
+      "final_validation_checks": 203,
+      "test_rows_reloaded_per_model": 11695,
+      "reload_max_score_difference_over_all_models": 4.440892098500626e-16,
+      "source": {
+        "relative_path": "src/training/train_full_rank_models.py",
+        "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_full_rank_models.py",
+        "sha256": "37E0C01927AC8AFFEE364813526BC4BEB819B737065949E2D6BB3A7E860011DF"
+      },
+      "models": [
+        {
+          "model_key": "random_forest_rank",
+          "method": "RandomForestRegressor on normalized finish-percentile target; prediction sign inverted so lower predicted position ranks higher",
+          "source_lines": "221-243",
+          "parameters": {"n_estimators": 500, "max_depth": 14, "min_samples_leaf": 8, "max_features": 0.8, "random_state": 42, "n_jobs": 1},
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/01_random_forest_rank_training.log",
+          "completion_log_sha256": "DFACA946ECEA2AA4FA8BBDA6EC9203ABAE46E919899EDA9488290DA9A0A20D59",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/random_forest_rank/model.joblib",
+          "artifact_bytes": 94813921,
+          "artifact_sha256": "9113491AC1C8057603F9BC557F60D595CE5B78A374197EE147E0047C9930B431",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "xgboost_rank",
+          "method": "XGBRanker with race qid and rank:ndcg objective using graded relevance derived from every finish order",
+          "source_lines": "246-276",
+          "parameters": {"objective": "rank:ndcg", "eval_metric": "ndcg@5", "n_estimators": 2000, "learning_rate": 0.03, "max_depth": 6, "min_child_weight": 5, "subsample": 0.8, "colsample_bytree": 0.8, "reg_lambda": 1.0, "early_stopping_rounds": 120, "random_state": 42, "tree_method": "hist"},
+          "best_iteration_count": 448,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/02_xgboost_rank_training.log",
+          "completion_log_sha256": "E35E40D8E7D5123FA9539DE7D1EFFFA37A37BB1DD6F51F5878A2FAB6796B4C92",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/xgboost_rank/model.json",
+          "artifact_bytes": 3351817,
+          "artifact_sha256": "8EF76EEC934EAA81F5343CBCCAEC8BA5AD00191864AB3472BD29C93F300039A5",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "lightgbm_rank",
+          "method": "LightGBM LambdaRank with race groups and graded full-order relevance",
+          "source_lines": "279-313",
+          "parameters": {"objective": "lambdarank", "metric": "ndcg", "ndcg_eval_at": [1, 3, 5], "learning_rate": 0.03, "num_leaves": 127, "min_data_in_leaf": 35, "feature_fraction": 0.8, "bagging_fraction": 0.8, "bagging_freq": 1, "lambda_l1": 0.1, "lambda_l2": 1.0, "lambdarank_truncation_level": 16, "num_boost_round": 3000, "early_stopping_rounds": 150, "seed": 42},
+          "best_iteration_count": 54,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/03_lightgbm_rank_training.log",
+          "completion_log_sha256": "66897A52265E0A83E935F1120930034D1BD50B2590B0AA4DCD000D55B7DAE7A1",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/lightgbm_rank/model.txt",
+          "artifact_bytes": 760032,
+          "artifact_sha256": "42CEF0535C8AD34A08A7149C04946D7F6D03DF06D7ADB9A7D18FA3270EE8046A",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "catboost_rank",
+          "method": "CatBoostRanker YetiRankPairwise with race group_id and full-order graded relevance",
+          "source_lines": "316-346",
+          "parameters": {"loss_function": "YetiRankPairwise", "eval_metric": "NDCG:top=5", "iterations": 2500, "learning_rate": 0.03, "depth": 7, "l2_leaf_reg": 5.0, "random_seed": 42, "od_wait": 150},
+          "best_iteration_zero_based": 767,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/04_catboost_rank_training.log",
+          "completion_log_sha256": "8CAE2A78AEDFC4B442AFC43AF548F1AD26D3606846AAF836C030402F21129A8E",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/catboost_rank/model.cbm",
+          "artifact_bytes": 1715736,
+          "artifact_sha256": "77F48AC10DCEC6E1F7C2F0FE4B3883DE7872B2DE431C94E29BE6E27DE245A039",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "deep_ranknet",
+          "method": "Three-member PyTorch RankNet ensemble trained on all unequal within-race finish-order pairs with pairwise softplus loss",
+          "source_lines": "353-465",
+          "parameters": {"architecture": [256, 128], "activations": "GELU", "dropout": 0.2, "batch_norm": true, "optimizer": "AdamW", "learning_rate": 0.001, "weight_decay": 0.0001, "race_batch_size": 48, "max_epochs": 60, "early_stopping_bad_epochs": 8, "seeds": [2000, 2001, 2002], "device": "cpu"},
+          "member_valid_pairwise": [0.6593438835200705, 0.6621495241413456, 0.6625896246309574],
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/05_deep_ranknet_training.log",
+          "completion_log_sha256": "05A27C19EABDDB74B3B0FAD789CA35000F5EB3E76ADC906FAE7FF218D5E27A5B",
+          "artifacts": [
+            {"relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed0.pt", "bytes": 289611, "sha256": "5A694960611545E4E6F4B242C0CA00B2CF3A3AB0CF15EAEA9EA14DA836D65F2B"},
+            {"relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed1.pt", "bytes": 289611, "sha256": "69438C34F197838AD089DC20AA196FF88825489EEE564A113EF161C0AFD46D28"},
+            {"relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed2.pt", "bytes": 289611, "sha256": "92304330FC36DE47E7505198231ABE4012F811FF6F814FE7C6705A3E187E4AFD"}
+          ],
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "plackett_luce_full",
+          "method": "PyTorch neural Plackett-Luce likelihood over every finish position; only complete strict-order training races",
+          "source_lines": "468-490",
+          "parameters": {"architecture": [256, 128], "optimizer": "AdamW", "learning_rate": 0.001, "weight_decay": 0.0001, "race_batch_size": 48, "max_epochs": 60, "seed": 42, "device": "cpu"},
+          "train_complete_races": 3125,
+          "excluded_non_strict_train_races": 33,
+          "best_valid_pairwise": 0.6610125978765151,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/06_plackett_luce_full_training.log",
+          "completion_log_sha256": "D22F1C7A9B8935337ECB540AC69FDA2C2525B9C90559B92955E1CBA0EE45E7F9",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/plackett_luce_full/model.pt",
+          "artifact_bytes": 288647,
+          "artifact_sha256": "569B87781C4B89DCE47EAAEE27BF825A4A9A75B012DC68180F3E2BCACFABB3ED",
+          "reload_status": "PASS"
+        }
+      ],
+      "evidence_ids": ["E06", "E07", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31", "E32", "E33", "E34", "E35", "E36", "E37"]
+    },
+    "market_anchor_v11": {
+      "status": "PASS",
+      "actual_saved_models": 2,
+      "models": [
+        "anchored conditional logit with fixed coefficient-one log(q) offset and L2 selected on validation",
+        "anchored Base Margin booster with validation-selected tree count"
+      ],
+      "ensemble": "50/50 arithmetic probability ensemble of the two saved anchors",
+      "selected_l2": 100.0,
+      "base_margin_selected_trees": 188,
+      "refit_rule": "Hyperparameters selected on validation; final test models refit on train+valid.",
+      "feature_count": 141,
+      "market_columns_in_feature_matrix": [],
+      "q_identity_max_absolute_error": 2.7755575615628914e-16,
+      "source_relative_path": "src/training/train_market_anchor_same_test.py",
+      "source_sha256": "68BF1389A2351B4E890366ECB8C42AACCCD6A115D24BAB57F2E5091ADF44BC2D",
+      "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/12_market_anchor_training.log",
+      "completion_log_sha256": "DA6322D7F3DD8A55FE207D893864ABF41CC499535C0167381088E269A67E3961",
+      "artifacts": [
+        {"relative_path": "models/revised_v11_seoul_bugyeong_market_anchor_20260822/anchored_conditional_logit.joblib", "bytes": 4008, "sha256": "6EA16DACC895055D898004770B3A7A53C1766266F32282661D288156B75F58C4"},
+        {"relative_path": "models/revised_v11_seoul_bugyeong_market_anchor_20260822/anchored_base_margin.joblib", "bytes": 272692, "sha256": "DEB361AC1DA9D3860B669EE98DD287C25D11415F2C38E6780F2AD126694B7804"}
+      ],
+      "evidence_ids": ["E10", "E11", "E12", "E13", "E38", "E39", "E49", "E50"]
+    },
+    "rolling_and_residual_research": [
+      {
+        "study": "H5 adaptive rolling-origin market challenger",
+        "actual_training_completed": true,
+        "conditional_logit_fits": 32,
+        "trained_fold_model_files": 4,
+        "folds": 4,
+        "rolling_oos_races": 2185,
+        "confirmation_status": "retrospective rolling OOS, not pristine forward confirmation",
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E18"]
+      },
+      {
+        "study": "H5 fixed-lock rolling stability",
+        "actual_training_completed": true,
+        "conditional_logit_fits": 32,
+        "trained_fold_model_files": 8,
+        "fixed_valid_edge_threshold": 0.07096038438021385,
+        "test_rolling_oos_races": 1101,
+        "confirmation_status": "retrospective fixed-lock rolling OOS, not pristine independent confirmation",
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E19"]
+      },
+      {
+        "study": "H6 rolling place probability calibration",
+        "actual_calibrator_training_completed": true,
+        "trained_calibrators": 4,
+        "pooled_candidate_observations": 961,
+        "selected_bets": 200,
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E20"]
+      },
+      {
+        "study": "H7 clinic_30d rolling ablation",
+        "actual_conditional_logit_fits": 40,
+        "actual_ablation_model_fits": 32,
+        "trained_model_files": 8,
+        "primary_test_races": 1101,
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E21"]
+      },
+      {
+        "study": "H10A six-feature provenance anchor",
+        "actual_training_completed": true,
+        "actual_conditional_logit_fits": 6,
+        "m6_model_files": 3,
+        "l2": 100.0,
+        "features": ["age", "age__pr", "oh_sex_암", "wgBudam_chg", "wgBudam__pr", "te_owName"],
+        "market_or_outcome_features_in_X": [],
+        "deployment_status": "NO_GO",
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E22"]
+      },
+      {
+        "study": "H11B six-feature XGBoost/LightGBM/deep residual ensemble",
+        "actual_new_training_completed": true,
+        "cumulative_actual_fit_operations": 33,
+        "final_successful_run_fit_operations": 15,
+        "prior_interrupted_fit_operations": 18,
+        "final_successful_breakdown": {"xgboost": 3, "lightgbm": 3, "deep_mlp": 9, "m6_loaded_not_refit": 3},
+        "fixed_rounds": {"xgboost": 24, "lightgbm": 14},
+        "deep_fixed_epochs_by_seed": {"20260823": 3, "20260824": 4, "20260825": 3},
+        "features": ["age", "age__pr", "oh_sex_암", "wgBudam_chg", "wgBudam__pr", "te_owName"],
+        "formula": "p = race_softmax(log(q) + residual)",
+        "custom_nll_gradient": "p-y",
+        "custom_nll_diagonal_hessian": "p*(1-p)",
+        "gradient_finite_difference_max_error": 2.4037227763784585e-10,
+        "diagonal_hessian_finite_difference_max_error": 2.631330503488627e-08,
+        "gradient_tolerance": 1e-06,
+        "diagonal_hessian_tolerance": 1e-05,
+        "probability_sum_max_error": 4.440892098500626e-16,
+        "final_reload_prediction_max_error": 0.0,
+        "independent_validator": "28/28 PASS after validator-only deterministic CPU correction; tolerance, models, predictions, protocol, and freeze unchanged",
+        "initial_independent_validator_failure": "27/28; Deep float32 inference path differences up to 6.805989993807771e-09 exceeded 1e-12",
+        "execution_incidents": [
+          "First run completed 15 fits then phase logging raised TypeError: phase() got multiple values for argument status.",
+          "Second run completed three XGBoost fits then LightGBM init-score audit raised Cannot get init_score before construct Dataset.",
+          "Final run completed 15 fits and froze artifacts."
+        ],
+        "recommended_real_stake": 0,
+        "evidence_ids": ["E15", "E16", "E17", "E40", "E41", "E42", "E43"]
+      },
+      {
+        "study": "H11D market-anchor scalar shrinkage",
+        "actual_analysis_completed": true,
+        "input_scope": "VALID H11B equal-weight ensemble only",
+        "development_dates": 64,
+        "late_evaluation_dates": 28,
+        "development_rows": 7638,
+        "development_races": 744,
+        "late_rows": 3707,
+        "late_races": 340,
+        "strict_chronology": true,
+        "selected_alpha_development": 1.05,
+        "deployment_alpha_all_valid": 1.06,
+        "split_test_rows_parsed": 0,
+        "physical_test_region_byte_io_zero": false,
+        "live_stake": 0,
+        "evidence_ids": ["E44", "E45"]
+      },
+      {
+        "study": "H13 nonnegative log pool",
+        "actual_optimizer_fit_calls": 8,
+        "chosen_lambda": 0.0,
+        "first64_weight_sum": 1.1453443455487513,
+        "warning": "Weights sum above one, implying a negative effective market exponent in the unconstrained formulation; later constrained variants were created because of this instability.",
+        "late28_independence": "NOT_INDEPENDENT: already inspected by H11D",
+        "live_stake": 0,
+        "evidence_ids": ["E46"]
+      },
+      {
+        "study": "H14 constrained convex residual pool",
+        "actual_optimizer_fit_calls": 3,
+        "constraints": "each w >= 0 and sum(w) <= 1",
+        "first64_weights": {"m6": 2.3946258647807302e-17, "xgboost": 0.16298867342303547, "lightgbm": 0.5436062631734508, "deep_mlp_3seed": 0.2934050634035138},
+        "all92_weights": {"m6": 0.3873672518479254, "xgboost": 0.0, "lightgbm": 0.6126327481520748, "deep_mlp_3seed": 3.3056642732497544e-17},
+        "first64_to_all92_l1_weight_distance": 0.9127874736530985,
+        "late28_independence": "NOT_INDEPENDENT",
+        "live_stake": 0,
+        "evidence_ids": ["E47"]
+      },
+      {
+        "study": "H17 ridge-constrained convex residual pool",
+        "actual_optimizer_fit_calls": 14,
+        "candidate_lambdas": [0.0, 0.00001, 0.00003, 0.0001, 0.0003, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0],
+        "selected_lambda_largest_within_one_se": 1.0,
+        "late28_used_for_selection": false,
+        "selected_first64_weights": {"m6": 0.004365606112027179, "xgboost": 0.004483482486077661, "lightgbm": 0.0052707884868256, "deep_mlp_3seed": 0.0051076149901901485},
+        "selected_first64_weight_sum": 0.01922749207512059,
+        "all92_weight_sum": 0.01859010175266394,
+        "interpretation": "Regularization collapsed the residual correction almost entirely toward the market anchor.",
+        "live_stake": 0,
+        "evidence_ids": ["E48"]
+      }
+    ]
+  },
+  "rank_and_probability_metrics": {
+    "rank_test_scope": {
+      "evaluated_races": 1094,
+      "evaluated_rows": 11628,
+      "excluded_invalid_order_races": 7,
+      "top3_exact_evaluated_races": 1078,
+      "top3_exact_excluded_tied_or_gapped_races": 16
+    },
+    "full_rank_test_metrics": [
+      {"model_key": "catboost_rank", "ndcg_at_5": 0.778035945383817, "mean_spearman": 0.4553030268638837, "rank_mae": 2.439986501412461, "pairwise_accuracy": 0.6714154735877002, "top1_hit_rate": 0.3007312614259598, "top3_recall": 0.5109689213893968, "top3_ordered_exact": 0.013914656771799629, "top3_unordered_exact": 0.07235621521335807},
+      {"model_key": "deep_ranknet", "ndcg_at_5": 0.7751703373371309, "mean_spearman": 0.44498802974633467, "rank_mae": 2.467096188394177, "pairwise_accuracy": 0.6662141194724592, "top1_hit_rate": 0.3117001828153565, "top3_recall": 0.5088360755636806, "top3_ordered_exact": 0.015769944341372914, "top3_unordered_exact": 0.07792207792207792},
+      {"model_key": "xgboost_rank", "ndcg_at_5": 0.7732407784967209, "mean_spearman": 0.436575322258144, "rank_mae": 2.491832180109145, "pairwise_accuracy": 0.6636575216870019, "top1_hit_rate": 0.3153564899451554, "top3_recall": 0.509521633150518, "top3_ordered_exact": 0.014842300556586271, "top3_unordered_exact": 0.07328385899814471},
+      {"model_key": "plackett_luce_full", "ndcg_at_5": 0.7718645701940564, "mean_spearman": 0.43682511958979303, "rank_mae": 2.4818199574141073, "pairwise_accuracy": 0.6644509485859369, "top1_hit_rate": 0.2906764168190128, "top3_recall": 0.5088360755636806, "top3_ordered_exact": 0.015769944341372914, "top3_unordered_exact": 0.07421150278293136},
+      {"model_key": "lightgbm_rank", "ndcg_at_5": 0.7684679029380563, "mean_spearman": 0.4206467294123534, "rank_mae": 2.5385207419028264, "pairwise_accuracy": 0.6573277382043867, "top1_hit_rate": 0.30347349177330896, "top3_recall": 0.49718159658744676, "top3_ordered_exact": 0.017625231910946195, "top3_unordered_exact": 0.0686456400742115},
+      {"model_key": "random_forest_rank", "ndcg_at_5": 0.7683809240580648, "mean_spearman": 0.4280413493431808, "rank_mae": 2.511838917734713, "pairwise_accuracy": 0.6607659214331053, "top1_hit_rate": 0.30438756855575866, "top3_recall": 0.5021328458257159, "top3_ordered_exact": 0.012059369202226345, "top3_unordered_exact": 0.07328385899814471}
+    ],
+    "probability_normalization": {
+      "method": "race-level score softmax after validation-only temperature fitting",
+      "all_probabilities_finite": true,
+      "maximum_abs_race_probability_sum_error": 4.440892098500626e-16,
+      "temperatures": {"random_forest_rank": 0.11736980795647892, "xgboost_rank": 0.672135232231184, "lightgbm_rank": 0.4727808593009358, "catboost_rank": 0.6276899842202885, "deep_ranknet": 0.6319192147313807, "plackett_luce_full": 0.5565523818819154},
+      "ensemble_max_abs_sum_error": 2.220446049250313e-16
+    },
+    "metric_winner_warning": "There is no universal best rank model: CatBoost leads NDCG@5, Spearman, and rank MAE; LightGBM leads ordered top-3 exact; Deep RankNet leads unordered top-3 exact; XGBoost leads top-1 hit.",
+    "evidence_ids": ["E06", "E07", "E08"]
+  },
+  "market_baseline_comparison": {
+    "ordinary_full_rank_direct_selection_test": {
+      "scope": "Direct win/place selection comparison on complete-order test races. Selected-event Brier improvement is model-versus-market for the same model-selected event, not the all-runner winner log-loss delta used by anchor studies.",
+      "market_selection_hit_rate": {"win": 0.37662337662337664, "place": 0.6797752808988764},
+      "rows": [
+        {"model_key": "random_forest_rank", "win_hit": 0.3033395176252319, "win_brier_improvement": -0.012596936709760864, "place_hit": 0.596441947565543, "place_brier_improvement": -0.022197098879812693},
+        {"model_key": "xgboost_rank", "win_hit": 0.3144712430426716, "win_brier_improvement": -0.012491967022894845, "place_hit": 0.6189138576779026, "place_brier_improvement": -0.013989209436924083},
+        {"model_key": "lightgbm_rank", "win_hit": 0.3033395176252319, "win_brier_improvement": -0.01487545118295916, "place_hit": 0.6039325842696629, "place_brier_improvement": -0.019461561251238768},
+        {"model_key": "catboost_rank", "win_hit": 0.29962894248608535, "win_brier_improvement": -0.0171475738774714, "place_hit": 0.6058052434456929, "place_brier_improvement": -0.024699689912421025},
+        {"model_key": "deep_ranknet", "win_hit": 0.3116883116883117, "win_brier_improvement": -0.015409225332460502, "place_hit": 0.6067415730337079, "place_brier_improvement": -0.02904920117115231},
+        {"model_key": "plackett_luce_full", "win_hit": 0.29035250463821893, "win_brier_improvement": -0.016949645708152244, "place_hit": 0.600187265917603, "place_brier_improvement": -0.025323840535257963},
+        {"model_key": "ensemble", "win_hit": 0.3181818181818182, "win_brier_improvement": -0.011692157698024452, "place_hit": 0.6189138576779026, "place_brier_improvement": -0.013843446186103281}
+      ],
+      "conclusion": "Every full-rank model and the ensemble trails the market selection hit rate for both win and place, and every selected-event Brier improvement is negative.",
+      "evidence_ids": ["E09"]
+    },
+    "v11_market_anchor_delta_log_likelihood": {
+      "definition": "delta_ll_per_race = market winner NLL per race - model winner NLL per race; positive favors the model.",
+      "rows": [
+        {"split": "valid", "model_key": "anchored_conditional_logit", "races": 1084, "model_nll": 1.7680429834187221, "market_nll": 1.7733553627585865, "delta_ll": 0.005312379339864373, "ci_low": -0.007519051493105196, "ci_high": 0.017480702499889703, "model_brier": 0.07271310996680407, "market_brier": 0.07292407014948818, "model_top1": 0.37822878228782286, "market_top1": 0.37915129151291516},
+        {"split": "valid", "model_key": "anchored_base_margin", "races": 1084, "model_nll": 1.7515221052031287, "market_nll": 1.7733553627585865, "delta_ll": 0.021833257555457845, "ci_low": 0.013617714628686182, "ci_high": 0.030265875705978076, "model_brier": 0.07219535915305965, "market_brier": 0.07292407014948818, "model_top1": 0.3837638376383764, "market_top1": 0.37915129151291516},
+        {"split": "valid", "model_key": "anchor_ensemble", "races": 1084, "model_nll": 1.7555994296415167, "market_nll": 1.7733553627585865, "delta_ll": 0.017755933117069696, "ci_low": 0.0085318245333707, "ci_high": 0.027181737871837842, "model_brier": 0.07232914146518135, "market_brier": 0.07292407014948818, "model_top1": 0.38099630996309963, "market_top1": 0.37915129151291516},
+        {"split": "test", "model_key": "anchored_conditional_logit", "races": 1101, "model_nll": 1.7797204102781135, "market_nll": 1.7936942706087506, "delta_ll": 0.013973860330637264, "ci_low": 0.0023183124195813236, "ci_high": 0.025063123420468143, "model_brier": 0.07212586770189659, "market_brier": 0.07244901061261792, "model_top1": 0.3832879200726612, "market_top1": 0.3787465940054496},
+        {"split": "test", "model_key": "anchored_base_margin", "races": 1101, "model_nll": 1.7806108981775335, "market_nll": 1.7936942706087506, "delta_ll": 0.01308337243121729, "ci_low": 0.006614488900544429, "ci_high": 0.019647000505588375, "model_brier": 0.07220342208998357, "market_brier": 0.07244901061261792, "model_top1": 0.3751135331516803, "market_top1": 0.3787465940054496},
+        {"split": "test", "model_key": "anchor_ensemble", "races": 1101, "model_nll": 1.7764999298068969, "market_nll": 1.7936942706087506, "delta_ll": 0.017194340801853756, "ci_low": 0.00950731349536466, "ci_high": 0.025013720796707464, "model_brier": 0.07204680070671211, "market_brier": 0.07244901061261792, "model_top1": 0.3760217983651226, "market_top1": 0.3787465940054496}
+      ],
+      "warning": "Positive reused-TEST delta LL is evidence of retrospective probability improvement, not proof of executable profit or independent confirmation.",
+      "evidence_ids": ["E10", "E11", "E12"]
+    },
+    "market_favorite_baseline_test_roi": {
+      "definition": "One market-favorite/market combination per covered race using final values; this is a market baseline, not a deployed strategy.",
+      "rows": [
+        {"bet_type": "단승", "races": 1077, "hit_rate": 0.37697307335190344, "roi": -0.17604456824512532, "ci_low": -0.23314861550821075, "ci_high": -0.11515704728623327},
+        {"bet_type": "연승", "races": 1004, "hit_rate": 0.6683266932270916, "roi": -0.15338645418326693, "ci_low": -0.18659110368285242, "ci_high": -0.12100083070852516},
+        {"bet_type": "복승", "races": 1077, "hit_rate": 0.19870009285051068, "roi": -0.08458681522748376, "ci_low": -0.20841319165998393, "ci_high": 0.05214166935310534},
+        {"bet_type": "쌍승", "races": 1077, "hit_rate": 0.11606313834726091, "roi": -0.1389972144846797, "ci_low": -0.28787416419964507, "ci_high": 0.014471378792110202},
+        {"bet_type": "삼복승", "races": 1077, "hit_rate": 0.11142061281337047, "roi": -0.2459610027855153, "ci_low": -0.3783357416693653, "ci_high": -0.11213489415037367},
+        {"bet_type": "삼쌍승", "races": 1077, "hit_rate": 0.03064066852367688, "roi": -0.3349117920148561, "ci_low": -0.5521081944284889, "ci_high": -0.09827089712245224},
+        {"bet_type": "복연승", "races": 1077, "hit_rate": 0.3658310120705664, "roi": -0.20742804085422467, "ci_low": -0.2737136728631788, "ci_high": -0.14221733615221988}
+      ],
+      "complex_market_probability_limit": "For combination bets, the model-versus-market event probability in related analyses is q-derived proxy rather than an observed combination-pool probability. Official dividends identify settlement only for covered races.",
+      "evidence_ids": ["E13"]
+    },
+    "rolling_probability_and_place_results": [
+      {
+        "study": "H5 adaptive rolling",
+        "probability_delta_ll_vs_market": 0.009587011578661193,
+        "probability_ci": [0.0024570696371555615, 0.016666967532534948],
+        "probability_holm_significant": true,
+        "place_bets": 366,
+        "place_absolute_roi": 0.024316939890710383,
+        "place_absolute_roi_ci_10000": [-0.1340504637206765, 0.1879826358930111],
+        "place_absolute_profit_confirmed": false,
+        "same_race_market_roi": -0.21010928961748634,
+        "paired_roi_advantage": 0.23442622950819672,
+        "paired_roi_advantage_ci_10000": [0.06197079772079771, 0.4176719489198398],
+        "paired_market_outperformance_confirmed": true,
+        "recommended_real_stake": 0
+      },
+      {
+        "study": "H5 fixed-lock rolling",
+        "probability_delta_ll_vs_market": 0.012045652365633227,
+        "probability_ci": [0.0031801299166292025, 0.02115926564684069],
+        "probability_holm_significant": true,
+        "place_bets": 200,
+        "place_absolute_roi": 0.013000000000000006,
+        "place_absolute_roi_ci": [-0.1864737563650607, 0.21960987503809815],
+        "place_absolute_profit_confirmed": false,
+        "same_race_market_roi": -0.305,
+        "paired_roi_advantage": 0.31800000000000006,
+        "paired_roi_advantage_ci": [0.10510121790651743, 0.5376235475051263],
+        "paired_market_outperformance_confirmed": true,
+        "kelly_total_return": -0.008064283085050028,
+        "recommended_real_stake": 0
+      },
+      {
+        "study": "H6 calibration",
+        "calibrated_log_loss_improvement_vs_uncalibrated": 0.00523071443693679,
+        "ci": [0.00011785849722466176, 0.010479688294270989],
+        "raw_one_sided_p": 0.022297770222977704,
+        "holm_adjusted_p": 0.0683931606839316,
+        "holm_significant": false,
+        "calibrated_log_loss_improvement_vs_market": 0.0018906431111984645,
+        "market_ci": [-0.005564804692730103, 0.009349099095760453],
+        "uncalibrated_kelly_return": -0.00806428308504914,
+        "calibrated_kelly_return": -0.18827168338710065,
+        "recommended_real_stake": 0
+      },
+      {
+        "study": "H7 clinic_30d ablation",
+        "global_increment_delta_ll": 0.001299638551900942,
+        "global_increment_ci": [-0.002530223494052574, 0.005115272368652518],
+        "partial8_increment_delta_ll": 0.00094275781573313,
+        "partial8_increment_ci": [-0.003413573078147657, 0.005403546156888455],
+        "both_holm_significant": false,
+        "source_timing_caveat": "Deployment remains blocked until clinic_30d source definition and pre-race availability are independently mapped.",
+        "recommended_real_stake": 0
+      }
+    ],
+    "later_market_residual_results": [
+      {"study": "H10A M6 valid", "delta_ll": 0.0015851331157785697, "daily_ci": [-0.0038823034324755646, 0.006941813841043326], "independent": false},
+      {"study": "H10A M6 reused test", "delta_ll": 0.005422125098341543, "daily_ci": [0.0012360394941535176, 0.009479627633890734], "independent": false},
+      {"study": "H10A fresh64 M6-q", "delta_ll": 0.010456706157378618, "daily_ci": [-0.0017843416443124574, 0.024653841702968894], "exact_day_signflip_p": 0.078125, "independent": false},
+      {"study": "H11B valid equal ensemble", "delta_ll": 0.0024197930734278904, "daily_ci": [-0.0013958828316382914, 0.006313465134840017], "independent": false},
+      {"study": "H11B reused test equal ensemble", "delta_ll": 0.0027219904184374003, "daily_ci": [-0.00032776169570645597, 0.005768164977300077], "independent": false},
+      {"study": "H11D late28 alpha=1.05", "delta_ll": 0.002288606922595226, "daily_ci": [-0.0038387509290628433, 0.008967281015036249], "independent": false},
+      {"study": "H13 late28 vs market", "delta_ll": 0.0020062723686464176, "daily_ci": [-0.004538906163582311, 0.009042570545951138], "independent": false},
+      {"study": "H14 late28 vs market", "delta_ll": 0.0022630070727323254, "daily_ci": [-0.0034751617323864987, 0.008439256005363356], "independent": false},
+      {"study": "H17 late28 vs market", "delta_ll": 0.00008365875078149712, "daily_ci": [-0.00002952466264242697, 0.0002075055256265518], "one_sided_p": 0.09429057094290572, "independent": false}
+    ],
+    "evidence_ids": ["E09", "E10", "E11", "E12", "E13", "E18", "E19", "E20", "E21", "E22", "E40", "E44", "E46", "E47", "E48"]
+  },
+  "conflicts_stale_and_failed_results": [
+    {
+      "id": "C01",
+      "issue": "Project_Reserach.txt and Report_summary.txt were generated before H10A-H17 and live prospective artifacts.",
+      "handling": "Treat their earlier next-step/checkpoint statements as stale; use dated primary JSON/CSV/log evidence for final claims."
+    },
+    {
+      "id": "C02",
+      "issue": "Earlier revised_v7/revised_v10 runs used 137 features, Seoul-only subsets, or retained final-pool leakage variables.",
+      "handling": "They are historical, not canonical. The v11 141-feature Seoul+부경 clean dataset supersedes them for data/model integrity claims."
+    },
+    {
+      "id": "C03",
+      "issue": "The v11 TEST block was repeatedly inspected.",
+      "handling": "Do not call positive TEST delta LL independent confirmation."
+    },
+    {
+      "id": "C04",
+      "issue": "H10A fresh64 was post hoc optional-continuation data.",
+      "handling": "Report descriptively only; its CI crosses zero and exact six-day sign-flip p is 0.078125."
+    },
+    {
+      "id": "C05",
+      "issue": "H5 paired market advantage is positive while absolute ROI confidence intervals cross zero.",
+      "handling": "State market-relative defense, not confirmed profit. Comparator and odds are closing/final values."
+    },
+    {
+      "id": "C06",
+      "issue": "Combination-bet market probabilities are q-derived proxies, not observed pool probabilities.",
+      "handling": "Do not label proxy edge as actual executable combination-market edge."
+    },
+    {
+      "id": "C07",
+      "issue": "H11B has 33 cumulative fit operations but only 15 in the final successful run.",
+      "handling": "Report 18 interrupted operations plus 15 final operations; do not present 33 as 33 distinct final models."
+    },
+    {
+      "id": "C08",
+      "issue": "H11B independent validator initially failed 27/28 on Deep float32 reproducibility.",
+      "handling": "Preserve the incident. Final 28/28 followed a validator-only deterministic CPU path fix without tolerance relaxation or model/prediction changes."
+    },
+    {
+      "id": "C09",
+      "issue": "H11D claims zero parsed TEST rows, but a whole-file hash streamed TEST-region bytes.",
+      "handling": "Analytical TEST access was zero; strict physical byte-I/O isolation was not."
+    },
+    {
+      "id": "C10",
+      "issue": "H13/H14/H17 all evaluate a late28 VALID block already inspected by H11D.",
+      "handling": "All later pool comparisons are adaptive/descriptive and not confirmation."
+    },
+    {
+      "id": "C11",
+      "issue": "The strongest rank metric depends on the objective.",
+      "handling": "Avoid a single universal winner claim; identify winners per NDCG, Spearman, MAE, top-3 exact, and top-1 hit."
+    },
+    {
+      "id": "C12",
+      "issue": "Rank metric denominators differ because test contains 7 invalid-order races and 16 tied/gapped races.",
+      "handling": "Use 1094 races for general rank metrics and 1078 complete races for exact top-3 metrics."
+    },
+    {
+      "id": "C13",
+      "issue": "Standardization recheck shows 127 standardized and 14 unit-interval columns, not 141 zero-mean/unit-variance columns.",
+      "handling": "Do not call this incomplete scaling; binary/unit-interval features need not be standardized, and trees do not require standard scaling."
+    },
+    {
+      "id": "C14",
+      "issue": "H11B target-card audit is a freeze-time statement.",
+      "handling": "It proves target outcomes were untouched at that artifact time only; later live watcher artifacts require separate refresh outside this finalization-only inventory."
+    },
+    {
+      "id": "C15",
+      "issue": "Positive delta log likelihood does not imply profitability.",
+      "handling": "Probability quality, selection, executable prices, takeout, pool impact, ticket construction, and uncertainty are distinct gates."
+    }
+  ],
+  "honest_limits": [
+    "No new model fit, backtest, web search, prospective score, or outcome settlement was performed for this inventory.",
+    "The evidence supports that the cited training jobs actually produced and reloaded model artifacts; it does not make reused historical test periods independent.",
+    "The current data matrix is finite, numeric, chronologically split, and correlation-pruned under the recorded Pearson rule, but this does not prove absence of nonlinear redundancy or every possible domain-time leakage.",
+    "Closing odds are used for market q and several odds-band analyses; decision-time availability, slippage, and pool impact remain unresolved.",
+    "Official final dividends already reflect pool deductions; no evidence here supports charging the 20%/27% takeout a second time.",
+    "No cited study establishes positive absolute ROI with a 95% interval wholly above zero on a pristine forward sample.",
+    "The project evidence is consistent with small market-relative probability signal in some anchored/rolling specifications, but not with a deployable, independently confirmed profitable system."
+  ],
+  "evidence_file_index": [
+    {"id": "E01", "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/preprocessing_manifest.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json", "bytes": 11173, "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"},
+    {"id": "E02", "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/preprocessing_validation.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json", "bytes": 2348, "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"},
+    {"id": "E03", "relative_path": "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/source_comparison_audit.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\source_comparison_audit.json", "bytes": 2913, "sha256": "3398ED8F53EB5206886DE3BA235D41BABFB6CA141210002A3039E23387727305"},
+    {"id": "E04", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/run_dataset_audit.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\run_dataset_audit.json", "bytes": 6199, "sha256": "58809AA631ED36DBE6F308E8BC9BBB3C83DF6842F7127A47A045ED12B4096506"},
+    {"id": "E05", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/strict_te_independent_validation.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\strict_te_independent_validation.json", "bytes": 16908, "sha256": "D11FAB1380C2D600CF7D1A01A11427A981A0494ECC8A7458F8FE2D97C97DCBAC"},
+    {"id": "E06", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/final_validation.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\final_validation.json", "bytes": 24695, "sha256": "B9CB967F333565AB3BA331FAE0C7FBD08825857243BA5ED34D5826A47F1E21A2"},
+    {"id": "E07", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/model_metric_comparison.csv", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\model_metric_comparison.csv", "bytes": 5242, "sha256": "EE95990F4723E876202218CA29DB6504B0544FD734566E8EE8978281EA4C578C"},
+    {"id": "E08", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/probability_sum_validation.csv", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\probability_sum_validation.csv", "bytes": 1069, "sha256": "7D469EC16E038772AD25FF4314CA85D265A9A40846144107CCB1027F559B4212"},
+    {"id": "E09", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/all_bet_types/bet_type_edge_analysis/bet_type_model_vs_market_summary.csv", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\all_bet_types\\bet_type_edge_analysis\\bet_type_model_vs_market_summary.csv", "bytes": 76867, "sha256": "D1ED950C1F425522FFEB8E8DD93CC55AAD64EC200BF2F23F2F05405E68C2A480"},
+    {"id": "E10", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/input_audit.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\input_audit.json", "bytes": 2362, "sha256": "2622C3C4D3123117B436893D91F4239AC0836A46BA61FFE5D293D9B0980CC43F"},
+    {"id": "E11", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/validation.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\validation.json", "bytes": 3817, "sha256": "D3F7371AC34F40AB7F074467648BE31D988FB9EC00B087970E9654B5E408EFA0"},
+    {"id": "E12", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/delta_ll_metrics.csv", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv", "bytes": 2154, "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"},
+    {"id": "E13", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/market_baseline.csv", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\market_baseline.csv", "bytes": 1495, "sha256": "A127EE4AC91F528BA84D6B19765FE3B0D1AD2B5A812283E6A6F26F65E65ADA28"},
+    {"id": "E14", "relative_path": "outputs/reports/dataset_preprocessing_comparison_20260823/evidence.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\dataset_preprocessing_comparison_20260823\\evidence.json", "bytes": 41297, "sha256": "79FC8A1EA2C692D4C71A8AC4ACD6114482E2408C268BC8D52DE3BF3E2F8CC79E"},
+    {"id": "E15", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/training_manifest.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\training_manifest.json", "bytes": 998, "sha256": "A48A57A6716C2B4D0B257CB52B3EAE641016C7ED1EC7BCBAD715CFB0CCF1684E"},
+    {"id": "E16", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/custom_gradient_finite_difference_test.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\custom_gradient_finite_difference_test.json", "bytes": 343, "sha256": "D862122837B8F849D55F6536513473E8BA2846185F70237396FFA12D4C1258D5"},
+    {"id": "E17", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\experiment_summary.json", "bytes": 8678, "sha256": "25B5D46725763BA394C1EEADEB7F9A20DBDFEBCAA1669250AF5FAC064FD9C3C4"},
+    {"id": "E18", "relative_path": "outputs/reports/rolling_origin_market_challenger_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_origin_market_challenger_20260823\\experiment_summary.json", "bytes": 8027, "sha256": "DE8A1DA5DA815D5DB930BC7C57E10ECC5C379FB3EAB0062A30DC308D99D83C3B"},
+    {"id": "E19", "relative_path": "outputs/reports/fixed_lock_rolling_stability_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\experiment_summary.json", "bytes": 7632, "sha256": "2B36C14E36A3942A06CC21720A49B06BC3FABF50803C2AA2E41CD723958812DB"},
+    {"id": "E20", "relative_path": "outputs/reports/rolling_place_probability_calibration_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_place_probability_calibration_20260823\\experiment_summary.json", "bytes": 3501, "sha256": "CE93567FE287ADA6862C469A412DA8F378C1688A0F105E87F1A71F84A22B955C"},
+    {"id": "E21", "relative_path": "outputs/reports/clinic30d_rolling_ablation_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\clinic30d_rolling_ablation_20260823\\experiment_summary.json", "bytes": 4794, "sha256": "A49BE6ED3901B46666156AEDECAD954D5921AEC80BC9DA953EDE74ACA3797282"},
+    {"id": "E22", "relative_path": "outputs/reports/h10a_provenance_six_feature_anchor_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\experiment_summary.json", "bytes": 9302, "sha256": "FAD2AD5247E19964819FEAC07C9244E8ED69A7B459F96929C8CB96DC760AACA3"},
+    {"id": "E23", "relative_path": "src/training/train_full_rank_models.py", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_full_rank_models.py", "sha256": "37E0C01927AC8AFFEE364813526BC4BEB819B737065949E2D6BB3A7E860011DF"},
+    {"id": "E24", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/random_forest_rank/model.joblib", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model.joblib", "bytes": 94813921, "sha256": "9113491AC1C8057603F9BC557F60D595CE5B78A374197EE147E0047C9930B431"},
+    {"id": "E25", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/xgboost_rank/model.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model.json", "bytes": 3351817, "sha256": "8EF76EEC934EAA81F5343CBCCAEC8BA5AD00191864AB3472BD29C93F300039A5"},
+    {"id": "E26", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/lightgbm_rank/model.txt", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model.txt", "bytes": 760032, "sha256": "42CEF0535C8AD34A08A7149C04946D7F6D03DF06D7ADB9A7D18FA3270EE8046A"},
+    {"id": "E27", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/catboost_rank/model.cbm", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model.cbm", "bytes": 1715736, "sha256": "77F48AC10DCEC6E1F7C2F0FE4B3883DE7872B2DE431C94E29BE6E27DE245A039"},
+    {"id": "E28", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed0.pt", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed0.pt", "bytes": 289611, "sha256": "5A694960611545E4E6F4B242C0CA00B2CF3A3AB0CF15EAEA9EA14DA836D65F2B"},
+    {"id": "E29", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed1.pt", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed1.pt", "bytes": 289611, "sha256": "69438C34F197838AD089DC20AA196FF88825489EEE564A113EF161C0AFD46D28"},
+    {"id": "E30", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed2.pt", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed2.pt", "bytes": 289611, "sha256": "92304330FC36DE47E7505198231ABE4012F811FF6F814FE7C6705A3E187E4AFD"},
+    {"id": "E31", "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/plackett_luce_full/model.pt", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model.pt", "bytes": 288647, "sha256": "569B87781C4B89DCE47EAAEE27BF825A4A9A75B012DC68180F3E2BCACFABB3ED"},
+    {"id": "E32", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/01_random_forest_rank_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\01_random_forest_rank_training.log", "bytes": 599, "sha256": "DFACA946ECEA2AA4FA8BBDA6EC9203ABAE46E919899EDA9488290DA9A0A20D59"},
+    {"id": "E33", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/02_xgboost_rank_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\02_xgboost_rank_training.log", "bytes": 593, "sha256": "E35E40D8E7D5123FA9539DE7D1EFFFA37A37BB1DD6F51F5878A2FAB6796B4C92"},
+    {"id": "E34", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/03_lightgbm_rank_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\03_lightgbm_rank_training.log", "bytes": 682, "sha256": "66897A52265E0A83E935F1120930034D1BD50B2590B0AA4DCD000D55B7DAE7A1"},
+    {"id": "E35", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/04_catboost_rank_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\04_catboost_rank_training.log", "bytes": 1111, "sha256": "8CAE2A78AEDFC4B442AFC43AF548F1AD26D3606846AAF836C030402F21129A8E"},
+    {"id": "E36", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/05_deep_ranknet_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\05_deep_ranknet_training.log", "bytes": 2399, "sha256": "05A27C19EABDDB74B3B0FAD789CA35000F5EB3E76ADC906FAE7FF218D5E27A5B"},
+    {"id": "E37", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/06_plackett_luce_full_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\06_plackett_luce_full_training.log", "bytes": 1229, "sha256": "D22F1C7A9B8935337ECB540AC69FDA2C2525B9C90559B92955E1CBA0EE45E7F9"},
+    {"id": "E38", "relative_path": "src/training/train_market_anchor_same_test.py", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_market_anchor_same_test.py", "sha256": "68BF1389A2351B4E890366ECB8C42AACCCD6A115D24BAB57F2E5091ADF44BC2D"},
+    {"id": "E39", "relative_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/12_market_anchor_training.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\12_market_anchor_training.log", "bytes": 2008, "sha256": "DA6322D7F3DD8A55FE207D893864ABF41CC499535C0167381088E269A67E3961"},
+    {"id": "E40", "relative_path": "src/training/run_h11b_six_feature_multimodel_prospective.py", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_h11b_six_feature_multimodel_prospective.py", "sha256": "7F7CDD0CF5348BDC0E854992E65AEDC45FAF76D801BE1B113AA8476D01341526"},
+    {"id": "E41", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/logs/execution.log", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\logs\\execution.log", "sha256": "3FF805C7457ABE4508E60C396B5890D62FC5F3771EC2EC831833E843CA26F076"},
+    {"id": "E42", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/independent_validation.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_validation.json", "bytes": 11507, "sha256": "021A9119CEB39E2BBE73F5F0FA50DB48D2A8D022353DE5CA5A7B54F91C78D084"},
+    {"id": "E43", "relative_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/independent_validation_incident_20260823.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_validation_incident_20260823.json", "sha256": "66EA267A21EC8BA66A3D3902BAFF44A33E89336ACA48DAC58F97775BB02A9139"},
+    {"id": "E44", "relative_path": "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\experiment_summary.json", "bytes": 13042, "sha256": "E6DC0EB447578F4CFBB22149D08FDAF1999DA18B3CD060A3AAFC68C046EB680B"},
+    {"id": "E45", "relative_path": "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/physical_byte_io_disclosure.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\physical_byte_io_disclosure.json", "bytes": 2511, "sha256": "A8B9470B2E51FEAB81B50DD6812BBE760EB587187F164247CA2A8350C28F170D"},
+    {"id": "E46", "relative_path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h13_market_anchor_nonnegative_log_pool_preregistered_20260823\\experiment_summary.json", "bytes": 13628, "sha256": "24D54C8B82DF2580C96FA783410C552C478545F82329B5B443A73E000A58CE05"},
+    {"id": "E47", "relative_path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h14_convex_market_residual_pool_preregistered_20260823\\experiment_summary.json", "bytes": 18416, "sha256": "E2B2105022C7EDF9BB3B13149CB9831577F74A246AEFE4A1DAEC9C12C159AFFD"},
+    {"id": "E48", "relative_path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/experiment_summary.json", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h17_ridge_convex_market_residual_pool_preregistered_20260823\\experiment_summary.json", "bytes": 25395, "sha256": "C35CC9D66CA42778D6C08432905D03C62BBA9239406CAA13ED006A9E784B64BA"},
+    {"id": "E49", "relative_path": "models/revised_v11_seoul_bugyeong_market_anchor_20260822/anchored_conditional_logit.joblib", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_market_anchor_20260822\\anchored_conditional_logit.joblib", "bytes": 4008, "sha256": "6EA16DACC895055D898004770B3A7A53C1766266F32282661D288156B75F58C4"},
+    {"id": "E50", "relative_path": "models/revised_v11_seoul_bugyeong_market_anchor_20260822/anchored_base_margin.joblib", "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_market_anchor_20260822\\anchored_base_margin.joblib", "bytes": 272692, "sha256": "DEB361AC1DA9D3860B669EE98DD287C25D11415F2C38E6780F2AD126694B7804"}
+  ]
+}

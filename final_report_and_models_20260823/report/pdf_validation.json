@@ -1,0 +1,2455 @@
+{
+  "status": "PASS_AUTOMATED_RENDER_MANUAL_REVIEW_REQUIRED",
+  "scope": "ALL_PAGE_PDF_RENDER_AND_TEXT_CHECK",
+  "manual_visual_review_claimed": false,
+  "render_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846",
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.pdf",
+    "bytes": 2339609,
+    "sha256": "91D92E997F7ABA5DAE92EFF801DAE1D87C14E70334B6D865F60BD49079F65FFA"
+  },
+  "pages": 92,
+  "text_pages": 92,
+  "page_sizes_points": [
+    [
+      594.96,
+      841.92
+    ]
+  ],
+  "failed_text_pages": [],
+  "failed_render_pages": [],
+  "all_pages_rendered_high_resolution": true,
+  "contact_sheet": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\contact_sheet.png",
+    "bytes": 2682400,
+    "sha256": "C121E610C3008AE19F74E1B059B07F4B9E96A034B47A378330444CD7BC036074"
+  },
+  "page_renders": [
+    {
+      "page": 1,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_001.png",
+      "bytes": 329294,
+      "sha256": "4AB6A2DD0F80610B254F5F6DF5671AA10B2AC037375116C14A94405F06E96F39",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.7250610926863327
+    },
+    {
+      "page": 2,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_002.png",
+      "bytes": 246295,
+      "sha256": "2B1FDA136C55051A7F393487164AB54C7B0FD5D73A6121A04933B696531A807F",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6539317507418397
+    },
+    {
+      "page": 3,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_003.png",
+      "bytes": 230600,
+      "sha256": "DBEA44FDEA0C410E93F34999D7F6B307787C2B3A1BFC995DE4E9213DE6D91B95",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6289476473081814
+    },
+    {
+      "page": 4,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_004.png",
+      "bytes": 279856,
+      "sha256": "B1C5D55BF682BD96D42C1A6ADA37E3D9B35053013E5AA452BA7A3B5F73C943C9",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6235163204747775
+    },
+    {
+      "page": 5,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_005.png",
+      "bytes": 224636,
+      "sha256": "ABE2BB6CC16F73FC92ECF4E4C2341AC7005082BD916EBE441836C36EE9B5BD25",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.561599194573972
+    },
+    {
+      "page": 6,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_006.png",
+      "bytes": 207077,
+      "sha256": "4EE9103C85DD166ED84C6093F6B57A85B82B9B25C42A3497DE1166ABE15728E2",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6376377702416278
+    },
+    {
+      "page": 7,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_007.png",
+      "bytes": 282950,
+      "sha256": "17EFA4BDA93ADE877917C73A4B306D28F6EDA9C67D851695383C6FC57FFB6FBE",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5713755828740992
+    },
+    {
+      "page": 8,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_008.png",
+      "bytes": 238108,
+      "sha256": "003D508D0962C3CF4DF183DFCD10B2AAED5AB6D8508A5A5E0B95BE312D5164EF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6088517380245867
+    },
+    {
+      "page": 9,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_009.png",
+      "bytes": 265726,
+      "sha256": "A71881373EBE6B95D813DF51976CDD9848EC90BA398AB07AF6FD5D0649D78567",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6218869224247563
+    },
+    {
+      "page": 10,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_010.png",
+      "bytes": 270759,
+      "sha256": "00372A0E6985D29CDE63CC7E4BC4217035F3DA13D10744EFC805228BDB393BAD",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6479572912250954
+    },
+    {
+      "page": 11,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_011.png",
+      "bytes": 331125,
+      "sha256": "002AE4A5C04C9DC350AEC46C335884709671650F19855CA3061391381F2508E6",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6083086053412463
+    },
+    {
+      "page": 12,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_012.png",
+      "bytes": 263318,
+      "sha256": "FCCB7BF2113121ABFC35C2BBAF22C6935C15BBBE27DC1CA3382736F6E7EF88C3",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6445356332443957
+    },
+    {
+      "page": 13,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_013.png",
+      "bytes": 232100,
+      "sha256": "E92B9EEA66CB2D1C0F8D183F40E1D5246FA40F7F52B431F9E0879A94B541F138",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5914714921576939
+    },
+    {
+      "page": 14,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_014.png",
+      "bytes": 180253,
+      "sha256": "8AD24D0A22CE567D74001B86E3F2B22DBC169AC19F4A7CC2929887E19E7E0A0C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.37747721492157693
+    },
+    {
+      "page": 15,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_015.png",
+      "bytes": 224689,
+      "sha256": "2E823F20667E201F37E8B03D20193F18C9236BA8B5CBE7AC78AA0BD1ADB7478A",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5822382365409071
+    },
+    {
+      "page": 16,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_016.png",
+      "bytes": 252729,
+      "sha256": "0BD8BB9BC39E5A78C51D6ABA0A9E97B8B9F8C23193FC813D9B78FDCFF8015735",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6430690970750318
+    },
+    {
+      "page": 17,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_017.png",
+      "bytes": 260445,
+      "sha256": "0CB9EFEE2705FA0238B70B79A3BA7064310D7F3DF46285681E469CA1D8C0D043",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5577972657905892
+    },
+    {
+      "page": 18,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_018.png",
+      "bytes": 208086,
+      "sha256": "D37860827891495393364F1992D5C3C613C1E50FFA875B9B42D8FAC445091F41",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.44428253497244596
+    },
+    {
+      "page": 19,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_019.png",
+      "bytes": 231809,
+      "sha256": "80DAB9791DF281093386611470C60D5DEBE53FB26F7FCF1DAFAB5268B1201ED0",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5816951038575667
+    },
+    {
+      "page": 20,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_020.png",
+      "bytes": 259929,
+      "sha256": "74FA793CB4569C52FCF97937EBF49BFC4E95B0B925AFFDB8FAA89EB5922B3CA4",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5768069097075031
+    },
+    {
+      "page": 21,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_021.png",
+      "bytes": 248052,
+      "sha256": "2CE3F156B013B17E10F66B364EB49D06E2AA7AF710B819E6D950644234DA4580",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.4942507418397626
+    },
+    {
+      "page": 22,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_022.png",
+      "bytes": 216485,
+      "sha256": "A7C465B400A3C6F08CFA61908B2C29D0748624A51BC102E62C15D6D959FDFB42",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.639267168291649
+    },
+    {
+      "page": 23,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_023.png",
+      "bytes": 244941,
+      "sha256": "0EDF6D1F2B5717BD9C682B65ADC3ED07B9E443D2D2B6B37B8AC4C750DF678BDD",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6034204111911827
+    },
+    {
+      "page": 24,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_024.png",
+      "bytes": 218485,
+      "sha256": "DBC50C245912CBC030DA5E2A97165E7FC4F3D09496564BAE0BA70032687F65A9",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5072859262399322
+    },
+    {
+      "page": 25,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_025.png",
+      "bytes": 230383,
+      "sha256": "2687F3D9C8CA58B13827B83B2B87627C0AAC2D2CF154435BD0D114A4AD2BDBCF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.636551504874947
+    },
+    {
+      "page": 26,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_026.png",
+      "bytes": 260386,
+      "sha256": "8E4B6B912AB2FF5ABDC31C2B83C0D213246A72CE835F229F1969C9A640A83E64",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5849538999576092
+    },
+    {
+      "page": 27,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_027.png",
+      "bytes": 150092,
+      "sha256": "C2D4FEE2289EAB78E105BBA5ADC6B45A3215D85D48121996FE14C27D889E978E",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.49262134378974143
+    },
+    {
+      "page": 28,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_028.png",
+      "bytes": 217204,
+      "sha256": "5C418AE2D6AB35B7994A6FD8F0E57B0A4D15738376E75B1327D9650C82129540",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6408965663416702
+    },
+    {
+      "page": 29,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_029.png",
+      "bytes": 207580,
+      "sha256": "7B7527779275D1D656910D92937EDB67E90776425C7E0F91821998B8FF49A6FF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5816951038575667
+    },
+    {
+      "page": 30,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_030.png",
+      "bytes": 212430,
+      "sha256": "4BACB9C605B463A1FF68711CFA480311B1D3A5282ED5159D5188DC761B2B82C6",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5550816023738873
+    },
+    {
+      "page": 31,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_031.png",
+      "bytes": 245939,
+      "sha256": "86F28D0613A3F3CC6B5DBF0D884C7C0E00ABAAEBD81EB7B706FB26DDF9A570FA",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5197779779567614
+    },
+    {
+      "page": 32,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_032.png",
+      "bytes": 378561,
+      "sha256": "DA12D77EF8DA6FB428257110A9C380CE3E7C6DF015067CF9FBF5BAB7BDB2C414",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5996184824077999
+    },
+    {
+      "page": 33,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_033.png",
+      "bytes": 269622,
+      "sha256": "162FC8300799FBF495E1EB6594156F549692353874D87E3748F72DBEB67799FE",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.430704217888936
+    },
+    {
+      "page": 34,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_034.png",
+      "bytes": 215853,
+      "sha256": "75E6D6882B4A5194430602B3C9B5118495F4196393F402F239B331F95001A066",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5909283594743535
+    },
+    {
+      "page": 35,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_035.png",
+      "bytes": 230131,
+      "sha256": "3113354BA0E4C8F47BA01DB807461DB1A5B8556814042BC0D98C91CDA45C0519",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6495866892751165
+    },
+    {
+      "page": 36,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_036.png",
+      "bytes": 267332,
+      "sha256": "29F4322661760D0730108A3A1F216F3484517871A915764BB593C23D04CC7765",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6408965663416702
+    },
+    {
+      "page": 37,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_037.png",
+      "bytes": 278288,
+      "sha256": "3ABA32710BC40368CE0E3CD99E86664D20FDD3D4269D00C057B210C30663C3CB",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6121105341246291
+    },
+    {
+      "page": 38,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_038.png",
+      "bytes": 278204,
+      "sha256": "EAD5A7A3B123D2B9A8C2B9369FEDC968D04350C82928E42BBCBB55C5EBE47DE1",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6332927087749046
+    },
+    {
+      "page": 39,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_039.png",
+      "bytes": 293572,
+      "sha256": "696288C66A48A87EEB52AE40B9251746570CFEC45D939E5DDDBA4F1393A61372",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.633835841458245
+    },
+    {
+      "page": 40,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_040.png",
+      "bytes": 265167,
+      "sha256": "0B633B3ACB64967265B1741C609044AA3CB49F5BB1E0CA050B4AC5C2D321ED03",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6343789741415854
+    },
+    {
+      "page": 41,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_041.png",
+      "bytes": 242847,
+      "sha256": "8D3FA81ECEF20DFE14E05ADC9D932BBDD8617AA071F17A903C8F1FC8D71E8DD1",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.628404514624841
+    },
+    {
+      "page": 42,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_042.png",
+      "bytes": 87383,
+      "sha256": "B0D3D717B95E36224054DDA0A14A046B70A2E9D5C1DEC64008387A5470E8FA7B",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.1279673590504451
+    },
+    {
+      "page": 43,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_043.png",
+      "bytes": 228138,
+      "sha256": "3E75821A718C7A46A6D275512486AF79B7C1E1986694431EB6F585B2B609B1CC",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5827813692242476
+    },
+    {
+      "page": 44,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_044.png",
+      "bytes": 223930,
+      "sha256": "1B41254220FA738DE7FD738F833A8DA3D4651F6990CE51E77DF2E6E2797FF534",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6506729546417974
+    },
+    {
+      "page": 45,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_045.png",
+      "bytes": 219526,
+      "sha256": "B35CA9E39A4EDB44D8B83896EE71619740C43EE0C925D1A765B09FBCE98C6494",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6039635438745231
+    },
+    {
+      "page": 46,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_046.png",
+      "bytes": 192194,
+      "sha256": "AD26E91F16963AB0E13752ED2631E21885AE2B4B70B5889B2CA87E2955823BC8",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.42201409495548964
+    },
+    {
+      "page": 47,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_047.png",
+      "bytes": 192712,
+      "sha256": "6692E3B7DE9F5D0BF6B77694DBAEFA70EE060B8B95AE5875AAE174147A4A03CC",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.606679207291225
+    },
+    {
+      "page": 48,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_048.png",
+      "bytes": 242845,
+      "sha256": "71BFC2B80C60A5E77FAA83E47F077D81D182CE6830FA1B7152AA805F4593D5E9",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.553452204323866
+    },
+    {
+      "page": 49,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_049.png",
+      "bytes": 176076,
+      "sha256": "F071FD1C69DB9B18508C1B7F36F8DB56DD55359AC0958F8C152FB626D86E4DDC",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.43516382814253296
+    },
+    {
+      "page": 50,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_050.png",
+      "bytes": 211687,
+      "sha256": "5627CE2611F323716A5CBB8682052451E0EF4F5942CBE1E68DE80003334D5ACE",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6262319838914795
+    },
+    {
+      "page": 51,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_051.png",
+      "bytes": 201562,
+      "sha256": "8F0DFCC02A3E99453933EAE10AAA0E02D36196640FFF04D949179F4DAFB64FE0",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6506729546417974
+    },
+    {
+      "page": 52,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_052.png",
+      "bytes": 216208,
+      "sha256": "39E01225B154579824D48B95DCECA544965F21FF7870491F3F97150CB6852F12",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6441553624417126
+    },
+    {
+      "page": 53,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_053.png",
+      "bytes": 397004,
+      "sha256": "4AAF2516ACC3BABAAF6C22FBBA46E064328E38DBCDEC801F29E885F9D1CAEE36",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6457847604917338
+    },
+    {
+      "page": 54,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_054.png",
+      "bytes": 351598,
+      "sha256": "05D2F76F676C17CD60605E0AE5E78597F4BC492B5A3D37C88A969BD9F652D58D",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6029170199236965
+    },
+    {
+      "page": 55,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_055.png",
+      "bytes": 307704,
+      "sha256": "F663D7DC1570FAC91616C912695B3B57EDAC6B103B3E0A935A89E9F84B3B5BCD",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5621423272573124
+    },
+    {
+      "page": 56,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_056.png",
+      "bytes": 244660,
+      "sha256": "8657DC46647490EF24A60C5DFF77D3FA1700892F28734092353E80CD5CDAEF11",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6039635438745231
+    },
+    {
+      "page": 57,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_057.png",
+      "bytes": 280278,
+      "sha256": "F8EC85646DC5F142E0ED8E0F60D2646222A6968FA791B9A5CD7E72F56ABE511C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6305770453582026
+    },
+    {
+      "page": 58,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_058.png",
+      "bytes": 257632,
+      "sha256": "CE8321362AA9515AE6174E7683AD14B9E60CAE5FE9AF527D46972DA0C4F5F6F6",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.628404514624841
+    },
+    {
+      "page": 59,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_059.png",
+      "bytes": 330393,
+      "sha256": "D5CEEF4C6CD8F9C67A64C0278F3B9084CFBC4D3B0D782EB0E9A8A34A9E58B48F",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6110242687579482
+    },
+    {
+      "page": 60,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_060.png",
+      "bytes": 269688,
+      "sha256": "2BB543CF17793D86DFFE7BAB64B0DF1A83F7F2C6775632FF2C993E9BDCED8DEF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6137399321746503
+    },
+    {
+      "page": 61,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_061.png",
+      "bytes": 298229,
+      "sha256": "46BAF4A1D0E7AD8D86216494AF02260B85E218598E61EDDBF6A69CAAE30B320A",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5811519711742263
+    },
+    {
+      "page": 62,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_062.png",
+      "bytes": 280923,
+      "sha256": "BCAE067844B603EC88C95308AFF48FD38961B67D9FF30C08C5C51935F6D9DCBA",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.553452204323866
+    },
+    {
+      "page": 63,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_063.png",
+      "bytes": 273491,
+      "sha256": "88F3FE9372EEB7E39D216F34FDDB2C6D7096DD9E0305A960779882DE67ED56C0",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.553452204323866
+    },
+    {
+      "page": 64,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_064.png",
+      "bytes": 324353,
+      "sha256": "FBAE4A9AB9418491BDF992465ED741A2A33C261AEDBB1B7C6FB25FA24C94DA03",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6218869224247563
+    },
+    {
+      "page": 65,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_065.png",
+      "bytes": 199946,
+      "sha256": "9E91B1D938883923FA082E9DF950EB285C03A3CA8A851693B1BF02DBA8E4504E",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6327495760915642
+    },
+    {
+      "page": 66,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_066.png",
+      "bytes": 284347,
+      "sha256": "B5A978C7C2DDD0F2E89401CF8308081C01E5259B35817BFBF5EEAE88F1D6DC4C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5892989614243324
+    },
+    {
+      "page": 67,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_067.png",
+      "bytes": 295214,
+      "sha256": "A74766786149F2D65FD43210A914B4ABC2D391BECCACE82F01181537542F3ED0",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6262319838914795
+    },
+    {
+      "page": 68,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_068.png",
+      "bytes": 159986,
+      "sha256": "8E257B6853E91D275EFEB8F831406A3CDD5829BF151EAC704A5AE1DA81B6AC3C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.4437394022891056
+    },
+    {
+      "page": 69,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_069.png",
+      "bytes": 143155,
+      "sha256": "1F6EEF122B1BBA6361F0BF644B042079200C3C0FEB366FAA8919216206E4DF7C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.3801928783382789
+    },
+    {
+      "page": 70,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_070.png",
+      "bytes": 148765,
+      "sha256": "4D2B1487DFB059E85D163ECA30F9DDBF365E1F0500322AD7C7578AAE95D2E02B",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.4627490462060195
+    },
+    {
+      "page": 71,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_071.png",
+      "bytes": 126179,
+      "sha256": "D7D417EE99642FB7C856DFBB18B270A7D65E487D95755BCD20EEFE55E6C2B296",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.29763671047053836
+    },
+    {
+      "page": 72,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_072.png",
+      "bytes": 241828,
+      "sha256": "B1D895A9AE8AA7B68DD6C5A1317C837496D8D02CC96224A2F36142715E793F2D",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.4350492793556592
+    },
+    {
+      "page": 73,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_073.png",
+      "bytes": 218575,
+      "sha256": "80ACE18133C27B0BF2C0D2A7D3F5BF90D04D1C9CCB5BBA2944C914ABBA5F2061",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5822382365409071
+    },
+    {
+      "page": 74,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_074.png",
+      "bytes": 218876,
+      "sha256": "DD607A52669B3FC9CD7A6B606409284727A5743F1CE56F5CC3FF5F270C4D4FFF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5127172530733362
+    },
+    {
+      "page": 75,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_075.png",
+      "bytes": 171685,
+      "sha256": "5ACE3DE2874DCDA595C3E246D951B6621BC9B63D84AC340ED0C7C992D1A3B6FC",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6358330424157793
+    },
+    {
+      "page": 76,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_076.png",
+      "bytes": 151381,
+      "sha256": "A5D15F9C890570BAFB1CC3B425B54FD0A9BA6A77838DFE2308C1719A94CB1ACF",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.542589550657058
+    },
+    {
+      "page": 77,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_077.png",
+      "bytes": 194831,
+      "sha256": "DC6BC6B14A97687CF6059272604B03157AFF915E5C209394CDE2CAC4C30B19D4",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.625688851208139
+    },
+    {
+      "page": 78,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_078.png",
+      "bytes": 172982,
+      "sha256": "25AF6A1C4B68FDF02D24DAF49B0F5A7184D23DB9DA95EEE4368E881EE6170D66",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6075496222227763
+    },
+    {
+      "page": 79,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_079.png",
+      "bytes": 151571,
+      "sha256": "7A3000030946FB7CC764168BFDA5FCEB12F2C0533C99A02C358D18B6F4984FA6",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.48773314963967784
+    },
+    {
+      "page": 80,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_080.png",
+      "bytes": 193526,
+      "sha256": "0F1E1DBF1B93073919151CA9FC548774A806ADC79F598739E05635D66F4B1400",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5572541331072488
+    },
+    {
+      "page": 81,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_081.png",
+      "bytes": 243393,
+      "sha256": "5B20D8F6305ED312F54441F222FB32B3F2BB542CB68DA7C5AA52E4E8D4A4A83D",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5838676345909284
+    },
+    {
+      "page": 82,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_082.png",
+      "bytes": 221893,
+      "sha256": "CDA42D9B668F5ADF135E3CC3F90119125AB6D99E4C46FC3A10C57DCE02A47DD6",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6099380033912675
+    },
+    {
+      "page": 83,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_083.png",
+      "bytes": 248745,
+      "sha256": "176637209FD045F0989198FB35963C82777E44794350FE39EC5C011E4C252C85",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6468710258584146
+    },
+    {
+      "page": 84,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_084.png",
+      "bytes": 202978,
+      "sha256": "613E5B63D8DE5D16AA5F5CEFDED49AE9B4F3BC647652B8190400C0658C17741D",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5969028189910979
+    },
+    {
+      "page": 85,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_085.png",
+      "bytes": 240260,
+      "sha256": "57899F09F8B40636966A53D5947E6B96595347FBE83289FBDD9F17DD44FE772C",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6539317507418397
+    },
+    {
+      "page": 86,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_086.png",
+      "bytes": 226629,
+      "sha256": "69A5320D121EABB5A88666110F86B2C83F7075076F5E9A167FB3434B905D14B3",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6186281263247139
+    },
+    {
+      "page": 87,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_087.png",
+      "bytes": 241903,
+      "sha256": "18769B090319D28A77A1B8C1BDF8AC723CEF2FF5713A5764F478034ECEF6CCF8",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6206035084657008
+    },
+    {
+      "page": 88,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_088.png",
+      "bytes": 238790,
+      "sha256": "E16474C56F2F714246D56C2069AC76368D08C0EBF4D07E6788CD37E7A9601693",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6224300551080967
+    },
+    {
+      "page": 89,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_089.png",
+      "bytes": 249371,
+      "sha256": "3BDF5A0639E27651C2E3FB5EA15718FFD4395A741BE330860660513161E7C342",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6436122297583722
+    },
+    {
+      "page": 90,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_090.png",
+      "bytes": 255245,
+      "sha256": "273EFEF71DC8C15D8F5E09AFE00ACCAFFE83C6BFE65A326DB3E675EFC31D2294",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.6539317507418397
+    },
+    {
+      "page": 91,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_091.png",
+      "bytes": 218417,
+      "sha256": "72E132187224F73587052F518E106730084A64D1D8F1171218A5C4E37834243B",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.625688851208139
+    },
+    {
+      "page": 92,
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_092.png",
+      "bytes": 278990,
+      "sha256": "4257460EA16A08686775C9129E209D3F853E753DF044C5013A2EE7AE107C27A4",
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "content_bbox_fraction": 0.5990753497244595
+    }
+  ],
+  "representative_pages": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_001.png",
+      "bytes": 329294,
+      "sha256": "4AB6A2DD0F80610B254F5F6DF5671AA10B2AC037375116C14A94405F06E96F39"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_002.png",
+      "bytes": 246295,
+      "sha256": "2B1FDA136C55051A7F393487164AB54C7B0FD5D73A6121A04933B696531A807F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_024.png",
+      "bytes": 218485,
+      "sha256": "DBC50C245912CBC030DA5E2A97165E7FC4F3D09496564BAE0BA70032687F65A9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_047.png",
+      "bytes": 192712,
+      "sha256": "6692E3B7DE9F5D0BF6B77694DBAEFA70EE060B8B95AE5875AAE174147A4A03CC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_070.png",
+      "bytes": 148765,
+      "sha256": "4D2B1487DFB059E85D163ECA30F9DDBF365E1F0500322AD7C7578AAE95D2E02B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_092.png",
+      "bytes": 278990,
+      "sha256": "4257460EA16A08686775C9129E209D3F853E753DF044C5013A2EE7AE107C27A4"
+    }
+  ],
+  "page_checks": [
+    {
+      "page": 1,
+      "text_characters": 649,
+      "content_bbox_fraction": 0.7250610926863327,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_001.png",
+        "bytes": 329294,
+        "sha256": "4AB6A2DD0F80610B254F5F6DF5671AA10B2AC037375116C14A94405F06E96F39"
+      }
+    },
+    {
+      "page": 2,
+      "text_characters": 834,
+      "content_bbox_fraction": 0.6539317507418397,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_002.png",
+        "bytes": 246295,
+        "sha256": "2B1FDA136C55051A7F393487164AB54C7B0FD5D73A6121A04933B696531A807F"
+      }
+    },
+    {
+      "page": 3,
+      "text_characters": 871,
+      "content_bbox_fraction": 0.6289476473081814,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_003.png",
+        "bytes": 230600,
+        "sha256": "DBEA44FDEA0C410E93F34999D7F6B307787C2B3A1BFC995DE4E9213DE6D91B95"
+      }
+    },
+    {
+      "page": 4,
+      "text_characters": 1204,
+      "content_bbox_fraction": 0.6235163204747775,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_004.png",
+        "bytes": 279856,
+        "sha256": "B1C5D55BF682BD96D42C1A6ADA37E3D9B35053013E5AA452BA7A3B5F73C943C9"
+      }
+    },
+    {
+      "page": 5,
+      "text_characters": 782,
+      "content_bbox_fraction": 0.561599194573972,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_005.png",
+        "bytes": 224636,
+        "sha256": "ABE2BB6CC16F73FC92ECF4E4C2341AC7005082BD916EBE441836C36EE9B5BD25"
+      }
+    },
+    {
+      "page": 6,
+      "text_characters": 734,
+      "content_bbox_fraction": 0.6376377702416278,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_006.png",
+        "bytes": 207077,
+        "sha256": "4EE9103C85DD166ED84C6093F6B57A85B82B9B25C42A3497DE1166ABE15728E2"
+      }
+    },
+    {
+      "page": 7,
+      "text_characters": 1206,
+      "content_bbox_fraction": 0.5713755828740992,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_007.png",
+        "bytes": 282950,
+        "sha256": "17EFA4BDA93ADE877917C73A4B306D28F6EDA9C67D851695383C6FC57FFB6FBE"
+      }
+    },
+    {
+      "page": 8,
+      "text_characters": 810,
+      "content_bbox_fraction": 0.6088517380245867,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_008.png",
+        "bytes": 238108,
+        "sha256": "003D508D0962C3CF4DF183DFCD10B2AAED5AB6D8508A5A5E0B95BE312D5164EF"
+      }
+    },
+    {
+      "page": 9,
+      "text_characters": 1027,
+      "content_bbox_fraction": 0.6218869224247563,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_009.png",
+        "bytes": 265726,
+        "sha256": "A71881373EBE6B95D813DF51976CDD9848EC90BA398AB07AF6FD5D0649D78567"
+      }
+    },
+    {
+      "page": 10,
+      "text_characters": 939,
+      "content_bbox_fraction": 0.6479572912250954,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_010.png",
+        "bytes": 270759,
+        "sha256": "00372A0E6985D29CDE63CC7E4BC4217035F3DA13D10744EFC805228BDB393BAD"
+      }
+    },
+    {
+      "page": 11,
+      "text_characters": 1297,
+      "content_bbox_fraction": 0.6083086053412463,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_011.png",
+        "bytes": 331125,
+        "sha256": "002AE4A5C04C9DC350AEC46C335884709671650F19855CA3061391381F2508E6"
+      }
+    },
+    {
+      "page": 12,
+      "text_characters": 1161,
+      "content_bbox_fraction": 0.6445356332443957,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_012.png",
+        "bytes": 263318,
+        "sha256": "FCCB7BF2113121ABFC35C2BBAF22C6935C15BBBE27DC1CA3382736F6E7EF88C3"
+      }
+    },
+    {
+      "page": 13,
+      "text_characters": 1352,
+      "content_bbox_fraction": 0.5914714921576939,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_013.png",
+        "bytes": 232100,
+        "sha256": "E92B9EEA66CB2D1C0F8D183F40E1D5246FA40F7F52B431F9E0879A94B541F138"
+      }
+    },
+    {
+      "page": 14,
+      "text_characters": 832,
+      "content_bbox_fraction": 0.37747721492157693,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_014.png",
+        "bytes": 180253,
+        "sha256": "8AD24D0A22CE567D74001B86E3F2B22DBC169AC19F4A7CC2929887E19E7E0A0C"
+      }
+    },
+    {
+      "page": 15,
+      "text_characters": 1775,
+      "content_bbox_fraction": 0.5822382365409071,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_015.png",
+        "bytes": 224689,
+        "sha256": "2E823F20667E201F37E8B03D20193F18C9236BA8B5CBE7AC78AA0BD1ADB7478A"
+      }
+    },
+    {
+      "page": 16,
+      "text_characters": 1160,
+      "content_bbox_fraction": 0.6430690970750318,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_016.png",
+        "bytes": 252729,
+        "sha256": "0BD8BB9BC39E5A78C51D6ABA0A9E97B8B9F8C23193FC813D9B78FDCFF8015735"
+      }
+    },
+    {
+      "page": 17,
+      "text_characters": 1115,
+      "content_bbox_fraction": 0.5577972657905892,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_017.png",
+        "bytes": 260445,
+        "sha256": "0CB9EFEE2705FA0238B70B79A3BA7064310D7F3DF46285681E469CA1D8C0D043"
+      }
+    },
+    {
+      "page": 18,
+      "text_characters": 859,
+      "content_bbox_fraction": 0.44428253497244596,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_018.png",
+        "bytes": 208086,
+        "sha256": "D37860827891495393364F1992D5C3C613C1E50FFA875B9B42D8FAC445091F41"
+      }
+    },
+    {
+      "page": 19,
+      "text_characters": 1104,
+      "content_bbox_fraction": 0.5816951038575667,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_019.png",
+        "bytes": 231809,
+        "sha256": "80DAB9791DF281093386611470C60D5DEBE53FB26F7FCF1DAFAB5268B1201ED0"
+      }
+    },
+    {
+      "page": 20,
+      "text_characters": 1386,
+      "content_bbox_fraction": 0.5768069097075031,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_020.png",
+        "bytes": 259929,
+        "sha256": "74FA793CB4569C52FCF97937EBF49BFC4E95B0B925AFFDB8FAA89EB5922B3CA4"
+      }
+    },
+    {
+      "page": 21,
+      "text_characters": 850,
+      "content_bbox_fraction": 0.4942507418397626,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_021.png",
+        "bytes": 248052,
+        "sha256": "2CE3F156B013B17E10F66B364EB49D06E2AA7AF710B819E6D950644234DA4580"
+      }
+    },
+    {
+      "page": 22,
+      "text_characters": 997,
+      "content_bbox_fraction": 0.639267168291649,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_022.png",
+        "bytes": 216485,
+        "sha256": "A7C465B400A3C6F08CFA61908B2C29D0748624A51BC102E62C15D6D959FDFB42"
+      }
+    },
+    {
+      "page": 23,
+      "text_characters": 1180,
+      "content_bbox_fraction": 0.6034204111911827,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_023.png",
+        "bytes": 244941,
+        "sha256": "0EDF6D1F2B5717BD9C682B65ADC3ED07B9E443D2D2B6B37B8AC4C750DF678BDD"
+      }
+    },
+    {
+      "page": 24,
+      "text_characters": 866,
+      "content_bbox_fraction": 0.5072859262399322,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_024.png",
+        "bytes": 218485,
+        "sha256": "DBC50C245912CBC030DA5E2A97165E7FC4F3D09496564BAE0BA70032687F65A9"
+      }
+    },
+    {
+      "page": 25,
+      "text_characters": 911,
+      "content_bbox_fraction": 0.636551504874947,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_025.png",
+        "bytes": 230383,
+        "sha256": "2687F3D9C8CA58B13827B83B2B87627C0AAC2D2CF154435BD0D114A4AD2BDBCF"
+      }
+    },
+    {
+      "page": 26,
+      "text_characters": 994,
+      "content_bbox_fraction": 0.5849538999576092,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_026.png",
+        "bytes": 260386,
+        "sha256": "8E4B6B912AB2FF5ABDC31C2B83C0D213246A72CE835F229F1969C9A640A83E64"
+      }
+    },
+    {
+      "page": 27,
+      "text_characters": 596,
+      "content_bbox_fraction": 0.49262134378974143,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_027.png",
+        "bytes": 150092,
+        "sha256": "C2D4FEE2289EAB78E105BBA5ADC6B45A3215D85D48121996FE14C27D889E978E"
+      }
+    },
+    {
+      "page": 28,
+      "text_characters": 1279,
+      "content_bbox_fraction": 0.6408965663416702,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_028.png",
+        "bytes": 217204,
+        "sha256": "5C418AE2D6AB35B7994A6FD8F0E57B0A4D15738376E75B1327D9650C82129540"
+      }
+    },
+    {
+      "page": 29,
+      "text_characters": 1075,
+      "content_bbox_fraction": 0.5816951038575667,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_029.png",
+        "bytes": 207580,
+        "sha256": "7B7527779275D1D656910D92937EDB67E90776425C7E0F91821998B8FF49A6FF"
+      }
+    },
+    {
+      "page": 30,
+      "text_characters": 917,
+      "content_bbox_fraction": 0.5550816023738873,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_030.png",
+        "bytes": 212430,
+        "sha256": "4BACB9C605B463A1FF68711CFA480311B1D3A5282ED5159D5188DC761B2B82C6"
+      }
+    },
+    {
+      "page": 31,
+      "text_characters": 974,
+      "content_bbox_fraction": 0.5197779779567614,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_031.png",
+        "bytes": 245939,
+        "sha256": "86F28D0613A3F3CC6B5DBF0D884C7C0E00ABAAEBD81EB7B706FB26DDF9A570FA"
+      }
+    },
+    {
+      "page": 32,
+      "text_characters": 1378,
+      "content_bbox_fraction": 0.5996184824077999,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_032.png",
+        "bytes": 378561,
+        "sha256": "DA12D77EF8DA6FB428257110A9C380CE3E7C6DF015067CF9FBF5BAB7BDB2C414"
+      }
+    },
+    {
+      "page": 33,
+      "text_characters": 1006,
+      "content_bbox_fraction": 0.430704217888936,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_033.png",
+        "bytes": 269622,
+        "sha256": "162FC8300799FBF495E1EB6594156F549692353874D87E3748F72DBEB67799FE"
+      }
+    },
+    {
+      "page": 34,
+      "text_characters": 870,
+      "content_bbox_fraction": 0.5909283594743535,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_034.png",
+        "bytes": 215853,
+        "sha256": "75E6D6882B4A5194430602B3C9B5118495F4196393F402F239B331F95001A066"
+      }
+    },
+    {
+      "page": 35,
+      "text_characters": 1447,
+      "content_bbox_fraction": 0.6495866892751165,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_035.png",
+        "bytes": 230131,
+        "sha256": "3113354BA0E4C8F47BA01DB807461DB1A5B8556814042BC0D98C91CDA45C0519"
+      }
+    },
+    {
+      "page": 36,
+      "text_characters": 2348,
+      "content_bbox_fraction": 0.6408965663416702,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_036.png",
+        "bytes": 267332,
+        "sha256": "29F4322661760D0730108A3A1F216F3484517871A915764BB593C23D04CC7765"
+      }
+    },
+    {
+      "page": 37,
+      "text_characters": 2654,
+      "content_bbox_fraction": 0.6121105341246291,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_037.png",
+        "bytes": 278288,
+        "sha256": "3ABA32710BC40368CE0E3CD99E86664D20FDD3D4269D00C057B210C30663C3CB"
+      }
+    },
+    {
+      "page": 38,
+      "text_characters": 2625,
+      "content_bbox_fraction": 0.6332927087749046,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_038.png",
+        "bytes": 278204,
+        "sha256": "EAD5A7A3B123D2B9A8C2B9369FEDC968D04350C82928E42BBCBB55C5EBE47DE1"
+      }
+    },
+    {
+      "page": 39,
+      "text_characters": 2750,
+      "content_bbox_fraction": 0.633835841458245,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_039.png",
+        "bytes": 293572,
+        "sha256": "696288C66A48A87EEB52AE40B9251746570CFEC45D939E5DDDBA4F1393A61372"
+      }
+    },
+    {
+      "page": 40,
+      "text_characters": 2402,
+      "content_bbox_fraction": 0.6343789741415854,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_040.png",
+        "bytes": 265167,
+        "sha256": "0B633B3ACB64967265B1741C609044AA3CB49F5BB1E0CA050B4AC5C2D321ED03"
+      }
+    },
+    {
+      "page": 41,
+      "text_characters": 1762,
+      "content_bbox_fraction": 0.628404514624841,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_041.png",
+        "bytes": 242847,
+        "sha256": "8D3FA81ECEF20DFE14E05ADC9D932BBDD8617AA071F17A903C8F1FC8D71E8DD1"
+      }
+    },
+    {
+      "page": 42,
+      "text_characters": 195,
+      "content_bbox_fraction": 0.1279673590504451,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_042.png",
+        "bytes": 87383,
+        "sha256": "B0D3D717B95E36224054DDA0A14A046B70A2E9D5C1DEC64008387A5470E8FA7B"
+      }
+    },
+    {
+      "page": 43,
+      "text_characters": 914,
+      "content_bbox_fraction": 0.5827813692242476,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_043.png",
+        "bytes": 228138,
+        "sha256": "3E75821A718C7A46A6D275512486AF79B7C1E1986694431EB6F585B2B609B1CC"
+      }
+    },
+    {
+      "page": 44,
+      "text_characters": 1187,
+      "content_bbox_fraction": 0.6506729546417974,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_044.png",
+        "bytes": 223930,
+        "sha256": "1B41254220FA738DE7FD738F833A8DA3D4651F6990CE51E77DF2E6E2797FF534"
+      }
+    },
+    {
+      "page": 45,
+      "text_characters": 1233,
+      "content_bbox_fraction": 0.6039635438745231,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_045.png",
+        "bytes": 219526,
+        "sha256": "B35CA9E39A4EDB44D8B83896EE71619740C43EE0C925D1A765B09FBCE98C6494"
+      }
+    },
+    {
+      "page": 46,
+      "text_characters": 1049,
+      "content_bbox_fraction": 0.42201409495548964,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_046.png",
+        "bytes": 192194,
+        "sha256": "AD26E91F16963AB0E13752ED2631E21885AE2B4B70B5889B2CA87E2955823BC8"
+      }
+    },
+    {
+      "page": 47,
+      "text_characters": 969,
+      "content_bbox_fraction": 0.606679207291225,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_047.png",
+        "bytes": 192712,
+        "sha256": "6692E3B7DE9F5D0BF6B77694DBAEFA70EE060B8B95AE5875AAE174147A4A03CC"
+      }
+    },
+    {
+      "page": 48,
+      "text_characters": 1119,
+      "content_bbox_fraction": 0.553452204323866,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_048.png",
+        "bytes": 242845,
+        "sha256": "71BFC2B80C60A5E77FAA83E47F077D81D182CE6830FA1B7152AA805F4593D5E9"
+      }
+    },
+    {
+      "page": 49,
+      "text_characters": 898,
+      "content_bbox_fraction": 0.43516382814253296,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_049.png",
+        "bytes": 176076,
+        "sha256": "F071FD1C69DB9B18508C1B7F36F8DB56DD55359AC0958F8C152FB626D86E4DDC"
+      }
+    },
+    {
+      "page": 50,
+      "text_characters": 942,
+      "content_bbox_fraction": 0.6262319838914795,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_050.png",
+        "bytes": 211687,
+        "sha256": "5627CE2611F323716A5CBB8682052451E0EF4F5942CBE1E68DE80003334D5ACE"
+      }
+    },
+    {
+      "page": 51,
+      "text_characters": 1054,
+      "content_bbox_fraction": 0.6506729546417974,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_051.png",
+        "bytes": 201562,
+        "sha256": "8F0DFCC02A3E99453933EAE10AAA0E02D36196640FFF04D949179F4DAFB64FE0"
+      }
+    },
+    {
+      "page": 52,
+      "text_characters": 900,
+      "content_bbox_fraction": 0.6441553624417126,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_052.png",
+        "bytes": 216208,
+        "sha256": "39E01225B154579824D48B95DCECA544965F21FF7870491F3F97150CB6852F12"
+      }
+    },
+    {
+      "page": 53,
+      "text_characters": 1711,
+      "content_bbox_fraction": 0.6457847604917338,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_053.png",
+        "bytes": 397004,
+        "sha256": "4AAF2516ACC3BABAAF6C22FBBA46E064328E38DBCDEC801F29E885F9D1CAEE36"
+      }
+    },
+    {
+      "page": 54,
+      "text_characters": 2040,
+      "content_bbox_fraction": 0.6029170199236965,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_054.png",
+        "bytes": 351598,
+        "sha256": "05D2F76F676C17CD60605E0AE5E78597F4BC492B5A3D37C88A969BD9F652D58D"
+      }
+    },
+    {
+      "page": 55,
+      "text_characters": 1659,
+      "content_bbox_fraction": 0.5621423272573124,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_055.png",
+        "bytes": 307704,
+        "sha256": "F663D7DC1570FAC91616C912695B3B57EDAC6B103B3E0A935A89E9F84B3B5BCD"
+      }
+    },
+    {
+      "page": 56,
+      "text_characters": 1876,
+      "content_bbox_fraction": 0.6039635438745231,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_056.png",
+        "bytes": 244660,
+        "sha256": "8657DC46647490EF24A60C5DFF77D3FA1700892F28734092353E80CD5CDAEF11"
+      }
+    },
+    {
+      "page": 57,
+      "text_characters": 1680,
+      "content_bbox_fraction": 0.6305770453582026,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_057.png",
+        "bytes": 280278,
+        "sha256": "F8EC85646DC5F142E0ED8E0F60D2646222A6968FA791B9A5CD7E72F56ABE511C"
+      }
+    },
+    {
+      "page": 58,
+      "text_characters": 928,
+      "content_bbox_fraction": 0.628404514624841,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_058.png",
+        "bytes": 257632,
+        "sha256": "CE8321362AA9515AE6174E7683AD14B9E60CAE5FE9AF527D46972DA0C4F5F6F6"
+      }
+    },
+    {
+      "page": 59,
+      "text_characters": 1100,
+      "content_bbox_fraction": 0.6110242687579482,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_059.png",
+        "bytes": 330393,
+        "sha256": "D5CEEF4C6CD8F9C67A64C0278F3B9084CFBC4D3B0D782EB0E9A8A34A9E58B48F"
+      }
+    },
+    {
+      "page": 60,
+      "text_characters": 1144,
+      "content_bbox_fraction": 0.6137399321746503,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_060.png",
+        "bytes": 269688,
+        "sha256": "2BB543CF17793D86DFFE7BAB64B0DF1A83F7F2C6775632FF2C993E9BDCED8DEF"
+      }
+    },
+    {
+      "page": 61,
+      "text_characters": 1386,
+      "content_bbox_fraction": 0.5811519711742263,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_061.png",
+        "bytes": 298229,
+        "sha256": "46BAF4A1D0E7AD8D86216494AF02260B85E218598E61EDDBF6A69CAAE30B320A"
+      }
+    },
+    {
+      "page": 62,
+      "text_characters": 1351,
+      "content_bbox_fraction": 0.553452204323866,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_062.png",
+        "bytes": 280923,
+        "sha256": "BCAE067844B603EC88C95308AFF48FD38961B67D9FF30C08C5C51935F6D9DCBA"
+      }
+    },
+    {
+      "page": 63,
+      "text_characters": 1358,
+      "content_bbox_fraction": 0.553452204323866,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_063.png",
+        "bytes": 273491,
+        "sha256": "88F3FE9372EEB7E39D216F34FDDB2C6D7096DD9E0305A960779882DE67ED56C0"
+      }
+    },
+    {
+      "page": 64,
+      "text_characters": 1731,
+      "content_bbox_fraction": 0.6218869224247563,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_064.png",
+        "bytes": 324353,
+        "sha256": "FBAE4A9AB9418491BDF992465ED741A2A33C261AEDBB1B7C6FB25FA24C94DA03"
+      }
+    },
+    {
+      "page": 65,
+      "text_characters": 1265,
+      "content_bbox_fraction": 0.6327495760915642,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_065.png",
+        "bytes": 199946,
+        "sha256": "9E91B1D938883923FA082E9DF950EB285C03A3CA8A851693B1BF02DBA8E4504E"
+      }
+    },
+    {
+      "page": 66,
+      "text_characters": 1198,
+      "content_bbox_fraction": 0.5892989614243324,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_066.png",
+        "bytes": 284347,
+        "sha256": "B5A978C7C2DDD0F2E89401CF8308081C01E5259B35817BFBF5EEAE88F1D6DC4C"
+      }
+    },
+    {
+      "page": 67,
+      "text_characters": 1317,
+      "content_bbox_fraction": 0.6262319838914795,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_067.png",
+        "bytes": 295214,
+        "sha256": "A74766786149F2D65FD43210A914B4ABC2D391BECCACE82F01181537542F3ED0"
+      }
+    },
+    {
+      "page": 68,
+      "text_characters": 794,
+      "content_bbox_fraction": 0.4437394022891056,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_068.png",
+        "bytes": 159986,
+        "sha256": "8E257B6853E91D275EFEB8F831406A3CDD5829BF151EAC704A5AE1DA81B6AC3C"
+      }
+    },
+    {
+      "page": 69,
+      "text_characters": 709,
+      "content_bbox_fraction": 0.3801928783382789,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_069.png",
+        "bytes": 143155,
+        "sha256": "1F6EEF122B1BBA6361F0BF644B042079200C3C0FEB366FAA8919216206E4DF7C"
+      }
+    },
+    {
+      "page": 70,
+      "text_characters": 756,
+      "content_bbox_fraction": 0.4627490462060195,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_070.png",
+        "bytes": 148765,
+        "sha256": "4D2B1487DFB059E85D163ECA30F9DDBF365E1F0500322AD7C7578AAE95D2E02B"
+      }
+    },
+    {
+      "page": 71,
+      "text_characters": 598,
+      "content_bbox_fraction": 0.29763671047053836,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_071.png",
+        "bytes": 126179,
+        "sha256": "D7D417EE99642FB7C856DFBB18B270A7D65E487D95755BCD20EEFE55E6C2B296"
+      }
+    },
+    {
+      "page": 72,
+      "text_characters": 1423,
+      "content_bbox_fraction": 0.4350492793556592,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_072.png",
+        "bytes": 241828,
+        "sha256": "B1D895A9AE8AA7B68DD6C5A1317C837496D8D02CC96224A2F36142715E793F2D"
+      }
+    },
+    {
+      "page": 73,
+      "text_characters": 1046,
+      "content_bbox_fraction": 0.5822382365409071,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_073.png",
+        "bytes": 218575,
+        "sha256": "80ACE18133C27B0BF2C0D2A7D3F5BF90D04D1C9CCB5BBA2944C914ABBA5F2061"
+      }
+    },
+    {
+      "page": 74,
+      "text_characters": 1226,
+      "content_bbox_fraction": 0.5127172530733362,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_074.png",
+        "bytes": 218876,
+        "sha256": "DD607A52669B3FC9CD7A6B606409284727A5743F1CE56F5CC3FF5F270C4D4FFF"
+      }
+    },
+    {
+      "page": 75,
+      "text_characters": 827,
+      "content_bbox_fraction": 0.6358330424157793,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_075.png",
+        "bytes": 171685,
+        "sha256": "5ACE3DE2874DCDA595C3E246D951B6621BC9B63D84AC340ED0C7C992D1A3B6FC"
+      }
+    },
+    {
+      "page": 76,
+      "text_characters": 693,
+      "content_bbox_fraction": 0.542589550657058,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_076.png",
+        "bytes": 151381,
+        "sha256": "A5D15F9C890570BAFB1CC3B425B54FD0A9BA6A77838DFE2308C1719A94CB1ACF"
+      }
+    },
+    {
+      "page": 77,
+      "text_characters": 1234,
+      "content_bbox_fraction": 0.625688851208139,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_077.png",
+        "bytes": 194831,
+        "sha256": "DC6BC6B14A97687CF6059272604B03157AFF915E5C209394CDE2CAC4C30B19D4"
+      }
+    },
+    {
+      "page": 78,
+      "text_characters": 825,
+      "content_bbox_fraction": 0.6075496222227763,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_078.png",
+        "bytes": 172982,
+        "sha256": "25AF6A1C4B68FDF02D24DAF49B0F5A7184D23DB9DA95EEE4368E881EE6170D66"
+      }
+    },
+    {
+      "page": 79,
+      "text_characters": 695,
+      "content_bbox_fraction": 0.48773314963967784,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_079.png",
+        "bytes": 151571,
+        "sha256": "7A3000030946FB7CC764168BFDA5FCEB12F2C0533C99A02C358D18B6F4984FA6"
+      }
+    },
+    {
+      "page": 80,
+      "text_characters": 1228,
+      "content_bbox_fraction": 0.5572541331072488,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_080.png",
+        "bytes": 193526,
+        "sha256": "0F1E1DBF1B93073919151CA9FC548774A806ADC79F598739E05635D66F4B1400"
+      }
+    },
+    {
+      "page": 81,
+      "text_characters": 1290,
+      "content_bbox_fraction": 0.5838676345909284,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_081.png",
+        "bytes": 243393,
+        "sha256": "5B20D8F6305ED312F54441F222FB32B3F2BB542CB68DA7C5AA52E4E8D4A4A83D"
+      }
+    },
+    {
+      "page": 82,
+      "text_characters": 1544,
+      "content_bbox_fraction": 0.6099380033912675,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_082.png",
+        "bytes": 221893,
+        "sha256": "CDA42D9B668F5ADF135E3CC3F90119125AB6D99E4C46FC3A10C57DCE02A47DD6"
+      }
+    },
+    {
+      "page": 83,
+      "text_characters": 1723,
+      "content_bbox_fraction": 0.6468710258584146,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_083.png",
+        "bytes": 248745,
+        "sha256": "176637209FD045F0989198FB35963C82777E44794350FE39EC5C011E4C252C85"
+      }
+    },
+    {
+      "page": 84,
+      "text_characters": 1009,
+      "content_bbox_fraction": 0.5969028189910979,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_084.png",
+        "bytes": 202978,
+        "sha256": "613E5B63D8DE5D16AA5F5CEFDED49AE9B4F3BC647652B8190400C0658C17741D"
+      }
+    },
+    {
+      "page": 85,
+      "text_characters": 1430,
+      "content_bbox_fraction": 0.6539317507418397,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_085.png",
+        "bytes": 240260,
+        "sha256": "57899F09F8B40636966A53D5947E6B96595347FBE83289FBDD9F17DD44FE772C"
+      }
+    },
+    {
+      "page": 86,
+      "text_characters": 1331,
+      "content_bbox_fraction": 0.6186281263247139,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_086.png",
+        "bytes": 226629,
+        "sha256": "69A5320D121EABB5A88666110F86B2C83F7075076F5E9A167FB3434B905D14B3"
+      }
+    },
+    {
+      "page": 87,
+      "text_characters": 1460,
+      "content_bbox_fraction": 0.6206035084657008,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_087.png",
+        "bytes": 241903,
+        "sha256": "18769B090319D28A77A1B8C1BDF8AC723CEF2FF5713A5764F478034ECEF6CCF8"
+      }
+    },
+    {
+      "page": 88,
+      "text_characters": 2475,
+      "content_bbox_fraction": 0.6224300551080967,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_088.png",
+        "bytes": 238790,
+        "sha256": "E16474C56F2F714246D56C2069AC76368D08C0EBF4D07E6788CD37E7A9601693"
+      }
+    },
+    {
+      "page": 89,
+      "text_characters": 2682,
+      "content_bbox_fraction": 0.6436122297583722,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_089.png",
+        "bytes": 249371,
+        "sha256": "3BDF5A0639E27651C2E3FB5EA15718FFD4395A741BE330860660513161E7C342"
+      }
+    },
+    {
+      "page": 90,
+      "text_characters": 2718,
+      "content_bbox_fraction": 0.6539317507418397,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_090.png",
+        "bytes": 255245,
+        "sha256": "273EFEF71DC8C15D8F5E09AFE00ACCAFFE83C6BFE65A326DB3E675EFC31D2294"
+      }
+    },
+    {
+      "page": 91,
+      "text_characters": 1518,
+      "content_bbox_fraction": 0.625688851208139,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_091.png",
+        "bytes": 218417,
+        "sha256": "72E132187224F73587052F518E106730084A64D1D8F1171218A5C4E37834243B"
+      }
+    },
+    {
+      "page": 92,
+      "text_characters": 991,
+      "content_bbox_fraction": 0.5990753497244595,
+      "rendered_high_resolution": true,
+      "render_dimensions": [
+        952,
+        1348
+      ],
+      "render": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\rendered_pdf_runs\\91D92E997F7ABA5D_20260823T133124327846\\page_092.png",
+        "bytes": 278990,
+        "sha256": "4257460EA16A08686775C9129E209D3F853E753DF044C5013A2EE7AE107C27A4"
+      }
+    }
+  ]
+}

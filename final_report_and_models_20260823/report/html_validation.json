@@ -1,0 +1,1226 @@
+{
+  "status": "PASS",
+  "scope": "FINAL_COMPREHENSIVE_HTML_AND_EVIDENCE_VALIDATION",
+  "require_capture_final": false,
+  "checks_passed": 122,
+  "checks_failed": 0,
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.html",
+    "bytes": 268451,
+    "sha256": "7CDDEB7AD0591ABE656E2EE5B3E4ED54D275D369D18B36A867F49009E3870A72"
+  },
+  "checks": [
+    {
+      "check": "exists:index.html",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.html"
+    },
+    {
+      "check": "exists:report_data_snapshot.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\report_data_snapshot.json"
+    },
+    {
+      "check": "exists:report_manifest.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\report_manifest.json"
+    },
+    {
+      "check": "exists:betting_edge_evidence.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\betting_edge_evidence.json"
+    },
+    {
+      "check": "exists:betting_edge_evidence.md",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\betting_edge_evidence.md"
+    },
+    {
+      "check": "exists:data_model_evidence.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\data_model_evidence.json"
+    },
+    {
+      "check": "exists:data_model_evidence.md",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\data_model_evidence.md"
+    },
+    {
+      "check": "exists:chronology_literature_evidence.json",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\chronology_literature_evidence.json"
+    },
+    {
+      "check": "exists:chronology_literature_evidence.md",
+      "status": "PASS",
+      "evidence": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\chronology_literature_evidence.md"
+    },
+    {
+      "check": "utf8_no_replacement_character",
+      "status": "PASS",
+      "evidence": "replacement_count=0"
+    },
+    {
+      "check": "no_nul",
+      "status": "PASS",
+      "evidence": "nul_count=0"
+    },
+    {
+      "check": "html5_doctype",
+      "status": "PASS",
+      "evidence": "<!doctype html><html lang='ko'><head><me"
+    },
+    {
+      "check": "html_closed",
+      "status": "PASS",
+      "evidence": ">\n</section>\n</div></main></body></html>"
+    },
+    {
+      "check": "single_h1",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "check": "unique_html_ids",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "no_unresolved_template_tokens",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "title_final",
+      "status": "PASS",
+      "evidence": "KRA 시장오차·다크호스·수익성 전체 연구 최종 보고서 — 2026-08-23"
+    },
+    {
+      "check": "sections_s1_to_s22",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "supplement_sections_all_present",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "numbered_sections_in_logical_order",
+      "status": "PASS",
+      "evidence": [
+        7725,
+        10686,
+        11935,
+        15805,
+        22769,
+        31403,
+        43615,
+        57588,
+        61121,
+        72280,
+        73498,
+        76372,
+        106725,
+        118908,
+        133463,
+        149223,
+        153736,
+        155195,
+        156847,
+        178778,
+        210249,
+        227906
+      ]
+    },
+    {
+      "check": "h2_count_exact_22",
+      "status": "PASS",
+      "evidence": 22
+    },
+    {
+      "check": "table_count",
+      "status": "PASS",
+      "evidence": 51
+    },
+    {
+      "check": "svg_chart_count",
+      "status": "PASS",
+      "evidence": 12
+    },
+    {
+      "check": "all_svg_accessible",
+      "status": "PASS",
+      "evidence": {
+        "svg": 12,
+        "role_img": 12,
+        "accessible_name": 12,
+        "title": 12
+      }
+    },
+    {
+      "check": "chart_and_supplement_source_captions",
+      "status": "PASS",
+      "evidence": {
+        "figcaption": 26,
+        "svg": 12,
+        "minimum": 26
+      }
+    },
+    {
+      "check": "chart_specific_source_contracts",
+      "status": "PASS",
+      "evidence": {
+        "figures": 12,
+        "titles": [
+          "2026-08-23 prospective 캡처 상태 — 결과·ROI가 아닌 입력 가용성",
+          "7승식 ROI 점추정 — 세 연구 계열 비교",
+          "8~15배 Deep 연승 ROI의 환급 haircut 민감도",
+          "8~15배 연승 방어 실험 — 모델 절대 ROI와 동일경주 q 대조",
+          "H11B 모델별 시장 대비 ΔLL — VALID와 재사용 TEST",
+          "H11C 8~15배 잠금 cutoff ROI — H11B 대 q 대조",
+          "partial_30_plus 상위 중요도",
+          "딥 MLP 시장잔차 중요도",
+          "서로 다른 시간순 OOS의 시장 대비 ΔLL/경주 (행별 표본·CI 정의 확인)",
+          "이변 중요도 0.5% 통과 피처 상위 15개 — 양의 중요도 비중",
+          "재사용 late28 시장 대비 ΔLL와 일자블록 95% CI",
+          "핵심 후보의 q 기반 대조정책 대비 paired ΔROI"
+        ],
+        "duplicates": [],
+        "failures": {}
+      }
+    },
+    {
+      "check": "generic_chart_source_language_absent",
+      "status": "PASS",
+      "evidence": {
+        "차트 제목·축에 표시된 저장 지표": 0,
+        "각 장에 명시된 VALID/재사용 TEST/후행 자료 범위": 0
+      }
+    },
+    {
+      "check": "prospective_chart_snapshot_rows_and_plan_scope",
+      "status": "PASS",
+      "evidence": {
+        "missing": []
+      }
+    },
+    {
+      "check": "all_table_headers_have_scope",
+      "status": "PASS",
+      "evidence": {
+        "th": 396,
+        "missing_scope": 0
+      }
+    },
+    {
+      "check": "phrase:최종 실전 배포 판정: NO-GO",
+      "status": "PASS",
+      "evidence": "최종 실전 배포 판정: NO-GO"
+    },
+    {
+      "check": "phrase:권장 실제 stake 0원",
+      "status": "PASS",
+      "evidence": "권장 실제 stake 0원"
+    },
+    {
+      "check": "phrase:prospective ROI",
+      "status": "PASS",
+      "evidence": "prospective ROI"
+    },
+    {
+      "check": "phrase:현재 실험에서는 측정되지 않음",
+      "status": "PASS",
+      "evidence": "현재 실험에서는 측정되지 않음"
+    },
+    {
+      "check": "phrase:0 / 7",
+      "status": "PASS",
+      "evidence": "0 / 7"
+    },
+    {
+      "check": "phrase:H11B 실제 다중모델 학습",
+      "status": "PASS",
+      "evidence": "H11B 실제 다중모델 학습"
+    },
+    {
+      "check": "phrase:H10~H18",
+      "status": "PASS",
+      "evidence": "H10~H18"
+    },
+    {
+      "check": "phrase:8~15배",
+      "status": "PASS",
+      "evidence": "8~15배"
+    },
+    {
+      "check": "phrase:strict TE 60/60",
+      "status": "PASS",
+      "evidence": "strict TE 60/60"
+    },
+    {
+      "check": "phrase:신규 모델·튜닝·백테스트",
+      "status": "PASS",
+      "evidence": "신규 모델·튜닝·백테스트"
+    },
+    {
+      "check": "phrase:공식 사후 정산",
+      "status": "PASS",
+      "evidence": "공식 사후 정산"
+    },
+    {
+      "check": "phrase:시장보다 덜 잃은 방어 신호",
+      "status": "PASS",
+      "evidence": "시장보다 덜 잃은 방어 신호"
+    },
+    {
+      "check": "phrase:15단계 연구 연대기",
+      "status": "PASS",
+      "evidence": "15단계 연구 연대기"
+    },
+    {
+      "check": "phrase:Git 파이프라인 대 revised_v11 전처리 비교",
+      "status": "PASS",
+      "evidence": "Git 파이프라인 대 revised_v11 전처리 비교"
+    },
+    {
+      "check": "phrase:아직 측정·식별되지 않은 16개 지표",
+      "status": "PASS",
+      "evidence": "아직 측정·식별되지 않은 16개 지표"
+    },
+    {
+      "check": "phrase:일반 6개 착순모델 대 시장의 직접 반증",
+      "status": "PASS",
+      "evidence": "일반 6개 착순모델 대 시장의 직접 반증"
+    },
+    {
+      "check": "phrase:v11 전체착순·시장앵커 7승식 상세 수익·위험",
+      "status": "PASS",
+      "evidence": "v11 전체착순·시장앵커 7승식 상세 수익·위험"
+    },
+    {
+      "check": "phrase:8~15배 결과 계보와 상위 10~40% 이변 그리드",
+      "status": "PASS",
+      "evidence": "8~15배 결과 계보와 상위 10~40% 이변 그리드"
+    },
+    {
+      "check": "phrase:fresh64 M5·M6 7승식 비교",
+      "status": "PASS",
+      "evidence": "fresh64 M5·M6 7승식 비교"
+    },
+    {
+      "check": "phrase:서울·부경 층화 안정성",
+      "status": "PASS",
+      "evidence": "서울·부경 층화 안정성"
+    },
+    {
+      "check": "phrase:배포는 NO-GO이고 실베팅액은 0이다",
+      "status": "PASS",
+      "evidence": "배포는 NO-GO이고 실베팅액은 0이다"
+    },
+    {
+      "check": "phrase:q-Harville proxy",
+      "status": "PASS",
+      "evidence": "q-Harville proxy"
+    },
+    {
+      "check": "phrase:독립 표본 확증이 아니다",
+      "status": "PASS",
+      "evidence": "독립 표본 확증이 아니다"
+    },
+    {
+      "check": "phrase:paper/simulation",
+      "status": "PASS",
+      "evidence": "paper/simulation"
+    },
+    {
+      "check": "phrase:최신성 경계",
+      "status": "PASS",
+      "evidence": "최신성 경계"
+    },
+    {
+      "check": "phrase:prospective 캡처 완결성",
+      "status": "PASS",
+      "evidence": "prospective 캡처 완결성"
+    },
+    {
+      "check": "phrase:prospective 캡처 무결성",
+      "status": "PASS",
+      "evidence": "prospective 캡처 무결성"
+    },
+    {
+      "check": "phrase:4.441e-16",
+      "status": "PASS",
+      "evidence": "4.441e-16"
+    },
+    {
+      "check": "phrase:alpha=1.05 개발·1.06 후속 paper 평가 후보로 동결",
+      "status": "PASS",
+      "evidence": "alpha=1.05 개발·1.06 후속 paper 평가 후보로 동결"
+    },
+    {
+      "check": "ambiguous_scope_and_deployment_phrases_absent",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "nonstandard_deployment_wording_absent",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "quarter_summary_once",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "check": "internal_anchor_links",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "local_links_exist",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "local_links_relative_posix",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "external_links_safe_new_tab",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "snapshot_final_verdict",
+      "status": "PASS",
+      "evidence": "NO_CONFIRMED_DEPLOYABLE_PROFIT_STRATEGY"
+    },
+    {
+      "check": "snapshot_stake_zero",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "check": "v11_full_confirmed_zero",
+      "status": "PASS",
+      "evidence": {
+        "v11_full_confirmed_profit_bet_types": 0,
+        "v11_anchor_confirmed_profit_bet_types": 0,
+        "fresh64_confirmed_profit_bet_types": 0,
+        "h11c_holm_passed_cutoffs": 0
+      }
+    },
+    {
+      "check": "v11_anchor_confirmed_zero",
+      "status": "PASS",
+      "evidence": {
+        "v11_full_confirmed_profit_bet_types": 0,
+        "v11_anchor_confirmed_profit_bet_types": 0,
+        "fresh64_confirmed_profit_bet_types": 0,
+        "h11c_holm_passed_cutoffs": 0
+      }
+    },
+    {
+      "check": "fresh64_confirmed_zero",
+      "status": "PASS",
+      "evidence": {
+        "v11_full_confirmed_profit_bet_types": 0,
+        "v11_anchor_confirmed_profit_bet_types": 0,
+        "fresh64_confirmed_profit_bet_types": 0,
+        "h11c_holm_passed_cutoffs": 0
+      }
+    },
+    {
+      "check": "h11c_holm_zero",
+      "status": "PASS",
+      "evidence": {
+        "v11_full_confirmed_profit_bet_types": 0,
+        "v11_anchor_confirmed_profit_bet_types": 0,
+        "fresh64_confirmed_profit_bet_types": 0,
+        "h11c_holm_passed_cutoffs": 0
+      }
+    },
+    {
+      "check": "context_supplement_scope_existing_evidence_only",
+      "status": "PASS",
+      "evidence": "EXISTING_EVIDENCE_ONLY_NO_TRAINING_BACKTEST_WEB_OR_SETTLEMENT"
+    },
+    {
+      "check": "context_supplement_chronology_15",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "check": "context_supplement_metrics_not_measured_16",
+      "status": "PASS",
+      "evidence": 16
+    },
+    {
+      "check": "metrics_taxonomy_distinguishes_measurement_identification_and_source_absence",
+      "status": "PASS",
+      "evidence": {
+        "causal": "식별불가(관측·연관 XAI만 존재; 인과 설계 없음)",
+        "capacity": "식별불가(필수 pool size·주문량·가격충격 자료 부재)",
+        "simple_count": 9
+      }
+    },
+    {
+      "check": "context_supplement_full_rank_six_models",
+      "status": "PASS",
+      "evidence": {
+        "rows": 6,
+        "trained_reloaded": 6
+      }
+    },
+    {
+      "check": "context_training_141_features_203_checks_all_reload_pass",
+      "status": "PASS",
+      "evidence": {
+        "features": 141,
+        "checks": 203,
+        "reload": [
+          "PASS",
+          "PASS",
+          "PASS",
+          "PASS",
+          "PASS",
+          "PASS"
+        ]
+      }
+    },
+    {
+      "check": "git_v11_preprocessing_recorded_winner_and_zero_corr_pairs",
+      "status": "PASS",
+      "evidence": {
+        "winner": "current_revised_v11",
+        "pairs_after": 0
+      }
+    },
+    {
+      "check": "betting_supplement_existing_evidence_only",
+      "status": "PASS",
+      "evidence": {
+        "status": "BUILT_FROM_EXISTING_EVIDENCE_NO_NEW_EXPERIMENT",
+        "flags_false": true
+      }
+    },
+    {
+      "check": "betting_supplement_single_section_render",
+      "status": "PASS",
+      "evidence": {
+        "render_mode": "SINGLE_NUMBERED_SECTION_WITH_FIVE_ANCHORED_SUBSECTIONS",
+        "section_ids": [
+          "supp-evidence-detail",
+          "supp-market-counterevidence",
+          "supp-seven-bet-details",
+          "supp-darkhorse-evidence",
+          "supp-fresh-m5-m6",
+          "supp-venue-stratification"
+        ]
+      }
+    },
+    {
+      "check": "betting_supplement_ordinary_models_6",
+      "status": "PASS",
+      "evidence": 6
+    },
+    {
+      "check": "ordinary_models_all_market_counterevidence_negative",
+      "status": "PASS",
+      "evidence": [
+        {
+          "model_key": "random_forest_rank",
+          "win_hit_delta": -0.07328385899814471,
+          "win_brier_improvement": -0.012596936709760864,
+          "place_hit_delta": -0.08333333333333337,
+          "place_brier_improvement": -0.022197098879812693
+        },
+        {
+          "model_key": "xgboost_rank",
+          "win_hit_delta": -0.06215213358070504,
+          "win_brier_improvement": -0.012491967022894845,
+          "place_hit_delta": -0.060861423220973765,
+          "place_brier_improvement": -0.013989209436924083
+        },
+        {
+          "model_key": "lightgbm_rank",
+          "win_hit_delta": -0.07328385899814471,
+          "win_brier_improvement": -0.01487545118295916,
+          "place_hit_delta": -0.0758426966292135,
+          "place_brier_improvement": -0.019461561251238768
+        },
+        {
+          "model_key": "catboost_rank",
+          "win_hit_delta": -0.07699443413729129,
+          "win_brier_improvement": -0.0171475738774714,
+          "place_hit_delta": -0.07397003745318353,
+          "place_brier_improvement": -0.024699689912421025
+        },
+        {
+          "model_key": "deep_ranknet",
+          "win_hit_delta": -0.06493506493506496,
+          "win_brier_improvement": -0.015409225332460502,
+          "place_hit_delta": -0.0730337078651685,
+          "place_brier_improvement": -0.02904920117115231
+        },
+        {
+          "model_key": "plackett_luce_full",
+          "win_hit_delta": -0.0862708719851577,
+          "win_brier_improvement": -0.016949645708152244,
+          "place_hit_delta": -0.07958801498127344,
+          "place_brier_improvement": -0.025323840535257963
+        }
+      ]
+    },
+    {
+      "check": "betting_supplement_full_and_anchor_7_each",
+      "status": "PASS",
+      "evidence": {
+        "full": 7,
+        "anchor": 7
+      }
+    },
+    {
+      "check": "seven_bet_exact_type_sets_and_confirmed_zero",
+      "status": "PASS",
+      "evidence": {
+        "full": [
+          "단승",
+          "복승",
+          "복연승",
+          "삼복승",
+          "삼쌍승",
+          "쌍승",
+          "연승"
+        ],
+        "anchor": [
+          "단승",
+          "복승",
+          "복연승",
+          "삼복승",
+          "삼쌍승",
+          "쌍승",
+          "연승"
+        ],
+        "confirmed": {
+          "full_rank": 0,
+          "market_anchor": 0
+        }
+      }
+    },
+    {
+      "check": "betting_supplement_darkhorse_grid_56",
+      "status": "PASS",
+      "evidence": {
+        "cells": 56,
+        "point_roi_at_least_30pct_cells": 22,
+        "unadjusted_ci_positive_cells": 0,
+        "fdr_5pct_positive_cells": 0
+      }
+    },
+    {
+      "check": "darkhorse_grid_exact_22_zero_zero",
+      "status": "PASS",
+      "evidence": {
+        "cells": 56,
+        "point_roi_at_least_30pct_cells": 22,
+        "unadjusted_ci_positive_cells": 0,
+        "fdr_5pct_positive_cells": 0
+      }
+    },
+    {
+      "check": "darkhorse_lineage_existing_benter_and_top5_counts_hits_odds",
+      "status": "PASS",
+      "evidence": {
+        "benter": {
+          "label": "과거 Benter anchored walk-forward",
+          "scope": "older walk-forward output after a 30-policy scan; historical OOS but not independent/pristine and not v11 replication; mean odds not recorded",
+          "status": "+32.69% point ROI, CI 0 포함",
+          "bets": 327,
+          "hit_rate": 0.13149847094801223,
+          "roi": 0.3269113149847095,
+          "ci_low": -0.027019608375409412,
+          "ci_high": 0.6825280343494556,
+          "average_odds": null
+        },
+        "top5": {
+          "label": "과거 동일자료 8~15 top5%",
+          "scope": "same historical data used for top5% selection; post-selection and not independent OOS",
+          "status": "폐기된 사후선택 결과",
+          "bets": 395,
+          "hit_rate": 0.14936708860759493,
+          "roi": 0.47468354430379744,
+          "ci_low": 0.1416147514084122,
+          "ci_high": 0.8273154521718492,
+          "average_odds": 10.330379746835444
+        }
+      }
+    },
+    {
+      "check": "betting_supplement_fresh_m5_m6_14",
+      "status": "PASS",
+      "evidence": 14
+    },
+    {
+      "check": "fresh_m5_m6_each_7_confirmed_zero",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "M5 entry-only": 7,
+          "M6 provenance": 7
+        },
+        "confirmed": {
+          "m5": 0,
+          "m6": 0
+        }
+      }
+    },
+    {
+      "check": "betting_supplement_venue_rows",
+      "status": "PASS",
+      "evidence": {
+        "rank": 12,
+        "anchor": 6
+      }
+    },
+    {
+      "check": "venue_betting_ci_positive_zero",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "check": "favorite_rank_segment_explicitly_not_measured",
+      "status": "PASS",
+      "evidence": "s22 odds/upset measured separately from favorite-rank segmentation"
+    },
+    {
+      "check": "snapshot_svg_chart_evidence_count",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": 12,
+        "html": 12
+      }
+    },
+    {
+      "check": "supplement_source_artifacts_hash",
+      "status": "PASS",
+      "evidence": {
+        "passed": 16,
+        "total": 16,
+        "failed": []
+      }
+    },
+    {
+      "check": "prospective_settlement_not_run",
+      "status": "PASS",
+      "evidence": "NOT_RUN_PER_FINALIZATION_GOAL"
+    },
+    {
+      "check": "prospective_roi_not_measured",
+      "status": "PASS",
+      "evidence": "NOT_MEASURED"
+    },
+    {
+      "check": "prospective_downstream_target_reads_zero",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "check": "terminal_quarantine_snapshot_audit_count_and_failure_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "terminal_snapshot_audits": 11,
+        "capture_status": "FAIL"
+      }
+    },
+    {
+      "check": "capture_validation_status_and_failures_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "status": "FAIL",
+        "failures": [
+          "no_terminal_target_outcome_observed_at_capture",
+          "independent_raw_result_state_recalculation",
+          "recognized_quinella_snapshots_have_complete_pair_grid",
+          "scheduled_snapshot_offsets_within_tolerance"
+        ]
+      }
+    },
+    {
+      "check": "capture_pair_grid_and_timing_failures_exactly_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "quinella_incomplete_pair_grid_records": 6,
+        "scheduled_offset_tolerance_violation_records": 2
+      }
+    },
+    {
+      "check": "scheduler_restart_and_fatal_count_exactly_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "starts": 4,
+        "fatals": 3
+      }
+    },
+    {
+      "check": "collector_permission_error_restarts_and_frozen_source_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "incident": {
+          "permission_error_count": 3,
+          "fatal_times_kst": [
+            "2026-08-23T11:12:05.763173+09:00",
+            "2026-08-23T12:34:04.568799+09:00",
+            "2026-08-23T13:01:38.606360+09:00"
+          ],
+          "start_count": 4,
+          "manual_restart_count": 3,
+          "start_pids": [
+            14124,
+            20976,
+            22888,
+            14000
+          ],
+          "restart_times_kst": [
+            "2026-08-23T11:16:47.113811+09:00",
+            "2026-08-23T12:35:44.093638+09:00",
+            "2026-08-23T13:02:43.486561+09:00"
+          ],
+          "current_pid": 14000,
+          "next_due_kst": "2026-08-23T13:58:00+09:00",
+          "post_latest_restart_source_unavailable_count": 26,
+          "post_latest_restart_source_unavailable_details": [
+            "win_place meet=1 race=4 T-20 HTTP=None code=None",
+            "quinella meet=1 race=4 T-20 HTTP=None code=None",
+            "win_place meet=1 race=4 T-10 HTTP=None code=None",
+            "quinella meet=1 race=4 T-10 HTTP=None code=None",
+            "win_place meet=1 race=4 T-5 HTTP=None code=None",
+            "quinella meet=1 race=4 T-5 HTTP=None code=None",
+            "win_place meet=1 race=4 T-2 HTTP=None code=None",
+            "quinella meet=1 race=4 T-2 HTTP=None code=None",
+            "win_place meet=1 race=4 T-1 HTTP=None code=None",
+            "quinella meet=1 race=4 T-1 HTTP=None code=None",
+            "win_place meet=3 race=3 T-20 HTTP=None code=None",
+            "quinella meet=3 race=3 T-20 HTTP=None code=None",
+            "win_place meet=3 race=3 T-10 HTTP=None code=None",
+            "quinella meet=3 race=3 T-10 HTTP=None code=None",
+            "win_place meet=3 race=3 T-5 HTTP=None code=None",
+            "quinella meet=3 race=3 T-5 HTTP=None code=None",
+            "win_place meet=3 race=3 T-2 HTTP=None code=None",
+            "quinella meet=3 race=3 T-2 HTTP=None code=None",
+            "win_place meet=3 race=3 T-1 HTTP=None code=None",
+            "quinella meet=3 race=3 T-1 HTTP=None code=None",
+            "win_place meet=1 race=5 T-20 HTTP=None code=None",
+            "quinella meet=1 race=5 T-20 HTTP=None code=None",
+            "win_place meet=1 race=5 T-10 HTTP=None code=None",
+            "quinella meet=1 race=5 T-10 HTTP=None code=None",
+            "win_place meet=1 race=5 T-5 HTTP=None code=None",
+            "quinella meet=1 race=5 T-5 HTTP=None code=None"
+          ],
+          "post_latest_restart_t10_source_unavailable_count": 6,
+          "post_latest_restart_t10_source_unavailable_times_kst": [
+            "2026-08-23T13:02:52.263011+09:00",
+            "2026-08-23T13:02:54.712044+09:00",
+            "2026-08-23T13:25:02.116514+09:00",
+            "2026-08-23T13:25:04.530010+09:00",
+            "2026-08-23T13:50:02.268255+09:00",
+            "2026-08-23T13:50:04.959818+09:00"
+          ],
+          "frozen_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+          "observed_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+          "frozen_source_match": true,
+          "command_line_expected_module_output_root_markers_match": true,
+          "same_frozen_source_restart_evidenced": true,
+          "restart_log_paths": [
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+          ],
+          "evidence_paths": [
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\phase_progress.jsonl",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_installation_manifest.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_state.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\scheduler_heartbeat.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_prospective_odds.py",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+          ]
+        },
+        "restart_logs": [
+          "manual_restart_20260823T111645_stderr.log",
+          "manual_restart_20260823T111645_stdout.log",
+          "manual_restart_20260823T1236_stderr.log",
+          "manual_restart_20260823T1236_stdout.log",
+          "manual_restart_20260823T1302_stderr.log",
+          "manual_restart_20260823T1302_stdout.log"
+        ]
+      }
+    },
+    {
+      "check": "h16_permission_error_restart_and_frozen_source_disclosed",
+      "status": "PASS",
+      "evidence": {
+        "incident": {
+          "permission_error_count": 3,
+          "error_log_paths": [
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log"
+          ],
+          "activation_count": 5,
+          "activation_pids": [
+            33432,
+            33348,
+            35988,
+            31444,
+            31660
+          ],
+          "manual_restart_count": 3,
+          "manual_restart_pids": [
+            35988,
+            31444,
+            31660
+          ],
+          "current_saved_state_pid": 31660,
+          "current_saved_state_status": "WATCHER_ACTIVE",
+          "frozen_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+          "installation_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+          "observed_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+          "frozen_protocol_sha256": "160722007A520D4A3B4BB810927EBF9BBCFC61654ADA9D9E87C8C48C1C96EDF2",
+          "restart_protocol_prefixes": [
+            "160722007A52",
+            "160722007A52",
+            "160722007A52"
+          ],
+          "restart_log_paths": [
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+          ],
+          "same_frozen_source_restart_evidenced": true,
+          "evidence_paths": [
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\h16_freezer_freeze_before_first_t5.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\watcher_installation_manifest_before_first_t5.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\ticket_freeze_watcher.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\ticket_watcher_state.json",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\freeze_h16_prospective_all_model_seven_bet_tickets.py",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+            "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+          ]
+        },
+        "restart_logs": [
+          "manual_restart_20260823T1227_stderr.log",
+          "manual_restart_20260823T1227_stdout.log",
+          "manual_restart_20260823T1257_stderr.log",
+          "manual_restart_20260823T1257_stdout.log",
+          "manual_restart_20260823T1259_stderr.log",
+          "manual_restart_20260823T1259_stdout.log"
+        ],
+        "error_logs": [
+          "watcher_stderr.log",
+          "manual_restart_20260823T1227_stderr.log",
+          "manual_restart_20260823T1257_stderr.log",
+          "manual_restart_20260823T1259_stderr.log"
+        ]
+      }
+    },
+    {
+      "check": "capture_http_success_separated_from_terminal_processing",
+      "status": "PASS",
+      "evidence": {
+        "successful_http": 42,
+        "processed": 76,
+        "network_exceptions": 34,
+        "outcome_fetch_blocked": 0
+      }
+    },
+    {
+      "check": "prospective_live_stake_zero",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "check": "manifest_status",
+      "status": "PASS",
+      "evidence": "BUILT_FROM_HASHED_EXISTING_EVIDENCE"
+    },
+    {
+      "check": "manifest_research_expansion_false",
+      "status": "PASS",
+      "evidence": false
+    },
+    {
+      "check": "manifest_new_training_false",
+      "status": "PASS",
+      "evidence": false
+    },
+    {
+      "check": "manifest_new_backtest_false",
+      "status": "PASS",
+      "evidence": false
+    },
+    {
+      "check": "manifest_new_postrace_settlement_false",
+      "status": "PASS",
+      "evidence": false
+    },
+    {
+      "check": "manifest_report_hash",
+      "status": "PASS",
+      "evidence": "7CDDEB7AD0591ABE656E2EE5B3E4ED54D275D369D18B36A867F49009E3870A72"
+    },
+    {
+      "check": "manifest_snapshot_hash",
+      "status": "PASS",
+      "evidence": "472D282D95DA63153C669DCFBF2CDF3E4E11E904714BFF0CFFCDA9503D9FFBB1"
+    },
+    {
+      "check": "manifest_snapshot_prospective_boundary_consistent",
+      "status": "PASS",
+      "evidence": {
+        "official_postrace_settlement": "NOT_RUN_PER_FINALIZATION_GOAL",
+        "roi": "NOT_MEASURED",
+        "downstream_target_outcome_result_dividend_reads": 0,
+        "scheduler_terminal_status": "SCHEDULER_ACTIVE",
+        "scheduler_capture_complete": false,
+        "planned_source_key_count": 170,
+        "successful_http_source_slots": 42,
+        "attempted_unique_source_slots": 76,
+        "processed_unique_source_slots": 76,
+        "network_exception_source_slots": 34,
+        "outcome_fetch_blocked_source_slots": 0,
+        "missing_planned_source_key_count": 94,
+        "unexpected_terminal_source_key_count": 0,
+        "t5_successful_http_source_slots": 8,
+        "t5_processed_source_slots": 16,
+        "t5_processed_races": 8,
+        "collector_terminal_snapshot_audits": 11,
+        "quinella_incomplete_pair_grid_records": 6,
+        "scheduled_offset_tolerance_violation_records": 2,
+        "operational_incidents": {
+          "collector": {
+            "permission_error_count": 3,
+            "fatal_times_kst": [
+              "2026-08-23T11:12:05.763173+09:00",
+              "2026-08-23T12:34:04.568799+09:00",
+              "2026-08-23T13:01:38.606360+09:00"
+            ],
+            "start_count": 4,
+            "manual_restart_count": 3,
+            "start_pids": [
+              14124,
+              20976,
+              22888,
+              14000
+            ],
+            "restart_times_kst": [
+              "2026-08-23T11:16:47.113811+09:00",
+              "2026-08-23T12:35:44.093638+09:00",
+              "2026-08-23T13:02:43.486561+09:00"
+            ],
+            "current_pid": 14000,
+            "next_due_kst": "2026-08-23T13:58:00+09:00",
+            "post_latest_restart_source_unavailable_count": 26,
+            "post_latest_restart_source_unavailable_details": [
+              "win_place meet=1 race=4 T-20 HTTP=None code=None",
+              "quinella meet=1 race=4 T-20 HTTP=None code=None",
+              "win_place meet=1 race=4 T-10 HTTP=None code=None",
+              "quinella meet=1 race=4 T-10 HTTP=None code=None",
+              "win_place meet=1 race=4 T-5 HTTP=None code=None",
+              "quinella meet=1 race=4 T-5 HTTP=None code=None",
+              "win_place meet=1 race=4 T-2 HTTP=None code=None",
+              "quinella meet=1 race=4 T-2 HTTP=None code=None",
+              "win_place meet=1 race=4 T-1 HTTP=None code=None",
+              "quinella meet=1 race=4 T-1 HTTP=None code=None",
+              "win_place meet=3 race=3 T-20 HTTP=None code=None",
+              "quinella meet=3 race=3 T-20 HTTP=None code=None",
+              "win_place meet=3 race=3 T-10 HTTP=None code=None",
+              "quinella meet=3 race=3 T-10 HTTP=None code=None",
+              "win_place meet=3 race=3 T-5 HTTP=None code=None",
+              "quinella meet=3 race=3 T-5 HTTP=None code=None",
+              "win_place meet=3 race=3 T-2 HTTP=None code=None",
+              "quinella meet=3 race=3 T-2 HTTP=None code=None",
+              "win_place meet=3 race=3 T-1 HTTP=None code=None",
+              "quinella meet=3 race=3 T-1 HTTP=None code=None",
+              "win_place meet=1 race=5 T-20 HTTP=None code=None",
+              "quinella meet=1 race=5 T-20 HTTP=None code=None",
+              "win_place meet=1 race=5 T-10 HTTP=None code=None",
+              "quinella meet=1 race=5 T-10 HTTP=None code=None",
+              "win_place meet=1 race=5 T-5 HTTP=None code=None",
+              "quinella meet=1 race=5 T-5 HTTP=None code=None"
+            ],
+            "post_latest_restart_t10_source_unavailable_count": 6,
+            "post_latest_restart_t10_source_unavailable_times_kst": [
+              "2026-08-23T13:02:52.263011+09:00",
+              "2026-08-23T13:02:54.712044+09:00",
+              "2026-08-23T13:25:02.116514+09:00",
+              "2026-08-23T13:25:04.530010+09:00",
+              "2026-08-23T13:50:02.268255+09:00",
+              "2026-08-23T13:50:04.959818+09:00"
+            ],
+            "frozen_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+            "observed_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+            "frozen_source_match": true,
+            "command_line_expected_module_output_root_markers_match": true,
+            "same_frozen_source_restart_evidenced": true,
+            "restart_log_paths": [
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+            ],
+            "evidence_paths": [
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\phase_progress.jsonl",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_installation_manifest.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_state.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\scheduler_heartbeat.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_prospective_odds.py",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+            ]
+          },
+          "h16": {
+            "permission_error_count": 3,
+            "error_log_paths": [
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log"
+            ],
+            "activation_count": 5,
+            "activation_pids": [
+              33432,
+              33348,
+              35988,
+              31444,
+              31660
+            ],
+            "manual_restart_count": 3,
+            "manual_restart_pids": [
+              35988,
+              31444,
+              31660
+            ],
+            "current_saved_state_pid": 31660,
+            "current_saved_state_status": "WATCHER_ACTIVE",
+            "frozen_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+            "installation_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+            "observed_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+            "frozen_protocol_sha256": "160722007A520D4A3B4BB810927EBF9BBCFC61654ADA9D9E87C8C48C1C96EDF2",
+            "restart_protocol_prefixes": [
+              "160722007A52",
+              "160722007A52",
+              "160722007A52"
+            ],
+            "restart_log_paths": [
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+            ],
+            "same_frozen_source_restart_evidenced": true,
+            "evidence_paths": [
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\h16_freezer_freeze_before_first_t5.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\watcher_installation_manifest_before_first_t5.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\ticket_freeze_watcher.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\ticket_watcher_state.json",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\freeze_h16_prospective_all_model_seven_bet_tickets.py",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+              "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+            ]
+          }
+        },
+        "live_stake": 0
+      }
+    },
+    {
+      "check": "report_explicit_no_new_research_or_settlement_boundary",
+      "status": "PASS",
+      "evidence": "finalization-only and production-not-run disclosures"
+    },
+    {
+      "check": "finalization_sources_no_network_training_backtest_or_settlement_execution",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "manifest_evidence_inputs_hash",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "betting_artifact_manifest_27_of_27",
+      "status": "PASS",
+      "evidence": {
+        "passed": 27,
+        "failed": []
+      }
+    },
+    {
+      "check": "data_model_evidence_50_of_50",
+      "status": "PASS",
+      "evidence": {
+        "passed": 50,
+        "failed": []
+      }
+    },
+    {
+      "check": "chronology_status",
+      "status": "PASS",
+      "evidence": "EVIDENCE_INVENTORY_ONLY_NO_NEW_RESEARCH"
+    },
+    {
+      "check": "chronology_entries",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "check": "hypothesis_entries",
+      "status": "PASS",
+      "evidence": 18
+    },
+    {
+      "check": "metrics_not_measured",
+      "status": "PASS",
+      "evidence": 16
+    }
+  ]
+}

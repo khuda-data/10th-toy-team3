@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.html",
+    "bytes": 268139,
+    "sha256": "D9412BFED1CF3FDAB7D3699677D0C047C0891F2326DB871A04379BBA61FFD9C5"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\index.pdf",
+    "bytes": 2339609,
+    "sha256": "91D92E997F7ABA5DAE92EFF801DAE1D87C14E70334B6D865F60BD49079F65FFA",
+    "pages": 92,
+    "text_pages": 92,
+    "page_sizes": [
+      [
+        594.96,
+        841.92
+      ]
+    ]
+  }
+}

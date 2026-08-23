@@ -1,0 +1,3724 @@
+{
+  "schema_version": "1.0",
+  "generated_at_kst": "2026-08-23T13:56:13.791438+09:00",
+  "status": "FINAL_REPORT_BUILT_FROM_EXISTING_EVIDENCE",
+  "final_verdict": "NO_CONFIRMED_DEPLOYABLE_PROFIT_STRATEGY",
+  "recommended_real_stake": 0,
+  "canonical_dataset": {
+    "canonical_dataset": "revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+    "dataset_integrity_status": "PASS",
+    "dataset_rows": 56456,
+    "dataset_races": 5343,
+    "venues": [
+      "서울",
+      "부경"
+    ],
+    "model_feature_count": 141,
+    "full_rank_models_actually_trained_and_reloaded": 6,
+    "full_rank_validation_checks_passed": 203,
+    "market_columns_in_ordinary_feature_matrix": [],
+    "strict_target_encoding_checks": "60/60 PASS",
+    "best_test_ndcg_at_5": {
+      "model": "catboost_rank",
+      "value": 0.778035945383817
+    },
+    "best_test_mean_spearman": {
+      "model": "catboost_rank",
+      "value": 0.4553030268638837
+    },
+    "lowest_test_rank_mae": {
+      "model": "catboost_rank",
+      "value": 2.439986501412461
+    },
+    "best_test_top3_ordered_exact": {
+      "model": "lightgbm_rank",
+      "value": 0.017625231910946195
+    },
+    "best_test_top3_unordered_exact": {
+      "model": "deep_ranknet",
+      "value": 0.07792207792207792
+    },
+    "best_test_top1_hit": {
+      "model": "xgboost_rank",
+      "value": 0.3153564899451554
+    },
+    "market_comparison_bottom_line": "The v11 market-anchor experiments report positive retrospective delta log likelihood in several reused validation/test analyses, but ordinary full-rank model selections trail the market on test win/place hit rate and selected-event Brier. No cited result establishes pristine forward profitability; every cited deployment recommendation remains stake=0 or NO_GO.",
+    "independent_confirmation_status": "NOT ESTABLISHED: TEST and late-VALID blocks were already inspected/reused; fresh64 was an already-observed optional continuation; prospective target outcomes were not scored in the frozen artifacts cited here."
+  },
+  "betting_verdict": {
+    "v11_full_confirmed_profit_bet_types": 0,
+    "v11_anchor_confirmed_profit_bet_types": 0,
+    "fresh64_confirmed_profit_bet_types": 0,
+    "h11c_holm_passed_cutoffs": 0
+  },
+  "defensive_signal": {
+    "h5_adaptive": {
+      "scope": "retrospective_rolling_oos",
+      "actual_training": true,
+      "fits": 32,
+      "oos_races": 2185,
+      "delta_ll_vs_market": 0.0095870116,
+      "delta_ll_ci_low": 0.0024570696,
+      "delta_ll_ci_high": 0.0166669675,
+      "holm_pass": true,
+      "place_bets": 366,
+      "place_model_roi": 0.0243169399,
+      "place_roi_ci_low": -0.1340504637,
+      "place_roi_ci_high": 0.1879826359,
+      "same_race_market_roi": -0.2101092896,
+      "paired_advantage": 0.2344262295,
+      "paired_ci_low": 0.0619707977,
+      "paired_ci_high": 0.4176719489,
+      "paired_holm_pass": true,
+      "hit_rate": 0.3715846995,
+      "average_odds": 2.8661202186,
+      "average_winning_dividend": 2.7566176471,
+      "flat_mdd": -0.1774208579,
+      "sharpe": 0.3375493742,
+      "kelly_return": 0.3356822393,
+      "kelly_mdd": -0.2829820373,
+      "source": "outputs/reports/rolling_origin_market_challenger_20260823/experiment_summary.json"
+    },
+    "h5_fixed_lock": {
+      "scope": "retrospective_rolling_oos",
+      "actual_training": true,
+      "fits": 32,
+      "oos_races": 1101,
+      "fixed_edge_threshold": 0.0709603844,
+      "delta_ll_vs_market": 0.0120456524,
+      "delta_ll_ci_low": 0.0031801299,
+      "delta_ll_ci_high": 0.0211592656,
+      "holm_pass": true,
+      "place_bets": 200,
+      "place_model_roi": 0.013,
+      "place_roi_ci_low": -0.1864737564,
+      "place_roi_ci_high": 0.219609875,
+      "same_race_market_roi": -0.305,
+      "paired_advantage": 0.318,
+      "paired_ci_low": 0.1051012179,
+      "paired_ci_high": 0.5376235475,
+      "paired_holm_pass": true,
+      "hit_rate": 0.375,
+      "average_odds": 2.869,
+      "average_winning_dividend": 2.7013333333,
+      "flat_mdd": -0.1582816605,
+      "sharpe": 0.1355924831,
+      "kelly_return": -0.0080642831,
+      "kelly_mdd": -0.2279052129,
+      "source": "outputs/reports/fixed_lock_rolling_stability_20260823/experiment_summary.json"
+    },
+    "classification": "MARKET_RELATIVE_LOSS_DEFENSE_NOT_CONFIRMED_ABSOLUTE_PROFIT"
+  },
+  "prospective": {
+    "captured_at_kst": "2026-08-23T13:56:13.768308+09:00",
+    "scheduler_state": {
+      "status": "SCHEDULER_ACTIVE",
+      "target_rcDate": 20260823,
+      "last_update_kst": "2026-08-23T13:55:05.546929+09:00",
+      "pid": 14000,
+      "scheduled_races": 17,
+      "completed_http_slots": 42,
+      "last_slot": {
+        "meet": 1,
+        "rcNo": 5,
+        "snapshot_label": "T-5"
+      },
+      "result_filter_state": {
+        "1": "VERIFIED",
+        "3": "VERIFIED"
+      },
+      "next_phase": "continue fixed T-minus quote capture; no outcomes"
+    },
+    "expected_source_slots": 170,
+    "planned_source_key_count": 170,
+    "planned_t5_source_key_count": 34,
+    "planned_t5_race_count": 17,
+    "captured_unique_source_slots": 42,
+    "successful_http_source_slots": 42,
+    "attempted_unique_source_slots": 76,
+    "processed_unique_source_slots": 76,
+    "missed_source_slots": 8,
+    "network_exception_source_slots": 34,
+    "outcome_fetch_blocked_source_slots": 0,
+    "terminal_attempt_record_counts": {
+      "HTTP_RESPONSE": 42,
+      "NETWORK_EXCEPTION": 38,
+      "MISSED_SLOT_NO_POST_START_REQUEST": 8
+    },
+    "missing_planned_source_key_count": 94,
+    "missing_planned_source_keys": [
+      "1:5:T-1:quinella",
+      "1:5:T-1:win_place",
+      "1:5:T-2:quinella",
+      "1:5:T-2:win_place",
+      "1:6:T-1:quinella",
+      "1:6:T-1:win_place",
+      "1:6:T-10:quinella",
+      "1:6:T-10:win_place",
+      "1:6:T-2:quinella",
+      "1:6:T-2:win_place",
+      "1:6:T-20:quinella",
+      "1:6:T-20:win_place",
+      "1:6:T-5:quinella",
+      "1:6:T-5:win_place",
+      "1:7:T-1:quinella",
+      "1:7:T-1:win_place",
+      "1:7:T-10:quinella",
+      "1:7:T-10:win_place",
+      "1:7:T-2:quinella",
+      "1:7:T-2:win_place",
+      "1:7:T-20:quinella",
+      "1:7:T-20:win_place",
+      "1:7:T-5:quinella",
+      "1:7:T-5:win_place",
+      "1:8:T-1:quinella",
+      "1:8:T-1:win_place",
+      "1:8:T-10:quinella",
+      "1:8:T-10:win_place",
+      "1:8:T-2:quinella",
+      "1:8:T-2:win_place",
+      "1:8:T-20:quinella",
+      "1:8:T-20:win_place",
+      "1:8:T-5:quinella",
+      "1:8:T-5:win_place",
+      "1:9:T-1:quinella",
+      "1:9:T-1:win_place",
+      "1:9:T-10:quinella",
+      "1:9:T-10:win_place",
+      "1:9:T-2:quinella",
+      "1:9:T-2:win_place",
+      "1:9:T-20:quinella",
+      "1:9:T-20:win_place",
+      "1:9:T-5:quinella",
+      "1:9:T-5:win_place",
+      "1:10:T-1:quinella",
+      "1:10:T-1:win_place",
+      "1:10:T-10:quinella",
+      "1:10:T-10:win_place",
+      "1:10:T-2:quinella",
+      "1:10:T-2:win_place",
+      "1:10:T-20:quinella",
+      "1:10:T-20:win_place",
+      "1:10:T-5:quinella",
+      "1:10:T-5:win_place",
+      "3:4:T-1:quinella",
+      "3:4:T-1:win_place",
+      "3:4:T-10:quinella",
+      "3:4:T-10:win_place",
+      "3:4:T-2:quinella",
+      "3:4:T-2:win_place",
+      "3:4:T-20:quinella",
+      "3:4:T-20:win_place",
+      "3:4:T-5:quinella",
+      "3:4:T-5:win_place",
+      "3:5:T-1:quinella",
+      "3:5:T-1:win_place",
+      "3:5:T-10:quinella",
+      "3:5:T-10:win_place",
+      "3:5:T-2:quinella",
+      "3:5:T-2:win_place",
+      "3:5:T-20:quinella",
+      "3:5:T-20:win_place",
+      "3:5:T-5:quinella",
+      "3:5:T-5:win_place",
+      "3:6:T-1:quinella",
+      "3:6:T-1:win_place",
+      "3:6:T-10:quinella",
+      "3:6:T-10:win_place",
+      "3:6:T-2:quinella",
+      "3:6:T-2:win_place",
+      "3:6:T-20:quinella",
+      "3:6:T-20:win_place",
+      "3:6:T-5:quinella",
+      "3:6:T-5:win_place",
+      "3:7:T-1:quinella",
+      "3:7:T-1:win_place",
+      "3:7:T-10:quinella",
+      "3:7:T-10:win_place",
+      "3:7:T-2:quinella",
+      "3:7:T-2:win_place",
+      "3:7:T-20:quinella",
+      "3:7:T-20:win_place",
+      "3:7:T-5:quinella",
+      "3:7:T-5:win_place"
+    ],
+    "unexpected_terminal_source_key_count": 0,
+    "unexpected_terminal_source_keys": [],
+    "source_slots": {
+      "win_place": 21,
+      "quinella": 21
+    },
+    "processed_source_slots": {
+      "win_place": 38,
+      "quinella": 38
+    },
+    "t5_races_observed": 4,
+    "t5_successful_http_source_slots": 8,
+    "t5_races_with_any_http_success": 4,
+    "t5_races_with_both_http_sources": 4,
+    "t5_processed_source_slots": 16,
+    "t5_processed_races": 8,
+    "scheduler_terminal_status": "SCHEDULER_ACTIVE",
+    "scheduler_capture_complete": false,
+    "win_place_usable_race_label_slots": 0,
+    "quinella_usable_race_label_slots": 21,
+    "watcher_states": {
+      "H11/H11B": {
+        "status": "WATCHER_ACTIVE",
+        "pid": 16952,
+        "heartbeat_kst": "2026-08-23T13:56:11.303543+09:00",
+        "target_date": 20260823,
+        "scoring_protocol_sha256": "DBA75A7418030C6F07B0DCDE8326A3ACF364FE43E41D24A1264439A0C98EB940",
+        "snapshot_rows_sha256_observed": "3B2A37005B76222C4A650133A7F4D0FEEAD80FBE9867556E342FE1E5EEFD67FF",
+        "snapshot_read_error": null,
+        "race_status_counts": {
+          "WAITING_T5_WIN_PLACE": 10,
+          "MISSED_NO_SCORE_AFTER_START": 7
+        },
+        "races": {
+          "20260823_1_01": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_1_02": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_3_01": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_1_03": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_3_02": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_1_04": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_3_03": {
+            "status": "MISSED_NO_SCORE_AFTER_START"
+          },
+          "20260823_1_05": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_3_04": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_1_06": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_3_05": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_1_07": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_3_06": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_1_08": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_3_07": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_1_09": {
+            "status": "WAITING_T5_WIN_PLACE"
+          },
+          "20260823_1_10": {
+            "status": "WAITING_T5_WIN_PLACE"
+          }
+        },
+        "error_counts": {},
+        "target_outcomes_or_settlement_read": false,
+        "target_scores_live_stake": 0
+      },
+      "H16": {
+        "status": "WATCHER_ACTIVE",
+        "pid": 31660,
+        "heartbeat_kst": "2026-08-23T13:56:10.082526+09:00",
+        "target_date": 20260823,
+        "h16_protocol_sha256": "160722007A520D4A3B4BB810927EBF9BBCFC61654ADA9D9E87C8C48C1C96EDF2",
+        "scheduled_races": 17,
+        "discovered_h11_score_races": 0,
+        "frozen_h16_races": 0,
+        "race_states": {},
+        "bounded_error_counts": {},
+        "after_start_backfill_allowed": false,
+        "target_outcome_dividend_settlement_reads": 0,
+        "network_calls": 0,
+        "roi_or_hit_calls": 0,
+        "simulated_live_stake": 0,
+        "live_stake": 0
+      },
+      "H18": {
+        "status": "WATCHER_ACTIVE",
+        "pid": 13596,
+        "heartbeat_kst": "2026-08-23T13:45:36.686490+09:00",
+        "source_races_discovered": 0,
+        "frozen_h18_races": 0,
+        "races": {},
+        "errors": {},
+        "after_start_backfill_allowed": false,
+        "target_outcome_dividend_settlement_reads": 0,
+        "network_calls": 0,
+        "roi_or_hit_calls": 0,
+        "live_stake": 0
+      }
+    },
+    "downstream_target_outcome_result_dividend_reads": 0,
+    "collector_terminal_snapshot_audits": 11,
+    "capture_validation_status": "FAIL",
+    "capture_validation_failed_checks": [
+      "no_terminal_target_outcome_observed_at_capture",
+      "independent_raw_result_state_recalculation",
+      "recognized_quinella_snapshots_have_complete_pair_grid",
+      "scheduled_snapshot_offsets_within_tolerance"
+    ],
+    "capture_validation_failed_check_details": [
+      {
+        "name": "no_terminal_target_outcome_observed_at_capture",
+        "status": "FAIL",
+        "observed": 11,
+        "expected": 0
+      },
+      {
+        "name": "independent_raw_result_state_recalculation",
+        "status": "FAIL",
+        "observed": [
+          {
+            "raw_sha256": "908FA9F747A5E3DD6EFDE0A87780E980923E8D05F445A0F108458CEFCD8B668C",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "908FA9F747A5E3DD6EFDE0A87780E980923E8D05F445A0F108458CEFCD8B668C",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "908FA9F747A5E3DD6EFDE0A87780E980923E8D05F445A0F108458CEFCD8B668C",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "908FA9F747A5E3DD6EFDE0A87780E980923E8D05F445A0F108458CEFCD8B668C",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "908FA9F747A5E3DD6EFDE0A87780E980923E8D05F445A0F108458CEFCD8B668C",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "5BFE44CE60D4EF5DA0B5A3A28BC41502555A46119AA04E458759142035976C50",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "5BFE44CE60D4EF5DA0B5A3A28BC41502555A46119AA04E458759142035976C50",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "5BFE44CE60D4EF5DA0B5A3A28BC41502555A46119AA04E458759142035976C50",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "5BFE44CE60D4EF5DA0B5A3A28BC41502555A46119AA04E458759142035976C50",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "5BFE44CE60D4EF5DA0B5A3A28BC41502555A46119AA04E458759142035976C50",
+            "state": "TERMINAL_QUARANTINE"
+          },
+          {
+            "raw_sha256": "669E12FCE95C1A24A88BBCF16EE75C345C4A02B87A4A93C8439685F5B7919DD7",
+            "state": "TERMINAL_QUARANTINE"
+          }
+        ],
+        "expected": "all PRE_RACE and zero terminal rows"
+      },
+      {
+        "name": "recognized_quinella_snapshots_have_complete_pair_grid",
+        "status": "FAIL",
+        "observed": [
+          {
+            "meet": 1,
+            "rcNo": 3,
+            "observed": 45,
+            "expected": 55
+          },
+          {
+            "meet": 1,
+            "rcNo": 3,
+            "observed": 45,
+            "expected": 55
+          },
+          {
+            "meet": 1,
+            "rcNo": 3,
+            "observed": 45,
+            "expected": 55
+          },
+          {
+            "meet": 1,
+            "rcNo": 3,
+            "observed": 45,
+            "expected": 55
+          },
+          {
+            "meet": 1,
+            "rcNo": 3,
+            "observed": 45,
+            "expected": 55
+          },
+          {
+            "meet": 3,
+            "rcNo": 2,
+            "observed": 45,
+            "expected": 55
+          }
+        ],
+        "expected": "C(active runners,2) rows for each recognized snapshot"
+      },
+      {
+        "name": "scheduled_snapshot_offsets_within_tolerance",
+        "status": "FAIL",
+        "observed": [
+          {
+            "meet": 3,
+            "rcNo": 1,
+            "source": "win_place",
+            "label": "T-10",
+            "actual_offset_seconds": 482.818282
+          },
+          {
+            "meet": 3,
+            "rcNo": 1,
+            "source": "quinella",
+            "label": "T-10",
+            "actual_offset_seconds": 461.412818
+          }
+        ],
+        "expected": "positive and within +/-90s of label"
+      }
+    ],
+    "quinella_incomplete_pair_grid_records": 6,
+    "scheduled_offset_tolerance_violation_records": 2,
+    "scheduler_start_count": 4,
+    "scheduler_fatal_count": 3,
+    "operational_incidents": {
+      "collector": {
+        "permission_error_count": 3,
+        "fatal_times_kst": [
+          "2026-08-23T11:12:05.763173+09:00",
+          "2026-08-23T12:34:04.568799+09:00",
+          "2026-08-23T13:01:38.606360+09:00"
+        ],
+        "start_count": 4,
+        "manual_restart_count": 3,
+        "start_pids": [
+          14124,
+          20976,
+          22888,
+          14000
+        ],
+        "restart_times_kst": [
+          "2026-08-23T11:16:47.113811+09:00",
+          "2026-08-23T12:35:44.093638+09:00",
+          "2026-08-23T13:02:43.486561+09:00"
+        ],
+        "current_pid": 14000,
+        "next_due_kst": "2026-08-23T13:58:00+09:00",
+        "post_latest_restart_source_unavailable_count": 26,
+        "post_latest_restart_source_unavailable_details": [
+          "win_place meet=1 race=4 T-20 HTTP=None code=None",
+          "quinella meet=1 race=4 T-20 HTTP=None code=None",
+          "win_place meet=1 race=4 T-10 HTTP=None code=None",
+          "quinella meet=1 race=4 T-10 HTTP=None code=None",
+          "win_place meet=1 race=4 T-5 HTTP=None code=None",
+          "quinella meet=1 race=4 T-5 HTTP=None code=None",
+          "win_place meet=1 race=4 T-2 HTTP=None code=None",
+          "quinella meet=1 race=4 T-2 HTTP=None code=None",
+          "win_place meet=1 race=4 T-1 HTTP=None code=None",
+          "quinella meet=1 race=4 T-1 HTTP=None code=None",
+          "win_place meet=3 race=3 T-20 HTTP=None code=None",
+          "quinella meet=3 race=3 T-20 HTTP=None code=None",
+          "win_place meet=3 race=3 T-10 HTTP=None code=None",
+          "quinella meet=3 race=3 T-10 HTTP=None code=None",
+          "win_place meet=3 race=3 T-5 HTTP=None code=None",
+          "quinella meet=3 race=3 T-5 HTTP=None code=None",
+          "win_place meet=3 race=3 T-2 HTTP=None code=None",
+          "quinella meet=3 race=3 T-2 HTTP=None code=None",
+          "win_place meet=3 race=3 T-1 HTTP=None code=None",
+          "quinella meet=3 race=3 T-1 HTTP=None code=None",
+          "win_place meet=1 race=5 T-20 HTTP=None code=None",
+          "quinella meet=1 race=5 T-20 HTTP=None code=None",
+          "win_place meet=1 race=5 T-10 HTTP=None code=None",
+          "quinella meet=1 race=5 T-10 HTTP=None code=None",
+          "win_place meet=1 race=5 T-5 HTTP=None code=None",
+          "quinella meet=1 race=5 T-5 HTTP=None code=None"
+        ],
+        "post_latest_restart_t10_source_unavailable_count": 6,
+        "post_latest_restart_t10_source_unavailable_times_kst": [
+          "2026-08-23T13:02:52.263011+09:00",
+          "2026-08-23T13:02:54.712044+09:00",
+          "2026-08-23T13:25:02.116514+09:00",
+          "2026-08-23T13:25:04.530010+09:00",
+          "2026-08-23T13:50:02.268255+09:00",
+          "2026-08-23T13:50:04.959818+09:00"
+        ],
+        "frozen_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+        "observed_source_sha256": "0B5E8DC155BE56723B0F87272C4F8F3E474C060C6C320CB04EE706DFD6E51CA3",
+        "frozen_source_match": true,
+        "command_line_expected_module_output_root_markers_match": true,
+        "same_frozen_source_restart_evidenced": true,
+        "restart_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+        ],
+        "evidence_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\phase_progress.jsonl",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_installation_manifest.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\watchdog_state.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\scheduler_heartbeat.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_prospective_odds.py",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T111645_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1236_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\logs\\manual_restart_20260823T1302_stdout.log"
+        ]
+      },
+      "h16": {
+        "permission_error_count": 3,
+        "error_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log"
+        ],
+        "activation_count": 5,
+        "activation_pids": [
+          33432,
+          33348,
+          35988,
+          31444,
+          31660
+        ],
+        "manual_restart_count": 3,
+        "manual_restart_pids": [
+          35988,
+          31444,
+          31660
+        ],
+        "current_saved_state_pid": 31660,
+        "current_saved_state_status": "WATCHER_ACTIVE",
+        "frozen_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "installation_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "observed_source_sha256": "6E9878F71C1754A71EFBDA0068DF6396F4BB4BF433EA4326EED518929B6A5F0A",
+        "frozen_protocol_sha256": "160722007A520D4A3B4BB810927EBF9BBCFC61654ADA9D9E87C8C48C1C96EDF2",
+        "restart_protocol_prefixes": [
+          "160722007A52",
+          "160722007A52",
+          "160722007A52"
+        ],
+        "restart_log_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+        ],
+        "same_frozen_source_restart_evidenced": true,
+        "evidence_paths": [
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\h16_freezer_freeze_before_first_t5.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\watcher_installation_manifest_before_first_t5.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\watcher_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\ticket_freeze_watcher.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\ticket_watcher_state.json",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\freeze_h16_prospective_all_model_seven_bet_tickets.py",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1227_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1257_stdout.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stderr.log",
+          "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h16_prospective_all_model_seven_bet_extension_preregistered_20260823\\logs\\manual_restart_20260823T1259_stdout.log"
+        ]
+      }
+    },
+    "official_postrace_settlement": "NOT_RUN_PER_FINALIZATION_GOAL",
+    "prospective_roi": "NOT_MEASURED",
+    "live_stake": 0
+  },
+  "chronology_inventory_status": "EVIDENCE_INVENTORY_ONLY_NO_NEW_RESEARCH",
+  "base_report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.html",
+    "bytes": 116743,
+    "sha256": "B6B0B1F8FCCB1D7C68D2CAA8D69D8A13CBB05BAF64403B74D2319B81EA5287F7",
+    "modified_at_kst": "2026-08-23T05:49:47.171464+09:00"
+  },
+  "svg_chart_evidence_count": 12,
+  "context_supplement": {
+    "schema_version": "1.0",
+    "scope": "EXISTING_EVIDENCE_ONLY_NO_TRAINING_BACKTEST_WEB_OR_SETTLEMENT",
+    "quarter_summary": {
+      "heading": "[이번 분기 작업 요약 및 변경 사항]",
+      "items": [
+        {
+          "label": "현재 권위 기준",
+          "value": "outputs/reports/final_comprehensive_research_report_20260823/index.html 및 동일 폴더의 manifest/validator"
+        },
+        {
+          "label": "이번 최종화 범위",
+          "value": "research_expansion=False, new_training=False, new_backtest=False, new_postrace_settlement=False"
+        },
+        {
+          "label": "최종 실전 배포 판정",
+          "value": "NO_CONFIRMED_DEPLOYABLE_PROFIT_STRATEGY; recommended_real_stake=0"
+        },
+        {
+          "label": "기준 데이터·학습 근거",
+          "value": "revised_v11_seoul_bugyeong_rank_clean_preprocessed; rows=56456, races=5343, features=141, actually_trained_and_reloaded=6"
+        },
+        {
+          "label": "전향 경계",
+          "value": "official settlement=NOT_RUN_PER_FINALIZATION_GOAL, ROI=NOT_MEASURED, live stake=0"
+        }
+      ]
+    },
+    "chronology": [
+      {
+        "order": 1,
+        "period": "2026-08-19~2026-08-20",
+        "phase": "초기 전처리·전체 착순 모델 라운드 v5~v9",
+        "question": "문자열 수치화·스케일링·경주 그룹화를 거친 데이터로 전체 착순과 Top3를 학습할 수 있는가",
+        "work": "여러 전처리 버전과 Random Forest, XGBoost, LightGBM, CatBoost, Deep RankNet, Plackett–Luce 계열을 학습하고 137피처 대 선별피처를 비교했다.",
+        "result": "순위지표는 계산되었지만 시장 순위·적중이 강했고 validation 잠금 정책 중 95% CI 하한이 양수인 수익 정책은 없었다.",
+        "scientific_status": "MECHANICAL_SUCCESS_ECONOMIC_NOT_CONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "Report_summary.txt",
+          "outputs/reports/project_learning_textbook_20260823/index.html",
+          "outputs/reports/quarter_quant_research_20260820/05_report/rank_ndcg5_full_selected_market.png"
+        ]
+      },
+      {
+        "order": 2,
+        "period": "2026-08-20~2026-08-21",
+        "phase": "Benter형 시장 앵커 전환",
+        "question": "독립 모델로 시장을 대체하기보다 log(q)를 고정 offset으로 두고 시장의 잔차오류만 학습하면 확률정보가 개선되는가",
+        "work": "조건부 로짓, Benter 2단계 결합, Base Margin boosting, walk-forward, EDGE·Kelly·공식 환급 백테스트를 구현했다.",
+        "result": "여러 역사 실행에서 양의 Delta LL이 관측됐으나 ROI 신뢰구간은 0을 포함했다. 홍콩 1997~2005 외부 재현은 Delta LL -0.0009084, CI [-0.0060925,+0.0039697]로 미확정이었다.",
+        "scientific_status": "PROBABILITY_SIGNAL_WITHOUT_PROFIT_CONFIRMATION",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/benter_market_anchored_20260820/walkforward_summary.json",
+          "outputs/reports/base_margin_boosting_20260821/summary.json",
+          "outputs/reports/hk_external_replication_20260821/summary.json",
+          "Report_summary.txt"
+        ]
+      },
+      {
+        "order": 3,
+        "period": "2026-08-21~2026-08-22",
+        "phase": "누수·피처·경마장·신규표본 감사",
+        "question": "관측된 고수익과 EDGE가 누수, 최종 pool 정보, 축퇴 배당 또는 경마장 범위 오류가 아닌가",
+        "work": "clinic 계열 시차, 구간기록, 연승 Harville, 제주·부경 병합, 고수익 표본과 배당분포를 감사했다.",
+        "result": "일부 고수익은 2019~2021 축퇴 배당과 일치해 배치 근거에서 제외했다. revised_v7은 서울-only였고 서울+부경 기준 데이터는 revised_v10 이후에 별도로 구성되었다.",
+        "scientific_status": "LEAKAGE_AND_SCOPE_CORRECTION",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/interim_market_error_research_20260822/meet_scope_audit.json",
+          "outputs/reports/jeju_bugyeong_validation_20260821",
+          "Report_summary.txt"
+        ]
+      },
+      {
+        "order": 4,
+        "period": "2026-08-22",
+        "phase": "revised_v11 서울+부경 clean 데이터와 6개 전체 착순 모델 재학습",
+        "question": "최종 pool·배당·결과 누수를 제거한 서울+부경 데이터로 전체 착순 모델을 새로 학습하면 어떤 성능과 수익을 보이는가",
+        "work": "56,456행·5,343경주·141피처를 시간순 TRAIN 33,416/VALID 11,345/TEST 11,695행으로 분할하고 6개 모델을 실제 적합·저장·재로딩했다.",
+        "result": "전처리와 40개 데이터 감사 PASS, 203개 재로딩·지표 재계산 PASS. CatBoost TEST NDCG@5 0.778036, Spearman 0.455303, rank MAE 2.439987. 7승식 잠금 수익은 0/7 확정이었다.",
+        "scientific_status": "DATA_AND_MODEL_VALIDATION_SUCCESS_PROFIT_NO_GO",
+        "confidence": "HIGH",
+        "evidence": [
+          "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/preprocessing_validation.json",
+          "data/revised_v11_seoul_bugyeong_rank_clean_preprocessed/preprocessing_manifest.json",
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/final_validation.json",
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/comprehensive_validation.json"
+        ]
+      },
+      {
+        "order": 5,
+        "period": "2026-08-22",
+        "phase": "v11 시장 앵커·이변·경마장 층화",
+        "question": "clean 비시장 피처가 시장확률 q에 추가 정보를 주며 특정 이변 피처·승식으로 수익화되는가",
+        "work": "조건부 로짓·Base Margin·앙상블 Delta LL, 29개 상위 이변피처, 서울·부경 층화, 7승식 잠금 정책과 다중비교를 평가했다.",
+        "result": "시장 앵커 앙상블 TEST Delta LL/race +0.017194, CI [+0.009507,+0.025014]였으나 TEST 재사용 한계가 있다. 상위 이변 29피처 모델은 전체 141피처보다 Delta LL이 낮았고 ROI CI/FDR 통과는 0이었다. 서울·부경 각각 양의 앵커 Delta LL은 관측됐으나 수익 확정은 0이었다.",
+        "scientific_status": "RETROSPECTIVE_MARKET_INFORMATION_SUPPORT_NO_TRADABLE_PROFIT",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/delta_ll_metrics.csv",
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/independent_validation.json",
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/independent_validation.json",
+          "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_analysis_validation.json"
+        ]
+      },
+      {
+        "order": 6,
+        "period": "2026-08-23 00:00~05:55 KST",
+        "phase": "H1~H9 심층 반복가설·fresh64 공식 7승식",
+        "question": "부분 풀링, Attention, log-pool, 0.5% sparse, rolling lock, 확률보정, clinic 증분, 새 날짜 표본과 7승식 정산 중 무엇이 시장보다 나은 베팅으로 이어지는가",
+        "work": "H1~H9 실제 적합·독립감사와 64경주 공식 KRA 정산을 수행하고 42쪽 HTML/PDF 종합보고서를 생성했다.",
+        "result": "H5 재사용 TEST의 확률·연승 paired 방어 신호만 제한적으로 지지되었다. H2·H3·H4·H6·H7·H9는 미지지, H8은 양의 점추정이나 optional continuation 한계. fresh64 절대수익 확정 0/7, paired Holm 0/7, stake 0.",
+        "scientific_status": "MIXED_RETROSPECTIVE_SIGNAL_NO_PROSPECTIVE_PROFIT_CONFIRMATION",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/market_probability_advantage_deep_research_20260823/report_data_snapshot.json",
+          "outputs/reports/market_probability_advantage_deep_research_20260823/index.html",
+          "outputs/reports/market_probability_advantage_deep_research_20260823/independent_html_validation.json",
+          "outputs/reports/fresh_all_bets_extended_20260823/independent_audit/independent_audit_summary.json",
+          "outputs/reports/fresh_all_bets_paired_advantage_extended_20260823/independent_audit/independent_audit_summary.json"
+        ]
+      },
+      {
+        "order": 7,
+        "period": "2026-08-23 06:21~06:28 KST",
+        "phase": "H10A provenance-ready 6피처 시장 앵커",
+        "question": "당일 출전표에서도 동일 원천·변환을 재현할 수 있는 6피처만으로 시장잔차 모델을 만들 수 있는가",
+        "work": "age, age__pr, oh_sex_암, wgBudam_chg, wgBudam__pr, te_owName으로 조건부 로짓 6회를 적합하고 56,456행 변환을 최대 8.882e-16 오차로 재생했다.",
+        "result": "기술·출처 재현은 PASS, 독립감사 22/22. 재사용 TEST M6-q Delta LL +0.005422, Holm 통과지만 독립 확증이 아니다. fresh64 M6-q +0.010457, exact day sign-flip p=0.078125로 미확정. 실제 stake 0.",
+        "scientific_status": "PROVENANCE_SUCCESS_PERFORMANCE_UNCONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h10a_provenance_six_feature_anchor_20260823/experiment_summary.json",
+          "outputs/reports/h10a_provenance_six_feature_anchor_20260823/independent_audit/independent_audit_summary.json"
+        ]
+      },
+      {
+        "order": 8,
+        "period": "2026-08-23 06:21~06:59 KST",
+        "phase": "H11 V1 사전등록과 H11B 6피처 멀티모델 동결",
+        "question": "H11 V1 5피처 주모델을 보존하면서 XGBoost, LightGBM, 3-seed Deep MLP와 M6 앙상블을 결과 미접촉 상태로 동결할 수 있는가",
+        "work": "H11 V1 사전등록 후 H11B에서 총 33 fit operation(최종 성공 실행 15, 이전 중단 18)을 기록하고 네 arm과 25% 동일가중 앙상블을 동결했다.",
+        "result": "실제 새 학습과 재로딩, 확률합, 6피처 replay, gradient FD가 PASS. 역사 VALID 앙상블 Delta LL +0.002420 CI가 0을 포함했고 재사용 TEST +0.002722 CI도 0을 포함했다. 타깃 성능은 아직 없음.",
+        "scientific_status": "PROSPECTIVE_MODEL_FREEZE_SUCCESS_HISTORICAL_ADVANTAGE_UNCONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "data/raw_prospective_oos_20260823/preregistration.json",
+          "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/protocol_before_fit.json",
+          "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/experiment_summary.json",
+          "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/independent_validation.json"
+        ]
+      },
+      {
+        "order": 9,
+        "period": "2026-08-23 07:00~07:10 KST",
+        "phase": "H11C 8~15배 다크호스 VALID 잠금",
+        "question": "8~15배·양의 EDGE 후보 중 H11B EDGE 상위 10/20/30/40%가 동일 건수 시장 q 대조보다 나은가",
+        "work": "VALID에서 edge 임계값 0.009714, 0.007045, 0.005444, 0.004175를 결과·T-5 이전에 잠그고 Brier, ECE, ROI, paired Delta ROI를 평가했다.",
+        "result": "네 cutoff 모두 H11B ROI가 음수이고 동일 건수 q 대조는 양수였으며 Holm 통과 cutoff는 0이었다. deployment NO-GO, stake 0.",
+        "scientific_status": "HYPOTHESIS_NOT_SUPPORTED_ON_SELECTION_PERIOD",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/threshold_lock.json",
+          "outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/experiment_summary.json",
+          "outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/independent_validation.json",
+          "outputs/reports/h11c_darkhorse_8_15_valid_lock_report_20260823/index.html"
+        ]
+      },
+      {
+        "order": 10,
+        "period": "2026-08-23 07:19~07:39 KST",
+        "phase": "H11D 시장 앵커 잔차 alpha 스케일링",
+        "question": "H11B 앙상블 잔차를 시장 쪽으로 축소 또는 증폭하면 새 복잡한 모델 없이 확률품질이 좋아지는가",
+        "work": "VALID 92일을 앞 64일 DEV와 뒤 28일 평가로 분할해 alpha 0.00~1.50를 0.01 간격으로 고정 탐색했다.",
+        "result": "DEV alpha=1.05, late VALID Delta LL +0.002289, CI [-0.003839,+0.008967], sign-flip p=0.497750. alpha=1 대비 추가 Delta LL은 +0.000010245로 미미하고 ECE는 악화. 전체 VALID 배포 alpha=1.06 동결, 타깃·TEST 분석 사용 0, stake 0.",
+        "scientific_status": "SCALAR_RESIDUAL_SCALING_NOT_CONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/protocol_before_analysis.json",
+          "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/late_valid_metrics.json",
+          "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/frozen_alpha.json",
+          "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/independent_validation.json"
+        ]
+      },
+      {
+        "order": 11,
+        "period": "2026-08-23 07:43~07:58 KST",
+        "phase": "H13 비음수 Benter식 residual log-pool",
+        "question": "H11B 네 멤버 잔차를 비음수 log-pool로 결합하면 q와 동일가중 앙상블보다 좋아지는가",
+        "work": "SLSQP·analytic gradient로 8회 적합하고 first64 가중치를 late28에 기술 평가한 뒤 all92 배포가중치를 동결했다.",
+        "result": "late28 H13-q Delta LL +0.002006, CI [-0.004539,+0.009043], p=0.287267; H13-동일가중 -0.000272, CI가 0 포함. 선택 lambda=0, 가중치 합이 1을 넘어 시장 지수가 음수가 되는 구조·불안정성이 H14 제약의 동기가 되었다. ROI 미계산, stake 0.",
+        "scientific_status": "LOG_POOL_COMPLEMENTARITY_NOT_CONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/protocol_before_training.json",
+          "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/experiment_summary.json",
+          "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/late28_metrics.json",
+          "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/independent_validation_complete.json"
+        ]
+      },
+      {
+        "order": 12,
+        "period": "2026-08-23 07:57~08:20 KST",
+        "phase": "H14 convex market-residual pool",
+        "question": "w>=0, sum(w)<=1 제약으로 시장 지수를 음수가 되지 않게 하면 H13의 불안정성을 줄이고 성능을 높이는가",
+        "work": "first44, first64, all92에 SLSQP+analytic gradient를 총 3회 적합했다.",
+        "result": "late28 H14-q Delta LL +0.002263, CI [-0.003475,+0.008439], p=0.230277; H14-동일가중 -0.000015, H14-H13 +0.000257로 모두 CI가 0을 포함했다. 제약과 재현성은 성공했지만 시장우위는 확인되지 않았다.",
+        "scientific_status": "CONSTRAINT_ENGINEERING_SUCCESS_PERFORMANCE_NOT_CONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+          "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/experiment_summary.json",
+          "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_metrics.json",
+          "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_frozen_before_first_t5_v3.json"
+        ]
+      },
+      {
+        "order": 13,
+        "period": "2026-08-23 08:21~08:40 KST",
+        "phase": "H17 ridge-convex market-residual pool",
+        "question": "ridge와 one-standard-error 선택으로 가중치 불안정을 줄이면 late28에서 일반화가 개선되는가",
+        "work": "12 lambda first44 fits, 선택 lambda first64, all92를 포함해 SLSQP 14회를 실제 실행했다. next20 one-SE 규칙은 lambda=1을 선택했다.",
+        "result": "first64 가중치 합 0.019227, all92 합 0.018590으로 거의 시장 q에 수축했다. late28 H17-q Delta LL +0.0000837, CI [-0.0000295,+0.0002075], p=0.094291; 동일가중 대비 -0.002195. 안정화는 되었지만 추가정보 우위는 확인되지 않았다.",
+        "scientific_status": "RIDGE_STABILITY_SUCCESS_INCREMENTAL_VALUE_NOT_CONFIRMED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+          "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/experiment_summary.json",
+          "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_metrics.json",
+          "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/independent_validation_frozen_before_first_t5.json"
+        ]
+      },
+      {
+        "order": 14,
+        "period": "2026-08-23 06:21~10:25 KST",
+        "phase": "H11~H18 result-blind T-5 점수·티켓·평가 계약 동결",
+        "question": "첫 T-5 이전에 모델·임계값·평가공식·파일해시·stake 0을 고정해 사후선택을 차단할 수 있는가",
+        "work": "H11/H11B/H13/H14/H17 scorer, H12/H16/H18 7승식 ticket freezer, H15/H18 확률평가, 공식 parser·collector·settler와 master registry를 사전 동결했다.",
+        "result": "master registry 159파일, 독립검증 972/972 PASS, 첫 T-5 이전 mtime·freeze evidence PASS, 결과·배당금 read 0, network 0, stake 0. 이는 인프라 성공이며 성과 측정이 아니다.",
+        "scientific_status": "PROSPECTIVE_GOVERNANCE_FREEZE_SUCCESS_PERFORMANCE_NOT_MEASURED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/20260823_prospective_master_registry/master_registry.json",
+          "outputs/reports/20260823_prospective_master_registry/independent_validation.json",
+          "outputs/reports/h15_prospective_all_model_probability_evaluation_preregistered_20260823/freeze_complete_before_first_t5.json",
+          "outputs/reports/h18_h17_prospective_probability_and_seven_bet_extension_preregistered_20260823/final_pre_t5_binding_and_supersession_addendum.json"
+        ]
+      },
+      {
+        "order": 15,
+        "period": "2026-08-23 09:07~10:25 KST",
+        "phase": "사후 승인 파이프라인 fail-closed 오케스트레이션",
+        "question": "경주 종료 후 실수로 잘못된 순서·파일·권한으로 정산하는 것을 막을 수 있는가",
+        "work": "명시적 authorization, 전체 출발·capture·ticket 완결 gate, 단계별 고정 CLI, append-only retry receipt, 내부 산출물 재귀 hash 검증, cross-audit release를 구현했다.",
+        "result": "combined settler cross-audit v2 208/208, metric 2820/2820, negative contracts 35/35; 최종 orchestrator 71/71 PASS를 두 번 REUSE_NO_OVERWRITE로 확인했다. production은 실행하지 않았다.",
+        "scientific_status": "FAIL_CLOSED_ORCHESTRATION_VALIDATED_NOT_EXECUTED",
+        "confidence": "HIGH",
+        "evidence": [
+          "outputs/reports/authorized_postrace_pipeline_preregistered_20260823/protocol_before_first_t5.json",
+          "outputs/reports/authorized_postrace_pipeline_preregistered_20260823/freeze_complete_cross_audited_before_first_t5.json",
+          "outputs/reports/authorized_postrace_pipeline_preregistered_20260823/independent_validation_final_cross_audit_v5_frozen.json",
+          "outputs/reports/h16_h18_settlement_cross_component_audit_20260823/cross_component_audit_v2.json"
+        ]
+      }
+    ],
+    "preprocessing_comparison": {
+      "recorded_status": "PASS_WITH_LIMITATIONS",
+      "recorded_winner": "current_revised_v11",
+      "recorded_reason": "It is the only materialized model matrix in the comparison with zero nonnumeric, missing, and infinite feature cells plus explicit train-only |Pearson| >= 0.95 pruning to zero remaining pairs.",
+      "comparison_limit": "Not like-for-like: Git is an interim source plus a runtime transformer; v11 is a materialized matrix. Tree pipelines may intentionally omit scaling. Pairwise Pearson pruning does not prove absence of nonlinear redundancy or multivariate collinearity.",
+      "git_runtime_transform": {
+        "rows": 32888,
+        "races": 3172,
+        "registered_pre_race_features": 112,
+        "source_string_feature_columns": 13,
+        "source_missing_feature_cells": 100754,
+        "transformed_feature_columns": 554,
+        "transformed_non_numeric_columns": 0,
+        "transformed_nan_cells": 0,
+        "transformed_infinite_cells": 0,
+        "raw_train_pairs_abs_ge_0_95": 25,
+        "raw_train_pairs_abs_ge_0_999999": 4,
+        "correlation_pruning_implemented": false
+      },
+      "v11_materialized_matrix": {
+        "rows": 56456,
+        "races": 5343,
+        "features": 141,
+        "all_split_feature_dtypes_numeric": true,
+        "nan_model_values_by_split": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "infinite_model_values_by_split": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "correlation": {
+          "method": "Pearson on training model features only",
+          "threshold_absolute": 0.95,
+          "pairs_before_pruning": 16,
+          "pairs_after_pruning": 0,
+          "exact_duplicate_pairs_after_pruning": 0,
+          "constant_features_after_pruning": 0,
+          "direct_recheck_max_absolute_pairwise_correlation": 0.9378611763704204,
+          "direct_recheck_max_pair": [
+            "jk_winrate__z",
+            "jk_winrate__pr"
+          ],
+          "high_correlation_features_dropped": [
+            "race_field_size",
+            "hr_last_ord",
+            "wg__pr",
+            "wg_diff__z",
+            "wgBudam__z",
+            "age__z",
+            "rating__pr",
+            "tr_winrate__pr",
+            "train_runs_14__pr",
+            "style_vs_race__missing",
+            "race_style_mean__missing",
+            "race_front_ratio__missing",
+            "oh_budam_별정A",
+            "oh_meet_서울",
+            "hr_winrate__pr__missing"
+          ],
+          "one_hot_reference_columns_dropped": [
+            "ageCond_연령오픈"
+          ]
+        },
+        "scaling_direct_recheck": {
+          "numeric_nonconstant_candidates": 141,
+          "standardized_columns": 127,
+          "unit_interval_columns": 14,
+          "interpretation": "Binary/unit-interval columns were not forced to zero mean and unit variance. This is not a preprocessing failure; standard scaling is also not required by tree models."
+        },
+        "strict_target_encoding": {
+          "status": "PASS",
+          "checks_passed": 60,
+          "checks_total": 60,
+          "features": [
+            "te_jkName",
+            "te_trName",
+            "te_owName",
+            "te_rank"
+          ],
+          "smoothing": 20.0,
+          "train_rule": "All entries on a date are encoded before that date's outcomes update history; only strictly earlier dates contribute.",
+          "valid_test_rule": "Full training mapping only; validation and test outcomes never update the mapping.",
+          "standardized_reproduction_max_absolute_difference": {
+            "train": 8.881784197001252e-16,
+            "valid": 4.440892098500626e-16,
+            "test": 4.440892098500626e-16
+          },
+          "same_date_and_future_counterfactual_max_difference": 0.0,
+          "validation_test_label_counterfactual_max_difference": 0.0,
+          "unseen_fallback": {
+            "te_jkName": {
+              "valid_rows": 448,
+              "valid_fraction": 0.039488761568973116,
+              "test_rows": 1412,
+              "test_fraction": 0.12073535699016674
+            },
+            "te_trName": {
+              "valid_rows": 350,
+              "valid_fraction": 0.030850594975760245,
+              "test_rows": 929,
+              "test_fraction": 0.07943565626336041
+            },
+            "te_owName": {
+              "valid_rows": 142,
+              "valid_fraction": 0.0125165271044513,
+              "test_rows": 405,
+              "test_fraction": 0.03463018383924754
+            },
+            "te_rank": {
+              "valid_rows": 0,
+              "valid_fraction": 0.0,
+              "test_rows": 0,
+              "test_fraction": 0.0
+            },
+            "all_fallback_max_absolute_difference_from_training_prior": 0.0
+          }
+        }
+      }
+    },
+    "metrics_not_measured": [
+      {
+        "metric": "2026-08-23 H11/H11B/H13/H14/H17 winner Delta LL, NLL, Brier, ECE, Top1",
+        "status": "NOT_MEASURED",
+        "reason": "목표일 결과를 보지 않았고 사후 evaluator를 실행하지 않음",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "2026-08-23 ordered/unordered Top3와 position accuracy",
+        "status": "NOT_MEASURED",
+        "reason": "공식 Top3 결과를 읽지 않음; full order가 없으면 rank MAE·Spearman·NDCG는 원칙상 N/A",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "2026-08-23 7승식 실제 ROI·Hit Rate·평균배당·MDD·Sharpe",
+        "status": "NOT_MEASURED",
+        "reason": "official postrace collector·settler·evaluator production 미실행, stake0",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "2026-08-23 H11C 8~15배 top10/20/30/40 전향 수익",
+        "status": "NOT_MEASURED",
+        "reason": "threshold는 잠겼지만 결과 정산 미실행",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "H11C 사전 stopping rule 20일·500후보",
+        "status": "NOT_REACHED",
+        "reason": "한 날짜조차 결과 평가하지 않았고 장기 전향 블록이 필요",
+        "availability_taxonomy": "사전 설계 조건 미도달"
+      },
+      {
+        "metric": "모든 복합승식 T-5 시장확률·EDGE",
+        "status": "PARTIALLY_UNAVAILABLE",
+        "reason": "정확한 complete T-5 quinella grid만 허용; 연승·쌍승·삼복승·삼쌍승·복연승의 실제 사전 전체 가격 grid는 확보·검증되지 않음",
+        "availability_taxonomy": "자료부재 또는 부분부재"
+      },
+      {
+        "metric": "복합승식 actual EV와 Kelly",
+        "status": "NOT_IDENTIFIABLE",
+        "reason": "낙첨 조합의 decision-time odds/pool과 완전한 실행가격이 없음",
+        "availability_taxonomy": "식별불가(필수 입력자료 부재)"
+      },
+      {
+        "metric": "실측 slippage·latency·odds drift",
+        "status": "NOT_MEASURED",
+        "reason": "기존 2~20% haircut은 시나리오이며 실제 체결 로그가 없음",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "자기 주문의 pool impact와 capacity",
+        "status": "NOT_MEASURED",
+        "reason": "pool size·주문량·배당하락 함수가 없음",
+        "availability_taxonomy": "식별불가(필수 pool size·주문량·가격충격 자료 부재)"
+      },
+      {
+        "metric": "리베이트 포함·미포함 순수익 분해",
+        "status": "NOT_MEASURED",
+        "reason": "KRA 연구에는 전문 CAW 리베이트 계약이 없고 외부 회사 자료는 비교 설명용",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "여러 pristine 미래 날짜의 장기 ROI와 안정성",
+        "status": "NOT_MEASURED",
+        "reason": "현재 TEST는 반복 열람, fresh64는 optional continuation, 목표일은 아직 미평가",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "H13~H17 적응형 연쇄 전체 family의 통합 다중검정",
+        "status": "NOT_MEASURED",
+        "reason": "개별 실험 CI·p는 있으나 연쇄 사후 적응을 하나의 family로 교정하지 않음",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "피처의 인과효과",
+        "status": "NOT_MEASURED",
+        "reason": "SHAP·계수·permutation은 연관 설명이며 clinic ablation도 통계적으로 미확정",
+        "availability_taxonomy": "식별불가(관측·연관 XAI만 존재; 인과 설계 없음)"
+      },
+      {
+        "metric": "Monte Carlo 조합확률의 실제 조합시장 calibration",
+        "status": "NOT_MEASURED",
+        "reason": "actual pre-race combination market probability grid 부족",
+        "availability_taxonomy": "단순 미측정(해당 실행·정산·검정 미수행)"
+      },
+      {
+        "metric": "회사·프로 베팅팀의 독립 감사 장기 ROI",
+        "status": "NOT_AVAILABLE_IN_SAVED_SOURCES",
+        "reason": "기존 보고서는 공개 원리·매출구조는 찾았지만 알고리즘과 장기 ROI를 함께 독립 감사한 사례를 확인하지 못했다고 기록",
+        "availability_taxonomy": "자료부재 또는 부분부재"
+      },
+      {
+        "metric": "법률·약관상 자동주문 실행 가능성",
+        "status": "NOT_DETERMINED",
+        "reason": "기존 법령 경고는 법률 자문이 아니며 최신 전문 검토가 필요",
+        "availability_taxonomy": "외부 검토 전 판정불가"
+      }
+    ],
+    "literature_reuse_policy_warning": "아래 항목은 기존 보고서에 저장된 출처와 해석을 인벤토리화한 것이다. 이번 작업에서 외부 원문을 다시 조회하지 않았으며 최신성·원문 정확성을 새로 확증하지 않는다.",
+    "full_rank_actual_training_inventory": {
+      "status": "PASS",
+      "target": "complete/full finish order from ord",
+      "ordinary_feature_count": 141,
+      "fit_train_rows": 33416,
+      "models_trained_and_reloaded": 6,
+      "final_validation_checks": 203,
+      "test_rows_reloaded_per_model": 11695,
+      "reload_max_score_difference_over_all_models": 4.440892098500626e-16,
+      "source": {
+        "relative_path": "src/training/train_full_rank_models.py",
+        "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_full_rank_models.py",
+        "sha256": "37E0C01927AC8AFFEE364813526BC4BEB819B737065949E2D6BB3A7E860011DF"
+      },
+      "models": [
+        {
+          "model_key": "random_forest_rank",
+          "method": "RandomForestRegressor on normalized finish-percentile target; prediction sign inverted so lower predicted position ranks higher",
+          "source_lines": "221-243",
+          "parameters": {
+            "n_estimators": 500,
+            "max_depth": 14,
+            "min_samples_leaf": 8,
+            "max_features": 0.8,
+            "random_state": 42,
+            "n_jobs": 1
+          },
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/01_random_forest_rank_training.log",
+          "completion_log_sha256": "DFACA946ECEA2AA4FA8BBDA6EC9203ABAE46E919899EDA9488290DA9A0A20D59",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/random_forest_rank/model.joblib",
+          "artifact_bytes": 94813921,
+          "artifact_sha256": "9113491AC1C8057603F9BC557F60D595CE5B78A374197EE147E0047C9930B431",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "xgboost_rank",
+          "method": "XGBRanker with race qid and rank:ndcg objective using graded relevance derived from every finish order",
+          "source_lines": "246-276",
+          "parameters": {
+            "objective": "rank:ndcg",
+            "eval_metric": "ndcg@5",
+            "n_estimators": 2000,
+            "learning_rate": 0.03,
+            "max_depth": 6,
+            "min_child_weight": 5,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "reg_lambda": 1.0,
+            "early_stopping_rounds": 120,
+            "random_state": 42,
+            "tree_method": "hist"
+          },
+          "best_iteration_count": 448,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/02_xgboost_rank_training.log",
+          "completion_log_sha256": "E35E40D8E7D5123FA9539DE7D1EFFFA37A37BB1DD6F51F5878A2FAB6796B4C92",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/xgboost_rank/model.json",
+          "artifact_bytes": 3351817,
+          "artifact_sha256": "8EF76EEC934EAA81F5343CBCCAEC8BA5AD00191864AB3472BD29C93F300039A5",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "lightgbm_rank",
+          "method": "LightGBM LambdaRank with race groups and graded full-order relevance",
+          "source_lines": "279-313",
+          "parameters": {
+            "objective": "lambdarank",
+            "metric": "ndcg",
+            "ndcg_eval_at": [
+              1,
+              3,
+              5
+            ],
+            "learning_rate": 0.03,
+            "num_leaves": 127,
+            "min_data_in_leaf": 35,
+            "feature_fraction": 0.8,
+            "bagging_fraction": 0.8,
+            "bagging_freq": 1,
+            "lambda_l1": 0.1,
+            "lambda_l2": 1.0,
+            "lambdarank_truncation_level": 16,
+            "num_boost_round": 3000,
+            "early_stopping_rounds": 150,
+            "seed": 42
+          },
+          "best_iteration_count": 54,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/03_lightgbm_rank_training.log",
+          "completion_log_sha256": "66897A52265E0A83E935F1120930034D1BD50B2590B0AA4DCD000D55B7DAE7A1",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/lightgbm_rank/model.txt",
+          "artifact_bytes": 760032,
+          "artifact_sha256": "42CEF0535C8AD34A08A7149C04946D7F6D03DF06D7ADB9A7D18FA3270EE8046A",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "catboost_rank",
+          "method": "CatBoostRanker YetiRankPairwise with race group_id and full-order graded relevance",
+          "source_lines": "316-346",
+          "parameters": {
+            "loss_function": "YetiRankPairwise",
+            "eval_metric": "NDCG:top=5",
+            "iterations": 2500,
+            "learning_rate": 0.03,
+            "depth": 7,
+            "l2_leaf_reg": 5.0,
+            "random_seed": 42,
+            "od_wait": 150
+          },
+          "best_iteration_zero_based": 767,
+          "fit_rows": 33416,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/04_catboost_rank_training.log",
+          "completion_log_sha256": "8CAE2A78AEDFC4B442AFC43AF548F1AD26D3606846AAF836C030402F21129A8E",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/catboost_rank/model.cbm",
+          "artifact_bytes": 1715736,
+          "artifact_sha256": "77F48AC10DCEC6E1F7C2F0FE4B3883DE7872B2DE431C94E29BE6E27DE245A039",
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "deep_ranknet",
+          "method": "Three-member PyTorch RankNet ensemble trained on all unequal within-race finish-order pairs with pairwise softplus loss",
+          "source_lines": "353-465",
+          "parameters": {
+            "architecture": [
+              256,
+              128
+            ],
+            "activations": "GELU",
+            "dropout": 0.2,
+            "batch_norm": true,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "race_batch_size": 48,
+            "max_epochs": 60,
+            "early_stopping_bad_epochs": 8,
+            "seeds": [
+              2000,
+              2001,
+              2002
+            ],
+            "device": "cpu"
+          },
+          "member_valid_pairwise": [
+            0.6593438835200705,
+            0.6621495241413456,
+            0.6625896246309574
+          ],
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/05_deep_ranknet_training.log",
+          "completion_log_sha256": "05A27C19EABDDB74B3B0FAD789CA35000F5EB3E76ADC906FAE7FF218D5E27A5B",
+          "artifacts": [
+            {
+              "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed0.pt",
+              "bytes": 289611,
+              "sha256": "5A694960611545E4E6F4B242C0CA00B2CF3A3AB0CF15EAEA9EA14DA836D65F2B"
+            },
+            {
+              "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed1.pt",
+              "bytes": 289611,
+              "sha256": "69438C34F197838AD089DC20AA196FF88825489EEE564A113EF161C0AFD46D28"
+            },
+            {
+              "relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/deep_ranknet/model_seed2.pt",
+              "bytes": 289611,
+              "sha256": "92304330FC36DE47E7505198231ABE4012F811FF6F814FE7C6705A3E187E4AFD"
+            }
+          ],
+          "reload_status": "PASS"
+        },
+        {
+          "model_key": "plackett_luce_full",
+          "method": "PyTorch neural Plackett-Luce likelihood over every finish position; only complete strict-order training races",
+          "source_lines": "468-490",
+          "parameters": {
+            "architecture": [
+              256,
+              128
+            ],
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "race_batch_size": 48,
+            "max_epochs": 60,
+            "seed": 42,
+            "device": "cpu"
+          },
+          "train_complete_races": 3125,
+          "excluded_non_strict_train_races": 33,
+          "best_valid_pairwise": 0.6610125978765151,
+          "completion_log": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/logs/06_plackett_luce_full_training.log",
+          "completion_log_sha256": "D22F1C7A9B8935337ECB540AC69FDA2C2525B9C90559B92955E1CBA0EE45E7F9",
+          "artifact_relative_path": "models/revised_v11_seoul_bugyeong_full_rank_20260822/plackett_luce_full/model.pt",
+          "artifact_bytes": 288647,
+          "artifact_sha256": "569B87781C4B89DCE47EAAEE27BF825A4A9A75B012DC68180F3E2BCACFABB3ED",
+          "reload_status": "PASS"
+        }
+      ],
+      "evidence_ids": [
+        "E06",
+        "E07",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E32",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37"
+      ]
+    },
+    "source_artifacts": [
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\chronology_literature_evidence.json",
+        "relative_path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/chronology_literature_evidence.json",
+        "bytes": 80607,
+        "sha256": "D260BEF37C88DE7D8621F2C0E99388A1A010C3521A3C192EDA0E9AC5A80EA1E5"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\final_comprehensive_research_report_20260823\\evidence\\data_model_evidence.json",
+        "relative_path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/data_model_evidence.json",
+        "bytes": 69515,
+        "sha256": "39E111FA629B1721416A7DDE51A96B490E25F7C92C51DBF3AB111ED177D5426B"
+      }
+    ]
+  },
+  "evidence_supplements": {
+    "schema_version": "1.0",
+    "artifact_type": "FINAL_REPORT_EXISTING_EVIDENCE_SUPPLEMENTS",
+    "status": "BUILT_FROM_EXISTING_EVIDENCE_NO_NEW_EXPERIMENT",
+    "new_training": false,
+    "new_backtest": false,
+    "new_web_research": false,
+    "new_postrace_settlement": false,
+    "missing_value_rendering": "측정되지 않음",
+    "render_mode": "SINGLE_NUMBERED_SECTION_WITH_FIVE_ANCHORED_SUBSECTIONS",
+    "section_ids": [
+      "supp-evidence-detail",
+      "supp-market-counterevidence",
+      "supp-seven-bet-details",
+      "supp-darkhorse-evidence",
+      "supp-fresh-m5-m6",
+      "supp-venue-stratification"
+    ],
+    "source_artifacts": {
+      "betting": {
+        "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/betting_edge_evidence.json",
+        "href": "evidence/betting_edge_evidence.json",
+        "bytes": 53334,
+        "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13"
+      },
+      "data_model": {
+        "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/data_model_evidence.json",
+        "href": "evidence/data_model_evidence.json",
+        "bytes": 69515,
+        "sha256": "39E111FA629B1721416A7DDE51A96B490E25F7C92C51DBF3AB111ED177D5426B"
+      },
+      "model_market": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/all_bet_types/bet_type_edge_analysis/bet_type_model_vs_market_summary.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/all_bet_types/bet_type_edge_analysis/bet_type_model_vs_market_summary.csv",
+        "bytes": 76867,
+        "sha256": "D1ED950C1F425522FFEB8E8DD93CC55AAD64EC200BF2F23F2F05405E68C2A480"
+      },
+      "full_bets": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv",
+        "bytes": 4458,
+        "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"
+      },
+      "anchor_bets": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv",
+        "bytes": 3056,
+        "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"
+      },
+      "odds_8_15": {
+        "path": "outputs/reports/odds_8_15_v11_revalidation_20260823/summary.json",
+        "href": "../odds_8_15_v11_revalidation_20260823/summary.json",
+        "bytes": 3159,
+        "sha256": "9759A61D7F033640E13A0F40A39F2E5F58A2904BC962688B805E5C8AF8172FF5"
+      },
+      "benter_8_15": {
+        "path": "outputs/reports/benter_market_anchored_20260820/backtest_summary.json",
+        "href": "../benter_market_anchored_20260820/backtest_summary.json",
+        "bytes": 572,
+        "sha256": "698998A4317C94D3F487A3F5C47C26D1BF5F1A5DEF0E1F0BE8F0284C749F4E5C"
+      },
+      "base_margin_8_15": {
+        "path": "outputs/reports/base_margin_profit_20260821/summary.json",
+        "href": "../base_margin_profit_20260821/summary.json",
+        "bytes": 4724,
+        "sha256": "02FFBDF4951A8C5AB73E9589D387B473AB519CD3DF52DCFF37C7A41CAE452C2F"
+      },
+      "upset_grid": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv",
+        "bytes": 51824,
+        "sha256": "43156E590245ED171F44DD37F625F659E914BDA9666C92E1BC62F38CCD0BD29B"
+      },
+      "m5_fresh": {
+        "path": "outputs/reports/fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv",
+        "href": "../fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv",
+        "bytes": 5555,
+        "sha256": "03AF315EF2701EF6B0F25A5A4ADAA22BAE4E5A634334718B7607B8F4B856B916"
+      },
+      "m6_fresh": {
+        "path": "outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv",
+        "href": "../h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv",
+        "bytes": 5374,
+        "sha256": "9B13C791CD70B62DEE0C34B91F0BC1801C44F0AC477CB60E05857F26322F95B3"
+      },
+      "venue_rank": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_rank_metrics.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_rank_metrics.csv",
+        "bytes": 7331,
+        "sha256": "4A884AADA4FA9FE78258700F6C91478B161CA6ABBB3A438ED4E1D7FFE660FB93"
+      },
+      "venue_anchor": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_anchor_metrics.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_anchor_metrics.csv",
+        "bytes": 3188,
+        "sha256": "BD149ADFA809713B8EA3E45F167DAE6F7C5BB01C716DFA58B019200AE1C635C2"
+      },
+      "venue_betting": {
+        "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_betting_metrics.csv",
+        "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_betting_metrics.csv",
+        "bytes": 97914,
+        "sha256": "A2449917588DAE596277576917CC5CB992EAAA91E6D0419A08AD10B80E96AC14"
+      }
+    },
+    "sections": {
+      "ordinary_market_counterevidence": {
+        "status": "MEASURED_HISTORICAL_REUSED_TEST",
+        "scope": "historical/reused TEST; complete-order races; selected-event Brier. This is not the all-runner winner DeltaLL used by market-anchor studies.",
+        "conclusion": "Every full-rank model and the ensemble trails the market selection hit rate for both win and place, and every selected-event Brier improvement is negative.",
+        "sources": [
+          {
+            "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/data_model_evidence.json",
+            "href": "evidence/data_model_evidence.json",
+            "bytes": 69515,
+            "sha256": "39E111FA629B1721416A7DDE51A96B490E25F7C92C51DBF3AB111ED177D5426B"
+          },
+          {
+            "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/all_bet_types/bet_type_edge_analysis/bet_type_model_vs_market_summary.csv",
+            "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/all_bet_types/bet_type_edge_analysis/bet_type_model_vs_market_summary.csv",
+            "bytes": 76867,
+            "sha256": "D1ED950C1F425522FFEB8E8DD93CC55AAD64EC200BF2F23F2F05405E68C2A480"
+          }
+        ],
+        "fields": [
+          "model_key",
+          "win_hit",
+          "market_selection_hit_rate.win",
+          "win_brier_improvement",
+          "place_hit",
+          "market_selection_hit_rate.place",
+          "place_brier_improvement"
+        ],
+        "rows": [
+          {
+            "model_key": "random_forest_rank",
+            "model": "Random Forest",
+            "win_hit": 0.3033395176252319,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.07328385899814471,
+            "win_brier_improvement": -0.012596936709760864,
+            "place_hit": 0.596441947565543,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.08333333333333337,
+            "place_brier_improvement": -0.022197098879812693
+          },
+          {
+            "model_key": "xgboost_rank",
+            "model": "XGBoost Ranker",
+            "win_hit": 0.3144712430426716,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.06215213358070504,
+            "win_brier_improvement": -0.012491967022894845,
+            "place_hit": 0.6189138576779026,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.060861423220973765,
+            "place_brier_improvement": -0.013989209436924083
+          },
+          {
+            "model_key": "lightgbm_rank",
+            "model": "LightGBM LambdaRank",
+            "win_hit": 0.3033395176252319,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.07328385899814471,
+            "win_brier_improvement": -0.01487545118295916,
+            "place_hit": 0.6039325842696629,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.0758426966292135,
+            "place_brier_improvement": -0.019461561251238768
+          },
+          {
+            "model_key": "catboost_rank",
+            "model": "CatBoost YetiRank",
+            "win_hit": 0.29962894248608535,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.07699443413729129,
+            "win_brier_improvement": -0.0171475738774714,
+            "place_hit": 0.6058052434456929,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.07397003745318353,
+            "place_brier_improvement": -0.024699689912421025
+          },
+          {
+            "model_key": "deep_ranknet",
+            "model": "Deep RankNet",
+            "win_hit": 0.3116883116883117,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.06493506493506496,
+            "win_brier_improvement": -0.015409225332460502,
+            "place_hit": 0.6067415730337079,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.0730337078651685,
+            "place_brier_improvement": -0.02904920117115231
+          },
+          {
+            "model_key": "plackett_luce_full",
+            "model": "Plackett-Luce Neural",
+            "win_hit": 0.29035250463821893,
+            "market_win_hit": 0.37662337662337664,
+            "win_hit_delta": -0.0862708719851577,
+            "win_brier_improvement": -0.016949645708152244,
+            "place_hit": 0.600187265917603,
+            "market_place_hit": 0.6797752808988764,
+            "place_hit_delta": -0.07958801498127344,
+            "place_brier_improvement": -0.025323840535257963
+          }
+        ]
+      },
+      "seven_bet_details": {
+        "status": "MEASURED_HISTORICAL_REUSED_TEST_NO_CONFIRMED_PROFIT",
+        "scope": "historical/reused TEST; model and policy selected on VALID; closing/final prices",
+        "confirmed_profit_bet_types": {
+          "full_rank": 0,
+          "market_anchor": 0
+        },
+        "full_rank": {
+          "sources": [
+            {
+              "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/betting_edge_evidence.json",
+              "href": "evidence/betting_edge_evidence.json",
+              "bytes": 53334,
+              "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13"
+            },
+            {
+              "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv",
+              "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv",
+              "bytes": 4458,
+              "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"
+            }
+          ],
+          "fields": [
+            "bet_type",
+            "model",
+            "selection_policy",
+            "test_bets",
+            "test_wins",
+            "test_hit_rate",
+            "test_roi",
+            "test_roi_ci_low_daily_block",
+            "test_roi_ci_high_daily_block",
+            "average_selected_odds",
+            "average_winning_dividend",
+            "flat_1pct_mdd",
+            "per_bet_sharpe",
+            "kelly_status",
+            "kelly_total_return",
+            "profit_confirmed_95pct",
+            "market_roi",
+            "roi_delta_vs_market",
+            "brier_improvement_vs_market"
+          ],
+          "rows": [
+            {
+              "family": "full_rank",
+              "bet_type": "단승",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 18,
+              "hit_rate": 0.16666666666666666,
+              "roi": -0.03055555555555556,
+              "ci_low": -0.5127940677966101,
+              "ci_high": 0.5322611367127495,
+              "average_selected_odds": 8.879629629629632,
+              "average_winning_dividend": 5.816666666666666,
+              "mdd": -0.2105198174749383,
+              "sharpe": -0.1093190807122554,
+              "kelly_status": "AVAILABLE",
+              "kelly_return": -0.19890050186033426,
+              "profit_confirmed": false,
+              "market_roi": -0.1760445682451253,
+              "roi_delta_vs_market": 0.14548901268956974,
+              "brier_improvement_vs_market": -0.0125969367097608
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "연승",
+              "model_key": "xgboost_rank",
+              "model": "XGBoost Ranker",
+              "policy": "top_10pct_edge",
+              "bets": 103,
+              "hits": 47,
+              "hit_rate": 0.4563106796116505,
+              "roi": 0.012621359223300977,
+              "ci_low": -0.2641433355292051,
+              "ci_high": 0.2954954954954955,
+              "average_selected_odds": 2.696116504854369,
+              "average_winning_dividend": 2.2191489361702126,
+              "mdd": -0.15209065449746872,
+              "sharpe": 0.09819921639616636,
+              "kelly_status": "AVAILABLE",
+              "kelly_return": -0.007793153452483215,
+              "profit_confirmed": false,
+              "market_roi": -0.1533864541832669,
+              "roi_delta_vs_market": 0.1660078134065679,
+              "brier_improvement_vs_market": -0.013989209436924
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "복승",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest",
+              "policy": "positive_edge",
+              "bets": 685,
+              "hits": 63,
+              "hit_rate": 0.09197080291970802,
+              "roi": -0.1764963503649635,
+              "ci_low": -0.41317058696590414,
+              "ci_high": 0.09536244700582909,
+              "average_selected_odds": null,
+              "average_winning_dividend": 8.953968253968254,
+              "mdd": -0.8382208123918016,
+              "sharpe": -1.2557555251218426,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "market_roi": -0.0845868152274837,
+              "roi_delta_vs_market": -0.0919095351374798,
+              "brier_improvement_vs_market": -0.0043214308735911
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "쌍승",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest",
+              "policy": "positive_edge",
+              "bets": 688,
+              "hits": 35,
+              "hit_rate": 0.050872093023255814,
+              "roi": -0.1803779069767442,
+              "ci_low": -0.5141632657847828,
+              "ci_high": 0.25369585972429204,
+              "average_selected_odds": null,
+              "average_winning_dividend": 16.111428571428576,
+              "mdd": -0.9038052935841725,
+              "sharpe": -0.9300480343487985,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "market_roi": -0.1389972144846797,
+              "roi_delta_vs_market": -0.0413806924920645,
+              "brier_improvement_vs_market": -0.0016782311269262
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "삼복승",
+              "model_key": "xgboost_rank",
+              "model": "XGBoost Ranker",
+              "policy": "top_30pct_edge",
+              "bets": 324,
+              "hits": 15,
+              "hit_rate": 0.046296296296296294,
+              "roi": -0.24537037037037038,
+              "ci_low": -0.6580643436578171,
+              "ci_high": 0.26537342135476466,
+              "average_selected_odds": null,
+              "average_winning_dividend": 16.3,
+              "mdd": -0.711344082993162,
+              "sharpe": -1.0690611707978468,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "market_roi": -0.2459610027855153,
+              "roi_delta_vs_market": 0.000590632415144926,
+              "brier_improvement_vs_market": -0.004625736712274
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "삼쌍승",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest",
+              "policy": "positive_edge",
+              "bets": 752,
+              "hits": 4,
+              "hit_rate": 0.005319148936170213,
+              "roi": -0.665159574468085,
+              "ci_low": -0.9566327357844255,
+              "ci_high": -0.21888705975097986,
+              "average_selected_odds": null,
+              "average_winning_dividend": 62.95,
+              "mdd": -0.9966603785375374,
+              "sharpe": -3.3302361771385254,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "market_roi": -0.3349117920148561,
+              "roi_delta_vs_market": -0.33024778245322894,
+              "brier_improvement_vs_market": -0.0003716900868777
+            },
+            {
+              "family": "full_rank",
+              "bet_type": "복연승",
+              "model_key": "lightgbm_rank",
+              "model": "LightGBM LambdaRank",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 10,
+              "hit_rate": 0.09259259259259259,
+              "roi": -0.5361111111111112,
+              "ci_low": -0.8121523981661083,
+              "ci_high": -0.20796285514671636,
+              "average_selected_odds": null,
+              "average_winning_dividend": 5.01,
+              "mdd": -0.4789155183329944,
+              "sharpe": -3.593481006042489,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "market_roi": -0.2074280408542246,
+              "roi_delta_vs_market": -0.3286830702568866,
+              "brier_improvement_vs_market": -0.0174995270390886
+            }
+          ]
+        },
+        "market_anchor": {
+          "sources": [
+            {
+              "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/betting_edge_evidence.json",
+              "href": "evidence/betting_edge_evidence.json",
+              "bytes": 53334,
+              "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13"
+            },
+            {
+              "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv",
+              "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv",
+              "bytes": 3056,
+              "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"
+            }
+          ],
+          "fields": [
+            "bet_type",
+            "model",
+            "selection_policy",
+            "test_bets",
+            "test_wins",
+            "test_hit_rate",
+            "test_roi",
+            "test_roi_ci_low_daily_block",
+            "test_roi_ci_high_daily_block",
+            "average_selected_odds",
+            "average_winning_dividend",
+            "flat_1pct_mdd",
+            "per_bet_sharpe",
+            "kelly_status",
+            "kelly_total_return",
+            "profit_confirmed_95pct",
+            "test_mean_predicted_edge",
+            "test_edge_spearman_with_realized_edge"
+          ],
+          "rows": [
+            {
+              "family": "market_anchor",
+              "bet_type": "단승",
+              "model_key": "anchored_base_margin",
+              "model": "시장 앵커 Base Margin",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 45,
+              "hit_rate": 0.4166666666666667,
+              "roi": -0.14537037037037034,
+              "ci_low": -0.35535976890756305,
+              "ci_high": 0.06765399556048826,
+              "average_selected_odds": 2.298148148148148,
+              "average_winning_dividend": 2.051111111111111,
+              "mdd": -0.17232717040411982,
+              "sharpe": -1.3957945698056253,
+              "kelly_status": "AVAILABLE",
+              "kelly_return": -0.049602710201727906,
+              "profit_confirmed": false,
+              "mean_edge": 0.07086314290905411,
+              "edge_spearman_realized": -0.04121295264225899
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "연승",
+              "model_key": "anchored_base_margin",
+              "model": "시장 앵커 Base Margin",
+              "policy": "top_10pct_edge",
+              "bets": 101,
+              "hits": 74,
+              "hit_rate": 0.7326732673267327,
+              "roi": -0.07524752475247524,
+              "ci_low": -0.17009550746023938,
+              "ci_high": 0.023764907740774045,
+              "average_selected_odds": 1.2762376237623763,
+              "average_winning_dividend": 1.2621621621621621,
+              "mdd": -0.08861191073031327,
+              "sharpe": -1.3158639418910285,
+              "kelly_status": "AVAILABLE",
+              "kelly_return": -0.14682056518504272,
+              "profit_confirmed": false,
+              "mean_edge": 0.27336149822728223,
+              "edge_spearman_realized": 0.09894001164822364
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "복승",
+              "model_key": "anchor_ensemble",
+              "model": "두 시장 앵커 앙상블",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 34,
+              "hit_rate": 0.3148148148148148,
+              "roi": 0.3972222222222222,
+              "ci_low": -0.03302498326079675,
+              "ci_high": 0.8444540229885056,
+              "average_selected_odds": null,
+              "average_winning_dividend": 4.438235294117648,
+              "mdd": -0.12626409176175857,
+              "sharpe": 1.7846836832930812,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "mean_edge": 0.06489290627441348,
+              "edge_spearman_realized": -0.1615269560909619
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "쌍승",
+              "model_key": "anchor_ensemble",
+              "model": "두 시장 앵커 앙상블",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 21,
+              "hit_rate": 0.19444444444444445,
+              "roi": 0.1675925925925926,
+              "ci_low": -0.310497790868925,
+              "ci_high": 0.6761548839719372,
+              "average_selected_odds": null,
+              "average_winning_dividend": 6.004761904761905,
+              "mdd": -0.2135021635325305,
+              "sharpe": 0.642799278774607,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "mean_edge": 0.04292491896140941,
+              "edge_spearman_realized": -0.11553154801032704
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "삼복승",
+              "model_key": "anchored_base_margin",
+              "model": "시장 앵커 Base Margin",
+              "policy": "top_20pct_edge",
+              "bets": 216,
+              "hits": 34,
+              "hit_rate": 0.1574074074074074,
+              "roi": -0.07685185185185182,
+              "ci_low": -0.3962910745047373,
+              "ci_high": 0.2651536187563708,
+              "average_selected_odds": null,
+              "average_winning_dividend": 5.864705882352942,
+              "mdd": -0.39334307485057685,
+              "sharpe": -0.4631396788823228,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "mean_edge": 0.04378701420436325,
+              "edge_spearman_realized": -0.06155943747841722
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "삼쌍승",
+              "model_key": "anchored_base_margin",
+              "model": "시장 앵커 Base Margin",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 5,
+              "hit_rate": 0.046296296296296294,
+              "roi": -0.32962962962962966,
+              "ci_low": -0.8673684210526317,
+              "ci_high": 0.32347898333645375,
+              "average_selected_odds": null,
+              "average_winning_dividend": 14.48,
+              "mdd": -0.4327070638611308,
+              "sharpe": -1.0140777524159705,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "mean_edge": 0.01748385556938896,
+              "edge_spearman_realized": -0.2894814560766717
+            },
+            {
+              "family": "market_anchor",
+              "bet_type": "복연승",
+              "model_key": "anchor_ensemble",
+              "model": "두 시장 앵커 앙상블",
+              "policy": "top_10pct_edge",
+              "bets": 108,
+              "hits": 52,
+              "hit_rate": 0.48148148148148145,
+              "roi": 0.15925925925925924,
+              "ci_low": -0.058497374051740894,
+              "ci_high": 0.39127756892230564,
+              "average_selected_odds": null,
+              "average_winning_dividend": 2.407692307692308,
+              "mdd": -0.1212049341756215,
+              "sharpe": 1.2606079136249355,
+              "kelly_status": "UNAVAILABLE_FOR_LOSING_COMBINATIONS",
+              "kelly_return": null,
+              "profit_confirmed": false,
+              "mean_edge": 0.10047473501652295,
+              "edge_spearman_realized": 0.06773557403755466
+            }
+          ]
+        }
+      },
+      "darkhorse_evidence": {
+        "status": "MEASURED_HISTORICAL_REUSED_TEST_NO_FDR_CONFIRMED_CELL",
+        "sources": [
+          {
+            "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/betting_edge_evidence.json",
+            "href": "evidence/betting_edge_evidence.json",
+            "bytes": 53334,
+            "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13"
+          },
+          {
+            "path": "outputs/reports/odds_8_15_v11_revalidation_20260823/summary.json",
+            "href": "../odds_8_15_v11_revalidation_20260823/summary.json",
+            "bytes": 3159,
+            "sha256": "9759A61D7F033640E13A0F40A39F2E5F58A2904BC962688B805E5C8AF8172FF5"
+          },
+          {
+            "path": "outputs/reports/benter_market_anchored_20260820/backtest_summary.json",
+            "href": "../benter_market_anchored_20260820/backtest_summary.json",
+            "bytes": 572,
+            "sha256": "698998A4317C94D3F487A3F5C47C26D1BF5F1A5DEF0E1F0BE8F0284C749F4E5C"
+          },
+          {
+            "path": "outputs/reports/base_margin_profit_20260821/summary.json",
+            "href": "../base_margin_profit_20260821/summary.json",
+            "bytes": 4724,
+            "sha256": "02FFBDF4951A8C5AB73E9589D387B473AB519CD3DF52DCFF37C7A41CAE452C2F"
+          },
+          {
+            "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv",
+            "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv",
+            "bytes": 51824,
+            "sha256": "43156E590245ED171F44DD37F625F659E914BDA9666C92E1BC62F38CCD0BD29B"
+          }
+        ],
+        "lineage_fields": [
+          "bets",
+          "hit_rate",
+          "roi",
+          "roi_ci_low/high",
+          "average_odds",
+          "scope"
+        ],
+        "lineage": [
+          {
+            "label": "v11 VALID 숫자임계 TEST",
+            "scope": "reused TEST; deployable numeric threshold",
+            "status": "점 ROI 양수, 95% CI 0 포함",
+            "bets": 94,
+            "hit_rate": 0.11702127659574468,
+            "roi": 0.0978723404255319,
+            "ci_low": -0.4631053223388305,
+            "ci_high": 0.7420657467532464,
+            "average_odds": 9.778723404255322
+          },
+          {
+            "label": "v11 미래블록 top5%",
+            "scope": "reused TEST; whole-future-block ranking; online deployment 불가",
+            "status": "과거 규칙 재현 실패",
+            "bets": 102,
+            "hit_rate": 0.10784313725490197,
+            "roi": 0.011764705882352969,
+            "ci_low": -0.4947408700322234,
+            "ci_high": 0.6326819073416774,
+            "average_odds": 9.840196078431372
+          },
+          {
+            "label": "동일수 q 대조",
+            "scope": "reused TEST; equal-count closing-market control",
+            "status": "시장 대조",
+            "bets": 102,
+            "hit_rate": 0.10784313725490197,
+            "roi": -0.12450980392156868,
+            "ci_low": -0.540566037735849,
+            "ci_high": 0.3531302083333332,
+            "average_odds": 8.078431372549021
+          },
+          {
+            "label": "과거 Benter anchored walk-forward",
+            "scope": "older walk-forward output after a 30-policy scan; historical OOS but not independent/pristine and not v11 replication; mean odds not recorded",
+            "status": "+32.69% point ROI, CI 0 포함",
+            "bets": 327,
+            "hit_rate": 0.13149847094801223,
+            "roi": 0.3269113149847095,
+            "ci_low": -0.027019608375409412,
+            "ci_high": 0.6825280343494556,
+            "average_odds": null
+          },
+          {
+            "label": "과거 동일자료 8~15 top5%",
+            "scope": "same historical data used for top5% selection; post-selection and not independent OOS",
+            "status": "폐기된 사후선택 결과",
+            "bets": 395,
+            "hit_rate": 0.14936708860759493,
+            "roi": 0.47468354430379744,
+            "ci_low": 0.1416147514084122,
+            "ci_high": 0.8273154521718492,
+            "average_odds": 10.330379746835444
+          }
+        ],
+        "grid_fields": [
+          "model_key",
+          "fraction_label",
+          "bet_type",
+          "bets",
+          "wins",
+          "roi",
+          "roi_ci_low_daily_block",
+          "roi_ci_high_daily_block",
+          "roi_fdr_q_value",
+          "profit_confirmed_fdr_5pct",
+          "largest_winning_dividend",
+          "largest_winner_share_of_winning_gross",
+          "roi_without_largest_winning_return"
+        ],
+        "grid_summary": {
+          "cells": 56,
+          "point_roi_at_least_30pct_cells": 22,
+          "unadjusted_ci_positive_cells": 0,
+          "fdr_5pct_positive_cells": 0
+        },
+        "grid_rows": [
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "단승",
+            "bets": 57,
+            "hits": 7,
+            "roi": 0.4035087719298245,
+            "ci_low": -0.4910827784503632,
+            "ci_high": 1.496652542372881,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.25,
+            "roi_without_largest_hit": 0.0714285714285715
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "연승",
+            "bets": 57,
+            "hits": 13,
+            "roi": 0.1456140350877193,
+            "ci_low": -0.4889166666666666,
+            "ci_high": 0.8803455342001127,
+            "fdr_q": 0.5956363636363636,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 10.4,
+            "largest_winner_share": 0.1592649310872894,
+            "roi_without_largest_hit": -0.0196428571428571
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "복승",
+            "bets": 57,
+            "hits": 2,
+            "roi": -0.1631578947368421,
+            "ci_low": -1.0,
+            "ci_high": 1.1053742937853066,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 25.5,
+            "largest_winner_share": 0.5345911949685535,
+            "roi_without_largest_hit": -0.6035714285714285
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "쌍승",
+            "bets": 57,
+            "hits": 1,
+            "roi": -0.3157894736842105,
+            "ci_low": -1.0,
+            "ci_high": 1.1282575757575617,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 39.0,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼복승",
+            "bets": 57,
+            "hits": 2,
+            "roi": 1.1789473684210527,
+            "ci_low": -1.0,
+            "ci_high": 5.0,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 90.0,
+            "largest_winner_share": 0.7246376811594203,
+            "roi_without_largest_hit": -0.3892857142857142
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼쌍승",
+            "bets": 57,
+            "hits": 1,
+            "roi": 2.692982456140351,
+            "ci_low": -1.0,
+            "ci_high": 10.694444444444445,
+            "fdr_q": 0.6038399999999999,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 210.5,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "복연승",
+            "bets": 57,
+            "hits": 6,
+            "roi": 0.1105263157894737,
+            "ci_low": -0.7894736842105263,
+            "ci_high": 1.1455086580086573,
+            "fdr_q": 0.6567794871794873,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 18.3,
+            "largest_winner_share": 0.2890995260663507,
+            "roi_without_largest_hit": -0.1964285714285713
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "단승",
+            "bets": 114,
+            "hits": 8,
+            "roi": -0.1333333333333333,
+            "ci_low": -0.6730817980840089,
+            "ci_high": 0.5149802703690143,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.2024291497975708,
+            "roi_without_largest_hit": -0.3026548672566371
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "연승",
+            "bets": 114,
+            "hits": 24,
+            "roi": 0.1745614035087719,
+            "ci_low": -0.3186552388289676,
+            "ci_high": 0.7369594594594592,
+            "fdr_q": 0.5451870967741934,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 16.2,
+            "largest_winner_share": 0.1209858103061986,
+            "roi_without_largest_hit": 0.0415929203539823
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "복승",
+            "bets": 114,
+            "hits": 7,
+            "roi": 0.3807017543859648,
+            "ci_low": -0.5430697340043134,
+            "ci_high": 1.4730717255717245,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 36.6,
+            "largest_winner_share": 0.2325285895806861,
+            "roi_without_largest_hit": 0.0690265486725663
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "쌍승",
+            "bets": 114,
+            "hits": 6,
+            "roi": 0.7991228070175438,
+            "ci_low": -0.4805309734513274,
+            "ci_high": 2.497116932138707,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 52.3,
+            "largest_winner_share": 0.2549975621647976,
+            "roi_without_largest_hit": 0.3522123893805308
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "삼복승",
+            "bets": 114,
+            "hits": 3,
+            "roi": 0.2666666666666667,
+            "ci_low": -1.0,
+            "ci_high": 2.1684107142857134,
+            "fdr_q": 0.6378105263157895,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 90.0,
+            "largest_winner_share": 0.6232686980609418,
+            "roi_without_largest_hit": -0.5185840707964601
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "삼쌍승",
+            "bets": 114,
+            "hits": 1,
+            "roi": 0.8464912280701754,
+            "ci_low": -1.0,
+            "ci_high": 4.901869158878505,
+            "fdr_q": 0.5956363636363636,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 210.5,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "복연승",
+            "bets": 114,
+            "hits": 13,
+            "roi": 0.0043859649122807,
+            "ci_low": -0.5422974938464982,
+            "ci_high": 0.6196769957983188,
+            "fdr_q": 0.7129756097560975,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 18.3,
+            "largest_winner_share": 0.159825327510917,
+            "roi_without_largest_hit": -0.1486725663716813
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "단승",
+            "bets": 171,
+            "hits": 9,
+            "roi": -0.3736842105263157,
+            "ci_low": -0.7454189267725687,
+            "ci_high": 0.0534984681799191,
+            "fdr_q": 0.9916148148148148,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.1867413632119514,
+            "roi_without_largest_hit": -0.4876470588235294
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "연승",
+            "bets": 171,
+            "hits": 36,
+            "roi": 0.1584795321637427,
+            "ci_low": -0.2108468556306149,
+            "ci_high": 0.5681605885006419,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 16.2,
+            "largest_winner_share": 0.0817768803634528,
+            "roi_without_largest_hit": 0.07
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "복승",
+            "bets": 171,
+            "hits": 10,
+            "roi": 0.3,
+            "ci_low": -0.4460863395863396,
+            "ci_high": 1.1630109126984125,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 37.0,
+            "largest_winner_share": 0.1664417453891138,
+            "roi_without_largest_hit": 0.0899999999999999
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "쌍승",
+            "bets": 171,
+            "hits": 9,
+            "roi": 0.7450292397660818,
+            "ci_low": -0.3245966777408638,
+            "ci_high": 2.036439688392797,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 52.3,
+            "largest_winner_share": 0.1752680965147453,
+            "roi_without_largest_hit": 0.4476470588235294
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "삼복승",
+            "bets": 171,
+            "hits": 4,
+            "roi": 0.2748538011695906,
+            "ci_low": -0.882575110902003,
+            "ci_high": 1.8265100401606424,
+            "fdr_q": 0.613511111111111,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 90.0,
+            "largest_winner_share": 0.4128440366972477,
+            "roi_without_largest_hit": -0.2470588235294117
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "삼쌍승",
+            "bets": 171,
+            "hits": 2,
+            "roi": 2.2046783625730995,
+            "ci_low": -1.0,
+            "ci_high": 7.334574209066222,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 337.5,
+            "largest_winner_share": 0.6158759124087592,
+            "roi_without_largest_hit": 0.238235294117647
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "복연승",
+            "bets": 171,
+            "hits": 19,
+            "roi": 0.0555555555555555,
+            "ci_low": -0.4135597662141779,
+            "ci_high": 0.5944799732104927,
+            "fdr_q": 0.6378105263157895,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 26.3,
+            "largest_winner_share": 0.1457063711911357,
+            "roi_without_largest_hit": -0.0929411764705882
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "단승",
+            "bets": 228,
+            "hits": 11,
+            "roi": -0.4241228070175438,
+            "ci_low": -0.7277960526315789,
+            "ci_high": -0.0663518369762821,
+            "fdr_q": 1.0,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.1523229246001523,
+            "roi_without_largest_hit": -0.5096916299559472
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "연승",
+            "bets": 228,
+            "hits": 42,
+            "roi": 0.0539473684210526,
+            "ci_low": -0.2423944681861349,
+            "ci_high": 0.3673799163179914,
+            "fdr_q": 0.6038399999999999,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 17.1,
+            "largest_winner_share": 0.0711610486891385,
+            "roi_without_largest_hit": -0.0167400881057268
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "복승",
+            "bets": 228,
+            "hits": 11,
+            "roi": 0.2114035087719298,
+            "ci_low": -0.4739182875667429,
+            "ci_high": 1.0209816017316005,
+            "fdr_q": 0.5451870967741934,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 53.9,
+            "largest_winner_share": 0.1951484431571325,
+            "roi_without_largest_hit": -0.020704845814978
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "쌍승",
+            "bets": 228,
+            "hits": 10,
+            "roi": 0.5399122807017543,
+            "ci_low": -0.3489278368690133,
+            "ci_high": 1.6005334058679237,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 52.7,
+            "largest_winner_share": 0.1500996866989462,
+            "roi_without_largest_hit": 0.3145374449339206
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼복승",
+            "bets": 228,
+            "hits": 6,
+            "roi": 0.3385964912280701,
+            "ci_low": -0.6748768472906403,
+            "ci_high": 1.5977018055839982,
+            "fdr_q": 0.5451870967741934,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 90.0,
+            "largest_winner_share": 0.2948885976408912,
+            "roi_without_largest_hit": -0.0519823788546256
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼쌍승",
+            "bets": 228,
+            "hits": 3,
+            "roi": 2.9618421052631576,
+            "ci_low": -1.0,
+            "ci_high": 7.823487779277253,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 355.3,
+            "largest_winner_share": 0.3933355474371748,
+            "roi_without_largest_hit": 1.4140969162995596
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "복연승",
+            "bets": 228,
+            "hits": 22,
+            "roi": -0.0328947368421052,
+            "ci_low": -0.4241617918719211,
+            "ci_high": 0.3911486527491196,
+            "fdr_q": 0.7725333333333334,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 26.3,
+            "largest_winner_share": 0.1192743764172335,
+            "roi_without_largest_hit": -0.1444933920704845
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "단승",
+            "bets": 58,
+            "hits": 7,
+            "roi": 0.3448275862068966,
+            "ci_low": -0.5283453389830508,
+            "ci_high": 1.4446588611859834,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.2564102564102564,
+            "roi_without_largest_hit": 0.0175438596491228
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "연승",
+            "bets": 58,
+            "hits": 16,
+            "roi": 0.2172413793103448,
+            "ci_low": -0.3448911070780399,
+            "ci_high": 0.8517857142857143,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 10.4,
+            "largest_winner_share": 0.1473087818696884,
+            "roi_without_largest_hit": 0.0561403508771929
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "복승",
+            "bets": 58,
+            "hits": 4,
+            "roi": 0.7206896551724138,
+            "ci_low": -0.7327586206896551,
+            "ci_high": 2.701542372881356,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 36.6,
+            "largest_winner_share": 0.3667334669338677,
+            "roi_without_largest_hit": 0.1087719298245614
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "쌍승",
+            "bets": 58,
+            "hits": 3,
+            "roi": 0.913793103448276,
+            "ci_low": -1.0,
+            "ci_high": 3.5789473684210527,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 52.3,
+            "largest_winner_share": 0.4711711711711711,
+            "roi_without_largest_hit": 0.0298245614035087
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼복승",
+            "bets": 58,
+            "hits": 2,
+            "roi": -0.0620689655172413,
+            "ci_low": -1.0,
+            "ci_high": 1.4872727272727275,
+            "fdr_q": 0.7774883720930233,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 34.2,
+            "largest_winner_share": 0.6286764705882353,
+            "roi_without_largest_hit": -0.6456140350877192
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼쌍승",
+            "bets": 58,
+            "hits": 0,
+            "roi": -1.0,
+            "ci_low": -1.0,
+            "ci_high": -1.0,
+            "fdr_q": 1.0,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": null,
+            "largest_winner_share": null,
+            "roi_without_largest_hit": null
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "복연승",
+            "bets": 58,
+            "hits": 9,
+            "roi": 0.3258620689655173,
+            "ci_low": -0.4733421052631579,
+            "ci_high": 1.3084820101100207,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 17.3,
+            "largest_winner_share": 0.2249674902470741,
+            "roi_without_largest_hit": 0.0456140350877193
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "단승",
+            "bets": 116,
+            "hits": 9,
+            "roi": -0.0767241379310344,
+            "ci_low": -0.6092517354767993,
+            "ci_high": 0.5481293856229532,
+            "fdr_q": 0.7796727272727272,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.1867413632119514,
+            "roi_without_largest_hit": -0.2426086956521739
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "연승",
+            "bets": 116,
+            "hits": 30,
+            "roi": 0.2741379310344827,
+            "ci_low": -0.1767598159953636,
+            "ci_high": 0.7695065737367335,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 11.9,
+            "largest_winner_share": 0.0805142083897158,
+            "roi_without_largest_hit": 0.1817391304347826
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "복승",
+            "bets": 116,
+            "hits": 8,
+            "roi": 0.6594827586206896,
+            "ci_low": -0.3854015186378279,
+            "ci_high": 1.852834066697544,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 48.8,
+            "largest_winner_share": 0.2535064935064935,
+            "roi_without_largest_hit": 0.2495652173913043
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "쌍승",
+            "bets": 116,
+            "hits": 7,
+            "roi": 1.103448275862069,
+            "ci_low": -0.3230803571428571,
+            "ci_high": 2.8438268849206336,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 71.5,
+            "largest_winner_share": 0.2930327868852459,
+            "roi_without_largest_hit": 0.4999999999999999
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "삼복승",
+            "bets": 116,
+            "hits": 3,
+            "roi": -0.2577586206896551,
+            "ci_low": -1.0,
+            "ci_high": 0.6700760869565208,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 34.2,
+            "largest_winner_share": 0.397212543554007,
+            "roi_without_largest_hit": -0.548695652173913
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "삼쌍승",
+            "bets": 116,
+            "hits": 1,
+            "roi": -0.1594827586206896,
+            "ci_low": -1.0,
+            "ci_high": 1.7083333333333333,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 97.5,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_20pct",
+            "bet_type": "복연승",
+            "bets": 116,
+            "hits": 16,
+            "roi": 0.239655172413793,
+            "ci_low": -0.353442417140944,
+            "ci_high": 0.9171327683615814,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 18.9,
+            "largest_winner_share": 0.1314325452016689,
+            "roi_without_largest_hit": 0.0860869565217391
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "단승",
+            "bets": 174,
+            "hits": 10,
+            "roi": -0.3034482758620689,
+            "ci_low": -0.7,
+            "ci_high": 0.1476013198757749,
+            "fdr_q": 0.9916148148148148,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.165016501650165,
+            "roi_without_largest_hit": -0.415028901734104
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "연승",
+            "bets": 174,
+            "hits": 39,
+            "roi": 0.1902298850574713,
+            "ci_low": -0.1930401503164557,
+            "ci_high": 0.5792187407363489,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 16.2,
+            "largest_winner_share": 0.0782230806373732,
+            "roi_without_largest_hit": 0.1034682080924856
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "복승",
+            "bets": 174,
+            "hits": 10,
+            "roi": 0.5695402298850574,
+            "ci_low": -0.3267897241231822,
+            "ci_high": 1.664083046224517,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 53.9,
+            "largest_winner_share": 0.1973636030757964,
+            "roi_without_largest_hit": 0.2670520231213872
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "쌍승",
+            "bets": 174,
+            "hits": 9,
+            "roi": 1.0,
+            "ci_low": -0.2125307125307124,
+            "ci_high": 2.436865911035072,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 71.5,
+            "largest_winner_share": 0.2054597701149425,
+            "roi_without_largest_hit": 0.5982658959537572
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "삼복승",
+            "bets": 174,
+            "hits": 3,
+            "roi": -0.5051724137931034,
+            "ci_low": -1.0,
+            "ci_high": 0.1300297670554831,
+            "fdr_q": 0.9916148148148148,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 34.2,
+            "largest_winner_share": 0.397212543554007,
+            "roi_without_largest_hit": -0.7
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "삼쌍승",
+            "bets": 174,
+            "hits": 1,
+            "roi": -0.4396551724137931,
+            "ci_low": -1.0,
+            "ci_high": 0.8058359213250477,
+            "fdr_q": 0.8281280000000001,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 97.5,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "복연승",
+            "bets": 174,
+            "hits": 19,
+            "roi": 0.2540229885057471,
+            "ci_low": -0.3491620207271608,
+            "ci_high": 0.9574619728652352,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 43.2,
+            "largest_winner_share": 0.1979835013748854,
+            "roi_without_largest_hit": 0.0115606936416184
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "단승",
+            "bets": 232,
+            "hits": 12,
+            "roi": -0.3353448275862069,
+            "ci_low": -0.6684995719178083,
+            "ci_high": 0.0471305298353902,
+            "fdr_q": 0.9916148148148148,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 20.0,
+            "largest_winner_share": 0.1297016861219195,
+            "roi_without_largest_hit": -0.4190476190476191
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "연승",
+            "bets": 232,
+            "hits": 48,
+            "roi": 0.1068965517241379,
+            "ci_low": -0.1990913149350649,
+            "ci_high": 0.435936223401012,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 16.2,
+            "largest_winner_share": 0.0630841121495327,
+            "roi_without_largest_hit": 0.0415584415584415
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "복승",
+            "bets": 232,
+            "hits": 11,
+            "roi": 0.2413793103448276,
+            "ci_low": -0.4547279803705897,
+            "ci_high": 1.0798910648714792,
+            "fdr_q": 0.5451870967741934,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 53.9,
+            "largest_winner_share": 0.1871527777777777,
+            "roi_without_largest_hit": 0.0134199134199134
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "쌍승",
+            "bets": 232,
+            "hits": 10,
+            "roi": 0.5974137931034481,
+            "ci_low": -0.3363205618570299,
+            "ci_high": 1.709845583494519,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 71.5,
+            "largest_winner_share": 0.1929303831624392,
+            "roi_without_largest_hit": 0.2948051948051947
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼복승",
+            "bets": 232,
+            "hits": 5,
+            "roi": 0.0142241379310344,
+            "ci_low": -0.8266279666923443,
+            "ci_high": 1.0488442701664529,
+            "fdr_q": 0.7129756097560975,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 75.6,
+            "largest_winner_share": 0.3212919677008075,
+            "roi_without_largest_hit": -0.3086580086580086
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼쌍승",
+            "bets": 232,
+            "hits": 3,
+            "roi": 2.406465517241379,
+            "ci_low": -1.0,
+            "ci_high": 7.048587875939845,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 355.3,
+            "largest_winner_share": 0.4495761103378464,
+            "roi_without_largest_hit": 0.8831168831168831
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "복연승",
+            "bets": 232,
+            "hits": 24,
+            "roi": 0.2245689655172414,
+            "ci_low": -0.289253170894526,
+            "ci_high": 0.8202784014124406,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 43.2,
+            "largest_winner_share": 0.1520591341077085,
+            "roi_without_largest_hit": 0.0428571428571428
+          }
+        ],
+        "top_five_point_roi_cells": [
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼쌍승",
+            "bets": 228,
+            "hits": 3,
+            "roi": 2.9618421052631576,
+            "ci_low": -1.0,
+            "ci_high": 7.823487779277253,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 355.3,
+            "largest_winner_share": 0.3933355474371748,
+            "roi_without_largest_hit": 1.4140969162995596
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼쌍승",
+            "bets": 57,
+            "hits": 1,
+            "roi": 2.692982456140351,
+            "ci_low": -1.0,
+            "ci_high": 10.694444444444445,
+            "fdr_q": 0.6038399999999999,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 210.5,
+            "largest_winner_share": 1.0,
+            "roi_without_largest_hit": -1.0
+          },
+          {
+            "model_key": "selected_upset_base_margin",
+            "model": "상위 이변 피처 Base Margin",
+            "fraction_label": "top_40pct",
+            "bet_type": "삼쌍승",
+            "bets": 232,
+            "hits": 3,
+            "roi": 2.406465517241379,
+            "ci_low": -1.0,
+            "ci_high": 7.048587875939845,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 355.3,
+            "largest_winner_share": 0.4495761103378464,
+            "roi_without_largest_hit": 0.8831168831168831
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_30pct",
+            "bet_type": "삼쌍승",
+            "bets": 171,
+            "hits": 2,
+            "roi": 2.2046783625730995,
+            "ci_low": -1.0,
+            "ci_high": 7.334574209066222,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 337.5,
+            "largest_winner_share": 0.6158759124087592,
+            "roi_without_largest_hit": 0.238235294117647
+          },
+          {
+            "model_key": "full_upset_base_margin",
+            "model": "감사 후 전체 피처 이변 Base Margin",
+            "fraction_label": "top_10pct",
+            "bet_type": "삼복승",
+            "bets": 57,
+            "hits": 2,
+            "roi": 1.1789473684210527,
+            "ci_low": -1.0,
+            "ci_high": 5.0,
+            "fdr_q": 0.5434074074074075,
+            "fdr_confirmed": false,
+            "largest_winning_dividend": 90.0,
+            "largest_winner_share": 0.7246376811594203,
+            "roi_without_largest_hit": -0.3892857142857142
+          }
+        ]
+      },
+      "fresh_m5_m6": {
+        "status": "MEASURED_OPTIONAL_CONTINUATION_NO_CONFIRMED_PROFIT",
+        "scope": "later-date fresh64 optional continuation; M5 was produced after initial27 then fresh37 expansion; M6 is a post-hoc provenance model. Neither is pristine confirmation.",
+        "confirmed_profit_bet_types": {
+          "m5": 0,
+          "m6": 0
+        },
+        "sources": [
+          {
+            "path": "outputs/reports/final_comprehensive_research_report_20260823/evidence/betting_edge_evidence.json",
+            "href": "evidence/betting_edge_evidence.json",
+            "bytes": 53334,
+            "sha256": "821E3A4CD8990D97B59B4AD70301916EE65066201DEB65CCB47A9309AC89EF13"
+          },
+          {
+            "path": "outputs/reports/fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv",
+            "href": "../fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv",
+            "bytes": 5555,
+            "sha256": "03AF315EF2701EF6B0F25A5A4ADAA22BAE4E5A634334718B7607B8F4B856B916"
+          },
+          {
+            "path": "outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv",
+            "href": "../h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv",
+            "bytes": 5374,
+            "sha256": "9B13C791CD70B62DEE0C34B91F0BC1801C44F0AC477CB60E05857F26322F95B3"
+          }
+        ],
+        "fields": [
+          "bet_type",
+          "bets",
+          "hits",
+          "hit_rate",
+          "roi",
+          "roi_daily_block_ci_low",
+          "roi_daily_block_ci_high",
+          "mdd_fraction_of_100_unit_initial_bankroll",
+          "sqrt_n_sharpe_per_bet_not_annualized",
+          "mean_final_dividend_among_hits",
+          "market_proxy_selection_roi",
+          "deployment_eligible",
+          "profit_confirmed_95pct"
+        ],
+        "rows": [
+          {
+            "model": "M5 entry-only",
+            "bet_type": "단승",
+            "bets": 64,
+            "hits": 18,
+            "hit_rate": 0.28125,
+            "roi": -0.17812499999999998,
+            "ci_low": -0.6181818181818182,
+            "ci_high": 0.4303030303030304,
+            "mdd": -0.1688804554079697,
+            "sharpe": -0.9666484193581684,
+            "mean_dividend_hits": 2.9222222222222225,
+            "market_proxy_roi": -0.3421875,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "연승",
+            "bets": 64,
+            "hits": 33,
+            "hit_rate": 0.515625,
+            "roi": -0.12343749999999999,
+            "ci_low": -0.3491525423728814,
+            "ci_high": 0.05932203389830512,
+            "mdd": -0.08900000000000008,
+            "sharpe": -1.0718465561352604,
+            "mean_dividend_hits": 1.6999999999999997,
+            "market_proxy_roi": -0.10156249999999999,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "복승",
+            "bets": 64,
+            "hits": 8,
+            "hit_rate": 0.125,
+            "roi": -0.17812499999999998,
+            "ci_low": -0.6677966101694915,
+            "ci_high": 0.2831168831168831,
+            "mdd": -0.1633616619452315,
+            "sharpe": -0.6042402826855123,
+            "mean_dividend_hits": 6.575,
+            "market_proxy_roi": 0.16406250000000006,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "쌍승",
+            "bets": 64,
+            "hits": 6,
+            "hit_rate": 0.09375,
+            "roi": 0.009374999999999994,
+            "ci_low": -0.8295081967213115,
+            "ci_high": 0.9478260869565218,
+            "mdd": -0.18608414239482196,
+            "sharpe": 0.021198747789938372,
+            "mean_dividend_hits": 10.766666666666666,
+            "market_proxy_roi": -0.34687499999999993,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "삼복승",
+            "bets": 64,
+            "hits": 6,
+            "hit_rate": 0.09375,
+            "roi": -0.17812500000000003,
+            "ci_low": -0.7642857142857142,
+            "ci_high": 0.4838235294117647,
+            "mdd": -0.21900000000000008,
+            "sharpe": -0.5022171081273873,
+            "mean_dividend_hits": 8.766666666666667,
+            "market_proxy_roi": 0.553125,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "삼쌍승",
+            "bets": 64,
+            "hits": 0,
+            "hit_rate": 0.0,
+            "roi": -1.0,
+            "ci_low": -1.0,
+            "ci_high": -1.0,
+            "mdd": -0.64,
+            "sharpe": null,
+            "mean_dividend_hits": null,
+            "market_proxy_roi": 0.3453125,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M5 entry-only",
+            "bet_type": "복연승",
+            "bets": 64,
+            "hits": 17,
+            "hit_rate": 0.265625,
+            "roi": -0.13437500000000002,
+            "ci_low": -0.5480769230769231,
+            "ci_high": 0.3585714285714286,
+            "mdd": -0.118,
+            "sharpe": -0.6526827711250923,
+            "mean_dividend_hits": 3.258823529411765,
+            "market_proxy_roi": -0.020312500000000004,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "단승",
+            "bets": 64,
+            "hits": 18,
+            "hit_rate": 0.28125,
+            "roi": -0.1765625,
+            "ci_low": -0.4457627118644068,
+            "ci_high": 0.06268656716417913,
+            "mdd": -0.123,
+            "sharpe": -0.9176253835050082,
+            "mean_dividend_hits": 2.927777777777778,
+            "market_proxy_roi": -0.3421875,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "연승",
+            "bets": 64,
+            "hits": 28,
+            "hit_rate": 0.4375,
+            "roi": -0.2765625,
+            "ci_low": -0.3686274509803922,
+            "ci_high": -0.21975308641975314,
+            "mdd": -0.18000000000000005,
+            "sharpe": -2.473776745125008,
+            "mean_dividend_hits": 1.6535714285714285,
+            "market_proxy_roi": -0.10156249999999999,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "복승",
+            "bets": 64,
+            "hits": 8,
+            "hit_rate": 0.125,
+            "roi": -0.22499999999999998,
+            "ci_low": -0.6113207547169812,
+            "ci_high": 0.11538461538461543,
+            "mdd": -0.193103448275862,
+            "sharpe": -0.8168968832417818,
+            "mean_dividend_hits": 6.2,
+            "market_proxy_roi": 0.16406250000000006,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "쌍승",
+            "bets": 64,
+            "hits": 5,
+            "hit_rate": 0.078125,
+            "roi": -0.3515625,
+            "ci_low": -0.8037037037037037,
+            "ci_high": 0.003750000000000009,
+            "mdd": -0.25120772946859904,
+            "sharpe": -1.1623371450662734,
+            "mean_dividend_hits": 8.3,
+            "market_proxy_roi": -0.34687499999999993,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "삼복승",
+            "bets": 64,
+            "hits": 5,
+            "hit_rate": 0.078125,
+            "roi": -0.359375,
+            "ci_low": -0.7147540983606557,
+            "ci_high": 0.0892857142857143,
+            "mdd": -0.29032258064516125,
+            "sharpe": -1.0963941746883314,
+            "mean_dividend_hits": 8.2,
+            "market_proxy_roi": 0.553125,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "삼쌍승",
+            "bets": 64,
+            "hits": 0,
+            "hit_rate": 0.0,
+            "roi": -1.0,
+            "ci_low": -1.0,
+            "ci_high": -1.0,
+            "mdd": -0.64,
+            "sharpe": null,
+            "mean_dividend_hits": null,
+            "market_proxy_roi": 0.3453125,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          },
+          {
+            "model": "M6 provenance",
+            "bet_type": "복연승",
+            "bets": 64,
+            "hits": 20,
+            "hit_rate": 0.3125,
+            "roi": -0.121875,
+            "ci_low": -0.46470588235294125,
+            "ci_high": 0.13529411764705887,
+            "mdd": -0.13026444662095982,
+            "sharpe": -0.6895129117211216,
+            "mean_dividend_hits": 2.81,
+            "market_proxy_roi": -0.020312500000000004,
+            "deployment_eligible": false,
+            "profit_confirmed": false
+          }
+        ]
+      },
+      "venue_stratification": {
+        "status": "MEASURED_HISTORICAL_REUSED_TEST_NO_VENUE_PROFIT_CONFIRMED",
+        "scope": "post-hoc venue stratification of historical/reused v11 TEST; not independent confirmation",
+        "rank": {
+          "source": {
+            "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_rank_metrics.csv",
+            "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_rank_metrics.csv",
+            "bytes": 7331,
+            "sha256": "4A884AADA4FA9FE78258700F6C91478B161CA6ABBB3A438ED4E1D7FFE660FB93"
+          },
+          "fields": [
+            "venue",
+            "model_key",
+            "evaluated_races",
+            "ndcg_at_5",
+            "mean_spearman",
+            "mean_absolute_rank_error",
+            "top1_hit_rate",
+            "top3_ordered_exact_match_rate",
+            "top3_unordered_exact_match_rate"
+          ],
+          "rows": [
+            {
+              "venue": "서울",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest rank regression",
+              "races": 630,
+              "ndcg_at_5": 0.7708786232042961,
+              "spearman": 0.4351731975016029,
+              "rank_mae": 2.44192201096963,
+              "top1": 0.2968253968253968,
+              "top3_ordered": 0.014492753623188406,
+              "top3_unordered": 0.07729468599033816
+            },
+            {
+              "venue": "서울",
+              "model_key": "xgboost_rank",
+              "model": "XGBoost NDCG ranker",
+              "races": 630,
+              "ndcg_at_5": 0.7753597458082877,
+              "spearman": 0.44515649014018843,
+              "rank_mae": 2.428325162491829,
+              "top1": 0.30793650793650795,
+              "top3_ordered": 0.011272141706924315,
+              "top3_unordered": 0.0821256038647343
+            },
+            {
+              "venue": "서울",
+              "model_key": "lightgbm_rank",
+              "model": "LightGBM LambdaRank full order",
+              "races": 630,
+              "ndcg_at_5": 0.7709149909090108,
+              "spearman": 0.42538980039851826,
+              "rank_mae": 2.481082519772996,
+              "top1": 0.29365079365079366,
+              "top3_ordered": 0.01610305958132045,
+              "top3_unordered": 0.06924315619967794
+            },
+            {
+              "venue": "서울",
+              "model_key": "catboost_rank",
+              "model": "CatBoost YetiRank full order",
+              "races": 630,
+              "ndcg_at_5": 0.780534958626676,
+              "spearman": 0.462452148167837,
+              "rank_mae": 2.3744846335322527,
+              "top1": 0.2920634920634921,
+              "top3_ordered": 0.017713365539452495,
+              "top3_unordered": 0.08373590982286634
+            },
+            {
+              "venue": "서울",
+              "model_key": "deep_ranknet",
+              "model": "Deep RankNet ensemble",
+              "races": 630,
+              "ndcg_at_5": 0.7756799096452309,
+              "spearman": 0.446861503598445,
+              "rank_mae": 2.424243199481295,
+              "top1": 0.30793650793650795,
+              "top3_ordered": 0.01932367149758454,
+              "top3_unordered": 0.0853462157809984
+            },
+            {
+              "venue": "서울",
+              "model_key": "plackett_luce_full",
+              "model": "Plackett-Luce complete order",
+              "races": 630,
+              "ndcg_at_5": 0.7738032222527573,
+              "spearman": 0.4414674221686186,
+              "rank_mae": 2.4396384391622483,
+              "top1": 0.27936507936507937,
+              "top3_ordered": 0.01288244766505636,
+              "top3_unordered": 0.08373590982286634
+            },
+            {
+              "venue": "부경",
+              "model_key": "random_forest_rank",
+              "model": "Random Forest rank regression",
+              "races": 464,
+              "ndcg_at_5": 0.7649896515103801,
+              "spearman": 0.41835802102463343,
+              "rank_mae": 2.60676920062696,
+              "top1": 0.3146551724137931,
+              "top3_ordered": 0.0087527352297593,
+              "top3_unordered": 0.06783369803063458
+            },
+            {
+              "venue": "부경",
+              "model_key": "xgboost_rank",
+              "model": "XGBoost NDCG ranker",
+              "races": 464,
+              "ndcg_at_5": 0.7703637323624816,
+              "spearman": 0.424924167590713,
+              "rank_mae": 2.5780593807533463,
+              "top1": 0.3254310344827586,
+              "top3_ordered": 0.019693654266958426,
+              "top3_unordered": 0.061269146608315096
+            },
+            {
+              "venue": "부경",
+              "model_key": "lightgbm_rank",
+              "model": "LightGBM LambdaRank full order",
+              "races": 464,
+              "ndcg_at_5": 0.7651453481499071,
+              "spearman": 0.4142067838923452,
+              "rank_mae": 2.6165079831566898,
+              "top1": 0.3168103448275862,
+              "top3_ordered": 0.019693654266958426,
+              "top3_unordered": 0.06783369803063458
+            },
+            {
+              "venue": "부경",
+              "model_key": "catboost_rank",
+              "model": "CatBoost YetiRank full order",
+              "races": 464,
+              "ndcg_at_5": 0.7746428886101078,
+              "spearman": 0.4455962457830851,
+              "rank_mae": 2.5289222271980893,
+              "top1": 0.3125,
+              "top3_ordered": 0.0087527352297593,
+              "top3_unordered": 0.05689277899343545
+            },
+            {
+              "venue": "부경",
+              "model_key": "deep_ranknet",
+              "model": "Deep RankNet ensemble",
+              "races": 464,
+              "ndcg_at_5": 0.7744784611429434,
+              "spearman": 0.4424443044729952,
+              "rank_mae": 2.525280203512962,
+              "top1": 0.3168103448275862,
+              "top3_ordered": 0.010940919037199124,
+              "top3_unordered": 0.06783369803063458
+            },
+            {
+              "venue": "부경",
+              "model_key": "plackett_luce_full",
+              "model": "Plackett-Luce complete order",
+              "races": 464,
+              "ndcg_at_5": 0.7692323486488375,
+              "spearman": 0.43052199324354296,
+              "rank_mae": 2.5390922774543467,
+              "top1": 0.30603448275862066,
+              "top3_ordered": 0.019693654266958426,
+              "top3_unordered": 0.061269146608315096
+            }
+          ]
+        },
+        "anchor": {
+          "source": {
+            "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_anchor_metrics.csv",
+            "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_anchor_metrics.csv",
+            "bytes": 3188,
+            "sha256": "BD149ADFA809713B8EA3E45F167DAE6F7C5BB01C716DFA58B019200AE1C635C2"
+          },
+          "fields": [
+            "venue",
+            "model_key",
+            "races",
+            "delta_ll_per_race",
+            "delta_ll_ci_low_daily_block",
+            "delta_ll_ci_high_daily_block",
+            "model_top1_hit_rate",
+            "market_top1_hit_rate",
+            "brier_improvement_vs_market",
+            "maximum_abs_model_probability_sum_error"
+          ],
+          "rows": [
+            {
+              "venue": "서울",
+              "model_key": "anchored_conditional_logit",
+              "races": 635,
+              "delta_ll": 0.016355492481631824,
+              "ci_low": 0.0005908288643304387,
+              "ci_high": 0.03148241807350736,
+              "model_top1": 0.36220472440944884,
+              "market_top1": 0.37480314960629924,
+              "brier_improvement": 0.0001665890795247288,
+              "probability_sum_max_error": 9.992007221626409e-16
+            },
+            {
+              "venue": "서울",
+              "model_key": "anchored_base_margin",
+              "races": 635,
+              "delta_ll": 0.016641889503112788,
+              "ci_low": 0.006279445965060584,
+              "ci_high": 0.02661966737365535,
+              "model_top1": 0.3637795275590551,
+              "market_top1": 0.37480314960629924,
+              "brier_improvement": 0.00023021548213640608,
+              "probability_sum_max_error": 8.881784197001252e-16
+            },
+            {
+              "venue": "서울",
+              "model_key": "anchor_ensemble",
+              "races": 635,
+              "delta_ll": 0.02025569119052157,
+              "ci_low": 0.009229844191447295,
+              "ci_high": 0.03154969262402954,
+              "model_top1": 0.36220472440944884,
+              "market_top1": 0.37480314960629924,
+              "brier_improvement": 0.000324466778321153,
+              "probability_sum_max_error": 1.1102230246251565e-15
+            },
+            {
+              "venue": "부경",
+              "model_key": "anchored_conditional_logit",
+              "races": 466,
+              "delta_ll": 0.010728503215010192,
+              "ci_low": -0.006031074259908178,
+              "ci_high": 0.02700115812588059,
+              "model_top1": 0.41201716738197425,
+              "market_top1": 0.38412017167381973,
+              "brier_improvement": 0.0005287127060761843,
+              "probability_sum_max_error": 8.881784197001252e-16
+            },
+            {
+              "venue": "부경",
+              "model_key": "anchored_base_margin",
+              "races": 466,
+              "delta_ll": 0.008234320198052801,
+              "ci_low": -0.0013519420755101464,
+              "ci_high": 0.017690023420800602,
+              "model_top1": 0.3905579399141631,
+              "market_top1": 0.38412017167381973,
+              "brier_improvement": 0.00026577475994958577,
+              "probability_sum_max_error": 9.992007221626409e-16
+            },
+            {
+              "venue": "부경",
+              "model_key": "anchor_ensemble",
+              "races": 466,
+              "delta_ll": 0.013022758190685721,
+              "ci_low": 0.00180929471101723,
+              "ci_high": 0.023551186401790204,
+              "model_top1": 0.3948497854077253,
+              "market_top1": 0.38412017167381973,
+              "brier_improvement": 0.0005042938900898519,
+              "probability_sum_max_error": 1.1102230246251565e-15
+            }
+          ]
+        },
+        "betting": {
+          "source": {
+            "path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_betting_metrics.csv",
+            "href": "../revised_v11_seoul_bugyeong_full_rerun_20260822/venue_stratified/venue_betting_metrics.csv",
+            "bytes": 97914,
+            "sha256": "A2449917588DAE596277576917CC5CB992EAAA91E6D0419A08AD10B80E96AC14"
+          },
+          "fields": [
+            "strategy_family",
+            "venue",
+            "bet_type",
+            "bets",
+            "wins",
+            "roi",
+            "roi_ci_low_daily_block",
+            "roi_ci_high_daily_block",
+            "profit_confirmed_95pct"
+          ],
+          "source_rows": 140,
+          "summary_rows": [
+            {
+              "strategy_family": "full_rank_locked",
+              "venue": "부경",
+              "cells": 7,
+              "point_positive_cells": 1,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "연승",
+              "best_point_bets": 36,
+              "best_point_roi": 0.125,
+              "best_point_ci_low": -0.3783886158886159,
+              "best_point_ci_high": 0.6857242063492061
+            },
+            {
+              "strategy_family": "full_rank_locked",
+              "venue": "서울",
+              "cells": 7,
+              "point_positive_cells": 2,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "단승",
+              "best_point_bets": 63,
+              "best_point_roi": 0.20476190476190476,
+              "best_point_ci_low": -0.563394135303625,
+              "best_point_ci_high": 1.0559852941176455
+            },
+            {
+              "strategy_family": "market_anchor_locked",
+              "venue": "부경",
+              "cells": 7,
+              "point_positive_cells": 3,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "쌍승",
+              "best_point_bets": 32,
+              "best_point_roi": 0.703125,
+              "best_point_ci_low": -0.16794642857142855,
+              "best_point_ci_high": 1.5545788770053472
+            },
+            {
+              "strategy_family": "market_anchor_locked",
+              "venue": "서울",
+              "cells": 7,
+              "point_positive_cells": 3,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "복승",
+              "best_point_bets": 75,
+              "best_point_roi": 0.45199999999999996,
+              "best_point_ci_low": -0.08312229437229438,
+              "best_point_ci_high": 1.0480633802816877
+            },
+            {
+              "strategy_family": "upset_global_fraction",
+              "venue": "부경",
+              "cells": 56,
+              "point_positive_cells": 35,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "삼쌍승",
+              "best_point_bets": 106,
+              "best_point_roi": 7.521698113207547,
+              "best_point_ci_low": -1.0,
+              "best_point_ci_high": 16.584888392857103
+            },
+            {
+              "strategy_family": "upset_global_fraction",
+              "venue": "서울",
+              "cells": 56,
+              "point_positive_cells": 38,
+              "ci_positive_cells": 0,
+              "best_point_bet_type": "쌍승",
+              "best_point_bets": 62,
+              "best_point_roi": 1.9451612903225808,
+              "best_point_ci_low": -0.38688524590163936,
+              "best_point_ci_high": 4.862267241379307
+            }
+          ],
+          "ci_positive_cells": 0
+        }
+      }
+    }
+  }
+}

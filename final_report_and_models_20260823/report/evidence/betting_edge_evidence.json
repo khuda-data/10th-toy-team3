@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "generated_at_kst": "2026-08-23T10:19:36+09:00",
+  "purpose": "Finalization-only inventory of existing betting, EDGE, ROI, uncertainty, and prospective-settlement evidence. No new training, tuning, backtest, web research, or post-race settlement was run to create this file.",
+  "evidence_root": "C:/Users/user/source/repos/PythonApplication2/PythonApplication2/outputs/reports",
+  "overall_status": "NO_CONFIRMED_DEPLOYABLE_PROFIT_STRATEGY",
+  "recommended_real_stake": 0,
+  "executive_findings": [
+    "Across the current v11 validation-locked seven-bet policies, confirmed absolute-profit bet types are 0/7 for both full-rank and market-anchor families.",
+    "On the later-date optional fresh64 settlement, the five-feature model has 0/7 confirmed absolute-profit bet types and 0/7 Holm-confirmed paired advantages; the only positive point ROI is exacta at +0.9375%, with a daily-block interval of [-82.95%, +94.78%].",
+    "The separate six-feature M6 fresh64 settlement has no positive point ROI among the seven bet types and 0/7 Holm-confirmed paired advantages.",
+    "The strongest defensive result is retrospective 8-15 closing-odds place betting: the fixed-lock model ROI is +1.30% with CI [-18.65%, +21.96%], while its same-race market control ROI is -30.50%; paired advantage is +31.80% with CI [+10.51%, +53.76%] and Holm pass. This is not absolute-profit confirmation and is not pristine because TEST was previously inspected and prices are closing values.",
+    "The v11 8-15 validation-threshold test gives +9.79% ROI on 94 bets, but CI [-46.31%, +74.21%]; the historical +32.69% point estimate was not reproduced at the same magnitude.",
+    "The v11 upset-feature grid contains 22/56 point estimates at or above +30% ROI, but 0/56 have a positive 95% CI lower bound and 0/56 pass FDR. Large complex-bet figures are therefore descriptive, fragile, and not deployable.",
+    "The 2026-08-23 preregistered T-5 pipeline was still active and unsettled at this inventory time: 17/17 races were waiting, frozen prospective score/ticket races were 0, target outcome/dividend rows read were 0, network settlement calls were 0, and live stake was 0.",
+    "Probability information improvement is more repeatable than profit: several market-anchor models have positive DeltaLL, but conversion to executable ROI is blocked by uncertainty, reused samples, closing-price timing, and absent pre-bet combination grids."
+  ],
+  "definitions": {
+    "market_probability": "For runner i in race r, q_ri = (1 / O_ri) / sum_j(1 / O_rj), where O is gross decimal win odds. Normalization makes sum_i q_ri = 1 within each race.",
+    "probability_edge": "EDGE_ri = p_model,ri - q_market,ri. A positive value means the model assigns a higher probability than the normalized market probability; it does not by itself imply positive EV.",
+    "realized_edge": "realized_EDGE_ri = I(event occurred) - q_market,ri. EDGE calibration error in the fresh settlement is mean(model EDGE) - mean(realized EDGE).",
+    "expected_value": "For a 1-unit ticket with executable gross decimal odds O, EV = p * O - 1. The break-even probability is 1/O. For complex bets, EV is not identifiable without the ticket-specific pre-bet combination price.",
+    "fractional_kelly": "Full Kelly fraction f* = (p*O - 1)/(O - 1), then fractional/capped Kelly uses min(cap, max(0, c*f*)). Existing experiments used research-only caps/fractions; no real stake was placed.",
+    "roi": "ROI = (gross return - stake) / stake. Official final KRA dividends already contain takeout, so cited official settlements did not deduct 20%/27% a second time.",
+    "mdd": "Maximum drawdown is the largest peak-to-trough decline of the chronological bankroll or cumulative profit curve. The exact unit/wealth convention is identified by each source column.",
+    "sharpe": "The cited per-bet sqrt(n) Sharpe is mean ticket return divided by its standard deviation times sqrt(number of bets); it is not an annualized financial Sharpe unless the source explicitly says so.",
+    "delta_ll": "DeltaLL/race = mean_r[log p_model(winner_r) - log q_market(winner_r)]. Positive values mean lower winner log loss than the market.",
+    "brier_improvement": "Brier improvement = market Brier - model Brier. Positive values favor the model.",
+    "uncertainty": "Daily-block confidence intervals resample race dates to preserve within-day dependence. A point ROI above zero is not confirmed when its 95% interval includes zero.",
+    "holm_fdr": "Holm controls family-wise error for a fixed family; Benjamini-Hochberg FDR controls the expected false-discovery proportion. Unadjusted positive cells are not promoted when adjusted tests fail."
+  },
+  "evidence_scope_taxonomy": [
+    {
+      "scope": "historical_or_reused_test",
+      "meaning": "The time split may be OOS relative to a fit, but the block was inspected in earlier project rounds and cannot be called new confirmation."
+    },
+    {
+      "scope": "retrospective_rolling_oos",
+      "meaning": "Expanding/rolling fits respected chronology, but all dates were already available to prior work; useful for robustness, not independent replication."
+    },
+    {
+      "scope": "later_date_optional_continuation_fresh64",
+      "meaning": "Dates are after v11, but the additional 37 races were collected after seeing the initial 27-race result and the pooled 64 were not pristine preregistered confirmation."
+    },
+    {
+      "scope": "valid_selection_only",
+      "meaning": "Threshold/model selection was completed on VALID; no TEST or target outcome was used, so it is a locked hypothesis but not performance confirmation."
+    },
+    {
+      "scope": "prospective_preregistered_unsettled",
+      "meaning": "Protocols, models, validators, and watchers were frozen before the target results, but no target performance or settlement existed at inventory time."
+    },
+    {
+      "scope": "synthetic_contract_validation",
+      "meaning": "Tests prove evaluator/formula/gate behavior only; they are not profitability evidence."
+    }
+  ],
+  "v11_locked_full_rank_seven_bets": {
+    "scope": "historical_or_reused_test",
+    "selection": "policy and model chosen on VALID, evaluated on TEST 2025-12-28 through 2026-08-09",
+    "confirmed_profit_bet_types": 0,
+    "source_path": "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv",
+    "rows": [
+      {"bet_type":"단승","model":"Random Forest","policy":"top_10pct_edge","bets":108,"hits":18,"hit_rate":0.1666666667,"roi":-0.0305555556,"ci_low":-0.5127940678,"ci_high":0.5322611367,"average_selected_odds":8.8796296296,"average_winning_dividend":5.8166666667,"flat_return":-0.0719769176,"mdd":-0.2105198175,"sharpe":-0.1093190807,"kelly_return":-0.1989005019,"kelly_mdd":-0.3995461920,"market_roi":-0.1760445682,"roi_delta_vs_market":0.1454890127},
+      {"bet_type":"연승","model":"XGBoost Ranker","policy":"top_10pct_edge","bets":103,"hits":47,"hit_rate":0.4563106796,"roi":0.0126213592,"ci_low":-0.2641433355,"ci_high":0.2954954955,"average_selected_odds":2.6961165049,"average_winning_dividend":2.2191489362,"flat_return":0.0044475274,"mdd":-0.1520906545,"sharpe":0.0981992164,"kelly_return":-0.0077931535,"kelly_mdd":-0.2867237535,"market_roi":-0.1533864542,"roi_delta_vs_market":0.1660078134},
+      {"bet_type":"복승","model":"Random Forest","policy":"positive_edge","bets":685,"hits":63,"hit_rate":0.0919708029,"roi":-0.1764963504,"ci_low":-0.4131705870,"ci_high":0.0953624470,"average_winning_dividend":8.9539682540,"flat_return":-0.7982957384,"mdd":-0.8382208124,"sharpe":-1.2557555251,"kelly_status":"unavailable_losing_combination_prices","market_roi":-0.0845868152,"roi_delta_vs_market":-0.0919095351},
+      {"bet_type":"쌍승","model":"Random Forest","policy":"positive_edge","bets":688,"hits":35,"hit_rate":0.0508720930,"roi":-0.1803779070,"ci_low":-0.5141632658,"ci_high":0.2536958597,"average_winning_dividend":16.1114285714,"flat_return":-0.8544026922,"mdd":-0.9038052936,"sharpe":-0.9300480343,"kelly_status":"unavailable_losing_combination_prices","market_roi":-0.1389972145,"roi_delta_vs_market":-0.0413806925},
+      {"bet_type":"삼복승","model":"XGBoost Ranker","policy":"top_30pct_edge","bets":324,"hits":15,"hit_rate":0.0462962963,"roi":-0.2453703704,"ci_low":-0.6580643437,"ci_high":0.2653734214,"average_winning_dividend":16.3,"flat_return":-0.6425425901,"mdd":-0.7113440830,"sharpe":-1.0690611708,"kelly_status":"unavailable_losing_combination_prices","market_roi":-0.2459610028,"roi_delta_vs_market":0.0005906324},
+      {"bet_type":"삼쌍승","model":"Random Forest","policy":"positive_edge","bets":752,"hits":4,"hit_rate":0.0053191489,"roi":-0.6651595745,"ci_low":-0.9566327358,"ci_high":-0.2188870598,"average_winning_dividend":62.95,"flat_return":-0.9966603785,"mdd":-0.9966603785,"sharpe":-3.3302361771,"kelly_status":"unavailable_losing_combination_prices","market_roi":-0.3349117920,"roi_delta_vs_market":-0.3302477825},
+      {"bet_type":"복연승","model":"LightGBM LambdaRank","policy":"top_10pct_edge","bets":108,"hits":10,"hit_rate":0.0925925926,"roi":-0.5361111111,"ci_low":-0.8121523982,"ci_high":-0.2079628551,"average_winning_dividend":5.01,"flat_return":-0.4474006226,"mdd":-0.4789155183,"sharpe":-3.5934810060,"kelly_status":"unavailable_losing_combination_prices","market_roi":-0.2074280409,"roi_delta_vs_market":-0.3286830703}
+    ],
+    "interpretation": "Only place has a positive point ROI, and its interval includes zero. Exact-trifecta and quinella-place have intervals entirely below zero. No full-rank bet type is profit-confirmed."
+  },
+  "v11_market_anchor": {
+    "scope": "historical_or_reused_test",
+    "delta_ll": [
+      {"model":"anchored_conditional_logit","races":1101,"estimate":0.013974,"ci_low":0.002318,"ci_high":0.025063},
+      {"model":"anchored_base_margin","races":1101,"estimate":0.013083,"ci_low":0.006614,"ci_high":0.019647},
+      {"model":"anchor_ensemble","races":1101,"estimate":0.017194,"ci_low":0.009507,"ci_high":0.025014}
+    ],
+    "confirmed_profit_bet_types": 0,
+    "source_paths": [
+      "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/delta_ll_metrics.csv",
+      "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv"
+    ],
+    "rows": [
+      {"bet_type":"단승","model":"anchored_base_margin","policy":"top_10pct_edge","bets":108,"hits":45,"hit_rate":0.4166666667,"roi":-0.1453703704,"ci_low":-0.3553597689,"ci_high":0.0676539956,"mean_edge":0.0708631429,"edge_spearman_realized":-0.0412129526,"average_odds":2.2981481481,"average_winning_dividend":2.0511111111,"mdd":-0.1723271704,"sharpe":-1.3957945698,"kelly_return":-0.0496027102},
+      {"bet_type":"연승","model":"anchored_base_margin","policy":"top_10pct_edge","bets":101,"hits":74,"hit_rate":0.7326732673,"roi":-0.0752475248,"ci_low":-0.1700955075,"ci_high":0.0237649077,"mean_edge":0.2733614982,"edge_spearman_realized":0.0989400116,"average_odds":1.2762376238,"average_winning_dividend":1.2621621622,"mdd":-0.0886119107,"sharpe":-1.3158639419,"kelly_return":-0.1468205652},
+      {"bet_type":"복승","model":"anchor_ensemble","policy":"top_10pct_edge","bets":108,"hits":34,"hit_rate":0.3148148148,"roi":0.3972222222,"ci_low":-0.0330249833,"ci_high":0.8444540230,"mean_edge":0.0648929063,"edge_spearman_realized":-0.1615269561,"average_winning_dividend":4.4382352941,"mdd":-0.1262640918,"sharpe":1.7846836833,"kelly_status":"unavailable_losing_combination_prices"},
+      {"bet_type":"쌍승","model":"anchor_ensemble","policy":"top_10pct_edge","bets":108,"hits":21,"hit_rate":0.1944444444,"roi":0.1675925926,"ci_low":-0.3104977909,"ci_high":0.6761548840,"mean_edge":0.0429249190,"edge_spearman_realized":-0.1155315480,"average_winning_dividend":6.0047619048,"mdd":-0.2135021635,"sharpe":0.6427992788,"kelly_status":"unavailable_losing_combination_prices"},
+      {"bet_type":"삼복승","model":"anchored_base_margin","policy":"top_20pct_edge","bets":216,"hits":34,"hit_rate":0.1574074074,"roi":-0.0768518519,"ci_low":-0.3962910745,"ci_high":0.2651536188,"mean_edge":0.0437870142,"edge_spearman_realized":-0.0615594375,"average_winning_dividend":5.8647058824,"mdd":-0.3933430749,"sharpe":-0.4631396789},
+      {"bet_type":"삼쌍승","model":"anchored_base_margin","policy":"top_10pct_edge","bets":108,"hits":5,"hit_rate":0.0462962963,"roi":-0.3296296296,"ci_low":-0.8673684211,"ci_high":0.3234789833,"mean_edge":0.0174838556,"edge_spearman_realized":-0.2894814561,"average_winning_dividend":14.48,"mdd":-0.4327070639,"sharpe":-1.0140777524},
+      {"bet_type":"복연승","model":"anchor_ensemble","policy":"top_10pct_edge","bets":108,"hits":52,"hit_rate":0.4814814815,"roi":0.1592592593,"ci_low":-0.0584973741,"ci_high":0.3912775689,"mean_edge":0.1004747350,"edge_spearman_realized":0.0677355740,"average_winning_dividend":2.4076923077,"mdd":-0.1212049342,"sharpe":1.2606079136}
+    ],
+    "interpretation": "Market-anchor probability estimates beat q by log loss, but all seven locked ROI intervals include zero. The largest point ROI, quinella +39.72%, misses confirmation because its lower bound is -3.30%."
+  },
+  "v11_upset_feature_and_top_fraction": {
+    "scope": "historical_or_reused_test",
+    "importance_method": "Within-race or same-field-size race-block permutation on the upset-tail realized-edge objective, with daily-block uncertainty.",
+    "operational_weight_threshold": 0.005,
+    "selected_feature_count": 29,
+    "ci_positive_feature_count": 4,
+    "source_paths": [
+      "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_feature_importance.csv",
+      "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/model_delta_ll_metrics.csv",
+      "outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv"
+    ],
+    "ci_positive_features": [
+      {"rank":2,"feature":"tr_plcrate","weight":0.0637899765,"ci_low":0.0036331352,"ci_high":0.0193924426},
+      {"rank":4,"feature":"hr_rest_days","weight":0.0488470016,"ci_low":0.0001938074,"ci_high":0.0173230937},
+      {"rank":8,"feature":"wgBudam_chg","weight":0.0397328604,"ci_low":0.0004143818,"ci_high":0.0137353771},
+      {"rank":10,"feature":"hr_plcrate","weight":0.0370330514,"ci_low":0.0001878308,"ci_high":0.0128471866}
+    ],
+    "selected_features_ranked": [
+      [1,"clinic_30d",0.1615249226],[2,"tr_plcrate",0.0637899765],[3,"hr_last_finpct",0.0553777194],[4,"hr_rest_days",0.0488470016],[5,"age__pr",0.0458259789],[6,"hr_style",0.0435434864],[7,"oh_sex_암",0.0416464346],[8,"wgBudam_chg",0.0397328604],[9,"ow_starts",0.0375300835],[10,"hr_plcrate",0.0370330514],[11,"jk_winrate",0.0339980918],[12,"waterRate",0.0326664747],[13,"hr_rest_days__z",0.0319873849],[14,"jk_winrate__z",0.0300346761],[15,"jk_plcrate",0.0292244788],[16,"wgBudam__pr",0.0287103583],[17,"hr_style_sd",0.0279975682],[18,"jk_starts",0.0251577636],[19,"ow_winrate",0.0231134541],[20,"train_sec_14",0.0222019470],[21,"te_owName",0.0208981279],[22,"tr_winrate",0.0201596436],[23,"tool_망사눈가면",0.0179840959],[24,"hr_winrate__pr",0.0173122676],[25,"age",0.0145034934],[26,"hr_dist_starts",0.0131886955],[27,"wg_diff",0.0106236689],[28,"hr_rest_days__pr",0.0100399379],[29,"tr_starts",0.0078425990]
+    ],
+    "probability_results": [
+      {"model":"full_upset_base_margin","features":141,"delta_ll_per_race":0.012656,"ci_low":0.006053,"ci_high":0.019672},
+      {"model":"selected_upset_base_margin","features":29,"delta_ll_per_race":0.010771,"ci_low":0.004139,"ci_high":0.017539}
+    ],
+    "roi_grid": {
+      "cells": 56,
+      "unadjusted_ci_positive_cells": 0,
+      "fdr_5pct_positive_cells": 0,
+      "point_roi_at_least_30pct_cells": 22,
+      "largest_point_estimates": [
+        {"model":"full_upset_base_margin","fraction":"top_40pct","bet_type":"삼쌍승","bets":228,"hits":3,"roi":2.9618421053,"ci_low":-1.0,"ci_high":7.8234877793,"roi_without_largest_hit":1.4140969163},
+        {"model":"full_upset_base_margin","fraction":"top_10pct","bet_type":"삼쌍승","bets":57,"hits":1,"roi":2.6929824561,"ci_low":-1.0,"ci_high":10.6944444444,"roi_without_largest_hit":-1.0},
+        {"model":"selected_upset_base_margin","fraction":"top_40pct","bet_type":"삼쌍승","bets":232,"hits":3,"roi":2.4064655172,"ci_low":-1.0,"ci_high":7.0485878759,"roi_without_largest_hit":0.8831168831},
+        {"model":"selected_upset_base_margin","fraction":"top_20pct","bet_type":"쌍승","bets":116,"hits":7,"roi":1.1034482759,"ci_low":-0.3230803571,"ci_high":2.8438268849,"roi_without_largest_hit":0.5},
+        {"model":"full_upset_base_margin","fraction":"top_10pct","bet_type":"단승","bets":57,"hits":7,"roi":0.4035087719,"ci_low":-0.4910827785,"ci_high":1.4966525424,"roi_without_largest_hit":0.0714285714,"kelly_return":0.0442419342,"kelly_mdd":-0.0107710544}
+      ]
+    },
+    "interpretation": "The 0.5% threshold is operational, not a statistical significance cutoff. Only four selected features have positive importance intervals, and even the selected-feature model produced no CI/FDR-confirmed profit."
+  },
+  "odds_8_15_evidence": {
+    "v11_revalidation": {
+      "scope": "historical_or_reused_test",
+      "model": "anchored_base_margin",
+      "band": "closing win odds >=8 and <15",
+      "policy": "VALID-locked numeric EDGE threshold 0.0188698053214846",
+      "bets": 94,
+      "hit_rate": 0.1170212766,
+      "roi": 0.0978723404,
+      "ci_low": -0.4631053223,
+      "ci_high": 0.7420657468,
+      "average_odds": 9.7787234043,
+      "profit_confirmed": false,
+      "historical_batch_top5_roi": 0.0117647059,
+      "equal_count_market_q_control_roi": -0.1245098039,
+      "source": "outputs/reports/odds_8_15_v11_revalidation_20260823/summary.json"
+    },
+    "h11c_valid_lock": {
+      "scope": "valid_selection_only",
+      "thresholds": {"top10":0.0097138383,"top20":0.0070449043,"top30":0.0054443102,"top40":0.0041751573},
+      "primary_band_rows": 2022,
+      "primary_band_races": 971,
+      "h11b_brier": 0.0679997475,
+      "market_brier": 0.0680553291,
+      "h11b_brier_improvement": 0.0000555816,
+      "h11b_ece": 0.0059203437,
+      "market_ece": 0.0008465108,
+      "cutoff_rows": [
+        {"cutoff":"top10","h11b_tickets":87,"h11b_roi":-0.1045977011,"h11b_ci_low":-0.6505750507,"h11b_ci_high":0.5697404090,"q_control_roi":0.1045977011,"paired_difference":-0.2091954023,"holm_pass":false},
+        {"cutoff":"top20","h11b_tickets":173,"h11b_roi":-0.0895953757,"h11b_ci_low":-0.4891469901,"h11b_ci_high":0.3706215572,"q_control_roi":0.0341040462,"paired_difference":-0.1236994220,"holm_pass":false},
+        {"cutoff":"top30","h11b_tickets":259,"h11b_roi":-0.1293436293,"h11b_ci_low":-0.4526931818,"h11b_ci_high":0.2188292708,"q_control_roi":0.0949806950,"paired_difference":-0.2243243243,"holm_pass":false},
+        {"cutoff":"top40","h11b_tickets":345,"h11b_roi":-0.0336231884,"h11b_ci_low":-0.3184187233,"h11b_ci_high":0.2768384816,"q_control_roi":0.0153623188,"paired_difference":-0.0489855072,"holm_pass":false}
+      ],
+      "holm_passed_cutoffs": 0,
+      "source_paths": [
+        "outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/valid_cutoff_metrics.csv",
+        "outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/valid_paired_metrics.csv"
+      ]
+    },
+    "conclusion": "The band remains a useful research segment, especially for place-market loss defense, but neither v11 TEST nor H11C VALID establishes positive absolute profit."
+  },
+  "h5_to_h9": {
+    "h5_adaptive_rolling": {
+      "scope":"retrospective_rolling_oos","actual_training":true,"fits":32,"oos_races":2185,
+      "delta_ll_vs_market":0.0095870116,"delta_ll_ci_low":0.0024570696,"delta_ll_ci_high":0.0166669675,"holm_pass":true,
+      "place_bets":366,"place_model_roi":0.0243169399,"place_roi_ci_low":-0.1340504637,"place_roi_ci_high":0.1879826359,
+      "same_race_market_roi":-0.2101092896,"paired_advantage":0.2344262295,"paired_ci_low":0.0619707977,"paired_ci_high":0.4176719489,"paired_holm_pass":true,
+      "hit_rate":0.3715846995,"average_odds":2.8661202186,"average_winning_dividend":2.7566176471,"flat_mdd":-0.1774208579,"sharpe":0.3375493742,"kelly_return":0.3356822393,"kelly_mdd":-0.2829820373,
+      "source":"outputs/reports/rolling_origin_market_challenger_20260823/experiment_summary.json"
+    },
+    "h5_fixed_valid_lock": {
+      "scope":"retrospective_rolling_oos","actual_training":true,"fits":32,"oos_races":1101,"fixed_edge_threshold":0.0709603844,
+      "delta_ll_vs_market":0.0120456524,"delta_ll_ci_low":0.0031801299,"delta_ll_ci_high":0.0211592656,"holm_pass":true,
+      "place_bets":200,"place_model_roi":0.013,"place_roi_ci_low":-0.1864737564,"place_roi_ci_high":0.2196098750,
+      "same_race_market_roi":-0.305,"paired_advantage":0.318,"paired_ci_low":0.1051012179,"paired_ci_high":0.5376235475,"paired_holm_pass":true,
+      "hit_rate":0.375,"average_odds":2.869,"average_winning_dividend":2.7013333333,"flat_mdd":-0.1582816605,"sharpe":0.1355924831,"kelly_return":-0.0080642831,"kelly_mdd":-0.2279052129,
+      "source":"outputs/reports/fixed_lock_rolling_stability_20260823/experiment_summary.json"
+    },
+    "h6_place_calibration": {
+      "scope":"retrospective_rolling_oos","actual_calibrator_training":true,"calibrators":4,"observations":961,"selected_bets":200,
+      "calibrated_ll_improvement_vs_uncalibrated":0.0052307144,"ci_low":0.0001178585,"ci_high":0.0104796883,"holm_pass":false,
+      "calibrated_ll_improvement_vs_market":0.0018906431,"market_ci_low":-0.0055648047,"market_ci_high":0.0093490991,"holm_endpoints_passed":0,
+      "uncalibrated_kelly_return":-0.0080642831,"calibrated_kelly_return":-0.1882716834,"calibrated_kelly_mdd":-0.1929907260,
+      "source":"outputs/reports/rolling_place_probability_calibration_20260823/experiment_summary.json",
+      "interpretation":"Calibration improved proper scores before multiplicity correction but worsened Kelly return; calibration alone did not create an economic edge."
+    },
+    "h7_clinic_ablation": {
+      "scope":"retrospective_rolling_oos","actual_fits":40,"ablation_fits":32,"test_races":1101,
+      "global_increment":0.0012996386,"global_ci_low":-0.0025302235,"global_ci_high":0.0051152724,
+      "partial8_increment":0.0009427578,"partial8_ci_low":-0.0034135731,"partial8_ci_high":0.0054035462,"holm_passed":0,
+      "source":"outputs/reports/clinic30d_rolling_ablation_20260823/experiment_summary.json",
+      "interpretation":"clinic_30d ranked high in permutation importance but its incremental contribution was not confirmed."
+    },
+    "h8_later_date_fresh64": {
+      "scope":"later_date_optional_continuation_fresh64","actual_training":true,"features":5,"races":64,"days":6,
+      "delta_ll_vs_market":0.0183057279,"daily_ci_low":0.0018423694,"daily_ci_high":0.0403090795,"race_ci_low":-0.0019967467,"race_ci_high":0.0380289712,
+      "brier_improvement":0.0007460607,"additional37_delta_ll":0.0286439233,"additional37_day_ci_low":0.0023908294,"additional37_day_ci_high":0.0563555225,
+      "source_paths":["outputs/reports/fresh_minimal_entry_market_challenger_extended_20260823/experiment_summary.json","outputs/reports/incremental_fresh_holdout_20260823/experiment_summary.json"],
+      "interpretation":"Later by date, but not pristine because pooled64 was an optional continuation after seeing initial27."
+    },
+    "h9_fresh64_official_seven_bets": {
+      "scope":"later_date_optional_continuation_fresh64","races":64,"days":6,"official_pages":7,"candidate_tickets":69276,"confirmed_profit_bet_types":0,"holm_paired_advantage_bet_types":0,"actual_ev_kelly_identifiable":false,
+      "rows":[
+        {"bet_type":"단승","bets":64,"hits":18,"hit_rate":0.28125,"roi":-0.178125,"ci_low":-0.6181818182,"ci_high":0.4303030303,"mean_dividend_hits":2.9222222222,"mdd":-0.1688804554,"sharpe":-0.9666484194,"mean_edge":0.0217989605,"brier_improvement":0.0029232110},
+        {"bet_type":"연승","bets":64,"hits":33,"hit_rate":0.515625,"roi":-0.1234375,"ci_low":-0.3491525424,"ci_high":0.0593220339,"mean_dividend_hits":1.7,"mdd":-0.089,"sharpe":-1.0718465561,"mean_edge":0.0350640095,"brier_improvement":-0.0036289845},
+        {"bet_type":"복승","bets":64,"hits":8,"hit_rate":0.125,"roi":-0.178125,"ci_low":-0.6677966102,"ci_high":0.2831168831,"mean_dividend_hits":6.575,"mdd":-0.1633616619,"sharpe":-0.6042402827,"mean_edge":0.0179125208,"brier_improvement":-0.0022510898},
+        {"bet_type":"쌍승","bets":64,"hits":6,"hit_rate":0.09375,"roi":0.009375,"ci_low":-0.8295081967,"ci_high":0.9478260870,"mean_dividend_hits":10.7666666667,"mdd":-0.1860841424,"sharpe":0.0211987478,"mean_edge":0.0111373576,"brier_improvement":-0.0000259002},
+        {"bet_type":"삼복승","bets":64,"hits":6,"hit_rate":0.09375,"roi":-0.178125,"ci_low":-0.7642857143,"ci_high":0.4838235294,"mean_dividend_hits":8.7666666667,"mdd":-0.219,"sharpe":-0.5022171081,"mean_edge":0.0166564718,"brier_improvement":-0.0014999017},
+        {"bet_type":"삼쌍승","bets":64,"hits":0,"hit_rate":0.0,"roi":-1.0,"ci_low":-1.0,"ci_high":-1.0,"mean_dividend_hits":null,"mdd":-0.64,"sharpe":null,"mean_edge":0.0046712435,"brier_improvement":-0.0003121883},
+        {"bet_type":"복연승","bets":64,"hits":17,"hit_rate":0.265625,"roi":-0.134375,"ci_low":-0.5480769231,"ci_high":0.3585714286,"mean_dividend_hits":3.2588235294,"mdd":-0.118,"sharpe":-0.6526827711,"mean_edge":0.0345431724,"brier_improvement":-0.0061555363}
+      ],
+      "source_paths":["outputs/reports/fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv","outputs/reports/fresh_all_bets_paired_advantage_extended_20260823/paired_advantage_summary.csv"]
+    }
+  },
+  "h10_to_h18": {
+    "h10a_six_feature_anchor": {
+      "scope":"historical_or_reused_test_plus_posthoc_fresh64","actual_fits":6,"features":["age","age__pr","oh_sex_암","wgBudam_chg","wgBudam__pr","te_owName"],"market_or_outcome_features_in_X":[],
+      "valid_m6_vs_q_delta_ll":0.0015851331,"valid_ci_low":-0.0038823034,"valid_ci_high":0.0069418138,
+      "reused_test_m6_vs_q_delta_ll":0.0054221251,"test_ci_low":0.0012360395,"test_ci_high":0.0094796276,"test_holm_pass":true,
+      "fresh64_m6_vs_q_delta_ll":0.0104567062,"fresh64_ci_low":-0.0017843416,"fresh64_ci_high":0.0246538417,"fresh64_signflip_p":0.078125,
+      "fresh64_m6_vs_m5_delta_ll":-0.0079039872,"deployment":"NO_GO","source":"outputs/reports/h10a_provenance_six_feature_anchor_20260823/endpoint_metrics.csv"
+    },
+    "h10a_six_feature_fresh64_seven_bets": {
+      "scope":"posthoc_observed_optional_continuation","confirmed_profit_bet_types":0,"holm_paired_advantage_bet_types":0,
+      "rows":[
+        {"bet_type":"단승","bets":64,"hits":18,"roi":-0.1765625,"ci_low":-0.4457627119,"ci_high":0.0626865672,"mdd":-0.123,"sharpe":-0.9176253835,"mean_dividend_hits":2.9277777778},
+        {"bet_type":"연승","bets":64,"hits":28,"roi":-0.2765625,"ci_low":-0.3686274510,"ci_high":-0.2197530864,"mdd":-0.18,"sharpe":-2.4737767451,"mean_dividend_hits":1.6535714286},
+        {"bet_type":"복승","bets":64,"hits":8,"roi":-0.225,"ci_low":-0.6113207547,"ci_high":0.1153846154,"mdd":-0.1931034483,"sharpe":-0.8168968832,"mean_dividend_hits":6.2},
+        {"bet_type":"쌍승","bets":64,"hits":5,"roi":-0.3515625,"ci_low":-0.8037037037,"ci_high":0.00375,"mdd":-0.2512077295,"sharpe":-1.1623371451,"mean_dividend_hits":8.3},
+        {"bet_type":"삼복승","bets":64,"hits":5,"roi":-0.359375,"ci_low":-0.7147540984,"ci_high":0.0892857143,"mdd":-0.2903225806,"sharpe":-1.0963941747,"mean_dividend_hits":8.2},
+        {"bet_type":"삼쌍승","bets":64,"hits":0,"roi":-1.0,"ci_low":-1.0,"ci_high":-1.0,"mdd":-0.64,"sharpe":null,"mean_dividend_hits":null},
+        {"bet_type":"복연승","bets":64,"hits":20,"roi":-0.121875,"ci_low":-0.4647058824,"ci_high":0.1352941176,"mdd":-0.1302644466,"sharpe":-0.6895129117,"mean_dividend_hits":2.81}
+      ],
+      "source_paths":["outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv","outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/paired_advantage/paired_advantage_summary.csv"]
+    },
+    "h11b_six_feature_multimodel": {
+      "scope":"historical_or_reused_test_then_prospective_freeze","actual_new_training":true,"actual_fit_operations":33,"successful_final_fits":15,"interrupted_fit_operations_preserved":18,
+      "members":["m6","xgboost","lightgbm","deep_mlp_3seed"],"probability_sum_max_error":4.4408920985e-16,"reload_prediction_max_error":0.0,
+      "valid_delta_ll":{"m6":0.0015851331,"xgboost":0.0006544869,"lightgbm":0.0026293804,"deep_mlp_3seed":0.0006410622,"ensemble":0.0024197931},
+      "reused_test_delta_ll":{"m6":0.0054221251,"xgboost":-0.0014932197,"lightgbm":-0.0022996322,"deep_mlp_3seed":0.0051816412,"ensemble":0.0027219904},
+      "target_date_model_scores_generated_at_training_completion":false,"target_outcomes_read":false,"stake":0,
+      "source":"outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/experiment_summary.json"
+    },
+    "h11d_shrinkage": {
+      "scope":"reused_late_valid","selected_alpha_development":1.05,"late28_races":340,"late28_delta_ll_vs_q":0.0022886069,"ci_low":-0.0038387509,"ci_high":0.0089672810,"p":0.4977502250,"brier_improvement":0.0001881094,"deployment_alpha_all_valid":1.06,"stake":0,
+      "source":"outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/experiment_summary.json"
+    },
+    "h11e_prior_best_feasibility": {
+      "status":"BLOCKED_NO_EXACT_FEATURE_REPLAY","required_features":29,"provenance_ready":6,"blocked":23,"target_score_generated":false,"stake":0,
+      "reason":"Required clinic/training/equipment/track and chronology-safe histories could not be exactly reconstructed from authorized pre-race sources; median/proxy guessing was explicitly rejected.",
+      "source":"outputs/reports/h11e_prior_best_deployment_feasibility_20260823/feasibility_audit.json"
+    },
+    "h13_nonnegative_log_pool": {
+      "scope":"reused_late_valid","optimizer_fits":8,"selected_lambda":0.0,"first64_weights":{"m6":0.0,"xgboost":0.2382010590,"lightgbm":0.5847045966,"deep_mlp_3seed":0.3224386899},
+      "late28_delta_ll_vs_q":0.0020062724,"ci_low":-0.0045389062,"ci_high":0.0090425705,"p":0.2872671273,"roi_computed":false,"stake":0,
+      "weight_instability_l1_first64_to_all92":1.2180428974,"source":"outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/experiment_summary.json"
+    },
+    "h14_convex_pool": {
+      "scope":"reused_late_valid","optimizer_fits":3,"constraints":"nonnegative residual weights with sum <=1","first64_weight_sum":1.0,"market_exponent":0.0,
+      "late28_delta_ll_vs_q":0.0022630071,"ci_low":-0.0034751617,"ci_high":0.0084392560,"p":0.2302769723,"roi_computed":false,"stake":0,
+      "weight_instability_l1_first64_to_all92":0.9127874737,"source":"outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/experiment_summary.json"
+    },
+    "h17_ridge_convex_pool": {
+      "scope":"reused_late_valid","optimizer_fits":14,"selected_lambda":1.0,"first64_weight_sum":0.0192274921,"first64_market_exponent":0.9807725079,
+      "late28_delta_ll_vs_q":0.0000836588,"ci_low":-0.0000295247,"ci_high":0.0002075055,"p":0.0942905709,"roi_computed":false,"stake":0,
+      "source":"outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/experiment_summary.json",
+      "interpretation":"Regularization stabilized weights but shrank the challenger almost entirely back to the market; the remaining advantage was small and unconfirmed."
+    },
+    "h12_h15_h16_h18_evaluator_readiness": {
+      "scope":"synthetic_contract_validation_and_prospective_preregistered_unsettled",
+      "h12_ticket_validator":{"status":"PASS_PARTIAL_ACTIVE","checks_passed":38,"checks_failed":0,"target_outcomes_read":false,"stake":0,"source":"outputs/reports/h12_prospective_seven_bet_settlement_preregistered_20260823/independent_ticket_validation.json"},
+      "h15_probability_evaluator":{"status":"PASS","checks_passed":132,"checks_failed":0,"production_gate":"GATE_CLOSED_NO_TARGET_RESULT_READ","stake":0,"source":"outputs/reports/h15_prospective_all_model_probability_evaluation_preregistered_20260823/synthetic_historical_independent_validation_final.json"},
+      "h16_ticket_extension":{"status":"PASS_PARTIAL_ACTIVE","checks_passed":1514,"checks_failed":0,"target_outcome_dividend_reads":0,"stake":0,"source":"outputs/reports/h16_prospective_all_model_seven_bet_extension_preregistered_20260823/independent_validation.json"},
+      "h18_ticket_extension":{"status":"PASS_PARTIAL_ACTIVE","checks_passed":128,"checks_failed":0,"target_outcome_dividend_reads":0,"stake":0,"source":"outputs/reports/h18_h17_prospective_probability_and_seven_bet_extension_preregistered_20260823/independent_validation.json"},
+      "combined_settlement_evaluator":{"status":"PASS","freeze_checks_passed":4229,"freeze_checks_failed":0,"cross_component_checks_passed":208,"metric_recalculations_passed":2820,"negative_contracts_passed":35,"target_outcome_rows_read":0,"network_calls":0,"one_day_profit_confirmed":false,"stake":0,"source":"outputs/reports/h16_h18_settlement_cross_component_audit_20260823/cross_component_audit_v2.json"},
+      "interpretation":"These PASS results establish implementation/gate readiness only. They contain no target-date ROI, EV, hit rate, dividend, or market-superiority evidence."
+    }
+  },
+  "prospective_20260823_snapshot_at_inventory": {
+    "as_of_kst": "2026-08-23T10:19:36+09:00",
+    "scheduled_races": 17,
+    "h11_h11b_race_status": {"WAITING_T5_WIN_PLACE":17},
+    "h13_frozen_races": 0,
+    "h14_frozen_races": 0,
+    "h16_frozen_races": 0,
+    "h17_frozen_races": 0,
+    "h18_frozen_races": 0,
+    "target_outcome_result_dividend_rows_read": 0,
+    "network_settlement_calls": 0,
+    "live_stake": 0,
+    "state_paths": [
+      "outputs/reports/h11_h11b_prospective_t5_scoring_20260823/watcher_state.json",
+      "outputs/reports/h13_prospective_t5_scoring_20260823/watcher_state.json",
+      "outputs/reports/h14_prospective_t5_scoring_20260823/watcher_state.json",
+      "outputs/reports/h16_prospective_all_model_seven_bet_extension_preregistered_20260823/ticket_watcher_state.json",
+      "outputs/reports/h17_prospective_t5_scoring_20260823/watcher_state.json",
+      "outputs/reports/h18_h17_prospective_probability_and_seven_bet_extension_preregistered_20260823/ticket_watcher_state.json"
+    ],
+    "interpretation": "No target-date performance claim can be made from this snapshot. Watcher files are mutable while the scheduled jobs remain active."
+  },
+  "deep_and_stack_defensive_evidence": {
+    "scope":"historical_or_reused_test",
+    "deep_probability":{"actual_training":true,"parameter_files":12,"best_test_delta_ll":0.0104000308,"ci_low":0.0022820990,"ci_high":0.0185080286,"profit_fdr_cells":0,"market_advantage_fdr_cells":0},
+    "log_pool_probability":{"actual_training":true,"test_delta_ll":0.0097719735,"ci_low":0.0015777899,"ci_high":0.0175600673,"profit_fdr_cells":0,"market_advantage_fdr_cells":0},
+    "eight_to_fifteen_place_cell":{"model":"deep_blend","bets":82,"model_roi":-0.0036585366,"ci_low":-0.3205675799,"ci_high":0.3086093190,"market_same_race_roi":-0.3768292683,"paired_advantage":0.3731707317,"paired_ci_low":0.0462301136,"paired_ci_high":0.7153385940,"paired_fdr_q":0.0956666667,"profit_confirmed":false,"market_advantage_fdr_5pct":false},
+    "slippage_haircut_sensitivity":{"haircut_0":-0.0036585366,"haircut_0_02":-0.0235853659,"haircut_0_05":-0.0534756098,"haircut_0_10":-0.1032926829,"haircut_0_20":-0.2029268293},
+    "source_paths":["outputs/reports/deep_market_challengers_20260823_v2/experiment_summary.json","outputs/reports/deep_market_challengers_20260823_v2/locked_test_policy_results.csv","outputs/reports/deep_market_challengers_20260823_v2/independent_audit/payout_slippage_sensitivity.csv","outputs/reports/market_residual_log_pool_stack_20260823/experiment_summary.json"],
+    "interpretation":"This is the clearest loss-defense segment, but it fails 5% FDR, uses reused TEST and closing prices, and turns more negative under payout haircuts."
+  },
+  "historical_superseded_or_nonconfirmatory": [
+    {"experiment":"Benter anchored walk-forward","delta_ll":0.0049057108,"ci_low":0.0012560313,"ci_high":0.0086350095,"races":4009,"backtest_bets":327,"roi":0.3269113150,"roi_ci_low":-0.0270196084,"roi_ci_high":0.6825280343,"source_paths":["outputs/reports/benter_market_anchored_20260820/walkforward_summary.json","outputs/reports/benter_market_anchored_20260820/backtest_summary.json"],"boundary":"Probability advantage was positive; +32.69% ROI was not confirmed and did not reproduce at the same magnitude on current v11."},
+    {"experiment":"Base Margin boosting","delta_ll":0.0073924945,"ci_low":0.0043732934,"ci_high":0.0104443957,"races":4009,"backtest_bets":579,"roi":0.0257340242,"roi_ci_low":-0.3124385504,"roi_ci_high":0.4100301297,"source":"outputs/reports/base_margin_boosting_20260821/summary.json"},
+    {"experiment":"Benter two-step crossfit GBM","delta_ll":0.0021992292,"ci_low":0.0004358172,"ci_high":0.0039637539,"backtest_bets":475,"roi":-0.2736842105,"roi_ci_low":-0.5829476361,"roi_ci_high":0.0739738387,"source":"outputs/reports/benter_two_step_20260821/summary.json"},
+    {"experiment":"historically locked 8-15 top5 percent","roi":0.4746835443,"ci_low":0.1416147514,"ci_high":0.8273154522,"source":"outputs/reports/base_margin_profit_20260821/summary.json","boundary":"The same file explicitly states the policy was selected on the same historical data; not an OOS profit estimate."},
+    {"experiment":"backtest overfit audit","pbo":0.0079365079,"deflated_sharpe_probability":0.0481513411,"expected_max_sharpe_by_chance":0.2474846677,"observed_sharpe":0.1524071038,"source":"outputs/reports/backtest_overfit_20260821/summary.json","boundary":"The audit says its policy grid covers only part of total research degrees of freedom; treat it as a lower bound on selection bias."},
+    {"experiment":"old v7 137-vs-61 feature edge fraction","scope":"superseded_historical","source":"outputs/reports/edge_fraction_10_30_retrain_20260820/top_edge_10_30/top_edge_fraction_roi_manifest.json","boundary":"Seoul-only and later found to contain final-pool features in the 137-feature path; current v11 evidence supersedes deployment claims."}
+  ],
+  "price_fee_kelly_and_slippage_limitations": {
+    "fee_handling":"Official final dividends already reflect pool takeout, so all official settlement tables avoid a second 20%/27% deduction. Older synthetic commission-hurdle analyses state their assumptions separately.",
+    "decision_time_prices":"Closing/result win odds are not documented executable T-5 quotes. They may differ materially from bet-time prices.",
+    "complex_bet_grid":"A safe official pre-race full combination grid was not verified for place, exacta, quinella-place, trio, or trifecta. Only previously observed win/quinella paths were retained, and their public contracts remain result-capable.",
+    "kelly":"Kelly is directly identifiable only when ticket-level pre-bet price exists. Complex-bet Kelly entries are correctly marked unavailable; applying q-derived proxy odds would not establish executable EV.",
+    "slippage":"Existing payout-haircut sensitivity shows that near-zero absolute ROI deteriorates quickly. Example: reused-TEST 8-15 place ROI moves from -0.37% at no haircut to -20.29% at a 20% haircut.",
+    "source_paths":["outputs/reports/h11_multibet_realtime_odds_source_audit_20260823/source_audit.json","outputs/reports/deep_market_challengers_20260823_v2/independent_audit/payout_slippage_sensitivity.csv"]
+  },
+  "failures_and_limits": [
+    "No bet family has a validation-locked or later-date absolute ROI whose 95% interval is wholly above zero after applicable multiplicity control.",
+    "The fresh64 block has only 6 race days; exact sign-flip p-values have 1/64 resolution and wide ROI intervals.",
+    "The additional fresh37 block was collected after the initial27 result; pooled64 is an optional continuation, not pristine confirmation.",
+    "High complex-bet point ROIs are driven by very few winners and often collapse when the largest hit is removed; winning-ticket dividends alone cannot identify pre-bet EV for all losing tickets.",
+    "H11C H11B darkhorse thresholds did not beat equal-count q controls even on the VALID selection block; Holm passed cutoffs were 0/4.",
+    "Calibration improved log loss/Brier before adjustment but worsened Kelly return from -0.81% to -18.83%.",
+    "clinic_30d was the largest permutation-importance feature but ablation intervals included zero, so importance is not incremental-value confirmation.",
+    "H13/H14 stacking weights were unstable across time windows; H17 ridge regularization improved stability by shrinking almost entirely back to q, leaving only a tiny unconfirmed DeltaLL.",
+    "The historically strongest 29-feature model could not be prospectively scored without guessing 23 feature definitions/sources; the project correctly blocked it.",
+    "One target race day cannot establish long-term ROI, MDD, Sharpe, or market superiority even after settlement.",
+    "As of this evidence snapshot, the 2026-08-23 forward trial was unresolved and contributed zero performance observations."
+  ],
+  "quantitative_insights": [
+    "Information edge and trading edge diverge: positive DeltaLL appears across several anchors, while no seven-bet absolute-profit family is confirmed.",
+    "The most defensible current claim is relative loss defense, not profit: in reused OOS 8-15 place segments, model selection lost less than the same-race market control, but absolute ROI remained statistically indistinguishable from zero.",
+    "The market anchor is structurally valuable. Unanchored models were materially worse in early experiments, while residual corrections were small; H17 regularization placed about 98.08% exponent back on q.",
+    "Feature parsimony improved operational reproducibility but not economic performance: the six-feature M6 could be replayed exactly, yet it underperformed the five-feature model on fresh64 and lost across all seven post-hoc settlements.",
+    "The 8-15 segment should be retained as a hypothesis, not a proven rule. v11 point ROI was positive but uncertain; H11C VALID H11B cutoffs all lagged q controls; deep/fixed rolling place showed relative defense only.",
+    "Rare complex-bet payoffs create severe winner concentration. Point ROI and even payout-haircut survival do not replace daily-block uncertainty or genuine pre-bet price evidence.",
+    "Proper regularization provides a falsification result: when instability is penalized, the optimizer largely discards model residuals and returns to the market, suggesting the raw ensemble signal was weak relative to estimation noise."
+  ],
+  "chart_ready_existing_datasets": [
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv","suggested_chart":"seven-bet grouped ROI bars with 95% CI and market ROI overlay","x":"bet_type","y":["test_roi","market_roi"],"interval":["test_roi_ci_low_daily_block","test_roi_ci_high_daily_block"]},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv","suggested_chart":"market-anchor seven-bet ROI/MDD comparison","x":"bet_type","y":["test_roi","flat_1pct_mdd"]},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/delta_ll_metrics.csv","suggested_chart":"market versus anchor DeltaLL forest plot","x":"model","y":"delta_ll_per_race","interval":"daily-block CI columns"},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_feature_importance.csv","suggested_chart":"top feature importance with uncertainty whiskers and 0.5% threshold","x":"feature","y":"positive_importance_weight","interval":["ci_low_daily_block","ci_high_daily_block"]},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv","suggested_chart":"model by top10-40 fraction by bet-type ROI heatmap plus largest-hit sensitivity","x":["model_key","fraction_label","bet_type"],"y":["roi","roi_without_largest_winning_return","flat_1pct_mdd"]},
+    {"path":"outputs/reports/odds_8_15_v11_revalidation_20260823/odds_8_15_policy_results.csv","suggested_chart":"8-15 policy/model ROI forest plot","x":["model_key","policy","split"],"y":"roi","interval":["roi_ci_low","roi_ci_high"]},
+    {"path":"outputs/reports/rolling_origin_market_challenger_20260823/fold_place_policy_results.csv","suggested_chart":"rolling fold model versus market place ROI","x":"fold","y":["model_roi","market_roi_same_races","paired_roi_difference"]},
+    {"path":"outputs/reports/fixed_lock_rolling_stability_20260823/fold_place_metrics.csv","suggested_chart":"fixed-lock fold stability and hit-rate delta","x":"fold","y":["model_roi","market_roi_same_races","hit_rate_difference"]},
+    {"path":"outputs/reports/rolling_place_probability_calibration_20260823/calibration_metrics.csv","suggested_chart":"calibrated versus uncalibrated versus market log loss and Brier","x":"fold","y":"metric columns"},
+    {"path":"outputs/reports/fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv","suggested_chart":"fresh64 seven-bet ROI, CI, MDD, Sharpe, hit-rate dashboard","x":"bet_type","y":["roi","mdd_fraction_of_100_unit_initial_bankroll","sqrt_n_sharpe_per_bet_not_annualized","hit_rate"]},
+    {"path":"outputs/reports/fresh_all_bets_paired_advantage_extended_20260823/paired_advantage_summary.csv","suggested_chart":"fresh64 model minus market/proxy paired ROI forest plot","x":"bet_type","y":"paired_roi_difference","interval":["paired_daily_block_ci_low","paired_daily_block_ci_high"]},
+    {"path":"outputs/reports/h10a_provenance_six_feature_anchor_20260823/endpoint_metrics.csv","suggested_chart":"M6 DeltaLL by VALID/reused TEST/fresh64 and comparison baseline","x":["split","comparison"],"y":"estimate","interval":["daily_block_ci_low","daily_block_ci_high"]},
+    {"path":"outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv","suggested_chart":"five-feature versus six-feature fresh64 seven-bet ROI comparison when joined on bet_type","x":"bet_type","y":"roi"},
+    {"path":"outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_probability_metrics.csv","suggested_chart":"H11B member DeltaLL/Brier VALID versus reused TEST","x":["split","model_key"],"y":["delta_ll_per_race","brier_improvement"]},
+    {"path":"outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/valid_cutoff_metrics.csv","suggested_chart":"H11B versus q-control darkhorse cutoff ROI/MDD","x":["cutoff","strategy"],"y":["roi","mdd_percent_total_stake"]},
+    {"path":"outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/late28_metrics.csv","suggested_chart":"H13 versus q/equal ensemble proper scores","x":"model","y":["winner_conditional_nll","runner_brier","ece10_equal_width"]},
+    {"path":"outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_metrics.csv","suggested_chart":"H14 versus H13/equal/q proper scores","x":"model","y":["winner_conditional_nll","runner_brier","ece10_equal_width"]},
+    {"path":"outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_metrics.csv","suggested_chart":"regularization shrinkage result and DeltaLL comparison","x":"model","y":["winner_conditional_nll","runner_brier","ece10_equal_width"]},
+    {"path":"outputs/reports/deep_market_challengers_20260823_v2/independent_audit/payout_slippage_sensitivity.csv","suggested_chart":"payout haircut versus ROI curves","x":"payout_haircut","y":["model_roi","market_roi","paired_roi_difference"],"facet":["audit_cell","bet_type"]}
+  ],
+  "artifact_manifest": [
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/locked_policy_test_results.csv","bytes":4458,"sha256":"4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/locked_test_results.csv","bytes":3056,"sha256":"1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/market_anchor/delta_ll_metrics.csv","bytes":2154,"sha256":"D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_feature_importance.csv","bytes":14991,"sha256":"DF1CCF962FAEB714686919AACE244AC0E84DAD2CD111BD27A7A738D118354DBE"},
+    {"path":"outputs/reports/revised_v11_seoul_bugyeong_full_rerun_20260822/upset_feature/upset_bet_summary_independently_verified.csv","bytes":51824,"sha256":"43156E590245ED171F44DD37F625F659E914BDA9666C92E1BC62F38CCD0BD29B"},
+    {"path":"outputs/reports/odds_8_15_v11_revalidation_20260823/summary.json","bytes":3159,"sha256":"9759A61D7F033640E13A0F40A39F2E5F58A2904BC962688B805E5C8AF8172FF5"},
+    {"path":"outputs/reports/rolling_origin_market_challenger_20260823/experiment_summary.json","bytes":8027,"sha256":"DE8A1DA5DA815D5DB930BC7C57E10ECC5C379FB3EAB0062A30DC308D99D83C3B"},
+    {"path":"outputs/reports/fixed_lock_rolling_stability_20260823/experiment_summary.json","bytes":7632,"sha256":"2B36C14E36A3942A06CC21720A49B06BC3FABF50803C2AA2E41CD723958812DB"},
+    {"path":"outputs/reports/rolling_place_probability_calibration_20260823/experiment_summary.json","bytes":3501,"sha256":"CE93567FE287ADA6862C469A412DA8F378C1688A0F105E87F1A71F84A22B955C"},
+    {"path":"outputs/reports/clinic30d_rolling_ablation_20260823/experiment_summary.json","bytes":4794,"sha256":"A49BE6ED3901B46666156AEDECAD954D5921AEC80BC9DA953EDE74ACA3797282"},
+    {"path":"outputs/reports/fresh_minimal_entry_market_challenger_extended_20260823/experiment_summary.json","bytes":2699,"sha256":"F35A63957A573A07A42A8A756ABD03897330DE1BB34624E559388B7BAC8DAFD7"},
+    {"path":"outputs/reports/fresh_all_bets_extended_20260823/fresh_all_bet_summary.csv","bytes":5555,"sha256":"03AF315EF2701EF6B0F25A5A4ADAA22BAE4E5A634334718B7607B8F4B856B916"},
+    {"path":"outputs/reports/fresh_all_bets_paired_advantage_extended_20260823/paired_advantage_summary.csv","bytes":1547,"sha256":"2EF8AADBA065A3B352F7C0F313284459A8715BFFC8E14A0E752F5067ED7FBC80"},
+    {"path":"outputs/reports/h10a_provenance_six_feature_anchor_20260823/endpoint_metrics.csv","bytes":1758,"sha256":"2531E73CED8A61D49E3A493D5D1A84617FFFFAC53C3850D49D6DAE29FE8B469A"},
+    {"path":"outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/fresh_all_bet_summary.csv","bytes":5374,"sha256":"9B13C791CD70B62DEE0C34B91F0BC1801C44F0AC477CB60E05857F26322F95B3"},
+    {"path":"outputs/reports/h10a_provenance_six_feature_all_bets_posthoc_20260823/paired_advantage/paired_advantage_summary.csv","bytes":1462,"sha256":"EB25DD1E13D4A02B717CC34F5B83D605EC85AB7BDE66EEA8D7036D84ACC1C9A4"},
+    {"path":"outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/experiment_summary.json","bytes":8678,"sha256":"25B5D46725763BA394C1EEADEB7F9A20DBDFEBCAA1669250AF5FAC064FD9C3C4"},
+    {"path":"outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/valid_cutoff_metrics.csv","bytes":2435,"sha256":"90B934640E17D6B0F679926A1CD75602F15CE5E89E851D19AFED2BB2004428F5"},
+    {"path":"outputs/reports/h11c_darkhorse_8_15_preregistered_20260823/valid_paired_metrics.csv","bytes":842,"sha256":"60E2D3D47CA69E343DAE5F5AAEBDDE5A8FA6CF7020805CC13F02F4A43CF2C713"},
+    {"path":"outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/experiment_summary.json","bytes":13042,"sha256":"E6DC0EB447578F4CFBB22149D08FDAF1999DA18B3CD060A3AAFC68C046EB680B"},
+    {"path":"outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/experiment_summary.json","bytes":13628,"sha256":"24D54C8B82DF2580C96FA783410C552C478545F82329B5B443A73E000A58CE05"},
+    {"path":"outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/experiment_summary.json","bytes":18416,"sha256":"E2B2105022C7EDF9BB3B13149CB9831577F74A246AEFE4A1DAEC9C12C159AFFD"},
+    {"path":"outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/experiment_summary.json","bytes":25395,"sha256":"C35CC9D66CA42778D6C08432905D03C62BBA9239406CAA13ED006A9E784B64BA"},
+    {"path":"outputs/reports/h16_h18_settlement_cross_component_audit_20260823/cross_component_audit_v2.json","bytes":3062,"sha256":"2802DF250FA7296F863BFE37BBE091DE02EF0ABA45D6C1FC91EE900189D860AA"},
+    {"path":"outputs/reports/h11_multibet_realtime_odds_source_audit_20260823/source_audit.json","bytes":13837,"sha256":"2278DA70AECD2292ED962E10E7C7378B182702ADBA99BBDFA9777AC2F8C06225"},
+    {"path":"outputs/reports/deep_market_challengers_20260823_v2/experiment_summary.json","bytes":3860,"sha256":"BF20FB86131EEAC942AFDF5F62E41B553B17F0C2B253ED88761ECEA85F01B39D"},
+    {"path":"outputs/reports/deep_market_challengers_20260823_v2/independent_audit/payout_slippage_sensitivity.csv","bytes":10870,"sha256":"1508BC53124775866BD20A495BBD477F9EA09CFB1C83330C4A524C3A4074C784"}
+  ]
+}

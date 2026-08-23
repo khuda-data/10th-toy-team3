@@ -1,1 +1,0 @@
-"""Automated project tests."""

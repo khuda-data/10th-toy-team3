@@ -1,0 +1,34 @@
+{
+  "float_absolute_tolerance": 1e-8,
+  "stage_15": {
+    "test_rows": 6639,
+    "test_races": 635,
+    "market_race_log_loss": 1.8173477916449374,
+    "market_race_brier": 0.7779195879597051,
+    "market_top1_accuracy": 0.3779527559055118,
+    "m2_race_log_loss": 1.813445511761758,
+    "m2_race_brier": 0.7773180459073494,
+    "m2_top1_accuracy": 0.37480314960629924
+  },
+  "stage_26": {
+    "threshold": 0.65,
+    "lambda_switch": 0.3,
+    "calibration_races": 641,
+    "top1_correct": 249,
+    "race_log_loss": 1.7742414156051367,
+    "race_brier": 0.7622980923871707,
+    "delta_logloss": 0.0017947427149869188,
+    "delta_brier": 0.0003380581271108518
+  },
+  "stage_27": {
+    "challenger_id": "r4_gate_ranker_t065_gate065_l030_v1",
+    "selected_candidate": "R4_gated_adaptive_blend",
+    "status": "frozen_pending_future_holdout",
+    "random_seed": 42,
+    "top1_correct": 249,
+    "top1_accuracy": 0.38845553822152884,
+    "race_log_loss": 1.7742414156051367,
+    "race_brier": 0.7622980923871707
+  }
+}
+

@@ -1,0 +1,43 @@
+{
+  "manifest_version": 1,
+  "created_at": "2026-08-17T22:37:13.4738854+09:00",
+  "canonical_path": "data/raw/final.csv.gz",
+  "source": {
+    "description": "한국마사회 공공데이터 기반 기존 프로젝트 산출물",
+    "original_compressed_path": "final.csv.gz",
+    "original_uncompressed_path": "final.csv/final.csv"
+  },
+  "file": {
+    "bytes": 23285667,
+    "sha256": "964bd9a7ab7e36247fc5a7e5ffd04f9ec02439491b1dacaef7918eb0aae80195",
+    "decompressed_sha256": "78b0c877c8adf2f60e258a779cf521a6693f03e80aa65c46a8cb97bbef8e9c19",
+    "uncompressed_copy_matches": true
+  },
+  "observed": {
+    "rows": 56648,
+    "columns": 156,
+    "date_min": 20230805,
+    "date_max": 20260809,
+    "race_count": 5361,
+    "entry_id_unique": true,
+    "entry_id_missing": 0,
+    "markets": {
+      "서울": 32888,
+      "부경": 23760
+    },
+    "win_values": [
+      0,
+      1
+    ],
+    "races_one_winner": 5351,
+    "races_multiple_winners": 8,
+    "races_no_winner": 2
+  },
+  "integrity_notes": [
+    "Raw data is immutable; downstream pipelines must never modify this file.",
+    "Eight races contain multiple winner rows, consistent with possible dead heats.",
+    "Two races contain no winner row and require whole-race rejection or resolution downstream.",
+    "Registration-number and compound-key columns must be loaded as strings.",
+    "Most Seoul hrNo values are stored as five characters in the raw CSV; the canonical loader restores the documented seven-character format with leading zeroes."
+  ]
+}

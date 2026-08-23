@@ -1,0 +1,262 @@
+epoch=1 loss=2.7642 valid_auc=0.7462
+epoch=2 loss=2.5618 valid_auc=0.7515
+epoch=3 loss=2.4257 valid_auc=0.7470
+epoch=4 loss=2.2750 valid_auc=0.7351
+epoch=5 loss=2.0968 valid_auc=0.7174
+epoch=6 loss=1.9243 valid_auc=0.7076
+epoch=7 loss=1.7876 valid_auc=0.7011
+epoch=8 loss=1.6628 valid_auc=0.6871
+epoch=9 loss=1.5437 valid_auc=0.6853
+epoch=10 loss=1.4511 valid_auc=0.6820
+epoch=11 loss=1.3663 valid_auc=0.6765
+epoch=12 loss=1.2699 valid_auc=0.6746
+epoch=13 loss=1.1638 valid_auc=0.6732
+epoch=14 loss=1.0390 valid_auc=0.6739
+epoch=15 loss=0.9808 valid_auc=0.6769
+epoch=16 loss=0.9194 valid_auc=0.6716
+epoch=17 loss=0.8470 valid_auc=0.6621
+epoch=18 loss=0.7545 valid_auc=0.6415
+epoch=19 loss=0.7070 valid_auc=0.6638
+epoch=20 loss=0.7180 valid_auc=0.6461
+epoch=21 loss=0.6850 valid_auc=0.6630
+epoch=22 loss=0.5673 valid_auc=0.6537
+epoch=23 loss=0.5445 valid_auc=0.6409
+epoch=24 loss=0.4806 valid_auc=0.6354
+epoch=25 loss=0.4780 valid_auc=0.6393
+epoch=26 loss=0.4692 valid_auc=0.6107
+epoch=27 loss=0.4447 valid_auc=0.6318
+epoch=28 loss=0.4115 valid_auc=0.6126
+epoch=29 loss=0.3834 valid_auc=0.6323
+epoch=30 loss=0.3815 valid_auc=0.6229
+epoch=31 loss=0.3212 valid_auc=0.6129
+epoch=32 loss=0.3109 valid_auc=0.6435
+epoch=33 loss=0.2823 valid_auc=0.6637
+epoch=34 loss=0.2977 valid_auc=0.6439
+epoch=35 loss=0.2356 valid_auc=0.6735
+epoch=36 loss=0.2297 valid_auc=0.6618
+epoch=37 loss=0.2209 valid_auc=0.6664
+epoch=38 loss=0.2178 valid_auc=0.6617
+epoch=39 loss=0.1932 valid_auc=0.6551
+epoch=40 loss=0.1935 valid_auc=0.6477
+epoch=41 loss=0.2103 valid_auc=0.6578
+epoch=42 loss=0.1729 valid_auc=0.6478
+epoch=43 loss=0.1467 valid_auc=0.6393
+epoch=44 loss=0.1512 valid_auc=0.6437
+epoch=45 loss=0.1574 valid_auc=0.6293
+epoch=46 loss=0.1746 valid_auc=0.6475
+epoch=47 loss=0.1636 valid_auc=0.6459
+epoch=48 loss=0.1481 valid_auc=0.6690
+epoch=49 loss=0.1367 valid_auc=0.6584
+epoch=50 loss=0.1470 valid_auc=0.6378
+시장 배당률 연결: 6,639/6,639행
+[Test 시장 q] ROC-AUC=0.8122  PR-AUC=0.3303  rows=6639
+{
+  "valid_roc_auc": 0.7515094476864413,
+  "test_roc_auc": 0.7683908890136235,
+  "test_pr_auc": 0.2737921899850357,
+  "market_test": {
+    "roc_auc": 0.8121586921055254,
+    "pr_auc": 0.3303129788438808,
+    "rows": 6639
+  }
+}
+시장 배당률 연결: 6,639/6,639행
+[Test EDGE] top10% ROI=0.2328  realized_edge=0.0424
+
+=== 전체 피처 중요도 순위: 1위 ~ 121위 (input_weight_importance) ===
+ rank                feature  input_weight_importance
+    1            hr_last_ord                 0.032894
+    2                age__pr                 0.032458
+    3               oh_sex_수                 0.031987
+    4              rating__z                 0.031724
+    5           oh_budam_핸디캡                 0.031552
+    6          style_vs_race                 0.031515
+    7             tool_혀보정재갈                 0.031464
+    8               oh_sex_거                 0.031420
+    9           oh_weather_비                 0.031379
+   10             log_winAmt                 0.031374
+   11                te_rank                 0.031250
+   12           tool_눈가면_오른쪽                 0.031242
+   13                 rcDist                 0.031122
+   14               spRating                 0.031097
+   15             hr_winrate                 0.031069
+   16            tool_에퀼락스편자                 0.031054
+   17           train_sec_14                 0.031014
+   18             ow_plcrate                 0.031011
+   19          race_style_sd                 0.030982
+   20          tr_winrate__z                 0.030981
+   21 tool_패드편자_Hoof_Rim_Pad                 0.030980
+   22           oh_weather_눈                 0.030963
+   23              te_owName                 0.030944
+   24           jkhr_winrate                 0.030940
+   25             ow_winrate                 0.030919
+   26             oh_born_미국                 0.030908
+   27          pace_conflict                 0.030907
+   28            oh_born_캐나다                 0.030895
+   29             jk_winrate                 0.030870
+   30             oh_born_한국                 0.030868
+   31                 rating                 0.030854
+   32             tr_plcrate                 0.030850
+   33               stRating                 0.030817
+   34          oh_weather_맑음                 0.030808
+   35             tool_망사눈가면                 0.030778
+   36          train_runs_14                 0.030771
+   37                    age                 0.030770
+   38         tool_망사눈가면_오른쪽                 0.030763
+   39            tool_보조선진입마                 0.030754
+   40             oh_born_호주                 0.030750
+   41       train_runs_14__z                 0.030738
+   42           oh_born_뉴질랜드                 0.030729
+   43        hr_rest_days__z                 0.030724
+   44         hr_dist_starts                 0.030718
+   45            tool_눈가면_왼쪽                 0.030692
+   46              tool_망사가면                 0.030685
+   47             hr_plcrate                 0.030669
+   48              hr_starts                 0.030664
+   49                 chulNo                 0.030658
+   50          jk_winrate__z                 0.030655
+   51               tool_눈가면                 0.030644
+   52           oh_rcDay_토요일                 0.030644
+   53             jk_plcrate                 0.030642
+   54             tool_양털뺨굴레                 0.030636
+   55          train_days_14                 0.030605
+   56        race_style_mean                 0.030596
+   57                   ilsu                 0.030586
+   58           race_front_n                 0.030579
+   59            wgBudam_chg                 0.030567
+   60       race_front_ratio                 0.030557
+   61     tool_패드편자_Hoof_Pad                 0.030556
+   62                 plcAmt                 0.030528
+   63              ow_starts                 0.030516
+   64               oh_sex_암                 0.030488
+   65            hr_dist_chg                 0.030465
+   66              jk_starts                 0.030450
+   67    tool_Cornell_Collar                 0.030448
+   68                 winAmt                 0.030448
+   69           oh_rcDay_월요일                 0.030426
+   70           oh_budam_별정B                 0.030407
+   71             tool_구각자극판                 0.030393
+   72         tool_양뒷다리편자미착용                 0.030388
+   73  tool_BlueBond편자_오른앞다리                 0.030376
+   74             oh_born_일본                 0.030350
+   75              te_trName                 0.030339
+   76           tool_눈가리개_BF                 0.030282
+   77        hr_dist_winrate                 0.030280
+   78          tool_혀보정큰고리재갈                 0.030276
+   79                wg_diff                 0.030269
+   80                  ill_n                 0.030257
+   81               is_front                 0.030252
+   82            oh_budam_마령                 0.030226
+   83              tool_혀보정끈                 0.030221
+   84             wgBudam__z                 0.030214
+   85            tool_JR러깅재갈                 0.030211
+   86                 tool_n                 0.030193
+   87          tool_계란형큰고리재갈                 0.030184
+   88          tool_망사눈가면_왼쪽                 0.030150
+   89          liq_per_horse                 0.030140
+   90          hr_winrate__z                 0.030135
+   91                  n_run                 0.030120
+   92            hr_style_sd                 0.030115
+   93              tr_starts                 0.030107
+   94           hr_rest_days                 0.030092
+   95              te_jkName                 0.030063
+   96              tool_가지재갈                 0.030058
+   97            tool_귀가면_출장                 0.030058
+   98             tool_3_4편자                 0.030040
+   99                     wg                 0.029946
+  100                  buga1                 0.029945
+  101             tool_양털코굴레                 0.029930
+  102             wg_diff__z                 0.029919
+  103             tr_winrate                 0.029896
+  104                  wg__z                 0.029871
+  105       tool_Triabit러깅재갈                 0.029844
+  106           oh_born_한국_포                 0.029721
+  107           oh_rcDay_일요일                 0.029713
+  108               totalAmt                 0.029706
+  109                wgBudam                 0.029694
+  110             clinic_30d                 0.029605
+  111           oh_budam_별정A                 0.029599
+  112        tool_BlueBond편자                 0.029564
+  113          tool_반가지큰고리재갈                 0.029534
+  114            jkhr_starts                 0.029413
+  115           hr_last_dist                 0.029360
+  116   tool_BlueBond편자_왼앞다리                 0.029350
+  117              waterRate                 0.029284
+  118          oh_weather_흐림                 0.029271
+  119      tool_쿠션편자_Cushion                 0.028856
+  120               hr_style                 0.001241
+  121                ageCond                 0.001167
+
+=== 하위 70개 피처 (input_weight_importance) ===
+ rank               feature  input_weight_importance
+  121               ageCond                 0.001167
+  120              hr_style                 0.001241
+  119     tool_쿠션편자_Cushion                 0.028856
+  118         oh_weather_흐림                 0.029271
+  117             waterRate                 0.029284
+  116  tool_BlueBond편자_왼앞다리                 0.029350
+  115          hr_last_dist                 0.029360
+  114           jkhr_starts                 0.029413
+  113         tool_반가지큰고리재갈                 0.029534
+  112       tool_BlueBond편자                 0.029564
+  111          oh_budam_별정A                 0.029599
+  110            clinic_30d                 0.029605
+  109               wgBudam                 0.029694
+  108              totalAmt                 0.029706
+  107          oh_rcDay_일요일                 0.029713
+  106          oh_born_한국_포                 0.029721
+  105      tool_Triabit러깅재갈                 0.029844
+  104                 wg__z                 0.029871
+  103            tr_winrate                 0.029896
+  102            wg_diff__z                 0.029919
+  101            tool_양털코굴레                 0.029930
+  100                 buga1                 0.029945
+   99                    wg                 0.029946
+   98            tool_3_4편자                 0.030040
+   97           tool_귀가면_출장                 0.030058
+   96             tool_가지재갈                 0.030058
+   95             te_jkName                 0.030063
+   94          hr_rest_days                 0.030092
+   93             tr_starts                 0.030107
+   92           hr_style_sd                 0.030115
+   91                 n_run                 0.030120
+   90         hr_winrate__z                 0.030135
+   89         liq_per_horse                 0.030140
+   88         tool_망사눈가면_왼쪽                 0.030150
+   87         tool_계란형큰고리재갈                 0.030184
+   86                tool_n                 0.030193
+   85           tool_JR러깅재갈                 0.030211
+   84            wgBudam__z                 0.030214
+   83             tool_혀보정끈                 0.030221
+   82           oh_budam_마령                 0.030226
+   81              is_front                 0.030252
+   80                 ill_n                 0.030257
+   79               wg_diff                 0.030269
+   78         tool_혀보정큰고리재갈                 0.030276
+   77       hr_dist_winrate                 0.030280
+   76          tool_눈가리개_BF                 0.030282
+   75             te_trName                 0.030339
+   74            oh_born_일본                 0.030350
+   73 tool_BlueBond편자_오른앞다리                 0.030376
+   72        tool_양뒷다리편자미착용                 0.030388
+   71            tool_구각자극판                 0.030393
+   70          oh_budam_별정B                 0.030407
+   69          oh_rcDay_월요일                 0.030426
+   68                winAmt                 0.030448
+   67   tool_Cornell_Collar                 0.030448
+   66             jk_starts                 0.030450
+   65           hr_dist_chg                 0.030465
+   64              oh_sex_암                 0.030488
+   63             ow_starts                 0.030516
+   62                plcAmt                 0.030528
+   61    tool_패드편자_Hoof_Pad                 0.030556
+   60      race_front_ratio                 0.030557
+   59           wgBudam_chg                 0.030567
+   58          race_front_n                 0.030579
+   57                  ilsu                 0.030586
+   56       race_style_mean                 0.030596
+   55         train_days_14                 0.030605
+   54            tool_양털뺨굴레                 0.030636
+   53            jk_plcrate                 0.030642
+   52          oh_rcDay_토요일                 0.030644
+저장: models\v5\plackett_luce\feature_importance_full.csv, models\v5\plackett_luce\bottom_70_feature_importance.csv

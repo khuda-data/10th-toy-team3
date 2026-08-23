@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "source_shapes": {
+    "train": [
+      19617,
+      146
+    ],
+    "valid": [
+      6582,
+      146
+    ],
+    "test": [
+      6639,
+      146
+    ]
+  },
+  "output_shapes": {
+    "train": [
+      19617,
+      134
+    ],
+    "valid": [
+      6582,
+      134
+    ],
+    "test": [
+      6639,
+      134
+    ]
+  },
+  "numeric_source_features": 120,
+  "categorical_source_features": [
+    "ageCond"
+  ],
+  "one_hot_output_features": 8,
+  "total_model_features": 128,
+  "removed_constant_features": [],
+  "source_dtype_mismatches": {
+    "jkNo": {
+      "train": "object",
+      "valid": "object",
+      "test": "int64"
+    },
+    "owNo": {
+      "train": "int64",
+      "valid": "int64",
+      "test": "object"
+    },
+    "trNo": {
+      "train": "int64",
+      "valid": "int64",
+      "test": "object"
+    }
+  },
+  "all_columns_numeric": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "nan_count": {
+    "train": 0,
+    "valid": 0,
+    "test": 0
+  },
+  "infinite_count": {
+    "train": 0,
+    "valid": 0,
+    "test": 0
+  },
+  "rows_preserved": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "unique_entry_codes": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "train_numeric_max_abs_mean": 1.199631717814881e-15,
+  "train_numeric_max_abs_std_error": 4.440892098500626e-16
+}

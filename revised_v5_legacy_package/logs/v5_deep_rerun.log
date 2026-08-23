@@ -1,0 +1,297 @@
+>> 데이터 로딩/전처리 ...
+   rows=32838  num_feat=119  cat=['ageCond', 'hr_style']
+   races: train=1891 valid=641 test=635
+>> 앙상블 멤버 1/5 학습
+  [seed 1234] epoch   1  loss 2.2523  valid AUC 0.7267
+  [seed 1234] epoch   2  loss 2.1025  valid AUC 0.7382
+  [seed 1234] epoch   3  loss 2.0610  valid AUC 0.7435
+  [seed 1234] epoch   4  loss 2.0208  valid AUC 0.7467
+  [seed 1234] epoch   5  loss 1.9858  valid AUC 0.7517
+  [seed 1234] epoch   6  loss 1.9580  valid AUC 0.7527
+  [seed 1234] epoch   7  loss 1.9164  valid AUC 0.7552
+  [seed 1234] epoch   8  loss 1.8926  valid AUC 0.7526
+  [seed 1234] epoch   9  loss 1.8532  valid AUC 0.7521
+  [seed 1234] epoch  10  loss 1.7882  valid AUC 0.7394
+  [seed 1234] epoch  11  loss 1.7237  valid AUC 0.7418
+  [seed 1234] epoch  12  loss 1.6533  valid AUC 0.7296
+  [seed 1234] epoch  13  loss 1.5499  valid AUC 0.6964
+  [seed 1234] epoch  14  loss 1.4901  valid AUC 0.7047
+  [seed 1234] epoch  15  loss 1.4263  valid AUC 0.7134
+  [seed 1234] early stop (best AUC 0.7552)
+>> 앙상블 멤버 2/5 학습
+  [seed 1235] epoch   1  loss 2.2638  valid AUC 0.7286
+  [seed 1235] epoch   2  loss 2.1076  valid AUC 0.7441
+  [seed 1235] epoch   3  loss 2.0634  valid AUC 0.7491
+  [seed 1235] epoch   4  loss 2.0294  valid AUC 0.7524
+  [seed 1235] epoch   5  loss 1.9879  valid AUC 0.7561
+  [seed 1235] epoch   6  loss 1.9535  valid AUC 0.7586
+  [seed 1235] epoch   7  loss 1.9069  valid AUC 0.7554
+  [seed 1235] epoch   8  loss 1.8719  valid AUC 0.7607
+  [seed 1235] epoch   9  loss 1.8493  valid AUC 0.7571
+  [seed 1235] epoch  10  loss 1.7693  valid AUC 0.7554
+  [seed 1235] epoch  11  loss 1.7194  valid AUC 0.7444
+  [seed 1235] epoch  12  loss 1.6649  valid AUC 0.7405
+  [seed 1235] epoch  13  loss 1.5688  valid AUC 0.7261
+  [seed 1235] epoch  14  loss 1.4859  valid AUC 0.7253
+  [seed 1235] epoch  15  loss 1.4270  valid AUC 0.6993
+  [seed 1235] epoch  16  loss 1.3797  valid AUC 0.7093
+  [seed 1235] early stop (best AUC 0.7607)
+>> 앙상블 멤버 3/5 학습
+  [seed 1236] epoch   1  loss 2.2956  valid AUC 0.7275
+  [seed 1236] epoch   2  loss 2.1295  valid AUC 0.7477
+  [seed 1236] epoch   3  loss 2.0756  valid AUC 0.7525
+  [seed 1236] epoch   4  loss 2.0267  valid AUC 0.7542
+  [seed 1236] epoch   5  loss 1.9988  valid AUC 0.7576
+  [seed 1236] epoch   6  loss 1.9578  valid AUC 0.7586
+  [seed 1236] epoch   7  loss 1.9248  valid AUC 0.7561
+  [seed 1236] epoch   8  loss 1.8918  valid AUC 0.7550
+  [seed 1236] epoch   9  loss 1.8148  valid AUC 0.7524
+  [seed 1236] epoch  10  loss 1.7707  valid AUC 0.7412
+  [seed 1236] epoch  11  loss 1.7160  valid AUC 0.7359
+  [seed 1236] epoch  12  loss 1.6248  valid AUC 0.7348
+  [seed 1236] epoch  13  loss 1.5697  valid AUC 0.7181
+  [seed 1236] epoch  14  loss 1.4694  valid AUC 0.6958
+  [seed 1236] early stop (best AUC 0.7586)
+>> 앙상블 멤버 4/5 학습
+  [seed 1237] epoch   1  loss 2.2628  valid AUC 0.7354
+  [seed 1237] epoch   2  loss 2.1135  valid AUC 0.7489
+  [seed 1237] epoch   3  loss 2.0532  valid AUC 0.7518
+  [seed 1237] epoch   4  loss 2.0215  valid AUC 0.7547
+  [seed 1237] epoch   5  loss 1.9814  valid AUC 0.7595
+  [seed 1237] epoch   6  loss 1.9503  valid AUC 0.7590
+  [seed 1237] epoch   7  loss 1.9127  valid AUC 0.7604
+  [seed 1237] epoch   8  loss 1.8606  valid AUC 0.7600
+  [seed 1237] epoch   9  loss 1.8332  valid AUC 0.7557
+  [seed 1237] epoch  10  loss 1.7735  valid AUC 0.7412
+  [seed 1237] epoch  11  loss 1.7112  valid AUC 0.7376
+  [seed 1237] epoch  12  loss 1.6184  valid AUC 0.7307
+  [seed 1237] epoch  13  loss 1.5466  valid AUC 0.7179
+  [seed 1237] epoch  14  loss 1.5066  valid AUC 0.7178
+  [seed 1237] epoch  15  loss 1.3870  valid AUC 0.7189
+  [seed 1237] early stop (best AUC 0.7604)
+>> 앙상블 멤버 5/5 학습
+  [seed 1238] epoch   1  loss 2.2549  valid AUC 0.7301
+  [seed 1238] epoch   2  loss 2.1136  valid AUC 0.7414
+  [seed 1238] epoch   3  loss 2.0704  valid AUC 0.7450
+  [seed 1238] epoch   4  loss 2.0292  valid AUC 0.7499
+  [seed 1238] epoch   5  loss 1.9972  valid AUC 0.7529
+  [seed 1238] epoch   6  loss 1.9504  valid AUC 0.7556
+  [seed 1238] epoch   7  loss 1.9198  valid AUC 0.7571
+  [seed 1238] epoch   8  loss 1.8803  valid AUC 0.7554
+  [seed 1238] epoch   9  loss 1.8326  valid AUC 0.7530
+  [seed 1238] epoch  10  loss 1.7769  valid AUC 0.7474
+  [seed 1238] epoch  11  loss 1.7420  valid AUC 0.7461
+  [seed 1238] epoch  12  loss 1.6548  valid AUC 0.7354
+  [seed 1238] epoch  13  loss 1.5926  valid AUC 0.7313
+  [seed 1238] epoch  14  loss 1.5033  valid AUC 0.7109
+  [seed 1238] epoch  15  loss 1.4485  valid AUC 0.7135
+  [seed 1238] early stop (best AUC 0.7571)
+
+=== 전체 피처 중요도 순위: 1위 ~ 121위 (input_weight_importance) ===
+ rank                feature  input_weight_importance
+    1            hr_last_ord                 0.030926
+    2             hr_plcrate                 0.030911
+    3           oh_budam_별정A                 0.030755
+    4       train_runs_14__z                 0.030650
+    5         hr_dist_starts                 0.030609
+    6               spRating                 0.030595
+    7             wgBudam__z                 0.030561
+    8           oh_born_한국_포                 0.030541
+    9           race_front_n                 0.030538
+   10            tool_눈가면_왼쪽                 0.030537
+   11          tr_winrate__z                 0.030505
+   12          train_days_14                 0.030504
+   13 tool_패드편자_Hoof_Rim_Pad                 0.030492
+   14          tool_혀보정큰고리재갈                 0.030484
+   15            hr_style_sd                 0.030465
+   16              ow_starts                 0.030448
+   17                    age                 0.030426
+   18               oh_sex_암                 0.030405
+   19           oh_rcDay_월요일                 0.030403
+   20             hr_winrate                 0.030401
+   21               oh_sex_수                 0.030396
+   22            wgBudam_chg                 0.030395
+   23               tool_눈가면                 0.030387
+   24            tool_에퀼락스편자                 0.030377
+   25              tr_starts                 0.030375
+   26                 rating                 0.030372
+   27           oh_weather_눈                 0.030356
+   28                age__pr                 0.030344
+   29           oh_rcDay_토요일                 0.030344
+   30                te_rank                 0.030336
+   31    tool_Cornell_Collar                 0.030334
+   32             clinic_30d                 0.030328
+   33              tool_가지재갈                 0.030323
+   34                 chulNo                 0.030316
+   35              te_owName                 0.030315
+   36             oh_born_일본                 0.030298
+   37         tool_양뒷다리편자미착용                 0.030293
+   38          pace_conflict                 0.030293
+   39          race_style_sd                 0.030290
+   40       tool_Triabit러깅재갈                 0.030288
+   41              te_trName                 0.030278
+   42                 rcDist                 0.030278
+   43            jkhr_starts                 0.030276
+   44     tool_패드편자_Hoof_Pad                 0.030274
+   45                  buga1                 0.030271
+   46                   ilsu                 0.030256
+   47             ow_plcrate                 0.030251
+   48                     wg                 0.030249
+   49               oh_sex_거                 0.030233
+   50           oh_budam_별정B                 0.030231
+   51             oh_born_호주                 0.030227
+   52             oh_born_미국                 0.030225
+   53              hr_starts                 0.030221
+   54            tool_보조선진입마                 0.030220
+   55           tool_눈가리개_BF                 0.030213
+   56  tool_BlueBond편자_오른앞다리                 0.030207
+   57             tool_구각자극판                 0.030194
+   58              te_jkName                 0.030191
+   59      tool_쿠션편자_Cushion                 0.030183
+   60            hr_dist_chg                 0.030182
+   61              tool_망사가면                 0.030181
+   62          style_vs_race                 0.030178
+   63            tool_귀가면_출장                 0.030173
+   64             jk_winrate                 0.030172
+   65           oh_rcDay_일요일                 0.030171
+   66            oh_born_캐나다                 0.030166
+   67             ow_winrate                 0.030152
+   68             tool_혀보정재갈                 0.030148
+   69             tr_winrate                 0.030145
+   70          train_runs_14                 0.030140
+   71              jk_starts                 0.030135
+   72            oh_budam_마령                 0.030127
+   73             tool_양털코굴레                 0.030125
+   74             tool_양털뺨굴레                 0.030119
+   75           train_sec_14                 0.030118
+   76                  wg__z                 0.030098
+   77        tool_BlueBond편자                 0.030096
+   78                  ill_n                 0.030095
+   79             tool_3_4편자                 0.030095
+   80               stRating                 0.030074
+   81              tool_혀보정끈                 0.030069
+   82           tool_눈가면_오른쪽                 0.030062
+   83          tool_반가지큰고리재갈                 0.030044
+   84        hr_rest_days__z                 0.030036
+   85       race_front_ratio                 0.030032
+   86             wg_diff__z                 0.030025
+   87           hr_last_dist                 0.030018
+   88         tool_망사눈가면_오른쪽                 0.030015
+   89          tool_계란형큰고리재갈                 0.029998
+   90                wg_diff                 0.029996
+   91                wgBudam                 0.029995
+   92          oh_weather_흐림                 0.029989
+   93          tool_망사눈가면_왼쪽                 0.029984
+   94           jkhr_winrate                 0.029980
+   95                 winAmt                 0.029978
+   96           oh_budam_핸디캡                 0.029976
+   97             jk_plcrate                 0.029946
+   98          liq_per_horse                 0.029923
+   99        race_style_mean                 0.029919
+  100            tool_JR러깅재갈                 0.029904
+  101           oh_born_뉴질랜드                 0.029885
+  102              waterRate                 0.029855
+  103              rating__z                 0.029855
+  104                 plcAmt                 0.029845
+  105               is_front                 0.029840
+  106           hr_rest_days                 0.029831
+  107                  n_run                 0.029815
+  108           oh_weather_비                 0.029813
+  109                 tool_n                 0.029805
+  110             tr_plcrate                 0.029787
+  111          oh_weather_맑음                 0.029747
+  112        hr_dist_winrate                 0.029745
+  113          hr_winrate__z                 0.029706
+  114             tool_망사눈가면                 0.029704
+  115             oh_born_한국                 0.029696
+  116             log_winAmt                 0.029673
+  117          jk_winrate__z                 0.029628
+  118               totalAmt                 0.029572
+  119   tool_BlueBond편자_왼앞다리                 0.029464
+  120                ageCond                 0.001256
+  121               hr_style                 0.001217
+
+=== 하위 70개 피처 (input_weight_importance) ===
+ rank               feature  input_weight_importance
+  121              hr_style                 0.001217
+  120               ageCond                 0.001256
+  119  tool_BlueBond편자_왼앞다리                 0.029464
+  118              totalAmt                 0.029572
+  117         jk_winrate__z                 0.029628
+  116            log_winAmt                 0.029673
+  115            oh_born_한국                 0.029696
+  114            tool_망사눈가면                 0.029704
+  113         hr_winrate__z                 0.029706
+  112       hr_dist_winrate                 0.029745
+  111         oh_weather_맑음                 0.029747
+  110            tr_plcrate                 0.029787
+  109                tool_n                 0.029805
+  108          oh_weather_비                 0.029813
+  107                 n_run                 0.029815
+  106          hr_rest_days                 0.029831
+  105              is_front                 0.029840
+  104                plcAmt                 0.029845
+  103             rating__z                 0.029855
+  102             waterRate                 0.029855
+  101          oh_born_뉴질랜드                 0.029885
+  100           tool_JR러깅재갈                 0.029904
+   99       race_style_mean                 0.029919
+   98         liq_per_horse                 0.029923
+   97            jk_plcrate                 0.029946
+   96          oh_budam_핸디캡                 0.029976
+   95                winAmt                 0.029978
+   94          jkhr_winrate                 0.029980
+   93         tool_망사눈가면_왼쪽                 0.029984
+   92         oh_weather_흐림                 0.029989
+   91               wgBudam                 0.029995
+   90               wg_diff                 0.029996
+   89         tool_계란형큰고리재갈                 0.029998
+   88        tool_망사눈가면_오른쪽                 0.030015
+   87          hr_last_dist                 0.030018
+   86            wg_diff__z                 0.030025
+   85      race_front_ratio                 0.030032
+   84       hr_rest_days__z                 0.030036
+   83         tool_반가지큰고리재갈                 0.030044
+   82          tool_눈가면_오른쪽                 0.030062
+   81             tool_혀보정끈                 0.030069
+   80              stRating                 0.030074
+   79            tool_3_4편자                 0.030095
+   78                 ill_n                 0.030095
+   77       tool_BlueBond편자                 0.030096
+   76                 wg__z                 0.030098
+   75          train_sec_14                 0.030118
+   74            tool_양털뺨굴레                 0.030119
+   73            tool_양털코굴레                 0.030125
+   72           oh_budam_마령                 0.030127
+   71             jk_starts                 0.030135
+   70         train_runs_14                 0.030140
+   69            tr_winrate                 0.030145
+   68            tool_혀보정재갈                 0.030148
+   67            ow_winrate                 0.030152
+   66           oh_born_캐나다                 0.030166
+   65          oh_rcDay_일요일                 0.030171
+   64            jk_winrate                 0.030172
+   63           tool_귀가면_출장                 0.030173
+   62         style_vs_race                 0.030178
+   61             tool_망사가면                 0.030181
+   60           hr_dist_chg                 0.030182
+   59     tool_쿠션편자_Cushion                 0.030183
+   58             te_jkName                 0.030191
+   57            tool_구각자극판                 0.030194
+   56 tool_BlueBond편자_오른앞다리                 0.030207
+   55          tool_눈가리개_BF                 0.030213
+   54           tool_보조선진입마                 0.030220
+   53             hr_starts                 0.030221
+   52            oh_born_미국                 0.030225
+저장: models\v5\deep\feature_importance_full.csv, models/v5/deep/bottom_70_feature_importance.csv
+>> 온도 보정 T = 1.000
+>> 성능 평가
+시장 배당률 연결: 0/6,582행
+[valid] 시장 배당률 비교에 필요한 행이 부족합니다.
+   [valid] roc_auc=0.7636  cal_mae=0.0058  top1_hit_rate=0.3120  avg_winner_prob=0.1878
+시장 배당률 연결: 6,639/6,639행
+[test 시장 q] ROC-AUC=0.8122  PR-AUC=0.3303  rows=6639
+   [test] roc_auc=0.7710  cal_mae=0.0056  top1_hit_rate=0.3307  avg_winner_prob=0.1861  market_roc_auc_ref=0.8122  market_pr_auc_ref=0.3303
+시장 배당률 연결: 6,639/6,639행
+[Test EDGE] top10% ROI=-0.0859  realized_edge=-0.0191
+>> 완료 (132s). artifacts → models/v5/deep/

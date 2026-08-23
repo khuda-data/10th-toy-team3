@@ -1,12 +1,8 @@
 # revised_v5 최종 모델 평가 보고서
 
-![데이터 분할](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_data_split.png)
-
 이 그림은 자료가 시간 순서대로 Train·Validation·Test로 한 번만 분리됐음을 보여 준다 파란 Train으로 과거 패턴을 학습하고, 주황 Validation으로 반복 횟수·혼합 비중을 고르며, 녹색 Test는 마지막까지 잠가 둔 최종 평가 구간이다 세 막대가 겹치지 않으므로 미래 경주의 결과나 통계가 과거 학습에 직접 들어가는 누수를 줄인다 오른쪽 행 수 막대는 Train이 더 크고 Validation·Test가 비슷한 규모임을 보여 준다
 
 다만 날짜 분할만으로 모든 피처의 시간 누수가 자동으로 사라지는 것은 아니므로, Target Encoding도 과거 경주만 사용하도록 별도로 처리했다.
-
-![v5 모델 비교](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_model_comparison.png)
 
 왼쪽은 모든 test 행을 대상으로 한 ROC-AUC, 오른쪽은 각 경주에서 최고 EDGE 말 한 두를 남긴 뒤 상위 10%인 64회만 선택했을 때의 원시 ROI다 ROC-AUC는 우승마를 전반적으로 더 높은 순위에 두는 능력이고, ROI는 특정 선택 규칙과 배당 결과가 결합된 수익률이라 단위와 목적이 다르다 점선 시장 기준보다 일반 모델 ROC-AUC가 낮다는 사실과, 일부 모델의 양(+) ROI가 동시에 나타날 수 있다
 
@@ -71,8 +67,6 @@
 
 여섯 일반 모델의 저장된 test 예측을 같은 규칙으로 다시 계산했다. 각 경주에서 최고 EDGE 말 1두만 남기고, 그 경주 후보를 EDGE 내림차순으로 정렬해 상위 범위를 선택했다. 아래 값은 **수수료 미차감 단일 test의 원시 ROI**이므로, 보수적 walk-forward ROI와 혼동하면 안 된다. 선택 범위를 넓혔을 때 결과가 유지되는지 확인하기 위한 표다.
 
-![일반 모델의 선택 범위별 ROI](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_general_model_threshold_comparison.png)
-
 여섯 일반 모델의 저장된 test 예측에서 경주당 최고 EDGE 말 한 두만 고른 뒤, 그 후보를 EDGE 순으로 상위 10%·20%·30%까지 넓혀 계산한 원시 ROI다 선택 범위를 넓히면 표본은 64회에서 127회, 191회로 커지지만 평균 EDGE는 낮아진다 따라서 상위 10%의 큰 양수 ROI가 20%·30%에서도 유지되는지 확인하면 특정 소수 경주에만 의존했는지 판단할 수 있다
 
 이 그림은 수수료를 차감하지 않은 단일 Test 기간의 결과이며, 시간 순서 반복 검증이나 실제 배팅 한도를 반영하지 않는다 막대의 부호 변화는 모델 신호와 수익률이 선택 범위에 민감하다는 경고로 읽어야 한다.
@@ -118,8 +112,6 @@
 | Deep listwise | 5-seed 경주 단위 앙상블 | 경주 내부 확률 합계 1 제약 학습 |
 | Plackett-Luce hybrid | listwise + Bradley-Terry | 경주 단위 상대 순위 학습 |
 
-![EDGE 진단](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_edge_diagnostics.png)
-
 세 패널은 같은 64회 선택 결과를 서로 다른 관점에서 분리해 보여 준다 ROI는 실제 배당을 포함한 수익률, 평균 실현 EDGE는 선택 말들이 시장 예상보다 실제로 더 자주 이겼는지, 상관은 큰 예측 EDGE를 준 말일수록 시장 예상보다 더 잘 뛰었는지를 뜻한다 예를 들어 ROI가 높아도 실현 EDGE나 상관이 약하면 우연한 배당 적중에 민감할 수 있다 반대로 실현 EDGE가 양수여도 수수료와 배당 구조 때문에 ROI가 음수일 수 있다
 
 따라서 세 막대를 하나의 점수로 합치지 말고, 방향성과 표본 수 64회를 함께 읽어야 한다.
@@ -129,8 +121,6 @@
 최종 일반 모델과 비교 조건이 다른 별도 실험은 본문에서 제외하고, 원래 Train 기간의 1,891경주만 사용한 **5-fold GroupKFold** 검증을 수행했다. 최종 Validation·Test는 이 검증에 사용하지 않았으며, 각 경주는 통째로 하나의 fold에만 포함된다. 따라서 같은 경주의 말이 학습과 검증으로 섞이지 않는다.
 
 이 검증은 LightGBM rank+binary에 적용했다. 매 fold에서 약 1,512~1,513경주로 새로 학습하고 약 378~379경주로 평가했으며, 범주형 코드도 fold의 학습 경주로만 다시 생성했다. 시장 확률·배당률·결과 누수 열은 모델 입력에 사용하지 않았다. 이는 ROI 검증이 아니라 **확률·순위 성능이 경주 묶음에 따라 얼마나 안정적인지** 확인하는 검증이다.
-
-![LightGBM 5-fold 검증](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_lightgbm_5fold_validation.png)
 
 각 막대는 한 fold의 독립 검증 결과이고 점선은 5개 평균이다. ROC-AUC 평균은 **0.7457 ± 0.0115**, PR-AUC 평균은 **0.2578 ± 0.0262**, top-1 적중률 평균은 **0.2861 ± 0.0220**다. OOF 통합 ROC-AUC는 **0.7454**, OOF 통합 PR-AUC는 **0.2518**다. fold 4 ROC-AUC 0.7289와 fold 5 0.7594의 차이는 평균만으로 가려지는 변동성을 보여 준다.
 
@@ -145,8 +135,6 @@
 이 표는 6개 모델을 다시 순위화한 결과가 아니다. 2번의 최종 Test 비교를 보완하는 LightGBM rank+binary의 내부 안정성 검증이다. 또한 GroupKFold는 경주 단위 누수를 막지만, 미래 날짜만을 평가하는 순방향 walk-forward와는 다른 검증 방식이다.
 
 ## 4. 피처·성과 해석 및 검증 기준
-
-![6개 모델 합의 피처 중요도](C:/Users/goqud/source/repos/PythonApplication1/PythonApplication1/outputs/reports/v5_feature_importance_consensus.png)
 
 왼쪽은 여섯 모델의 평균 순위 점수, 오른쪽은 모델별 순위 점수다. 여러 열에서 진하게 나타나고 `top-20 in n/6` 횟수가 많은 변수는 특정 알고리즘 하나에만 의존하지 않는 반복 신호다.
 

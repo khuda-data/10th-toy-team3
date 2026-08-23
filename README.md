@@ -82,7 +82,7 @@ pip install -r requirements.txt
 | 각도 ① 1차 | `python 1_변별력/1차_승률모델/01_train_model.py` | 1분 |
 | 각도 ① 3차 | `cd 1_변별력/3차_모델6종 && python src/train_preprocessed_models.py --model lightgbm` | 10초 |
 | 각도 ② | `cd 2_확률품질 && python reproduce.py` | 수십 분 |
-| 각도 ③ | `python 3_수익성/이변모델/08_full_pipeline.py` | 10초 |
+| 각도 ③ | `python 3_수익성/2_준석_초기_이변모델/08_full_pipeline.py` | 10초 |
 
 > **버전을 반드시 맞춰주세요.** scikit-learn 버전이 다르면 같은 데이터·같은 시드인데도
 > RandomForest 결과가 달라집니다. `requirements.txt` 상단에 근거를 적어뒀습니다.
@@ -124,9 +124,9 @@ pip install -r requirements.txt
 
 | 이름 | GitHub | 담당 | 코드 위치 |
 |---|---|---|---|
-| 김찬진 | `cj001212` | 저장소 개설 · 시장확률 보정 · 이변 분석 | `2_확률품질/` · `3_수익성/찬진_이변분석/` |
+| 김찬진 | `cj001212` | 저장소 개설 · 시장확률 보정 · 이변 분석 | `2_확률품질/` · `3_수익성/3_찬진_이변분석/` |
 | 윤우진 | `PLAUROS` | 데이터 수집 · 전처리 · 문헌 조사 · 저장소 정리 | `0_공통/` |
-| 박준석 | `junseok` | EDA · 승률 모델링 · 이변 예측과 베팅 전략 | `1_변별력/1차_` · `3_수익성/이변모델*` |
+| 박준석 | `junseok` | EDA · 승률 모델링 · 이변 예측과 베팅 전략 | `1_변별력/1차_` · `3_수익성/1_준석_최신_신뢰성검증` |
 | 홍정의 | `a01063950463-svg` | 비시장 모델 피처 수 실험 | `1_변별력/2차_비시장모델/` |
 | 이종원 | `happy97908a-cmyk` | 3차 모델링 6종 비교 · LightGBM 5-fold | `1_변별력/3차_모델6종/` |
 | 전유림 | `yoolim-jeon` | 이변 유형별 특징 분석 | — |

@@ -37,7 +37,6 @@
 !*.html
 !*.json
 !reports/**/*.csv
-!발표자료/**/*.csv
 !데이터명세서.xlsx
 
 !*.png
@@ -80,11 +79,23 @@ __pycache__/
 # 압축하지 않은 대용량 CSV — 반드시 .csv.gz 로 올릴 것
 *.csv
 !reports/**/*.csv
+
+# ── master 구조 예외 ────────────────────────────────
+# 발표에 쓰는 근거 표와 모델 지표는 올린다
 !발표자료/**/*.csv
+!1_변별력/**/결과/**/*.csv
+!2_확률품질/expected/*.csv
+!3_수익성/**/outputs/tables/*.csv
+
+# 다만 예측 원본과 하위 중요도는 제외 (재생성 가능 · 용량)
+1_변별력/**/edge_test_predictions.csv
+1_변별력/**/bottom_70_feature_importance.csv
 
 # 예외: 시장확률보정 파이프라인은 자체 완결 구조라 부속 파일을 함께 둡니다
 !src/3_시장대조/시장확률보정/**/*.csv
 !src/3_시장대조/시장확률보정/**/*.joblib
+
+# 모델 학습 산출 예외 — 서울 전용 재학습 결과표
 
 # 로컬 원본 데이터 폴더 (586MB · 214MB)
 # 앞의 / 는 "저장소 최상위에서만"이라는 뜻입니다.
@@ -94,6 +105,7 @@ __pycache__/
 
 # 실행하면 생기는 산출물 폴더 (저장소에 올리지 않습니다)
 /results/
+/catboost_info/
 /data/versions/
 /data/splits/
 

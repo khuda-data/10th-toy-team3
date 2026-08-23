@@ -1,0 +1,125 @@
+{
+  "policy_version": 1,
+  "stage": 21,
+  "status": "approved_and_frozen_before_modeling",
+  "approved_date": "2026-08-22",
+  "scope": "Seoul win-probability model Top-1 constrained optimization",
+  "objective": "Beat market Top-1 accuracy without degrading Race Log Loss or Race Brier",
+  "random_seed": 42,
+  "probability_tolerance": 1e-06,
+  "metric_directions": {
+    "delta_top1": "model_top1_minus_market_top1",
+    "delta_logloss": "market_race_logloss_minus_model_race_logloss",
+    "delta_brier": "market_race_brier_minus_model_race_brier",
+    "positive_means": "model_is_better"
+  },
+  "data_boundaries": {
+    "train": {
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "allowed_uses": [
+        "feature_and_preprocessor_fit",
+        "ranker_fit",
+        "chronological_oof_predictions"
+      ]
+    },
+    "calibration": {
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "allowed_uses": [
+        "candidate_selection",
+        "rank_score_temperature",
+        "gate_and_threshold_selection",
+        "lambda_switch_selection"
+      ]
+    },
+    "opened_final_test": {
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "status": "opened_descriptive_only",
+      "forbidden_uses": [
+        "feature_selection",
+        "hyperparameter_selection",
+        "gate_training",
+        "threshold_selection",
+        "lambda_selection",
+        "candidate_selection",
+        "official_success_claim"
+      ]
+    },
+    "future_holdout": {
+      "status": "pending_data",
+      "venue": "Seoul",
+      "anchor_date_exclusive": 20260809,
+      "selection": "first_500_eligible_races_in_chronological_order",
+      "target_races": 500,
+      "outcomes_sealed_until_candidate_freeze": true,
+      "no_interim_model_changes": true,
+      "eligibility": [
+        "complete_runner_list",
+        "exactly_one_winner",
+        "valid_win_odds_for_all_entries",
+        "all_features_available_before_prediction_time",
+        "normal_official_race"
+      ],
+      "exclude_whole_race": [
+        "cancelled_or_void",
+        "dead_heat",
+        "incomplete_collection",
+        "outcome_inspected_before_freeze"
+      ]
+    }
+  },
+  "unique_top1_tie_break": [
+    "p_final_desc",
+    "q_market_desc",
+    "entry_id_asc"
+  ],
+  "market_top1_tie_break": [
+    "q_market_desc",
+    "entry_id_asc"
+  ],
+  "candidate_families": [
+    "R0_market",
+    "R1_existing_m2_xgboost",
+    "R2_xgb_pairwise_ranker",
+    "R3_fixed_geometric_market_blend",
+    "R4_gated_adaptive_geometric_market_blend"
+  ],
+  "candidate_selection_order": [
+    "reject_contract_or_leakage_failures",
+    "require_calibration_delta_logloss_gte_zero",
+    "require_calibration_delta_brier_gte_zero",
+    "maximize_calibration_delta_top1",
+    "tie_break_by_fewer_market_overrides",
+    "tie_break_by_lower_complexity"
+  ],
+  "research_success_on_future_holdout": {
+    "delta_top1_gt": 0.0,
+    "paired_bootstrap_delta_top1_ci_lower_gt": 0.0,
+    "mcnemar_exact_two_sided_p_lt": 0.05,
+    "delta_logloss_gte": 0.0,
+    "delta_brier_gte": 0.0,
+    "probability_sum_required": true
+  },
+  "champion_promotion_additional_requirements": {
+    "delta_logloss_gt": 0.0,
+    "paired_bootstrap_delta_logloss_ci_lower_gte": 0.0,
+    "delta_brier_gt": 0.0,
+    "period_reproducibility_required": true,
+    "no_severe_calibration_distortion": true
+  },
+  "inference": {
+    "bootstrap_unit": "race_id",
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 42,
+    "confidence_level": 0.95,
+    "mcnemar_method": "exact_two_sided"
+  },
+  "failure_policy": {
+    "research_success_without_promotion": "research_challenger",
+    "requirements_not_met": "no_change",
+    "insufficient_future_races": "pending_data",
+    "existing_champion_and_no_bet_policy_remain": true
+  }
+}

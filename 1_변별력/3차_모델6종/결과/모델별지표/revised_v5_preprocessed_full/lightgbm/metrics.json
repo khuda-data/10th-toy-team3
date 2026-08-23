@@ -1,0 +1,34 @@
+{
+  "valid": {
+    "raw_roc_auc": 0.7593046391439903,
+    "roc_auc": 0.7593047704402706,
+    "pr_auc": 0.2676462117240542,
+    "log_loss": 0.2781874284744275,
+    "brier_score": 0.07957131859435837,
+    "cal_mae": 0.004913874401986272,
+    "top1_hit_rate": 0.2870514820592824,
+    "avg_winner_prob": 0.18282595038303037
+  },
+  "test": {
+    "raw_roc_auc": 0.756919271666658,
+    "roc_auc": 0.756919271666658,
+    "pr_auc": 0.26563079651534044,
+    "log_loss": 0.2762437965907259,
+    "brier_score": 0.07879178557133534,
+    "cal_mae": 0.010874721513172331,
+    "top1_hit_rate": 0.31811023622047246,
+    "avg_winner_prob": 0.17537866998492915,
+    "market_roc_auc_ref": 0.8121586921055254,
+    "market_pr_auc_ref": 0.3303129788438808,
+    "edge_test": {
+      "rows": 635,
+      "top10pct_count": 64,
+      "top10pct_mean_predicted_edge": 0.23169411638723392,
+      "top10pct_mean_realized_edge": 0.015565312190363145,
+      "top10pct_roi": 0.5453124999999999,
+      "positive_edge_count": 634,
+      "positive_edge_roi": -0.013091482649842294,
+      "edge_realized_correlation": 0.027580023717525815
+    }
+  }
+}

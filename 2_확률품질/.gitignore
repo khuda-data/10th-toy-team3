@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# 재현 과정에서 생성되는 파생 산출물
+artifacts/
+reports/
+data/interim/
+data/predictions/
+data/analysis/
+data/manifests/*.json
+
+# 재현에 필요한 고정 입력 manifest
+!data/manifests/raw_manifest.json
+!data/manifests/dataset_policy.json
+!data/manifests/top1_research_policy.json
+

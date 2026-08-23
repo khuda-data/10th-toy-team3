@@ -1,0 +1,46 @@
+{
+  "scope": "raw data to the frozen stage-27 probability-quality challenger",
+  "python": "3.12.x 64-bit",
+  "random_seed": 42,
+  "input_files": [
+    "data/raw/final.csv.gz",
+    "data/manifests/raw_manifest.json",
+    "data/manifests/dataset_policy.json",
+    "data/manifests/top1_research_policy.json",
+    "FUTURE_HOLDOUT_VALIDATION.md"
+  ],
+  "pipeline_modules": [
+    "src.data.validate_schema",
+    "src.data.build_seoul_interim",
+    "src.data.build_splits",
+    "src.features.build_registry",
+    "src.models.market_baseline",
+    "src.models.train_m1_logistic",
+    "src.models.train_m2_xgboost",
+    "src.models.select_normalization",
+    "src.models.select_market_blend",
+    "src.models.select_temperature",
+    "src.models.freeze_final_test",
+    "src.models.evaluate_final_test",
+    "src.evaluation.bootstrap",
+    "src.evaluation.backtest",
+    "src.models.analyze_top1_disagreements",
+    "src.data.build_ranking_dataset",
+    "src.models.train_r2_ranker",
+    "src.models.select_ranker_temperature",
+    "src.models.train_market_gate",
+    "src.models.freeze_top1_candidate"
+  ],
+  "generated_directories": [
+    "data/interim",
+    "data/predictions",
+    "data/analysis",
+    "artifacts/models",
+    "reports/experiments"
+  ],
+  "validation": {
+    "input_checksums": "expected/input_checksums.json",
+    "expected_metrics": "expected/metrics.json",
+    "float_absolute_tolerance": 1e-8
+  }
+}

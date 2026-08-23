@@ -1,0 +1,44 @@
+{
+  "train": {
+    "raw_roc_auc": 0.8662588925623987,
+    "roc_auc": 0.8585108305623894,
+    "pr_auc": 0.41167287649200074,
+    "log_loss": 0.2775860460599371,
+    "brier_score": 0.07943353425537274,
+    "cal_mae": 0.06923057269276464,
+    "top1_hit_rate": 0.4780539397144368,
+    "avg_winner_prob": 0.1431881835750731
+  },
+  "valid": {
+    "raw_roc_auc": 0.7432860990588419,
+    "roc_auc": 0.7410046948923908,
+    "pr_auc": 0.24622971968466284,
+    "log_loss": 0.2956934583531019,
+    "brier_score": 0.08346760806583453,
+    "cal_mae": 0.03491196632098482,
+    "top1_hit_rate": 0.27769110764430577,
+    "avg_winner_prob": 0.12685462117663562
+  },
+  "test": {
+    "raw_roc_auc": 0.7480787086824006,
+    "roc_auc": 0.7489510929721392,
+    "pr_auc": 0.23876721982744206,
+    "log_loss": 0.29271564359849733,
+    "brier_score": 0.082383590937298,
+    "cal_mae": 0.036920164412178866,
+    "top1_hit_rate": 0.30551181102362207,
+    "avg_winner_prob": 0.12278934583361248,
+    "market_roc_auc_ref": 0.8121586921055254,
+    "market_pr_auc_ref": 0.3303129788438808,
+    "edge_test": {
+      "rows": 635,
+      "top10pct_count": 64,
+      "top10pct_mean_predicted_edge": 0.11004304173255283,
+      "top10pct_mean_realized_edge": 0.021468380886134567,
+      "top10pct_roi": 0.55,
+      "positive_edge_count": 634,
+      "positive_edge_roi": -0.1408517350157729,
+      "edge_realized_correlation": 0.047441987576370484
+    }
+  }
+}

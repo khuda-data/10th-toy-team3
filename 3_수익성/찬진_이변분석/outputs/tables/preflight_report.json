@@ -1,0 +1,71 @@
+{
+  "files": {
+    "final_csv": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\final.csv.gz",
+    "split_root": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\전처리 데이터셋\\v1_base"
+  },
+  "folds": {
+    "train": {
+      "rows": 19637,
+      "entry_id_unique": true,
+      "race_count": 1893,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "pop_pct_missing": 0,
+      "subsets": {
+        "darkhorse": 10374,
+        "favorite_bust": 5597
+      }
+    },
+    "valid": {
+      "rows": 6591,
+      "entry_id_unique": true,
+      "race_count": 642,
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "pop_pct_missing": 0,
+      "subsets": {
+        "darkhorse": 3490,
+        "favorite_bust": 1881
+      }
+    },
+    "test": {
+      "rows": 6660,
+      "entry_id_unique": true,
+      "race_count": 637,
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "pop_pct_missing": 0,
+      "subsets": {
+        "darkhorse": 3528,
+        "favorite_bust": 1902
+      }
+    }
+  },
+  "label_validation": {
+    "darkhorse": {
+      "train": {
+        "agreement": 1.0,
+        "positives": 1441,
+        "base_rate": 0.13890495469442837
+      },
+      "valid": {
+        "agreement": 1.0,
+        "positives": 481,
+        "base_rate": 0.13782234957020056
+      }
+    },
+    "favorite_bust": {
+      "train": {
+        "agreement": 1.0,
+        "positives": 1453,
+        "base_rate": 0.25960335894229053
+      },
+      "valid": {
+        "agreement": 1.0,
+        "positives": 497,
+        "base_rate": 0.2642211589580011
+      }
+    }
+  },
+  "test_outcomes_opened": false
+}

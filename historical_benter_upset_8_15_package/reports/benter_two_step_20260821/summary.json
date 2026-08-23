@@ -1,0 +1,428 @@
+{
+  "n_fundamental_features": 53,
+  "one_step_reference": {
+    "delta_ll_per_race": 0.00491,
+    "delta_ll_ci": [
+      0.00126,
+      0.00864
+    ]
+  },
+  "results": {
+    "2단계 CL · 교차적합 · α자유": {
+      "label": "2단계 CL · 교차적합 · α자유",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.001469072853716643,
+      "delta_ll_ci": [
+        0.00018633227794380295,
+        0.0027467754013749796
+      ],
+      "ci_confirmed_positive": true,
+      "mean_gamma": 0.06746907359802706,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 0.9985979359137779,
+          "gamma": 0.04962724703711989,
+          "z_gamma": 0.97432517726522,
+          "delta_ll_per_race": 0.0005027873339041765
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 0.9639966306306592,
+          "gamma": 0.08634537101279656,
+          "z_gamma": 2.0265911981307867,
+          "delta_ll_per_race": -0.0010792068791433901
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 0.9903891451445287,
+          "gamma": 0.05189126377776122,
+          "z_gamma": 1.3822239182746003,
+          "delta_ll_per_race": 0.002573784905196675
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 0.9858016230073084,
+          "gamma": 0.07317328667899478,
+          "z_gamma": 2.1827012714287264,
+          "delta_ll_per_race": 0.0008155944679981119
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 0.9907222077841848,
+          "gamma": 0.0701016290018196,
+          "z_gamma": 2.2866988588944746,
+          "delta_ll_per_race": 0.0022385259638416904
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 0.9909026738725368,
+          "gamma": 0.0736756440796703,
+          "z_gamma": 2.6194707648629647,
+          "delta_ll_per_race": 0.0038516953281207125
+        }
+      ]
+    },
+    "2단계 CL · 교차적합 · α=1": {
+      "label": "2단계 CL · 교차적합 · α=1",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.0015797870768570427,
+      "delta_ll_ci": [
+        0.00035646414237722066,
+        0.002792119493441997
+      ],
+      "ci_confirmed_positive": true,
+      "mean_gamma": 0.05635964540973317,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 1.0,
+          "gamma": 0.04848797416501931,
+          "z_gamma": 1.3099447497042078,
+          "delta_ll_per_race": 0.00046390824259484966
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 1.0,
+          "gamma": 0.056567421802400694,
+          "z_gamma": 1.8414537503343607,
+          "delta_ll_per_race": -0.00011713901637166233
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 1.0,
+          "gamma": 0.04372824431532176,
+          "z_gamma": 1.6667185598356973,
+          "delta_ll_per_race": 0.0025252377729110104
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 1.0,
+          "gamma": 0.06116368731805236,
+          "z_gamma": 2.6307168628384963,
+          "delta_ll_per_race": 0.0009957323025132033
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 1.0,
+          "gamma": 0.06224083841201373,
+          "z_gamma": 2.9412165108065587,
+          "delta_ll_per_race": 0.0022382161362917057
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 1.0,
+          "gamma": 0.06596970644559112,
+          "z_gamma": 3.433342967704372,
+          "delta_ll_per_race": 0.0034292605448863777
+        }
+      ]
+    },
+    "2단계 CL · 교차적합없음 · α자유  ← 대조군": {
+      "label": "2단계 CL · 교차적합없음 · α자유  ← 대조군",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.0012560675239181066,
+      "delta_ll_ci": [
+        -0.0009421061261162338,
+        0.0034079696185267635
+      ],
+      "ci_confirmed_positive": false,
+      "mean_gamma": 0.12216926593859405,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 0.9395373212885981,
+          "gamma": 0.15209892425236715,
+          "z_gamma": 2.906645275780224,
+          "delta_ll_per_race": 0.00017993386120210606
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 0.925662139825844,
+          "gamma": 0.15254721436345178,
+          "z_gamma": 3.507636963787237,
+          "delta_ll_per_race": -0.003528075565894631
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 0.9560517451930717,
+          "gamma": 0.10897723850793739,
+          "z_gamma": 2.8615636418497217,
+          "delta_ll_per_race": 0.0035380050788499113
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 0.9613118367048297,
+          "gamma": 0.11307987357953259,
+          "z_gamma": 3.3397263215321553,
+          "delta_ll_per_race": 0.00020295979233544612
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 0.9698842810015446,
+          "gamma": 0.10390001934148217,
+          "z_gamma": 3.359817914952756,
+          "delta_ll_per_race": 0.002357406176556578
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 0.97283246641664,
+          "gamma": 0.10241232558679311,
+          "z_gamma": 3.614415907931667,
+          "delta_ll_per_race": 0.004957270045240173
+        }
+      ]
+    },
+    "2단계 GBM · 교차적합 · α자유": {
+      "label": "2단계 GBM · 교차적합 · α자유",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.002199229156108782,
+      "delta_ll_ci": [
+        0.0004358171971967702,
+        0.003963753857559409
+      ],
+      "ci_confirmed_positive": true,
+      "mean_gamma": 0.11960441188419595,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 0.9672598568865718,
+          "gamma": 0.1445057388754689,
+          "z_gamma": 2.2437431719808827,
+          "delta_ll_per_race": -0.003735199415119482
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 0.9738410629351054,
+          "gamma": 0.09220675295024568,
+          "z_gamma": 1.6961089045331568,
+          "delta_ll_per_race": 5.660308583092791e-05
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 0.9805510022547229,
+          "gamma": 0.0896539692526066,
+          "z_gamma": 1.8701827308485004,
+          "delta_ll_per_race": 0.0046367979370475435
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 0.9732311557144402,
+          "gamma": 0.12147799449988117,
+          "z_gamma": 2.8570293151289943,
+          "delta_ll_per_race": 0.001961751601834157
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 0.9695083795010387,
+          "gamma": 0.13065454348197308,
+          "z_gamma": 3.4368023827063334,
+          "delta_ll_per_race": 0.004338992292952046
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 0.9659507583356695,
+          "gamma": 0.13912747224500024,
+          "z_gamma": 4.056187818253532,
+          "delta_ll_per_race": 0.005964487878785508
+        }
+      ]
+    },
+    "2단계 GBM · 교차적합 · α=1": {
+      "label": "2단계 GBM · 교차적합 · α=1",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.001944745301368923,
+      "delta_ll_ci": [
+        0.0003010341161451135,
+        0.003531990877559535
+      ],
+      "ci_confirmed_positive": true,
+      "mean_gamma": 0.09004258760076149,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 1.0,
+          "gamma": 0.11140314996161357,
+          "z_gamma": 2.259813705339349,
+          "delta_ll_per_race": -0.0034097889591807318
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 1.0,
+          "gamma": 0.06468513885359113,
+          "z_gamma": 1.6222512860433944,
+          "delta_ll_per_race": 0.0005184332851682851
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 1.0,
+          "gamma": 0.06859247803932289,
+          "z_gamma": 2.012199236040019,
+          "delta_ll_per_race": 0.004188863016775506
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 1.0,
+          "gamma": 0.09281170531316671,
+          "z_gamma": 3.0999304975340354,
+          "delta_ll_per_race": 0.002035426347617201
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 1.0,
+          "gamma": 0.09870454844245834,
+          "z_gamma": 3.7229111037295977,
+          "delta_ll_per_race": 0.003957609130887897
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 1.0,
+          "gamma": 0.10405850499441632,
+          "z_gamma": 4.3964630960891355,
+          "delta_ll_per_race": 0.004369214758600307
+        }
+      ]
+    },
+    "2단계 GBM · 교차적합없음 · α자유  ← 대조군": {
+      "label": "2단계 GBM · 교차적합없음 · α자유  ← 대조군",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": -0.09480760160480971,
+      "delta_ll_ci": [
+        -0.1132743245451388,
+        -0.07783728415032652
+      ],
+      "ci_confirmed_positive": false,
+      "mean_gamma": 1.1142048207789663,
+      "folds": [
+        {
+          "fold": 2,
+          "train_races": 1342,
+          "test_races": 660,
+          "alpha": 0.41184798814339824,
+          "gamma": 1.4370539743195907,
+          "z_gamma": 20.661384074155848,
+          "delta_ll_per_race": -0.21993461893894406
+        },
+        {
+          "fold": 3,
+          "train_races": 2002,
+          "test_races": 684,
+          "alpha": 0.3738738022268695,
+          "gamma": 1.4802479633452779,
+          "z_gamma": 24.445780908307245,
+          "delta_ll_per_race": -0.18502027358693585
+        },
+        {
+          "fold": 4,
+          "train_races": 2686,
+          "test_races": 661,
+          "alpha": 0.5056316729307103,
+          "gamma": 1.1003706805469977,
+          "z_gamma": 21.847345165434874,
+          "delta_ll_per_race": -0.05426999271481779
+        },
+        {
+          "fold": 5,
+          "train_races": 3347,
+          "test_races": 664,
+          "alpha": 0.5533333674402032,
+          "gamma": 0.9919379883884369,
+          "z_gamma": 22.532581766912745,
+          "delta_ll_per_race": -0.06468897228234335
+        },
+        {
+          "fold": 6,
+          "train_races": 4011,
+          "test_races": 687,
+          "alpha": 0.5547451998308814,
+          "gamma": 0.9663508314528519,
+          "z_gamma": 23.953666992404226,
+          "delta_ll_per_race": -0.041176642457809484
+        },
+        {
+          "fold": 7,
+          "train_races": 4698,
+          "test_races": 653,
+          "alpha": 0.683289861321539,
+          "gamma": 0.7092674866206421,
+          "z_gamma": 19.349866040970856,
+          "delta_ll_per_race": -0.0019275085023409242
+        }
+      ]
+    }
+  },
+  "best_label": "2단계 GBM · 교차적합 · α자유",
+  "backtest_of_best": {
+    "n_bets": 475,
+    "hit_rate": 0.04421052631578947,
+    "unit_roi": -0.2736842105263158,
+    "roi_ci": [
+      -0.5829476360870055,
+      0.07397383873139352
+    ],
+    "ci_confirmed_positive": false,
+    "kelly_sharpe": null,
+    "kelly_max_drawdown": 0.0
+  },
+  "crossfit_note": "교차적합을 끄면 γ가 위로 편향된다 — 대조군과 비교할 것."
+}

@@ -1,0 +1,17 @@
+﻿split,model_key,model,fraction,fraction_label,score_threshold,candidate_pool,selected_target_count,actual_selected_fraction,selection_scope
+valid,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.1,top_10pct,0.05720989138843027,336,34,0.10119047619047619,within-split score rank; outcomes unused
+valid,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.2,top_20pct,0.036388422777717644,336,68,0.20238095238095238,within-split score rank; outcomes unused
+valid,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.3,top_30pct,0.026639362148345225,336,101,0.3005952380952381,within-split score rank; outcomes unused
+valid,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.4,top_40pct,0.021417827887781068,336,135,0.4017857142857143,within-split score rank; outcomes unused
+test,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.1,top_10pct,0.039833346881684176,282,29,0.10283687943262411,within-split score rank; outcomes unused
+test,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.2,top_20pct,0.027643774576341873,282,57,0.20212765957446807,within-split score rank; outcomes unused
+test,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.3,top_30pct,0.020260843142160485,282,85,0.30141843971631205,within-split score rank; outcomes unused
+test,full_upset_base_margin,감사 후 전체 133피처 이변 Base Margin,0.4,top_40pct,0.016432836118243005,282,113,0.40070921985815605,within-split score rank; outcomes unused
+valid,selected_upset_base_margin,상위 이변 피처 Base Margin,0.1,top_10pct,0.037578070680106795,348,35,0.10057471264367816,within-split score rank; outcomes unused
+valid,selected_upset_base_margin,상위 이변 피처 Base Margin,0.2,top_20pct,0.027165980667352277,348,70,0.20114942528735633,within-split score rank; outcomes unused
+valid,selected_upset_base_margin,상위 이변 피처 Base Margin,0.3,top_30pct,0.020757919086026644,348,105,0.3017241379310345,within-split score rank; outcomes unused
+valid,selected_upset_base_margin,상위 이변 피처 Base Margin,0.4,top_40pct,0.016538758836278845,348,140,0.40229885057471265,within-split score rank; outcomes unused
+test,selected_upset_base_margin,상위 이변 피처 Base Margin,0.1,top_10pct,0.031623705687633175,288,29,0.10069444444444445,within-split score rank; outcomes unused
+test,selected_upset_base_margin,상위 이변 피처 Base Margin,0.2,top_20pct,0.022718824291981604,288,58,0.2013888888888889,within-split score rank; outcomes unused
+test,selected_upset_base_margin,상위 이변 피처 Base Margin,0.3,top_30pct,0.018055860499055637,288,87,0.3020833333333333,within-split score rank; outcomes unused
+test,selected_upset_base_margin,상위 이변 피처 Base Margin,0.4,top_40pct,0.014415373151842492,288,116,0.4027777777777778,within-split score rank; outcomes unused

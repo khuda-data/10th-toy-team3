@@ -1,0 +1,127 @@
+{
+  "config": {
+    "lr": 0.05,
+    "max_depth": 3,
+    "min_leaf": 60,
+    "lambda": 20.0,
+    "patience": 20,
+    "max_features": "sqrt",
+    "max_trees": 300
+  },
+  "reference": {
+    "one_step": 0.00491,
+    "two_step": 0.0022
+  },
+  "results": {
+    "Base Margin (시장 앵커)": {
+      "label": "Base Margin (시장 앵커)",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": 0.007392494503419869,
+      "delta_ll_ci": [
+        0.0043732933768121625,
+        0.01044439568663805
+      ],
+      "ci_confirmed_positive": true,
+      "mean_trees": 73.16666666666667,
+      "folds": [
+        {
+          "fold": 2,
+          "n_trees": 50,
+          "test_races": 660,
+          "delta_ll_per_race": -0.0011661036500068996
+        },
+        {
+          "fold": 3,
+          "n_trees": 2,
+          "test_races": 684,
+          "delta_ll_per_race": 0.0010172593027118239
+        },
+        {
+          "fold": 4,
+          "n_trees": 11,
+          "test_races": 661,
+          "delta_ll_per_race": 0.004565626393736535
+        },
+        {
+          "fold": 5,
+          "n_trees": 136,
+          "test_races": 664,
+          "delta_ll_per_race": 0.010837157795294048
+        },
+        {
+          "fold": 6,
+          "n_trees": 67,
+          "test_races": 687,
+          "delta_ll_per_race": 0.017272146615397374
+        },
+        {
+          "fold": 7,
+          "n_trees": 173,
+          "test_races": 653,
+          "delta_ll_per_race": 0.011685477738204421
+        }
+      ]
+    },
+    "앵커 없음 (0에서 시작)  ← 대조군": {
+      "label": "앵커 없음 (0에서 시작)  ← 대조군",
+      "n_oos_races": 4009,
+      "delta_ll_per_race": -0.194546242116036,
+      "delta_ll_ci": [
+        -0.2133121025523027,
+        -0.1758068259291019
+      ],
+      "ci_confirmed_positive": false,
+      "mean_trees": 183.16666666666666,
+      "folds": [
+        {
+          "fold": 2,
+          "n_trees": 166,
+          "test_races": 660,
+          "delta_ll_per_race": -0.20916612227780157
+        },
+        {
+          "fold": 3,
+          "n_trees": 101,
+          "test_races": 684,
+          "delta_ll_per_race": -0.2395718468664514
+        },
+        {
+          "fold": 4,
+          "n_trees": 192,
+          "test_races": 661,
+          "delta_ll_per_race": -0.18487873178561287
+        },
+        {
+          "fold": 5,
+          "n_trees": 185,
+          "test_races": 664,
+          "delta_ll_per_race": -0.19856334216862728
+        },
+        {
+          "fold": 6,
+          "n_trees": 177,
+          "test_races": 687,
+          "delta_ll_per_race": -0.18451642101394095
+        },
+        {
+          "fold": 7,
+          "n_trees": 278,
+          "test_races": 653,
+          "delta_ll_per_race": -0.14885975273560484
+        }
+      ]
+    }
+  },
+  "backtest_base_margin": {
+    "n_bets": 579,
+    "hit_rate": 0.0535405872193437,
+    "unit_roi": 0.02573402417962002,
+    "roi_ci": [
+      -0.31243855042016805,
+      0.4100301296902959
+    ],
+    "ci_confirmed_positive": false,
+    "kelly_sharpe": -0.9020315490433908,
+    "kelly_max_drawdown": 0.06719309150670794
+  }
+}

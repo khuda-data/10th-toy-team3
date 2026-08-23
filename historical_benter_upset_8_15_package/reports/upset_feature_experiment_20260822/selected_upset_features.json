@@ -1,0 +1,30 @@
+{
+  "selection_scope": "train-internal chronological holdout only",
+  "importance_split": {
+    "fit_dates": [
+      "20230805",
+      "20241027"
+    ],
+    "tune_dates": [
+      "20241102",
+      "20241229"
+    ],
+    "importance_dates": [
+      "20250104",
+      "20250511"
+    ],
+    "fit_races": 1293,
+    "tune_races": 194,
+    "importance_races": 375,
+    "n_trees": 1
+  },
+  "importance_method": "drop in mean top-10/20/30/40% realized upset edge place-q_plc",
+  "upset_universe": "pop_pct >= 0.5; stored upset_B target is place == 1",
+  "positive_importance_weight_threshold": 0.005,
+  "permutation_repeats": 20,
+  "selected_feature_count": 2,
+  "selected_features": [
+    "style_vs_race",
+    "jk_winrate__pr"
+  ]
+}

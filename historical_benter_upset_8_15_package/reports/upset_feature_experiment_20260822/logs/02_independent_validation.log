@@ -1,0 +1,17 @@
+RANK DATA PASS: features=137 rows=19617/6582/6639
+INDEPENDENT UPSET VALIDATION PASS: checks=50
+{
+  "clean_races": {
+    "train": 1862,
+    "valid": 624,
+    "test": 614
+  },
+  "selected_features": [
+    "style_vs_race",
+    "jk_winrate__pr"
+  ],
+  "importance_ci_positive_features": [],
+  "test_fdr_positive_cells": 0,
+  "locked_fdr_positive_cells": 0,
+  "roi_ge_30pct_cells": 15
+}

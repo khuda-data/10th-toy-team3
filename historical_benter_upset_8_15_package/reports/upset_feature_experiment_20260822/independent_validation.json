@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "passed_checks": 50,
+  "checks": [
+    {
+      "check": "upstream preprocessing validation is PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "preprocessing fit scope is train-only",
+      "status": "PASS"
+    },
+    {
+      "check": "correlation/feature pruning did not use validation or test",
+      "status": "PASS"
+    },
+    {
+      "check": "market reference SHA256 matches preprocessing manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train audited 133-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "train feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "valid data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "valid metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "valid audited 133-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "valid feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "valid entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "test metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "test audited 133-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "test feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "test entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "independent clean race counts are 1862/624/614",
+      "status": "PASS"
+    },
+    {
+      "check": "train strictly precedes validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation strictly precedes test",
+      "status": "PASS"
+    },
+    {
+      "check": "audited feature matrix excludes declared odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "only four conservative final-pool features removed from source 137",
+      "status": "PASS"
+    },
+    {
+      "check": "test upset_B exactly reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "post-pool-removal train absolute Pearson correlation <= 0.95",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact excludes final-pool features",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact excludes odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact independently reproduces saved test probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin test race probabilities sum to one",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin place probabilities independently reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact excludes final-pool features",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact excludes odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact independently reproduces saved test probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin test race probabilities sum to one",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin place probabilities independently reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved upset horses are market-bottom-half",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved upset horses have positive place EDGE",
+      "status": "PASS"
+    },
+    {
+      "check": "at most one upset horse per race",
+      "status": "PASS"
+    },
+    {
+      "check": "all exact 10/20/30/40 fractions exist",
+      "status": "PASS"
+    },
+    {
+      "check": "cutoff selected counts equal ceil(candidate pool*fraction)",
+      "status": "PASS"
+    },
+    {
+      "check": "every model/fraction/bet has the exact selected horse count",
+      "status": "PASS"
+    },
+    {
+      "check": "every seven-bet ticket contains its selected upset horse",
+      "status": "PASS"
+    },
+    {
+      "check": "all realized returns independently equal hit*official-odds minus one",
+      "status": "PASS"
+    },
+    {
+      "check": "all winning combination dividends match official KRA file",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved bet counts, wins, and ROI independently recomputed",
+      "status": "PASS"
+    },
+    {
+      "check": "test contains 2*4*7=56 ROI cells",
+      "status": "PASS"
+    },
+    {
+      "check": "no exact-fraction test ROI cell passes saved CI plus FDR rule",
+      "status": "PASS"
+    },
+    {
+      "check": "selected feature list exactly follows reported 0.5% rule",
+      "status": "PASS"
+    },
+    {
+      "check": "reported operational threshold selects exactly two features",
+      "status": "PASS"
+    }
+  ],
+  "input_files": {
+    "preprocessing_manifest": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\preprocessing_manifest.json",
+      "bytes": 7582,
+      "mtime_ns": 1787195681558538800,
+      "sha256": "78FBCD984D626C39D0452568F935EF840D87ED3266259C7AAF92F009B1877264"
+    },
+    "preprocessing_validation": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\preprocessing_validation.json",
+      "bytes": 1732,
+      "mtime_ns": 1787195681561951400,
+      "sha256": "A6C3FBC3A73F56D88CAAC01EA0E2B19E6EBC1DAF900B2F508BE97D763D9991EE"
+    },
+    "market_reference": {
+      "absolute_path": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+      "bytes": 23285667,
+      "mtime_ns": 1787191677829550800,
+      "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+    },
+    "official_dividends": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v7_full_rank_rerun_20260820\\kra_official_dividends\\kra_official_dividends.csv",
+      "bytes": 4102619,
+      "mtime_ns": 1787198204621549800,
+      "sha256": "5103AF0BBE0FED80F9E5F03DD5277F2F85FDD3D611488D0D3A1B6F0831CF6072"
+    },
+    "train_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\train_revised_v7_rank_numeric_scaled.csv",
+      "bytes": 49168595,
+      "mtime_ns": 1787195679710522100,
+      "sha256": "A2B792B9837D03F2ABBFF5BDEE3457C4F1FFB5490E1CEA0D51F2697842913918"
+    },
+    "train_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\train_metadata.csv",
+      "bytes": 1774382,
+      "mtime_ns": 1787195679784898400,
+      "sha256": "91CFE4891E9BB4C87A26674647A9384076E844E14A6913CD88AA457FD447F046"
+    },
+    "valid_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\valid_revised_v7_rank_numeric_scaled.csv",
+      "bytes": 16472299,
+      "mtime_ns": 1787195680581278200,
+      "sha256": "D91508FD48B7C1583E453135781C23639D5214F88BAE710C72235E0C95FBEB53"
+    },
+    "valid_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\valid_metadata.csv",
+      "bytes": 594320,
+      "mtime_ns": 1787195680619865900,
+      "sha256": "A7738DB61A8D7DCDB33C71005766E8E390EA7E75BB4F9235650A67DE04EAC5EF"
+    },
+    "test_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\test_revised_v7_rank_numeric_scaled.csv",
+      "bytes": 16616429,
+      "mtime_ns": 1787195681484663700,
+      "sha256": "4E1C255549EE11E828CE508F3CEC1C55E5226323BFCC4FD1658B185E8655A56E"
+    },
+    "test_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v7_rank_preprocessed\\test_metadata.csv",
+      "bytes": 597217,
+      "mtime_ns": 1787195681515813200,
+      "sha256": "3D37D1820C39D38703AC31C3165BF45E1D77254236D92C0E227B73DF44D7BD29"
+    }
+  },
+  "model_artifacts": {
+    "full_upset_base_margin.joblib": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\upset_feature_experiment_20260822\\full_upset_base_margin.joblib",
+      "bytes": 143327,
+      "mtime_ns": 1787394877647219200,
+      "sha256": "714E2BFB657ACD2E7C0F31542973EADD2C42562547F69FAEFFA74F4274A0249E"
+    },
+    "selected_upset_base_margin.joblib": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\upset_feature_experiment_20260822\\selected_upset_base_margin.joblib",
+      "bytes": 3712,
+      "mtime_ns": 1787394877648554500,
+      "sha256": "4EB0098B1143C3CC605B8273AED17E4CBF24257414E9F421A2CA4CD6DE0FC2CB"
+    }
+  },
+  "clean_split_audit": {
+    "train": {
+      "rows": 19367,
+      "races": 1862,
+      "excluded_races": {
+        "incomplete_order": 12,
+        "invalid_win_odds": 0,
+        "invalid_place_market": 17
+      }
+    },
+    "valid": {
+      "rows": 6443,
+      "races": 624,
+      "excluded_races": {
+        "incomplete_order": 6,
+        "invalid_win_odds": 0,
+        "invalid_place_market": 11
+      }
+    },
+    "test": {
+      "rows": 6442,
+      "races": 614,
+      "excluded_races": {
+        "incomplete_order": 14,
+        "invalid_win_odds": 1,
+        "invalid_place_market": 6
+      }
+    }
+  },
+  "post_pruning_max_abs_pearson": 0.9492390842435586,
+  "post_pruning_max_abs_pearson_pair": [
+    "oh_budam_별정A",
+    "oh_budam_핸디캡"
+  ],
+  "selected_features_operational_0p5pct": [
+    "style_vs_race",
+    "jk_winrate__pr"
+  ],
+  "importance_model_trees": 1,
+  "importance_model_tree_used_feature_count": 6,
+  "importance_ci_positive_features": [],
+  "test_roi_cells": 56,
+  "test_unadjusted_ci_positive_cells": 0,
+  "test_fdr_positive_cells": 0,
+  "test_roi_ge_30pct_cells": 15,
+  "warnings": [
+    "The 0.5% importance cutoff is an operational normalized-weight rule, not a p-value.",
+    "No selected feature has a daily-block 95% importance CI lower bound above zero.",
+    "The test period was previously inspected; results are exploratory reuse, not fresh confirmation.",
+    "Exact within-test top fractions are batch rankings, not a causal real-time threshold policy.",
+    "Combination market probabilities are q-derived proxies because losing-ticket pool odds are absent.",
+    "Final odds are not available at live bet placement time."
+  ],
+  "runtime": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

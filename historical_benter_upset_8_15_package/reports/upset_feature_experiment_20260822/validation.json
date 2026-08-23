@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "passed_checks": 22,
+  "checks": [
+    {
+      "check": "source manifest has 137 features",
+      "status": "PASS"
+    },
+    {
+      "check": "four final-pool columns removed leaving 133 features",
+      "status": "PASS"
+    },
+    {
+      "check": "only verified final-pool columns removed",
+      "status": "PASS"
+    },
+    {
+      "check": "odds/result columns absent from feature matrix",
+      "status": "PASS"
+    },
+    {
+      "check": "feature matrices finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train precedes validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation precedes test",
+      "status": "PASS"
+    },
+    {
+      "check": "market reference hash matches dataset manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "complete-order and valid win/place market race counts are 1862/624/614",
+      "status": "PASS"
+    },
+    {
+      "check": "stored upset_B exactly reproduces project definition",
+      "status": "PASS"
+    },
+    {
+      "check": "importance threshold selects at least one feature",
+      "status": "PASS"
+    },
+    {
+      "check": "selected features belong to audited 133",
+      "status": "PASS"
+    },
+    {
+      "check": "selected features exclude odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "selected features exclude final-pool columns",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin: artifact reload reproduces test",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin: artifact reload reproduces test",
+      "status": "PASS"
+    },
+    {
+      "check": "all race probability sums equal one",
+      "status": "PASS"
+    },
+    {
+      "check": "10/20/30/40 percent cutoffs present",
+      "status": "PASS"
+    },
+    {
+      "check": "reported selected fractions exactly match ceil candidate counts",
+      "status": "PASS"
+    },
+    {
+      "check": "all model/fraction/seven-bet test cells present",
+      "status": "PASS"
+    },
+    {
+      "check": "all upset candidates are in market bottom half",
+      "status": "PASS"
+    },
+    {
+      "check": "all upset candidates have positive EDGE",
+      "status": "PASS"
+    }
+  ],
+  "profit_confirmed_test_cells_after_fdr": [],
+  "unadjusted_positive_ci_test_cells": [],
+  "roi_30pct_warnings": [
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "단승",
+      "bets": 29,
+      "wins": 5,
+      "roi": 1.1275862068965519,
+      "roi_ci_low_daily_block": -0.3766666666666667,
+      "roi_ci_high_daily_block": 3.096388888888888
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복승",
+      "bets": 29,
+      "wins": 3,
+      "roi": 1.5620689655172413,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 5.021428571428572
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "쌍승",
+      "bets": 29,
+      "wins": 2,
+      "roi": 1.4827586206896552,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 5.54074074074074
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼복승",
+      "bets": 29,
+      "wins": 2,
+      "roi": 0.8758620689655174,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 3.973333333333334
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "단승",
+      "bets": 57,
+      "wins": 7,
+      "roi": 0.5929824561403509,
+      "roi_ci_low_daily_block": -0.4528301886792453,
+      "roi_ci_high_daily_block": 1.74312434691745
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복승",
+      "bets": 57,
+      "wins": 3,
+      "roi": 0.30350877192982456,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 2.0107142857142857
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복승",
+      "bets": 85,
+      "wins": 5,
+      "roi": 0.5105882352941177,
+      "roi_ci_low_daily_block": -0.6252873563218391,
+      "roi_ci_high_daily_block": 1.80253243670886
+    },
+    {
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "쌍승",
+      "bets": 85,
+      "wins": 4,
+      "roi": 0.6988235294117646,
+      "roi_ci_low_daily_block": -0.7597560975609756,
+      "roi_ci_high_daily_block": 2.46914424951267
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "단승",
+      "bets": 29,
+      "wins": 3,
+      "roi": 0.4344827586206896,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 2.2861520737327123
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복승",
+      "bets": 29,
+      "wins": 2,
+      "roi": 0.3000000000000001,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 2.4766666666666666
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼복승",
+      "bets": 29,
+      "wins": 2,
+      "roi": 0.8758620689655174,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 3.9615384615384617
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복승",
+      "bets": 58,
+      "wins": 4,
+      "roi": 0.5758620689655174,
+      "roi_ci_low_daily_block": -0.7129629629629629,
+      "roi_ci_high_daily_block": 2.3421119536128456
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "쌍승",
+      "bets": 58,
+      "wins": 3,
+      "roi": 0.593103448275862,
+      "roi_ci_low_daily_block": -1.0,
+      "roi_ci_high_daily_block": 2.9539999999999997
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복연승",
+      "bets": 87,
+      "wins": 9,
+      "roi": 0.3459770114942529,
+      "roi_ci_low_daily_block": -0.5341360722610722,
+      "roi_ci_high_daily_block": 1.4355144957125354
+    },
+    {
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "쌍승",
+      "bets": 116,
+      "wins": 5,
+      "roi": 0.4672413793103449,
+      "roi_ci_low_daily_block": -0.6868392427884615,
+      "roi_ci_high_daily_block": 1.939589989888776
+    }
+  ],
+  "model_artifacts": {
+    "full_upset_base_margin.joblib": {
+      "bytes": 143327,
+      "sha256": "714E2BFB657ACD2E7C0F31542973EADD2C42562547F69FAEFFA74F4274A0249E"
+    },
+    "selected_upset_base_margin.joblib": {
+      "bytes": 3712,
+      "sha256": "4EB0098B1143C3CC605B8273AED17E4CBF24257414E9F421A2CA4CD6DE0FC2CB"
+    }
+  },
+  "runtime": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

@@ -90,6 +90,11 @@ __pycache__/
 /raw/
 /prep/
 
+# 실행하면 생기는 산출물 폴더 (저장소에 올리지 않습니다)
+/results/
+/data/versions/
+/data/splits/
+
 # 진행 상태 · 로그
 .checkpoint.json
 collect_log.csv

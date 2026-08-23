@@ -5,8 +5,8 @@ race_entries.csv 전처리 스크립트
 모델 학습용·배당률 분석용·사후 결과용 세 파일로 분리한다.
 
 사용법:
-    python src/02_split_by_purpose.py --input race_entries.csv
-    python src/02_split_by_purpose.py  # 기본: 프로젝트 루트의 race_entries.csv
+    python src/0_데이터수집/02_split_by_purpose.py
+    python src/02_split_by_purpose.py  # 기본: data/race_entries.csv.gz
 """
 
 import argparse
@@ -18,6 +18,11 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "pipeline"))
 from config import assign_time_split, SPLIT_RATIOS
+
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
 
 # ============================================================
 # 로깅 설정
@@ -261,8 +266,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="race_entries.csv",
-        help="입력 CSV 경로 (기본: race_entries.csv)",
+        default=str(RACE_ENTRIES),
+        help="입력 CSV 경로 (기본: data/race_entries.csv.gz)",
     )
     parser.add_argument(
         "--output-dir",

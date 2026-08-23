@@ -6,7 +6,7 @@
 
 실행:
     python src/1_전처리/01_missing_check.py
-    python src/1_전처리/01_missing_check.py --input race_entries.csv
+    python src/1_전처리/01_missing_check.py --input data/race_entries.csv.gz
 """
 
 import argparse
@@ -16,6 +16,11 @@ from pathlib import Path
 
 import pandas as pd
 import numpy as np
+
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
 
 # 로깅 설정
 logging.basicConfig(
@@ -135,7 +140,7 @@ def classify_missing_pattern(
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Missing value check")
-    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
+    parser.add_argument("--input", default=str(RACE_ENTRIES), help="입력 CSV 경로 (기본: data/race_entries.csv.gz)")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

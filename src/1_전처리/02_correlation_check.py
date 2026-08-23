@@ -25,6 +25,11 @@ from config import (
     TARGET_COL, setup_plot_style,
 )
 
+# ── 저장소 어디서 실행해도 원천 데이터를 찾도록 ─────────────
+#    src/<단계폴더>/<script>.py 이므로 parents[2] 가 저장소 루트
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+RACE_ENTRIES = _REPO_ROOT / "data" / "race_entries.csv.gz"
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -169,7 +174,7 @@ def compute_vif(df_numeric: pd.DataFrame, target_cols: list[str]) -> pd.DataFram
 
 def main():
     parser = argparse.ArgumentParser(description="EDA: Correlation check")
-    parser.add_argument("--input", default="race_entries.csv", help="Input CSV path")
+    parser.add_argument("--input", default=str(RACE_ENTRIES), help="입력 CSV 경로 (기본: data/race_entries.csv.gz)")
     parser.add_argument("--vif", action="store_true", help="Include VIF analysis (beyond textbook)")
     args = parser.parse_args()
 

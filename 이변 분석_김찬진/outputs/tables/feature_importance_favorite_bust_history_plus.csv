@@ -1,0 +1,191 @@
+﻿target,feature_set,candidate,importance_type,feature,importance
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R66~95,0.3544734471208492
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,계란형큰고리재갈,BlueBond편자",0.3536086684921735
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,망사눈가면",0.3375668608086971
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,BlueBond편자,쿠션편자(Cushion)",0.32368616850479387
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__budam_별정A,0.2908403127256075
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,혀보정끈,계란형큰고리재갈",0.28128797803112826
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_반가지큰고리재갈,망사눈가면",0.2788607256705921
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__chaksun1,0.2716224566397532
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__meet_서울,0.26545064537826
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__age,0.2562923258325823
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__rating__z,0.236866371001787
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__sex_수,0.22907420864051758
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,혀보정끈,혀보정끈",0.22416500240079926
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_infrequent_sklearn,0.21885064039326296
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,눈가면,망사눈가면",0.2184987281218169
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__buga1,0.21427983944968867
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__rating_na,0.20282651053741085
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,혀보정끈",0.19810675122874835
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__birthday,0.19129953481758327
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_눈가면,망사눈가면",0.18928310244682175
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_포화 (18%),0.18758202580259423
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,망사가면",0.1838032924158965
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_혀보정끈,망사눈가면,계란형큰고리재갈",0.18251433924255092
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__wgBudamBigo_*,0.17942537076939663
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,눈가면",0.17607739673303222
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_infrequent_sklearn,0.1750468138795191
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_국OPEN,0.17398672588047728
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,BlueBond편자",0.16760844675752803
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_눈가면,계란형큰고리재갈",0.16286609414578238
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,Triabit러깅재갈",0.16261497147937656
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__born_한국(포),0.15806710714119476
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rcName_infrequent_sklearn,0.15611913138238734
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__born_infrequent_sklearn,0.14485612592145863
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,JR러깅재갈",0.14450303761146457
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,망사눈가면,망사가면",0.14206466162224057
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_건조 (5%),0.1351816153359804
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R1~80,0.1261071953675207
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__born_뉴질랜드,0.12449200931563113
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,눈가리개(BF),계란형큰고리재갈",0.12422029463430244
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ilsu,0.12222426575965328
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R66~100,0.12162732151605757
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_포화 (17%),0.12089625097076528
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,눈가리개(BF)",0.12077161050410953
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_국6등급,0.11917163591597893
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R0~0,0.11917163591597893
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_망사가면,0.11800232921064877
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,눈가리개(BF)",0.11652252529631414
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_포화 (15%),0.11629249236466818
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_불량 (20%),0.1157717281182472
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_혼3등급,0.1144514543451932
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wg__z,0.11383109560241893
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_양호 (7%),0.11290968208596534
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_건조 (4%),0.11205942570277473
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R0~50,0.1109607381956312
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R0~140,0.11048734680788463
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wgJk,0.11038411291583138
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_1등급,0.11032542569177017
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_dist_chg,0.10971934608082967
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rcName_일반,0.10933151399579578
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__sex_거,0.10858661798285776
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__weather_맑음,0.10586470897524379
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_국3등급,0.1055713773025184
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,계란형큰고리재갈,망사눈가면",0.10400575626097384
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_다습 (14%),0.10206205046740083
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_rest_days__z,0.10120647227516626
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wg,0.10044649678097148
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__train_sec_14,0.10024897092285019
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wg_diff__z,0.09875862565041202
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,BlueBond편자,쿠션편자(Cushion)",0.09662083386124744
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__budam_핸디캡,0.09628744716257757
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__is_debut,0.09395464700085389
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R0~80,0.09334963073763734
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,망사눈가면,혀보정끈",0.0931688102133607
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_starts,0.09290183817140964
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_last_poppct,0.09027804095621975
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__is_new_horse,0.08938161966692039
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__spRating,0.08934253488792139
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,계란형큰고리재갈,망사가면",0.08863315955150147
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_3세이상,0.08840090535310795
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__rating,0.0874519775017165
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,망사가면,계란형큰고리재갈",0.08665981752080604
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__wgBudamBigo_-,0.08602527460869651
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_dist_starts,0.08452351416780345
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_3세,0.08317686362901491
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R1~140,0.08257747205780802
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__age__pr,0.08151112962881958
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_남3/북2,0.08104731452419323
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,반가지큰고리재갈",0.080417836661636
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__budam_마령,0.07971154629688718
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_눈가리개(BF),망사눈가면,계란형큰고리재갈",0.07798615879401974
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_국4등급,0.07604005991443945
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__train_days_14,0.07586819144038996
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,반가지큰고리재갈",0.07295498012791093
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_starts,0.07261505737181483
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__sex_암,0.07221018124535795
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wgBudam,0.0709673352923925
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__pace_conflict,0.07068638719574354
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__born_한국,0.0706418289683108
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_혼4등급,0.07009082323271254
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,망사눈가면,망사가면",0.06992307413888037
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wg_diff,0.06943489488538225
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__rcDist,0.06896340373756625
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_양호 (8%),0.0675517941666947
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__race_style_sd,0.06548103548723137
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_양호 (9%),0.06458264044969117
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__weather_눈,0.06448983057373354
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__clinic_30d,0.06412992188910993
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tool_n,0.06400939224170332
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_last_resid,0.061411442004773276
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_망사눈가면,0.06138311272212012
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jk_plcrate,0.05715145715518218
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jk_starts,0.05680438722405619
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_눈가리개(BF),망사눈가면",0.054634468989046406
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_혼OPEN,0.05453187906380926
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wgBudam__z,0.05434688845969906
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_다습 (12%),0.05424628329116257
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_국5등급,0.05391505087729487
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R1~35,0.05391505087729487
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__rank_2등급,0.0535175804801818
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_건조 (2%),0.05301773691851078
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__train_runs_14__z,0.05142995372117426
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__weather_비,0.050052883108259186
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_resid,0.04805364102297621
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jkhr_starts,0.04719230179771871
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,계란형큰고리재갈,혀보정끈",0.04604566676918273
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__weather_흐림,0.045043222721062814
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_BlueBond편자,0.04377549207465174
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__start_delay,0.04328667748153929
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_연령오픈,0.04317295726150595
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_다습 (10%),0.04059598229494368
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ow_winrate,0.04048166848745336
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__train_runs_14,0.039241839854680584
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__stRating,0.03904410255904536
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_plcrate,0.038728530856032006
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__wgBudam_chg,0.038253973275839986
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_winrate__z,0.03751638334845522
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jkhr_winrate,0.03716091631496684
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_눈가면,0.03520807363668929
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R1~50,0.03517014495152369
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_resid__z,0.03363823283568995
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_포화 (19%),0.03343076707618721
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_winrate__z,0.03246220804217153
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_포화 (16%),0.03218717436215428
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_다습 (13%),0.03163230509804569
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,망사가면",0.031557841847386865
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ill_n,0.03152289856198038
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_계란형큰고리재갈,망사가면,망사눈가면",0.03145360418245217
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_infrequent_sklearn,0.0312333003990701
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_건조 (3%),0.029329125733799862
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_양털코굴레,계란형큰고리재갈",0.029288773940846387
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__n_run,0.026985164680044107
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,BlueBond편자",0.02593942761007508
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_style_sd,0.02524005591562799
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__race_style_mean,0.02456361354981769
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__waterRate,0.02417737593449639
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_계란형큰고리재갈,0.023517383386956556
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__is_front,0.023413608461348906
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_dist_winrate,0.0223445790250081
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_style,0.022125378207515957
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_multi,0.02153536175681378
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_눈가리개(BF),망사가면",0.021460437968535827
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_winrate,0.02084086444613034
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,계란형큰고리재갈",0.02073660518702723
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_rest_days,0.019475580941083336
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_plcrate,0.017884831613623673
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ow_resid,0.01780727398317167
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_last_dist,0.017203695263137603
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__born_미국,0.01637759266292263
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ow_plcrate,0.015303872557820149
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사눈가면,계란형큰고리재갈",0.012051173177660012
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__race_front_n,0.011821888125258542
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__bleed,0.011747548561201526
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_winrate,0.011528792704843912
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__race_front_ratio,0.011354770501947189
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jk_resid,0.010339545570917704
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_다습 (11%),0.00933376879603835
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__prizeCond_R1~65,0.008880077042672935
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__budam_별정B,0.008813766481787104
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__chulNo,0.007200446067184313
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_-,0.0066926558897688025
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__tool_set_infrequent_sklearn,0.006435566702168657
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__ow_starts,0.005649882562730424
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__hr_last_ord,0.005330470116321288
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__style_vs_race,0.005070403608840519
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,"cat__tool_set_망사가면,망사눈가면",0.004932532255195365
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__ageCond_2세,0.0035016059981761286
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jk_winrate,0.003489037661337266
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__tr_resid,0.002739707060901052
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,cat__track_양호 (6%),0.002211113960177749
+favorite_bust,history_plus,logit_c0.1,absolute_coefficient,num__jk_winrate__z,0.0009173165440270256

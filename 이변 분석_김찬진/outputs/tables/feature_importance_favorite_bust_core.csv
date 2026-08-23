@@ -1,0 +1,184 @@
+﻿target,feature_set,candidate,importance_type,feature,importance
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__age__pr,0.0735174394816888
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__rating__z,0.04784870293706357
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__train_runs_14__z,0.03965288745110102
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_rest_days__z,0.0390133033996431
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wg_diff__z,0.037912975075103245
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__budam_핸디캡,0.03676759029522502
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_plcrate,0.03053783925471199
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jk_winrate,0.030465671888046657
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_style,0.025695086273956336
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__race_style_mean,0.024510190033298587
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jk_plcrate,0.024383804982207
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_rest_days,0.023766671979412807
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tr_plcrate,0.023309315816843455
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jk_winrate__z,0.022129167320612028
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wgBudam__z,0.021296995042914865
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__ow_starts,0.020748582465204345
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wg_diff,0.020607214663963928
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__style_vs_race,0.019742981800798167
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tr_winrate__z,0.01958715087787427
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_winrate__z,0.01884953010639803
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tr_starts,0.018725420689365162
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__birthday,0.018427232188883633
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jk_starts,0.018229895603826814
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tr_winrate,0.01763824629106244
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__clinic_30d,0.017444625325192857
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__ow_winrate,0.016823978605287785
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__race_style_sd,0.016451119682816484
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_style_sd,0.015155779859811635
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__ilsu,0.013896930960108028
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__waterRate,0.013173801125927516
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__rating,0.013075907088109918
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__train_sec_14,0.01304958699639558
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wg,0.012537828910101268
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wg__z,0.011997864129189637
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__ow_plcrate,0.01192318358579621
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__budam_별정A,0.011888269778533316
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_starts,0.01121924472183227
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__train_runs_14,0.010915952417723192
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__age,0.010537261729597616
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__chulNo,0.009712153797706496
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wgBudam,0.009094055980308728
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__race_front_ratio,0.00863305335088861
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__stRating,0.006624508389513988
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__rcDist,0.0064382501139898405
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_winrate,0.00633603246495133
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wgBudam_chg,0.006134872189271472
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__sex_수,0.006064645439265615
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면",0.0058138426225185945
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_last_ord,0.005189816922765925
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jkhr_starts,0.005072535945845892
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_last_dist,0.004565391036325723
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__n_run,0.004293294366633466
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__train_days_14,0.004203529300177105
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_dist_starts,0.004019579325321504
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_dist_chg,0.0037120727970488573
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R1~35,0.002996171173795304
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__spRating,0.002970405918842892
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__jkhr_winrate,0.002343940037275069
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tool_n,0.002321006235699667
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__hr_dist_winrate,0.0022970440000819707
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_국5등급,0.0017882750920467374
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__pace_conflict,0.0015090323392721178
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__sex_암,0.0014917228163866911
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__chaksun1,0.0014726578800140784
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_건조 (4%),0.0014400353839448012
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__sex_거,0.0014327075309388075
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__race_front_n,0.0013719190600830452
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_infrequent_sklearn,0.0009125563082802755
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__rating_na,0.0007938171708695031
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R0~0,0.0007934528889263677
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__ill_n,0.0005596929946211124
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__weather_맑음,0.0004067609386038488
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R1~50,0.0003876926754030739
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__is_new_horse,0.0003497050240766753
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__born_한국,0.0003376750421663421
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__wgBudamBigo_-,0.00033267219425994765
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_망사눈가면,0.00032745330805067737
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_연령오픈,0.000311768337256028
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__start_delay,0.00022737425902458815
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__is_debut,0.00019699218754403887
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__is_front,0.0001788191946752292
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_국6등급,0.0001658493326326923
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_건조 (3%),0.00015309356352446638
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__born_미국,0.00014285099716225067
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__wgJk,0.0001308103898311265
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_2등급,0.00012919638471329758
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__wgBudamBigo_*,0.00012633238099858158
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_국4등급,9.025177581314718e-05
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_국3등급,7.57539228333899e-05
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R1~65,3.738674163737826e-05
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_혼4등급,3.4259640552916703e-05
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__bleed,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__buga1,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__budam_별정B,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__meet_서울,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R1~140,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R0~140,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R0~50,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R0~80,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__budam_마령,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_infrequent_sklearn,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_infrequent_sklearn,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R1~80,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rcName_infrequent_sklearn,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rcName_일반,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_혼OPEN,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_혼3등급,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_국OPEN,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_건조 (2%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_건조 (5%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_다습 (10%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_남3/북2,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_2세,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_3세,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R66~95,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__rank_1등급,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__prizeCond_R66~100,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__ageCond_3세이상,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,num__tr_multi,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_양호 (8%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_양호 (7%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_양호 (6%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_불량 (20%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_다습 (14%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_다습 (13%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_다습 (12%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_다습 (11%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__weather_눈,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_infrequent_sklearn,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_포화 (19%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_포화 (18%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_포화 (17%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__weather_비,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_포화 (16%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_양호 (9%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__born_뉴질랜드,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__born_한국(포),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_-,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__born_infrequent_sklearn,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_계란형큰고리재갈,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,BlueBond편자,쿠션편자(Cushion)",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_BlueBond편자,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,눈가면,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사가면,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,혀보정끈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_눈가리개(BF),망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__weather_흐림,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__track_포화 (15%),0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_눈가리개(BF),망사눈가면,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_눈가리개(BF),망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_눈가면,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_눈가면,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,BlueBond편자",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,계란형큰고리재갈,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_눈가면,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,눈가리개(BF)",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,망사눈가면,망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사가면,반가지큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,BlueBond편자",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,BlueBond편자,쿠션편자(Cushion)",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,JR러깅재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,cat__tool_set_망사가면,0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,Triabit러깅재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,BlueBond편자",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,눈가리개(BF)",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,눈가리개(BF),계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,망사가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,혀보정끈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,망사가면,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,반가지큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,혀보정끈,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,혀보정끈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_망사눈가면,혀보정끈,혀보정끈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_반가지큰고리재갈,망사눈가면",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_양털코굴레,계란형큰고리재갈",0.0
+favorite_bust,core,rf_d8_leaf100_mf0.5,impurity_importance,"cat__tool_set_혀보정끈,망사눈가면,계란형큰고리재갈",0.0

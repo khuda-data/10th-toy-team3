@@ -1,0 +1,39 @@
+{
+  "test_rows": 6660,
+  "targets": {
+    "darkhorse": {
+      "rows": 3528,
+      "positives": 478,
+      "base_rate": 0.1354875283446712,
+      "stored_label_agreement": 1.0
+    },
+    "favorite_bust": {
+      "rows": 1902,
+      "positives": 484,
+      "base_rate": 0.2544689800210305,
+      "stored_label_agreement": 1.0
+    }
+  },
+  "odds": {
+    "core": {
+      "rows": 3528,
+      "valid_rows": 3528,
+      "missing_rows": 0,
+      "nonpositive_rows": 0,
+      "sentinel_or_extreme_rows": 0,
+      "min_valid": 1.4,
+      "median_valid": 6.1,
+      "max_valid": 295.7
+    },
+    "history_plus": {
+      "rows": 3528,
+      "valid_rows": 3528,
+      "missing_rows": 0,
+      "nonpositive_rows": 0,
+      "sentinel_or_extreme_rows": 0,
+      "min_valid": 1.4,
+      "median_valid": 6.1,
+      "max_valid": 295.7
+    }
+  }
+}

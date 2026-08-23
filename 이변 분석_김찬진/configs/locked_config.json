@@ -1,0 +1,249 @@
+{
+  "locked_at": "2026-08-22T12:23:22.081995+00:00",
+  "test_policy": "single_evaluation_no_retuning",
+  "primary_feature_set": "core",
+  "percentiles": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "bootstrap_reps": 5000,
+  "bootstrap_unit": "race_id",
+  "random_seed": 42,
+  "selections": {
+    "darkhorse": {
+      "core": {
+        "candidate": "rf_d8_leaf30_mfsqrt",
+        "family": "rf",
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 8,
+          "min_samples_leaf": 30,
+          "max_features": "sqrt"
+        },
+        "search_n_estimators": 200,
+        "valid_metrics": {
+          "roc_auc": 0.6481491077702444,
+          "pr_auc": 0.21460867852224844,
+          "brier": 0.11616533186621918,
+          "lift_5pct": 2.1266757473654025,
+          "lift_10pct": 1.9542619542619546,
+          "lift_20pct": 1.6735966735966739
+        },
+        "score_threshold_valid_top10": 0.1924887071675141,
+        "stability": [
+          {
+            "seed": 11,
+            "lift_10pct": 1.8503118503118503,
+            "pr_auc": 0.21503159759302254,
+            "roc_auc": 0.6496069656588103
+          },
+          {
+            "seed": 22,
+            "lift_10pct": 1.7255717255717256,
+            "pr_auc": 0.21077418995947933,
+            "roc_auc": 0.64638585974578
+          },
+          {
+            "seed": 33,
+            "lift_10pct": 1.7047817047817049,
+            "pr_auc": 0.20884331239641302,
+            "roc_auc": 0.6471210070412463
+          },
+          {
+            "seed": 44,
+            "lift_10pct": 1.7255717255717256,
+            "pr_auc": 0.21294633730164608,
+            "roc_auc": 0.6500159949810996
+          },
+          {
+            "seed": 55,
+            "lift_10pct": 1.8295218295218296,
+            "pr_auc": 0.21136372030793082,
+            "roc_auc": 0.6472115185973611
+          }
+        ],
+        "stability_lift10_mean": 1.767151767151767,
+        "stability_lift10_std": 0.06736736692731664,
+        "bundle": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\이변 분석\\outputs\\models\\darkhorse_core_valid_bundle.joblib"
+      },
+      "history_plus": {
+        "candidate": "rf_d6_leaf100_mf0.5",
+        "family": "rf",
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "search_n_estimators": 200,
+        "valid_metrics": {
+          "roc_auc": 0.6556767673417723,
+          "pr_auc": 0.2193038141699743,
+          "brier": 0.11548531303879696,
+          "lift_5pct": 2.001577173990967,
+          "lift_10pct": 1.9334719334719337,
+          "lift_20pct": 1.7463617463617465
+        },
+        "score_threshold_valid_top10": 0.2008790217933708,
+        "stability": [
+          {
+            "seed": 11,
+            "lift_10pct": 2.0374220374220373,
+            "pr_auc": 0.21766337891310578,
+            "roc_auc": 0.653898318903304
+          },
+          {
+            "seed": 22,
+            "lift_10pct": 1.9334719334719337,
+            "pr_auc": 0.22230228867970567,
+            "roc_auc": 0.6556664034231333
+          },
+          {
+            "seed": 33,
+            "lift_10pct": 1.9750519750519753,
+            "pr_auc": 0.2170199567062516,
+            "roc_auc": 0.6527859249693746
+          },
+          {
+            "seed": 44,
+            "lift_10pct": 1.808731808731809,
+            "pr_auc": 0.21835222505600843,
+            "roc_auc": 0.6551122792398965
+          },
+          {
+            "seed": 55,
+            "lift_10pct": 1.9334719334719337,
+            "pr_auc": 0.21687111253508473,
+            "roc_auc": 0.6528978552906768
+          }
+        ],
+        "stability_lift10_mean": 1.9376299376299375,
+        "stability_lift10_std": 0.08367821953221656,
+        "bundle": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\이변 분석\\outputs\\models\\darkhorse_history_plus_valid_bundle.joblib"
+      }
+    },
+    "favorite_bust": {
+      "core": {
+        "candidate": "rf_d8_leaf100_mf0.5",
+        "family": "rf",
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 8,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "search_n_estimators": 200,
+        "valid_metrics": {
+          "roc_auc": 0.6108529791465557,
+          "pr_auc": 0.34567095040349616,
+          "brier": 0.18957750014414065,
+          "lift_5pct": 1.489725587567961,
+          "lift_10pct": 1.5299884412860139,
+          "lift_20pct": 1.4393970204203945
+        },
+        "score_threshold_valid_top10": 0.32334864515852996,
+        "stability": [
+          {
+            "seed": 11,
+            "lift_10pct": 1.5299884412860139,
+            "pr_auc": 0.34926568965630334,
+            "roc_auc": 0.611523185354904
+          },
+          {
+            "seed": 22,
+            "lift_10pct": 1.5501198681450403,
+            "pr_auc": 0.3456507636141045,
+            "roc_auc": 0.6082012305044138
+          },
+          {
+            "seed": 33,
+            "lift_10pct": 1.5299884412860139,
+            "pr_auc": 0.34487650848810397,
+            "roc_auc": 0.608792930996383
+          },
+          {
+            "seed": 44,
+            "lift_10pct": 1.5098570144269874,
+            "pr_auc": 0.34899369907277084,
+            "roc_auc": 0.6110085367697514
+          },
+          {
+            "seed": 55,
+            "lift_10pct": 1.5299884412860139,
+            "pr_auc": 0.35248873574868844,
+            "roc_auc": 0.6127967225317221
+          }
+        ],
+        "stability_lift10_mean": 1.5299884412860139,
+        "stability_lift10_std": 0.014235068446978614,
+        "bundle": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\이변 분석\\outputs\\models\\favorite_bust_core_valid_bundle.joblib"
+      },
+      "history_plus": {
+        "candidate": "logit_c0.1",
+        "family": "logit",
+        "params": {
+          "C": 0.1
+        },
+        "search_n_estimators": null,
+        "valid_metrics": {
+          "roc_auc": 0.600036636000977,
+          "pr_auc": 0.339277840451499,
+          "brier": 0.19189149319512555,
+          "lift_5pct": 1.61051414872212,
+          "lift_10pct": 1.650777002440173,
+          "lift_20pct": 1.4393970204203945
+        },
+        "score_threshold_valid_top10": 0.4372157503460609,
+        "stability": [
+          {
+            "seed": 11,
+            "lift_10pct": 1.650777002440173,
+            "pr_auc": 0.339277840451499,
+            "roc_auc": 0.600036636000977
+          },
+          {
+            "seed": 22,
+            "lift_10pct": 1.650777002440173,
+            "pr_auc": 0.339277840451499,
+            "roc_auc": 0.600036636000977
+          },
+          {
+            "seed": 33,
+            "lift_10pct": 1.650777002440173,
+            "pr_auc": 0.339277840451499,
+            "roc_auc": 0.600036636000977
+          },
+          {
+            "seed": 44,
+            "lift_10pct": 1.650777002440173,
+            "pr_auc": 0.339277840451499,
+            "roc_auc": 0.600036636000977
+          },
+          {
+            "seed": 55,
+            "lift_10pct": 1.650777002440173,
+            "pr_auc": 0.339277840451499,
+            "roc_auc": 0.600036636000977
+          }
+        ],
+        "stability_lift10_mean": 1.650777002440173,
+        "stability_lift10_std": 0.0,
+        "bundle": "C:\\Users\\eman2\\Desktop\\10th-toy-team3-main-0822\\10th-toy-team3-main\\이변 분석\\outputs\\models\\favorite_bust_history_plus_valid_bundle.joblib"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.13",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0"
+  },
+  "sha256": "7076b51812e808082e024ee79b31d1176e11a56433d409472c196b0981bbe1ad"
+}

@@ -1,0 +1,211 @@
+﻿target,feature_set,candidate,importance_type,feature,importance
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__train_runs_14__z,0.041417612997722494
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_last_ord,0.0357183546154562
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__rating__z,0.031025289324147547
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_plcrate,0.029906672383591442
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tr_winrate__z,0.02935989774928642
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_rest_days__z,0.02873568552850351
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wgBudam__z,0.02759908917921528
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tr_plcrate,0.025465879750412018
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jk_plcrate,0.024770448235886765
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wg_diff__z,0.024340055182527378
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tr_winrate,0.023435449701287622
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__style_vs_race,0.02261720160001266
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_rest_days,0.02238720475272647
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jk_winrate__z,0.020990660557512347
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_style,0.020640608072350332
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_winrate__z,0.020478047581576155
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_style_sd,0.020452087709491914
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tr_starts,0.020165847596849407
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__birthday,0.020020720551627402
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wg__z,0.019247084300946377
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__train_runs_14,0.019195236026912508
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jk_winrate,0.019095234710680017
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__ow_plcrate,0.01862750631088863
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__race_style_sd,0.018169781864992417
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wg,0.017717764879926944
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__train_sec_14,0.017659554327144604
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__rating,0.0174582494890188
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wg_diff,0.017287726797498053
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__race_style_mean,0.016928633435681063
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__clinic_30d,0.01662993451769925
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__ow_starts,0.016425076220538414
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jk_starts,0.01641642164281805
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__ilsu,0.016218252770012532
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__ow_winrate,0.015590418963462456
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__age__pr,0.01550101613966836
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__n_run,0.012420558279550903
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_starts,0.01184826295985373
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__train_days_14,0.010567491068021819
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__race_front_ratio,0.010421779503939695
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wgBudam,0.010207406937801387
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__chulNo,0.009988681952465843
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__waterRate,0.009969886724687346
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_last_dist,0.008592298352519847
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_dist_starts,0.007851822722035691
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_winrate,0.007420780360407005
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__age,0.006658762227859174
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wgBudam_chg,0.00643390600451974
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jkhr_starts,0.006361009219461467
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__rcDist,0.00590710040546883
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__spRating,0.005708532081322511
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__chaksun1,0.005657324585208105
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__race_front_n,0.005114168339035968
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_dist_chg,0.004548782307055033
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__budam_핸디캡,0.003976011176520018
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tool_n,0.0037441912775620827
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__stRating,0.003709406858989256
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__sex_거,0.0036842712087933422
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__hr_dist_winrate,0.003313933077122261
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__wgBudamBigo_*,0.0028056909728868
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__is_debut,0.0025912127843172083
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__budam_별정A,0.0025815859393205085
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__pace_conflict,0.002532259237518168
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__wgBudamBigo_-,0.002485037191429763
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__sex_암,0.002439155067646985
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__jkhr_winrate,0.0023765633366752536
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__is_new_horse,0.0023038843141287204
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__rating_na,0.002218108839401982
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__buga1,0.0019330675912894934
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__ill_n,0.0019150737988861625
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~35,0.001726545097570752
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_연령오픈,0.001721758627320961
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_망사가면,0.0016947986702235591
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_국5등급,0.0014995246812557351
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_건조 (4%),0.0014879678396355718
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__sex_수,0.0014776472014369308
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_국6등급,0.0013648285456163887
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_infrequent_sklearn,0.0013335052782049463
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R0~0,0.001302929742563219
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_한국,0.0012659037760287422
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__weather_맑음,0.0012646689531290796
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~50,0.0012555716694823396
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~65,0.0011774034129982953
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rcName_일반,0.001152515479886512
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_혼4등급,0.0010899181042944414
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__weather_흐림,0.001077157671806065
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_망사눈가면,0.0010305456135282244
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_3세이상,0.0010044961114794421
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈",0.0009523820956545454
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__is_front,0.0008939103550807692
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_미국,0.0008858387173544012
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,계란형큰고리재갈",0.0008361177049954233
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_다습 (12%),0.0007877950579171306
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_건조 (3%),0.000733897838854025
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_국3등급,0.0007162573926969841
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_국4등급,0.0007065246704520183
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R0~140,0.0006923521678726215
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rcName_infrequent_sklearn,0.0006873590493094919
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__budam_마령,0.000651253324908924
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__wgJk,0.0006420600644015833
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__start_delay,0.0005873467241178989
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__tr_multi,0.0005537339178564476
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_포화 (16%),0.0005358152806924417
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__weather_비,0.0005267788434428147
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_양호 (6%),0.0005181989459838677
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_양호 (7%),0.0005048626186130802
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R0~50,0.0004981306691512436
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면",0.00043192377775917685
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_혼OPEN,0.0003750013604038821
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_건조 (5%),0.00037304670847684423
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_계란형큰고리재갈,0.00034985425356659543
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_다습 (10%),0.00034004629991161837
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_다습 (11%),0.00031421162730439523
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~80,0.0002962721275250065
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_-,0.00027901926918208226
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_2세,0.00024246603829889278
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,반가지큰고리재갈",0.00023904970619232347
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_혼3등급,0.00022735258783886968
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_다습 (14%),0.00022499113243231909
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_2등급,0.0002128109983836219
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_한국(포),0.00020188586962586381
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_포화 (18%),0.0001345165156089216
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_불량 (20%),0.0001292302451141329
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_다습 (13%),0.00012799848901126612
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_양호 (8%),0.00012079134908883067
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_1등급,0.00010335668894828013
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_포화 (15%),8.894682097165098e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_양호 (9%),6.251792621926678e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_3세,6.0510966242507495e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,num__bleed,5.292531848435094e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_뉴질랜드,5.039181771568877e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사가면",4.415709874874282e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_infrequent_sklearn,3.729443789501647e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_건조 (2%),2.6103648051030418e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,혀보정끈",2.081992200838111e-05
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가면,계란형큰고리재갈",7.61242039453778e-06
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__rank_국OPEN,3.880491005054064e-06
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_남3/북2,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_남3/북3,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__meet_서울,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__budam_별정B,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__ageCond_infrequent_sklearn,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~140,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~95,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R66~95,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R0~80,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R0~65,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_Triabit러깅재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_BlueBond편자,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_호주,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__born_infrequent_sklearn,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__weather_눈,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_불량 (23%),0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_포화 (17%),0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__track_포화 (19%),0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R1~100,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__prizeCond_R66~100,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,양털코굴레",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,양털코굴레,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,혀보정끈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가리개(BF),망사눈가면,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가리개(BF),계란형큰고리재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,혀보정끈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,혀보정끈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가면,반가지큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가면,계란형큰고리재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_눈가면,반가지큰고리재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_눈가면,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,계란형큰고리재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,망사눈가면,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,눈가면,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사가면,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,Triabit러깅재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_계란형큰고리재갈,망사눈가면,눈가리개(BF)",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,혀보정끈,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,혀보정끈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,반가지큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사가면,망사눈가면,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,JR러깅재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,Triabit러깅재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,BlueBond편자,쿠션편자(Cushion)",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,Triabit러깅재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,눈가리개(BF)",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,반가지큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,눈가리개(BF)",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,계란형큰고리재갈,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,BlueBond편자,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,눈가면,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,눈가리개(BF),계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,망사가면,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,망사가면,양털코굴레",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,반가지큰고리재갈,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,반가지큰고리재갈,혀보정끈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,망사가면,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,양털코굴레,망사가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,혀보정끈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_반가지큰고리재갈,0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_망사눈가면,혀보정끈,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_반가지큰고리재갈,망사눈가면",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_반가지큰고리재갈,망사눈가면,BlueBond편자",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,"cat__tool_set_양털코굴레,계란형큰고리재갈",0.0
+darkhorse,core,rf_d8_leaf30_mfsqrt,impurity_importance,cat__tool_set_혀보정끈,0.0

@@ -1,0 +1,21 @@
+{
+  "pooled": {
+    "n_bets": 327,
+    "hit_rate": 0.13149847094801223,
+    "unit_roi": 0.3269113149847095,
+    "roi_ci_95_lo": -0.027019608375409412,
+    "roi_ci_95_hi": 0.6825280343494556,
+    "ci_confirmed_positive": false
+  },
+  "kelly": {
+    "kelly_bets": 171,
+    "ending_bankroll": 140.57505672151729,
+    "bankroll_return": 0.4057505672151729,
+    "max_drawdown": 0.08351083750577637,
+    "sharpe_252": 2.725044533129129
+  },
+  "placebo_mean_roi": -0.21954281345565752,
+  "placebo_p_value": 0.005,
+  "n_policies_scanned": 30,
+  "full_sample_scan_ci_positive": 2
+}

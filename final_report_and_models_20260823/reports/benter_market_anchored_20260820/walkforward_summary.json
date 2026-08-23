@@ -1,0 +1,15 @@
+{
+  "n_oos_races": 4009,
+  "mean_delta_ll_per_race": 0.004905710799364534,
+  "delta_ll_ci_95": [
+    0.001256031262471424,
+    0.00863500952774331
+  ],
+  "ci_confirmed_positive": true,
+  "total_delta_ll": 19.66699459465242,
+  "n_folds_evaluated": 6,
+  "l2_penalty": 5.0,
+  "bonferroni_alpha": 0.05,
+  "method": "ln(q) offset(coef=1) conditional logit, expanding-window walk-forward, feature selection re-done inside each fold's training window only",
+  "reference": "Benter (1994); Bolton & Chapman (1986); Lessmann et al. two-step conditional logit"
+}

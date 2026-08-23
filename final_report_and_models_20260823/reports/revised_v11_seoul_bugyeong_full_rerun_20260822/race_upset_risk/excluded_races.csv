@@ -1,2 +1,0 @@
-﻿split,rcDate,race_id,meet_cd,meet_name,field_size,label_eligible,exclusion_reason,upset_label,winner_entry_id,winner_final_win_odds,winner_market_rank_average,bottom_half_rank_cutoff,bottom_half_runner_count,market_upset_probability,market_probability_sum
-test,20260707,20260707_1_02,1,서울,11,False,invalid_or_sentinel_final_odds,,20260707_1_02_02,9999.9,7.0,6,9,,0.9999999999999998

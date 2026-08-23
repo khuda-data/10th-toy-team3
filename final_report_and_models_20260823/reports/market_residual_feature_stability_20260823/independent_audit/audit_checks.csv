@@ -1,7 +1,0 @@
-﻿check,passed,detail
-model_file_count,True,files=8
-coefficient_identity,True,rows=816 max_error=9.888e-17
-importance_identity,True,max_error=9.888e-17
-within_fold_importance_sums,True,max_sum_error=2.220e-15
-no_raw_market_or_outcome_terms,True,flagged=0
-stable_rule_replay,True,terms=102

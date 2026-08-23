@@ -1,3 +1,0 @@
-﻿venue,races,delta_ll_mean,ci_low_race_bootstrap,ci_high_race_bootstrap,market_beaten_point_estimate
-부경,23,0.01652626429316103,-0.013673262737592893,0.047138459800653044,True
-서울,41,0.019303963612785538,-0.008125411985190713,0.0444725436861809,True

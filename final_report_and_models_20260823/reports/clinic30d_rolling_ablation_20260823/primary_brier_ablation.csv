@@ -1,3 +1,0 @@
-﻿full_model,ablated_model,full_brier,ablated_brier,brier_improvement_from_clinic
-global_full,global_without_clinic,0.0722514021447143,0.07228072511892804,2.9322974213735753e-05
-partial8_full,partial8_without_clinic,0.07224243494916578,0.0722760253113108,3.359036214502231e-05

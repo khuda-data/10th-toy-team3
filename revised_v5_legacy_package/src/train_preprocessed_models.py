@@ -44,8 +44,8 @@ def load_data() -> tuple[list[str], dict[str, pd.DataFrame], dict[str, pd.DataFr
     features = manifest["model_features"]
     data, metadata = {}, {}
     for split in ("train", "valid", "test"):
-        data[split] = pd.read_csv(DATA_ROOT / f"{split}_{DATA_FILE_TOKEN}_numeric_scaled.csv", low_memory=False)
-        metadata[split] = pd.read_csv(DATA_ROOT / f"{split}_metadata.csv", low_memory=False)
+        data[split] = pd.read_csv(DATA_ROOT / f"{split}_{DATA_FILE_TOKEN}_numeric_scaled.csv.gz", low_memory=False)
+        metadata[split] = pd.read_csv(DATA_ROOT / f"{split}_metadata.csv.gz", low_memory=False)
         matrix = data[split][features]
         if len(data[split]) != len(metadata[split]):
             raise ValueError(f"{split}: 데이터/메타데이터 행 수 불일치")

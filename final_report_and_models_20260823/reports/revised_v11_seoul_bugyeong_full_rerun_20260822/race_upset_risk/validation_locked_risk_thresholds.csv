@@ -1,9 +1,0 @@
-﻿policy,direction,target_fraction,threshold,comparison,source_split,source_probability,source_races,validation_realized_fraction
-high_10pct,high,0.1,0.14910937178014957,probability >= threshold,valid,calibrated_model_probability,1084,0.10055350553505535
-low_10pct,low,0.1,0.09372859169421972,probability <= threshold,valid,calibrated_model_probability,1084,0.10055350553505535
-high_20pct,high,0.2,0.13874122008773454,probability >= threshold,valid,calibrated_model_probability,1084,0.20018450184501846
-low_20pct,low,0.2,0.10144144228358085,probability <= threshold,valid,calibrated_model_probability,1084,0.20018450184501846
-high_30pct,high,0.3,0.13091819360097248,probability >= threshold,valid,calibrated_model_probability,1084,0.29981549815498154
-low_30pct,low,0.3,0.10782366311022071,probability <= threshold,valid,calibrated_model_probability,1084,0.29981549815498154
-high_40pct,high,0.4,0.12454437293118562,probability >= threshold,valid,calibrated_model_probability,1084,0.4003690036900369
-low_40pct,low,0.4,0.113611343012241,probability <= threshold,valid,calibrated_model_probability,1084,0.4003690036900369

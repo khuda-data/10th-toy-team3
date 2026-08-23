@@ -1,8 +1,0 @@
-﻿check,status,detail
-source_hashes,PASS,"{'candidates': '6BBEE7135B4100A609E80722261D06477F1C4519FCD95E7F5CE7B1EE8997B454', 'selections': '14BD234B2491C795FF179DAF6662A71C5EDE36371B5894E8BE150D4427E53172'}"
-source_fixed_lock_audit,PASS,PASS_WITH_LIMITATIONS
-four_calibrator_formula_replays,PASS,{'PASS': 4}
-pooled_probability_metric_replay,PASS,"{'actual_rate': 0.0, 'market_mean_probability': 0.0, 'market_log_loss': 0.0, 'market_brier': 0.0, 'uncalibrated_mean_probability': 0.0, 'uncalibrated_log_loss': 0.0, 'uncalibrated_brier': 0.0, 'calibrated_mean_probability': 0.0, 'calibrated_log_loss': 0.0, 'calibrated_brier': 0.0}"
-bootstrap_holm_replay,PASS,"{'ll_cal_vs_uncal': {'estimate_ci_error': 4.336808689942018e-18, 'monte_carlo_p_error': 0.0}, 'll_cal_vs_market': {'estimate_ci_error': 5.204170427930421e-18, 'monte_carlo_p_error': 0.0}, 'brier_cal_vs_uncal': {'estimate_ci_error': 1.734723475976807e-18, 'monte_carlo_p_error': 0.0}, 'brier_cal_vs_market': {'estimate_ci_error': 1.3010426069826053e-18, 'monte_carlo_p_error': 0.0}}"
-kelly_all_haircuts_replay,PASS,1.7763568394002505e-15
-actual_training_files,PASS,{'trained': 4}

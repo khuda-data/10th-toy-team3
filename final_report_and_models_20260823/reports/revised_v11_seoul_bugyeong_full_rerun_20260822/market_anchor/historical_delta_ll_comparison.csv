@@ -1,6 +1,0 @@
-﻿run,protocol,races,delta_ll_per_race,ci_low,ci_high,source
-Claude-era conditional logit walk-forward,expanding-window OOS,4009,0.004905710799364534,0.001256031262471424,0.00863500952774331,benter_market_anchored_20260820/walkforward_summary.json
-Claude-era Base Margin walk-forward,expanding-window OOS,4009,0.007392494503419869,0.0043732933768121625,0.01044439568663805,base_margin_boosting_20260821/summary.json
-시장 앵커 조건부 로짓,fixed latest test,1101,0.013973860330637264,0.0023183124195813236,0.025063123420468143,market_anchor_same_test_20260822/delta_ll_metrics.csv
-시장 앵커 Base Margin,fixed latest test,1101,0.01308337243121729,0.006614488900544429,0.019647000505588375,market_anchor_same_test_20260822/delta_ll_metrics.csv
-두 시장 앵커 앙상블,fixed latest test,1101,0.017194340801853756,0.00950731349536466,0.025013720796707464,market_anchor_same_test_20260822/delta_ll_metrics.csv

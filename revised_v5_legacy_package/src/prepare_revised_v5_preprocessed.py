@@ -119,9 +119,9 @@ def main() -> None:
             TARGET: frames[split][TARGET].to_numpy(dtype=np.int8),
         })
         result = pd.concat([result, features], axis=1)
-        result.to_csv(OUTPUT / f"{split}_revised_v5_numeric_scaled.csv", index=False, encoding="utf-8-sig")
+        result.to_csv(OUTPUT / f"{split}_revised_v5_numeric_scaled.csv.gz", index=False, encoding="utf-8-sig")
         frames[split][KEY_COLUMNS].to_csv(
-            OUTPUT / f"{split}_metadata.csv", index=False, encoding="utf-8-sig"
+            OUTPUT / f"{split}_metadata.csv.gz", index=False, encoding="utf-8-sig"
         )
         results[split] = result
 

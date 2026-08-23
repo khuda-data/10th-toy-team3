@@ -1,6 +1,0 @@
-﻿model_key,candidate,validation_delta_ll_per_race,converged
-anchored_conditional_logit,l2=0.1,-0.012756898587354867,True
-anchored_conditional_logit,l2=1.0,-0.006975972972593714,True
-anchored_conditional_logit,l2=10.0,-0.0011314133970644537,True
-anchored_conditional_logit,l2=100.0,0.005312379339863954,True
-anchored_base_margin,trees=188,0.021833257555457217,True

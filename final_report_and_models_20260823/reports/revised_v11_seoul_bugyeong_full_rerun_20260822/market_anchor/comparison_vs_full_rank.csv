@@ -1,8 +1,0 @@
-﻿bet_type,anchor_model,anchor_policy,anchor_test_bets,anchor_test_roi,prior_full_rank_model,prior_full_rank_policy,prior_full_rank_test_bets,prior_full_rank_test_roi,roi_delta_anchor_minus_full_rank
-단승,시장 앵커 Base Margin,top_10pct_edge,108,-0.14537037037037034,Random Forest,top_10pct_edge,108,-0.0305555555555555,-0.11481481481481484
-연승,시장 앵커 Base Margin,top_10pct_edge,101,-0.07524752475247524,XGBoost Ranker,top_10pct_edge,103,0.0126213592233009,-0.08786888397577615
-복승,두 시장 앵커 앙상블,top_10pct_edge,108,0.3972222222222222,Random Forest,positive_edge,685,-0.1764963503649635,0.5737185725871857
-쌍승,두 시장 앵커 앙상블,top_10pct_edge,108,0.1675925925925926,Random Forest,positive_edge,688,-0.1803779069767442,0.3479704995693368
-삼복승,시장 앵커 Base Margin,top_20pct_edge,216,-0.07685185185185182,XGBoost Ranker,top_30pct_edge,324,-0.2453703703703703,0.16851851851851846
-삼쌍승,시장 앵커 Base Margin,top_10pct_edge,108,-0.32962962962962966,Random Forest,positive_edge,752,-0.665159574468085,0.3355299448384554
-복연승,두 시장 앵커 앙상블,top_10pct_edge,108,0.15925925925925924,LightGBM LambdaRank,top_10pct_edge,108,-0.5361111111111112,0.6953703703703704

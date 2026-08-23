@@ -1,0 +1,273 @@
+{
+  "status": "BUILT_FROM_VALIDATED_EVIDENCE",
+  "generated_at": "2026-08-22T23:44:52+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\complete_report\\index.html",
+    "bytes": 150768,
+    "modified_utc": "2026-08-22T14:44:52.047127+00:00",
+    "sha256": "F6A923841E4FD2773542C2AF624D291DA526A605BB1C3869C720463167E454D6"
+  },
+  "evidence": {
+    "dataset_manifest": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "bytes": 11173,
+      "modified_utc": "2026-08-22T11:45:32.193564+00:00",
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    "dataset_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+      "bytes": 2348,
+      "modified_utc": "2026-08-22T11:45:32.194867+00:00",
+      "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+    },
+    "rank_audit": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\run_dataset_audit.json",
+      "bytes": 6199,
+      "modified_utc": "2026-08-22T11:45:44.480459+00:00",
+      "sha256": "58809AA631ED36DBE6F308E8BC9BBB3C83DF6842F7127A47A045ED12B4096506"
+    },
+    "rank_reload_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\final_validation.json",
+      "bytes": 24695,
+      "modified_utc": "2026-08-22T11:54:11.251951+00:00",
+      "sha256": "B9CB967F333565AB3BA331FAE0C7FBD08825857243BA5ED34D5826A47F1E21A2"
+    },
+    "rank_report_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\comprehensive_validation.json",
+      "bytes": 17292,
+      "modified_utc": "2026-08-22T12:01:18.345096+00:00",
+      "sha256": "F96D818223B432864210DEEB5716375652B75F4C5637298BBC128D02B2C8C6E7"
+    },
+    "rank_metrics": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\model_metric_comparison.csv",
+      "bytes": 5242,
+      "modified_utc": "2026-08-22T12:01:18.109887+00:00",
+      "sha256": "EE95990F4723E876202218CA29DB6504B0544FD734566E8EE8978281EA4C578C"
+    },
+    "rank_locked": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\locked_policy_test_results.csv",
+      "bytes": 4458,
+      "modified_utc": "2026-08-22T12:01:18.115587+00:00",
+      "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"
+    },
+    "rank_importance": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\feature_importance_consensus.csv",
+      "bytes": 8980,
+      "modified_utc": "2026-08-22T12:01:18.120219+00:00",
+      "sha256": "962F498C4090282BD94F6E0F00F50274A0C4175408294179D761B59FD9B8DF55"
+    },
+    "official_audit": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividend_audit.json",
+      "bytes": 2110,
+      "modified_utc": "2026-08-22T11:58:19.754848+00:00",
+      "sha256": "57D4520F784B7FB475E256FE4CF0D20BB41E15E4E8BE409812702E536A26C120"
+    },
+    "official_dividends": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividends.csv",
+      "bytes": 6999002,
+      "modified_utc": "2026-08-22T11:57:57.514131+00:00",
+      "sha256": "1DA22B6C3CAA3C16FFD7E117FBC65F47B0927C3F00FFA857DBFCFFE7A76F5804"
+    },
+    "anchor_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\validation.json",
+      "bytes": 3817,
+      "modified_utc": "2026-08-22T12:03:10.846811+00:00",
+      "sha256": "D3F7371AC34F40AB7F074467648BE31D988FB9EC00B087970E9654B5E408EFA0"
+    },
+    "anchor_independent": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\independent_validation.json",
+      "bytes": 4963,
+      "modified_utc": "2026-08-22T12:03:47.102366+00:00",
+      "sha256": "B4BEC6CD4286709FBED4A6AA7972DD7AC38D0212067903730655E38BEC2BCBE2"
+    },
+    "anchor_delta": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv",
+      "bytes": 2154,
+      "modified_utc": "2026-08-22T12:02:59.865288+00:00",
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"
+    },
+    "anchor_locked": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\locked_test_results.csv",
+      "bytes": 3056,
+      "modified_utc": "2026-08-22T12:03:10.260887+00:00",
+      "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"
+    },
+    "market_baseline": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\market_baseline.csv",
+      "bytes": 1495,
+      "modified_utc": "2026-08-22T12:03:10.261994+00:00",
+      "sha256": "A127EE4AC91F528BA84D6B19765FE3B0D1AD2B5A812283E6A6F26F65E65ADA28"
+    },
+    "anchor_importance": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\feature_importance.csv",
+      "bytes": 26113,
+      "modified_utc": "2026-08-22T12:02:59.147772+00:00",
+      "sha256": "DD6305D1C39B9640C2E4F960EF41B9A59A9F4E91F154172BE47584C6C9203738"
+    },
+    "upset_manifest": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\experiment_manifest.json",
+      "bytes": 3409,
+      "modified_utc": "2026-08-22T12:22:43.727403+00:00",
+      "sha256": "253166799271A94DED0BC81FF8E07B37299EBAE053157D680533F9375C4B011D"
+    },
+    "upset_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\independent_validation.json",
+      "bytes": 12462,
+      "modified_utc": "2026-08-22T12:26:18.563910+00:00",
+      "sha256": "4D91146708F2907FA5300521570CB45794A4943FD505BABEFA1CB0B0D4251D75"
+    },
+    "upset_delta": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\model_delta_ll_metrics.csv",
+      "bytes": 1281,
+      "modified_utc": "2026-08-22T12:22:42.762810+00:00",
+      "sha256": "8CD26F71F970A6EEE67D3B3F9D96BDA589F082246360135A165C2A44952FF6DD"
+    },
+    "upset_importance": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_feature_importance.csv",
+      "bytes": 14991,
+      "modified_utc": "2026-08-22T12:21:15.614828+00:00",
+      "sha256": "DF1CCF962FAEB714686919AACE244AC0E84DAD2CD111BD27A7A738D118354DBE"
+    },
+    "upset_summary": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_bet_summary_independently_verified.csv",
+      "bytes": 51824,
+      "modified_utc": "2026-08-22T12:26:18.251911+00:00",
+      "sha256": "43156E590245ED171F44DD37F625F659E914BDA9666C92E1BC62F38CCD0BD29B"
+    },
+    "upset_edge": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\edge_accuracy_summary.csv",
+      "bytes": 47322,
+      "modified_utc": "2026-08-22T12:26:18.329808+00:00",
+      "sha256": "CCC08AAA108E592A67E3CA50FFCE9F3FE2CF22C838876A83336033D874A40B2A"
+    },
+    "upset_local": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\top_upset_horse_local_reasons.csv",
+      "bytes": 16813,
+      "modified_utc": "2026-08-22T12:22:43.230129+00:00",
+      "sha256": "10701CECCAC285B234BB1D221A47E98AF1BA9489B76C43ABFC06445351AD4727"
+    },
+    "upset_locked": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\validation_locked_threshold_sensitivity.csv",
+      "bytes": 12052,
+      "modified_utc": "2026-08-22T12:26:18.525756+00:00",
+      "sha256": "C07D7AEE32DABEDB45C9B81E03798449FD30AF7B5CF2D0723C52EFA0C32F29BD"
+    },
+    "venue_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_analysis_validation.json",
+      "bytes": 111573,
+      "modified_utc": "2026-08-22T12:30:48.351564+00:00",
+      "sha256": "4A09EEA4194A145EBE02CCA54B7947414590C2787ABAC755E4B64BB3DA4525B0"
+    },
+    "venue_rank": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_rank_metrics.csv",
+      "bytes": 7331,
+      "modified_utc": "2026-08-22T12:30:48.295833+00:00",
+      "sha256": "4A884AADA4FA9FE78258700F6C91478B161CA6ABBB3A438ED4E1D7FFE660FB93"
+    },
+    "venue_anchor": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_anchor_metrics.csv",
+      "bytes": 3188,
+      "modified_utc": "2026-08-22T12:30:48.297843+00:00",
+      "sha256": "BD149ADFA809713B8EA3E45F167DAE6F7C5BB01C716DFA58B019200AE1C635C2"
+    },
+    "venue_betting": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_betting_metrics.csv",
+      "bytes": 97914,
+      "modified_utc": "2026-08-22T12:30:48.303281+00:00",
+      "sha256": "A2449917588DAE596277576917CC5CB992EAAA91E6D0419A08AD10B80E96AC14"
+    },
+    "strict_te_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\strict_te_independent_validation.json",
+      "bytes": 16908,
+      "modified_utc": "2026-08-22T12:48:51.128357+00:00",
+      "sha256": "D11FAB1380C2D600CF7D1A01A11427A981A0494ECC8A7458F8FE2D97C97DCBAC"
+    },
+    "risk_result": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\race_upset_risk_result.json",
+      "bytes": 18710,
+      "modified_utc": "2026-08-22T12:50:45.715612+00:00",
+      "sha256": "B8BC121FD7979CF907A1FB91908E74023E0EE5BBB423854EE6BD0D21C019E5A8"
+    },
+    "risk_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\self_validation.json",
+      "bytes": 7325,
+      "modified_utc": "2026-08-22T12:50:45.566122+00:00",
+      "sha256": "A6C6634C6DA84398C38D4E9DCAEFB365D92005E30A6F3D59C70A7EA549A36C63"
+    },
+    "risk_metrics": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\metrics_by_split_venue_source.csv",
+      "bytes": 8151,
+      "modified_utc": "2026-08-22T12:50:45.401744+00:00",
+      "sha256": "85C6C54607D2243FF59CC0BAE29D837838DD1069A2C613F4D14938FA6EE865F1"
+    },
+    "risk_differences": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\model_vs_market_differences.csv",
+      "bytes": 2538,
+      "modified_utc": "2026-08-22T12:50:45.402754+00:00",
+      "sha256": "DC281FDA1462E2E51E673F46744085AE993F0A558E74B3248FEE529416EDE33C"
+    },
+    "risk_lift": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\risk_band_lift.csv",
+      "bytes": 15559,
+      "modified_utc": "2026-08-22T12:50:45.408756+00:00",
+      "sha256": "212C51CB0138B1C7A03DB12686C019E35598D42C519A56EB51B8477F3C97E5BC"
+    },
+    "risk_importance": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\base_feature_importance.csv",
+      "bytes": 7624,
+      "modified_utc": "2026-08-22T12:50:45.413096+00:00",
+      "sha256": "3A20DB69B3064F0FEA98B14DA82DD7B747F455247FD554B171F86066D6288E05"
+    },
+    "browser_qa": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\complete_report\\browser_qa.json",
+      "bytes": 560,
+      "modified_utc": "2026-08-22T12:43:29.640740+00:00",
+      "sha256": "AC4275C33BDB2DB258C94E57291CD6867B0C0BC396540568E5993E7F0548D023"
+    },
+    "visual_studio_validation": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\complete_report\\visual_studio_visibility.json",
+      "bytes": 6340,
+      "modified_utc": "2026-08-22T14:44:47.350677+00:00",
+      "sha256": "11F7B51727688E505DC732DE310B540D221204C5BE01454C71AC78B2D89F4489"
+    },
+    "external_sources": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\interim_market_error_research_20260822\\external_sources.json",
+      "bytes": 7668,
+      "modified_utc": "2026-08-22T11:17:46.745310+00:00",
+      "sha256": "1F0691609DEBEAC5BBA85647BF10500670C2FBC7E3B045980CC88F5A14DF326A"
+    },
+    "interim_report": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\interim_market_error_research_20260822\\index.html",
+      "bytes": 102618,
+      "modified_utc": "2026-08-22T11:17:46.743217+00:00",
+      "sha256": "7785E455707F04D61320943888ED5C1E5A00156347A959034C3E2893CB07A688"
+    },
+    "claude_comparison": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\full_rank_all_bets_rerun_20260822\\claude_comparison_evidence.json",
+      "bytes": 33341,
+      "modified_utc": "2026-08-22T09:25:39.795066+00:00",
+      "sha256": "38B49F72EEE2721FBBD55AC685E7F8CDB864CA45FA4E4904EC620A12400E4BC1"
+    }
+  },
+  "upstream_validation_statuses": {
+    "dataset preprocessing": "PASS",
+    "rank dataset audit": "PASS",
+    "rank model reload": "PASS",
+    "rank report": "PASS",
+    "anchor primary": "PASS",
+    "anchor independent": "PASS",
+    "upset independent": "PASS",
+    "venue independent": "PASS",
+    "strict date target encoding": "PASS",
+    "race upset risk": "PASS",
+    "visual studio visibility": "PASS"
+  },
+  "limitations": [
+    "Final odds are not decision-time odds.",
+    "Losing combination pre-race odds are unavailable.",
+    "The current test interval has been inspected in multiple experiments.",
+    "No ROI cell is approved for deployment.",
+    "Browser rendering QA was blocked by the in-app browser security policy; no visual PASS is asserted.",
+    "The race-level upset-risk model underperformed the market baseline and is not deployed."
+  ]
+}

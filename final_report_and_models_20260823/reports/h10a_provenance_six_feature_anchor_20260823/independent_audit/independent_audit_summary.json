@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 22,
+  "checks_passed": 22,
+  "checks_failed": 0,
+  "independent_historical_feature_replay_max_error": 8.881784197001252e-16,
+  "independent_probability_and_metric_replay": "PASS",
+  "fresh64_scope": "posthoc optional continuation, not pristine confirmation",
+  "fresh_burden_change_scope": "partial available-history reconstruction; 38 active rows lack an observed in-scope prior",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T06:27:55.220753+09:00"
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "report": "outputs\\reports\\interim_market_error_research_20260822\\index.html",
+  "report_bytes": 102618,
+  "report_sha256": "7785E455707F04D61320943888ED5C1E5A00156347A959034C3E2893CB07A688",
+  "counts": {
+    "html": 1,
+    "head": 1,
+    "meta": 3,
+    "title": 5,
+    "style": 1,
+    "body": 1,
+    "div": 109,
+    "aside": 1,
+    "h2": 14,
+    "nav": 1,
+    "a": 96,
+    "br": 12,
+    "main": 1,
+    "header": 1,
+    "h1": 1,
+    "p": 79,
+    "span": 117,
+    "section": 13,
+    "article": 44,
+    "code": 122,
+    "strong": 56,
+    "h3": 25,
+    "sub": 6,
+    "em": 3,
+    "table": 19,
+    "thead": 19,
+    "tr": 142,
+    "th": 112,
+    "tbody": 19,
+    "td": 654,
+    "small": 60,
+    "h4": 29,
+    "svg": 4,
+    "text": 62,
+    "rect": 12,
+    "line": 24,
+    "circle": 12,
+    "ol": 1,
+    "li": 14,
+    "ul": 1
+  },
+  "checks_passed": 15,
+  "checks_total": 15,
+  "checks": [
+    {
+      "check": "UTF-8 HTML document",
+      "passed": true,
+      "detail": "doctype"
+    },
+    {
+      "check": "Korean document language",
+      "passed": true,
+      "detail": "ko"
+    },
+    {
+      "check": "UTF-8 charset declared",
+      "passed": true,
+      "detail": [
+        "utf-8"
+      ]
+    },
+    {
+      "check": "responsive viewport declared",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "all required report sections",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "all required report terms",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no broken local or anchor links",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no Unicode replacement characters",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "no unresolved template placeholders",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "tables present",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "check": "SVG visualizations present",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "meet scope audit PASS",
+      "passed": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "headline scope is Seoul only",
+      "passed": true,
+      "detail": "서울 only"
+    },
+    {
+      "check": "expanded scope is Seoul and Bugyeong only",
+      "passed": true,
+      "detail": "서울 + 부경 only"
+    },
+    {
+      "check": "manifest report hash matches",
+      "passed": true,
+      "detail": "7785E455707F04D61320943888ED5C1E5A00156347A959034C3E2893CB07A688"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "reference": {
+    "path": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+    "bytes": 23285667,
+    "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+  },
+  "v10_preprocessor": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\archive\\legacy_20260823\\data\\legacy\\revised_v10_seoul_bugyeong_preprocessed\\revised_v10_seoul_bugyeong_preprocessor.joblib",
+    "bytes": 14824,
+    "sha256": "31A40F5B8ECCDFE15CBA725FE70943FE43ABB28491ABDA4362FD67C18AED2C4B"
+  },
+  "v11_preprocessor": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\revised_v11_preprocessor_and_selector.joblib",
+    "bytes": 5531,
+    "sha256": "5498F51CC421C3102BC4E8AC8B697C7B55471C617F3AE0CAB898FD47A16A16AA"
+  },
+  "fresh_entry": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\entry_rows.csv",
+    "bytes": 238675,
+    "sha256": "7AF17E76EB1F29A4BCD7D7790E3D0F6A2D78E6472F1F677FF56035512DE9126D"
+  },
+  "fresh_result": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\result_rows.csv",
+    "bytes": 308043,
+    "sha256": "2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A"
+  },
+  "existing_m5_probabilities": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\fresh_runner_probabilities.csv",
+    "bytes": 109330,
+    "sha256": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132"
+  },
+  "v11_train_data": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "bytes": 85442937,
+    "sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A"
+  },
+  "v11_train_metadata": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "bytes": 3356961,
+    "sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+  },
+  "v10_train_raw": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v10_seoul_bugyeong\\train_revised_v10_seoul_bugyeong.csv",
+    "bytes": 37512782,
+    "sha256": "F2211117429BFA8ECEBFD70DCE3481B0FEF9CE115A67C658C49F12F07C84C37C"
+  },
+  "v11_valid_data": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "bytes": 28957996,
+    "sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA"
+  },
+  "v11_valid_metadata": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+    "bytes": 1137381,
+    "sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+  },
+  "v10_valid_raw": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v10_seoul_bugyeong\\valid_revised_v10_seoul_bugyeong.csv",
+    "bytes": 12944607,
+    "sha256": "EC2BF16BBDAF570FEB243573755E05276A65323C94DB9FEF99CB4861486F80F0"
+  },
+  "v11_test_data": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "bytes": 29861350,
+    "sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE"
+  },
+  "v11_test_metadata": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+    "bytes": 1174910,
+    "sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+  },
+  "v10_test_raw": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v10_seoul_bugyeong\\test_revised_v10_seoul_bugyeong.csv",
+    "bytes": 13390223,
+    "sha256": "A7F7B6E8A13A95855DE892F9D69E3429935CA87C03BE52444AE01A74FE3CD7DB"
+  }
+}

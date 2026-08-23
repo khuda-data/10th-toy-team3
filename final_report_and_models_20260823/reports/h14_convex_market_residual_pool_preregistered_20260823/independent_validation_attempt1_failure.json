@@ -1,0 +1,17 @@
+{
+  "status": "VALIDATOR_FALSE_POSITIVE_PRESERVED",
+  "attempt": 1,
+  "checks_passed": 71,
+  "checks_failed": 1,
+  "failed_check": "trainer_has_no_network_call",
+  "root_cause": "The validator classified every AST attribute call named get as an HTTP GET, including ordinary Python dictionary.get calls on lines 140, 145, 161, and 171 of the trainer.",
+  "scientific_training_failure": false,
+  "gate_or_tolerance_relaxed": false,
+  "fix": "Restrict the static network audit to explicit urllib/urlopen/requests/httpx/aiohttp/socket client provenance; retain the zero-network requirement.",
+  "failed_validation_sha256": "8CF8C03BE58698E581CC71207F1FC05016CC49EC1BFAA585E5B576C1FB956ACF",
+  "failed_checks_csv_sha256": "B339581824D3AA5D2038DFCE573293E6E394272B6CD758DFB8861C962F9EB5CA",
+  "failed_validation_manifest_sha256": "B93D6ADE51DC26B2B6BBD6366AF4236D914ED302A7563CB492D4D549F30B08A9",
+  "target_20260823_sources_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "live_stake": 0
+}

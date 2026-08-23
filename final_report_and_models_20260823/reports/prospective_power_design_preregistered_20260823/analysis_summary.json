@@ -1,0 +1,263 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "study": "PROSPECTIVE_DELTA_LL_POWER_AND_MULTI_DAY_SAMPLE_DESIGN",
+  "protocol_sha256": "16153BE07ABCC72ED07628E610CC82A50139FED866D28BC39A2D6FB4BFF412C0",
+  "incident_sha256": "54CBD971A7BB4B243930A2801F315D2D8EFEB41DE60962BEAC33C68FD5EC1A1E",
+  "evidence_class": "SENSITIVITY_DESIGN_ONLY_NOT_CONFIRMATION_NOT_MODEL_SELECTION",
+  "input_scope": {
+    "split": "REUSED_VALID_LATE28_ONLY",
+    "rows": 3707,
+    "races": 340,
+    "dates": 28,
+    "date_min": 20251025,
+    "date_max": 20251227,
+    "models": 9,
+    "mean_races_per_day": 12.142857142857142
+  },
+  "models": [
+    {
+      "model": "h11b_deep_mlp_3seed",
+      "pooled_race_mean_delta_ll": -0.00010565741669551405,
+      "unweighted_daily_mean_delta_ll": 0.0004828900656408962,
+      "daily_sd_delta_ll": 0.025304572144680324,
+      "lag1_autocorrelation": 0.060621092910081775,
+      "observed_effect_required_days_80pct": 16978,
+      "observed_effect_required_days_90pct": 23517,
+      "observed_effect_one_day_normal_power": 0.051999241806705954,
+      "observed_effect_17_independent_races_normal_power": 0.052406099449243904,
+      "observed_effect_one_day_moving_block_power_min": 0.0686,
+      "observed_effect_one_day_moving_block_power_max": 0.07115
+    },
+    {
+      "model": "h11b_equal_ensemble",
+      "pooled_race_mean_delta_ll": 0.002278362331048971,
+      "unweighted_daily_mean_delta_ll": 0.0027539157263487585,
+      "daily_sd_delta_ll": 0.01632649423743291,
+      "lag1_autocorrelation": 0.27889678329746936,
+      "observed_effect_required_days_80pct": 218,
+      "observed_effect_required_days_90pct": 301,
+      "observed_effect_one_day_normal_power": 0.06994833700559389,
+      "observed_effect_17_independent_races_normal_power": 0.0711670565810672,
+      "observed_effect_one_day_moving_block_power_min": 0.10525,
+      "observed_effect_one_day_moving_block_power_max": 0.11225
+    },
+    {
+      "model": "h11b_lightgbm",
+      "pooled_race_mean_delta_ll": 0.0033006720607412056,
+      "unweighted_daily_mean_delta_ll": 0.0043525068052037725,
+      "daily_sd_delta_ll": 0.01664099350276663,
+      "lag1_autocorrelation": 0.025737135656555887,
+      "observed_effect_required_days_80pct": 91,
+      "observed_effect_required_days_90pct": 126,
+      "observed_effect_one_day_normal_power": 0.08328639927351233,
+      "observed_effect_17_independent_races_normal_power": 0.08091025595927753,
+      "observed_effect_one_day_moving_block_power_min": 0.24705,
+      "observed_effect_one_day_moving_block_power_max": 0.25385
+    },
+    {
+      "model": "h11b_m6",
+      "pooled_race_mean_delta_ll": 0.004510183817706091,
+      "unweighted_daily_mean_delta_ll": 0.00408405206457703,
+      "daily_sd_delta_ll": 0.02444442414287881,
+      "lag1_autocorrelation": 0.20078950376120452,
+      "observed_effect_required_days_80pct": 222,
+      "observed_effect_required_days_90pct": 307,
+      "observed_effect_one_day_normal_power": 0.0697335199114052,
+      "observed_effect_17_independent_races_normal_power": 0.07346907103314565,
+      "observed_effect_one_day_moving_block_power_min": 0.0708,
+      "observed_effect_one_day_moving_block_power_max": 0.07525
+    },
+    {
+      "model": "h11b_xgboost",
+      "pooled_race_mean_delta_ll": -0.002616601034859575,
+      "unweighted_daily_mean_delta_ll": -0.0019133087131351857,
+      "daily_sd_delta_ll": 0.01557990672137264,
+      "lag1_autocorrelation": 0.4278493984015787,
+      "observed_effect_required_days_80pct": null,
+      "observed_effect_required_days_90pct": null,
+      "observed_effect_one_day_normal_power": null,
+      "observed_effect_17_independent_races_normal_power": null,
+      "observed_effect_one_day_moving_block_power_min": null,
+      "observed_effect_one_day_moving_block_power_max": null
+    },
+    {
+      "model": "h11d_alpha_anchor",
+      "pooled_race_mean_delta_ll": 0.0022886069225950935,
+      "unweighted_daily_mean_delta_ll": 0.002787726284068855,
+      "daily_sd_delta_ll": 0.017139502029994355,
+      "lag1_autocorrelation": 0.27868485275531624,
+      "observed_effect_required_days_80pct": 234,
+      "observed_effect_required_days_90pct": 324,
+      "observed_effect_one_day_normal_power": 0.06914295443266683,
+      "observed_effect_17_independent_races_normal_power": 0.0703058626132213,
+      "observed_effect_one_day_moving_block_power_min": 0.1054,
+      "observed_effect_one_day_moving_block_power_max": 0.10775
+    },
+    {
+      "model": "h13_nonnegative_log_pool",
+      "pooled_race_mean_delta_ll": 0.002006272368646309,
+      "unweighted_daily_mean_delta_ll": 0.0029829032461047246,
+      "daily_sd_delta_ll": 0.017321245140820014,
+      "lag1_autocorrelation": 0.1810023899094608,
+      "observed_effect_required_days_80pct": 209,
+      "observed_effect_required_days_90pct": 289,
+      "observed_effect_one_day_normal_power": 0.0704236677735608,
+      "observed_effect_17_independent_races_normal_power": 0.07017351577164299,
+      "observed_effect_one_day_moving_block_power_min": 0.1392,
+      "observed_effect_one_day_moving_block_power_max": 0.14075
+    },
+    {
+      "model": "h14_convex_residual_pool",
+      "pooled_race_mean_delta_ll": 0.0022630070727321593,
+      "unweighted_daily_mean_delta_ll": 0.003124962234735886,
+      "daily_sd_delta_ll": 0.01523481280293226,
+      "lag1_autocorrelation": 0.1642722331976522,
+      "observed_effect_required_days_80pct": 147,
+      "observed_effect_required_days_90pct": 204,
+      "observed_effect_one_day_normal_power": 0.074971364035534,
+      "observed_effect_17_independent_races_normal_power": 0.07461962667584132,
+      "observed_effect_one_day_moving_block_power_min": 0.1051,
+      "observed_effect_one_day_moving_block_power_max": 0.1084
+    },
+    {
+      "model": "h17_ridge_convex_pool",
+      "pooled_race_mean_delta_ll": 8.365875078136814e-05,
+      "unweighted_daily_mean_delta_ll": 9.364285806774665e-05,
+      "daily_sd_delta_ll": 0.0003156634438957709,
+      "lag1_autocorrelation": 0.27167165684583827,
+      "observed_effect_required_days_80pct": 71,
+      "observed_effect_required_days_90pct": 98,
+      "observed_effect_one_day_normal_power": 0.0887971100045909,
+      "observed_effect_17_independent_races_normal_power": 0.09124024525232277,
+      "observed_effect_one_day_moving_block_power_min": 0.106,
+      "observed_effect_one_day_moving_block_power_max": 0.11085
+    }
+  ],
+  "fixed_effect_required_sample_ranges": [
+    {
+      "effect_delta_ll": 0.001,
+      "target_power": 0.8,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 3959,
+      "required_independent_races_min_across_models": 10,
+      "required_independent_races_max_across_models": 46756
+    },
+    {
+      "effect_delta_ll": 0.001,
+      "target_power": 0.9,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 5484,
+      "required_independent_races_min_across_models": 14,
+      "required_independent_races_max_across_models": 64765
+    },
+    {
+      "effect_delta_ll": 0.0025,
+      "target_power": 0.8,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 634,
+      "required_independent_races_min_across_models": 2,
+      "required_independent_races_max_across_models": 7481
+    },
+    {
+      "effect_delta_ll": 0.0025,
+      "target_power": 0.9,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 878,
+      "required_independent_races_min_across_models": 3,
+      "required_independent_races_max_across_models": 10363
+    },
+    {
+      "effect_delta_ll": 0.005,
+      "target_power": 0.8,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 159,
+      "required_independent_races_min_across_models": 1,
+      "required_independent_races_max_across_models": 1871
+    },
+    {
+      "effect_delta_ll": 0.005,
+      "target_power": 0.9,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 220,
+      "required_independent_races_min_across_models": 1,
+      "required_independent_races_max_across_models": 2591
+    },
+    {
+      "effect_delta_ll": 0.01,
+      "target_power": 0.8,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 40,
+      "required_independent_races_min_across_models": 1,
+      "required_independent_races_max_across_models": 468
+    },
+    {
+      "effect_delta_ll": 0.01,
+      "target_power": 0.9,
+      "required_days_min_across_models": 1,
+      "required_days_max_across_models": 55,
+      "required_independent_races_min_across_models": 1,
+      "required_independent_races_max_across_models": 648
+    }
+  ],
+  "one_day_17_race_power_ranges": [
+    {
+      "effect_delta_ll": 0.001,
+      "day_block_normal_power_n1_min": 0.054210041846983636,
+      "day_block_normal_power_n1_max": 0.9361303217348245,
+      "independent_race_normal_power_n17_min": 0.055083690896664816,
+      "independent_race_normal_power_n17_max": 0.953882205145423,
+      "moving_block_bootstrap_power_n1_min": 0.0695,
+      "moving_block_bootstrap_power_n1_max": 0.9299
+    },
+    {
+      "effect_delta_ll": 0.0025,
+      "day_block_normal_power_n1_min": 0.06104537079702882,
+      "day_block_normal_power_n1_max": 0.9999999998251534,
+      "independent_race_normal_power_n17_min": 0.06346475830843784,
+      "independent_race_normal_power_n17_max": 0.9999999999877711,
+      "moving_block_bootstrap_power_n1_min": 0.0708,
+      "moving_block_bootstrap_power_n1_max": 1.0
+    },
+    {
+      "effect_delta_ll": 0.005,
+      "day_block_normal_power_n1_min": 0.07391193606327034,
+      "day_block_normal_power_n1_max": 1.0,
+      "independent_race_normal_power_n17_min": 0.0795963668490649,
+      "independent_race_normal_power_n17_max": 1.0,
+      "moving_block_bootstrap_power_n1_min": 0.1012,
+      "moving_block_bootstrap_power_n1_max": 1.0
+    },
+    {
+      "effect_delta_ll": 0.01,
+      "day_block_normal_power_n1_min": 0.10571040258340642,
+      "day_block_normal_power_n1_max": 1.0,
+      "independent_race_normal_power_n17_min": 0.12085367279803672,
+      "independent_race_normal_power_n17_max": 1.0,
+      "moving_block_bootstrap_power_n1_min": 0.1012,
+      "moving_block_bootstrap_power_n1_max": 1.0
+    }
+  ],
+  "roi": {
+    "status": "NOT_IDENTIFIABLE_ZERO_SETTLED_RETURN_OBSERVATIONS",
+    "allowlisted_input_rows": 14828,
+    "settled_ticket_return_observations": 0,
+    "payout_or_return_columns_found": [],
+    "required_days": null,
+    "required_races": null,
+    "today_17_race_roi_power": null,
+    "reason": "The exact allowlisted VALID probability files contain no settled ticket stakes, returns, or official dividends. ROI variance and power cannot be estimated without inventing data.",
+    "roi_inference_performed": false,
+    "kelly_inference_performed": false,
+    "live_stake": 0
+  },
+  "claim_boundary": [
+    "The 20260823 one-day 17-race holdout is not powered as a standalone confirmation for small delta-LL effects.",
+    "Normal approximations assume independent units; moving-day-block bootstrap is reported to expose dependence sensitivity.",
+    "VALID late28 is reused descriptive evidence and cannot confirm or select a model.",
+    "A disclosed pre-protocol aggregate TEST metrics read occurred, but it was excluded from every computation.",
+    "No 20260823 quote, target outcome, result, or dividend was read.",
+    "ROI power is not identifiable from these inputs and was not guessed."
+  ],
+  "recommended_design_rule": "Continue preregistered daily collection until the chosen primary model/effect reaches its frozen required-day target; do not stop early based on favorable interim signs, and analyze only after the collection boundary unless an alpha-spending sequential design is separately preregistered.",
+  "live_stake": 0
+}

@@ -1,0 +1,42 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_TARGET_T5",
+  "study": "H14_CONVEX_MARKET_RESIDUAL_POOL",
+  "fit_name": "all92_deployment",
+  "members_in_order": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "formula": "p_w(i)=softmax_r(log(q_i)+sum_m w_m*log(p_m(i)/q_i))",
+  "ordinary_features": [],
+  "q_role": "coefficient-one market base margin/offset",
+  "weights": {
+    "m6": 0.3873672518479254,
+    "xgboost": 0.0,
+    "lightgbm": 0.6126327481520748,
+    "deep_mlp_3seed": 3.3056642732497544e-17
+  },
+  "weight_sum": 1.0000000000000002,
+  "market_exponent": -2.220446049250313e-16,
+  "constraints": "w_m >= 0 and sum(w_m) <= 1",
+  "fit_scope": {
+    "rows": 11345,
+    "races": 1084,
+    "dates": 92,
+    "date_min": 20250517,
+    "date_max": 20251227
+  },
+  "optimizer": "scipy.optimize.minimize SLSQP with analytic gradient",
+  "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0,
+  "frozen_at_kst": "2026-08-23T08:09:45.371046+09:00",
+  "first_target_t5_kst": "2026-08-23T10:30:00+09:00",
+  "frozen_before_first_target_t5": true,
+  "performance_claim": "NONE; all92 fit is a deployment parameter freeze, not an evaluation",
+  "model_path": "models/h14_convex_market_residual_pool_preregistered_20260823/all92_deployment.json",
+  "model_sha256": "06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "DISCLOSED_PRE_PROTOCOL_FORBIDDEN_AGGREGATE_TEST_METADATA_READ",
+  "recorded_at_kst": "2026-08-23T08:44:41.9799227+09:00",
+  "incident_scope": "Input discovery command printed the complete aggregate historical probability metrics CSV before this power-design protocol was frozen.",
+  "file": {
+    "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_probability_metrics.csv",
+    "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_probability_metrics.csv",
+    "bytes": 2189,
+    "last_write_time_utc": "2026-08-22T21:54:33.8432792Z",
+    "sha256": "A572164647F24D47EC1097C098266299C86D270AA8B7600E0B9978993046DC55",
+    "rows_read": 10,
+    "columns_read": [
+      "split",
+      "model_key",
+      "rows",
+      "races",
+      "delta_ll_per_race",
+      "delta_ll_daily_block_ci_low",
+      "delta_ll_daily_block_ci_high",
+      "model_brier",
+      "market_brier",
+      "brier_improvement",
+      "top1_hit_rate",
+      "maximum_probability_sum_error"
+    ],
+    "test_aggregate_rows_read": 5,
+    "test_row_level_rows_read": 0,
+    "actual_values_repeated_in_incident_record": false
+  },
+  "target_20260823_result_reads": 0,
+  "target_20260823_quote_reads": 0,
+  "target_20260823_dividend_reads": 0,
+  "test_row_level_prediction_or_source_reads": 0,
+  "analysis_use_of_incident_file": 0,
+  "model_selection_use": 0,
+  "confirmation_use": 0,
+  "remediation": [
+    "The aggregate H11B metrics file is excluded from the exact analytic allowlist.",
+    "All paths containing a TEST split marker or the excluded filename fail closed in the analysis reader.",
+    "H11B winner log scores are recomputed only from allowlisted late28 VALID row-level probability columns.",
+    "All results are sensitivity-only and remain PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION."
+  ]
+}

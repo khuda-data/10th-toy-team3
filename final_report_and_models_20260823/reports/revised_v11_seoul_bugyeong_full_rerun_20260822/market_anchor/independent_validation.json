@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "passed_checks": 32,
+  "checks": [
+    {
+      "check": "primary audits are PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "market input hash unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "official dividend input hash unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "all three probability models present",
+      "status": "PASS"
+    },
+    {
+      "check": "saved probabilities finite",
+      "status": "PASS"
+    },
+    {
+      "check": "saved EDGE formula reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "saved probabilities sum to one within race",
+      "status": "PASS"
+    },
+    {
+      "check": "saved runner prediction keys unique",
+      "status": "PASS"
+    },
+    {
+      "check": "delta LL reproduced from saved probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "positive delta LL flags equal CI lower-bound test",
+      "status": "PASS"
+    },
+    {
+      "check": "seven locked bet results present",
+      "status": "PASS"
+    },
+    {
+      "check": "one selection per race/model/bet type",
+      "status": "PASS"
+    },
+    {
+      "check": "test official combination coverage=1077 races",
+      "status": "PASS"
+    },
+    {
+      "check": "단승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "단승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "연승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "연승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "복승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "복승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "쌍승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "쌍승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "삼복승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "삼복승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "삼쌍승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "삼쌍승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "복연승: validation chose maximum eligible ROI",
+      "status": "PASS"
+    },
+    {
+      "check": "복연승: locked test row matches policy grid",
+      "status": "PASS"
+    },
+    {
+      "check": "seven-bet full-rank comparison complete",
+      "status": "PASS"
+    },
+    {
+      "check": "anchored_conditional_logit.joblib: artifact hash and size match",
+      "status": "PASS"
+    },
+    {
+      "check": "anchored_base_margin.joblib: artifact hash and size match",
+      "status": "PASS"
+    },
+    {
+      "check": "report begins with metric glossary",
+      "status": "PASS"
+    },
+    {
+      "check": "report records no double takeout deduction",
+      "status": "PASS"
+    }
+  ],
+  "recomputed_delta_ll": [
+    {
+      "split": "valid",
+      "model_key": "anchored_conditional_logit",
+      "delta_ll_per_race": 0.005312379339863954,
+      "saved": 0.0053123793398643,
+      "abs_error": 3.46077333457373e-16
+    },
+    {
+      "split": "valid",
+      "model_key": "anchored_base_margin",
+      "delta_ll_per_race": 0.021833257555457425,
+      "saved": 0.0218332575554578,
+      "abs_error": 3.7470027081099033e-16
+    },
+    {
+      "split": "valid",
+      "model_key": "anchor_ensemble",
+      "delta_ll_per_race": 0.017755933117069068,
+      "saved": 0.0177559331170696,
+      "abs_error": 5.30825383648903e-16
+    },
+    {
+      "split": "test",
+      "model_key": "anchored_conditional_logit",
+      "delta_ll_per_race": 0.013973860330636644,
+      "saved": 0.0139738603306372,
+      "abs_error": 5.551115123125783e-16
+    },
+    {
+      "split": "test",
+      "model_key": "anchored_base_margin",
+      "delta_ll_per_race": 0.013083372431216258,
+      "saved": 0.0130833724312172,
+      "abs_error": 9.419548474554063e-16
+    },
+    {
+      "split": "test",
+      "model_key": "anchor_ensemble",
+      "delta_ll_per_race": 0.017194340801853343,
+      "saved": 0.0171943408018537,
+      "abs_error": 3.5735303605122226e-16
+    }
+  ],
+  "profit_confirmed_bet_types": [],
+  "test_roi_30pct_or_more": [
+    {
+      "bet_type": "복승",
+      "model_key": "anchor_ensemble",
+      "test_roi": 0.3972222222222222
+    }
+  ],
+  "report_sha256": "096417C200DEE3E4F1556C8E4BCC30F755C38E3224C253478C0FC33987DD8DEE",
+  "run_log_sha256": "DA6322D7F3DD8A55FE207D893864ABF41CC499535C0167381088E269A67E3961"
+}

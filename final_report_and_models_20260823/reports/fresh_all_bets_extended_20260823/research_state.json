@@ -1,0 +1,18 @@
+{
+  "status": "DESCRIPTIVE_SETTLEMENT_COMPLETE_WITH_LIMITATIONS",
+  "last_update": "2026-08-23T05:24:56.077824+09:00",
+  "completed": [
+    "official dividend collection",
+    "seven-bet probability-edge selection",
+    "official final-dividend settlement",
+    "daily-block uncertainty",
+    "largest-hit sensitivity"
+  ],
+  "blockers": [
+    "decision-time price snapshots",
+    "complete combination-pool price surface",
+    "more untouched dates"
+  ],
+  "recommended_real_stake": 0,
+  "resume_from": "collect more untouched dates and pre-race combination prices; do not tune on these 64 races"
+}

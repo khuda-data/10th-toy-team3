@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "winner stated",
+      "status": "PASS"
+    },
+    {
+      "check": "all eight Git legacy versions audited",
+      "status": "PASS"
+    },
+    {
+      "check": "Git runtime transform has no NaN or infinity",
+      "status": "PASS"
+    },
+    {
+      "check": "v11 direct matrix has no NaN or infinity",
+      "status": "PASS"
+    },
+    {
+      "check": "v11 direct correlation recheck zero high pairs",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive source include",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive output include",
+      "status": "PASS"
+    }
+  ],
+  "report_sha256": "AB04EA2E636DC3ECBAFA6732A0C84649744764C3E78EA6399AD81948A0FDC17F",
+  "report_bytes": 7193
+}

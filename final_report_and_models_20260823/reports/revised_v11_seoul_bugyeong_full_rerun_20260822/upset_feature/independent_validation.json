@@ -1,0 +1,371 @@
+{
+  "status": "PASS",
+  "passed_checks": 50,
+  "checks": [
+    {
+      "check": "upstream preprocessing validation is PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "preprocessing fit scope is train-only",
+      "status": "PASS"
+    },
+    {
+      "check": "correlation/feature pruning did not use validation or test",
+      "status": "PASS"
+    },
+    {
+      "check": "market reference SHA256 matches preprocessing manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "train audited 141-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "train feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "valid data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "valid metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "valid audited 141-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "valid feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "valid entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test data SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "test metadata SHA256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "test audited 141-feature matrix is numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "test feature matrix is finite",
+      "status": "PASS"
+    },
+    {
+      "check": "test entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "independent clean race counts match primary run: {'train': 3101, 'valid': 1063, 'test': 1068}",
+      "status": "PASS"
+    },
+    {
+      "check": "train strictly precedes validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation strictly precedes test",
+      "status": "PASS"
+    },
+    {
+      "check": "audited feature matrix excludes declared odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "all five final-pool features are absent from the clean source matrix",
+      "status": "PASS"
+    },
+    {
+      "check": "test upset_B exactly reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "post-pool-removal train absolute Pearson correlation <= 0.95",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact excludes final-pool features",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact excludes odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin artifact independently reproduces saved test probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin test race probabilities sum to one",
+      "status": "PASS"
+    },
+    {
+      "check": "full_upset_base_margin place probabilities independently reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact excludes final-pool features",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact excludes odds/results",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin artifact independently reproduces saved test probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin test race probabilities sum to one",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_upset_base_margin place probabilities independently reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved upset horses are market-bottom-half",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved upset horses have positive place EDGE",
+      "status": "PASS"
+    },
+    {
+      "check": "at most one upset horse per race",
+      "status": "PASS"
+    },
+    {
+      "check": "all exact 10/20/30/40 fractions exist",
+      "status": "PASS"
+    },
+    {
+      "check": "cutoff selected counts equal ceil(candidate pool*fraction)",
+      "status": "PASS"
+    },
+    {
+      "check": "every model/fraction/bet has the exact selected horse count",
+      "status": "PASS"
+    },
+    {
+      "check": "every seven-bet ticket contains its selected upset horse",
+      "status": "PASS"
+    },
+    {
+      "check": "all realized returns independently equal hit*official-odds minus one",
+      "status": "PASS"
+    },
+    {
+      "check": "all winning combination dividends match official KRA file",
+      "status": "PASS"
+    },
+    {
+      "check": "all saved bet counts, wins, and ROI independently recomputed",
+      "status": "PASS"
+    },
+    {
+      "check": "test contains 56 model/fraction/bet-type ROI cells",
+      "status": "PASS"
+    },
+    {
+      "check": "saved FDR profit flags exactly follow CI and q-value rule",
+      "status": "PASS"
+    },
+    {
+      "check": "selected feature list exactly follows reported 0.5% rule",
+      "status": "PASS"
+    },
+    {
+      "check": "reported operational threshold selects 29 features",
+      "status": "PASS"
+    }
+  ],
+  "input_files": {
+    "preprocessing_manifest": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "bytes": 11173,
+      "mtime_ns": 1787399132193563600,
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    "preprocessing_validation": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+      "bytes": 2348,
+      "mtime_ns": 1787399132194867400,
+      "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+    },
+    "market_reference": {
+      "absolute_path": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+      "bytes": 23285667,
+      "mtime_ns": 1787191677829550800,
+      "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+    },
+    "official_dividends": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividends.csv",
+      "bytes": 6999002,
+      "mtime_ns": 1787399877514130700,
+      "sha256": "1DA22B6C3CAA3C16FFD7E117FBC65F47B0927C3F00FFA857DBFCFFE7A76F5804"
+    },
+    "train_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "bytes": 85442937,
+      "mtime_ns": 1787399130131688100,
+      "sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A"
+    },
+    "train_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+      "bytes": 3356961,
+      "mtime_ns": 1787399130215581600,
+      "sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+    },
+    "valid_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "bytes": 28957996,
+      "mtime_ns": 1787399131159456300,
+      "sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA"
+    },
+    "valid_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+      "bytes": 1137381,
+      "mtime_ns": 1787399131190582500,
+      "sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+    },
+    "test_data": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "bytes": 29861350,
+      "mtime_ns": 1787399132091066900,
+      "sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE"
+    },
+    "test_metadata": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+      "bytes": 1174910,
+      "mtime_ns": 1787399132116779200,
+      "sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+    }
+  },
+  "model_artifacts": {
+    "full_upset_base_margin.joblib": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_upset_feature_20260822\\full_upset_base_margin.joblib",
+      "bytes": 294753,
+      "mtime_ns": 1787401301500729300,
+      "sha256": "8565EC36659F811D1181F4AF3320C7730292F2E916586A1C5CC31787834DA137"
+    },
+    "selected_upset_base_margin.joblib": {
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_upset_feature_20260822\\selected_upset_base_margin.joblib",
+      "bytes": 239887,
+      "mtime_ns": 1787401301522704700,
+      "sha256": "594AE10C27CD22F868D3C76E50D1FD04C2B3747BD1655C8019A9AFB3C1C21F34"
+    }
+  },
+  "clean_split_audit": {
+    "train": {
+      "rows": 32883,
+      "races": 3101,
+      "excluded_races": {
+        "incomplete_order": 33,
+        "invalid_win_odds": 0,
+        "invalid_place_market": 24
+      }
+    },
+    "valid": {
+      "rows": 11170,
+      "races": 1063,
+      "excluded_races": {
+        "incomplete_order": 8,
+        "invalid_win_odds": 0,
+        "invalid_place_market": 13
+      }
+    },
+    "test": {
+      "rows": 11380,
+      "races": 1068,
+      "excluded_races": {
+        "incomplete_order": 23,
+        "invalid_win_odds": 1,
+        "invalid_place_market": 9
+      }
+    }
+  },
+  "post_pruning_max_abs_pearson": 0.937816170658656,
+  "post_pruning_max_abs_pearson_pair": [
+    "jk_winrate__z",
+    "jk_winrate__pr"
+  ],
+  "selected_features_operational_0p5pct": [
+    "clinic_30d",
+    "tr_plcrate",
+    "hr_last_finpct",
+    "hr_rest_days",
+    "age__pr",
+    "hr_style",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "ow_starts",
+    "hr_plcrate",
+    "jk_winrate",
+    "waterRate",
+    "hr_rest_days__z",
+    "jk_winrate__z",
+    "jk_plcrate",
+    "wgBudam__pr",
+    "hr_style_sd",
+    "jk_starts",
+    "ow_winrate",
+    "train_sec_14",
+    "te_owName",
+    "tr_winrate",
+    "tool_망사눈가면",
+    "hr_winrate__pr",
+    "age",
+    "hr_dist_starts",
+    "wg_diff",
+    "hr_rest_days__pr",
+    "tr_starts"
+  ],
+  "importance_model_trees": 24,
+  "importance_model_tree_used_feature_count": 50,
+  "importance_ci_positive_features": [
+    "tr_plcrate",
+    "hr_rest_days",
+    "wgBudam_chg",
+    "hr_plcrate"
+  ],
+  "test_roi_cells": 56,
+  "test_unadjusted_ci_positive_cells": 0,
+  "test_fdr_positive_cells": 0,
+  "test_roi_ge_30pct_cells": 22,
+  "warnings": [
+    "The 0.5% importance cutoff is an operational normalized-weight rule, not a p-value.",
+    "4 feature(s) have a daily-block 95% importance CI lower bound above zero.",
+    "The test period was previously inspected; results are exploratory reuse, not fresh confirmation.",
+    "Exact within-test top fractions are batch rankings, not a causal real-time threshold policy.",
+    "Combination market probabilities are q-derived proxies because losing-ticket pool odds are absent.",
+    "Final odds are not available at live bet placement time."
+  ],
+  "runtime": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

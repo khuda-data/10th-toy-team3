@@ -1,0 +1,81 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "confirmation_status": "exploratory_reuse_of_previously_inspected_test_not_pristine_confirmation",
+  "historical_hypothesis": "closing winOdds >= 8 and < 15; top 5% by anchored EDGE",
+  "selected_on_validation_model_key": "anchored_base_margin",
+  "deployable_validation_threshold_test": {
+    "split": "test",
+    "model_key": "anchored_base_margin",
+    "policy": "validation_numeric_threshold",
+    "odds_low_inclusive": 8.0,
+    "odds_high_exclusive": 15.0,
+    "validation_locked_edge_threshold": 0.0188698053214846,
+    "band_runners": 2040,
+    "bets": 94,
+    "dates": 54,
+    "hit_rate": 0.11702127659574468,
+    "roi": 0.0978723404255319,
+    "roi_ci_low": -0.4631053223388305,
+    "roi_ci_high": 0.7420657467532464,
+    "bootstrap_p_roi_positive": 0.6088,
+    "profit_confirmed_95pct": false,
+    "average_odds": 9.778723404255322
+  },
+  "historical_batch_rule_test": {
+    "split": "test",
+    "model_key": "anchored_base_margin",
+    "policy": "historical_batch_top5_edge",
+    "odds_low_inclusive": 8.0,
+    "odds_high_exclusive": 15.0,
+    "validation_locked_edge_threshold": null,
+    "band_runners": 2040,
+    "bets": 102,
+    "dates": 56,
+    "hit_rate": 0.10784313725490197,
+    "roi": 0.011764705882352969,
+    "roi_ci_low": -0.4947408700322234,
+    "roi_ci_high": 0.6326819073416774,
+    "bootstrap_p_roi_positive": 0.5044,
+    "profit_confirmed_95pct": false,
+    "average_odds": 9.840196078431372
+  },
+  "equal_count_market_q_control_test": {
+    "split": "test",
+    "model_key": "anchored_base_margin",
+    "policy": "equal_count_market_q_control",
+    "odds_low_inclusive": 8.0,
+    "odds_high_exclusive": 15.0,
+    "validation_locked_edge_threshold": null,
+    "band_runners": 2040,
+    "bets": 102,
+    "dates": 64,
+    "hit_rate": 0.10784313725490197,
+    "roi": -0.12450980392156868,
+    "roi_ci_low": -0.540566037735849,
+    "roi_ci_high": 0.3531302083333332,
+    "bootstrap_p_roi_positive": 0.2896,
+    "profit_confirmed_95pct": false,
+    "average_odds": 8.078431372549021
+  },
+  "conclusion": {
+    "positive_point_estimate": true,
+    "profit_confirmed_95pct": false,
+    "historical_claim_reconfirmed": false
+  },
+  "limitations": [
+    "The current test through 2026-08-09 has already been inspected.",
+    "Closing odds are retrospective, not guaranteed executable decision-time prices.",
+    "The historical batch top-5% rule ranks the entire future block and is not online-deployable; the validation numeric threshold is the deployable audit.",
+    "The old +32.69% estimate came from a different walk-forward sample and does not transfer automatically to v11 Seoul+Bugyeong."
+  ],
+  "inputs": {
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\runner_probabilities.csv": {
+      "sha256": "2E3B2B07728EFC6A5A4F98A0487ECCB599BCD8BA83CD901A52D869FD12876514",
+      "bytes": 8408115
+    },
+    "C:\\Users\\user\\Downloads\\final (2).csv.gz": {
+      "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+      "bytes": 23285667
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "hypothesis": "ll_cal_vs_uncal",
+    "estimate": 0.005230714436936816,
+    "ci_low": 0.0001178584972246643,
+    "ci_high": 0.010479688294270985,
+    "p_one_sided": 0.022297770222977704,
+    "holm_adjusted_p": 0.0683931606839316
+  },
+  {
+    "hypothesis": "ll_cal_vs_market",
+    "estimate": 0.0018906431111984233,
+    "ci_low": -0.005564804692730104,
+    "ci_high": 0.009349099095760448,
+    "p_one_sided": 0.30856914308569144,
+    "holm_adjusted_p": 0.5817418258174183
+  },
+  {
+    "hypothesis": "brier_cal_vs_uncal",
+    "estimate": 0.0023462290862480695,
+    "ci_low": 0.00018857187676195084,
+    "ci_high": 0.004539216112601375,
+    "p_one_sided": 0.0170982901709829,
+    "holm_adjusted_p": 0.0683931606839316
+  },
+  {
+    "hypothesis": "brier_cal_vs_market",
+    "estimate": 0.000916237234607203,
+    "ci_low": -0.0022601367832216727,
+    "ci_high": 0.004129754285259522,
+    "p_one_sided": 0.29087091290870914,
+    "holm_adjusted_p": 0.5817418258174183
+  }
+]

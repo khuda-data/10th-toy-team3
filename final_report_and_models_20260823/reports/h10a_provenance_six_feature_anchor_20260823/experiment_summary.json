@@ -1,0 +1,249 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "actual_training_completed": true,
+  "actual_conditional_logit_fits": 6,
+  "m6_model_files": 3,
+  "l2": 100.0,
+  "features": [
+    "age",
+    "age__pr",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "wgBudam__pr",
+    "te_owName"
+  ],
+  "market_or_outcome_features_in_X": [],
+  "market_offset": "log(closing q), coefficient fixed at 1",
+  "reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "historical_replay_hard_gate": {
+    "age_percent_rank_formula": "(within-race average rank - 1)/(field size - 1)",
+    "age_percent_rank_max_error_vs_reference": 1.1102230246251565e-16,
+    "burden_percent_rank_max_error_vs_reference": 1.1102230246251565e-16,
+    "burden_change_source_route": "saved reference/raw wgBudam_chg -> archived v10 imputer/scaler",
+    "burden_change_chronology_diagnostic_formula": "current wgBudam - same hrNo latest earlier source row wgBudam",
+    "burden_change_chronology_diagnostic_max_error_on_observed_rows": 0.0,
+    "burden_change_chronology_diagnostic_missing_pattern_errors": 0,
+    "burden_change_chronology_diagnostic_is_hard_gate": false,
+    "transformed_matrix_max_error": 8.881784197001252e-16,
+    "hard_gate_passed": true
+  },
+  "preprocessing_integrity": {
+    "splits": {
+      "train": {
+        "rows": 33416,
+        "unique_entry_ids": 33416,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      },
+      "valid": {
+        "rows": 11345,
+        "unique_entry_ids": 11345,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      },
+      "test": {
+        "rows": 11695,
+        "unique_entry_ids": 11695,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      }
+    },
+    "train_max_absolute_pearson_correlation": 0.636979438347754,
+    "correlation_threshold": 0.95,
+    "train_exact_duplicate_feature_pairs": [],
+    "passed": true
+  },
+  "training_counts": {
+    "train": {
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511
+    },
+    "train_valid": {
+      "rows": 44761,
+      "races": 4242,
+      "date_min": 20230805,
+      "date_max": 20251227
+    },
+    "all_history": {
+      "rows": 56456,
+      "races": 5343,
+      "date_min": 20230805,
+      "date_max": 20260809
+    }
+  },
+  "evaluation_counts": {
+    "valid": {
+      "rows": 11345,
+      "races": 1084,
+      "days": 92
+    },
+    "test": {
+      "rows": 11695,
+      "races": 1101,
+      "days": 94
+    },
+    "fresh64": {
+      "rows": 640,
+      "races": 64,
+      "days": 6
+    }
+  },
+  "four_endpoint_holm_family": [
+    {
+      "split": "valid",
+      "comparison": "M6-q",
+      "evidence_scope": "retrospective_reused_VALID",
+      "estimate": 0.0015851331157785697,
+      "races": 1084,
+      "day_clusters": 92,
+      "race_bootstrap_ci_low": -0.003702533215875375,
+      "race_bootstrap_ci_high": 0.006793474427909691,
+      "daily_block_ci_low": -0.0038823034324755646,
+      "daily_block_ci_high": 0.006941813841043326,
+      "daily_bootstrap_p_one_sided": 0.28147185281471854,
+      "in_four_endpoint_holm_family": true,
+      "holm_adjusted_p": 0.8444155584441556,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "split": "valid",
+      "comparison": "M6-M5",
+      "evidence_scope": "retrospective_reused_VALID",
+      "estimate": 0.0003041727977304343,
+      "races": 1084,
+      "day_clusters": 92,
+      "race_bootstrap_ci_low": -0.0008008380990137958,
+      "race_bootstrap_ci_high": 0.0013600892900486655,
+      "daily_block_ci_low": -0.0007879078567398287,
+      "daily_block_ci_high": 0.0013316958597024736,
+      "daily_bootstrap_p_one_sided": 0.288971102889711,
+      "in_four_endpoint_holm_family": true,
+      "holm_adjusted_p": 0.8444155584441556,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "split": "test",
+      "comparison": "M6-q",
+      "evidence_scope": "previously_inspected_reused_TEST_not_independent_confirmation",
+      "estimate": 0.005422125098341543,
+      "races": 1101,
+      "day_clusters": 94,
+      "race_bootstrap_ci_low": 0.0005507863245714655,
+      "race_bootstrap_ci_high": 0.010209875329677737,
+      "daily_block_ci_low": 0.0012360394941535176,
+      "daily_block_ci_high": 0.009479627633890734,
+      "daily_bootstrap_p_one_sided": 0.0058994100589941,
+      "in_four_endpoint_holm_family": true,
+      "holm_adjusted_p": 0.0235976402359764,
+      "holm_fwer_significant_5pct": true
+    },
+    {
+      "split": "test",
+      "comparison": "M6-M5",
+      "evidence_scope": "previously_inspected_reused_TEST_not_independent_confirmation",
+      "estimate": -0.00038404417904376603,
+      "races": 1101,
+      "day_clusters": 94,
+      "race_bootstrap_ci_low": -0.0017850357328084538,
+      "race_bootstrap_ci_high": 0.0009653019549337846,
+      "daily_block_ci_low": -0.0016983547190845664,
+      "daily_block_ci_high": 0.0008954566212570943,
+      "daily_bootstrap_p_one_sided": 0.7142285771422858,
+      "in_four_endpoint_holm_family": true,
+      "holm_adjusted_p": 0.8444155584441556,
+      "holm_fwer_significant_5pct": false
+    }
+  ],
+  "holm_family_interpretation": "Holm controls four reported comparisons but does not turn reused VALID/TEST into independent confirmation",
+  "test_scope": "previously inspected and repeatedly reused TEST; any significant adjusted p is retrospective evidence only",
+  "fresh64_descriptive_endpoints": [
+    {
+      "split": "fresh64",
+      "comparison": "M6-q",
+      "evidence_scope": "posthoc_observed_optional_continuation",
+      "estimate": 0.010456706157378618,
+      "races": 64,
+      "day_clusters": 6,
+      "race_bootstrap_ci_low": -0.011058135777117976,
+      "race_bootstrap_ci_high": 0.03108672050909515,
+      "daily_block_ci_low": -0.0017843416443124574,
+      "daily_block_ci_high": 0.024653841702968894,
+      "daily_bootstrap_p_one_sided": 0.052894710528947106,
+      "in_four_endpoint_holm_family": false,
+      "holm_adjusted_p": NaN,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "split": "fresh64",
+      "comparison": "M6-M5",
+      "evidence_scope": "posthoc_observed_optional_continuation",
+      "estimate": -0.00790398718230511,
+      "races": 64,
+      "day_clusters": 6,
+      "race_bootstrap_ci_low": -0.016671261480269935,
+      "race_bootstrap_ci_high": 0.0005575097311652264,
+      "daily_block_ci_low": -0.018542863585823473,
+      "daily_block_ci_high": 0.0005675992396489415,
+      "daily_bootstrap_p_one_sided": 0.9468053194680532,
+      "in_four_endpoint_holm_family": false,
+      "holm_adjusted_p": NaN,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "split": "fresh64",
+      "comparison": "M6-existing-M5-artifact",
+      "evidence_scope": "posthoc_observed_optional_continuation",
+      "estimate": -0.0078490217624165,
+      "races": 64,
+      "day_clusters": 6,
+      "race_bootstrap_ci_low": -0.01683726649809387,
+      "race_bootstrap_ci_high": 0.0009846034014437696,
+      "daily_block_ci_low": -0.019073943456439292,
+      "daily_block_ci_high": 0.0009446324199914131,
+      "daily_bootstrap_p_one_sided": 0.9373062693730627,
+      "in_four_endpoint_holm_family": false,
+      "holm_adjusted_p": NaN,
+      "holm_fwer_significant_5pct": false
+    }
+  ],
+  "fresh64_exact_day_signflip": {
+    "M6-q": {
+      "observed": 0.010456706157378618,
+      "day_clusters": 6,
+      "sign_patterns": 64,
+      "exact_p_one_sided": 0.078125,
+      "resolution": "1/64",
+      "assumption": "independent day clusters with sign-symmetric cluster sums"
+    },
+    "M6-M5": {
+      "observed": -0.00790398718230511,
+      "day_clusters": 6,
+      "sign_patterns": 64,
+      "exact_p_one_sided": 0.890625,
+      "resolution": "1/64",
+      "assumption": "independent day clusters with sign-symmetric cluster sums"
+    },
+    "M6-existing-M5-artifact": {
+      "observed": -0.0078490217624165,
+      "day_clusters": 6,
+      "sign_patterns": 64,
+      "exact_p_one_sided": 0.890625,
+      "resolution": "1/64",
+      "assumption": "independent day clusters with sign-symmetric cluster sums"
+    },
+    "family_status": "posthoc descriptive; all three excluded from the four-endpoint Holm family"
+  },
+  "fresh64_scope": "already observed optional-continuation operational replay; not pristine confirmation",
+  "fresh_burden_change_limitation": "PARTIAL_HISTORY_DERIVED_NOT_FULLY_EXACT: chronological within available reference+fresh entry history; horses without an observed prior row use the archived TRAIN imputer statistic",
+  "existing_m5_relationship": "M5 is re-fit on each identical v11 race universe from the existing five feature definitions; fresh output additionally compares the separately saved existing M5 artifact",
+  "closing_price_limitation": "closing/result odds are not timestamped executable quotes",
+  "deployment_status": "NO_GO",
+  "recommended_real_stake": 0,
+  "elapsed_seconds": 2.943730354309082,
+  "completed_at": "2026-08-23T06:26:47.306400+09:00"
+}

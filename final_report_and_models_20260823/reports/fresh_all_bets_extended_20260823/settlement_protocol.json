@@ -1,0 +1,18 @@
+{
+  "status": "METHOD_FIXED_FOR_DESCRIPTIVE_SETTLEMENT",
+  "created_at": "2026-08-23T05:24:53.985330+09:00",
+  "relationship_to_source_availability": "fresh outcomes and official pages already existed; this is not a pristine prospective preregistration",
+  "ticket_policy": "one ticket per race and bet type maximizing model event probability minus closing-win-q proxy event probability",
+  "tie_break": "higher model event probability, then ascending numeric horse-number tuple",
+  "market_comparator": "ticket with the highest closing-win-q proxy event probability",
+  "probability_extension": "Plackett-Luce ordered probabilities; sums over permutations for unordered bets; Harville top-k containment for place/wide",
+  "settlement": "official KRA final winning-combination dividend; losing selected ticket gross return 0; one-unit stake",
+  "fee_treatment": "official final dividend already reflects takeout, so 20%/27% is not subtracted again",
+  "not_available": [
+    "decision-time odds timestamp",
+    "complete pre-race combination price surface",
+    "direct complex-bet market EDGE or EV",
+    "Kelly sizing inputs for complex bets"
+  ],
+  "interpretation": "descriptive fresh settlement only, not an executable strategy or deployment confirmation"
+}

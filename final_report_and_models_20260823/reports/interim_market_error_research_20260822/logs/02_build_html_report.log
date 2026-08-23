@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-08-22T20:17:46+09:00",
+  "report": "outputs\\reports\\interim_market_error_research_20260822\\index.html",
+  "report_bytes": 102618,
+  "report_sha256": "7785E455707F04D61320943888ED5C1E5A00156347A959034C3E2893CB07A688",
+  "internal_evidence": [
+    {
+      "key": "rank_audit",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/run_dataset_audit.json",
+      "bytes": 5952,
+      "sha256": "F00CB0A69FFF314F0AC234AB8913E0FB08C40B2B2F005A18991EBE7998A43B45"
+    },
+    {
+      "key": "rank_validation",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/comprehensive_validation.json",
+      "bytes": 16151,
+      "sha256": "3CC0A17D30A8C8E58EA015444F26060ECC8BF115B3CC016D73BCD474494058A2"
+    },
+    {
+      "key": "rank_metrics",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/model_metric_comparison.csv",
+      "bytes": 5216,
+      "sha256": "EFC13E1FEF5BC777C19C662A3D9CFC42D52AA0BC6A393849047C93BB7932868A"
+    },
+    {
+      "key": "rank_locked",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/locked_policy_test_results.csv",
+      "bytes": 4351,
+      "sha256": "C638C889F9506F23DE83E5988C7B92648BD86E168D663F39ABE742B7DE0D2A31"
+    },
+    {
+      "key": "rank_importance",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/catboost_top_features.csv",
+      "bytes": 6508,
+      "sha256": "8DBFA18C00AB68B532093142D113B83BFACF5B2FC52DD521F666B5C42434F2C6"
+    },
+    {
+      "key": "anchor_audit",
+      "path": "outputs/reports/market_anchor_same_test_20260822/input_audit.json",
+      "bytes": 2308,
+      "sha256": "856E87E19100B488ACF6F09223C9CACF2C6F5277EEE3F2F2AF3C87C3A8565B95"
+    },
+    {
+      "key": "anchor_validation",
+      "path": "outputs/reports/market_anchor_same_test_20260822/independent_validation.json",
+      "bytes": 4850,
+      "sha256": "7194361CA4AEFC49EA94027B649CBEBF6661AD6FDB99E73FEFEBC6FF05299F65"
+    },
+    {
+      "key": "anchor_delta",
+      "path": "outputs/reports/market_anchor_same_test_20260822/delta_ll_metrics.csv",
+      "bytes": 2166,
+      "sha256": "0C5B9DEF436BAE72232D4AEF1C825A28B46D2B4B15DD73235B20C1AE2648E7F2"
+    },
+    {
+      "key": "anchor_history",
+      "path": "outputs/reports/market_anchor_same_test_20260822/historical_delta_ll_comparison.csv",
+      "bytes": 924,
+      "sha256": "7CC4067041D378BED3ACC888FA56ED2747562F02168978147F52D2073A84DE98"
+    },
+    {
+      "key": "anchor_locked",
+      "path": "outputs/reports/market_anchor_same_test_20260822/locked_test_results.csv",
+      "bytes": 3046,
+      "sha256": "F4C9A5C5E78176345958C2FD5BE351EE7734B95D4A5763E02A6C5DF0785C7205"
+    },
+    {
+      "key": "claude_evidence",
+      "path": "outputs/reports/full_rank_all_bets_rerun_20260822/claude_comparison_evidence.json",
+      "bytes": 33341,
+      "sha256": "38B49F72EEE2721FBBD55AC685E7F8CDB864CA45FA4E4904EC620A12400E4BC1"
+    },
+    {
+      "key": "upset_manifest",
+      "path": "outputs/reports/upset_feature_experiment_20260822/experiment_manifest.json",
+      "bytes": 3315,
+      "sha256": "3127569C63E2BD27AC0B792F272CC431C724465A1B723A9BD8410BDE1A5BAFAF"
+    },
+    {
+      "key": "upset_validation",
+      "path": "outputs/reports/upset_feature_experiment_20260822/independent_validation.json",
+      "bytes": 11515,
+      "sha256": "8DF6A11D137626FC29D4288A1F0BBE819AE7937A87406F2EA90CF071987C906F"
+    },
+    {
+      "key": "upset_delta",
+      "path": "outputs/reports/upset_feature_experiment_20260822/model_delta_ll_metrics.csv",
+      "bytes": 1305,
+      "sha256": "3E4AB7AF5DB79924B7CC4E2F00D4EC91A74CD58BA0CD413A2F1F7FFB699CD650"
+    },
+    {
+      "key": "upset_importance",
+      "path": "outputs/reports/upset_feature_experiment_20260822/upset_feature_importance.csv",
+      "bytes": 11787,
+      "sha256": "686DB3425E9B2A325FA9F3A0CBFFBEE3ACFA80F07DCB0A51E84ED859F52D310D"
+    },
+    {
+      "key": "upset_roi",
+      "path": "outputs/reports/upset_feature_experiment_20260822/upset_bet_summary_independently_verified.csv",
+      "bytes": 49261,
+      "sha256": "D4A4A8502699BBC78105A75D49931F565FDA3CCA5F700FF60C4EE5A328E17EF5"
+    },
+    {
+      "key": "upset_report",
+      "path": "outputs/reports/upset_feature_experiment_20260822/03_independent_validation_and_edge_report.md",
+      "bytes": 19489,
+      "sha256": "2BCBA41F943F865E2E4A39482F4CDF1BCEA869ECA2199B66676FCB80DBF76E37"
+    },
+    {
+      "key": "meet_scope_audit",
+      "path": "outputs/reports/interim_market_error_research_20260822/meet_scope_audit.json",
+      "bytes": 6886,
+      "sha256": "99D863DD4671FD93AAEC40AB97688AF1656237F8897876DBE4A504C41A98E920"
+    },
+    {
+      "key": "meet_scope_log",
+      "path": "outputs/reports/interim_market_error_research_20260822/logs/01_meet_scope_audit.log",
+      "bytes": 6888,
+      "sha256": "B1D39D6A2161A0846F835D66816EC9B0C6229A8A678A7930FC922BA2BC05F29E"
+    },
+    {
+      "key": "meet_scope_script",
+      "path": "src/data/audit_dataset_meet_scope.py",
+      "bytes": 8512,
+      "sha256": "04A99380A195577413805774F8D709B55BD4C3C105C42565523452C32B1F5672"
+    }
+  ],
+  "external_source_count": 21,
+  "assertions": {
+    "profit_confirmed_bet_types": [],
+    "rank_audit_passed_checks": 40,
+    "rank_validation_passed_checks": 20,
+    "anchor_validation_passed_checks": 32,
+    "upset_validation_passed_checks": 50,
+    "meet_scope_status": "PASS",
+    "headline_results_track_scope": "서울 only",
+    "expanded_dataset_track_scope": "서울 + 부경 only",
+    "headline_feature_count_with_final_pool": 137,
+    "clean_upset_feature_count": 133,
+    "upset_roi_fdr_pass_count": 0
+  }
+}

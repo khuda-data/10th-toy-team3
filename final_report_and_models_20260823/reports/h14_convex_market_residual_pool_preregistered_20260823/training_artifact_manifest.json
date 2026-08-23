@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "created_at_kst": "2026-08-23T08:09:45.385348+09:00",
+  "protocol": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+    "bytes": 4350,
+    "sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"
+  },
+  "training_script": {
+    "path": "src/training/train_h14_convex_market_residual_pool.py",
+    "bytes": 44408,
+    "sha256": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+  },
+  "artifacts": [
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/input_hash_and_reader_audit.json",
+      "bytes": 4247,
+      "sha256": "662F3389F5D9A2EDD6C096F181939598790F30A530C043768EE28C2CC91C09EF"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/date_split.csv",
+      "bytes": 3850,
+      "sha256": "4D308C5AA57B970877CB9D2D5914CD4C1BFF224CE91FC9227F0E3BBE7BE6386C"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/date_split.json",
+      "bytes": 2658,
+      "sha256": "A9B0FCB23C16A069E86777BDC8B2EB506257AFED4A2A2074E507B793F95B3EE9"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/finite_difference_gradient_test.json",
+      "bytes": 705,
+      "sha256": "6E45FF9D28ABB24580F7CD4C062443AB322D8AD9E9087B90C7621624FF9273FB"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/fitted_weights.csv",
+      "bytes": 598,
+      "sha256": "19141E72DCD160C53AED51A32EC5A57586E627BF1818AA1FFBCF2CC841E061DE"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/weight_stability.csv",
+      "bytes": 428,
+      "sha256": "045A0E377683AC7ECCC328FABDC8065A3CA08E6DE6F56A2C364B59D5C5AFF1D1"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/weight_stability.json",
+      "bytes": 1001,
+      "sha256": "6B129852D1BE4F84ABD7FD068CC18921F3F1E40776ECF04EC94336E9E05D55F8"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_predictions.csv",
+      "bytes": 929973,
+      "sha256": "23B866877461AF72F01665D551D5B9340D3AAFD3234D8F8E1D1D4BAF599526CF"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_metrics.csv",
+      "bytes": 624,
+      "sha256": "895E9995F832D95E163D208F9606D20E69E05B8CC8BBCBAE682D47DD37386CD9"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_metrics.json",
+      "bytes": 14674,
+      "sha256": "ED8CD3164B90E197CF488C52A1D333FF1FC0B73FB3B3CE437DAE82C02FDADDD7"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/all92_fitted_probabilities.csv",
+      "bytes": 1208799,
+      "sha256": "07BECEED1FDCE30184EC69A085B85D3B9B8605F96F9A26184E849260546FD911"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_fit_manifest.json",
+      "bytes": 5502,
+      "sha256": "B0ADCB040E3FAFFBD8F8C907A6E4B5D3B321D2933C91D519A6DBDEDD2F1C1094"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+      "bytes": 1625,
+      "sha256": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/experiment_summary.json",
+      "bytes": 18416,
+      "sha256": "E2B2105022C7EDF9BB3B13149CB9831577F74A246AEFE4A1DAEC9C12C159AFFD"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/logs/execution.log",
+      "bytes": 890,
+      "sha256": "C0F10C6AFBC88618F54BF21DA6167C1F729BE17E1104C177CCC6B605D509A252"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/logs/phase_progress.jsonl",
+      "bytes": 2816,
+      "sha256": "CF550E50C609CEAF496F95BA988218B97E428E30BDB66C135BFCCCD5DC9F4A1A"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/logs/fit_operations.jsonl",
+      "bytes": 4121,
+      "sha256": "2C6197355364BD34E9D369CBC5014F0D47F0A219E0BBBFE36B6523DF66F55E8B"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/01_first44_stability_checkpoint.csv",
+      "bytes": 10800,
+      "sha256": "40651EAFFF69E2B5316FB9568EFDEAD7C36E0198AB137CEF578D6E7DF97B8B49"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/02_first64_locked_late28_model.csv",
+      "bytes": 7451,
+      "sha256": "D905AC08F37B467A771416F3E14E6A5E73B358A2134C7539C5E6DBA206F09794"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/03_all92_deployment.csv",
+      "bytes": 6144,
+      "sha256": "074C87A2B489C8BE6536037A35E5A8060094EC5DCE268FD525B32B6A65E96EFC"
+    },
+    {
+      "path": "models/h14_convex_market_residual_pool_preregistered_20260823/first44_stability_checkpoint.json",
+      "bytes": 1195,
+      "sha256": "D2768AB4D1ED3E952F27B4EC1860D9B791F250CF8993570F4A163298817466DA"
+    },
+    {
+      "path": "models/h14_convex_market_residual_pool_preregistered_20260823/first64_locked_late28_model.json",
+      "bytes": 1182,
+      "sha256": "DCE35AD9542B55106FCED058E10D08CADF53BB9E0C1F980A1F4603F8BE611182"
+    },
+    {
+      "path": "models/h14_convex_market_residual_pool_preregistered_20260823/all92_deployment.json",
+      "bytes": 1434,
+      "sha256": "06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"
+    }
+  ],
+  "historical_prediction_source": {
+    "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_runner_probabilities.csv",
+    "bytes": 14056057,
+    "sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+    "full_hash_recomputed_by_h14": false
+  },
+  "forbidden_access": {
+    "split_test_rows_read_or_parsed": 0,
+    "target_20260823_sources_read": 0,
+    "outcome_result_dividend_settlement_sources_read": 0,
+    "roi_ticket_kelly_sources_read": 0
+  },
+  "actual_optimizer_fit_calls": 3,
+  "live_stake": 0
+}

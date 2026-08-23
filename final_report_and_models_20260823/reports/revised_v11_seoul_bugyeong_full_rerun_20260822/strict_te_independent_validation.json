@@ -1,0 +1,598 @@
+{
+  "status": "PASS",
+  "validator": "src.data.validate_revised_v11_strict_te",
+  "data_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "reference": {
+    "path": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+    "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+  },
+  "tolerance": 1e-12,
+  "formula": {
+    "target": "win",
+    "smoothing": 20.0,
+    "train_first_date_prior": "label-free 1/race_field_size",
+    "later_train_prior": "wins/rows from strictly earlier dates",
+    "valid_test": "terminal training mapping only"
+  },
+  "strict_target_encoding": {
+    "features": [
+      "te_jkName",
+      "te_trName",
+      "te_owName",
+      "te_rank"
+    ],
+    "standardized_reproduction": {
+      "train": {
+        "maximum_absolute_difference": 8.881784197001252e-16
+      },
+      "valid": {
+        "maximum_absolute_difference": 4.440892098500626e-16
+      },
+      "test": {
+        "maximum_absolute_difference": 4.440892098500626e-16
+      }
+    },
+    "terminal_mapping": {
+      "te_jkName": {
+        "valid": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        },
+        "test": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        }
+      },
+      "te_trName": {
+        "valid": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        },
+        "test": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        }
+      },
+      "te_owName": {
+        "valid": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        },
+        "test": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        }
+      },
+      "te_rank": {
+        "valid": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        },
+        "test": {
+          "max_absolute_difference": 0.0,
+          "terminal_train_prior": 0.09450562604740244
+        }
+      }
+    },
+    "unseen_fallback": {
+      "te_jkName": {
+        "valid": {
+          "unseen_levels": 13,
+          "unseen_rows": 448,
+          "unseen_fraction": 0.039488761568973116,
+          "fallback_max_absolute_difference": 0.0
+        },
+        "test": {
+          "unseen_levels": 7,
+          "unseen_rows": 1412,
+          "unseen_fraction": 0.12073535699016674,
+          "fallback_max_absolute_difference": 0.0
+        }
+      },
+      "te_trName": {
+        "valid": {
+          "unseen_levels": 14,
+          "unseen_rows": 350,
+          "unseen_fraction": 0.030850594975760245,
+          "fallback_max_absolute_difference": 0.0
+        },
+        "test": {
+          "unseen_levels": 15,
+          "unseen_rows": 929,
+          "unseen_fraction": 0.07943565626336041,
+          "fallback_max_absolute_difference": 0.0
+        }
+      },
+      "te_owName": {
+        "valid": {
+          "unseen_levels": 29,
+          "unseen_rows": 142,
+          "unseen_fraction": 0.0125165271044513,
+          "fallback_max_absolute_difference": 0.0
+        },
+        "test": {
+          "unseen_levels": 44,
+          "unseen_rows": 405,
+          "unseen_fraction": 0.03463018383924754,
+          "fallback_max_absolute_difference": 0.0
+        }
+      },
+      "te_rank": {
+        "valid": {
+          "unseen_levels": 0,
+          "unseen_rows": 0,
+          "unseen_fraction": 0.0,
+          "fallback_max_absolute_difference": 0.0
+        },
+        "test": {
+          "unseen_levels": 0,
+          "unseen_rows": 0,
+          "unseen_fraction": 0.0,
+          "fallback_max_absolute_difference": 0.0
+        }
+      }
+    },
+    "same_date_and_future_counterfactual": {
+      "cutoff_date": 20240621,
+      "features": {
+        "jkName": {
+          "max_difference_at_or_before_cutoff": 0.0
+        },
+        "trName": {
+          "max_difference_at_or_before_cutoff": 0.0
+        },
+        "owName": {
+          "max_difference_at_or_before_cutoff": 0.0
+        },
+        "rank": {
+          "max_difference_at_or_before_cutoff": 0.0
+        }
+      }
+    },
+    "validation_test_label_counterfactual": {
+      "jkName": {
+        "valid": 0.0,
+        "test": 0.0
+      },
+      "trName": {
+        "valid": 0.0,
+        "test": 0.0
+      },
+      "owName": {
+        "valid": 0.0,
+        "test": 0.0
+      },
+      "rank": {
+        "valid": 0.0,
+        "test": 0.0
+      }
+    },
+    "old_vs_strict_train": {
+      "te_jkName": {
+        "changed_rows": 33416,
+        "maximum_absolute_difference": 0.07822623608865029
+      },
+      "te_trName": {
+        "changed_rows": 33416,
+        "maximum_absolute_difference": 0.07117893079707768
+      },
+      "te_owName": {
+        "changed_rows": 33416,
+        "maximum_absolute_difference": 0.09945065468407575
+      },
+      "te_rank": {
+        "changed_rows": 33416,
+        "maximum_absolute_difference": 0.04835151680974045
+      }
+    }
+  },
+  "hashes": {
+    "raw_inputs": {
+      "train": "F2211117429BFA8ECEBFD70DCE3481B0FEF9CE115A67C658C49F12F07C84C37C",
+      "valid": "EC2BF16BBDAF570FEB243573755E05276A65323C94DB9FEF99CB4861486F80F0",
+      "test": "A7F7B6E8A13A95855DE892F9D69E3429935CA87C03BE52444AE01A74FE3CD7DB"
+    },
+    "six_outputs": {
+      "train": {
+        "data_actual": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "data_expected": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "data_match": true,
+        "metadata_actual": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "metadata_expected": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "metadata_match": true
+      },
+      "valid": {
+        "data_actual": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "data_expected": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "data_match": true,
+        "metadata_actual": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "metadata_expected": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "metadata_match": true
+      },
+      "test": {
+        "data_actual": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "data_expected": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "data_match": true,
+        "metadata_actual": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "metadata_expected": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "metadata_match": true
+      }
+    }
+  },
+  "matrix": {
+    "feature_count": 141,
+    "forbidden_intersection": [],
+    "finite_numeric": {
+      "train": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      },
+      "valid": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      },
+      "test": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      }
+    },
+    "constant_features": [],
+    "high_correlation_threshold": 0.95,
+    "high_correlation_pairs": [],
+    "exact_duplicate_pairs": []
+  },
+  "checks": [
+    {
+      "name": "manifest preprocessing status PASS",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "strict TE feature declaration",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "positive smoothing",
+      "passed": true,
+      "details": 20.0
+    },
+    {
+      "name": "reference entry_id unique",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reference SHA matches manifest",
+      "passed": true,
+      "details": {
+        "actual": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+        "expected": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+      }
+    },
+    {
+      "name": "train raw/reference/output identity",
+      "passed": true,
+      "details": {
+        "rows": 33416,
+        "races": 3158
+      }
+    },
+    {
+      "name": "train win equals finish_order 1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "train contains Seoul and Bugyeong",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "train data and metadata SHA match manifest",
+      "passed": true,
+      "details": {
+        "data_actual": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "data_expected": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "data_match": true,
+        "metadata_actual": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "metadata_expected": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "metadata_match": true
+      }
+    },
+    {
+      "name": "valid raw/reference/output identity",
+      "passed": true,
+      "details": {
+        "rows": 11345,
+        "races": 1084
+      }
+    },
+    {
+      "name": "valid win equals finish_order 1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid contains Seoul and Bugyeong",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid data and metadata SHA match manifest",
+      "passed": true,
+      "details": {
+        "data_actual": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "data_expected": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "data_match": true,
+        "metadata_actual": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "metadata_expected": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "metadata_match": true
+      }
+    },
+    {
+      "name": "test raw/reference/output identity",
+      "passed": true,
+      "details": {
+        "rows": 11695,
+        "races": 1101
+      }
+    },
+    {
+      "name": "test win equals finish_order 1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "test contains Seoul and Bugyeong",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "test data and metadata SHA match manifest",
+      "passed": true,
+      "details": {
+        "data_actual": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "data_expected": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "data_match": true,
+        "metadata_actual": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "metadata_expected": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "metadata_match": true
+      }
+    },
+    {
+      "name": "train/valid identities disjoint",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "train/test identities disjoint",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid/test identities disjoint",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "strict split chronology",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "te_jkName/valid terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_jkName/valid unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_jkName/test terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_jkName/test unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_trName/valid terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_trName/valid unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_trName/test terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_trName/test unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_owName/valid terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_owName/valid unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_owName/test terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_owName/test unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_rank/valid terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_rank/valid unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_rank/test terminal train mapping",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "te_rank/test unseen categories use terminal prior",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "train four standardized TE columns independently reproduced",
+      "passed": true,
+      "details": 8.881784197001252e-16
+    },
+    {
+      "name": "valid four standardized TE columns independently reproduced",
+      "passed": true,
+      "details": 4.440892098500626e-16
+    },
+    {
+      "name": "test four standardized TE columns independently reproduced",
+      "passed": true,
+      "details": 4.440892098500626e-16
+    },
+    {
+      "name": "jkName same-date/future-label counterfactual invariant",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "trName same-date/future-label counterfactual invariant",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "owName same-date/future-label counterfactual invariant",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "rank same-date/future-label counterfactual invariant",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "jkName/valid labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "jkName/test labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "trName/valid labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "trName/test labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "owName/valid labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "owName/test labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "rank/valid labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "rank/test labels cannot affect OOS encoding",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "model feature count matches manifest",
+      "passed": true,
+      "details": 141
+    },
+    {
+      "name": "no market/result/final-pool feature in model matrix",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "train model matrix finite numeric",
+      "passed": true,
+      "details": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      }
+    },
+    {
+      "name": "valid model matrix finite numeric",
+      "passed": true,
+      "details": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      }
+    },
+    {
+      "name": "test model matrix finite numeric",
+      "passed": true,
+      "details": {
+        "numeric": true,
+        "nan_count": 0,
+        "infinite_count": 0
+      }
+    },
+    {
+      "name": "no constant train model features",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no train feature pair with |Pearson| >= 0.95",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no exact duplicate train model features",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "check_summary": {
+    "passed": 60,
+    "total": 60
+  }
+}

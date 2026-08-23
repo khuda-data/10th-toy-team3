@@ -1,0 +1,9 @@
+INDEPENDENT MARKET ANCHOR VALIDATION PASS: checks=32
+split                  model_key  delta_ll_per_race    saved    abs_error
+valid anchored_conditional_logit           0.005312 0.005312 3.460773e-16
+valid       anchored_base_margin           0.021833 0.021833 3.747003e-16
+valid            anchor_ensemble           0.017756 0.017756 5.308254e-16
+ test anchored_conditional_logit           0.013974 0.013974 5.551115e-16
+ test       anchored_base_margin           0.013083 0.013083 9.419548e-16
+ test            anchor_ensemble           0.017194 0.017194 3.573530e-16
+PROFIT_CONFIRMED_BET_TYPES=[]

@@ -1,0 +1,14 @@
+2026-08-23 06:20:39,737 | INFO | PHASE 01 PASS | protocol written before metrics; reference SHA=964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195
+2026-08-23 06:20:57,117 | INFO | PHASE 01 PASS | protocol written before metrics; reference SHA=964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195
+2026-08-23 06:21:14,263 | INFO | PHASE 01 PASS | protocol written before metrics; reference SHA=964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195
+2026-08-23 06:21:16,454 | INFO | PHASE 02 PASS | six-feature historical replay max transformed error=8.882e-16
+2026-08-23 06:21:16,735 | INFO | PHASE 03 PASS | six actual fits converged (three M6 plus three same-universe M5 comparators)
+2026-08-23 06:21:17,316 | INFO | PHASE 04 PASS_WITH_LIMITATIONS | valid/test/fresh metrics saved; fresh is posthoc; stake=0; elapsed=3.07s
+2026-08-23 06:25:42,200 | INFO | PHASE 01 PASS | protocol written before metrics; reference SHA=964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195
+2026-08-23 06:25:44,393 | INFO | PHASE 02 PASS | six-feature historical replay max transformed error=8.882e-16
+2026-08-23 06:25:44,671 | INFO | PHASE 03 PASS | six actual fits converged (three M6 plus three same-universe M5 comparators)
+2026-08-23 06:25:45,140 | INFO | PHASE 04 PASS_WITH_LIMITATIONS | valid/test/fresh metrics saved; fresh is posthoc; stake=0; elapsed=2.96s
+2026-08-23 06:26:44,378 | INFO | PHASE 01 PASS | protocol written before metrics; reference SHA=964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195
+2026-08-23 06:26:46,568 | INFO | PHASE 02 PASS | six-feature historical replay max transformed error=8.882e-16
+2026-08-23 06:26:46,846 | INFO | PHASE 03 PASS | six actual fits converged (three M6 plus three same-universe M5 comparators)
+2026-08-23 06:26:47,308 | INFO | PHASE 04 PASS_WITH_LIMITATIONS | valid/test/fresh metrics saved; fresh is posthoc; stake=0; elapsed=2.95s

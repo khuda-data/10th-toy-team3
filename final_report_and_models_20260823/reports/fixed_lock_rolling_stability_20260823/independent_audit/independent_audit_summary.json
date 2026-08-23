@@ -1,0 +1,19 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 11,
+  "checks_passed": 11,
+  "checks_failed": 0,
+  "fixed_threshold_replay": "PASS",
+  "probability_recomputation": "PASS",
+  "settlement_recomputation": "PASS",
+  "bootstrap_and_holm_recomputation": "PASS",
+  "within_fold_lookahead_detected": false,
+  "test_grid_or_threshold_reselection_detected": false,
+  "confirmation_status": "retrospective fixed-lock rolling OOS, not pristine independent confirmation",
+  "interpretation": {
+    "probability": "partial_30_plus beats closing market q on reused TEST; partial_8_15 increment over global is unconfirmed",
+    "betting": "fixed 8-15 place policy beats the q-selected comparator after Holm, but absolute ROI remains unconfirmed",
+    "stake": 0
+  },
+  "elapsed_seconds": 0.732562780380249
+}

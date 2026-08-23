@@ -1,0 +1,91 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "actual_calibrator_training_completed": true,
+  "trained_calibrators": 4,
+  "pooled_candidate_probability_metrics": {
+    "label": "P5_P8_pooled",
+    "observations": 961,
+    "actual_rate": 0.3340270551508845,
+    "market_mean_probability": 0.31345704570048233,
+    "market_log_loss": 0.6194340157171659,
+    "market_brier": 0.21459059303774128,
+    "uncalibrated_mean_probability": 0.32135767827293166,
+    "uncalibrated_log_loss": 0.6227740870429043,
+    "uncalibrated_brier": 0.21602058488938214,
+    "calibrated_mean_probability": 0.32481617220045506,
+    "calibrated_log_loss": 0.6175433726059675,
+    "calibrated_brier": 0.2136743558031341,
+    "calibrated_log_loss_improvement_vs_uncalibrated": 0.00523071443693679,
+    "calibrated_log_loss_improvement_vs_market": 0.0018906431111984645,
+    "calibrated_brier_improvement_vs_uncalibrated": 0.0023462290862480417,
+    "calibrated_brier_improvement_vs_market": 0.0009162372346071812
+  },
+  "calibration_hypothesis_tests": [
+    {
+      "hypothesis": "ll_cal_vs_uncal",
+      "estimate": 0.00523071443693682,
+      "ci_low": 0.00011785849722466176,
+      "ci_high": 0.010479688294270989,
+      "p_one_sided": 0.022297770222977704,
+      "holm_adjusted_p": 0.0683931606839316,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "hypothesis": "ll_cal_vs_market",
+      "estimate": 0.0018906431111984261,
+      "ci_low": -0.005564804692730103,
+      "ci_high": 0.009349099095760453,
+      "p_one_sided": 0.30856914308569144,
+      "holm_adjusted_p": 0.5817418258174183,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "hypothesis": "brier_cal_vs_uncal",
+      "estimate": 0.0023462290862480703,
+      "ci_low": 0.00018857187676195086,
+      "ci_high": 0.004539216112601377,
+      "p_one_sided": 0.0170982901709829,
+      "holm_adjusted_p": 0.0683931606839316,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "hypothesis": "brier_cal_vs_market",
+      "estimate": 0.0009162372346072034,
+      "ci_low": -0.002260136783221674,
+      "ci_high": 0.004129754285259522,
+      "p_one_sided": 0.29087091290870914,
+      "holm_adjusted_p": 0.5817418258174183,
+      "holm_fwer_significant_5pct": false
+    }
+  ],
+  "selected_bets": 200,
+  "uncalibrated_kelly": {
+    "probability_source": "model_probability",
+    "haircut": 0.0,
+    "bets": 181,
+    "total_return": -0.00806428308504914,
+    "mdd": -0.22790521288621757,
+    "sharpe": 0.11186046072465762,
+    "mean_fraction": 0.014186169525755977,
+    "maximum_fraction": 0.02
+  },
+  "calibrated_kelly": {
+    "probability_source": "calibrated_probability",
+    "haircut": 0.0,
+    "bets": 94,
+    "total_return": -0.18827168338710065,
+    "mdd": -0.1929907259735575,
+    "sharpe": -1.4303115852607184,
+    "mean_fraction": 0.009451690107757925,
+    "maximum_fraction": 0.02
+  },
+  "recommended_real_stake": 0,
+  "confirmation_status": "retrospective rolling OOS, not pristine forward confirmation",
+  "limitations": [
+    "the source TEST dates were inspected in earlier project rounds",
+    "place q and dividends are closing values, not executable decision-time snapshots",
+    "selection is intentionally unchanged, so flat-stake ROI is identical to the fixed-lock experiment",
+    "Kelly remains research-only even if calibration improves because pricing and pool impact are unmeasured"
+  ],
+  "elapsed_seconds": 0.10113096237182617
+}

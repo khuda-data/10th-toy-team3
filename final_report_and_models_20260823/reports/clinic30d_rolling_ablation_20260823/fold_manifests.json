@@ -1,0 +1,162 @@
+[
+  {
+    "fold": "P1_valid_202505_06",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "winners": 3158
+    },
+    "evaluation": {
+      "rows": 2340,
+      "races": 232,
+      "date_min": 20250517,
+      "date_max": 20250629,
+      "winners": 232
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P1_valid_202505_06_clinic_ablation.joblib",
+    "model_sha256": "DB4DAD9431181CF54BC475D3824674B0CFE3012AB7E14258E4CD3AD51FCFDB0A"
+  },
+  {
+    "fold": "P2_valid_202507_08",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 35756,
+      "races": 3390,
+      "date_min": 20230805,
+      "date_max": 20250629,
+      "winners": 3390
+    },
+    "evaluation": {
+      "rows": 2944,
+      "races": 292,
+      "date_min": 20250704,
+      "date_max": 20250831,
+      "winners": 292
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P2_valid_202507_08_clinic_ablation.joblib",
+    "model_sha256": "D9161510C08FAF0263434A15AB8622D9242A89564FDD4942874B893B455C6678"
+  },
+  {
+    "fold": "P3_valid_202509_10",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 38700,
+      "races": 3682,
+      "date_min": 20230805,
+      "date_max": 20250831,
+      "winners": 3682
+    },
+    "evaluation": {
+      "rows": 2763,
+      "races": 256,
+      "date_min": 20250905,
+      "date_max": 20251031,
+      "winners": 256
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P3_valid_202509_10_clinic_ablation.joblib",
+    "model_sha256": "7073C1BADBA0CEE352AA8864FA542A9D27D72EDF538DD8E2D53B59CF18CE295F"
+  },
+  {
+    "fold": "P4_valid_202511_12",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 41463,
+      "races": 3938,
+      "date_min": 20230805,
+      "date_max": 20251031,
+      "winners": 3938
+    },
+    "evaluation": {
+      "rows": 3298,
+      "races": 304,
+      "date_min": 20251101,
+      "date_max": 20251227,
+      "winners": 304
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P4_valid_202511_12_clinic_ablation.joblib",
+    "model_sha256": "D4A5E46D8FF111F07F48138C26D9A4B457A5EE1175409CD51C085B181E1C4118"
+  },
+  {
+    "fold": "P5_test_202512_02",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 44761,
+      "races": 4242,
+      "date_min": 20230805,
+      "date_max": 20251227,
+      "winners": 4242
+    },
+    "evaluation": {
+      "rows": 3214,
+      "races": 295,
+      "date_min": 20251228,
+      "date_max": 20260228,
+      "winners": 295
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P5_test_202512_02_clinic_ablation.joblib",
+    "model_sha256": "EF6926BF24D3791F8E5827014ED77B55A88675841DB58FA939CF4A55E6D6C922"
+  },
+  {
+    "fold": "P6_test_202603_04",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 47975,
+      "races": 4537,
+      "date_min": 20230805,
+      "date_max": 20260228,
+      "winners": 4537
+    },
+    "evaluation": {
+      "rows": 3448,
+      "races": 313,
+      "date_min": 20260301,
+      "date_max": 20260426,
+      "winners": 313
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P6_test_202603_04_clinic_ablation.joblib",
+    "model_sha256": "C2E7CA29651F26634D1E7A019469A4A9FF9A458BF1D0944963BB2768F8C78755"
+  },
+  {
+    "fold": "P7_test_202605_06",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 51423,
+      "races": 4850,
+      "date_min": 20230805,
+      "date_max": 20260426,
+      "winners": 4850
+    },
+    "evaluation": {
+      "rows": 3169,
+      "races": 310,
+      "date_min": 20260501,
+      "date_max": 20260628,
+      "winners": 310
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P7_test_202605_06_clinic_ablation.joblib",
+    "model_sha256": "D457FF1532F947792B361887608F3CAE4269342A7D72228EF6B9E605937B3D95"
+  },
+  {
+    "fold": "P8_test_202607_08",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 54592,
+      "races": 5160,
+      "date_min": 20230805,
+      "date_max": 20260628,
+      "winners": 5160
+    },
+    "evaluation": {
+      "rows": 1864,
+      "races": 183,
+      "date_min": 20260703,
+      "date_max": 20260809,
+      "winners": 183
+    },
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\clinic30d_rolling_ablation_20260823\\P8_test_202607_08_clinic_ablation.joblib",
+    "model_sha256": "03D63D7A144ABCDC77FD26372F36DDEE3DA75E1D60731C120FC344CB38A49700"
+  }
+]

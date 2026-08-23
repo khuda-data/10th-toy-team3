@@ -1,0 +1,4 @@
+{"phase": "01_train_only_specification", "status": "PASS", "elapsed_seconds": 10.648463249206543, "plans": 4}
+{"phase": "02_validation_lock", "status": "PASS", "elapsed_seconds": 38.31609010696411, "models": 5, "locks": 14}
+{"phase": "03_locked_test", "status": "PASS", "elapsed_seconds": 37.04267716407776, "models": 5, "cells": 14}
+{"phase": "04_summary", "status": "PASS", "elapsed_seconds": 0.022527217864990234, "high_roi": 3}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 11,
+  "checks_passed": 11,
+  "checks_failed": 0,
+  "frozen_global_features": 29,
+  "provenance_ready_global_features": 6,
+  "blocked_global_features": 23,
+  "provenance_ready_feature_names": [
+    "age__pr",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "wgBudam__pr",
+    "te_owName",
+    "age"
+  ],
+  "numeric_exact_replay_completed": false,
+  "numeric_exact_replay_note": "the audit verifies source columns and preserved-transform evidence, but does not assert row-level equality with the original v11 feature builder",
+  "partial_8_15_interaction_features": 8,
+  "partial_8_15_provenance_ready_feature_components": 2,
+  "partial_8_15_full_interactions_decision_time_reproducible": 0,
+  "partial_30_plus_interaction_features": 5,
+  "partial_30_plus_provenance_ready_feature_components": 1,
+  "partial_30_plus_full_interactions_decision_time_reproducible": 0,
+  "segment_gate_blocker": "8-15 and 30+ gates currently use result/closing winOdds without a documented executable timestamp",
+  "frozen_global29_scoring_ready": false,
+  "frozen_partial30_scoring_ready": false,
+  "reason": "23 of 29 global inputs cannot be reproduced exactly and decision-time safely from the two currently authorized KRA APIs",
+  "imputation_policy": "not performed; median/zero filling would define a different missing-source stress test",
+  "fresh_minimal_model_relationship": "separate model trained only on exactly reproducible entry-sheet features; not a frozen-model validation",
+  "input_evidence": {
+    "preregistration": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\preregistration_before_validation.json",
+      "sha256": "FB7C126742EC0382AAF02EC9BB59568F54C6D5B4712D798399CEDAE9F4EF2B69"
+    },
+    "entry": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\entry_rows.csv",
+      "sha256": "7AF17E76EB1F29A4BCD7D7790E3D0F6A2D78E6472F1F677FF56035512DE9126D",
+      "columns": 51
+    },
+    "result": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\result_rows.csv",
+      "sha256": "2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A",
+      "columns": 93
+    },
+    "preprocessing_manifest": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    "strict_te_audit": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\strict_te_independent_validation.json",
+      "sha256": "D11FAB1380C2D600CF7D1A01A11427A981A0494ECC8A7458F8FE2D97C97DCBAC"
+    }
+  },
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T05:28:52.397316+09:00"
+}

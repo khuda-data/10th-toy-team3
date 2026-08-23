@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "checks_total": 12,
+  "checks_passed": 12,
+  "checks_failed": 0,
+  "checks": {
+    "html_exists": true,
+    "html_bytes_gt_100k": true,
+    "all_12_sections_present": true,
+    "local_links_resolve": true,
+    "manifest_hashes_match": true,
+    "required_disclosures_present": true,
+    "forbidden_stale_claims_absent": true,
+    "snapshot_stake_zero": true,
+    "snapshot_has_incremental_37": true,
+    "snapshot_has_seven_bets": true,
+    "snapshot_has_strict_8_15": true,
+    "snapshot_h9_not_supported": true
+  },
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.html",
+    "bytes": 116743,
+    "sha256": "B6B0B1F8FCCB1D7C68D2CAA8D69D8A13CBB05BAF64403B74D2319B81EA5287F7"
+  },
+  "local_links": {
+    "references": 107,
+    "unique_targets": 99,
+    "missing": []
+  },
+  "manifest_hash_mismatches": [],
+  "required_text": [
+    "fresh 절대수익 확정 0/7",
+    "69,276",
+    "optional-continuation",
+    "먼저 확인한 표본",
+    "그 뒤 수집한 미열람 추가 블록",
+    "+0.028644",
+    "p=0.125",
+    "numeric exact replay를 완료하지 않았다",
+    "0/8, 0/5",
+    "서로 다른 두 집합",
+    "단승만 closing 단승 시장확률 q와 직접 비교",
+    "모든 구성마가 8–15배",
+    "descriptive post-hoc 정산",
+    "현재 실제 stake = 0",
+    "단승 20%, 연승을 포함한 다중 승식 27%"
+  ],
+  "forbidden_text": [
+    "6/29 exact",
+    "단승·연승 20%",
+    "결과 API의 winOdds만 존재",
+    "전체 인자는 각 실험 logs/execution.log",
+    "pristine confirmation이다"
+  ],
+  "scope": "independent structure, local-link, evidence-hash, snapshot and disclosure validation; not visual PDF QA"
+}

@@ -1,0 +1,8 @@
+2026-08-23 03:34:30,087 | INFO | PHASE 01 START | TRAIN-only partial-pooling specification
+2026-08-23 03:34:40,736 | INFO | PHASE 01 PASS | plans=4
+2026-08-23 03:34:40,736 | INFO | PHASE 02 START | VALID model and policy lock
+2026-08-23 03:35:19,053 | INFO | PHASE 02 PASS | best=partial_30_plus deltaLL=+0.005849
+2026-08-23 03:35:19,053 | INFO | PHASE 03 START | locked TEST comparison
+2026-08-23 03:35:56,096 | INFO | PHASE 03 PASS | models=5 cells=14
+2026-08-23 03:35:56,096 | INFO | PHASE 04 START | summary and guards
+2026-08-23 03:35:56,118 | INFO | PHASE 04 PASS | elapsed=86.0s

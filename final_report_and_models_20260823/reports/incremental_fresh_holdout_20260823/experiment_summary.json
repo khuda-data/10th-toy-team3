@@ -1,0 +1,37 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "initial_rows": 261,
+  "initial_races": 27,
+  "additional_rows": 379,
+  "additional_races": 37,
+  "additional_dates": [
+    20260814,
+    20260815,
+    20260817,
+    20260821
+  ],
+  "overlap_rows": 261,
+  "overlap_model_probability_max_difference": 0.0,
+  "overlap_market_probability_max_difference": 0.0,
+  "additional_delta_ll": 0.02864392330208819,
+  "additional_race_bootstrap_ci": [
+    0.004502827894654586,
+    0.053012389720443545
+  ],
+  "additional_day_block_ci": [
+    0.002390829371831125,
+    0.05635552245069286
+  ],
+  "additional_exact_day_signflip_p_one_sided": 0.125,
+  "additional_day_clusters": 4,
+  "additional_model_brier": 0.07617094834005116,
+  "additional_market_brier": 0.07721193193133849,
+  "additional_brier_improvement": 0.0010409835912873339,
+  "confirmation_scope": "previously uninspected continuation collected after the initial 27-race result; not pristine preregistered confirmation and pooled-64 optional-continuation bias must be disclosed",
+  "recommended_real_stake": 0,
+  "input_sha256": {
+    "initial": "6CDFFA5B50CFF05F58249741BC2E36079227D67C7EF28891A5D8C04AB482CF4D",
+    "extended": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132"
+  },
+  "completed_at": "2026-08-23T05:30:31.506697+09:00"
+}

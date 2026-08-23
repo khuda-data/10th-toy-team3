@@ -1,0 +1,11 @@
+{
+  "status": "H17_TRAINING_AND_DEPLOYMENT_FROZEN",
+  "frozen_at_kst": "2026-08-23T08:37:43.707649+09:00",
+  "actual_optimizer_fit_calls": 14,
+  "selected_lambda": 1.0,
+  "training_artifact_manifest_sha256": "5F61D3457885F841E9A872B98E519390715DBD065583D9963629DB931C65BE01",
+  "split_test_bytes_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

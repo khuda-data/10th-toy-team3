@@ -1,0 +1,143 @@
+REVISED V11 SEOUL+BUGYEONG RANK DATASET: PASS
+{
+  "source_features": 140,
+  "pool_features_removed": [
+    "winAmt",
+    "plcAmt",
+    "totalAmt",
+    "log_winAmt",
+    "liq_per_horse"
+  ],
+  "provisional_features": 157,
+  "selected_features": 141,
+  "high_correlation_pairs_before": 16,
+  "high_correlation_pairs_after": 0,
+  "strict_te_audit": {
+    "te_jkName": {
+      "terminal_train_prior": 0.09450562604740244,
+      "first_date_prior": "label-free 1/race_field_size per entry",
+      "later_train_date_prior": "aggregate win rate from strictly earlier dates",
+      "known_levels": 89,
+      "train_dates": 266,
+      "old_same_race_order_encoding_affected_train_rows": 33416,
+      "old_same_race_order_encoding_affected_train_fraction": 1.0,
+      "old_vs_strict_train_max_absolute_difference": 0.07822623608865029,
+      "train_rule": "all entries on a date are encoded before that date's outcomes update history",
+      "valid_test_rule": "mapping uses training outcomes only; no validation/test labels update it"
+    },
+    "te_trName": {
+      "terminal_train_prior": 0.09450562604740244,
+      "first_date_prior": "label-free 1/race_field_size per entry",
+      "later_train_date_prior": "aggregate win rate from strictly earlier dates",
+      "known_levels": 84,
+      "train_dates": 266,
+      "old_same_race_order_encoding_affected_train_rows": 33416,
+      "old_same_race_order_encoding_affected_train_fraction": 1.0,
+      "old_vs_strict_train_max_absolute_difference": 0.07117893079707768,
+      "train_rule": "all entries on a date are encoded before that date's outcomes update history",
+      "valid_test_rule": "mapping uses training outcomes only; no validation/test labels update it"
+    },
+    "te_owName": {
+      "terminal_train_prior": 0.09450562604740244,
+      "first_date_prior": "label-free 1/race_field_size per entry",
+      "later_train_date_prior": "aggregate win rate from strictly earlier dates",
+      "known_levels": 636,
+      "train_dates": 266,
+      "old_same_race_order_encoding_affected_train_rows": 33416,
+      "old_same_race_order_encoding_affected_train_fraction": 1.0,
+      "old_vs_strict_train_max_absolute_difference": 0.09945065468407575,
+      "train_rule": "all entries on a date are encoded before that date's outcomes update history",
+      "valid_test_rule": "mapping uses training outcomes only; no validation/test labels update it"
+    },
+    "te_rank": {
+      "terminal_train_prior": 0.09450562604740244,
+      "first_date_prior": "label-free 1/race_field_size per entry",
+      "later_train_date_prior": "aggregate win rate from strictly earlier dates",
+      "known_levels": 10,
+      "train_dates": 266,
+      "old_same_race_order_encoding_affected_train_rows": 33416,
+      "old_same_race_order_encoding_affected_train_fraction": 1.0,
+      "old_vs_strict_train_max_absolute_difference": 0.04835151680974045,
+      "train_rule": "all entries on a date are encoded before that date's outcomes update history",
+      "valid_test_rule": "mapping uses training outcomes only; no validation/test labels update it"
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 33416,
+      "metadata_rows": 33416,
+      "races": 3158,
+      "feature_count": 141,
+      "meet_rows": {
+        "1": 19617,
+        "3": 13799
+      },
+      "meet_races": {
+        "1": 1891,
+        "3": 1267
+      },
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "all_model_feature_dtypes_numeric": true,
+      "nan_model_values": 0,
+      "infinite_model_values": 0,
+      "finish_order_aligned_with_metadata": true,
+      "win_equals_finish_order_1": true,
+      "rank_group_status_races": {
+        "complete_1_to_n": 3125,
+        "tied_or_gapped": 33
+      }
+    },
+    "valid": {
+      "rows": 11345,
+      "metadata_rows": 11345,
+      "races": 1084,
+      "feature_count": 141,
+      "meet_rows": {
+        "1": 6582,
+        "3": 4763
+      },
+      "meet_races": {
+        "1": 641,
+        "3": 443
+      },
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "all_model_feature_dtypes_numeric": true,
+      "nan_model_values": 0,
+      "infinite_model_values": 0,
+      "finish_order_aligned_with_metadata": true,
+      "win_equals_finish_order_1": true,
+      "rank_group_status_races": {
+        "complete_1_to_n": 1076,
+        "tied_or_gapped": 8
+      }
+    },
+    "test": {
+      "rows": 11695,
+      "metadata_rows": 11695,
+      "races": 1101,
+      "feature_count": 141,
+      "meet_rows": {
+        "1": 6639,
+        "3": 5056
+      },
+      "meet_races": {
+        "1": 635,
+        "3": 466
+      },
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "all_model_feature_dtypes_numeric": true,
+      "nan_model_values": 0,
+      "infinite_model_values": 0,
+      "finish_order_aligned_with_metadata": true,
+      "win_equals_finish_order_1": true,
+      "rank_group_status_races": {
+        "complete_1_to_n": 1078,
+        "tied_or_gapped": 16,
+        "invalid_zero_or_nan": 7
+      }
+    }
+  }
+}

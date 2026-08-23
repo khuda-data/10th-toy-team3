@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-08-23T04:40:31.413434+09:00",
+  "phase": "03_aggregate",
+  "status": "PASS",
+  "elapsed_seconds": 0.3150980472564697,
+  "rolling_oos_races": 2185,
+  "place_bets": 366
+}

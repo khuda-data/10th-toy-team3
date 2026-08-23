@@ -1,0 +1,98 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "actual_conditional_logit_fits": 40,
+  "actual_ablation_model_fits": 32,
+  "trained_model_files": 8,
+  "primary_test_races": 1101,
+  "primary_hypothesis_tests": [
+    {
+      "hypothesis": "H7a_global_clinic_increment",
+      "estimate": 0.001299638551900942,
+      "ci_low": -0.002530223494052574,
+      "ci_high": 0.005115272368652518,
+      "p_one_sided": 0.24887511248875113,
+      "holm_adjusted_p": 0.49775022497750226,
+      "holm_fwer_significant_5pct": false
+    },
+    {
+      "hypothesis": "H7b_partial8_clinic_increment",
+      "estimate": 0.00094275781573313,
+      "ci_low": -0.003413573078147657,
+      "ci_high": 0.005403546156888455,
+      "p_one_sided": 0.3367663233676632,
+      "holm_adjusted_p": 0.49775022497750226,
+      "holm_fwer_significant_5pct": false
+    }
+  ],
+  "primary_brier_ablation": [
+    {
+      "full_model": "global_full",
+      "ablated_model": "global_without_clinic",
+      "full_brier": 0.0722514021447143,
+      "ablated_brier": 0.07228072511892804,
+      "brier_improvement_from_clinic": 2.9322974213735753e-05
+    },
+    {
+      "full_model": "partial8_full",
+      "ablated_model": "partial8_without_clinic",
+      "full_brier": 0.07224243494916578,
+      "ablated_brier": 0.0722760253113108,
+      "brier_improvement_from_clinic": 3.359036214502231e-05
+    }
+  ],
+  "positive_global_clinic_increment_test_folds": 3,
+  "positive_partial8_clinic_increment_test_folds": 2,
+  "input_audits": {
+    "train": {
+      "split": "train",
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 3158,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+      "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+      "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+    },
+    "valid": {
+      "split": "valid",
+      "rows": 11345,
+      "races": 1084,
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 1084,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+      "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+      "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+    },
+    "test": {
+      "split": "test",
+      "rows": 11695,
+      "races": 1101,
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 1101,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+      "data_sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+      "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+    }
+  },
+  "market_reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "interpretation": "a positive increment means the pre-existing residual specification predicts winners better with clinic_30d present; it does not prove causality or profit",
+  "source_timing_caveat": "deployment remains blocked until clinic_30d source definition and pre-race availability are independently mapped",
+  "confirmation_status": "retrospective rolling OOS on previously inspected dates, not pristine independent confirmation",
+  "recommended_real_stake": 0,
+  "elapsed_seconds": 14.743247270584106
+}

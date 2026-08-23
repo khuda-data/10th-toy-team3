@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "pdf": "index.pdf",
+  "bytes": 1334947,
+  "sha256": "19FDC05CF65B074D9AC31803AE565E626E90EC47DA0BD5EC57F9B009BD49825F",
+  "pages": 21,
+  "text_pages": 21,
+  "page_size": "A4 594.96 x 841.92 pt",
+  "render": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 110,
+    "rendered_pages": 21,
+    "contact_sheets_inspected": 3,
+    "focused_pages_inspected": [15, 16],
+    "korean_text_rendered": true,
+    "table_clipping": false,
+    "text_overlap": false,
+    "black_square_glyphs": false,
+    "notes": "The first 29-page render exposed clipped wide tables. Print CSS was revised for A4, wrapping, and smaller table typography; the final 21-page render was re-inspected."
+  },
+  "browser_qa": {
+    "status": "BLOCKED",
+    "reason": "local file URL navigation was blocked by browser security policy",
+    "fallback": "static HTMLParser validation plus full PDF render inspection",
+    "workaround_attempted": false
+  }
+}

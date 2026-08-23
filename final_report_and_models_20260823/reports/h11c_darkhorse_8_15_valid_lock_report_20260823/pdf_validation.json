@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "validated_at_kst": "2026-08-23T07:41:42.514515+09:00",
+  "validator_independence": "does not import the PDF exporter, HTML builder, H11C analysis, or H11C evidence validator",
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\index.pdf",
+    "bytes": 468954,
+    "sha256": "6D4CC93D4D296C1ABA84921B17A9DEE453FFD5C685A938300A15348225B8EE61"
+  },
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\index.html",
+    "bytes": 34225,
+    "sha256": "B2A5CCFCB5E92C36196D8163E6461A3A49224BCA8F2ED5C18EED727B0651F85E"
+  },
+  "pdf_export_summary": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\pdf_export_summary.json",
+    "bytes": 716,
+    "sha256": "4CDE3D723DE84ACF303E903986524962BC58A766441745AE8E6F93B77F121A06"
+  },
+  "report_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\report_manifest.json",
+    "bytes": 4868,
+    "sha256": "546BB32147EA78B8B8067FC7EFFB1D4824A2292D03BA49C836D55E243D7CD77A"
+  },
+  "render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11c_darkhorse_8_15_valid_lock_report_20260823_v3\\render_manifest.json",
+    "bytes": 2322,
+    "sha256": "0F13C0E51088B1B5A9B6C9C881E69D642E08F07F2B710AD81F391C4772EF4603"
+  },
+  "visual_qa_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11c_darkhorse_8_15_valid_lock_report_20260823_v3\\visual_qa_manifest.json",
+    "bytes": 4460,
+    "sha256": "190AC28FB3ECE380D7C34E7059D0DA01A586D164477D0A1FA4909B72FC977EAB"
+  },
+  "validator": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h11c_darkhorse_8_15_valid_lock_report_pdf.py",
+    "bytes": 14739,
+    "sha256": "EDAABB987D1F62D64094DCCDBEB424E8BF0B4804A4C75B342BB610912AC490C3"
+  },
+  "pages": 5,
+  "page_text_lengths": [
+    1654,
+    1505,
+    1211,
+    1767,
+    4642
+  ],
+  "page_sizes_points": [
+    [
+      594.96,
+      841.92
+    ]
+  ],
+  "pdf_uri_annotations": 13,
+  "pdf_unique_file_links": 13,
+  "manifest_sources": 13,
+  "manifest_sources_linked": 13,
+  "render_page_dimensions": [
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ]
+  ],
+  "render_nonwhite_fractions": [
+    0.5756818516202596,
+    0.24270101519108397,
+    0.12228960532607497,
+    0.14028717769522198,
+    0.12448826645087725
+  ],
+  "montage_dimensions": [
+    [
+      1294,
+      2805
+    ]
+  ],
+  "visual_qa": {
+    "status": "PASS",
+    "scope": "all 5 pages via montage plus page 5 at original resolution",
+    "inspected_at_kst": "2026-08-23T07:37:43.8994146+09:00",
+    "checks": {
+      "all_pages_inspected": true,
+      "montage_covers_all_pages": true,
+      "page_5_inspected_at_original_resolution": true,
+      "no_clipping": true,
+      "no_blank_pages": true,
+      "no_orphaned_content": true,
+      "no_overlap": true,
+      "no_garbled_text": true,
+      "tables_legible_at_original_resolution": true,
+      "consistent_margins_and_hierarchy": true,
+      "page_5_bottom_whitespace_acceptable": true
+    }
+  },
+  "forbidden_target_sources_read": [],
+  "target_date_rows_quotes_outcomes_read": 0,
+  "target_performance_claims": 0,
+  "deployment_status": "NO_GO",
+  "actual_stake": 0,
+  "checks_total": 34,
+  "checks_passed": 34,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": {
+    "export_status_pass": true,
+    "html_hash_bound_to_export_and_report_manifest": true,
+    "pdf_hash_bound_to_export": true,
+    "pdf_header": true,
+    "page_count_exact_five": true,
+    "text_on_every_page": true,
+    "a4_portrait_only": true,
+    "required_report_text_present": true,
+    "no_literal_or_escaped_markup": true,
+    "report_manifest_status_and_decision": true,
+    "report_manifest_source_count_exact": true,
+    "report_manifest_sources_current": true,
+    "forbidden_target_source_zero": true,
+    "all_and_only_report_sources_linked_in_pdf": true,
+    "no_external_or_non_file_uri_links": true,
+    "render_status_pending_only_visual_manifest": true,
+    "render_page_sequence_complete": true,
+    "render_page_hashes_and_sizes": true,
+    "render_page_dimensions_exact": true,
+    "render_pages_nonblank": true,
+    "render_montage_coverage_complete": true,
+    "render_montage_hashes_and_sizes": true,
+    "montage_single_artifact_covers_all_pages": true,
+    "visual_manifest_status_pass": true,
+    "visual_html_hash_bound": true,
+    "visual_pdf_hash_bound": true,
+    "visual_export_summary_hash_bound": true,
+    "visual_report_manifest_hash_bound": true,
+    "visual_render_manifest_hash_bound": true,
+    "visual_page_hashes_match_render": true,
+    "visual_montage_hashes_match_render": true,
+    "visual_scope_all_pages_plus_page5_original": true,
+    "visual_all_defect_checks_pass": true,
+    "visual_page5_whitespace_explicitly_accepted": true
+  }
+}

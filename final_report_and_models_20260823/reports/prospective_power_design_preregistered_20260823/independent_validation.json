@@ -1,0 +1,20 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "validation_role": "INDEPENDENT_RECOMPUTATION_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "checks_passed": 109,
+  "checks_failed": 0,
+  "winner_only_recomputed_rows": 340,
+  "models_recomputed": 9,
+  "daily_blocks_recomputed": 28,
+  "bootstrap_rows_recomputed": 5010,
+  "bootstrap_replicates_per_design": 20000,
+  "protocol_sha256": "16153BE07ABCC72ED07628E610CC82A50139FED866D28BC39A2D6FB4BFF412C0",
+  "incident_sha256": "54CBD971A7BB4B243930A2801F315D2D8EFEB41DE60962BEAC33C68FD5EC1A1E",
+  "test_aggregate_analysis_reads": 0,
+  "test_row_level_reads": 0,
+  "target_20260823_reads": 0,
+  "roi_inference": "NOT_IDENTIFIABLE",
+  "confirmation_use": false,
+  "model_selection_use": false,
+  "live_stake": 0
+}

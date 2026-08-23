@@ -1,0 +1,245 @@
+test_empty_selection_has_safe_null_roi_interval (test_backtest.BacktestUnitTests.test_empty_selection_has_safe_null_roi_interval) ... ok
+test_equal_stake_profit_uses_decimal_odds (test_backtest.BacktestUnitTests.test_equal_stake_profit_uses_decimal_odds) ... ok
+test_policy_falls_back_to_no_bet_without_confident_candidate (test_backtest.BacktestUnitTests.test_policy_falls_back_to_no_bet_without_confident_candidate) ... ok
+test_bootstrap_means_use_paired_sample_indices (test_bootstrap.BootstrapUnitTests.test_bootstrap_means_use_paired_sample_indices) ... ok
+test_summary_reports_probability_and_positive_lower_bound (test_bootstrap.BootstrapUnitTests.test_summary_reports_probability_and_positive_lower_bound) ... ok
+test_canonical_datasets_are_allowed (test_dataset_policy.DatasetPolicyTest.test_canonical_datasets_are_allowed) ... ok
+test_unregistered_dataset_fails_closed (test_dataset_policy.DatasetPolicyTest.test_unregistered_dataset_fails_closed) ... ok
+test_v1_to_v4_are_legacy_only (test_dataset_policy.DatasetPolicyTest.test_v1_to_v4_are_legacy_only) ... ok
+test_v5_to_v8_are_forbidden (test_dataset_policy.DatasetPolicyTest.test_v5_to_v8_are_forbidden) ... ok
+test_documentation_manifest_matches_current_files (test_documentation.DocumentationTests.test_documentation_manifest_matches_current_files) ... FAIL
+test_documented_result_files_exist (test_documentation.DocumentationTests.test_documented_result_files_exist) ... ok
+test_readme_records_locked_result_and_no_bet_policy (test_documentation.DocumentationTests.test_readme_records_locked_result_and_no_bet_policy) ... ok
+test_required_project_guides_exist_and_are_not_placeholders (test_documentation.DocumentationTests.test_required_project_guides_exist_and_are_not_placeholders) ... ok
+test_artifact_manifest_keeps_final_test_sealed (test_experiment_reports.ExperimentReportTests.test_artifact_manifest_keeps_final_test_sealed) ... ok
+test_backtest_policy_is_calibration_selected_no_bet (test_experiment_reports.ExperimentReportTests.test_backtest_policy_is_calibration_selected_no_bet) ... FAIL
+test_backtest_selection_file_is_valid_empty_contract (test_experiment_reports.ExperimentReportTests.test_backtest_selection_file_is_valid_empty_contract) ... ok
+test_blended_calibration_predictions_form_race_simplexes (test_experiment_reports.ExperimentReportTests.test_blended_calibration_predictions_form_race_simplexes) ... ok
+test_bootstrap_replicates_are_complete_and_finite (test_experiment_reports.ExperimentReportTests.test_bootstrap_replicates_are_complete_and_finite) ... ok
+test_bootstrap_report_uses_locked_paired_race_resampling (test_experiment_reports.ExperimentReportTests.test_bootstrap_report_uses_locked_paired_race_resampling) ... FAIL
+test_completed_baseline_reports_keep_test_sealed (test_experiment_reports.ExperimentReportTests.test_completed_baseline_reports_keep_test_sealed) ... ok
+test_final_test_predictions_form_race_simplexes (test_experiment_reports.ExperimentReportTests.test_final_test_predictions_form_race_simplexes) ... ok
+test_final_test_was_frozen_and_evaluated_exactly_once (test_experiment_reports.ExperimentReportTests.test_final_test_was_frozen_and_evaluated_exactly_once) ... FAIL
+test_market_blend_policy_uses_calibration_and_keeps_test_sealed (test_experiment_reports.ExperimentReportTests.test_market_blend_policy_uses_calibration_and_keeps_test_sealed) ... ok
+test_model_artifacts_and_calibration_predictions_exist (test_experiment_reports.ExperimentReportTests.test_model_artifacts_and_calibration_predictions_exist) ... ok
+test_normalization_policy_was_selected_without_final_test (test_experiment_reports.ExperimentReportTests.test_normalization_policy_was_selected_without_final_test) ... ok
+test_prediction_output_schema_and_fixture_contract (test_experiment_reports.ExperimentReportTests.test_prediction_output_schema_and_fixture_contract) ... FAIL
+test_selected_calibration_predictions_form_race_simplexes (test_experiment_reports.ExperimentReportTests.test_selected_calibration_predictions_form_race_simplexes) ... ok
+test_temperature_policy_freezes_sequential_calibration (test_experiment_reports.ExperimentReportTests.test_temperature_policy_freezes_sequential_calibration) ... ok
+test_temperature_scaled_predictions_form_race_simplexes (test_experiment_reports.ExperimentReportTests.test_temperature_scaled_predictions_form_race_simplexes) ... ok
+test_all_columns_are_registered_exactly_once (test_feature_registry.FeatureRegistryTest.test_all_columns_are_registered_exactly_once) ... ok
+test_critical_roles (test_feature_registry.FeatureRegistryTest.test_critical_roles) ... ok
+test_leakage_columns_are_rejected (test_feature_registry.FeatureRegistryTest.test_leakage_columns_are_rejected) ... ok
+test_premarket_selection_contains_only_approved_features (test_feature_registry.FeatureRegistryTest.test_premarket_selection_contains_only_approved_features) ... ok
+test_unknown_column_is_rejected (test_feature_registry.FeatureRegistryTest.test_unknown_column_is_rejected) ... ok
+test_adaptive_blend_endpoints_and_simplex (test_market_gate.MarketGateTests.test_adaptive_blend_endpoints_and_simplex) ... ok
+test_gate_labels_beneficial_and_agreement (test_market_gate.MarketGateTests.test_gate_labels_beneficial_and_agreement) ... ok
+test_invalid_lambda_is_rejected (test_market_gate.MarketGateTests.test_invalid_lambda_is_rejected) ... ok
+test_stage_26_policy_and_outputs (test_market_gate.MarketGateTests.test_stage_26_policy_and_outputs) ... FAIL
+test_feature_schema_contains_only_reviewed_premarket_features (test_modeling_foundation.ModelingFoundationTests.test_feature_schema_contains_only_reviewed_premarket_features) ... ok
+test_geometric_blend_endpoints_match_market_and_model (test_modeling_foundation.ModelingFoundationTests.test_geometric_blend_endpoints_match_market_and_model) ... ok
+test_geometric_blend_rejects_lambda_outside_unit_interval (test_modeling_foundation.ModelingFoundationTests.test_geometric_blend_rejects_lambda_outside_unit_interval) ... ok
+test_logit_softmax_is_a_valid_and_distinct_simplex (test_modeling_foundation.ModelingFoundationTests.test_logit_softmax_is_a_valid_and_distinct_simplex) ... ok
+test_model_loader_returns_only_complete_normal_races (test_modeling_foundation.ModelingFoundationTests.test_model_loader_returns_only_complete_normal_races) ... ok
+test_quantile_clipper_does_not_refit_during_transform (test_modeling_foundation.ModelingFoundationTests.test_quantile_clipper_does_not_refit_during_transform) ... ok
+test_race_normalization_and_metrics (test_modeling_foundation.ModelingFoundationTests.test_race_normalization_and_metrics) ... ok
+test_temperature_controls_sharpness_and_rejects_nonpositive_values (test_modeling_foundation.ModelingFoundationTests.test_temperature_controls_sharpness_and_rejects_nonpositive_values) ... ok
+test_temperature_one_is_identity_and_preserves_simplex (test_modeling_foundation.ModelingFoundationTests.test_temperature_one_is_identity_and_preserves_simplex) ... ok
+test_unknown_normalization_is_rejected (test_modeling_foundation.ModelingFoundationTests.test_unknown_normalization_is_rejected) ... ok
+test_walk_forward_is_strictly_chronological (test_modeling_foundation.ModelingFoundationTests.test_walk_forward_is_strictly_chronological) ... ok
+test_complete_race_is_accepted (test_prediction_contract.PredictionContractUnitTests.test_complete_race_is_accepted) ... ok
+test_future_snapshot_or_late_prediction_is_rejected (test_prediction_contract.PredictionContractUnitTests.test_future_snapshot_or_late_prediction_is_rejected) ... ok
+test_incomplete_race_is_rejected_whole (test_prediction_contract.PredictionContractUnitTests.test_incomplete_race_is_rejected_whole) ... ok
+test_invalid_temperature_and_score_are_rejected (test_ranker_probability.RankerProbabilityTests.test_invalid_temperature_and_score_are_rejected) ... ok
+test_softmax_forms_independent_race_simplexes (test_ranker_probability.RankerProbabilityTests.test_softmax_forms_independent_race_simplexes) ... ok
+test_stage_25_policy_and_outputs (test_ranker_probability.RankerProbabilityTests.test_stage_25_policy_and_outputs) ... ok
+test_translation_invariance_and_temperature_preserve_ranking (test_ranker_probability.RankerProbabilityTests.test_translation_invariance_and_temperature_preserve_ranking) ... ok
+test_builder_sorts_groups_and_aligns_relevance (test_ranking_data.RankingDataTests.test_builder_sorts_groups_and_aligns_relevance) ... ok
+test_forbidden_market_feature_is_rejected (test_ranking_data.RankingDataTests.test_forbidden_market_feature_is_rejected) ... ok
+test_invalid_winner_count_is_rejected (test_ranking_data.RankingDataTests.test_invalid_winner_count_is_rejected) ... ok
+test_persisted_group_intervals_are_exact (test_ranking_data.RankingDataTests.test_persisted_group_intervals_are_exact) ... ok
+test_stage_23_manifest_and_outputs_are_locked (test_ranking_data.RankingDataTests.test_stage_23_manifest_and_outputs_are_locked) ... ERROR
+test_nonfinite_scores_are_rejected (test_ranking_metrics.RankingMetricTests.test_nonfinite_scores_are_rejected) ... ok
+test_ranking_metrics_use_one_winner_rank_per_race (test_ranking_metrics.RankingMetricTests.test_ranking_metrics_use_one_winner_rank_per_race) ... ok
+test_stage_24_outputs_are_rank_scores_not_probabilities (test_ranking_metrics.RankingMetricTests.test_stage_24_outputs_are_rank_scores_not_probabilities) ... ok
+test_unique_tie_break_uses_market_then_entry_id (test_ranking_metrics.RankingMetricTests.test_unique_tie_break_uses_market_then_entry_id) ... ok
+setUpClass (test_schema.RawSchemaTest) ... ERROR
+setUpClass (test_seoul_interim.SeoulInterimTest) ... ERROR
+test_boundaries_and_date_separation (test_splits.SplitManifestTest.test_boundaries_and_date_separation) ... ok
+test_entry_counts_by_fold (test_splits.SplitManifestTest.test_entry_counts_by_fold) ... ok
+test_fold_counts (test_splits.SplitManifestTest.test_fold_counts) ... ok
+test_manifest_hash (test_splits.SplitManifestTest.test_manifest_hash) ... FAIL
+test_non_normal_races_are_excluded_whole (test_splits.SplitManifestTest.test_non_normal_races_are_excluded_whole) ... ok
+test_one_row_per_race (test_splits.SplitManifestTest.test_one_row_per_race) ... ok
+test_future_validation_protocol_is_preserved (test_top1_candidate_freeze.Top1CandidateFreezeTests.test_future_validation_protocol_is_preserved) ... ok
+test_guardrails_are_applied_before_top1 (test_top1_candidate_freeze.Top1CandidateFreezeTests.test_guardrails_are_applied_before_top1) ... ok
+test_stage_27_freeze_contract_and_metrics (test_top1_candidate_freeze.Top1CandidateFreezeTests.test_stage_27_freeze_contract_and_metrics) ... FAIL
+test_unique_top1_tie_break_is_used (test_top1_candidate_freeze.Top1CandidateFreezeTests.test_unique_top1_tie_break_is_used) ... ok
+test_correctness_cases_and_deterministic_tie_break (test_top1_disagreement.Top1DisagreementTests.test_correctness_cases_and_deterministic_tie_break) ... ok
+test_duplicate_entry_is_rejected (test_top1_disagreement.Top1DisagreementTests.test_duplicate_entry_is_rejected) ... ok
+test_invalid_probability_simplex_is_rejected (test_top1_disagreement.Top1DisagreementTests.test_invalid_probability_simplex_is_rejected) ... ok
+test_segment_summary_preserves_correctness_arithmetic (test_top1_disagreement.Top1DisagreementTests.test_segment_summary_preserves_correctness_arithmetic) ... ok
+test_stage_22_artifacts_use_only_oof_and_calibration (test_top1_disagreement.Top1DisagreementTests.test_stage_22_artifacts_use_only_oof_and_calibration) ... ok
+test_stage_22_output_hashes_match_report (test_top1_disagreement.Top1DisagreementTests.test_stage_22_output_hashes_match_report) ... FAIL
+test_candidate_selection_is_constrained_before_top1 (test_top1_research_policy.Top1ResearchPolicyTests.test_candidate_selection_is_constrained_before_top1) ... ok
+test_future_holdout_is_predeclared_and_outcome_blind (test_top1_research_policy.Top1ResearchPolicyTests.test_future_holdout_is_predeclared_and_outcome_blind) ... ok
+test_official_top1_success_requires_paired_inference (test_top1_research_policy.Top1ResearchPolicyTests.test_official_top1_success_requires_paired_inference) ... ok
+test_opened_final_test_is_descriptive_only (test_top1_research_policy.Top1ResearchPolicyTests.test_opened_final_test_is_descriptive_only) ... ok
+test_probability_and_tie_break_contract_is_frozen (test_top1_research_policy.Top1ResearchPolicyTests.test_probability_and_tie_break_contract_is_frozen) ... ok
+
+======================================================================
+ERROR: test_stage_23_manifest_and_outputs_are_locked (test_ranking_data.RankingDataTests.test_stage_23_manifest_and_outputs_are_locked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_ranking_data.py", line 79, in test_stage_23_manifest_and_outputs_are_locked
+    self.assertEqual(path.stat().st_size, output["bytes"])
+                     ~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 515, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] ������ ������ ã�� �� �����ϴ�: 'C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\src\\3_�������\\����Ȯ������\\data\\interim\\ranking_entry_manifest.csv.gz'
+
+======================================================================
+ERROR: setUpClass (test_schema.RawSchemaTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_schema.py", line 20, in setUpClass
+    cls.frame = load_raw()
+                ~~~~~~~~^^
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\src\data\load_raw.py", line 53, in load_raw
+    raise FileNotFoundError(f"Raw dataset not found: {raw_path}")
+FileNotFoundError: Raw dataset not found: C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\data\raw\final.csv.gz
+
+======================================================================
+ERROR: setUpClass (test_seoul_interim.SeoulInterimTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_seoul_interim.py", line 18, in setUpClass
+    cls.raw_seoul = load_raw().loc[lambda x: x["meet"].eq("����")]
+                    ~~~~~~~~^^
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\src\data\load_raw.py", line 53, in load_raw
+    raise FileNotFoundError(f"Raw dataset not found: {raw_path}")
+FileNotFoundError: Raw dataset not found: C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\data\raw\final.csv.gz
+
+======================================================================
+FAIL: test_documentation_manifest_matches_current_files (test_documentation.DocumentationTests.test_documentation_manifest_matches_current_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_documentation.py", line 53, in test_documentation_manifest_matches_current_files
+    self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ccc41b58c03ccd813f2c5dd5fc298c6d0e56a8535f6a925b1fc0c6fb90a49a37' != 'd757044c75140c821a52bce47578b8b446e1ab0eb4979e87187244b83bbe530a'
+- ccc41b58c03ccd813f2c5dd5fc298c6d0e56a8535f6a925b1fc0c6fb90a49a37
++ d757044c75140c821a52bce47578b8b446e1ab0eb4979e87187244b83bbe530a
+
+
+======================================================================
+FAIL: test_backtest_policy_is_calibration_selected_no_bet (test_experiment_reports.ExperimentReportTests.test_backtest_policy_is_calibration_selected_no_bet)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_experiment_reports.py", line 253, in test_backtest_policy_is_calibration_selected_no_bet
+    self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'c5e19daa4a1cd91000abf03c31418a2b118def16799c854394f89af8f6046ec6' != '7c57e7446a2d86564edb3a7d75cb1d7a0f1df24004c164262db584a56a7d62a5'
+- c5e19daa4a1cd91000abf03c31418a2b118def16799c854394f89af8f6046ec6
++ 7c57e7446a2d86564edb3a7d75cb1d7a0f1df24004c164262db584a56a7d62a5
+
+
+======================================================================
+FAIL: test_bootstrap_report_uses_locked_paired_race_resampling (test_experiment_reports.ExperimentReportTests.test_bootstrap_report_uses_locked_paired_race_resampling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_experiment_reports.py", line 209, in test_bootstrap_report_uses_locked_paired_race_resampling
+    self.assertEqual(
+    ~~~~~~~~~~~~~~~~^
+        manifest["input_final_test_manifest_sha256"], sha256_file(final_path)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+AssertionError: 'bdb2eafd992c28567e2b5b018f94334c44006c9476206d2322a34d1b60e0a69b' != '2ca2a0987abd440cc8afc4040b297283c44907334da14050eb289b9759b016b4'
+- bdb2eafd992c28567e2b5b018f94334c44006c9476206d2322a34d1b60e0a69b
++ 2ca2a0987abd440cc8afc4040b297283c44907334da14050eb289b9759b016b4
+
+
+======================================================================
+FAIL: test_final_test_was_frozen_and_evaluated_exactly_once (test_experiment_reports.ExperimentReportTests.test_final_test_was_frozen_and_evaluated_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_experiment_reports.py", line 175, in test_final_test_was_frozen_and_evaluated_exactly_once
+    self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'debb78d1c8f8b2dcd7e99dac3c079378087d04abc86240dfdd596cd972475f65' != 'cf1b58357f1110c0f94627299ebca0483fa95b00a6183c574a2af4141e455cf1'
+- debb78d1c8f8b2dcd7e99dac3c079378087d04abc86240dfdd596cd972475f65
++ cf1b58357f1110c0f94627299ebca0483fa95b00a6183c574a2af4141e455cf1
+
+
+======================================================================
+FAIL: test_prediction_output_schema_and_fixture_contract (test_experiment_reports.ExperimentReportTests.test_prediction_output_schema_and_fixture_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_experiment_reports.py", line 324, in test_prediction_output_schema_and_fixture_contract
+    self.assertEqual(report["fixture"]["sha256"], sha256_file(fixture_path))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '89d23534dbf675d88e168e7a824105b7a9426b8876d51daee6d1219823547495' != '529b98ac577f93e45416dad2aef301b93407612d8358335023935cbfe908ef40'
+- 89d23534dbf675d88e168e7a824105b7a9426b8876d51daee6d1219823547495
++ 529b98ac577f93e45416dad2aef301b93407612d8358335023935cbfe908ef40
+
+
+======================================================================
+FAIL: test_stage_26_policy_and_outputs (test_market_gate.MarketGateTests.test_stage_26_policy_and_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_market_gate.py", line 89, in test_stage_26_policy_and_outputs
+    self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '490f59a8eb51e23e0cfdabac5e346c410a07346045e74e84a4f218ba0b083877' != 'a773de091842cb3ec72805f29e48c14e10b33539a8c1a11060d0eed5c01e9f1d'
+- 490f59a8eb51e23e0cfdabac5e346c410a07346045e74e84a4f218ba0b083877
++ a773de091842cb3ec72805f29e48c14e10b33539a8c1a11060d0eed5c01e9f1d
+
+
+======================================================================
+FAIL: test_manifest_hash (test_splits.SplitManifestTest.test_manifest_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_splits.py", line 60, in test_manifest_hash
+    self.assertEqual(sha256_file(DEFAULT_OUTPUT_PATH), self.manifest["output"]["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'debb78d1c8f8b2dcd7e99dac3c079378087d04abc86240dfdd596cd972475f65' != 'cf1b58357f1110c0f94627299ebca0483fa95b00a6183c574a2af4141e455cf1'
+- debb78d1c8f8b2dcd7e99dac3c079378087d04abc86240dfdd596cd972475f65
++ cf1b58357f1110c0f94627299ebca0483fa95b00a6183c574a2af4141e455cf1
+
+
+======================================================================
+FAIL: test_stage_27_freeze_contract_and_metrics (test_top1_candidate_freeze.Top1CandidateFreezeTests.test_stage_27_freeze_contract_and_metrics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_top1_candidate_freeze.py", line 84, in test_stage_27_freeze_contract_and_metrics
+    self.assertEqual(sha256_file(PROJECT_ROOT / item["path"]), item["sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '695f5c027d002e135a315c5282bb5804d7b6edbba969b95e999e448b67c9d9e2' != '8d3789e82558b078a5c8dfdaafb54edc3192335703c402f948201261e2c641e8'
+- 695f5c027d002e135a315c5282bb5804d7b6edbba969b95e999e448b67c9d9e2
++ 8d3789e82558b078a5c8dfdaafb54edc3192335703c402f948201261e2c641e8
+
+
+======================================================================
+FAIL: test_stage_22_output_hashes_match_report (test_top1_disagreement.Top1DisagreementTests.test_stage_22_output_hashes_match_report)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\source\repos\PythonApplication2\.codex_export\10th-toy-team3\src\3_�������\����Ȯ������\tests\test_top1_disagreement.py", line 109, in test_stage_22_output_hashes_match_report
+    self.assertEqual(
+    ~~~~~~~~~~~~~~~~^
+        sha256_file(PROJECT_ROOT / relative),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        report["output_sha256"][key],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+AssertionError: '98ac1802db36d73e29189940acc6d81097bdc8d30ad661eeabc7a3fcbcfb1e44' != 'bf3bc155381e2bd7ef16cfbf4536dd8748525695f2f054365022a661c8211a82'
+- 98ac1802db36d73e29189940acc6d81097bdc8d30ad661eeabc7a3fcbcfb1e44
++ bf3bc155381e2bd7ef16cfbf4536dd8748525695f2f054365022a661c8211a82
+
+
+----------------------------------------------------------------------
+Ran 86 tests in 2.660s
+
+FAILED (failures=9, errors=3)

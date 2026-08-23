@@ -1,0 +1,45 @@
+2026-08-23 03:48:13,862 | INFO | PHASE 01 START | TRAIN-only deep schedules; goal rechecked
+2026-08-23 03:48:23,610 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=1 loss=1.835308 tune_dLL=+0.001235 *
+2026-08-23 03:48:23,762 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=2 loss=1.831449 tune_dLL=+0.004397 *
+2026-08-23 03:48:23,884 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=3 loss=1.823428 tune_dLL=+0.005447 *
+2026-08-23 03:48:24,960 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=10 loss=1.776868 tune_dLL=-0.011893
+2026-08-23 03:48:25,427 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=1 loss=1.834703 tune_dLL=+0.001712 *
+2026-08-23 03:48:25,562 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=2 loss=1.830226 tune_dLL=+0.004828 *
+2026-08-23 03:48:25,688 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=3 loss=1.824933 tune_dLL=+0.006141 *
+2026-08-23 03:48:25,816 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=4 loss=1.818558 tune_dLL=+0.006194 *
+2026-08-23 03:48:26,893 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=10 loss=1.788417 tune_dLL=-0.010554
+2026-08-23 03:48:27,571 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=1 loss=1.835008 tune_dLL=+0.001671 *
+2026-08-23 03:48:27,760 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=2 loss=1.831498 tune_dLL=+0.005196 *
+2026-08-23 03:48:27,972 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=3 loss=1.823787 tune_dLL=+0.006241 *
+2026-08-23 03:48:28,997 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=10 loss=1.785679 tune_dLL=-0.015460
+2026-08-23 03:48:29,657 | INFO | TRAIN-INTERNAL kind=attention seed=20260823 epoch=1 loss=1.835111 tune_dLL=+0.001220 *
+2026-08-23 03:48:29,882 | INFO | TRAIN-INTERNAL kind=attention seed=20260823 epoch=2 loss=1.830539 tune_dLL=+0.003053 *
+2026-08-23 03:48:30,112 | INFO | TRAIN-INTERNAL kind=attention seed=20260823 epoch=3 loss=1.825398 tune_dLL=+0.003375 *
+2026-08-23 03:48:32,030 | INFO | TRAIN-INTERNAL kind=attention seed=20260823 epoch=10 loss=1.769722 tune_dLL=-0.033298
+2026-08-23 03:48:32,832 | INFO | TRAIN-INTERNAL kind=attention seed=20260824 epoch=1 loss=1.834043 tune_dLL=+0.002775 *
+2026-08-23 03:48:33,140 | INFO | TRAIN-INTERNAL kind=attention seed=20260824 epoch=2 loss=1.828973 tune_dLL=+0.004781 *
+2026-08-23 03:48:33,417 | INFO | TRAIN-INTERNAL kind=attention seed=20260824 epoch=3 loss=1.824232 tune_dLL=+0.005259 *
+2026-08-23 03:48:35,310 | INFO | TRAIN-INTERNAL kind=attention seed=20260824 epoch=10 loss=1.750455 tune_dLL=-0.036771
+2026-08-23 03:48:36,116 | INFO | TRAIN-INTERNAL kind=attention seed=20260825 epoch=1 loss=1.834451 tune_dLL=+0.001740 *
+2026-08-23 03:48:36,379 | INFO | TRAIN-INTERNAL kind=attention seed=20260825 epoch=2 loss=1.830665 tune_dLL=+0.003590 *
+2026-08-23 03:48:36,617 | INFO | TRAIN-INTERNAL kind=attention seed=20260825 epoch=3 loss=1.825659 tune_dLL=+0.004280 *
+2026-08-23 03:48:38,363 | INFO | TRAIN-INTERNAL kind=attention seed=20260825 epoch=10 loss=1.775652 tune_dLL=-0.017859
+2026-08-23 03:48:38,874 | INFO | PHASE 01 PASS | schedules={'deep_mlp': {20260823: 3, 20260824: 4, 20260825: 3}, 'race_attention': {20260823: 3, 20260824: 3, 20260825: 3}}
+2026-08-23 03:48:38,874 | INFO | PHASE 02 START | VALID refit, family selection, policy lock
+2026-08-23 03:48:41,240 | INFO | REFIT kind=mlp seed=20260823 epochs=3 eval_dLL=+0.006679
+2026-08-23 03:48:41,817 | INFO | REFIT kind=mlp seed=20260824 epochs=4 eval_dLL=+0.008518
+2026-08-23 03:48:42,240 | INFO | REFIT kind=mlp seed=20260825 epochs=3 eval_dLL=+0.009804
+2026-08-23 03:48:43,357 | INFO | REFIT kind=attention seed=20260823 epochs=3 eval_dLL=+0.008472
+2026-08-23 03:48:44,352 | INFO | REFIT kind=attention seed=20260824 epochs=3 eval_dLL=+0.006725
+2026-08-23 03:48:45,326 | INFO | REFIT kind=attention seed=20260825 epochs=3 eval_dLL=+0.009193
+2026-08-23 03:49:25,120 | INFO | PHASE 02 PASS | primary=deep_blend policies=14
+2026-08-23 03:49:25,120 | INFO | PHASE 03 START | TEST loaded after lock; final actual refit
+2026-08-23 03:49:27,512 | INFO | REFIT kind=mlp seed=20260823 epochs=3 eval_dLL=+0.007222
+2026-08-23 03:49:28,362 | INFO | REFIT kind=mlp seed=20260824 epochs=4 eval_dLL=+0.010667
+2026-08-23 03:49:28,957 | INFO | REFIT kind=mlp seed=20260825 epochs=3 eval_dLL=+0.010179
+2026-08-23 03:49:30,160 | INFO | REFIT kind=attention seed=20260823 epochs=3 eval_dLL=+0.008185
+2026-08-23 03:49:31,295 | INFO | REFIT kind=attention seed=20260824 epochs=3 eval_dLL=+0.007730
+2026-08-23 03:49:32,501 | INFO | REFIT kind=attention seed=20260825 epochs=3 eval_dLL=+0.007573
+2026-08-23 03:49:56,173 | INFO | PHASE 03 PASS | models=3 locked cells=14
+2026-08-23 03:49:56,173 | INFO | PHASE 04 START | guards and resumable summary
+2026-08-23 03:49:56,197 | INFO | PHASE 04 PASS | elapsed=102.3s

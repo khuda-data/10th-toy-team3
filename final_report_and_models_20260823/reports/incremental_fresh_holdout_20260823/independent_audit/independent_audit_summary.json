@@ -1,0 +1,8 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 15,
+  "checks_passed": 15,
+  "checks_failed": 0,
+  "scope": "subset identity, additional-block probability metrics, bootstrap, exact sign-flip and Brier replay",
+  "completed_at": "2026-08-23T05:31:02.843990+09:00"
+}

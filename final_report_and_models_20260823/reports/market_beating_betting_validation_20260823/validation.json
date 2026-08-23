@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "contains 시장보다 더 정확한 확률 방법은 확인됐다",
+      "status": "PASS"
+    },
+    {
+      "check": "contains 절대 수익이 확인된 베팅 방법은 없다",
+      "status": "PASS"
+    },
+    {
+      "check": "contains 시장 앵커 Base Margin",
+      "status": "PASS"
+    },
+    {
+      "check": "historical 8-15 excluded from selection",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive source include",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive output include",
+      "status": "PASS"
+    }
+  ],
+  "report_sha256": "93189E418133EAFFD30E01D0C6D46467E3F3062F699C0F2156179BDD45954756",
+  "report_bytes": 6177,
+  "grid_rows": 378,
+  "locked_rows": 7
+}

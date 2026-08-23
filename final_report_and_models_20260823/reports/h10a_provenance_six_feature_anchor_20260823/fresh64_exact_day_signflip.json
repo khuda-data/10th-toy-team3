@@ -1,0 +1,27 @@
+{
+  "M6-q": {
+    "observed": 0.010456706157378618,
+    "day_clusters": 6,
+    "sign_patterns": 64,
+    "exact_p_one_sided": 0.078125,
+    "resolution": "1/64",
+    "assumption": "independent day clusters with sign-symmetric cluster sums"
+  },
+  "M6-M5": {
+    "observed": -0.00790398718230511,
+    "day_clusters": 6,
+    "sign_patterns": 64,
+    "exact_p_one_sided": 0.890625,
+    "resolution": "1/64",
+    "assumption": "independent day clusters with sign-symmetric cluster sums"
+  },
+  "M6-existing-M5-artifact": {
+    "observed": -0.0078490217624165,
+    "day_clusters": 6,
+    "sign_patterns": 64,
+    "exact_p_one_sided": 0.890625,
+    "resolution": "1/64",
+    "assumption": "independent day clusters with sign-symmetric cluster sums"
+  },
+  "family_status": "posthoc descriptive; all three excluded from the four-endpoint Holm family"
+}

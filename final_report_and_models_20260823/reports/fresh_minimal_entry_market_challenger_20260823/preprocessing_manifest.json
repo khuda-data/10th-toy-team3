@@ -1,0 +1,37 @@
+{
+  "numeric_medians": {
+    "age": 4.0,
+    "wgBudam": 54.0
+  },
+  "burden_change_median": 0.0,
+  "sex_categories": [
+    "거",
+    "수",
+    "암"
+  ],
+  "sex_reference": "암",
+  "feature_names": [
+    "age_percentile",
+    "burden_percentile",
+    "burden_change",
+    "sex::거",
+    "sex::수"
+  ],
+  "unknown_fresh_sex_rows": 0,
+  "scaler_mean": [
+    0.5,
+    0.5,
+    -0.024889439235803997,
+    0.22320891562002476,
+    0.3640898637891385
+  ],
+  "scaler_scale": [
+    0.2656164967152884,
+    0.29183635844315675,
+    1.5154343652530695,
+    0.41639728098026463,
+    0.48117401724858866
+  ],
+  "maximum_train_absolute_correlation": 0.40561132567198754,
+  "train_only_fit": true
+}

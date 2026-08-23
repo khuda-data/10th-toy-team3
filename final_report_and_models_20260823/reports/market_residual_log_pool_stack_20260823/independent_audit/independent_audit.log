@@ -1,0 +1,6 @@
+2026-08-23 03:54:03,506 | INFO | AUDIT PHASE A START | replay locked thresholds
+2026-08-23 03:54:03,790 | INFO | AUDIT PHASE A PASS | cells=14
+2026-08-23 03:54:03,790 | INFO | AUDIT PHASE B START | jackpot, venue, half and slippage sensitivity
+2026-08-23 03:54:04,036 | INFO | AUDIT PHASE B PASS | official checks=131 | probability models=3
+2026-08-23 03:54:04,036 | INFO | AUDIT PHASE C START | final verdict
+2026-08-23 03:54:04,039 | INFO | AUDIT PHASE C PASS_WITH_LIMITATIONS | elapsed=0.5s

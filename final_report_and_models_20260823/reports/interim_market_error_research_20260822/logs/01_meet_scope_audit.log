@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "meet_code_reference": {
+    "1": "서울",
+    "2": "제주",
+    "3": "부경",
+    "4": "영천"
+  },
+  "meet_code_reference_source": {
+    "status": "PASS",
+    "path": "src\\data\\fetch_jeju_bugyeong_odds.py",
+    "sha256": "A9434C8531318A9E3906934B3697DECBB547758C3F2DA86A70FDD42B1B83082E",
+    "parsed_MEET_CD": {
+      "서울": 1,
+      "제주": 2,
+      "부산경남": 3,
+      "영천": 4
+    },
+    "expected_MEET_CD": {
+      "서울": 1,
+      "제주": 2,
+      "부산경남": 3,
+      "영천": 4
+    },
+    "exact_match": true
+  },
+  "main_report_dataset_revised_v7": {
+    "scope": "서울 only",
+    "includes_seoul": true,
+    "includes_bugyeong": false,
+    "includes_jeju": false,
+    "evidence": {
+      "train": {
+        "status": "PASS",
+        "v5_source": {
+          "path": "data\\revised_v5\\train_revised_v5.csv",
+          "sha256": "C607E3DCEDC43E966EE20E152AA679F8255704A633715043D3C4D677F01DD718",
+          "rows": 19617,
+          "races": 1891,
+          "meet_row_counts": {
+            "서울": 19617
+          }
+        },
+        "v7_metadata": {
+          "path": "data\\revised_v7_rank_preprocessed\\train_metadata.csv",
+          "sha256": "91CFE4891E9BB4C87A26674647A9384076E844E14A6913CD88AA457FD447F046",
+          "rows": 19617,
+          "races": 1891,
+          "race_id_meet_code_row_counts": {
+            "서울": 19617
+          }
+        },
+        "checks": {
+          "row_count_equal": true,
+          "race_id_set_equal": true,
+          "entry_id_set_equal": true,
+          "v5_only_seoul_meet_code_1": true,
+          "v7_race_ids_only_meet_code_1": true,
+          "race_id_code_matches_meet_cd": true,
+          "no_jeju_bugyeong_yeongcheon": true
+        }
+      },
+      "valid": {
+        "status": "PASS",
+        "v5_source": {
+          "path": "data\\revised_v5\\valid_revised_v5.csv",
+          "sha256": "B7A00A9ACA928D8EB8D3363E94CB53DFA950168400EF9489A84FDFF39426CD14",
+          "rows": 6582,
+          "races": 641,
+          "meet_row_counts": {
+            "서울": 6582
+          }
+        },
+        "v7_metadata": {
+          "path": "data\\revised_v7_rank_preprocessed\\valid_metadata.csv",
+          "sha256": "A7738DB61A8D7DCDB33C71005766E8E390EA7E75BB4F9235650A67DE04EAC5EF",
+          "rows": 6582,
+          "races": 641,
+          "race_id_meet_code_row_counts": {
+            "서울": 6582
+          }
+        },
+        "checks": {
+          "row_count_equal": true,
+          "race_id_set_equal": true,
+          "entry_id_set_equal": true,
+          "v5_only_seoul_meet_code_1": true,
+          "v7_race_ids_only_meet_code_1": true,
+          "race_id_code_matches_meet_cd": true,
+          "no_jeju_bugyeong_yeongcheon": true
+        }
+      },
+      "test": {
+        "status": "PASS",
+        "v5_source": {
+          "path": "data\\revised_v5\\test_revised_v5.csv",
+          "sha256": "D7D004900EBAB8196A2444F1BF600ACC4F4645E9E56759620FC924E51C5E70D1",
+          "rows": 6639,
+          "races": 635,
+          "meet_row_counts": {
+            "서울": 6639
+          }
+        },
+        "v7_metadata": {
+          "path": "data\\revised_v7_rank_preprocessed\\test_metadata.csv",
+          "sha256": "3D37D1820C39D38703AC31C3165BF45E1D77254236D92C0E227B73DF44D7BD29",
+          "rows": 6639,
+          "races": 635,
+          "race_id_meet_code_row_counts": {
+            "서울": 6639
+          }
+        },
+        "checks": {
+          "row_count_equal": true,
+          "race_id_set_equal": true,
+          "entry_id_set_equal": true,
+          "v5_only_seoul_meet_code_1": true,
+          "v7_race_ids_only_meet_code_1": true,
+          "race_id_code_matches_meet_cd": true,
+          "no_jeju_bugyeong_yeongcheon": true
+        }
+      }
+    }
+  },
+  "expanded_dataset_revised_v10": {
+    "scope": "서울 + 부경 only",
+    "includes_seoul": true,
+    "includes_bugyeong": true,
+    "includes_jeju": false,
+    "evidence": {
+      "train": {
+        "status": "PASS",
+        "path": "data\\revised_v10_seoul_bugyeong\\train_revised_v10_seoul_bugyeong.csv",
+        "sha256": "F2211117429BFA8ECEBFD70DCE3481B0FEF9CE115A67C658C49F12F07C84C37C",
+        "rows": 33416,
+        "races": 3158,
+        "meet_breakdown": {
+          "서울": {
+            "rows": 19617,
+            "races": 1891
+          },
+          "부경": {
+            "rows": 13799,
+            "races": 1267
+          }
+        },
+        "unexpected_meet_codes": {},
+        "checks": {
+          "only_meet_codes_1_and_3": true,
+          "no_jeju_code_2": true,
+          "no_yeongcheon_code_4": true,
+          "race_id_code_matches_meet_cd": true,
+          "meet_one_hot_exact": true,
+          "entry_id_unique": true,
+          "no_unexpected_meets": true
+        }
+      },
+      "valid": {
+        "status": "PASS",
+        "path": "data\\revised_v10_seoul_bugyeong\\valid_revised_v10_seoul_bugyeong.csv",
+        "sha256": "EC2BF16BBDAF570FEB243573755E05276A65323C94DB9FEF99CB4861486F80F0",
+        "rows": 11345,
+        "races": 1084,
+        "meet_breakdown": {
+          "서울": {
+            "rows": 6582,
+            "races": 641
+          },
+          "부경": {
+            "rows": 4763,
+            "races": 443
+          }
+        },
+        "unexpected_meet_codes": {},
+        "checks": {
+          "only_meet_codes_1_and_3": true,
+          "no_jeju_code_2": true,
+          "no_yeongcheon_code_4": true,
+          "race_id_code_matches_meet_cd": true,
+          "meet_one_hot_exact": true,
+          "entry_id_unique": true,
+          "no_unexpected_meets": true
+        }
+      },
+      "test": {
+        "status": "PASS",
+        "path": "data\\revised_v10_seoul_bugyeong\\test_revised_v10_seoul_bugyeong.csv",
+        "sha256": "A7F7B6E8A13A95855DE892F9D69E3429935CA87C03BE52444AE01A74FE3CD7DB",
+        "rows": 11695,
+        "races": 1101,
+        "meet_breakdown": {
+          "서울": {
+            "rows": 6639,
+            "races": 635
+          },
+          "부경": {
+            "rows": 5056,
+            "races": 466
+          }
+        },
+        "unexpected_meet_codes": {},
+        "checks": {
+          "only_meet_codes_1_and_3": true,
+          "no_jeju_code_2": true,
+          "no_yeongcheon_code_4": true,
+          "race_id_code_matches_meet_cd": true,
+          "meet_one_hot_exact": true,
+          "entry_id_unique": true,
+          "no_unexpected_meets": true
+        }
+      }
+    }
+  },
+  "conclusion": "현재 6모델·시장앵커·이변 보고서의 revised_v7은 서울 경주만 포함한다. 별도 revised_v10_seoul_bugyeong은 서울과 부경만 포함하며 제주·영천은 없다."
+}

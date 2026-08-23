@@ -1,0 +1,8 @@
+﻿bet_type,races,dates,model_roi,q_proxy_roi,paired_roi_difference,paired_race_bootstrap_ci_low,paired_race_bootstrap_ci_high,paired_daily_block_ci_low,paired_daily_block_ci_high,exact_day_signflip_p_one_sided,comparator_kind,holm_adjusted_exact_signflip_p,holm_5pct_paired_advantage,deployment_eligible
+단승,64,6,-0.1765625,-0.3421875,0.16562500000000002,-0.178125,0.559375,-0.04615384615384615,0.33809523809523806,0.125,direct closing win q,0.875,False,False
+연승,64,6,-0.2765625,-0.1015625,-0.175,-0.43750000000000006,0.09531250000000001,-0.275,-0.08375000000000002,1.0,closing-win-q combination proxy,1.0,False,False
+복승,64,6,-0.22499999999999998,0.16406250000000003,-0.3890625,-1.078125,0.2765625,-1.080357142857143,0.18,0.875,closing-win-q combination proxy,1.0,False,False
+쌍승,64,6,-0.3515625,-0.34687499999999993,-0.004687499999999983,-0.8859765625,0.8812890624999993,-0.8508771929824561,0.67375,0.5625,closing-win-q combination proxy,1.0,False,False
+삼복승,64,6,-0.359375,0.553125,-0.9125,-2.0172265625000003,0.128125,-2.2203389830508473,0.21754385964912284,0.84375,closing-win-q combination proxy,1.0,False,False
+삼쌍승,64,6,-1.0,0.3453125,-1.3453125,-3.4203125,0.0,-3.0423728813559325,0.0,1.0,closing-win-q combination proxy,1.0,False,False
+복연승,64,6,-0.121875,-0.020312500000000004,-0.1015625,-0.47347656250000003,0.2671875,-0.3400000000000001,0.06617647058823528,0.84375,closing-win-q combination proxy,1.0,False,False

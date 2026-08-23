@@ -1,0 +1,483 @@
+{
+  "status": "PASS",
+  "validated_at_kst": "2026-08-23T07:14:11.306439+09:00",
+  "validator_independence": "does not import report builder or H11B training module",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_freeze_report_20260823\\index.html",
+    "bytes": 97351,
+    "sha256": "80D05399EC5E47FC68BF574C37EBC8A62E16BF07AAC54D4718CEF8C68105EF71"
+  },
+  "manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_freeze_report_20260823\\report_manifest.json",
+    "sha256": "8D41CDB306ECE3FFF5E6FB910C008082757D45FD627363A2A8666BF32CF6A28F",
+    "source_count": 43
+  },
+  "checks_total": 36,
+  "checks_passed": 36,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "manifest_status",
+      "passed": true,
+      "detail": "BUILT_FROM_FROZEN_OUTCOME_UNTOUCHED_EVIDENCE"
+    },
+    {
+      "name": "manifest_report_size",
+      "passed": true,
+      "detail": 97351
+    },
+    {
+      "name": "manifest_report_hash",
+      "passed": true,
+      "detail": "80D05399EC5E47FC68BF574C37EBC8A62E16BF07AAC54D4718CEF8C68105EF71"
+    },
+    {
+      "name": "manifest_target_and_deployment_guard",
+      "passed": true,
+      "detail": {
+        "forbidden_target_sources_read": [],
+        "target_scores_generated": false,
+        "target_performance_claims": 0,
+        "deployment_status": "NO_GO",
+        "recommended_real_stake": 0
+      }
+    },
+    {
+      "name": "source_hash_size_and_allowlist",
+      "passed": true,
+      "detail": {
+        "count": 43,
+        "failures": [],
+        "unsafe": []
+      }
+    },
+    {
+      "name": "korean_html_and_glossary_first",
+      "passed": true,
+      "detail": {
+        "lang": "ko",
+        "sections": [
+          "glossary",
+          "verdict",
+          "design",
+          "execution",
+          "preprocessing",
+          "gradient",
+          "diagnostics",
+          "models",
+          "limits",
+          "evidence"
+        ]
+      }
+    },
+    {
+      "name": "unique_ids",
+      "passed": true,
+      "detail": {
+        "ids": 14,
+        "unique": 14
+      }
+    },
+    {
+      "name": "table_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "accessible_single_svg",
+      "passed": true,
+      "detail": [
+        {
+          "role": "img",
+          "aria": "diag-title diag-desc",
+          "title": true,
+          "desc": true
+        }
+      ]
+    },
+    {
+      "name": "no_external_resources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_links_local_relative",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_links_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_manifest_sources_have_clickable_links",
+      "passed": true,
+      "detail": {
+        "expected": 43,
+        "missing": []
+      }
+    },
+    {
+      "name": "no_escaped_anchor_markup_visible",
+      "passed": true,
+      "detail": {
+        "literal_anchor_markup_visible": false
+      }
+    },
+    {
+      "name": "embedded_data_exact_replay",
+      "passed": true,
+      "detail": {
+        "embedded_keys": [
+          "card_coverage",
+          "execution_log",
+          "experiment",
+          "finite_difference",
+          "fit_operations",
+          "freeze",
+          "historical_metrics",
+          "independent_validation",
+          "member_status",
+          "model_hashes",
+          "phase_progress",
+          "prediction_replay",
+          "preprocessing",
+          "protocol",
+          "reload_audit",
+          "training",
+          "validation_checks"
+        ],
+        "expected_keys": [
+          "card_coverage",
+          "execution_log",
+          "experiment",
+          "finite_difference",
+          "fit_operations",
+          "freeze",
+          "historical_metrics",
+          "independent_validation",
+          "member_status",
+          "model_hashes",
+          "phase_progress",
+          "prediction_replay",
+          "preprocessing",
+          "protocol",
+          "reload_audit",
+          "training",
+          "validation_checks"
+        ]
+      }
+    },
+    {
+      "name": "h11_primary_secondary_hierarchy",
+      "passed": true,
+      "detail": "H11 V1 five-feature M5 remains the immutable primary; H11B is a separate secondary prospective experiment"
+    },
+    {
+      "name": "outcome_untouched_not_quote_blind",
+      "passed": true,
+      "detail": {
+        "scope": "OUTCOME_UNTOUCHED_NOT_QUOTE_BLIND",
+        "outcomes": false,
+        "scores": false
+      }
+    },
+    {
+      "name": "frozen_before_first_start_and_zero_stake",
+      "passed": true,
+      "detail": {
+        "status": "FROZEN_COMPLETE_BEFORE_TARGET_OUTCOME",
+        "completed": "2026-08-23T06:54:34.499707+09:00",
+        "first_start": "2026-08-23T10:35:00+09:00",
+        "stake": 0
+      }
+    },
+    {
+      "name": "fixed_features_market_excluded",
+      "passed": true,
+      "detail": {
+        "features": [
+          "age",
+          "age__pr",
+          "oh_sex_암",
+          "wgBudam_chg",
+          "wgBudam__pr",
+          "te_owName"
+        ],
+        "market_in_x": [],
+        "market_role": "q is used only as coefficient-one log(q) race base margin and benchmark; no market, outcome, or settlement column is ordinary X"
+      }
+    },
+    {
+      "name": "actual_fit_accounting",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "actual_new_fit_count": 33,
+        "final_successful_run_fit_count": 15,
+        "prior_interrupted_fit_operations": 18,
+        "cumulative_actual_fit_operations": 33,
+        "existing_m6_fit_count_in_this_run": 0,
+        "existing_m6_artifacts_loaded": 3,
+        "xgboost_fits": 3,
+        "lightgbm_fits": 3,
+        "deep_mlp_fits": 9,
+        "xgboost_fixed_rounds_from_train_to_valid": 24,
+        "lightgbm_fixed_rounds_from_train_to_valid": 14,
+        "deep_fixed_epochs": {
+          "20260823": 3,
+          "20260824": 4,
+          "20260825": 3
+        },
+        "target_date_rows_used_in_training_or_tuning": 0,
+        "target_date_quotes_used_in_training_or_tuning": 0,
+        "target_date_outcomes_used": 0,
+        "tree_round_assertions": {
+          "xgboost_validation_total_rounds": 144,
+          "xgboost_selected_rounds": 24,
+          "xgboost_test_rounds": 24,
+          "xgboost_final_rounds": 24,
+          "lightgbm_validation_total_rounds": 14,
+          "lightgbm_selected_rounds": 14,
+          "lightgbm_test_rounds": 14,
+          "lightgbm_final_rounds": 14
+        }
+      }
+    },
+    {
+      "name": "two_failed_executions_preserved",
+      "passed": true,
+      "detail": {
+        "failed_phase_count": 2,
+        "recovery": {
+          "member": "technical_restart_recovery",
+          "stage": "before_append_only_fit_journal",
+          "count": 18,
+          "completed_at_kst": "2026-08-23T06:54:01.311983+09:00",
+          "basis": "first run completed 15 fits before phase logging TypeError; second run completed three sequential XGBoost fits before the LightGBM pre-construction init-score audit failed"
+        }
+      }
+    },
+    {
+      "name": "target_never_used_for_fit_or_tuning",
+      "passed": true,
+      "detail": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "preprocessing_chronology_and_replay",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "features": [
+          "age",
+          "age__pr",
+          "oh_sex_암",
+          "wgBudam_chg",
+          "wgBudam__pr",
+          "te_owName"
+        ],
+        "rows": {
+          "train": 33416,
+          "valid": 11345,
+          "test": 11695
+        },
+        "races": {
+          "train": 3158,
+          "valid": 1084,
+          "test": 1101
+        },
+        "total_rows": 56456,
+        "total_races": 5343,
+        "historical_cutoff": 20260809,
+        "historical_replay_max_absolute_error": 8.881784197001252e-16,
+        "market_or_outcome_features_in_X": [],
+        "chronology": {
+          "train_max": 20250511,
+          "valid_min": 20250517,
+          "valid_max": 20251227,
+          "test_min": 20251228,
+          "test_max": 20260809
+        },
+        "today_card": {
+          "status": "PASS",
+          "target_date": 20260823,
+          "entry_card_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\entry_card_rows.csv",
+          "entry_card_sha256": "F67B08A82A661B56561351E1CD7C0E833499FE6A8BBA8AF63A5A2F47458B1F20",
+          "rows": 176,
+          "races": 17,
+          "duplicate_entry_ids": 0,
+          "missing_age": 0,
+          "missing_wgBudam": 0,
+          "missing_hrNo": 0,
+          "missing_owName": 2,
+          "unknown_owner_rows_using_train_prior": 12,
+          "unknown_owner_levels": 9,
+          "burden_prior_known_rows": 157,
+          "burden_prior_unknown_rows_using_archived_train_imputer": 19,
+          "transformed_nonfinite_values": 0,
+          "percent_rank_population": "complete official target-date entry card, identical to the H10A fresh operational definition",
+          "outcome_or_market_columns_read": []
+        }
+      }
+    },
+    {
+      "name": "target_card_fallbacks_and_finite",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "target_date": 20260823,
+        "entry_card_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_prospective_oos_20260823\\entry_card_rows.csv",
+        "entry_card_sha256": "F67B08A82A661B56561351E1CD7C0E833499FE6A8BBA8AF63A5A2F47458B1F20",
+        "rows": 176,
+        "races": 17,
+        "duplicate_entry_ids": 0,
+        "missing_age": 0,
+        "missing_wgBudam": 0,
+        "missing_hrNo": 0,
+        "missing_owName": 2,
+        "unknown_owner_rows_using_train_prior": 12,
+        "unknown_owner_levels": 9,
+        "burden_prior_known_rows": 157,
+        "burden_prior_unknown_rows_using_archived_train_imputer": 19,
+        "transformed_nonfinite_values": 0,
+        "percent_rank_population": "complete official target-date entry card, identical to the H10A fresh operational definition",
+        "outcome_or_market_columns_read": []
+      }
+    },
+    {
+      "name": "finite_difference_exact_metrics_and_hessian_scope",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "gradient_formula": "p-y for negative race-conditional winner log likelihood",
+        "diagonal_hessian_formula": "p*(1-p)",
+        "gradient_max_absolute_error": 2.4037227763784585e-10,
+        "diagonal_hessian_max_absolute_error": 2.631330503488627e-08,
+        "gradient_tolerance": 1e-06,
+        "diagonal_hessian_tolerance": 1e-05
+      }
+    },
+    {
+      "name": "ten_historical_diagnostic_rows",
+      "passed": true,
+      "detail": [
+        [
+          "test",
+          "deep_mlp_3seed"
+        ],
+        [
+          "test",
+          "h11b_equal_weight_ensemble"
+        ],
+        [
+          "test",
+          "lightgbm"
+        ],
+        [
+          "test",
+          "m6"
+        ],
+        [
+          "test",
+          "xgboost"
+        ],
+        [
+          "valid",
+          "deep_mlp_3seed"
+        ],
+        [
+          "valid",
+          "h11b_equal_weight_ensemble"
+        ],
+        [
+          "valid",
+          "lightgbm"
+        ],
+        [
+          "valid",
+          "m6"
+        ],
+        [
+          "valid",
+          "xgboost"
+        ]
+      ]
+    },
+    {
+      "name": "historical_diagnostics_are_reused_only",
+      "passed": true,
+      "detail": "VALID and TEST historical diagnostics were inspected in earlier project rounds; TEST is reused, not independent confirmation"
+    },
+    {
+      "name": "probability_normalization",
+      "passed": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "all_nineteen_model_hashes",
+      "passed": true,
+      "detail": {
+        "count": 19,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "reload_and_prediction_reproduction",
+      "passed": true,
+      "detail": {
+        "reload_rows": 13,
+        "reload_max": 0.0,
+        "prediction_rows": 10,
+        "prediction_max": 3.3306690738754696e-16
+      }
+    },
+    {
+      "name": "independent_validator_28_of_28",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "checks_total": 28,
+        "checks_passed": 28,
+        "checks_failed": 0,
+        "forbidden_target_sources_read": [],
+        "target_scores_generated": false
+      }
+    },
+    {
+      "name": "glossary_formulas_visible_first",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "fit_failures_and_counts_visible",
+      "passed": true,
+      "detail": "33=15+3+15 and two exceptions"
+    },
+    {
+      "name": "exact_historical_metrics_visible",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_model_hashes_visible",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "limitations_no_target_claim_no_go_visible",
+      "passed": true,
+      "detail": "required scope and deployment language"
+    }
+  ],
+  "forbidden_target_sources_read": [],
+  "target_scores_generated": false,
+  "target_performance_claims": 0,
+  "deployment_status": "NO_GO",
+  "recommended_real_stake": 0
+}

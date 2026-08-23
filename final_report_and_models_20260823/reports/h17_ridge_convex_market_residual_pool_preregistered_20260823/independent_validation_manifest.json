@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "created_at_kst": "2026-08-23T08:40:52.416688+09:00",
+  "validator_source": "src/validation/validate_h17_ridge_convex_market_residual_pool.py",
+  "validator_source_sha256": "950DE3434A7C0544A5FA7E89B3F6843AD710B433925B9F284D01FB6E41E7567C",
+  "validation_sha256": "C0DD7EF62400B451CE05314733CBABD1CAE654CD5FB62BC6EFE21C5895D6BB0A",
+  "checks_sha256": "A31665A2B08A83F34DFA1E55F181C4E73E342F21ADB53C1AA7B7900D4E33FCBA",
+  "scientific_invariant_sha256": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5",
+  "split_test_bytes_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

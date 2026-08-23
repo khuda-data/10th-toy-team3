@@ -1,0 +1,574 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-08-23T06:56:44.930492+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.html",
+    "bytes": 84794,
+    "sha256": "7E9CEBC0E647E0494901C81FD1B1292B3A7E342AC8CF06516F03840032E1733D"
+  },
+  "manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\report_manifest.json",
+    "sha256": "0994904A1313C842924390A69A8E0DDD42346B65EE5A4FE295194544CAE81185",
+    "source_count": 29
+  },
+  "checks_total": 36,
+  "checks_passed": 36,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "manifest_status",
+      "passed": true,
+      "detail": "BUILT_FROM_VALIDATED_LOCAL_EVIDENCE"
+    },
+    {
+      "name": "manifest_report_bytes",
+      "passed": true,
+      "detail": 84794
+    },
+    {
+      "name": "manifest_report_sha256",
+      "passed": true,
+      "detail": "7E9CEBC0E647E0494901C81FD1B1292B3A7E342AC8CF06516F03840032E1733D"
+    },
+    {
+      "name": "manifest_deployment_no_go",
+      "passed": true,
+      "detail": "NO_GO"
+    },
+    {
+      "name": "manifest_real_stake_zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "manifest_sources_hash_and_size",
+      "passed": true,
+      "detail": {
+        "source_count": 29,
+        "failures": []
+      }
+    },
+    {
+      "name": "html_lang_korean",
+      "passed": true,
+      "detail": "ko"
+    },
+    {
+      "name": "html_unique_ids",
+      "passed": true,
+      "detail": {
+        "ids": 16,
+        "unique": 16
+      }
+    },
+    {
+      "name": "section_order_glossary_first",
+      "passed": true,
+      "detail": [
+        "glossary",
+        "verdict",
+        "training",
+        "integrity",
+        "probability",
+        "settlement",
+        "paired",
+        "limits",
+        "h11",
+        "evidence"
+      ]
+    },
+    {
+      "name": "report_tables_present",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "accessible_inline_svg",
+      "passed": true,
+      "detail": [
+        {
+          "role": "img",
+          "aria_labelledby": "prob-chart-title prob-chart-desc",
+          "title": true,
+          "desc": true
+        },
+        {
+          "role": "img",
+          "aria_labelledby": "roi-chart-title roi-chart-desc",
+          "title": true,
+          "desc": true
+        }
+      ]
+    },
+    {
+      "name": "no_external_resources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_links_local_relative_and_safe",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_local_links_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_manifest_sources_have_clickable_links",
+      "passed": true,
+      "detail": {
+        "expected": 29,
+        "missing": []
+      }
+    },
+    {
+      "name": "no_escaped_anchor_markup_visible",
+      "passed": true,
+      "detail": {
+        "literal_anchor_markup_visible": false
+      }
+    },
+    {
+      "name": "embedded_evidence_exact_replay",
+      "passed": true,
+      "detail": {
+        "keys": [
+          "bet_audit",
+          "bet_summary",
+          "brier",
+          "core_audit",
+          "core_summary",
+          "model_hashes",
+          "official",
+          "paired",
+          "paired_audit",
+          "paired_summary",
+          "posthoc_protocol",
+          "probability_endpoints",
+          "settlement_protocol",
+          "transform"
+        ],
+        "expected_keys": [
+          "bet_audit",
+          "bet_summary",
+          "brier",
+          "core_audit",
+          "core_summary",
+          "model_hashes",
+          "official",
+          "paired",
+          "paired_audit",
+          "paired_summary",
+          "posthoc_protocol",
+          "probability_endpoints",
+          "settlement_protocol",
+          "transform"
+        ]
+      }
+    },
+    {
+      "name": "actual_training_six_fits_three_models",
+      "passed": true,
+      "detail": {
+        "fits": 6,
+        "model_hashes": {
+          "train_to_valid.joblib": "B32585C4128F516E858365AC2B4CFF04A82D64DCC24477C8F3B440FA917DCFFF",
+          "train_valid_to_test.joblib": "F00E9AA5BE885A055E010466C9E0A14B685B585EC2937B61808E1FBEE37DE652",
+          "all_history_to_fresh64.joblib": "51E4F942964F1D172517BA0A00956FA640B143085D5AE510CCF3503B32C5F480"
+        }
+      }
+    },
+    {
+      "name": "fixed_features_and_market_offset_only",
+      "passed": true,
+      "detail": {
+        "features": [
+          "age",
+          "age__pr",
+          "oh_sex_암",
+          "wgBudam_chg",
+          "wgBudam__pr",
+          "te_owName"
+        ],
+        "market_in_x": [],
+        "offset": "log(closing q), coefficient fixed at 1"
+      }
+    },
+    {
+      "name": "six_transform_routes",
+      "passed": true,
+      "detail": {
+        "age": "archived_v10.numeric",
+        "age__pr": "archived_v10.numeric",
+        "oh_sex_암": "archived_v10.numeric",
+        "wgBudam_chg": "archived_v10.numeric",
+        "wgBudam__pr": "current_v11.addition_scaler",
+        "te_owName": "current_v11.strict_te_scaler"
+      }
+    },
+    {
+      "name": "historical_replay_hard_gate",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "preprocessing_identity_finite_join_and_correlation",
+      "passed": true,
+      "detail": {
+        "splits": {
+          "train": {
+            "rows": 33416,
+            "unique_entry_ids": 33416,
+            "duplicate_entry_ids": 0,
+            "nonfinite_values": 0,
+            "reference_join_loss": 0
+          },
+          "valid": {
+            "rows": 11345,
+            "unique_entry_ids": 11345,
+            "duplicate_entry_ids": 0,
+            "nonfinite_values": 0,
+            "reference_join_loss": 0
+          },
+          "test": {
+            "rows": 11695,
+            "unique_entry_ids": 11695,
+            "duplicate_entry_ids": 0,
+            "nonfinite_values": 0,
+            "reference_join_loss": 0
+          }
+        },
+        "train_max_absolute_pearson_correlation": 0.636979438347754,
+        "correlation_threshold": 0.95,
+        "train_exact_duplicate_feature_pairs": [],
+        "passed": true
+      }
+    },
+    {
+      "name": "fresh_transform_limitations_preserved",
+      "passed": true,
+      "detail": {
+        "entry_sheet_rows": 653,
+        "active_rows": 640,
+        "scratched_or_nonactive_rows": 13,
+        "burden_change_rows_with_observed_in_scope_prior": 602,
+        "burden_change_rows_without_observed_in_scope_prior": 38,
+        "burden_change_exactness": "PARTIAL_HISTORY_DERIVED_NOT_FULLY_EXACT: chronological within available reference+fresh entry history; horses without an observed prior row use the archived TRAIN imputer statistic",
+        "percent_rank_population": "complete official entry sheet before active-result restriction",
+        "unknown_owner_rows_using_train_prior": 46,
+        "strict_owner_encoding": "terminal TRAIN-only map; unseen owners use terminal TRAIN prior"
+      }
+    },
+    {
+      "name": "all_seven_probability_endpoints",
+      "passed": true,
+      "detail": [
+        [
+          "fresh64",
+          "M6-M5"
+        ],
+        [
+          "fresh64",
+          "M6-existing-M5-artifact"
+        ],
+        [
+          "fresh64",
+          "M6-q"
+        ],
+        [
+          "test",
+          "M6-M5"
+        ],
+        [
+          "test",
+          "M6-q"
+        ],
+        [
+          "valid",
+          "M6-M5"
+        ],
+        [
+          "valid",
+          "M6-q"
+        ]
+      ]
+    },
+    {
+      "name": "probability_evidence_scopes_preserved",
+      "passed": true,
+      "detail": {
+        "scopes": [
+          "posthoc_observed_optional_continuation",
+          "previously_inspected_reused_TEST_not_independent_confirmation",
+          "retrospective_reused_VALID"
+        ],
+        "fresh_scope": "already observed optional-continuation operational replay; not pristine confirmation"
+      }
+    },
+    {
+      "name": "fresh64_exact_signflip_and_holm_exclusion",
+      "passed": true,
+      "detail": {
+        "M6-q": {
+          "observed": 0.010456706157378618,
+          "day_clusters": 6,
+          "sign_patterns": 64,
+          "exact_p_one_sided": 0.078125,
+          "resolution": "1/64",
+          "assumption": "independent day clusters with sign-symmetric cluster sums"
+        },
+        "M6-M5": {
+          "observed": -0.00790398718230511,
+          "day_clusters": 6,
+          "sign_patterns": 64,
+          "exact_p_one_sided": 0.890625,
+          "resolution": "1/64",
+          "assumption": "independent day clusters with sign-symmetric cluster sums"
+        },
+        "M6-existing-M5-artifact": {
+          "observed": -0.0078490217624165,
+          "day_clusters": 6,
+          "sign_patterns": 64,
+          "exact_p_one_sided": 0.890625,
+          "resolution": "1/64",
+          "assumption": "independent day clusters with sign-symmetric cluster sums"
+        },
+        "family_status": "posthoc descriptive; all three excluded from the four-endpoint Holm family"
+      }
+    },
+    {
+      "name": "official_all_seven_roi_rows",
+      "passed": true,
+      "detail": [
+        {
+          "bet_type": "단승",
+          "roi": -0.1765625,
+          "ci": [
+            -0.4457627118644068,
+            0.06268656716417913
+          ]
+        },
+        {
+          "bet_type": "연승",
+          "roi": -0.2765625,
+          "ci": [
+            -0.3686274509803922,
+            -0.21975308641975314
+          ]
+        },
+        {
+          "bet_type": "복승",
+          "roi": -0.22499999999999998,
+          "ci": [
+            -0.6113207547169812,
+            0.11538461538461543
+          ]
+        },
+        {
+          "bet_type": "쌍승",
+          "roi": -0.3515625,
+          "ci": [
+            -0.8037037037037037,
+            0.003750000000000009
+          ]
+        },
+        {
+          "bet_type": "삼복승",
+          "roi": -0.359375,
+          "ci": [
+            -0.7147540983606557,
+            0.0892857142857143
+          ]
+        },
+        {
+          "bet_type": "삼쌍승",
+          "roi": -1.0,
+          "ci": [
+            -1.0,
+            -1.0
+          ]
+        },
+        {
+          "bet_type": "복연승",
+          "roi": -0.121875,
+          "ci": [
+            -0.46470588235294125,
+            0.13529411764705887
+          ]
+        }
+      ]
+    },
+    {
+      "name": "official_settlement_and_no_double_fee",
+      "passed": true,
+      "detail": {
+        "official": {
+          "status": "PASS",
+          "purpose": "official final settlement evidence, not decision-time pricing",
+          "official_source": "Korea Racing Authority mobile race score-table pages",
+          "source_url_templates": {
+            "1": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate={YYYYMMDD}",
+            "3": "https://m.kra.co.kr/race/bukyeong/scoretableAllScoreList.do?rcDate={YYYYMMDD}"
+          },
+          "fresh_result_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\result_rows.csv",
+          "fresh_result_sha256": "2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A",
+          "date_meet_cells": 7,
+          "target_races": 64,
+          "parsed_races": 64,
+          "parsed_rows": 704,
+          "bet_type_counts": {
+            "단승": {
+              "races": 64,
+              "rows": 64
+            },
+            "연승": {
+              "races": 64,
+              "rows": 192
+            },
+            "복승": {
+              "races": 64,
+              "rows": 64
+            },
+            "쌍승": {
+              "races": 64,
+              "rows": 64
+            },
+            "복연승": {
+              "races": 64,
+              "rows": 192
+            },
+            "삼복승": {
+              "races": 64,
+              "rows": 64
+            },
+            "삼쌍승": {
+              "races": 64,
+              "rows": 64
+            }
+          },
+          "raw_html_files": 7,
+          "raw_html_sha256_recorded": true,
+          "combination_checks": 448,
+          "combination_failures": [],
+          "fee_treatment": "final KRA dividends already reflect pool takeout; no additional 20%/27% deduction",
+          "decision_time_price_surface_available": false,
+          "recommended_real_stake": 0,
+          "elapsed_seconds": 3.190269708633423
+        },
+        "summary_fee": "official final KRA dividends used without additional 20%/27% deduction"
+      }
+    },
+    {
+      "name": "settlement_independent_audits",
+      "passed": true,
+      "detail": {
+        "settlement": {
+          "status": "PASS",
+          "checks": 17,
+          "passed": 17,
+          "failed": 0,
+          "failed_checks": [],
+          "replayed_settlement_rows": 448,
+          "replayed_candidate_tickets": 69276,
+          "races": 64,
+          "bet_types": [
+            "단승",
+            "연승",
+            "복승",
+            "쌍승",
+            "삼복승",
+            "삼쌍승",
+            "복연승"
+          ],
+          "source_raw_html_hashes_replayed": 7,
+          "independently_recomputed": [
+            "candidate enumeration",
+            "probability-edge maximizing ticket",
+            "market-proxy top ticket",
+            "event hit",
+            "official final-dividend settlement",
+            "ROI",
+            "daily-block CI",
+            "MDD",
+            "Sharpe",
+            ">30% warning coverage"
+          ],
+          "audited_at": "2026-08-23T06:34:15.243290+09:00"
+        },
+        "paired": {
+          "status": "PASS_WITH_LIMITATIONS",
+          "checks_total": 53,
+          "checks_passed": 53,
+          "checks_failed": 0,
+          "scope": "independent arithmetic, race/day bootstrap, exact sign-flip and Holm replay; prices remain non-executable",
+          "recommended_real_stake": 0,
+          "completed_at": "2026-08-23T06:34:15.796011+09:00"
+        }
+      }
+    },
+    {
+      "name": "no_confirmed_profit_and_no_go",
+      "passed": true,
+      "detail": {
+        "profit_confirmed": [],
+        "rois": {
+          "단승": -0.1765625,
+          "연승": -0.2765625,
+          "복승": -0.22499999999999998,
+          "쌍승": -0.3515625,
+          "삼복승": -0.359375,
+          "삼쌍승": -1.0,
+          "복연승": -0.121875
+        }
+      }
+    },
+    {
+      "name": "paired_direct_win_six_proxy_and_no_holm",
+      "passed": true,
+      "detail": {
+        "direct": [
+          "단승"
+        ],
+        "proxy": [
+          "연승",
+          "복승",
+          "쌍승",
+          "삼복승",
+          "삼쌍승",
+          "복연승"
+        ],
+        "holm": []
+      }
+    },
+    {
+      "name": "glossary_and_formulas_visible_first",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "model_hashes_and_execution_log_visible",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "seven_roi_and_ci_values_visible",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "limitations_and_no_go_visible",
+      "passed": true,
+      "detail": "required limitation and deployment language"
+    },
+    {
+      "name": "h11_prospective_action_visible",
+      "passed": true,
+      "detail": "H11 steps"
+    }
+  ],
+  "deployment_status": "NO_GO",
+  "recommended_real_stake": 0
+}

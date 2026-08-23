@@ -1,0 +1,119 @@
+{
+  "features": [
+    "age",
+    "age__pr",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "wgBudam__pr",
+    "te_owName"
+  ],
+  "routes_read_from_joblibs": {
+    "age": {
+      "transformer": "archived_v10.numeric",
+      "source_index": 0,
+      "imputer_statistic": 3.0,
+      "scaler_mean": 3.7323737131912855,
+      "scaler_scale": 1.2597194325528154
+    },
+    "age__pr": {
+      "transformer": "archived_v10.numeric",
+      "source_index": 45,
+      "imputer_statistic": 0.5,
+      "scaler_mean": 0.5,
+      "scaler_scale": 0.26399533081414694
+    },
+    "oh_sex_암": {
+      "transformer": "archived_v10.numeric",
+      "source_index": 72,
+      "imputer_statistic": 0.0,
+      "scaler_mean": 0.41608810150825953,
+      "scaler_scale": 0.4929085039756484
+    },
+    "wgBudam_chg": {
+      "transformer": "archived_v10.numeric",
+      "source_index": 63,
+      "imputer_statistic": 0.0,
+      "scaler_mean": -0.006149748623413933,
+      "scaler_scale": 1.4279854737939695
+    },
+    "wgBudam__pr": {
+      "transformer": "current_v11.addition_scaler",
+      "source_index": 4,
+      "imputer_statistic": 0.5,
+      "scaler_mean": 0.5,
+      "scaler_scale": 0.2905917223435759
+    },
+    "te_owName": {
+      "transformer": "current_v11.strict_te_scaler",
+      "source_index": 2,
+      "imputer_statistic": NaN,
+      "scaler_mean": 0.09747199529267916,
+      "scaler_scale": 0.03709254893062076
+    }
+  },
+  "sex_source_tokens_by_frozen_dummy": {
+    "oh_sex_거": "거",
+    "oh_sex_수": "수",
+    "oh_sex_암": "암"
+  },
+  "owner_encoding": {
+    "terminal_prior": 0.09450562604740244,
+    "known_owner_levels": 636,
+    "train_dates": 266,
+    "rule": "train date-blocked using strictly earlier dates; all OOS uses terminal TRAIN-only map"
+  },
+  "owner_mapping_levels": 636,
+  "raw_formula_replay": {
+    "age_percent_rank_formula": "(within-race average rank - 1)/(field size - 1)",
+    "age_percent_rank_max_error_vs_reference": 1.1102230246251565e-16,
+    "burden_percent_rank_max_error_vs_reference": 1.1102230246251565e-16,
+    "burden_change_source_route": "saved reference/raw wgBudam_chg -> archived v10 imputer/scaler",
+    "burden_change_chronology_diagnostic_formula": "current wgBudam - same hrNo latest earlier source row wgBudam",
+    "burden_change_chronology_diagnostic_max_error_on_observed_rows": 0.0,
+    "burden_change_chronology_diagnostic_missing_pattern_errors": 0,
+    "burden_change_chronology_diagnostic_is_hard_gate": false,
+    "transformed_matrix_max_error": 8.881784197001252e-16,
+    "hard_gate_passed": true
+  },
+  "preprocessing_integrity": {
+    "splits": {
+      "train": {
+        "rows": 33416,
+        "unique_entry_ids": 33416,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      },
+      "valid": {
+        "rows": 11345,
+        "unique_entry_ids": 11345,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      },
+      "test": {
+        "rows": 11695,
+        "unique_entry_ids": 11695,
+        "duplicate_entry_ids": 0,
+        "nonfinite_values": 0,
+        "reference_join_loss": 0
+      }
+    },
+    "train_max_absolute_pearson_correlation": 0.636979438347754,
+    "correlation_threshold": 0.95,
+    "train_exact_duplicate_feature_pairs": [],
+    "passed": true
+  },
+  "fresh_limitations": {
+    "entry_sheet_rows": 653,
+    "active_rows": 640,
+    "scratched_or_nonactive_rows": 13,
+    "burden_change_rows_with_observed_in_scope_prior": 602,
+    "burden_change_rows_without_observed_in_scope_prior": 38,
+    "burden_change_exactness": "PARTIAL_HISTORY_DERIVED_NOT_FULLY_EXACT: chronological within available reference+fresh entry history; horses without an observed prior row use the archived TRAIN imputer statistic",
+    "percent_rank_population": "complete official entry sheet before active-result restriction",
+    "unknown_owner_rows_using_train_prior": 46,
+    "strict_owner_encoding": "terminal TRAIN-only map; unseen owners use terminal TRAIN prior"
+  },
+  "market_or_outcome_features_in_X": []
+}

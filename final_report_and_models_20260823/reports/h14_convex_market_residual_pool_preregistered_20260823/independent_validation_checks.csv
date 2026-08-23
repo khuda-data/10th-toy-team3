@@ -1,0 +1,73 @@
+﻿check,status,observed,expected
+validator_does_not_import_trainer,PASS,"""trainer absent from sys.modules""","""independent"""
+trainer_ast_parses,PASS,"""valid AST""","""valid AST"""
+protocol_sha_unchanged,PASS,"""0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43""","""0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"""
+protocol_status,PASS,"""H14_ADAPTIVE_FOLLOWUP_PREREGISTERED_BEFORE_TRAINING_AND_FIRST_REAL_T5""","""H14 adaptive frozen status"""
+protocol_requires_three_fits,PASS,3,3
+protocol_adaptive_disclosure,PASS,"{""h13_observed_before_this_protocol"": true, ""h13_late28_delta_ll_vs_q"": 0.0020062723686464176, ""h13_late28_ci_included_zero"": true, ""h13_late28_delta_ll_vs_equal_ensemble"": -0.00027208996240272505, ""h13_weight_instability_observed"": true, ""consequence"": ""H14 is an explicitly adaptive exploratory follow-up. Its reused historical late28 result cannot be independent evidence; only later prospective data can evaluate it.""}","""H13 observed and CI included zero"""
+protocol_forbids_test_and_target,PASS,"{""split"": ""VALID only"", ""model_blocks"": [""m6"", ""xgboost"", ""lightgbm"", ""deep_mlp_3seed""], ""rows_per_block"": 11345, ""reader"": ""unbuffered exact-block reader that stops immediately after the fourth VALID member block and never reads the TEST block"", ""required_alignment"": ""rcDate, race_id, entry_id, win, and q must match exactly across all four member blocks"", ""split_test_rows_read_or_parsed"": 0, ""target_20260823_sources_read"": 0}","""both zero"""
+trainer_has_one_minimize_call_site,PASS,1,1
+trainer_minimize_method_slsqp,PASS,"""minimize(objective, INITIAL_WEIGHTS.copy(), method='SLSQP', jac=True, bounds=[(0.0, None)] * len(MEMBERS), constraints=[{'type': 'ineq', 'fun': lambda weights: 1.0 - float(np.sum(weights)), 'jac': lambda weights: -np.ones_like(weights, dtype=float)}], callback=callback, options={'maxiter': 2000, 'ftol': 1e-12, 'disp': False})""","""SLSQP"""
+trainer_minimize_analytic_jacobian,PASS,true,true
+trainer_minimize_has_nonnegative_bounds,PASS,true,"""w>=0"""
+trainer_minimize_has_sum_inequality,PASS,"""sum constraint source found""","""1-sum(w)>=0"""
+trainer_formula_uses_log_q_plus_residual,PASS,"""formula source found""","""log(q)+residual@w"""
+trainer_gradient_formula,PASS,"""analytic conditional-logit gradient source found""","""sum expected residual minus winner residual"""
+trainer_fit_spec_has_exact_three_scopes,PASS,"""three frozen names""","""first44/first64/all92"""
+trainer_has_no_forbidden_target_test_path,PASS,[],[]
+trainer_has_no_network_call,PASS,[],[]
+source_size_without_full_hash,PASS,14056057,14056057
+source_attestation_not_recomputed,PASS,"{""full_hash"": false, ""attestation"": ""3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC""}","{""full_hash"": false, ""attestation"": ""3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC""}"
+independent_valid_rows,PASS,"{""rows"": 11345, ""splits"": [""valid""]}","{""rows"": 11345, ""splits"": [""valid""]}"
+independent_four_member_blocks,PASS,"[11345, 4]","[11345, 4]"
+reader_byte_boundary_matches,PASS,5392493,5392493
+reader_never_requests_fifth_line,PASS,"{""after_fourth"": 0, ""test"": 0}","{""after_fourth"": 0, ""test"": 0}"
+one_winner_per_race,PASS,"{""winners"": 1084, ""races"": 1084}","""equal and one per race"""
+input_probability_sums,PASS,"{""q"": 1.1102230246251565e-15, ""m6"": 1.1102230246251565e-15, ""xgboost"": 1.2212453270876722e-15, ""lightgbm"": 9.992007221626409e-16, ""deep_mlp_3seed"": 8.881784197001252e-16}","""<= 1e-12"""
+input_positive_finite,PASS,"""positive finite""","""positive finite"""
+exact_92_dates,PASS,92,92
+date_split_44_64_28,PASS,"[44, 64, 28]","[44, 64, 28]"
+strict_chronological_boundary,PASS,"{""first44_max"": 20250830, ""next20_min"": 20250831, ""first64_max"": 20251024, ""late28_min"": 20251025}","""strict"""
+saved_date_split_exact,PASS,"""saved lists equal independent lists""",true
+late28_declared_reused,PASS,"{""split"": ""NOT_INDEPENDENT_REUSED_VALID_ALREADY_INSPECTED_BY_H11D_AND_H13"", ""metrics"": ""NOT_INDEPENDENT_REUSED_VALID_ALREADY_INSPECTED_BY_H11D_AND_H13""}","""reused VALID disclosure"""
+independent_gradient_finite_difference,PASS,8.794809758932987e-11,"""<=1e-6"""
+saved_gradient_matches,PASS,"{""independent_error"": 8.794809758932987e-11, ""saved_error"": 8.794809758932987e-11}","""exact within tolerances"""
+actual_optimizer_fit_count_exact_three,PASS,"{""manifest"": 3, ""records"": 3, ""summary"": 3, ""freeze"": 3}","""all 3"""
+optimizer_calls_successful_slsqp_analytic,PASS,"[{""name"": ""first44_stability_checkpoint"", ""success"": true, ""method"": ""SLSQP"", ""jac"": true}, {""name"": ""first64_locked_late28_model"", ""success"": true, ""method"": ""SLSQP"", ""jac"": true}, {""name"": ""all92_deployment"", ""success"": true, ""method"": ""SLSQP"", ""jac"": true}]","""all successful SLSQP analytic"""
+optimizer_fit_numbers_unique_1_2_3,PASS,"[1, 2, 3]","[1, 2, 3]"
+all_weights_nonnegative,PASS,"{""first44_stability_checkpoint"": {""minimum"": 0.0, ""sum"": 0.6132321506248106, ""market_exponent"": 0.3867678493751894}, ""first64_locked_late28_model"": {""minimum"": 2.3946258647807302e-17, ""sum"": 1.0, ""market_exponent"": 0.0}, ""all92_deployment"": {""minimum"": 0.0, ""sum"": 1.0000000000000002, ""market_exponent"": -2.220446049250313e-16}}","""minimum >= -1e-12"""
+all_weight_sums_at_most_one,PASS,"{""first44_stability_checkpoint"": {""minimum"": 0.0, ""sum"": 0.6132321506248106, ""market_exponent"": 0.3867678493751894}, ""first64_locked_late28_model"": {""minimum"": 2.3946258647807302e-17, ""sum"": 1.0, ""market_exponent"": 0.0}, ""all92_deployment"": {""minimum"": 0.0, ""sum"": 1.0000000000000002, ""market_exponent"": -2.220446049250313e-16}}","""sum <= 1+1e-12"""
+all_market_exponents_nonnegative_with_roundoff,PASS,"{""first44_stability_checkpoint"": {""minimum"": 0.0, ""sum"": 0.6132321506248106, ""market_exponent"": 0.3867678493751894}, ""first64_locked_late28_model"": {""minimum"": 2.3946258647807302e-17, ""sum"": 1.0, ""market_exponent"": 0.0}, ""all92_deployment"": {""minimum"": 0.0, ""sum"": 1.0000000000000002, ""market_exponent"": -2.220446049250313e-16}}","""1-sum(w) >= -1e-12"""
+fit_scope_dates_44_64_92,PASS,"[44, 64, 92]","[44, 64, 92]"
+optimizer_trace_count_three,PASS,3,3
+optimizer_traces_nonempty,PASS,"[{""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/01_first44_stability_checkpoint.csv"", ""bytes"": 10800, ""sha256"": ""40651EAFFF69E2B5316FB9568EFDEAD7C36E0198AB137CEF578D6E7DF97B8B49""}, {""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/02_first64_locked_late28_model.csv"", ""bytes"": 7451, ""sha256"": ""D905AC08F37B467A771416F3E14E6A5E73B358A2134C7539C5E6DBA206F09794""}, {""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/03_all92_deployment.csv"", ""bytes"": 6144, ""sha256"": ""074C87A2B489C8BE6536037A35E5A8060094EC5DCE268FD525B32B6A65E96EFC""}]","""hash and bytes match"""
+fit_operation_log_exact_three,PASS,"[1, 2, 3]","[1, 2, 3]"
+model_reload_weights:first44_stability_checkpoint,PASS,0.0,"""<= 1e-12"""
+model_scope:first44_stability_checkpoint,PASS,"{""rows"": 5102, ""races"": 507, ""dates"": 44, ""date_min"": 20250517, ""date_max"": 20250830}","""dates=44"""
+model_q_not_ordinary_x:first44_stability_checkpoint,PASS,"{""ordinary_features"": [], ""q_role"": ""coefficient-one market base margin/offset""}","""no X; q base margin"""
+model_reload_weights:first64_locked_late28_model,PASS,0.0,"""<= 1e-12"""
+model_scope:first64_locked_late28_model,PASS,"{""rows"": 7638, ""races"": 744, ""dates"": 64, ""date_min"": 20250517, ""date_max"": 20251024}","""dates=64"""
+model_q_not_ordinary_x:first64_locked_late28_model,PASS,"{""ordinary_features"": [], ""q_role"": ""coefficient-one market base margin/offset""}","""no X; q base margin"""
+model_reload_weights:all92_deployment,PASS,0.0,"""<= 1e-12"""
+model_scope:all92_deployment,PASS,"{""rows"": 11345, ""races"": 1084, ""dates"": 92, ""date_min"": 20250517, ""date_max"": 20251227}","""dates=92"""
+model_q_not_ordinary_x:all92_deployment,PASS,"{""ordinary_features"": [], ""q_role"": ""coefficient-one market base margin/offset""}","""no X; q base margin"""
+late28_probability_sums,PASS,"{""h14_convex_pool"": 4.440892098500626e-16, ""market_q"": 9.992007221626409e-16, ""h11b_equal_arithmetic_ensemble"": 2.220446049250313e-16, ""h13_frozen_first64_log_pool"": 4.440892098500626e-16}","""<= 1e-12"""
+late28_prediction_identity_exact,PASS,true,true
+late28_prediction_values_recompute,PASS,"{""h14"": 1.1102230246251565e-16, ""q"": 1.1102230246251565e-16, ""equal"": 1.1102230246251565e-16, ""h13"": 1.1102230246251565e-16}","""<= 1e-12"""
+late28_metrics_recompute,PASS,"{""h14_convex_pool"": {""winner_conditional_nll"": 0.0, ""runner_brier"": 0.0, ""ece10_equal_width"": 0.0, ""race_top1_hit_rate"": 0.0, ""maximum_race_probability_sum_error"": 0.0}, ""market_q"": {""winner_conditional_nll"": 0.0, ""runner_brier"": 0.0, ""ece10_equal_width"": 0.0, ""race_top1_hit_rate"": 0.0, ""maximum_race_probability_sum_error"": 0.0}, ""h11b_equal_arithmetic_ensemble"": {""winner_conditional_nll"": 0.0, ""runner_brier"": 0.0, ""ece10_equal_width"": 0.0, ""race_top1_hit_rate"": 0.0, ""maximum_race_probability_sum_error"": 0.0}, ""h13_frozen_first64_log_pool"": {""winner_conditional_nll"": 0.0, ""runner_brier"": 0.0, ""ece10_equal_width"": 0.0, ""race_top1_hit_rate"": 0.0, ""maximum_race_probability_sum_error"": 0.0}}","""<= 1e-12"""
+late28_delta_ci_signflip_recompute,PASS,"{""h14_vs_market_q"": {""delta_log_likelihood_per_race"": 0.0, ""daily_block_bootstrap_ci95_low"": 0.0, ""daily_block_bootstrap_ci95_high"": 0.0, ""paired_day_sign_flip_p_one_sided"": 0.0, ""daily_blocks"": 0.0, ""races"": 0.0}, ""h14_vs_h11b_equal_arithmetic_ensemble"": {""delta_log_likelihood_per_race"": 0.0, ""daily_block_bootstrap_ci95_low"": 0.0, ""daily_block_bootstrap_ci95_high"": 0.0, ""paired_day_sign_flip_p_one_sided"": 0.0, ""daily_blocks"": 0.0, ""races"": 0.0}, ""h14_vs_h13_frozen_first64_log_pool"": {""delta_log_likelihood_per_race"": 0.0, ""daily_block_bootstrap_ci95_low"": 0.0, ""daily_block_bootstrap_ci95_high"": 0.0, ""paired_day_sign_flip_p_one_sided"": 0.0, ""daily_blocks"": 0.0, ""races"": 0.0}}","""<= 1e-12"""
+late28_no_roi_ticket_claim,PASS,"{""roi"": false, ""claim"": ""NONE_FROM_REUSED_HISTORICAL_VALID""}","{""roi"": false, ""claim"": ""NONE_FROM_REUSED_HISTORICAL_VALID""}"
+all92_prediction_recompute,PASS,1.1102230246251565e-16,"""<= 1e-12"""
+all92_probability_sums,PASS,4.440892098500626e-16,"""<= 1e-12"""
+training_manifest_artifact_hashes,PASS,[],[]
+training_manifest_protocol_hash,PASS,"{""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json"", ""bytes"": 4350, ""sha256"": ""0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43""}","""0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"""
+training_manifest_trainer_hash,PASS,"{""path"": ""src/training/train_h14_convex_market_residual_pool.py"", ""bytes"": 44408, ""sha256"": ""AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353""}","""AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"""
+training_manifest_forbidden_access_zero,PASS,"{""split_test_rows_read_or_parsed"": 0, ""target_20260823_sources_read"": 0, ""outcome_result_dividend_settlement_sources_read"": 0, ""roi_ticket_kelly_sources_read"": 0}","""all zero"""
+freeze_binds_training_manifest,PASS,"{""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/training_artifact_manifest.json"", ""bytes"": 6603, ""sha256"": ""9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21""}","{""sha256"": ""9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21"", ""bytes"": 6603}"
+freeze_binds_deployment_model,PASS,"{""path"": ""models/h14_convex_market_residual_pool_preregistered_20260823/all92_deployment.json"", ""bytes"": 1434, ""sha256"": ""06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE""}","""06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"""
+freeze_binds_deployment_weights,PASS,"{""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/deployment_weights.json"", ""bytes"": 1625, ""sha256"": ""3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E""}","""3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E"""
+protocol_precedes_all_fits,PASS,"{""protocol"": ""2026-08-23T07:57:27.659826+09:00"", ""first_fit"": ""2026-08-23T08:09:44.630063+09:00""}","""protocol strictly earlier"""
+freeze_precedes_first_t5,PASS,"{""frozen"": ""2026-08-23T08:09:45.493163+09:00"", ""first_t5"": ""2026-08-23T10:30:00+09:00""}","""frozen < first T-5"""
+freeze_test_target_stake_zero,PASS,"{""test"": 0, ""target"": 0, ""stake"": 0}","""0/0/0"""
+research_state_final,PASS,"{""status"": ""H14_TRAINING_AND_DEPLOYMENT_FROZEN"", ""updated_at_kst"": ""2026-08-23T08:09:45.493163+09:00"", ""actual_optimizer_fit_calls"": 3, ""training_artifact_manifest_sha256"": ""9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21"", ""freeze_complete_sha256_pending_self_reference"": true, ""split_test_rows_read_or_parsed"": 0, ""target_20260823_sources_read"": 0, ""live_stake"": 0}","""frozen / 3 fits"""
+post_freeze_state_attestation,PASS,"{""status"": ""PASS"", ""research_state"": {""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/research_state.json"", ""bytes"": 413, ""sha256"": ""4EDA8229D63E6182D82321597FCF28E2EECA663A6EC7FD0B03874ED964CC4C5B""}, ""freeze_complete"": {""path"": ""outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/freeze_complete.json"", ""bytes"": 1205, ""sha256"": ""E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B""}, ""protocol_sha256"": ""0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"", ""target_20260823_sources_read"": 0, ""live_stake"": 0}","{""research_state_sha"": ""4EDA8229D63E6182D82321597FCF28E2EECA663A6EC7FD0B03874ED964CC4C5B"", ""freeze_sha"": ""E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B""}"

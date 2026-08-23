@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "research_state": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/research_state.json",
+    "bytes": 413,
+    "sha256": "34EA2EE5DE3D9FEBAC0120DB021EC1D838CC4323ADD576261D1279E421B14ADD"
+  },
+  "freeze_complete": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/freeze_complete.json",
+    "bytes": 1534,
+    "sha256": "3BCE0B6C0F7760E5C98830B4DB6F61E5FB7BE9DC500388BACF920C887EE2561D"
+  },
+  "protocol_sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78",
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

@@ -1,0 +1,102 @@
+{
+  "generated": "2026-08-23",
+  "report": "outputs\\reports\\project_learning_textbook_20260823\\index.html",
+  "dataset": "revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "dataset_rows": 56456,
+  "dataset_races": 5343,
+  "model_feature_count": 141,
+  "evidence_files": [
+    {
+      "path": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "bytes": 11173,
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    {
+      "path": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+      "bytes": 2348,
+      "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\model_metric_comparison.csv",
+      "bytes": 5242,
+      "sha256": "EE95990F4723E876202218CA29DB6504B0544FD734566E8EE8978281EA4C578C"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\locked_policy_test_results.csv",
+      "bytes": 4458,
+      "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv",
+      "bytes": 2154,
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\locked_test_results.csv",
+      "bytes": 3056,
+      "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\final_report.md",
+      "bytes": 11697,
+      "sha256": "893F9E3C13D47B03C0BB8B1C53118549757CA77B0B3B893173FD8830494A12F1"
+    },
+    {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\comprehensive_validation.json",
+      "bytes": 17292,
+      "sha256": "F96D818223B432864210DEEB5716375652B75F4C5637298BBC128D02B2C8C6E7"
+    },
+    {
+      "path": "src\\training\\train_full_rank_models.py",
+      "bytes": 26138,
+      "sha256": "37E0C01927AC8AFFEE364813526BC4BEB819B737065949E2D6BB3A7E860011DF"
+    },
+    {
+      "path": "src\\training\\core\\market_base_margin_boosting.py",
+      "bytes": 16949,
+      "sha256": "C1A00F07A06070F37DC184D05A6DE9CF2D35FBF59AC88CCDDC58D9A245F4F765"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model_manifest.json",
+      "bytes": 3841,
+      "sha256": "CD5213096FFB57B3F622358F6020FB8A6B524C53FA3A3581790EE1C6D6CD2F59"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_manifest.json",
+      "bytes": 3918,
+      "sha256": "6173B0EF3777D9806BAAFD3B164AD063A5DABBDE64D5F195CF06A369C7F7733B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model_manifest.json",
+      "bytes": 3836,
+      "sha256": "31756B3A09A47D96A92FFCA101FAAFC5443F69EC9A0A99E018F1911A8554B6CA"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model_manifest.json",
+      "bytes": 3914,
+      "sha256": "41924B2A8F4891B1CE5C73877445E9EE3F68F2191E23E9BA42B570C621022427"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model_manifest.json",
+      "bytes": 3904,
+      "sha256": "A2516830E96CA87A878F0CB8C648C060169A4A6BA51FF59F1694C87EB74458EE"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model_manifest.json",
+      "bytes": 3826,
+      "sha256": "FB0E142BB867F3CEAED088E758BA4A4BE907C2C6D6FEFAD017EDF60A0A0796C4"
+    }
+  ],
+  "external_sources_checked": "2026-08-23",
+  "external_sources": [
+    "https://eprints.soton.ac.uk/51679/",
+    "https://gwern.net/doc/statistics/decision/1994-benter.pdf",
+    "https://doi.org/10.1023/A:1010933404324",
+    "https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html",
+    "https://lightgbm.readthedocs.io/en/latest/Parameters.html",
+    "https://catboost.ai/docs/en/concepts/loss-functions-ranking",
+    "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
+    "https://link.springer.com/article/10.1007/s00180-020-00959-3",
+    "https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1956.tb03809.x"
+  ]
+}

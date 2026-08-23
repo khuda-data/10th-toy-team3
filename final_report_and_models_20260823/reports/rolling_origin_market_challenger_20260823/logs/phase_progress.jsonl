@@ -1,0 +1,12 @@
+{"timestamp": "2026-08-23T04:24:51.576389+09:00", "phase": "01_protocol_lock", "status": "PASS", "elapsed_seconds": 10.109257459640503, "folds": 4, "models": 3}
+{"timestamp": "2026-08-23T04:25:01.959233+09:00", "phase": "02_F1_valid_early", "status": "PASS", "elapsed_seconds": 10.377492427825928, "evaluation_races": 524, "selected_place_bets": 54, "threshold": 0.09261877734829871}
+{"timestamp": "2026-08-23T04:25:12.386788+09:00", "phase": "02_F2_valid_late", "status": "PASS", "elapsed_seconds": 10.425556898117065, "evaluation_races": 560, "selected_place_bets": 136, "threshold": 0.0617666890857044}
+{"timestamp": "2026-08-23T04:25:24.430410+09:00", "phase": "02_F3_test_early", "status": "PASS", "elapsed_seconds": 12.041297435760498, "evaluation_races": 608, "selected_place_bets": 81, "threshold": 0.08439383507149684}
+{"timestamp": "2026-08-23T04:25:34.791154+09:00", "phase": "02_F4_test_late", "status": "PASS", "elapsed_seconds": 10.358877182006836, "evaluation_races": 493, "selected_place_bets": 95, "threshold": 0.07049659564631333}
+{"timestamp": "2026-08-23T04:25:35.110692+09:00", "phase": "03_aggregate", "status": "PASS", "elapsed_seconds": 0.3178999423980713, "rolling_oos_races": 2185, "place_bets": 366}
+{"timestamp": "2026-08-23T04:39:50.143954+09:00", "phase": "01_protocol_lock", "status": "PASS", "elapsed_seconds": 10.092544317245483, "folds": 4, "models": 3}
+{"timestamp": "2026-08-23T04:40:00.481181+09:00", "phase": "02_F1_valid_early", "status": "PASS", "elapsed_seconds": 10.332168102264404, "evaluation_races": 524, "selected_place_bets": 54, "threshold": 0.09261877734829871}
+{"timestamp": "2026-08-23T04:40:09.943412+09:00", "phase": "02_F2_valid_late", "status": "PASS", "elapsed_seconds": 9.460447788238525, "evaluation_races": 560, "selected_place_bets": 136, "threshold": 0.0617666890857044}
+{"timestamp": "2026-08-23T04:40:20.966294+09:00", "phase": "02_F3_test_early", "status": "PASS", "elapsed_seconds": 11.021178007125854, "evaluation_races": 608, "selected_place_bets": 81, "threshold": 0.08439383507149684}
+{"timestamp": "2026-08-23T04:40:31.096689+09:00", "phase": "02_F4_test_late", "status": "PASS", "elapsed_seconds": 10.12865686416626, "evaluation_races": 493, "selected_place_bets": 95, "threshold": 0.07049659564631333}
+{"timestamp": "2026-08-23T04:40:31.413434+09:00", "phase": "03_aggregate", "status": "PASS", "elapsed_seconds": 0.3150980472564697, "rolling_oos_races": 2185, "place_bets": 366}

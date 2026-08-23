@@ -1,0 +1,3 @@
+{"phase": "01_validation_meta_fit_and_lock", "status": "PASS", "elapsed_seconds": 23.422532081604004, "goal_check": "test complementary market residual information without test selection", "partial_weight": 4.5085472591929965e-08, "policies": 14}
+{"phase": "02_locked_test", "status": "PASS", "elapsed_seconds": 22.416733741760254, "goal_check": "test complementary market residual information without test selection", "cells": 14}
+{"phase": "03_summary", "status": "PASS", "elapsed_seconds": 0.030750036239624023, "goal_check": "test complementary market residual information without test selection"}

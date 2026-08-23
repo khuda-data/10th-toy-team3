@@ -1,0 +1,6 @@
+2026-08-23 03:53:07,154 | INFO | PHASE 01 START | VALID-only meta-model fitting
+2026-08-23 03:53:30,577 | INFO | PHASE 01 PASS | partial weight=0.000000 deep weight=1.000000
+2026-08-23 03:53:30,578 | INFO | PHASE 02 START | TEST application after lock
+2026-08-23 03:53:52,995 | INFO | PHASE 02 PASS | cells=14
+2026-08-23 03:53:52,995 | INFO | PHASE 03 START | result and limitation guard
+2026-08-23 03:53:53,027 | INFO | PHASE 03 PASS | elapsed=45.9s

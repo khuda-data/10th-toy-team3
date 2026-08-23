@@ -1,0 +1,24 @@
+2026-08-23 04:24:41,467 | INFO | PHASE 01 START | load and freeze rolling-origin protocol
+2026-08-23 04:24:51,581 | INFO | PHASE 01 PASS | rows=56456 races=5343
+2026-08-23 04:24:51,581 | INFO | PHASE 02.1 START | F1_valid_early
+2026-08-23 04:25:01,961 | INFO | PHASE 02.1 PASS | eval races=524 place bets=54 threshold=+0.092619
+2026-08-23 04:25:01,961 | INFO | PHASE 02.2 START | F2_valid_late
+2026-08-23 04:25:12,389 | INFO | PHASE 02.2 PASS | eval races=560 place bets=136 threshold=+0.061767
+2026-08-23 04:25:12,389 | INFO | PHASE 02.3 START | F3_test_early
+2026-08-23 04:25:24,432 | INFO | PHASE 02.3 PASS | eval races=608 place bets=81 threshold=+0.084394
+2026-08-23 04:25:24,432 | INFO | PHASE 02.4 START | F4_test_late
+2026-08-23 04:25:34,792 | INFO | PHASE 02.4 PASS | eval races=493 place bets=95 threshold=+0.070497
+2026-08-23 04:25:34,792 | INFO | PHASE 03 START | aggregate probability, calibration and betting
+2026-08-23 04:25:35,111 | INFO | PHASE 03 PASS | races=2185 deltaLL=+0.009587 placeROI=+0.0243 paired=+0.2344
+2026-08-23 04:39:40,051 | INFO | PHASE 01 START | load and freeze rolling-origin protocol
+2026-08-23 04:39:50,148 | INFO | PHASE 01 PASS | rows=56456 races=5343
+2026-08-23 04:39:50,149 | INFO | PHASE 02.1 START | F1_valid_early
+2026-08-23 04:40:00,482 | INFO | PHASE 02.1 PASS | eval races=524 place bets=54 threshold=+0.092619
+2026-08-23 04:40:00,482 | INFO | PHASE 02.2 START | F2_valid_late
+2026-08-23 04:40:09,945 | INFO | PHASE 02.2 PASS | eval races=560 place bets=136 threshold=+0.061767
+2026-08-23 04:40:09,945 | INFO | PHASE 02.3 START | F3_test_early
+2026-08-23 04:40:20,967 | INFO | PHASE 02.3 PASS | eval races=608 place bets=81 threshold=+0.084394
+2026-08-23 04:40:20,968 | INFO | PHASE 02.4 START | F4_test_late
+2026-08-23 04:40:31,098 | INFO | PHASE 02.4 PASS | eval races=493 place bets=95 threshold=+0.070497
+2026-08-23 04:40:31,098 | INFO | PHASE 03 START | aggregate probability, calibration and betting
+2026-08-23 04:40:31,414 | INFO | PHASE 03 PASS | races=2185 deltaLL=+0.009587 placeROI=+0.0243 paired=+0.2344

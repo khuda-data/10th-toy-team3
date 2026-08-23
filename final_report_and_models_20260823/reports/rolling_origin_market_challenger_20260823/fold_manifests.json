@@ -1,0 +1,142 @@
+[
+  {
+    "fold": "F1_valid_early",
+    "chronology_pass": true,
+    "calibration_fit": {
+      "rows": 26429,
+      "races": 2519,
+      "date_min": 20230805,
+      "date_max": 20241229,
+      "winners": 2519
+    },
+    "calibration": {
+      "rows": 6987,
+      "races": 639,
+      "date_min": 20250103,
+      "date_max": 20250511,
+      "winners": 639
+    },
+    "evaluation_fit": {
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "winners": 3158
+    },
+    "evaluation": {
+      "rows": 5284,
+      "races": 524,
+      "date_min": 20250517,
+      "date_max": 20250831,
+      "winners": 524
+    },
+    "locked_place_edge_threshold": 0.09261877734829871,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_origin_market_challenger_20260823\\F1_valid_early_models.joblib",
+    "model_sha256": "72CA0B5C09ABD951A9892BED26A8EA4B0CE5AE27F319FF962242367E706EDF2C"
+  },
+  {
+    "fold": "F2_valid_late",
+    "chronology_pass": true,
+    "calibration_fit": {
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "winners": 3158
+    },
+    "calibration": {
+      "rows": 5284,
+      "races": 524,
+      "date_min": 20250517,
+      "date_max": 20250831,
+      "winners": 524
+    },
+    "evaluation_fit": {
+      "rows": 38700,
+      "races": 3682,
+      "date_min": 20230805,
+      "date_max": 20250831,
+      "winners": 3682
+    },
+    "evaluation": {
+      "rows": 6061,
+      "races": 560,
+      "date_min": 20250905,
+      "date_max": 20251227,
+      "winners": 560
+    },
+    "locked_place_edge_threshold": 0.0617666890857044,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_origin_market_challenger_20260823\\F2_valid_late_models.joblib",
+    "model_sha256": "CE0BCE83B88A730337E476BA0689F7E4B1DE292DED48C9797ED28EF73458A189"
+  },
+  {
+    "fold": "F3_test_early",
+    "chronology_pass": true,
+    "calibration_fit": {
+      "rows": 38700,
+      "races": 3682,
+      "date_min": 20230805,
+      "date_max": 20250831,
+      "winners": 3682
+    },
+    "calibration": {
+      "rows": 6061,
+      "races": 560,
+      "date_min": 20250905,
+      "date_max": 20251227,
+      "winners": 560
+    },
+    "evaluation_fit": {
+      "rows": 44761,
+      "races": 4242,
+      "date_min": 20230805,
+      "date_max": 20251227,
+      "winners": 4242
+    },
+    "evaluation": {
+      "rows": 6662,
+      "races": 608,
+      "date_min": 20251228,
+      "date_max": 20260426,
+      "winners": 608
+    },
+    "locked_place_edge_threshold": 0.08439383507149684,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_origin_market_challenger_20260823\\F3_test_early_models.joblib",
+    "model_sha256": "0F8D743379AED409AE2222836B1AF25D95F5000D74631B3B11085ACBEB73D153"
+  },
+  {
+    "fold": "F4_test_late",
+    "chronology_pass": true,
+    "calibration_fit": {
+      "rows": 44761,
+      "races": 4242,
+      "date_min": 20230805,
+      "date_max": 20251227,
+      "winners": 4242
+    },
+    "calibration": {
+      "rows": 6662,
+      "races": 608,
+      "date_min": 20251228,
+      "date_max": 20260426,
+      "winners": 608
+    },
+    "evaluation_fit": {
+      "rows": 51423,
+      "races": 4850,
+      "date_min": 20230805,
+      "date_max": 20260426,
+      "winners": 4850
+    },
+    "evaluation": {
+      "rows": 5033,
+      "races": 493,
+      "date_min": 20260501,
+      "date_max": 20260809,
+      "winners": 493
+    },
+    "locked_place_edge_threshold": 0.07049659564631333,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_origin_market_challenger_20260823\\F4_test_late_models.joblib",
+    "model_sha256": "570DEA113A51EDCDC8896855B6BE990591CAB80320CE7941AF67D6360FA50261"
+  }
+]

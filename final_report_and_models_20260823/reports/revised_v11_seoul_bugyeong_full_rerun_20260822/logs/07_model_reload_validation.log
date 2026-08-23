@@ -1,0 +1,69 @@
+RANK DATA PASS: features=141 rows=33416/11345/11695
+FULL RANK FINAL VALIDATION PASS
+{
+  "passed_checks": 203,
+  "models_trained_and_reloaded": 6,
+  "dataset_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "feature_count": 141,
+  "test_rows_per_model": 11695,
+  "test_evaluated_races": 1094,
+  "test_excluded_invalid_order_races": 7,
+  "model_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822",
+  "report_checks_included": false,
+  "models": {
+    "random_forest_rank": {
+      "reload_status": "PASS",
+      "max_score_difference": 8.326672684688674e-17,
+      "test_ndcg_at_5": 0.7683809240580648,
+      "test_mean_spearman": 0.4280413493431808,
+      "test_rank_mae": 2.511838917734713,
+      "test_top3_ordered_exact_match_rate": 0.012059369202226345,
+      "test_top3_unordered_exact_match_rate": 0.07328385899814471
+    },
+    "xgboost_rank": {
+      "reload_status": "PASS",
+      "max_score_difference": 4.440892098500626e-16,
+      "test_ndcg_at_5": 0.7732407784967209,
+      "test_mean_spearman": 0.436575322258144,
+      "test_rank_mae": 2.491832180109145,
+      "test_top3_ordered_exact_match_rate": 0.014842300556586271,
+      "test_top3_unordered_exact_match_rate": 0.07328385899814471
+    },
+    "lightgbm_rank": {
+      "reload_status": "PASS",
+      "max_score_difference": 2.220446049250313e-16,
+      "test_ndcg_at_5": 0.7684679029380563,
+      "test_mean_spearman": 0.4206467294123534,
+      "test_rank_mae": 2.5385207419028264,
+      "test_top3_ordered_exact_match_rate": 0.017625231910946195,
+      "test_top3_unordered_exact_match_rate": 0.0686456400742115
+    },
+    "catboost_rank": {
+      "reload_status": "PASS",
+      "max_score_difference": 4.440892098500626e-16,
+      "test_ndcg_at_5": 0.778035945383817,
+      "test_mean_spearman": 0.4553030268638837,
+      "test_rank_mae": 2.439986501412461,
+      "test_top3_ordered_exact_match_rate": 0.013914656771799629,
+      "test_top3_unordered_exact_match_rate": 0.07235621521335807
+    },
+    "deep_ranknet": {
+      "reload_status": "PASS",
+      "max_score_difference": 4.440892098500626e-16,
+      "test_ndcg_at_5": 0.7751703373371309,
+      "test_mean_spearman": 0.44498802974633467,
+      "test_rank_mae": 2.467096188394177,
+      "test_top3_ordered_exact_match_rate": 0.015769944341372914,
+      "test_top3_unordered_exact_match_rate": 0.07792207792207792
+    },
+    "plackett_luce_full": {
+      "reload_status": "PASS",
+      "max_score_difference": 2.220446049250313e-16,
+      "test_ndcg_at_5": 0.7718645701940564,
+      "test_mean_spearman": 0.43682511958979303,
+      "test_rank_mae": 2.4818199574141073,
+      "test_top3_ordered_exact_match_rate": 0.015769944341372914,
+      "test_top3_unordered_exact_match_rate": 0.07421150278293136
+    }
+  }
+}

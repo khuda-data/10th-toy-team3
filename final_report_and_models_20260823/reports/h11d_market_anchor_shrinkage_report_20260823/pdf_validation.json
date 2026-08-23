@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "validated_at_kst": "2026-08-23T07:52:24.142866+09:00",
+  "validator_independence": "does not import HTML builder, PDF exporter, or H11D analyzer",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.html",
+    "bytes": 63186,
+    "sha256": "AE52E19257ED7CA290C6A11D914F0BF0B4D8B55746CD7C885B5B1849EBC778BD"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.pdf",
+    "bytes": 293339,
+    "sha256": "F637BAEC3A811106CEFF4A28E2B1EC5DF115DC11E654DC3B36EA8BC315B6184E"
+  },
+  "pdf_export_summary": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\pdf_export_summary.json",
+    "bytes": 712,
+    "sha256": "B010D145B863FF536A14F376EA0357AF22D97D3874B59643DBE55A743D2F3123"
+  },
+  "report_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\report_manifest.json",
+    "bytes": 6093,
+    "sha256": "92401509BDB42063ED89B486ADA5D0D821C857F9724FFEC5919DC85973AB45A6"
+  },
+  "html_validation": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\html_validation.json",
+    "bytes": 13761,
+    "sha256": "E9E3F23613454B29F6969C5D328BD0BA81735261CF06131DD4438F4C17FF9D79"
+  },
+  "render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\render_manifest.json",
+    "bytes": 2286,
+    "sha256": "82BABFB03845D8DB5467932BCAB55982B827CF01E33AA2B9A83A8CB288E23335"
+  },
+  "visual_qa_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\visual_qa_manifest.json",
+    "bytes": 3764,
+    "sha256": "BE61AAF5088861FB90C7A0D3D14D79A14BA22E6092A36A12BC9BF2C5BDEA6D67"
+  },
+  "validator": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h11d_market_anchor_shrinkage_report_pdf.py",
+    "bytes": 10384,
+    "sha256": "156BB67971FCFA5C3C41191BFD8BF917A0734DA4232B7FF0CB32224C199B082C"
+  },
+  "pages": 5,
+  "text_pages": 5,
+  "page_text_lengths": [
+    1653,
+    1061,
+    948,
+    1495,
+    2941
+  ],
+  "page_sizes_points": [
+    [
+      594.96,
+      841.92
+    ]
+  ],
+  "pdf_uri_annotations": 20,
+  "pdf_unique_file_links": 17,
+  "manifest_sources": 17,
+  "manifest_sources_linked": 17,
+  "render_page_dimensions": [
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ]
+  ],
+  "render_nonwhite_fractions": [
+    0.2725057012542759,
+    0.2229539853606503,
+    0.09880963328061206,
+    0.21493498731011146,
+    0.07215810865487181
+  ],
+  "visual_qa": {
+    "status": "PASS",
+    "scope": "all 5 pages at original rendered resolution plus montages",
+    "checks": {
+      "all_pages_inspected": true,
+      "no_clipped_text": true,
+      "no_overlapping_text_or_objects": true,
+      "no_broken_korean_glyphs_or_black_squares": true,
+      "tables_fit_page_width": true,
+      "chart_labels_and_series_legible": true,
+      "consistent_typography_spacing_and_margins": true,
+      "section_transitions_clear": true,
+      "no_unintended_blank_or_near_blank_intermediate_page": true,
+      "color_contrast_legible": true,
+      "evidence_hash_table_legible_at_original_resolution": true,
+      "previous_page4_excess_blank_space_resolved": true
+    }
+  },
+  "test_rows_decoded_parsed_materialized_or_used": 0,
+  "physical_test_region_byte_stream_disclosed": true,
+  "target_access": 0,
+  "live_stake": 0,
+  "checks_total": 23,
+  "checks_passed": 23,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": {
+    "pdf_header": true,
+    "export_pass_and_hash_binding": true,
+    "html_validation_pass": true,
+    "positive_page_count_and_text_every_page": true,
+    "a4_portrait_only": true,
+    "required_text_present": true,
+    "no_literal_or_escaped_markup": true,
+    "report_sources_current": true,
+    "all_report_sources_linked_in_pdf": true,
+    "no_external_uri_links": true,
+    "render_pending_visual_status": true,
+    "render_page_sequence_complete": true,
+    "render_page_hashes_sizes_and_dimensions": true,
+    "render_pages_nonblank": true,
+    "render_montage_complete": true,
+    "visual_manifest_pass": true,
+    "visual_pdf_hash_bound": true,
+    "visual_render_manifest_bound": true,
+    "visual_all_pages_original_resolution": true,
+    "visual_page_hash_identity": true,
+    "visual_montage_hash_identity": true,
+    "visual_all_defect_checks_pass": true,
+    "scope_disclosure_and_stake": true
+  }
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "intercept": 0.0008334641303885467,
+    "residual_scale_gamma": 0.6288229917820333,
+    "l2": 1.0,
+    "observations": 957,
+    "positive_outcomes": 297,
+    "objective": 577.3540655685008,
+    "gradient": [
+      1.5841362671705113e-06,
+      3.9794872230825007e-07
+    ],
+    "gradient_l2_norm": 1.6333557170903374e-06,
+    "hessian": [
+      [
+        200.71737091030212,
+        6.501638014531321
+      ],
+      [
+        6.501638014531321,
+        33.078483131415275
+      ]
+    ],
+    "hessian_eigenvalues": [
+      32.82670441283692,
+      200.96914962888047
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 6,
+    "fold": "P5_test_202512_02",
+    "training_folds": [
+      "P1_valid_202505_06",
+      "P2_valid_202507_08",
+      "P3_valid_202509_10",
+      "P4_valid_202511_12"
+    ],
+    "evaluation_fold": "P5_test_202512_02",
+    "training_date_max": 20251227,
+    "evaluation_date_min": 20251228,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_place_probability_calibration_20260823\\P5_test_202512_02_place_calibrator.json",
+    "model_sha256": "A0EBF4B12EA2B5AF82E184639300A5A5A9000A66369088E94E43037BBCAD4A6C"
+  },
+  {
+    "intercept": 0.042478772564562124,
+    "residual_scale_gamma": 0.5530138691418072,
+    "l2": 1.0,
+    "observations": 1220,
+    "positive_outcomes": 391,
+    "objective": 749.0892386791483,
+    "gradient": [
+      -1.7599483279548411e-06,
+      -7.766324117142176e-08
+    ],
+    "gradient_l2_norm": 1.761661061640488e-06,
+    "hessian": [
+      [
+        260.2231012909779,
+        7.307170322600275
+      ],
+      [
+        7.307170322600275,
+        43.50029401801003
+      ]
+    ],
+    "hessian_eigenvalues": [
+      43.25420004870027,
+      260.4691952602877
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 6,
+    "fold": "P6_test_202603_04",
+    "training_folds": [
+      "P1_valid_202505_06",
+      "P2_valid_202507_08",
+      "P3_valid_202509_10",
+      "P4_valid_202511_12",
+      "P5_test_202512_02"
+    ],
+    "evaluation_fold": "P6_test_202603_04",
+    "training_date_max": 20260228,
+    "evaluation_date_min": 20260301,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_place_probability_calibration_20260823\\P6_test_202603_04_place_calibrator.json",
+    "model_sha256": "3C4901CDB7D12EB6BB1F33200EE8DD9306C6CF710CB424FAB20A699FF6E3172C"
+  },
+  {
+    "intercept": 0.06983820446382605,
+    "residual_scale_gamma": 0.5191568287688098,
+    "l2": 1.0,
+    "observations": 1491,
+    "positive_outcomes": 484,
+    "objective": 918.1860896853383,
+    "gradient": [
+      -3.661126553589078e-06,
+      5.208886852958727e-07
+    ],
+    "gradient_l2_norm": 3.697995763094423e-06,
+    "hessian": [
+      [
+        319.97471562720204,
+        7.85483629418322
+      ],
+      [
+        7.85483629418322,
+        52.43815291710992
+      ]
+    ],
+    "hessian_eigenvalues": [
+      52.20773446543702,
+      320.20513407887495
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 6,
+    "fold": "P7_test_202605_06",
+    "training_folds": [
+      "P1_valid_202505_06",
+      "P2_valid_202507_08",
+      "P3_valid_202509_10",
+      "P4_valid_202511_12",
+      "P5_test_202512_02",
+      "P6_test_202603_04"
+    ],
+    "evaluation_fold": "P7_test_202605_06",
+    "training_date_max": 20260426,
+    "evaluation_date_min": 20260501,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_place_probability_calibration_20260823\\P7_test_202605_06_place_calibrator.json",
+    "model_sha256": "7CF77B1CC01F065D91E09EEA50A98C7163174263C1F13C1860B00EB171D1E92B"
+  },
+  {
+    "intercept": 0.04397672160561936,
+    "residual_scale_gamma": 0.5374540372263037,
+    "l2": 1.0,
+    "observations": 1763,
+    "positive_outcomes": 566,
+    "objective": 1074.7408218600697,
+    "gradient": [
+      -4.677499636646099e-06,
+      -3.374703916314559e-08
+    ],
+    "gradient_l2_norm": 4.67762137346287e-06,
+    "hessian": [
+      [
+        375.629585747811,
+        11.5525448592027
+      ],
+      [
+        11.5525448592027,
+        60.48678284844694
+      ]
+    ],
+    "hessian_eigenvalues": [
+      60.06385576846072,
+      376.0525128277972
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 6,
+    "fold": "P8_test_202607_08",
+    "training_folds": [
+      "P1_valid_202505_06",
+      "P2_valid_202507_08",
+      "P3_valid_202509_10",
+      "P4_valid_202511_12",
+      "P5_test_202512_02",
+      "P6_test_202603_04",
+      "P7_test_202605_06"
+    ],
+    "evaluation_fold": "P8_test_202607_08",
+    "training_date_max": 20260628,
+    "evaluation_date_min": 20260703,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\rolling_place_probability_calibration_20260823\\P8_test_202607_08_place_calibrator.json",
+    "model_sha256": "084DE7C5274FDD9CC554214C2A8770765867CE360DE97E48AC60E9048348B7DC"
+  }
+]

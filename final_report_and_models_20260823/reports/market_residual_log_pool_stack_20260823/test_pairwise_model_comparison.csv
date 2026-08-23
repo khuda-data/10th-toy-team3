@@ -1,0 +1,4 @@
+﻿split,left_model,right_model,mean_log_likelihood_advantage_left,daily_block_ci_low,daily_block_ci_high,bootstrap_probability_left_better,interpretation
+test,partial_30_plus,deep_blend,0.0028689131776627195,-0.0022341988767636,0.00806507473675025,0.8624,positive means left assigns higher probability to the actual winner
+test,partial_30_plus,log_pool_stack,0.002868912901178936,-0.0021888554523981202,0.007945721593579928,0.8684,positive means left assigns higher probability to the actual winner
+test,deep_blend,log_pool_stack,-2.7648378439878897e-10,-5.011837549210799e-10,-4.867972874507802e-11,0.0087,positive means left assigns higher probability to the actual winner

@@ -1,0 +1,9 @@
+status=PASS_WITH_LIMITATIONS
+checks_passed=72
+checks_failed=0
+actual_optimizer_fit_calls=3
+split_test_rows_read_or_parsed=0
+target_20260823_sources_read=0
+roi_ticket_kelly_sources_read=0
+network_calls=0
+live_stake=0

@@ -1,0 +1,70 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "actual_trained_models_analyzed": 8,
+  "coefficient_rows": 816,
+  "importance_threshold": 0.005,
+  "stable_terms_all_models": 77,
+  "stable_terms_by_model": {
+    "global_29_residual": 21,
+    "partial_30_plus": 28,
+    "partial_8_15": 28
+  },
+  "partial_8_15_band_terms": 9,
+  "partial_8_15_band_terms_same_sign_all_8": 7,
+  "partial_8_15_stable_band_terms_gt_0p5pct": [
+    {
+      "term": "gate::odds_8_15",
+      "mean_coefficient": 0.1095063696883165,
+      "mean_normalized_abs_importance": 0.08923638435301126,
+      "positive_folds": 8,
+      "negative_folds": 0
+    },
+    {
+      "term": "odds_8_15::clinic_30d",
+      "mean_coefficient": 0.08653753610440862,
+      "mean_normalized_abs_importance": 0.07067468809268612,
+      "positive_folds": 8,
+      "negative_folds": 0
+    },
+    {
+      "term": "odds_8_15::jk_starts",
+      "mean_coefficient": -0.08292436866324261,
+      "mean_normalized_abs_importance": 0.0667837362310358,
+      "positive_folds": 0,
+      "negative_folds": 8
+    },
+    {
+      "term": "odds_8_15::train_sec_14",
+      "mean_coefficient": -0.06271640541757074,
+      "mean_normalized_abs_importance": 0.04974841497749686,
+      "positive_folds": 0,
+      "negative_folds": 8
+    },
+    {
+      "term": "odds_8_15::wgBudam_chg",
+      "mean_coefficient": 0.03903645755988497,
+      "mean_normalized_abs_importance": 0.03256925930977233,
+      "positive_folds": 8,
+      "negative_folds": 0
+    },
+    {
+      "term": "odds_8_15::hr_rest_days",
+      "mean_coefficient": -0.03449256267734263,
+      "mean_normalized_abs_importance": 0.027536358904893768,
+      "positive_folds": 0,
+      "negative_folds": 8
+    },
+    {
+      "term": "odds_8_15::age__pr",
+      "mean_coefficient": -0.016231847628147274,
+      "mean_normalized_abs_importance": 0.013047377343748764,
+      "positive_folds": 0,
+      "negative_folds": 8
+    }
+  ],
+  "raw_market_or_outcome_terms": 0,
+  "interpretation": "stable coefficients describe reproducible associations in the market residual; they are not causal effects or a new independently tested betting rule",
+  "test_reuse_limitation": "all eight model fits ultimately come from the previously inspected v11 period; P5-P8 are rolling OOS but not pristine",
+  "recommended_real_stake": 0,
+  "elapsed_seconds": 0.695684
+}

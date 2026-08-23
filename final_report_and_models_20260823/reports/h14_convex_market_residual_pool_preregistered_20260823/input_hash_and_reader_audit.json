@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "reader": "unbuffered exact-block reader; stops after fourth VALID member block",
+  "source_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_runner_probabilities.csv",
+  "source_bytes": 14056057,
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "full_source_sha256_recomputed_by_h14": false,
+  "blocks_decoded_and_parsed": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "rows_per_block": 11345,
+  "total_valid_rows_decoded_and_parsed": 45380,
+  "valid_ensemble_rows_read_or_parsed": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_rows_read_or_parsed": 0,
+  "byte_position_after_fourth_valid_member": 5392493,
+  "readline_calls_after_fourth_member": 0,
+  "exact_alignment_fields": [
+    "rcDate",
+    "race_id",
+    "entry_id",
+    "win",
+    "q"
+  ],
+  "ordered_alignment_exact_across_members": true,
+  "q_sum_max_error": 8.881784197001252e-16,
+  "member_probability_sum_max_errors": {
+    "m6": 8.881784197001252e-16,
+    "xgboost": 1.1102230246251565e-15,
+    "lightgbm": 9.992007221626409e-16,
+    "deep_mlp_3seed": 9.992007221626409e-16
+  },
+  "prefix_checks": [
+    {
+      "member": "m6",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "xgboost",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "lightgbm",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "deep_mlp_3seed",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    }
+  ],
+  "protocol": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+    "bytes": 4350,
+    "sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"
+  },
+  "bound_h11b_upstream": [
+    {
+      "name": "training_protocol",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\protocol_before_fit.json",
+      "expected_sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B",
+      "actual_sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B",
+      "pass": true
+    },
+    {
+      "name": "freeze_complete",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\freeze_complete.json",
+      "expected_sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16",
+      "actual_sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16",
+      "pass": true
+    }
+  ],
+  "h13_baseline_provenance": {
+    "freeze": {
+      "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/freeze_complete.json",
+      "bytes": 1152,
+      "sha256": "A1A5081069CF05C0F03575CCB4DBE6DDDB01E87E7BB6F9D4BD300177A6F56597"
+    },
+    "manifest": {
+      "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/training_artifact_manifest.json",
+      "bytes": 4645,
+      "sha256": "3963040689E2EF9F2B3A140267FA2D091D0CE2C4F38E278082C6542A91F25AC1"
+    },
+    "late28_metrics": {
+      "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/late28_metrics.json",
+      "bytes": 11851,
+      "sha256": "1A6BC1FEDCD8C1BE96D22EF48BA9C7E3386CFEE628B905D87BE1D6487A49397D"
+    },
+    "locked_first64_weights": {
+      "m6": 0.0,
+      "xgboost": 0.2382010590358566,
+      "lightgbm": 0.5847045966394091,
+      "deep_mlp_3seed": 0.32243868987348556
+    },
+    "comparison_role": "frozen historical descriptive baseline only"
+  },
+  "rows": 11345,
+  "races": 1084,
+  "dates": 92,
+  "ordinary_feature_columns": [],
+  "q_role": "coefficient-one market base margin only",
+  "roi_ticket_kelly_sources_read": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

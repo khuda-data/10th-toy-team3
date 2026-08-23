@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.html",
+    "bytes": 116743,
+    "sha256": "B6B0B1F8FCCB1D7C68D2CAA8D69D8A13CBB05BAF64403B74D2319B81EA5287F7"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.pdf",
+    "bytes": 1184348,
+    "sha256": "427CEDA83819C03D8A34A7562A116A1855720D692CA1ECB38C0DD49C81B67D7C",
+    "pages": 42,
+    "text_pages": 42,
+    "page_sizes": [
+      [
+        594.96,
+        841.92
+      ]
+    ]
+  }
+}

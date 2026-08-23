@@ -1,0 +1,105 @@
+{
+  "status": "BUILT_FROM_H11D_VALID_ONLY_EVIDENCE",
+  "generated_at_kst": "2026-08-23T07:49:18.373873+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.html",
+    "bytes": 63186,
+    "sha256": "AE52E19257ED7CA290C6A11D914F0BF0B4D8B55746CD7C885B5B1849EBC778BD"
+  },
+  "source_count": 17,
+  "sources": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\protocol_before_analysis.json",
+      "bytes": 3057,
+      "sha256": "E6D5C6D960BA391C6E00926C43090DFC595BB63886B3B83160E394D96737D873"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\allowed_input_audit.json",
+      "bytes": 1604,
+      "sha256": "99D54C81E9A65C49A1879BDEFAB5C4A447D427E8D7CBFBFA22D04320A94AFD11"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\date_split.json",
+      "bytes": 1705,
+      "sha256": "36DA76065AE5FEFE3AAFDF6F7BCB822E9147DF4FBB92FFCD7EA5E47EB04A7960"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\alpha_grid_development.csv",
+      "bytes": 7625,
+      "sha256": "CA5DD6C83F948FEFAA73263AE7F1C3E43F07010CA17F032A0F1160BCBC56D1CD"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\alpha_grid_all_valid_deployment.csv",
+      "bytes": 7635,
+      "sha256": "F779CA5C54A5AF9384373307A87D04C706A10B69660EBEE704B1449FD8F5FC8B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\late_valid_metrics.json",
+      "bytes": 7787,
+      "sha256": "5C7ACFC8FDACDAF643163F6B3D1A525583AD9590792B61E930A9B4B1E0CC0EBC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\late_valid_calibrated_predictions.csv",
+      "bytes": 770093,
+      "sha256": "6371C18D7FB1FE93CE6E6C675F8B6ED088B6989309F858770453153021628FB5"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\frozen_alpha.json",
+      "bytes": 1003,
+      "sha256": "B2BF4F77F14A06ACAD5502BC9AF9B90287C80502ECCB773872DBC3D961A0579C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\experiment_summary.json",
+      "bytes": 13042,
+      "sha256": "E6DC0EB447578F4CFBB22149D08FDAF1999DA18B3CD060A3AAFC68C046EB680B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\physical_byte_io_disclosure.json",
+      "bytes": 2511,
+      "sha256": "A8B9470B2E51FEAB81B50DD6812BBE760EB587187F164247CA2A8350C28F170D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\manifest.json",
+      "bytes": 5681,
+      "sha256": "3E56F2B9E0D3E089EF85316F62A1B1B43E57494F8AE1D5674537F1B17D02656D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\independent_validation.json",
+      "bytes": 13240,
+      "sha256": "157A943318797166129BBE08A39657A814A1ACA17F924EB700E0012D33ACEAA4"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\independent_validation_checks.csv",
+      "bytes": 7996,
+      "sha256": "A3C1074ED8D45D47F3138971FF68F460B4E0FE23385DE3EEDA813A4D4187B7D2"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\logs\\execution.log",
+      "bytes": 706,
+      "sha256": "54E29A29C2273A00153EB5226FD5BDC8912AB8FC6E6BB6880AF88A66D0DCF6AC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\build_h11d_market_anchor_shrinkage_report.py",
+      "bytes": 28423,
+      "sha256": "B30F35AAEDB30E988E07BD2E5DA0A9AB9D3F65ADE1A754BC949F2387A951A5F7"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h11d_market_anchor_shrinkage_report.py",
+      "bytes": 14552,
+      "sha256": "3FDFE8421A9E5D91EB54460D90ED15368B1B3AB0C567C816A821A7908338EA14"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h11d_market_anchor_shrinkage_report_pdf.py",
+      "bytes": 10384,
+      "sha256": "156BB67971FCFA5C3C41191BFD8BF917A0734DA4232B7FF0CB32224C199B082C"
+    }
+  ],
+  "protected_protocol_sha256": "E6D5C6D960BA391C6E00926C43090DFC595BB63886B3B83160E394D96737D873",
+  "protected_frozen_alpha_sha256": "B2BF4F77F14A06ACAD5502BC9AF9B90287C80502ECCB773872DBC3D961A0579C",
+  "reused_test_rows_decoded_parsed_materialized_or_used": 0,
+  "external_full_file_checksum_byte_stream_occurred": true,
+  "strict_whole_turn_test_region_physical_byte_io_zero": false,
+  "target_20260823_access": 0,
+  "live_stake": 0,
+  "deployment_status": "DIAGNOSTIC_ONLY_NOT_CONFIRMED"
+}

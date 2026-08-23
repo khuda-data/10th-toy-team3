@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.html",
+    "bytes": 84794,
+    "sha256": "7E9CEBC0E647E0494901C81FD1B1292B3A7E342AC8CF06516F03840032E1733D"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.pdf",
+    "bytes": 492641,
+    "sha256": "8B5973A136B61D0A6A3324C9A1F70F3B38FAB905CBE3CE5EDD19773D0EA20925",
+    "pages": 7,
+    "text_pages": 7,
+    "page_sizes": [
+      [
+        594.96,
+        841.92
+      ]
+    ]
+  }
+}

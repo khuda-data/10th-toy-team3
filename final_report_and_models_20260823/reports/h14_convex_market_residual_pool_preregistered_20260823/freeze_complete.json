@@ -1,0 +1,26 @@
+{
+  "status": "H14_TRAINING_AND_DEPLOYMENT_WEIGHTS_FROZEN_BEFORE_FIRST_TARGET_T5",
+  "frozen_at_kst": "2026-08-23T08:09:45.493163+09:00",
+  "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+  "training_artifact_manifest": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/training_artifact_manifest.json",
+    "bytes": 6603,
+    "sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21"
+  },
+  "deployment_model": {
+    "path": "models/h14_convex_market_residual_pool_preregistered_20260823/all92_deployment.json",
+    "bytes": 1434,
+    "sha256": "06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"
+  },
+  "deployment_weights": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+    "bytes": 1625,
+    "sha256": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E"
+  },
+  "actual_optimizer_fit_calls": 3,
+  "first_target_t5_kst": "2026-08-23T10:30:00+09:00",
+  "frozen_before_first_target_t5": true,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

@@ -1,0 +1,8 @@
+2026-08-23 05:18:08,646 | INFO | PHASE 01 PASS | protocol written before model metrics
+2026-08-23 05:18:09,276 | INFO | PHASE 02 PASS | train rows=56530 races=5350 fresh rows=640 races=64 features=5 max_corr=0.405611
+2026-08-23 05:18:09,303 | INFO | PHASE 03 PASS | actual conditional-logit fit complete; converged=True
+2026-08-23 05:18:09,339 | INFO | PHASE 04 PASS_WITH_LIMITATIONS | fresh races=64 deltaLL=+0.018306 dailyCI=[+0.001842,+0.040309]
+2026-08-23 05:29:07,526 | INFO | PHASE 01 PASS | protocol written before model metrics
+2026-08-23 05:29:08,134 | INFO | PHASE 02 PASS | train rows=56530 races=5350 fresh rows=640 races=64 features=5 max_corr=0.405611
+2026-08-23 05:29:08,162 | INFO | PHASE 03 PASS | actual conditional-logit fit complete; converged=True
+2026-08-23 05:29:08,202 | INFO | PHASE 04 PASS_WITH_LIMITATIONS | fresh races=64 deltaLL=+0.018306 dailyCI=[+0.001842,+0.040309]

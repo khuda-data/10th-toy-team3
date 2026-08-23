@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "passed_checks": 77,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "check": "required file exists: index.html",
+      "status": "PASS"
+    },
+    {
+      "check": "required file exists: report_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required file exists: report_data_snapshot.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required file exists: external_sources.json",
+      "status": "PASS"
+    },
+    {
+      "check": "HTML5 doctype",
+      "status": "PASS"
+    },
+    {
+      "check": "UTF-8 charset declaration",
+      "status": "PASS"
+    },
+    {
+      "check": "descriptive title",
+      "status": "PASS"
+    },
+    {
+      "check": "all required section IDs",
+      "status": "PASS",
+      "evidence": [
+        "anchor",
+        "bets",
+        "conclusion",
+        "data",
+        "glossary",
+        "protocol",
+        "rank",
+        "research",
+        "sources",
+        "summary",
+        "top",
+        "upset",
+        "venue",
+        "xai"
+      ]
+    },
+    {
+      "check": "at least 18 evidence tables",
+      "status": "PASS",
+      "evidence": 31
+    },
+    {
+      "check": "at least four SVG visualizations",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "check": "exactly one H1",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "check": "large detail tables are collapsible",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "check": "required report fact: 56,456행",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 5,343경주",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 141피처",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: CatBoost YetiRank",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: Deep RankNet",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: XGBoost",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: LightGBM",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: Plackett",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: Random Forest",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 0.017194",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 29피처",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 상위3 순서일치",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 상위3 무순서일치",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 단승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 연승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 복승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 쌍승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 삼복승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 삼쌍승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 복연승",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: PARTIAL_VALIDATED",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: NO-GO",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 시장이 놓치는 확률정보는 검출했지만",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 엄격 날짜 TE 독립검증",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 경주 단위 이변위험",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 0.5401",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 0.6476",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 42/42",
+      "status": "PASS"
+    },
+    {
+      "check": "required report fact: 2,000회",
+      "status": "PASS"
+    },
+    {
+      "check": "stale or unresolved text absent: {expected_roi_cells}",
+      "status": "PASS"
+    },
+    {
+      "check": "stale or unresolved text absent: 실제 137개 학습 피처",
+      "status": "PASS"
+    },
+    {
+      "check": "stale or unresolved text absent: 서울 데이터의 clean 133피처",
+      "status": "PASS"
+    },
+    {
+      "check": "stale or unresolved text absent: revised_v7 계열이므로",
+      "status": "PASS"
+    },
+    {
+      "check": "stale or unresolved text absent: 수익 확정 전략이 있다",
+      "status": "PASS"
+    },
+    {
+      "check": "snapshot dataset facts",
+      "status": "PASS"
+    },
+    {
+      "check": "six-model reload check count",
+      "status": "PASS"
+    },
+    {
+      "check": "selected EDGE feature count",
+      "status": "PASS"
+    },
+    {
+      "check": "CI-positive EDGE feature count",
+      "status": "PASS"
+    },
+    {
+      "check": "no FDR-confirmed upset ROI cell",
+      "status": "PASS"
+    },
+    {
+      "check": "venue validation check count",
+      "status": "PASS"
+    },
+    {
+      "check": "no venue ROI CI-positive cell",
+      "status": "PASS"
+    },
+    {
+      "check": "strict date TE status",
+      "status": "PASS"
+    },
+    {
+      "check": "strict date TE independent check count",
+      "status": "PASS"
+    },
+    {
+      "check": "race upset-risk status",
+      "status": "PASS"
+    },
+    {
+      "check": "race upset-risk check count",
+      "status": "PASS"
+    },
+    {
+      "check": "race upset-risk bootstrap count",
+      "status": "PASS"
+    },
+    {
+      "check": "race upset-risk no-deploy decision",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio visibility status",
+      "status": "PASS"
+    },
+    {
+      "check": "browser visual QA limitation is explicit",
+      "status": "PASS"
+    },
+    {
+      "check": "official combination mismatch count",
+      "status": "PASS"
+    },
+    {
+      "check": "official complete-race availability caveat",
+      "status": "PASS"
+    },
+    {
+      "check": "all upstream required validations PASS",
+      "status": "PASS",
+      "evidence": {
+        "dataset preprocessing": "PASS",
+        "rank dataset audit": "PASS",
+        "rank model reload": "PASS",
+        "rank report": "PASS",
+        "anchor primary": "PASS",
+        "anchor independent": "PASS",
+        "upset independent": "PASS",
+        "venue independent": "PASS",
+        "strict date target encoding": "PASS",
+        "race upset risk": "PASS",
+        "visual studio visibility": "PASS"
+      }
+    },
+    {
+      "check": "all internal/local links resolve",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "all navigation anchors resolve",
+      "status": "PASS"
+    },
+    {
+      "check": "report cites at least 20 local evidence targets",
+      "status": "PASS",
+      "evidence": 67
+    },
+    {
+      "check": "external source catalog retained",
+      "status": "PASS",
+      "evidence": 23
+    },
+    {
+      "check": "all external sources have HTTP(S) URLs",
+      "status": "PASS"
+    },
+    {
+      "check": "report manifest status",
+      "status": "PASS"
+    },
+    {
+      "check": "report SHA-256 matches manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "all evidence files still match manifest hashes",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "check": "Visual Studio recursive include: src\\**\\*.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive include: data\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive include: models\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive include: outputs\\**\\*",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio includes persistent project summaries",
+      "status": "PASS"
+    }
+  ],
+  "structure": {
+    "tables": 31,
+    "svg": 4,
+    "details": 4,
+    "local_links": 67,
+    "external_sources": 23,
+    "html_bytes": 150768,
+    "html_sha256": "F6A923841E4FD2773542C2AF624D291DA526A605BB1C3869C720463167E454D6"
+  }
+}

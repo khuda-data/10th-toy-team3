@@ -1,0 +1,46 @@
+{
+  "probability": [
+    {
+      "hypothesis": "F1_partial30_vs_market",
+      "estimate": 0.012045652365633135,
+      "ci_low": 0.00318012991662907,
+      "ci_high": 0.021159265646840595,
+      "p_one_sided": 0.0033996600339966003,
+      "holm_adjusted_p": 0.010198980101989802
+    },
+    {
+      "hypothesis": "F2_partial8_vs_market",
+      "estimate": 0.008337615749756597,
+      "ci_low": -0.0008669567909351854,
+      "ci_high": 0.017109807453156583,
+      "p_one_sided": 0.0375962403759624,
+      "holm_adjusted_p": 0.0751924807519248
+    },
+    {
+      "hypothesis": "F3_partial8_vs_global",
+      "estimate": -0.0008245245526835147,
+      "ci_low": -0.0037609521293159483,
+      "ci_high": 0.0022399185060051666,
+      "p_one_sided": 0.7067293270672933,
+      "holm_adjusted_p": 0.7067293270672933
+    }
+  ],
+  "betting": [
+    {
+      "hypothesis": "B1_absolute_place_roi",
+      "estimate": 0.013000000000000006,
+      "ci_low": -0.1864737563650607,
+      "ci_high": 0.21960987503809815,
+      "p_one_sided": 0.4487551244875512,
+      "holm_adjusted_p": 0.4487551244875512
+    },
+    {
+      "hypothesis": "B2_paired_place_roi",
+      "estimate": 0.31800000000000006,
+      "ci_low": 0.10510121790651743,
+      "ci_high": 0.5376235475051263,
+      "p_one_sided": 0.0023997600239976003,
+      "holm_adjusted_p": 0.0047995200479952005
+    }
+  ]
+}

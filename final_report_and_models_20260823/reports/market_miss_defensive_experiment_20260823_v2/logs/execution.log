@@ -1,0 +1,16 @@
+2026-08-23 03:26:18,837 | INFO | EXPERIMENT START | Python=3.13.7 | platform=Windows-11-10.0.26200-SP0
+2026-08-23 03:26:18,837 | INFO | PHASE 01 START | TRAIN-only segment and feature discovery
+2026-08-23 03:26:27,203 | INFO | TRAIN LOCK segment=odds_8_15 features=8 l2=100.0 C deltaLL=-0.001383
+2026-08-23 03:26:28,008 | INFO | TRAIN LOCK segment=odds_30_plus features=5 l2=100.0 C deltaLL=+0.001818
+2026-08-23 03:26:28,032 | INFO | PHASE 01 PASS | primary=odds_8_15 secondary=odds_30_plus
+2026-08-23 03:26:28,032 | INFO | PHASE 02 START | VALID model comparison and policy lock
+2026-08-23 03:26:30,335 | INFO | VALID model=odds_8_15__ensemble segment=odds_8_15 deltaLL=+0.003102 trees=11
+2026-08-23 03:26:31,284 | INFO | VALID model=odds_30_plus__ensemble segment=odds_30_plus deltaLL=+0.002239 trees=101
+2026-08-23 03:27:30,771 | INFO | PHASE 02 PASS | best probability=odds_8_15__clogit deltaLL=+0.003316 | locks=14
+2026-08-23 03:27:30,771 | INFO | PHASE 03 START | TEST one-way locked evaluation
+2026-08-23 03:27:32,818 | INFO | TEST model=odds_8_15__ensemble deltaLL=+0.001681 CI=[-0.000986,+0.004431]
+2026-08-23 03:27:33,817 | INFO | TEST model=odds_30_plus__ensemble deltaLL=+0.004958 CI=[+0.001737,+0.007826]
+2026-08-23 03:28:32,339 | INFO | PHASE 03 PASS | test models=6 locked cells=14
+2026-08-23 03:28:32,339 | INFO | PHASE 04 START | artifact and leakage audit
+2026-08-23 03:28:32,360 | INFO | PHASE 04 PASS | audit=PASS | elapsed=133.5s
+2026-08-23 03:28:32,360 | INFO | EXPERIMENT COMPLETE | outputs=C:\Users\user\source\repos\PythonApplication2\PythonApplication2\outputs\reports\market_miss_defensive_experiment_20260823_v2

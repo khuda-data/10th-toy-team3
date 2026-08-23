@@ -1,0 +1,35 @@
+RANK DATA PASS: features=141 rows=33416/11345/11695
+TRAIN-INTERNAL IMPORTANCE MODEL (70% FIT / 10% TUNE / 20% IMPORTANCE)
+UPSET-TAIL PERMUTATION IMPORTANCE: 10/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 20/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 30/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 40/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 50/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 60/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 70/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 80/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 90/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 100/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 110/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 120/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 130/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 140/141
+UPSET-TAIL PERMUTATION IMPORTANCE: 141/141
+FEATURE SELECTION COMPLETE: threshold=0.500%, selected=29
+TRAIN FULL 141-FEATURE UPSET BASE MARGIN
+FULL MODEL COMPLETE: trees=205
+TRAIN SELECTED-FEATURE UPSET BASE MARGIN
+SELECTED MODEL COMPLETE: features=29, trees=168
+UPSET FEATURE EXPERIMENT PASS: checks=23, selected_features=29
+                 model_key  delta_ll_per_race  delta_ll_ci_low_daily_block  delta_ll_ci_high_daily_block
+    full_upset_base_margin           0.012656                     0.006053                      0.019672
+selected_upset_base_margin           0.010771                     0.004139                      0.017539
+                 model_key fraction_label  bets  wins       roi  roi_ci_low_daily_block  roi_ci_high_daily_block  roi_fdr_q_value  profit_confirmed_fdr_5pct
+    full_upset_base_margin      top_10pct    57     7  0.403509               -0.491083                 1.496653         0.543407                      False
+    full_upset_base_margin      top_20pct   114     8 -0.133333               -0.673082                 0.514980         0.828128                      False
+    full_upset_base_margin      top_30pct   171     9 -0.373684               -0.745419                 0.053498         0.991615                      False
+    full_upset_base_margin      top_40pct   228    11 -0.424123               -0.727796                -0.066352         1.000000                      False
+selected_upset_base_margin      top_10pct    58     7  0.344828               -0.528345                 1.444659         0.543407                      False
+selected_upset_base_margin      top_20pct   116     9 -0.076724               -0.609252                 0.548129         0.779673                      False
+selected_upset_base_margin      top_30pct   174    10 -0.303448               -0.700000                 0.147601         0.991615                      False
+selected_upset_base_margin      top_40pct   232    12 -0.335345               -0.668500                 0.047131         0.991615                      False

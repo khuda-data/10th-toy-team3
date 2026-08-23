@@ -1,0 +1,570 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.html",
+    "bytes": 116743,
+    "modified": "2026-08-23T05:49:47.171464+09:00",
+    "sha256": "B6B0B1F8FCCB1D7C68D2CAA8D69D8A13CBB05BAF64403B74D2319B81EA5287F7"
+  },
+  "data_snapshot": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\report_data_snapshot.json",
+    "bytes": 93769,
+    "modified": "2026-08-23T05:49:47.172464+09:00",
+    "sha256": "8C8C56FE2B4F8B10B43BBBD917A181C1D4EC1AEAA6DCB3CAF0763434E29479B3"
+  },
+  "validation": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\html_validation.json",
+    "bytes": 629,
+    "modified": "2026-08-23T05:49:47.177465+09:00",
+    "sha256": "50B4C6C4EF0E97C2836EF272705D53713B3ACD6887B53945DB36527E3459478E"
+  },
+  "reproduction_commands": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\reproduction_commands.txt",
+    "bytes": 11471,
+    "modified": "2026-08-23T05:49:47.171464+09:00",
+    "sha256": "EC85C352576FE3D3DDF729F3AE2FE5245435CE6AC5927C9C9B9249F106E285F2"
+  },
+  "input_evidence": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+      "bytes": 2348,
+      "modified": "2026-08-22T20:45:32.194867+09:00",
+      "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "bytes": 11173,
+      "modified": "2026-08-22T20:45:32.193564+09:00",
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\model_metric_comparison.csv",
+      "bytes": 5242,
+      "modified": "2026-08-22T21:01:18.109887+09:00",
+      "sha256": "EE95990F4723E876202218CA29DB6504B0544FD734566E8EE8978281EA4C578C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv",
+      "bytes": 2154,
+      "modified": "2026-08-22T21:02:59.865288+09:00",
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_miss_defensive_experiment_20260823_v2\\experiment_summary.json",
+      "bytes": 5630,
+      "modified": "2026-08-23T03:28:32.358385+09:00",
+      "sha256": "12BEEE9552239B2E1F3FACB5D432501BBB680C617D9E76DCED3AA57199EE941B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_miss_defensive_experiment_20260823_v2\\independent_audit\\independent_audit_summary.json",
+      "bytes": 3674,
+      "modified": "2026-08-23T03:30:49.643015+09:00",
+      "sha256": "41D2D0DEB723A03E38243FFADCE753BCB75C0E4F20E5EA3785B15785C9FAE8A3"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\experiment_summary.json",
+      "bytes": 4328,
+      "modified": "2026-08-23T03:35:56.117043+09:00",
+      "sha256": "A92CF7B8B4B8088FB8ED2EEEA01AD56CE404B935764A2DD2CAC514B60D9C5881"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\test_probability_metrics.csv",
+      "bytes": 2864,
+      "modified": "2026-08-23T03:35:21.771139+09:00",
+      "sha256": "CC325ED70906052CE11CEEE461DF35E7C9463BC4D420504F41FBA457A4035B7F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\partial_pooling_market_challenger_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 3577,
+      "modified": "2026-08-23T03:36:09.110600+09:00",
+      "sha256": "C6021AB22BD606E0EC9F74E57A3FE0871AF1123C6EAF180D485787689D2FFE3F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\experiment_summary.json",
+      "bytes": 3860,
+      "modified": "2026-08-23T03:49:56.195650+09:00",
+      "sha256": "BF20FB86131EEAC942AFDF5F62E41B553B17F0C2B253ED88761ECEA85F01B39D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\test_probability_metrics.csv",
+      "bytes": 1918,
+      "modified": "2026-08-23T03:49:32.965805+09:00",
+      "sha256": "0A8577F2B08441F2B5EA7251C2961B2BC3B7B55464829F9EDE0DDD51707CFFA4"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823_v2\\independent_audit\\independent_audit_summary.json",
+      "bytes": 3675,
+      "modified": "2026-08-23T03:50:04.651415+09:00",
+      "sha256": "FBEDE3F1E9E31F92AA06DDAE6878B1172CBA0C93CB1822C36DE7A176A2F85861"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_residual_log_pool_stack_20260823\\experiment_summary.json",
+      "bytes": 4081,
+      "modified": "2026-08-23T03:53:53.025367+09:00",
+      "sha256": "AF962DD01B881E275F80FB9E659E620CFE0814DAE95D324DAC6902A08AD1C1E8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_residual_log_pool_stack_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 3684,
+      "modified": "2026-08-23T03:54:04.038766+09:00",
+      "sha256": "13BDD8B776896D930B5A158440CB20E8EACCA423A79BFB1B1BD1FAD79AE38685"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\experiment_summary.json",
+      "bytes": 3915,
+      "modified": "2026-08-23T03:57:23.231677+09:00",
+      "sha256": "065E18D31C0FBFF6F4765D9E1307C8CB3AF729015D2E06CB1AA1700A290A2238"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\selected_features_train_only.json",
+      "bytes": 1162,
+      "modified": "2026-08-23T03:56:29.174649+09:00",
+      "sha256": "EEDA5F12DF9CEB8D79139EC57262BA8B563FA6B09C3E8551E251F53BE576221C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 3640,
+      "modified": "2026-08-23T03:57:34.127054+09:00",
+      "sha256": "E1FF1513187642896E759EB9A190777605CF4BB5205E8D1002C7DB70CD6D5988"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_origin_market_challenger_20260823\\experiment_summary.json",
+      "bytes": 8027,
+      "modified": "2026-08-23T04:40:31.412207+09:00",
+      "sha256": "DE8A1DA5DA815D5DB930BC7C57E10ECC5C379FB3EAB0062A30DC308D99D83C3B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_origin_market_challenger_20260823\\primary_hypothesis_tests.csv",
+      "bytes": 641,
+      "modified": "2026-08-23T04:40:31.410191+09:00",
+      "sha256": "7618E61B52B8174592E7F3E6D2AFE57AC189CEC3CDEE19FD1379753C806A263D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_origin_market_challenger_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 1037,
+      "modified": "2026-08-23T04:41:42.155528+09:00",
+      "sha256": "15010CC89858A5B283974FBF0884E539DEAB62EAC58E8FD7B6932031026A571C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\experiment_summary.json",
+      "bytes": 7632,
+      "modified": "2026-08-23T04:32:27.668240+09:00",
+      "sha256": "2B36C14E36A3942A06CC21720A49B06BC3FABF50803C2AA2E41CD723958812DB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\probability_hypothesis_tests.csv",
+      "bytes": 495,
+      "modified": "2026-08-23T04:32:27.632785+09:00",
+      "sha256": "9F123874FFEE4D3C323FCB40A04C1DA835858AB28288E4AB72DFC3DF6B114371"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\betting_hypothesis_tests.csv",
+      "bytes": 353,
+      "modified": "2026-08-23T04:32:27.650959+09:00",
+      "sha256": "11B9220AB035998FB43A6C0AE875AD740125BBCF9574E546DD3B2EBAA25FA70D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 818,
+      "modified": "2026-08-23T04:34:48.838829+09:00",
+      "sha256": "C58AC3FC1CD2A6CC7AB248BB109FF4B0C2B8E7D636EA254646C4A5709B4F2DE6"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_place_probability_calibration_20260823\\experiment_summary.json",
+      "bytes": 3501,
+      "modified": "2026-08-23T04:37:19.278030+09:00",
+      "sha256": "CE93567FE287ADA6862C469A412DA8F378C1688A0F105E87F1A71F84A22B955C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_place_probability_calibration_20260823\\calibration_hypothesis_tests.csv",
+      "bytes": 610,
+      "modified": "2026-08-23T04:37:19.270828+09:00",
+      "sha256": "F51760E100FC7F2109AF9B384E365A57B1B45EFBE6D7640CFF3F5479CF8CA203"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\rolling_place_probability_calibration_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 743,
+      "modified": "2026-08-23T04:38:40.411128+09:00",
+      "sha256": "98A11B08358128D1C0F563B88353305A7A823FFBCC471A0908E9C9A42E57D19C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_residual_feature_stability_20260823\\experiment_summary.json",
+      "bytes": 2396,
+      "modified": "2026-08-23T04:51:23.291125+09:00",
+      "sha256": "CD4C20F63D160AEDEFB444FF903AF17595FA59EC831701CC7BD394607B92A42E"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_residual_feature_stability_20260823\\stable_terms_gt_0p5pct.csv",
+      "bytes": 17216,
+      "modified": "2026-08-23T04:51:23.288051+09:00",
+      "sha256": "8AEAE7DD052DFFB1FB95ACA74735685655EC39ACDD9A26023E54E9031D77C595"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_residual_feature_stability_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 407,
+      "modified": "2026-08-23T04:51:24.552425+09:00",
+      "sha256": "3174B95E63C766207D07AA64E2717A83D912C0174A141442BC5BD6A1888DFEC8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\clinic30d_rolling_ablation_20260823\\experiment_summary.json",
+      "bytes": 4794,
+      "modified": "2026-08-23T04:54:57.069178+09:00",
+      "sha256": "A49BE6ED3901B46666156AEDECAD954D5921AEC80BC9DA953EDE74ACA3797282"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\clinic30d_rolling_ablation_20260823\\primary_hypothesis_tests.csv",
+      "bytes": 372,
+      "modified": "2026-08-23T04:54:57.045814+09:00",
+      "sha256": "4ADDCF5E05937586F9540EDDBD0932069052D45D2FC33EEC9C1755FE9809222D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\clinic30d_rolling_ablation_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 513,
+      "modified": "2026-08-23T04:55:59.947824+09:00",
+      "sha256": "9A2158FC1405876DB623FBC601F5C89665B8D7E3D2FE25AFD27595E5EB6E8834"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\source_manifest.json",
+      "bytes": 47722,
+      "modified": "2026-08-23T05:17:40.209459+09:00",
+      "sha256": "F9A3B91BD41110A2D618B4B0EA428FC5CBAEB7330A4353140BDECCB3CE736122"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\collection_summary.json",
+      "bytes": 851,
+      "modified": "2026-08-23T05:17:40.210469+09:00",
+      "sha256": "21E2FA8E72B9549B325331CBA639D019051BA4C0A99C3D263EB991248679E62B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_oos_extended_collection_audit_20260823\\independent_audit_summary.json",
+      "bytes": 776,
+      "modified": "2026-08-23T05:17:50.749601+09:00",
+      "sha256": "228154A04032D970C0F0866140B758E2F8DC10AAD4F20C70085D099490F80DA9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_frozen_feature_reproducibility_extended_20260823\\feature_reproducibility.csv",
+      "bytes": 7850,
+      "modified": "2026-08-23T05:28:52.388344+09:00",
+      "sha256": "7A14FB591A28C037728E0E8E825E0313D9EA7E5F7B59D9CCC7843B498B3F38BF"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_frozen_feature_reproducibility_extended_20260823\\independent_audit_summary.json",
+      "bytes": 3136,
+      "modified": "2026-08-23T05:28:52.398378+09:00",
+      "sha256": "5A55E805F000A937E0BBE5DA207BC87710294E02904BF7E362C265EAA75B813F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_20260823\\experiment_summary.json",
+      "bytes": 2569,
+      "modified": "2026-08-23T05:05:41.840459+09:00",
+      "sha256": "8BB672FE284C99EAB8782071B9FD8444D1C001331635F49951C0BC771472FC8B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 1013,
+      "modified": "2026-08-23T05:20:24.399269+09:00",
+      "sha256": "B503A65F92808C070F700670F807C23A7AC5DE5D40D825D453F67020CCAB5BC8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\experiment_summary.json",
+      "bytes": 2699,
+      "modified": "2026-08-23T05:29:08.199220+09:00",
+      "sha256": "F35A63957A573A07A42A8A756ABD03897330DE1BB34624E559388B7BAC8DAFD7"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\fresh_runner_probabilities.csv",
+      "bytes": 109330,
+      "modified": "2026-08-23T05:29:08.167708+09:00",
+      "sha256": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 1058,
+      "modified": "2026-08-23T05:29:10.556146+09:00",
+      "sha256": "7CB956AF77D245795780E8FAB88E5CCA43217C00EA8FBE23680531E07D0DAD6D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\incremental_fresh_holdout_20260823\\experiment_summary.json",
+      "bytes": 1331,
+      "modified": "2026-08-23T05:30:31.506377+09:00",
+      "sha256": "693A565F2CD65F17F165B1DCCB9DA098F31FB56B57C5D2550CBDCA64FE92CB86"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\incremental_fresh_holdout_20260823\\overlap_audit.csv",
+      "bytes": 171,
+      "modified": "2026-08-23T05:30:31.503376+09:00",
+      "sha256": "B0CFD7A66EF6E44620DCDAA1FE8B15E83091E4469212BFB0D24F9AEEFF1770BD"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\incremental_fresh_holdout_20260823\\additional_37_winner_logscore.csv",
+      "bytes": 7147,
+      "modified": "2026-08-23T05:30:31.502211+09:00",
+      "sha256": "77F2690CA3503BAB7FA18E8EEE618D36685503012BB3652FF7EF7B263C0E717E"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\incremental_fresh_holdout_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 280,
+      "modified": "2026-08-23T05:31:02.844351+09:00",
+      "sha256": "D0FB7D83452245A663DB8EBC8D3DCBD1C474D9C084A75CA702E1CF73684686BE"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_diagnostics_extended_20260823\\experiment_summary.json",
+      "bytes": 1588,
+      "modified": "2026-08-23T05:24:15.567074+09:00",
+      "sha256": "8E07989CC289E0C4366EDAFD399A56D980554D2BBF9A72DE904E876ED620C966"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_diagnostics_extended_20260823\\winner_odds_band_summary.csv",
+      "bytes": 560,
+      "modified": "2026-08-23T05:24:15.562708+09:00",
+      "sha256": "220FAA2BE99FFBC754B70FE2548EE92231CE260DD8025B806535E151D6828795"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_diagnostics_extended_20260823\\runner_odds_band_calibration.csv",
+      "bytes": 1253,
+      "modified": "2026-08-23T05:24:15.564709+09:00",
+      "sha256": "13023F623BAFCBD1FC902E92924E41E4E420BDE5887F89EDA90FF248FE8D9AA5"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_diagnostics_extended_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 297,
+      "modified": "2026-08-23T05:24:16.413042+09:00",
+      "sha256": "8B588088ECE5C20C4FD8ACF8BBF42E4926ACA7A4602B642227A8222530C9AD40"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_source_manifest.csv",
+      "bytes": 1946,
+      "modified": "2026-08-23T05:19:31.918944+09:00",
+      "sha256": "711FA429D17C7AC59DA1DDD435E29DBAA4A531E021DA41B83DF8A27DC3C39989"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_final_dividends.csv",
+      "bytes": 83735,
+      "modified": "2026-08-23T05:19:31.916793+09:00",
+      "sha256": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\settlement_protocol.json",
+      "bytes": 1279,
+      "modified": "2026-08-23T05:24:53.985511+09:00",
+      "sha256": "CCA02549BA0E0A7AFB26F80E3059B19C16630BBCA12257DA750BF51249F9DD3F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\exploratory_odds_8_15_protocol.json",
+      "bytes": 1033,
+      "modified": "2026-08-23T05:21:54.373138+09:00",
+      "sha256": "56A2EC6D8A6BF342F699032D734DD62C92874DF3E7F4BE1CF5313990C27C41A9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\fresh_all_bet_summary.json",
+      "bytes": 17955,
+      "modified": "2026-08-23T05:24:56.077200+09:00",
+      "sha256": "449898DA2AF43084EA54DAB2463536086FE17CECCAB8F0983CC0D9B65A53F7CB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\fresh_all_bet_summary.csv",
+      "bytes": 5555,
+      "modified": "2026-08-23T05:24:56.074199+09:00",
+      "sha256": "03AF315EF2701EF6B0F25A5A4ADAA22BAE4E5A634334718B7607B8F4B856B916"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\fresh_probability_edge_ticket_settlement.csv",
+      "bytes": 155978,
+      "modified": "2026-08-23T05:24:56.055883+09:00",
+      "sha256": "B7497C9C3528D175FADC92DC703F300B1CC2C407E56A6E5932980731F01BE479"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 717,
+      "modified": "2026-08-23T05:25:05.766646+09:00",
+      "sha256": "F19435E5084B69BB5C85EC5EEBDF81E68E2D5F7E45AB29EFE7473264B7E52BD5"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\exploratory_odds_8_15_summary.json",
+      "bytes": 1281,
+      "modified": "2026-08-23T05:21:54.623093+09:00",
+      "sha256": "6CF0C8CFD7EF59339C593B082D4912370097E4FBC13F7947F0279288B82FC65D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\exploratory_odds_8_15_summary.csv",
+      "bytes": 4571,
+      "modified": "2026-08-23T05:21:54.618531+09:00",
+      "sha256": "CD1F0B88DB293AD39B4E5FC8095ECADBDD61C26BB2320F92FF91DD3D21FB0CAC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\independent_audit_odds_8_15\\independent_audit_summary.json",
+      "bytes": 277,
+      "modified": "2026-08-23T05:23:18.117805+09:00",
+      "sha256": "3A0B8C76BDC439AA76640A134A445808BDF5DB657B5BAE35D8388E94FCC04407"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_paired_advantage_extended_20260823\\experiment_summary.json",
+      "bytes": 646,
+      "modified": "2026-08-23T05:26:21.196041+09:00",
+      "sha256": "A26EE74080F2EC53BA5D205471C2828A9245299FFB51B5D209FCFF2A392ABC49"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_paired_advantage_extended_20260823\\paired_advantage_summary.csv",
+      "bytes": 1547,
+      "modified": "2026-08-23T05:26:21.190399+09:00",
+      "sha256": "2EF8AADBA065A3B352F7C0F313284459A8715BFFC8E14A0E752F5067ED7FBC80"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_paired_advantage_extended_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 319,
+      "modified": "2026-08-23T05:27:34.311401+09:00",
+      "sha256": "8B2728890353833D43E85C196D2B9200AA41FB1D8199F7908819F5D197756388"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_deep_market_challengers.py",
+      "bytes": 30016,
+      "modified": "2026-08-23T03:47:59.732233+09:00",
+      "sha256": "AEECF0CA7879DB3DA4246150F82B2D5BD4338402D78212A28721D87A4D6F2C59"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_market_residual_log_pool_stack.py",
+      "bytes": 17133,
+      "modified": "2026-08-23T03:52:55.753862+09:00",
+      "sha256": "C60F4FA2C772B2DB631C46B4732CC6BDE5F09A9B60A8F9A08C565469A81C8FCC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_sparse_deep_residual_challenger.py",
+      "bytes": 14716,
+      "modified": "2026-08-23T03:55:53.615188+09:00",
+      "sha256": "8DEC3DAF193464BFD20CBE54F758742BB03D37DB2BA396797846A428BF498920"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_rolling_origin_market_challenger.py",
+      "bytes": 27381,
+      "modified": "2026-08-23T04:29:41.799878+09:00",
+      "sha256": "576EA0C67120CF75E2383859F3E705AEE3B9488A987745E21C84B100E2234975"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_fixed_lock_rolling_stability.py",
+      "bytes": 19942,
+      "modified": "2026-08-23T04:31:44.548327+09:00",
+      "sha256": "7D40623FCEB9EB5C5D0D15D80618C36E8059EC6F9B22B38EAB0E17E4B4F45057"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_rolling_place_probability_calibration.py",
+      "bytes": 15089,
+      "modified": "2026-08-23T04:37:10.705155+09:00",
+      "sha256": "E247EE0A1F2562642CDC87ED37E91DE7925CCF8E8D6F4E146758D4AD319E9323"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_clinic30d_rolling_ablation.py",
+      "bytes": 11970,
+      "modified": "2026-08-23T04:54:32.835358+09:00",
+      "sha256": "B65ADBB64534382D4A732717CBB6FCF1C3D9C5B7E36CE93565894A33F498CCDF"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\collect_kra_fresh_oos.py",
+      "bytes": 11315,
+      "modified": "2026-08-23T04:58:58.781705+09:00",
+      "sha256": "2D8EA362704DE1FBB81439A5BB355B37B289D837F14B6AA7E315C52301D5D234"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\audit_fresh_frozen_feature_reproducibility.py",
+      "bytes": 13001,
+      "modified": "2026-08-23T05:28:09.563406+09:00",
+      "sha256": "9E215F8B980015207FA5F9081EDDE77B47575635CD933C03346176430F139FEB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_fresh_minimal_entry_market_challenger.py",
+      "bytes": 15545,
+      "modified": "2026-08-23T05:28:37.812805+09:00",
+      "sha256": "8886CAD9E43B6CF9C6F95F36A74AABC802BB4D78B672F4A2F2446A760F231634"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_fresh_minimal_entry_market_challenger.py",
+      "bytes": 8513,
+      "modified": "2026-08-23T05:20:12.805208+09:00",
+      "sha256": "3CE59B7506E6AC71848D5A2DC66F3A9CDB0284A15C3704AEB1D52C96FA2F9EE1"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_incremental_fresh_holdout.py",
+      "bytes": 6791,
+      "modified": "2026-08-23T05:30:13.450834+09:00",
+      "sha256": "7EF253BCEB4C2E0961A2ADCBED89257751FBBA3410AEFFBA8847E32CDF617838"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_incremental_fresh_holdout.py",
+      "bytes": 4995,
+      "modified": "2026-08-23T05:30:54.493654+09:00",
+      "sha256": "83E27646023044A0CF189B559F9423FD19098EBB73CAFF68F365D5801C4EC4CE"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_fresh_minimal_diagnostics.py",
+      "bytes": 7924,
+      "modified": "2026-08-23T05:24:05.411398+09:00",
+      "sha256": "27C5B08F2912C2A9D800D7AA1C67E1B9A600945F192A89481438608DA4EEF340"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_fresh_minimal_diagnostics.py",
+      "bytes": 3146,
+      "modified": "2026-08-23T05:24:05.786736+09:00",
+      "sha256": "3F0D03402880CE181D1EDE6A972780B22A3494215DCE6317B651DD66B90DBD8E"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\data\\fetch_fresh_kra_dividends.py",
+      "bytes": 12910,
+      "modified": "2026-08-23T05:12:48.700825+09:00",
+      "sha256": "B7603DE99DDE28D9623A4C9F4648D5703ECE82C7E56E049B6890EB657BD004AC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\evaluate_fresh_all_bets.py",
+      "bytes": 25537,
+      "modified": "2026-08-23T05:24:47.930902+09:00",
+      "sha256": "56B5278F99B435E2985130C8FFA7B5D50EBBCF9475E03A5B68C1CA983576EF67"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_fresh_all_bets.py",
+      "bytes": 16402,
+      "modified": "2026-08-23T05:20:05.244895+09:00",
+      "sha256": "1CB29EB01B28057A31CAD29EDA37E2294C2126484666EB05E3448E57553700A8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\evaluate_fresh_odds_8_15_all_bets.py",
+      "bytes": 12584,
+      "modified": "2026-08-23T05:21:47.064799+09:00",
+      "sha256": "AF563A89D16137405530C2FDF6DBD08172D4FB4E8EF99474DD25314BB2C07C1D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_fresh_odds_8_15_all_bets.py",
+      "bytes": 11572,
+      "modified": "2026-08-23T05:23:10.489456+09:00",
+      "sha256": "430DD43862AA3FB7496FE7153C020A5763107E98449550076163618D0306A7C8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_fresh_all_bets_paired_advantage.py",
+      "bytes": 5706,
+      "modified": "2026-08-23T05:26:09.402054+09:00",
+      "sha256": "759FCDA2C2C1EC1E70AF62A8840C563C408D747583A0FDC3A0317D094A4476D9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_fresh_all_bets_paired_advantage.py",
+      "bytes": 5275,
+      "modified": "2026-08-23T05:27:24.779590+09:00",
+      "sha256": "4F4ECF9A14FA448564016F51370AC3F516913CA18E8CD78BB7DC7CF4DCD55B87"
+    }
+  ],
+  "superseded_debug_run": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\deep_market_challengers_20260823",
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.pdf",
+    "bytes": 1184348,
+    "modified": "2026-08-23T05:54:06.125217+09:00",
+    "sha256": "F9D7246BBDA679DE6ED3556C5AE1E50FE09F3C2CBFD0A7E435BB4990A2F0BFC0"
+  },
+  "pdf_validation": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\pdf_validation.json",
+    "bytes": 2633,
+    "modified": "2026-08-23T05:56:17.671523+09:00",
+    "sha256": "61BC98BB6D24BC0765BB060CD7E4C673505AB886E24332A460AA4AF4E9D4EA8C"
+  },
+  "pdf_render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\market_probability_final_20260823_v6\\render_manifest.json",
+    "bytes": 16726,
+    "modified": "2026-08-23T05:55:24.463086+09:00",
+    "sha256": "05321B0FBC7D904FF565E013F53AF9A0CC7FFE3F0E498FEA71C11F454905C9C0"
+  }
+}

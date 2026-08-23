@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "dataset": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "target": "finish_order sourced from reference ord",
+  "feature_count": 141,
+  "fit_scope": "all imputation, scaling, target encoding, correlation pruning, and reference decisions use training data only",
+  "reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "split_summary": {
+    "train": {
+      "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+      "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+      "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+      "rows": 33416,
+      "races": 3158,
+      "valid_rank_rows": 33416,
+      "invalid_rank_rows": 0,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "rank_group_status_races": {
+        "complete_1_to_n": 3125,
+        "tied_or_gapped": 33
+      }
+    },
+    "valid": {
+      "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+      "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+      "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+      "rows": 11345,
+      "races": 1084,
+      "valid_rank_rows": 11345,
+      "invalid_rank_rows": 0,
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "rank_group_status_races": {
+        "complete_1_to_n": 1076,
+        "tied_or_gapped": 8
+      }
+    },
+    "test": {
+      "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+      "data_sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+      "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+      "rows": 11695,
+      "races": 1101,
+      "valid_rank_rows": 11650,
+      "invalid_rank_rows": 45,
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "rank_group_status_races": {
+        "complete_1_to_n": 1078,
+        "tied_or_gapped": 16,
+        "invalid_zero_or_nan": 7
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "preprocessing validation status PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "source comparison audit status PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly 141 manifest model features",
+      "status": "PASS"
+    },
+    {
+      "check": "no market/result leakage feature",
+      "status": "PASS"
+    },
+    {
+      "check": "targets absent from features",
+      "status": "PASS"
+    },
+    {
+      "check": "train: data/metadata row count",
+      "status": "PASS"
+    },
+    {
+      "check": "train: feature matrix width",
+      "status": "PASS"
+    },
+    {
+      "check": "train: all output columns numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "train: all output values finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train: finish order alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "train: rank validity alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "train: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "train: valid orders >=1",
+      "status": "PASS"
+    },
+    {
+      "check": "train: win equals finish_order 1",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: data/metadata row count",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: feature matrix width",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: all output columns numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: all output values finite",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: finish order alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: rank validity alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: valid orders >=1",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: win equals finish_order 1",
+      "status": "PASS"
+    },
+    {
+      "check": "test: data/metadata row count",
+      "status": "PASS"
+    },
+    {
+      "check": "test: feature matrix width",
+      "status": "PASS"
+    },
+    {
+      "check": "test: all output columns numeric",
+      "status": "PASS"
+    },
+    {
+      "check": "test: all output values finite",
+      "status": "PASS"
+    },
+    {
+      "check": "test: finish order alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "test: rank validity alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "test: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test: valid orders >=1",
+      "status": "PASS"
+    },
+    {
+      "check": "test: win equals finish_order 1",
+      "status": "PASS"
+    },
+    {
+      "check": "train/valid: no entry overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "train/valid: no race overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "train/test: no entry overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "train/test: no race overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "valid/test: no entry overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "valid/test: no race overlap",
+      "status": "PASS"
+    },
+    {
+      "check": "train precedes validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation precedes test",
+      "status": "PASS"
+    }
+  ],
+  "passed_checks": 40
+}

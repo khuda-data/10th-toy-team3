@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-08-23T00:51:29+09:00",
+  "status": "PASS_WITH_LIMITATIONS",
+  "decision": "LOCAL_PROJECT_PRIMARY_WITH_SELECTIVE_GIT_GOVERNANCE",
+  "raw_byte_identical": true,
+  "raw_sha256": "964bd9a7ab7e36247fc5a7e5ffd04f9ec02439491b1dacaef7918eb0aae80195",
+  "local_dataset_audit": "PASS",
+  "local_source_audit": "PASS",
+  "local_validation_checks_counted": 263,
+  "local_final_validation_all_pass": true,
+  "git_unittest": {
+    "ran": 86,
+    "failures": 9,
+    "errors": 3,
+    "passed": 74
+  },
+  "git_compile": "PASS",
+  "known_limitations": [
+    "test fold has 7 races with zero/NaN finish-order rows; rank evaluation excludes them",
+    "57 races across splits are tied_or_gapped and require an explicit dead-heat/rank policy",
+    "official dividend evidence is unavailable for 1 target race",
+    "the current test through 2026-08-09 has already been inspected and is not a pristine future holdout",
+    "closing odds are retrospective and are not executable decision-time prices",
+    "Git checkout regression suite currently has checksum/missing-artifact failures"
+  ]
+}

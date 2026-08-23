@@ -1,0 +1,58 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "confirmation_status": "exploratory_reuse_of_previously_inspected_test_not_pristine_confirmation",
+  "selection_rule": {
+    "probability_model": "validation maximum delta LL among saved candidates; test not used",
+    "betting_policy": "per bet type, validation maximum same-race hit lift vs market; ties by ROI lift then bets",
+    "minimum_validation_bets": 100,
+    "candidate_policy_count": 9
+  },
+  "probability_winner": {
+    "model_key": "anchored_base_margin",
+    "model": "시장 앵커 Base Margin",
+    "test_delta_ll_per_race": 0.0130833724312172,
+    "test_delta_ll_ci": [
+      0.0066144889005444,
+      0.0196470005055883
+    ],
+    "test_brier_improvement": 0.0002455885226343,
+    "test_top1_delta": -0.0036330608537692988,
+    "market_probability_beaten_on_logloss_95pct": true
+  },
+  "betting_comparison": {
+    "bet_types": 7,
+    "same_race_hit_lift_confirmed_bet_types": [],
+    "same_race_roi_lift_confirmed_bet_types": [],
+    "absolute_profit_confirmed_bet_types": []
+  },
+  "interpretation": {
+    "market_probability_method_found": true,
+    "market_selection_beating_bet_method_found": false,
+    "profitable_bet_method_found": false
+  },
+  "inputs": {
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv": {
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6",
+      "bytes": 2154
+    },
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\seven_bet_selections.csv": {
+      "sha256": "E4DE708AE251D97452DE3A4626F614E4E9732598011AC3C0F63F523BF7FDF19A",
+      "bytes": 12964962
+    },
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\validation.json": {
+      "sha256": "D3F7371AC34F40AB7F074467648BE31D988FB9EC00B087970E9654B5E408EFA0",
+      "bytes": 3817
+    },
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\independent_validation.json": {
+      "sha256": "B4BEC6CD4286709FBED4A6AA7972DD7AC38D0212067903730655E38BEC2BCBE2",
+      "bytes": 4963
+    }
+  },
+  "caveats": [
+    "The historical 8-to-15 odds result is retained as reference only and was not used to select these v11 policies.",
+    "The test period has already been inspected in prior work; this is not fresh confirmation.",
+    "Combination market probabilities are q-derived proxies, not observed losing-ticket pre-race pool prices.",
+    "Closing odds are retrospective rather than guaranteed decision-time prices.",
+    "Absolute profitability remains governed by the prior locked ROI confidence intervals, not ROI lift alone."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "created_at_kst": "2026-08-23T08:16:30.253704+09:00",
+  "validator_sha256": "97654D1545F001BFC58515E303986CDF34527C10F8652197096AB726BC1A7889",
+  "training_freeze_sha256": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B",
+  "artifacts": [
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation.json",
+      "bytes": 25980,
+      "sha256": "E3D67560F980D24E352DF553752A55DDAD43F2CB60BED113E82A95632E57932E"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_checks.csv",
+      "bytes": 14279,
+      "sha256": "42098D0A517AB8FF94506AF27B92A4C0946815DFB0A437288ACA19F0AF4568B8"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/logs/independent_validation.log",
+      "bytes": 216,
+      "sha256": "0AAABC3D7CB95301EA469BCBBA47552A38154687EEA2C82C1861E9A86E957DE7"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_attempt1_failure.json",
+      "bytes": 988,
+      "sha256": "9B8FE0297156BC5E244AC4ABD86812B816195D14C05CBAE8A1243E8B5E15FEB8"
+    }
+  ],
+  "target_20260823_sources_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "live_stake": 0
+}

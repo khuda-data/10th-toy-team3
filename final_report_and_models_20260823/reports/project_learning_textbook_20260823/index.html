@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KRA 경마 퀀트 프로젝트 학습 교재</title>
+<style>
+:root{--ink:#17202a;--muted:#62707f;--paper:#fbfcfe;--panel:#fff;--line:#dbe3ea;--nav:#102b3f;--a:#0b6f75;--accent:#d8793f;--good:#16724b;--bad:#b33636;--note:#eef7f5;--warn:#fff5e6;--fact:#eaf2ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.78 "Pretendard","Noto Sans KR","Malgun Gothic",sans-serif}
+a{color:var(--a)}code,.formula{font-family:Consolas,"SFMono-Regular",monospace}.layout{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:28px 22px;background:var(--nav);color:#fff}aside h1{font-size:1.12rem;line-height:1.45;margin:0 0 10px}aside p{color:#c7d5df;font-size:.86rem}nav{display:grid;gap:2px;margin-top:22px}nav a{color:#d9e7ef;text-decoration:none;padding:7px 9px;border-radius:7px;font-size:.86rem}nav a:hover{background:#1b435d}
+main{max-width:1120px;padding:54px 62px 100px}.hero{border-bottom:3px solid var(--nav);padding-bottom:30px;margin-bottom:44px}.hero h1{font-size:2.45rem;line-height:1.25;margin:0 0 16px;letter-spacing:-.04em}.kicker{color:var(--a);font-weight:800;letter-spacing:.08em}.stamp{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.stamp span{border:1px solid var(--line);background:#fff;padding:6px 10px;border-radius:999px;font-size:.84rem}
+section{scroll-margin-top:20px;margin:64px 0}h2{font-size:1.78rem;line-height:1.35;border-left:6px solid var(--accent);padding-left:14px;margin-bottom:22px;letter-spacing:-.025em}h3{font-size:1.24rem;margin-top:35px}h4{font-size:1.05rem;margin-top:28px}p{margin:12px 0}ul,ol{padding-left:1.4rem}li{margin:.35rem 0}dfn{font-style:normal;font-weight:750;border-bottom:1px dotted var(--a)}
+.lead{font-size:1.12rem;color:#314353}.callout{padding:16px 18px;border-radius:9px;border:1px solid var(--line);margin:18px 0;background:var(--panel)}.fact{background:var(--fact);border-left:5px solid #3974bd}.warn{background:var(--warn);border-left:5px solid var(--accent)}.note{background:var(--note);border-left:5px solid var(--a)}.label{font-size:.75rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.formula{overflow:auto;background:#142432;color:#eef8ff;border-radius:9px;padding:16px 18px;margin:14px 0;line-height:1.7}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:20px 0}.flow div{background:#fff;border:1px solid var(--line);padding:12px;text-align:center;border-radius:8px;font-size:.9rem}.flow div:not(:last-child)::after{content:"→";float:right;margin-right:-21px;color:var(--accent);font-weight:900}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card,.model-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;box-shadow:0 4px 14px rgba(20,40,60,.04)}.model-card{margin:22px 0}.model-card h3{margin-top:0}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:9px;margin:18px 0}table{width:100%;border-collapse:collapse;background:#fff;font-size:.88rem}th,td{padding:10px 11px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{position:sticky;top:0;background:#edf2f6;color:#2d4352}tr:last-child td{border-bottom:0}.muted{color:var(--muted)}.good{color:var(--good);font-weight:800}.bad{color:var(--bad);font-weight:800}.term-grid{display:grid;grid-template-columns:180px 1fr;gap:0;border-top:1px solid var(--line)}.term-grid dt,.term-grid dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--line)}.term-grid dt{font-weight:800;background:#f0f4f7}.small{font-size:.86rem;color:var(--muted)}sup a{text-decoration:none}.source-list li{margin-bottom:.8rem}
+@media(max-width:900px){.layout{display:block}aside{position:relative;height:auto}nav{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:34px 22px}.grid2{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow div:not(:last-child)::after{content:"↓";float:none;display:block;margin:8px 0 -20px}.hero h1{font-size:2rem}}
+@media print{@page{size:A4;margin:13mm 10mm 15mm}body{font-size:9.2pt;line-height:1.55}aside{display:none}.layout{display:block}main{max-width:none;padding:0}.hero h1{font-size:23pt}section{break-inside:auto;margin:32px 0}h2,h3,h4{break-after:avoid}.model-card,.card,.callout,.formula{break-inside:avoid}.table-wrap{overflow:visible;border:0}table{width:100%;font-size:6.7pt;table-layout:auto}th,td{white-space:normal;overflow-wrap:anywhere;padding:4px 3px;line-height:1.35}tr{break-inside:avoid}a{color:inherit;text-decoration:none}}
+</style></head><body><div class="layout"><aside><h1>KRA 경마 퀀트 프로젝트<br>학습 교재</h1><p>실제 v11 데이터·코드·로그·테스트 수치에 연결된 해설서</p><nav><a href="#read-first">0. 이 교재를 읽는 법</a><a href="#objective">1. 프로젝트의 정확한 연구 질문</a><a href="#data">2. 데이터 한 행에서 학습행렬까지</a><a href="#probability">3. 확률·배당·시장확률</a><a href="#ranking">4. 착순 학습과 Learning-to-Rank</a><a href="#metrics">5. 결과지표를 수식으로 읽기</a><a href="#models">6. 여섯 착순 모델 집중 학습</a><a href="#market-anchor">7. Benter·시장 앵커·Base Margin</a><a href="#edge">8. EDGE의 정확한 의미와 계산</a><a href="#bets">9. 일곱 승식과 조합확률</a><a href="#backtest">10. 백테스트·ROI·Kelly·위험</a><a href="#statistics">11. OOS·검증·신뢰구간</a><a href="#xai">12. 피처 중요도와 XAI</a><a href="#results">13. 최신 결과를 직접 읽기</a><a href="#model-impact">14. 모델이 프로젝트에 미친 영향</a><a href="#workflow">15. 보고서를 읽는 실전 절차</a><a href="#exercises">16. 계산 연습과 해설</a><a href="#glossary">17. 생소한 용어 사전</a><a href="#sources">18. 근거와 더 읽을 자료</a></nav></aside><main>
+<header class="hero"><div class="kicker">EVIDENCE-LINKED STUDY BOOK · 2026-08-23</div><h1>시장은 얼마나 틀리는가,<br>그리고 그 차이를 어떻게 검증하는가</h1><p class="lead">이 문서는 일반 ML 교과서가 아니라, 지금까지 만든 데이터·모델·EDGE·7승식 백테스트 결과를 사용자가 직접 읽고 비판할 수 있게 만드는 프로젝트 전용 교재다.</p><div class="stamp"><span>서울+부경 56,456행</span><span>5,343경주</span><span>비배당 학습피처 141개</span><span>착순모델 6개</span><span>전처리 검증 PASS</span></div></header>
+
+<section id="read-first"><h2>0. 이 교재를 읽는 법</h2>
+<p>본문은 세 종류의 문장을 구분한다. 이 구분을 지키면 “그럴듯한 해석”이 “검증된 결과”로 둔갑하는 것을 막을 수 있다.</p>
+<div class="grid2"><div class="callout fact"><span class="label">확인 사실</span><p>파일·코드·로그·CSV·JSON에서 직접 확인한 값. 예: v11의 고상관 피처 제거 후 상관계수 0.95 초과 쌍은 0개다.</p></div><div class="callout note"><span class="label">해석</span><p>확인 사실을 바탕으로 한 설명. 예: CatBoost의 NDCG 우위는 “상위권 배열”에 유리하다는 뜻이지 수익 우위가 아니다.</p></div><div class="callout warn"><span class="label">가설</span><p>아직 새 OOS 구간에서 확인되지 않은 연구 아이디어. 예: 8–15배 다크호스 구간은 표본 확대 전까지 후보 전략이다.</p></div><div class="callout"><span class="label">용어 규칙</span><p><dfn>OOS(Out-of-Sample)</dfn>처럼 생소한 말은 처음 등장할 때 영문·한글·실무 의미를 함께 쓰고, 17장 용어집에서 다시 찾을 수 있다.</p></div></div>
+<div class="warn callout"><b>현재 결론:</b> 시장확률보다 낮은 log loss를 만든 시장 앵커 모델은 존재한다. 그러나 검증에서 정책을 고정한 뒤 test에 적용한 7승식 수익 중 95% 신뢰구간 하한이 0을 넘은 전략은 없다. “정보 우위 일부 확인”과 “수익성 확인”은 서로 다른 주장이다.</div></section>
+
+<section id="objective"><h2>1. 프로젝트의 정확한 연구 질문</h2>
+<h3>1.1 예측 프로젝트가 아니라 시장오류 연구다</h3><p>질문은 단순히 “1등 말을 잘 맞히는가?”가 아니다. 시장이 최종 배당으로 표현한 확률 <i>q</i>와 우리가 비시장 피처에서 얻은 정보가 결합된 확률 <i>p</i>를 비교해, 시장이 반복적으로 놓치는 조건을 찾는 것이다.</p>
+<div class="formula">연구 질문 = (비시장 정보가 시장 log loss를 줄이는가?) ∧ (그 개선이 비용·분산을 이기고 OOS ROI로 이어지는가?)</div>
+<p>첫 조건은 확률예측의 정보량 문제이고, 둘째 조건은 의사결정과 시장구조 문제다. 첫 조건이 참이어도 적중 배당이 낮거나 오차가 tail에 집중되면 둘째는 거짓일 수 있다.</p>
+<h3>1.2 분석 단위</h3><ul><li><b>행:</b> 한 경주의 한 출전마.</li><li><b>그룹:</b> 같은 <code>race_id</code>에 속한 모든 말. 착순과 확률은 이 그룹 안에서만 의미가 있다.</li><li><b>시간:</b> 과거→미래 순서. 미래 경주의 결과나 최종 pool 정보가 학습에 들어가면 성능이 아니라 누수다.</li><li><b>사건:</b> 단승, 연승, 복승, 쌍승, 삼복승, 삼쌍승, 복연승 각각의 적중 조합.</li></ul>
+<h3>1.3 성공의 층위</h3><div class="table-wrap"><table class=""><thead><tr><th>층위</th><th>검증 질문</th><th>대표 지표</th><th>현재 상태</th></tr></thead><tbody><tr><td>착순</td><td>말의 상대 순서를 잘 배열하는가?</td><td>NDCG@5, Spearman, 순위 MAE</td><td>모델별 차이 확인</td></tr><tr><td>확률</td><td>경주별 확률이 실제 빈도와 맞는가?</td><td>Log loss, Brier, calibration</td><td>시장 앵커 ΔLL 양수</td></tr><tr><td>EDGE</td><td>시장보다 나은 확률차를 찾는가?</td><td>p−q, EV, edge-적중 상관</td><td>일부 정보 개선</td></tr><tr><td>수익</td><td>정책 고정 후 돈이 남는가?</td><td>ROI, 95% CI, MDD, Sharpe</td><td>7승식 모두 미확인</td></tr><tr><td>배치</td><td>새로운 미래에도 재현되는가?</td><td>새 untouched OOS, 용량·시장충격</td><td>아직 충족 안 됨</td></tr></tbody></table></div></section>
+
+<section id="data"><h2>2. 데이터 한 행에서 학습행렬까지</h2>
+<div class="flow"><div>원본·참조 데이터</div><div>시점 안전 결합</div><div>문자열 수치화</div><div>결측·상관·스케일링</div><div>경주 그룹 학습</div></div>
+<h3>2.1 최신 기준 데이터</h3><div class="table-wrap"><table class=""><thead><tr><th>분할</th><th>기간</th><th>행</th><th>경주</th><th>경마장 경주 수</th><th>수치·유한값</th></tr></thead><tbody><tr><td>train</td><td>20230805–20250511</td><td>33,416</td><td>3,158</td><td>서울 1,891 / 부경 1,267</td><td>PASS</td></tr><tr><td>valid</td><td>20250517–20251227</td><td>11,345</td><td>1,084</td><td>서울 641 / 부경 443</td><td>PASS</td></tr><tr><td>test</td><td>20251228–20260809</td><td>11,695</td><td>1,101</td><td>서울 635 / 부경 466</td><td>PASS</td></tr></tbody></table></div>
+<p>train이 valid보다 먼저, valid가 test보다 먼저 끝나는 엄격한 시간분할이다. test 1,101경주 중 착순이 0/결측인 7경주는 순위평가에서 경주 전체를 제외한다. 완전한 1..N이 아닌 동률·gap 경주는 NDCG 같은 순위평가에는 포함될 수 있지만 exact top3 계산에는 제외한다.</p>
+<h3>2.2 문자열은 어떻게 숫자가 되었나</h3><ul><li><dfn>One-hot encoding</dfn>: 성별·날씨·부담조건처럼 범주 수가 제한적인 값은 범주별 0/1 열로 바꾼다.</li><li><dfn>Target encoding(TE)</dfn>: 기수·조교사·마주처럼 범주가 많은 값은 과거 승률의 평활 추정치로 바꾼다. v11 train은 같은 날짜 결과를 먼저 보지 않도록 날짜 블록 전체를 인코딩한 뒤 그 날짜 결과로 history를 갱신한다.</li><li>valid/test TE는 train 결과로 만든 mapping만 사용한다. valid/test의 실제 착순으로 mapping을 갱신하지 않는다.</li></ul>
+<div class="formula">TE(category c) = (wins<sub>past,c</sub> + α·prior) / (starts<sub>past,c</sub> + α), &nbsp; α=20</div>
+<h3>2.3 결측값은 삭제와 같은 말이 아니다</h3><p><dfn>결측(missing)</dfn>은 값이 관측되지 않았다는 상태다. 무조건 행을 버리면 출전 이력이 짧은 말이 체계적으로 사라질 수 있다. v11은 학습구간에서 정한 대체값과 함께 <code>__missing</code> 표시 피처를 사용해 “값이 없다”는 정보 자체를 보존한다. 최종 학습행렬의 NaN과 infinite 값은 모두 0개다.</p>
+<h3>2.4 스케일링과 경주 내 상대피처</h3><p><dfn>표준화</dfn>는 train 평균 μ와 표준편차 σ로 <code>z=(x−μ)/σ</code>를 만든다. <code>__pr</code>는 경주 안의 percentile rank다. 나이 5세라는 절대값과 그 경주에서 상대적으로 나이가 많은지를 동시에 표현할 수 있다. 트리 모델은 스케일에 둔감하지만 신경망 최적화는 스케일에 민감하므로 일관된 변환이 필요하다.</p>
+<h3>2.5 상관 피처 축소</h3><p>train 피처만으로 Pearson |r|≥0.95인 쌍을 찾고 대표 피처를 남겼다. 축소 전 16쌍, 축소 후 0쌍이다. 이는 “비슷한 정보 중복”을 줄이는 절차이지 인과변수를 골랐다는 뜻은 아니다. 비선형 중복은 Pearson 검사만으로 제거되지 않을 수 있다.</p>
+<h3>2.6 학습 입력에서 제외된 정보</h3><p>배당·시장확률·착순 결과·최종 pool은 모델 피처에서 제외됐다. <code>winOdds</code>, <code>plcOdds</code>, <code>q</code>, <code>ord</code>, <code>finish_order</code>, <code>winAmt</code>, <code>totalAmt</code> 등이 명시적 제외 목록에 있다. 배당은 학습 뒤 시장 기준확률과 EDGE·백테스트에만 사용한다.</p></section>
+
+<section id="probability"><h2>3. 확률·배당·시장확률</h2>
+<h3>3.1 decimal odds와 내재확률</h3><p>decimal odds <i>O</i>가 8.0이면 1원을 걸어 적중할 때 원금 포함 8원을 받는다는 뜻이다. 단순 역수 <code>1/O</code>는 내재확률이지만, 같은 경주에서 합하면 수수료·반올림 때문에 1이 아닐 수 있다.</p><div class="formula">r<sub>i</sub>=1/O<sub>i</sub>, &nbsp; q<sub>i</sub>=r<sub>i</sub>/Σ<sub>j∈race</sub>r<sub>j</sub>, &nbsp; Σq<sub>i</sub>=1</div>
+<p><dfn>시장확률 q</dfn>는 각 말 역배당을 경주 내에서 정규화한 상대 승리확률이다. 최종 배당금 자료에는 통상 수수료가 반영되어 있으므로 실제 환급액을 사용할 때 수수료를 다시 빼면 이중 차감이다.</p>
+<h3>3.2 score, probability, odds는 다르다</h3><ul><li><b>score:</b> 모델이 정렬을 위해 내놓는 임의 척도. 2.3이 1.7보다 좋다는 순서는 있지만 “23%”라는 뜻은 아니다.</li><li><b>probability:</b> 0~1이고 경주 내 합이 1인 승리 가능성 추정.</li><li><b>odds:</b> 적중 시 지급배수. 확률 자체가 아니라 시장가격이다.</li></ul>
+<h3>3.3 Softmax</h3><div class="formula">p<sub>i</sub> = exp(s<sub>i</sub>/T) / Σ<sub>j∈race</sub> exp(s<sub>j</sub>/T)</div><p><dfn>Softmax</dfn>는 점수를 경주별 확률로 바꾼다. T는 temperature다. T가 작으면 1위 말에 확률이 몰리고, 크면 평평해진다. T는 validation에서만 정해야 한다. 최신 확률합 검증의 최대 오차는 4.441e-16이다.</p>
+<h3>3.4 Logit과 log-odds</h3><div class="formula">logit(p)=log(p/(1−p)), &nbsp; sigmoid(z)=1/(1+e<sup>−z</sup>)</div><p>logit은 0~1 확률을 −∞~+∞의 직선 축으로 바꾼다. 단, 경주처럼 다항 선택인 경우에는 개별 말의 binary logit보다 <code>log(q)</code>와 경주별 softmax가 자연스럽다.</p></section>
+
+<section id="ranking"><h2>4. 착순 학습과 Learning-to-Rank</h2>
+<p><dfn>Learning-to-Rank(LTR)</dfn>는 숫자 하나를 맞히는 대신 같은 그룹의 항목을 올바른 순서로 배열하는 학습이다. 검색에서 query/문서 관계가 경마에서는 경주/출전마 관계가 된다.</p>
+<div class="table-wrap"><table class=""><thead><tr><th>접근</th><th>학습 단위</th><th>대표 loss</th><th>경마에서 장점</th><th>주요 한계</th></tr></thead><tbody><tr><td>Pointwise</td><td>말 1두</td><td>착순백분위 회귀</td><td>단순·빠른 기준선</td><td>경주 상대구조를 loss가 직접 모름</td></tr><tr><td>Pairwise</td><td>같은 경주의 말 2두</td><td>RankNet logistic loss</td><td>누가 앞서는지 직접 학습</td><td>전체 순서의 일관 확률을 보장하지 않음</td></tr><tr><td>Listwise</td><td>경주 전체 순서</td><td>Plackett–Luce likelihood</td><td>전체착순과 조합확률 연결</td><td>구조 가정과 완전순서 필요</td></tr><tr><td>Metric-aware</td><td>교환되는 말쌍</td><td>LambdaRank/YetiRank</td><td>NDCG 상위권에 학습 집중</td><td>출력 score는 보정확률이 아님</td></tr></tbody></table></div>
+<h3>4.1 착순을 relevance로 바꾸는 이유</h3><p>LTR 라이브러리는 큰 label을 “더 관련 있음”으로 본다. 착순은 1이 가장 좋으므로 경주 최대착순에서 실제 착순을 빼 <code>relevance=max_order−finish_order</code>로 뒤집는다. 모든 착순을 사용하므로 1등 말 binary 분류가 아니다.</p>
+<h3>4.2 경주 그룹을 쪼개면 왜 틀리는가</h3><p>말 A와 B가 같은 경주일 때만 비교가 의미 있다. A가 서울 1,200m에서 3등이고 B가 다른 날 부경 1,800m에서 2등이라는 사실만으로 B가 A보다 우수하다고 직접 pair를 만들 수 없다. 그래서 <code>race_id</code> group/qid를 학습과 평가에 전달한다.</p>
+<h3>4.3 상위 3등 지표 두 종류</h3><div class="formula">Ordered exact = 1[(예측1,예측2,예측3)=(실제1,실제2,실제3)]<br>Unordered exact = 1[{예측 top3}={실제 top3}]</div><p>첫 지표는 삼쌍승과 가까운 순서 민감 평가이고, 둘째는 삼복승과 가까운 집합 평가다. 둘은 난도가 크게 다르다.</p></section>
+
+<section id="metrics"><h2>5. 결과지표를 수식으로 읽기</h2>
+<h3>5.1 NDCG@5</h3><div class="formula">DCG@K = Σ<sub>k=1..K</sub> (2<sup>rel<sub>k</sub></sup>−1)/log<sub>2</sub>(k+1), &nbsp; NDCG@K=DCG@K/IDCG@K</div><p>앞쪽 순위를 더 크게 가중하고, 이상적인 정렬 IDCG로 나눠 경주별 0~1에 가깝게 정규화한다. @5는 상위 5두 배열에 초점을 둔다. 0.778은 “77.8% 적중률”이 아니다.</p>
+<h3>5.2 Spearman 순위상관</h3><div class="formula">ρ = corr(rank(actual quality), rank(model score))<br>동률이 없을 때 ρ = 1 − 6Σd<sub>i</sub><sup>2</sup> / [n(n<sup>2</sup>−1)]</div><p>+1이면 완전히 같은 순서, 0이면 단조 순서관계가 거의 없음, −1이면 역순이다. 프로젝트 코드는 좋은 착순이 큰 값이 되도록 <code>−finish_order</code>와 score의 상관을 경주별로 계산해 평균한다.</p>
+<h3>5.3 순위 MAE</h3><div class="formula">Rank MAE = (1/n) Σ |predicted_rank<sub>i</sub> − finish_order<sub>i</sub>|</div><p>2.44라면 말 한 두당 예측 순위가 실제 착순과 평균 약 2.44칸 차이 난다는 뜻이다. 필드 크기가 다른 경주를 그대로 평균하므로, field-size별 MAE도 함께 보는 것이 더 안전하다.</p>
+<h3>5.4 Log loss와 ΔLL</h3><div class="formula">LL = −(1/R) Σ<sub>race r</sub> log p<sub>winner(r)</sub><br>ΔLL = LL<sub>market</sub> − LL<sub>model</sub></div><p>실제 우승마에게 낮은 확률을 주면 큰 벌점을 준다. ΔLL&gt;0이면 모델 log loss가 시장보다 낮아, 우승사건 확률분포에 추가정보가 있다는 뜻이다. 수익을 직접 뜻하지 않는다.</p>
+<h3>5.5 Brier score와 calibration</h3><div class="formula">Brier = (1/N) Σ(y<sub>i</sub>−p<sub>i</sub>)²</div><p><dfn>Calibration(확률보정)</dfn>은 20%라고 예측한 집단이 장기적으로 약 20% 적중하는 성질이다. discrimination(순서를 가르는 능력)이 좋아도 calibration이 나쁘면 EDGE와 Kelly 금액이 왜곡된다.</p>
+<h3>5.6 Hit Rate</h3><p>선택한 베팅 중 적중한 비율이다. 높은 hit rate가 높은 ROI를 보장하지 않는다. 70% 적중이어도 평균 환급이 너무 낮으면 손실이고, 삼쌍승은 hit rate가 낮아도 큰 환급 한 번으로 점추정 ROI가 요동칠 수 있다.</p></section>
+
+<section id="models"><h2>6. 여섯 착순 모델 집중 학습</h2><p>모델마다 “어떤 오차를 중요하게 보는가”가 다르다. 같은 141개 피처를 넣어도 loss가 다르면 학습하는 질문이 달라진다.</p>
+    <article class="model-card" id="model-rf"><h3>6.1 Random Forest 순위 회귀</h3>
+      <p><b>핵심:</b> 서로 다른 부트스트랩 표본과 피처 부분집합으로 만든 결정나무 500개의 예측을 평균한다. 한 나무가 만든 우연한 규칙을 여러 나무의 평균으로 약화시키는 <dfn>배깅(bagging)</dfn> 모델이다.</p>
+      <div class="formula">ŷ(x) = (1/B) Σ<sub>b=1..B</sub> T<sub>b</sub>(x)</div>
+      <p><b>우리 구현:</b> 분류기가 아니다. <code>finish_percentile_target</code>을 회귀하고, 낮은 예상 착순백분위가 좋은 말이므로 평가 때 부호를 뒤집어 점수로 사용했다. 500 trees, depth 14, min leaf 8, feature fraction 0.8이다.</p>
+      <p><b>프로젝트 영향:</b> 비선형 임계값과 상호작용을 안정적인 기준선으로 제공한다. 그러나 손실이 경주 내부 NDCG나 쌍 비교를 직접 최적화하지 않으므로 “몇 등인가”의 절대 회귀 오차와 “같은 경주의 상대 순서”가 완전히 일치하지 않는다. 확률도 직접 출력하지 않는다.</p>
+      <p><b>해석 위험:</b> impurity 기반 중요도는 연속값·분할 후보가 많은 변수에 유리할 수 있고, 상관 피처 사이에서 중요도가 분산된다.</p>
+    </article>
+    <article class="model-card" id="model-xgb"><h3>6.2 XGBoost Ranker — LambdaMART 계열</h3>
+      <p><b>핵심:</b> 이전 나무의 오류 방향을 다음 나무가 보정하는 <dfn>부스팅(boosting)</dfn>이다. 경주를 query, 말을 document처럼 묶고, 말 두 마리의 순서를 바꿀 때 NDCG가 얼마나 변하는지에 비례한 가상 기울기 λ를 만든다.</p>
+      <div class="formula">F<sub>m</sub>(x) = F<sub>m-1</sub>(x) + η h<sub>m</sub>(x), &nbsp; λ<sub>ij</sub> ∝ |ΔNDCG<sub>ij</sub>| · logistic(score difference)</div>
+      <p><b>우리 구현:</b> <code>objective=rank:ndcg</code>, <code>qid=race_id</code>, NDCG@5 조기종료, 최대 2,000 rounds, 학습률 0.03, 깊이 6. 실제 선택 iteration은 448이다.</p>
+      <p><b>프로젝트 영향:</b> 상위권 순서가 틀렸을 때 더 큰 학습 신호를 주어 Top-k와 NDCG에 목적이 잘 맞는다. 최신 test에서는 top1 적중률이 여섯 모델 중 가장 높지만, 그것이 최고 NDCG나 수익을 뜻하지는 않는다. 트리 점수는 확률이 아니므로 별도 정규화·보정이 필요하다.</p>
+    </article>
+    <article class="model-card" id="model-lgb"><h3>6.3 LightGBM LambdaRank</h3>
+      <p><b>핵심:</b> 같은 LambdaRank 계열이지만, leaf-wise 방식으로 손실을 가장 많이 줄이는 잎을 우선 확장한다. 계산 효율이 높지만 작은 표본에서 깊은 국소 규칙을 만들 수 있다.</p>
+      <p><b>우리 구현:</b> 경주별 group size를 명시하고 graded relevance를 학습했다. learning rate 0.03, leaves 127, min leaf 35, feature/bagging fraction 0.8, truncation level 16, 최대 3,000 rounds, 실제 best iteration 54이다.</p>
+      <p><b>프로젝트 영향:</b> 학습·재학습 속도가 빨라 피처 실험과 기준선에 유리하다. 최신 test의 상위 3두 “순서까지 완전일치”는 여섯 모델 중 가장 높았지만 1.76%로 절대 수준은 낮고, unordered top3와 NDCG@5는 최고가 아니었다. 한 지표만 보고 최고 모델로 고르면 목적이 바뀐다.</p>
+    </article>
+    <article class="model-card" id="model-cat"><h3>6.4 CatBoost YetiRankPairwise</h3>
+      <p><b>핵심:</b> 경주 그룹 안에서 자동 생성된 말 쌍과 순위 metric 근사를 사용해 pairwise ranking을 학습하는 gradient boosting 모델이다. 이름의 “Cat” 때문에 이번 실행에서 원문자열을 직접 처리했다고 오해하면 안 된다.</p>
+      <p><b>우리 구현:</b> 입력은 이미 숫자화된 141피처다. <code>loss=YetiRankPairwise</code>, <code>eval=NDCG:top=5</code>, depth 7, learning rate 0.03, 최대 2,500 iterations, 실제 best iteration 767이다.</p>
+      <p><b>프로젝트 영향:</b> 검증 NDCG@5 1위라 사전에 주모델로 선택됐고 test NDCG@5도 1위였다. 즉 “경주 상위권 전체 배열 품질”의 대표 모델이다. 다만 test top1, ordered/unordered top3 모두 단독 1위는 아니다. 모델 선택의 기준과 사용 목적을 반드시 연결해야 한다.</p>
+    </article>
+    <article class="model-card" id="model-ranknet"><h3>6.5 Deep RankNet 앙상블</h3>
+      <p><b>핵심:</b> 같은 경주의 두 말 i,j에 대해 실제로 i가 앞서면 점수차 s<sub>i</sub>−s<sub>j</sub>가 양수가 되도록 학습한다.</p>
+      <div class="formula">P(i ≻ j) = σ(s<sub>i</sub>−s<sub>j</sub>), &nbsp; L<sub>ij</sub> = log(1 + exp(−y<sub>ij</sub>(s<sub>i</sub>−s<sub>j</sub>)))</div>
+      <p><b>우리 구현:</b> 141→256→128→1 MLP, BatchNorm, GELU, dropout 0.20, AdamW, 60 epochs 이내 조기종료. 서로 다른 seed 3개를 학습해 점수를 평균했다. 동률을 제외한 경주 내 모든 쌍을 사용했다.</p>
+      <p><b>프로젝트 영향:</b> 복잡한 연속 상호작용을 트리와 다른 형태로 학습해 모델 다양성을 준다. 최신 test에서 unordered top3 정확도가 7.79%로 최고였다. 반면 pairwise loss는 모든 쌍을 비슷하게 다루므로 상위 3두의 정확한 순서나 확률보정을 직접 보장하지 않는다.</p>
+    </article>
+    <article class="model-card" id="model-pl"><h3>6.6 Plackett–Luce Neural — listwise 전체착순</h3>
+      <p><b>핵심:</b> 1착을 전체 말 중 먼저 선택하고, 남은 말에서 2착을 선택하는 식으로 전체 순서의 확률을 곱한다. 점수 s에 exp를 적용한 strength를 쓴다.</p>
+      <div class="formula">P(π) = Π<sub>k=1..n−1</sub> exp(s<sub>πk</sub>) / Σ<sub>j=k..n</sub> exp(s<sub>πj</sub>)</div>
+      <p><b>우리 구현:</b> RankNet과 같은 256→128 신경망이지만 loss는 전체 Plackett–Luce 음의 로그우도다. 완전한 1..N 착순 경주 3,125개만 학습하고 33개 비엄격 순서 경주는 제외했다.</p>
+      <p><b>프로젝트 영향:</b> 전체 순서에 일관된 확률 모형을 제공해 exacta·trifecta 같은 순서형 조합 확률로 연결하기 자연스럽다. 그러나 기본 PL의 <dfn>IIA</dfn> 가정—두 말의 상대 선택비가 다른 말의 존재와 무관—은 pace 충돌이 강한 경마에서 틀릴 수 있다. 신경망 점수와 입력 상호작용만으로 이 구조적 가정이 사라지지는 않는다.</p>
+    </article>
+<div class="callout warn"><b>중요:</b> 모델의 복잡성이 높다는 이유로 더 우수한 것이 아니다. CatBoost는 NDCG, RankNet은 unordered top3, LightGBM은 ordered top3에서 각각 다른 장점을 보였다. 배팅용 최종 확률은 순위지표뿐 아니라 log loss·calibration·OOS 정책검증까지 통과해야 한다.</div></section>
+
+<section id="market-anchor"><h2>7. Benter·시장 앵커·Base Margin</h2>
+<h3>7.1 앵커(anchor)란</h3><p><dfn>앵커</dfn>는 모델이 처음부터 시장 전체를 다시 예측하지 않고 시장확률을 출발점으로 삼는 것이다. 시장은 기수·마필·정보·대중 판단을 이미 압축한 강한 기준선이다. 모델의 역할은 시장을 대체하는 것이 아니라 시장이 체계적으로 틀리는 잔차를 찾는 것이다.</p>
+<h3>7.2 조건부 로짓 결합</h3><div class="formula">η<sub>ri</sub> = α log(q<sub>ri</sub>) + βᵀx<sub>ri</sub>, &nbsp; p<sub>ri</sub>=softmax<sub>race r</sub>(η<sub>ri</sub>)</div><p>α가 시장 신호의 온도를 조절하고 β가 비시장 피처의 선형 보정을 담당한다. “배당을 일반 피처에 넣는다”와 달리 시장항의 역할이 식에 명시되어 있다.</p>
+<h3>7.3 Base Margin boosting</h3><p><dfn>Base Margin</dfn>은 boosting의 초기 raw score를 <code>log(q)</code>로 고정하는 방식이다. 첫 예측이 시장확률이고, 각 나무가 residual correction을 더한다.</p>
+<div class="formula">η<sup>(0)</sup><sub>ri</sub>=log q<sub>ri</sub><br>p<sup>(m)</sup>=softmax(η<sup>(m)</sup>)<br>g<sub>ri</sub>=y<sub>ri</sub>−p<sub>ri</sub>, &nbsp; h<sub>ri</sub>=p<sub>ri</sub>(1−p<sub>ri</sub>)<br>w<sub>leaf</sub>=Σg/(Σh+λ), &nbsp; η<sup>(m+1)</sup>=η<sup>(m)</sup>+learning_rate·w<sub>leaf</sub></div>
+<p>우리 구현은 validation에서 tree 수를 고르고, v11 Base Margin은 188 trees가 선택됐다. test ΔLL은 +0.013083, 일자 블록 95% CI [+0.006614,+0.019647]였다. 따라서 해당 기간의 확률정보 개선은 확인됐지만, 동일 실행의 7승식 수익은 모두 미확인이다.</p>
+<h3>7.4 Benter 방식과 “같다”의 정확한 범위</h3><p>Benter 논문이 강조한 원리는 (1) 경주 내 합 1인 기본 확률모형, (2) public probability와 fundamental information의 결합, (3) unseen race 평가, (4) 가치와 자금배분이다. 우리 시장 앵커는 이 원리를 현대적인 boosting/conditional-logit으로 구현한 <b>관련 방식</b>이다. Benter의 원래 데이터·계수·홍콩 pool 운영을 그대로 복제한 것은 아니다.</p></section>
+
+<section id="edge"><h2>8. EDGE의 정확한 의미와 계산</h2>
+<h3>8.1 확률 EDGE</h3><div class="formula">EDGE<sub>prob</sub> = p<sub>model</sub> − q<sub>market</sub></div><p>모델이 18%, 시장이 12%라면 +6%p다. 이는 “6% 수익”이 아니다.</p>
+<h3>8.2 기대수익 EDGE</h3><div class="formula">EV per 1 unit = p·O − 1</div><p>decimal odds 8.0, p=0.18이면 EV=0.18×8−1=+0.44다. 그러나 p의 오차, 최종 배당 변동, 베팅한도, 동시 조합 의존성은 이 한 식에 없다.</p>
+<h3>8.3 실제 적중 EDGE</h3><div class="formula">realized edge = return − 1, &nbsp; return = dividend if hit else 0</div><p>개별 베팅의 realized edge는 0/대형환급으로 매우 거칠다. 그래서 predicted EDGE와 realized return의 Spearman, bin별 calibration, 여러 경주를 묶은 ROI와 신뢰구간을 본다.</p>
+<h3>8.4 피처가 EDGE에 미치는 영향</h3><p>단순 착순 중요도를 EDGE 중요도라고 부르면 안 된다. EDGE 영향은 시장 앵커 모델의 잔차수정 <code>f(x)</code> 또는 <code>p_model−q</code>를 설명하는 SHAP/importance로 계산해야 한다. 즉 “왜 이 말이 빠른가”와 “왜 시장보다 높게 평가했는가”는 다른 질문이다.</p>
+<div class="formula">EDGE contribution of feature j ≈ p(η+φ<sub>j</sub>) − p(η) &nbsp; (다른 말 softmax까지 함께 변함)</div><p>경주 softmax 때문에 한 말의 피처 기여는 그 말만의 독립 변화가 아니다. 한 말의 score 상승은 같은 경주의 다른 말 확률을 낮춘다.</p></section>
+
+<section id="bets"><h2>9. 일곱 승식과 조합확률</h2>
+<div class="table-wrap"><table class=""><thead><tr><th>승식</th><th>적중 사건</th><th>순서</th><th>확률 계산의 핵심</th></tr></thead><tbody><tr><td>단승</td><td>선택 말 1착</td><td>해당 없음</td><td>p(i wins)</td></tr><tr><td>연승</td><td>선택 말이 지급권 내 착순</td><td>무관</td><td>필드·지급규칙별 place 확률</td></tr><tr><td>복승</td><td>선택 2두가 1·2착</td><td>무관</td><td>P(i,j)+P(j,i)</td></tr><tr><td>쌍승</td><td>i 1착, j 2착</td><td>중요</td><td>P(i,j)</td></tr><tr><td>삼복승</td><td>선택 3두가 1·2·3착</td><td>무관</td><td>6개 순열 확률 합</td></tr><tr><td>삼쌍승</td><td>i,j,k가 정확히 1·2·3착</td><td>중요</td><td>P(i,j,k)</td></tr><tr><td>복연승</td><td>선택 2두가 모두 지급권 내</td><td>무관</td><td>두 말의 공동 place 사건</td></tr></tbody></table></div>
+<h3>9.1 Plackett–Luce/Harville 순차확률</h3><div class="formula">P(i 1착, j 2착) = p<sub>i</sub> · p<sub>j</sub>/(1−p<sub>i</sub>)<br>P(i,j,k) = p<sub>i</sub> · p<sub>j</sub>/(1−p<sub>i</sub>) · p<sub>k</sub>/(1−p<sub>i</sub>−p<sub>j</sub>)</div><p>무순서 승식은 가능한 순열을 합한다. 몬테카를로는 이 순차선택을 수천 번 반복해 사건 빈도로 조합확률을 근사한다.</p>
+<h3>9.2 조합 EDGE에 필요한 데이터</h3><p>조합확률만 있어서는 부족하다. 실제 베팅 가능한 시점의 <b>각 조합별 시장 배당 또는 pool snapshot</b>이 있어야 <code>p_combo−q_combo</code>와 Kelly를 계산할 수 있다. 최신 자료는 당첨 조합의 공식 환급 검증에는 강하지만, 패배한 모든 조합의 사전 배당이 완전하지 않아 일부 복합승식 분석은 “모형확률/실현환급 백테스트”이지 완전한 실시간 조합 EDGE 검증이 아니다.</p></section>
+
+<section id="backtest"><h2>10. 백테스트·ROI·Kelly·위험</h2>
+<h3>10.1 ROI</h3><div class="formula">ROI = (총환급−총베팅액)/총베팅액 = Σ(return−stake)/Σstake</div><p>ROI +10%는 베팅액 100원당 평균 10원이 남았다는 표본 결과다. 미래 기대수익이 +10%라고 확정하는 문장이 아니다.</p>
+<h3>10.2 MDD와 Sharpe</h3><div class="formula">MDD = max<sub>t</sub>((peak equity before t − equity<sub>t</sub>)/peak equity)<br>Sharpe ≈ mean(period returns)/std(period returns) × annualization</div><p><dfn>MDD(Max Drawdown)</dfn>는 과거 고점에서 최대 몇 % 하락했는지다. <dfn>Sharpe Ratio</dfn>는 평균수익을 변동성으로 나눈 위험조정 수익이다. 베팅의 비정규·두꺼운 꼬리에서는 Sharpe만으로 안전성을 말하면 안 된다.</p>
+<h3>10.3 Kelly Criterion</h3><div class="formula">b=O−1, &nbsp; f*=(bp−(1−p))/b = (pO−1)/(O−1)</div><p><dfn>Kelly</dfn>는 장기 로그자산 성장률을 최대화하는 이론적 비중이다. 확률이 정확하다는 가정에 민감하므로 실무에서는 1/2, 1/4 Kelly와 상한을 둔다. pO≤1이면 f*≤0이므로 베팅하지 않는다.</p>
+<h3>10.4 왜 validation에서 정책을 잠가야 하나</h3><p>EDGE 상위 10%, 20%, 30%, odds 8–15배 등 수많은 조합을 test에서 모두 보고 가장 좋은 것만 고르면 test가 사실상 학습자료가 된다. 임계값과 모델은 validation에서 고정하고 test에서는 한 번만 평가해야 한다.</p>
+<h3>10.5 30% 이상 ROI 경보</h3><p>큰 ROI는 좋은 소식일 수 있지만, 먼저 (1) 결과/최종 pool 누수, (2) 한두 건의 대형환급 의존, (3) 다중비교, (4) 축퇴·오류 배당, (5) 시장충격·베팅한도 미반영을 확인한다.</p></section>
+
+<section id="statistics"><h2>11. OOS·검증·신뢰구간</h2>
+<h3>11.1 OOS란 무엇인가</h3><p><dfn>OOS(Out-of-Sample, 표본외)</dfn>는 모델의 파라미터·전처리·피처선택·임계값 결정에 쓰지 않은 데이터에서 측정한 결과다. train을 안 썼다는 뜻만이 아니라, 선택 과정 전체에서 보지 않았어야 한다.</p>
+<div class="table-wrap"><table class=""><thead><tr><th>구간</th><th>하는 일</th><th>허용되는 결정</th><th>금지</th></tr></thead><tbody><tr><td>Train</td><td>모델 학습</td><td>전처리 fit, 피처 생성, 모델 fit</td><td>valid/test 결과 사용</td></tr><tr><td>Validation</td><td>모델·온도·임계값 선택</td><td>best iteration, 정책 잠금</td><td>여러 번 보고 test에 맞춰 재선택</td></tr><tr><td>Test</td><td>최종 OOS 평가</td><td>고정 정책 실행</td><td>test 최고셀을 새 전략으로 선택</td></tr><tr><td>Future untouched</td><td>재현성 확인</td><td>사전등록 전략 1회 검증</td><td>이전 test 재사용을 pristine이라 부르기</td></tr></tbody></table></div>
+<h3>11.2 현재 test를 어떻게 불러야 하나</h3><p>v11 test는 원래 시간순 OOS였지만 지금까지 여러 후속 분석에서 반복 열람했다. 따라서 개별 실행의 산술은 test 결과이지만, 프로젝트 전체 관점에서는 더 이상 완전히 untouched한 최종확인 표본이라고 부르기 어렵다. 다음 강한 결론은 2026-08-09 이후 새 경주 블록에서 확인해야 한다.</p>
+<h3>11.3 95% 신뢰구간</h3><p>동일한 데이터 생성과 표본추출 과정을 반복했을 때 이 방식으로 만든 구간의 약 95%가 참 모수를 포함하도록 설계된 범위다. “참값이 이 구간 안에 있을 확률 95%”라는 베이지안 문장과는 다르다.</p>
+<div class="formula">ROI 95% CI = daily-block bootstrap quantile<sub>2.5%,97.5%</sub>(ROI*)</div><p>경마 베팅은 같은 날의 주로·시장상태가 함께 움직일 수 있어 행 단위보다 일자 블록 bootstrap이 적절하다. ROI CI가 [−46%, +74%]면 점추정이 양수여도 손실과 큰 이익을 모두 배제하지 못하므로 “95% 수준에서 수익 확인 안 됨”이라고 쓴다.</p>
+<h3>11.4 다중비교</h3><p>7승식×6모델×여러 EDGE 구간을 동시에 시험하면 우연한 최고값이 반드시 커진다. FDR, Bonferroni, White's Reality Check, PBO 같은 보정·과적합 진단이 필요하다. 가장 좋은 셀의 단일 CI만 제시하면 선택편향이 남는다.</p></section>
+
+<section id="xai"><h2>12. 피처 중요도와 XAI</h2>
+<h3>12.1 중요도는 인과효과가 아니다</h3><p><dfn>Feature Importance</dfn>는 모델이 예측할 때 해당 피처에 얼마나 의존했는지를 요약한다. “이 값을 바꾸면 실제 착순이 그만큼 변한다”는 인과주장이 아니다.</p>
+<h3>12.2 방법별 차이</h3><div class="table-wrap"><table class=""><thead><tr><th>방법</th><th>무엇을 재나</th><th>장점</th><th>주의</th></tr></thead><tbody><tr><td>Tree impurity</td><td>분할로 줄인 불순도</td><td>빠름</td><td>연속·고카디널리티 편향</td></tr><tr><td>Gain</td><td>분할 손실감소 합</td><td>부스팅과 자연스러움</td><td>상관 피처에 분산</td></tr><tr><td>Input weight</td><td>신경망 첫 층 절대가중치</td><td>간단</td><td>스케일·뒤층 상호작용 무시</td></tr><tr><td>Permutation</td><td>피처를 섞었을 때 성능하락</td><td>모델 불문</td><td>상관 피처에서 과소평가 가능</td></tr><tr><td>SHAP</td><td>기준예측 대비 국소 기여</td><td>개별 말 설명</td><td>조건부/상관 해석 주의</td></tr></tbody></table></div>
+<h3>12.3 최신 CatBoost 착순 중요도 상위</h3><div class="table-wrap"><table class=""><thead><tr><th>순위</th><th>피처</th><th>중요도</th></tr></thead><tbody><tr><td>1</td><td><code>hr_last_finpct</code></td><td>22.03%</td></tr><tr><td>2</td><td><code>clinic_30d</code></td><td>10.26%</td></tr><tr><td>3</td><td><code>age__pr</code></td><td>7.87%</td></tr><tr><td>4</td><td><code>rating__z</code></td><td>7.72%</td></tr><tr><td>5</td><td><code>hr_plcrate</code></td><td>7.33%</td></tr><tr><td>6</td><td><code>jk_plcrate</code></td><td>5.18%</td></tr><tr><td>7</td><td><code>tr_plcrate</code></td><td>3.02%</td></tr><tr><td>8</td><td><code>chulNo</code></td><td>2.89%</td></tr><tr><td>9</td><td><code>hr_rest_days</code></td><td>2.88%</td></tr><tr><td>10</td><td><code>wg_diff__pr</code></td><td>2.45%</td></tr><tr><td>11</td><td><code>ilsu</code></td><td>1.96%</td></tr><tr><td>12</td><td><code>wg</code></td><td>1.62%</td></tr><tr><td>13</td><td><code>wg_diff</code></td><td>1.30%</td></tr><tr><td>14</td><td><code>rating</code></td><td>1.28%</td></tr><tr><td>15</td><td><code>tr_winrate__z</code></td><td>1.24%</td></tr></tbody></table></div>
+<p><code>hr_last_finpct</code>가 높다고 그 피처가 “EDGE 원인 1위”인 것은 아니다. 이 표는 착순 ranker 중요도다. EDGE 원인은 시장앵커의 residual correction 또는 시장대비 확률차를 대상으로 다시 계산해야 한다.</p>
+<h3>12.4 SHAP을 읽는 절차</h3><ol><li>어떤 출력—착순 score, win probability, market residual—을 설명하는지 확인한다.</li><li>global mean |SHAP|와 특정 말 local SHAP을 구분한다.</li><li>부호가 확률에 미치는 영향은 경주 softmax 안에서 다시 계산한다.</li><li>상관 피처를 묶어 안정성을 비교한다.</li><li>시간·경마장·배당구간별로 방향이 반복되는지 확인한다.</li></ol></section>
+
+<section id="results"><h2>13. 최신 결과를 직접 읽기</h2>
+<h3>13.1 착순 모델 test 결과</h3><div class="table-wrap"><table class=""><thead><tr><th>모델</th><th>NDCG@5 ↑</th><th>Spearman ↑</th><th>Rank MAE ↓</th><th>Top1</th><th>Top3 순서완전</th><th>Top3 집합완전</th></tr></thead><tbody><tr><td>CatBoost YetiRank</td><td>0.7780</td><td>0.4553</td><td>2.4400</td><td>30.07%</td><td>1.39%</td><td>7.24%</td></tr><tr><td>Deep RankNet</td><td>0.7752</td><td>0.4450</td><td>2.4671</td><td>31.17%</td><td>1.58%</td><td>7.79%</td></tr><tr><td>XGBoost Ranker</td><td>0.7732</td><td>0.4366</td><td>2.4918</td><td>31.54%</td><td>1.48%</td><td>7.33%</td></tr><tr><td>Plackett-Luce Neural</td><td>0.7719</td><td>0.4368</td><td>2.4818</td><td>29.07%</td><td>1.58%</td><td>7.42%</td></tr><tr><td>Random Forest</td><td>0.7684</td><td>0.4280</td><td>2.5118</td><td>30.44%</td><td>1.21%</td><td>7.33%</td></tr><tr><td>LightGBM LambdaRank</td><td>0.7685</td><td>0.4206</td><td>2.5385</td><td>30.35%</td><td>1.76%</td><td>6.86%</td></tr></tbody></table></div>
+<p class="small">평가 가능 경주는 모델 표에서 1,094경주다. 전체 test 1,101경주와 다른 이유는 착순 0/결측 경주 7개를 경주 전체로 제외했기 때문이다. exact top3는 완전 1..N 착순 1,078경주에서 계산됐다.</p>
+<h3>13.2 검증에서 잠근 7승식 정책의 test 결과</h3><div class="table-wrap"><table class=""><thead><tr><th>승식</th><th>검증선택 모델</th><th>정책</th><th>베팅</th><th>적중률</th><th>ROI</th><th>일자블록 95% CI</th><th>수익확인</th></tr></thead><tbody><tr><td>단승</td><td>Random Forest</td><td>top_10pct_edge</td><td>108</td><td>16.67%</td><td>-3.06%</td><td>[-51.28%, 53.23%]</td><td><span class="muted">미확인</span></td></tr><tr><td>연승</td><td>XGBoost Ranker</td><td>top_10pct_edge</td><td>103</td><td>45.63%</td><td>1.26%</td><td>[-26.41%, 29.55%]</td><td><span class="muted">미확인</span></td></tr><tr><td>복승</td><td>Random Forest</td><td>positive_edge</td><td>685</td><td>9.20%</td><td>-17.65%</td><td>[-41.32%, 9.54%]</td><td><span class="muted">미확인</span></td></tr><tr><td>쌍승</td><td>Random Forest</td><td>positive_edge</td><td>688</td><td>5.09%</td><td>-18.04%</td><td>[-51.42%, 25.37%]</td><td><span class="muted">미확인</span></td></tr><tr><td>삼복승</td><td>XGBoost Ranker</td><td>top_30pct_edge</td><td>324</td><td>4.63%</td><td>-24.54%</td><td>[-65.81%, 26.54%]</td><td><span class="muted">미확인</span></td></tr><tr><td>삼쌍승</td><td>Random Forest</td><td>positive_edge</td><td>752</td><td>0.53%</td><td>-66.52%</td><td>[-95.66%, -21.89%]</td><td><span class="muted">미확인</span></td></tr><tr><td>복연승</td><td>LightGBM LambdaRank</td><td>top_10pct_edge</td><td>108</td><td>9.26%</td><td>-53.61%</td><td>[-81.22%, -20.80%]</td><td><span class="muted">미확인</span></td></tr></tbody></table></div>
+<p>수익확인 열이 전부 미확인이다. 일부 ROI 점추정이 양수인 별도 모델/셀도 있었지만, test를 본 뒤 선택한 최고값은 사전 고정 전략의 증거가 아니다.</p>
+<h3>13.3 시장 앵커의 확률정보</h3><div class="table-wrap"><table class=""><thead><tr><th>모델</th><th>test 경주</th><th>시장 LL</th><th>모델 LL</th><th>ΔLL</th><th>95% CI</th></tr></thead><tbody><tr><td>시장 앵커 조건부 로짓</td><td>1101</td><td>1.793694</td><td>1.779720</td><td>0.013974</td><td>[0.002318, 0.025063]</td></tr><tr><td>시장 앵커 Base Margin</td><td>1101</td><td>1.793694</td><td>1.780611</td><td>0.013083</td><td>[0.006614, 0.019647]</td></tr><tr><td>두 시장 앵커 앙상블</td><td>1101</td><td>1.793694</td><td>1.776500</td><td>0.017194</td><td>[0.009507, 0.025014]</td></tr></tbody></table></div>
+<p>Base Margin과 앙상블은 ΔLL CI 하한이 양수다. 시장확률보다 실제 우승마에 더 높은 확률을 배분하는 정보가 평균적으로 있었음을 지지한다.</p>
+<h3>13.4 시장 앵커의 베팅 결과</h3><div class="table-wrap"><table class=""><thead><tr><th>승식</th><th>모델</th><th>정책</th><th>베팅</th><th>적중률</th><th>ROI</th><th>95% CI</th><th>수익확인</th></tr></thead><tbody><tr><td>단승</td><td>시장 앵커 Base Margin</td><td>top_10pct_edge</td><td>108</td><td>41.67%</td><td>-14.54%</td><td>[-35.54%, 6.77%]</td><td>미확인</td></tr><tr><td>연승</td><td>시장 앵커 Base Margin</td><td>top_10pct_edge</td><td>101</td><td>73.27%</td><td>-7.52%</td><td>[-17.01%, 2.38%]</td><td>미확인</td></tr><tr><td>복승</td><td>두 시장 앵커 앙상블</td><td>top_10pct_edge</td><td>108</td><td>31.48%</td><td>39.72%</td><td>[-3.30%, 84.45%]</td><td>미확인</td></tr><tr><td>쌍승</td><td>두 시장 앵커 앙상블</td><td>top_10pct_edge</td><td>108</td><td>19.44%</td><td>16.76%</td><td>[-31.05%, 67.62%]</td><td>미확인</td></tr><tr><td>삼복승</td><td>시장 앵커 Base Margin</td><td>top_20pct_edge</td><td>216</td><td>15.74%</td><td>-7.69%</td><td>[-39.63%, 26.52%]</td><td>미확인</td></tr><tr><td>삼쌍승</td><td>시장 앵커 Base Margin</td><td>top_10pct_edge</td><td>108</td><td>4.63%</td><td>-32.96%</td><td>[-86.74%, 32.35%]</td><td>미확인</td></tr><tr><td>복연승</td><td>두 시장 앵커 앙상블</td><td>top_10pct_edge</td><td>108</td><td>48.15%</td><td>15.93%</td><td>[-5.85%, 39.13%]</td><td>미확인</td></tr></tbody></table></div>
+<p>확률개선이 수익확정으로 이어지지 않았다. 이 차이가 프로젝트의 가장 중요한 현재 학습결과다.</p>
+<h3>13.5 8–15배 가설</h3><p>과거 관찰을 버리지 않고 v11에서 재검증했다. validation에서 Base Margin EDGE 상위 5%의 절대 임계값 0.0188698을 잠근 뒤, test 8–15배 말에 적용한 결과 94건 ROI +9.79%, 일자블록 95% CI [−46.31%, +74.21%]였다. 시장확률 상위 5% 동수 대조군은 −12.45%였지만, 전략 ROI의 불확실성이 커 수익전략으로 확정할 수 없다.</p></section>
+
+<section id="model-impact"><h2>14. 모델이 프로젝트에 미친 영향</h2>
+<div class="table-wrap"><table class=""><thead><tr><th>모델/층</th><th>프로젝트에서 답하는 질문</th><th>실제 기여</th><th>현재 한계</th></tr></thead><tbody><tr><td>Random Forest</td><td>단순 비선형 기준선이 어디까지 가나?</td><td>안정적 benchmark, 일부 승식 정책 선택</td><td>race-aware loss 아님</td></tr><tr><td>XGBoost Ranker</td><td>상위 NDCG를 트리로 직접 높일 수 있나?</td><td>test top1 최고</td><td>확률 직접 출력 아님</td></tr><tr><td>LightGBM LambdaRank</td><td>빠른 metric-aware 실험이 가능한가?</td><td>ordered top3 최고</td><td>unordered/NDCG 최고 아님</td></tr><tr><td>CatBoost YetiRank</td><td>상위권 배열 대표모델은?</td><td>valid/test NDCG@5 최고</td><td>수익 최고를 보장 안 함</td></tr><tr><td>Deep RankNet</td><td>쌍 비교와 비선형 상호작용이 도움 되나?</td><td>unordered top3 최고, 모델 다양성</td><td>pair loss와 top-k/확률 불일치</td></tr><tr><td>PL Neural</td><td>전체 순서확률로 조합승식 연결 가능한가?</td><td>listwise likelihood 제공</td><td>IIA, complete order 제한</td></tr><tr><td>조건부 로짓 앵커</td><td>시장에 선형 잔차가 있나?</td><td>해석 가능한 시장보정</td><td>복잡한 잔차 한계</td></tr><tr><td>Base Margin</td><td>시장에 비선형 잔차가 있나?</td><td>ΔLL 양수 CI 확인</td><td>ROI 미확인, 과적합 통제 필요</td></tr><tr><td>앙상블</td><td>서로 다른 오류를 평균하면 개선되나?</td><td>test ΔLL 최고</td><td>구성·가중치도 validation에서 잠가야 함</td></tr></tbody></table></div>
+<h3>14.1 “최고 모델”은 질문마다 다르다</h3><ul><li>상위 5두 전체 배열: CatBoost YetiRank.</li><li>우승마 1두 적중: XGBoost가 test 최고지만 test 기반 사후선택임을 명시해야 한다.</li><li>Top3 집합: Deep RankNet.</li><li>Top3 정확한 순서: LightGBM.</li><li>시장보다 확률정보: 시장 앵커 앙상블/Base Margin.</li><li>검증된 수익: 현재 없음.</li></ul>
+<h3>14.2 다음 모델 연구의 우선순위</h3><ol><li>새 untouched 시간블록 전까지 구조를 더 복잡하게 만들기보다 사전등록할 모델·정책 수를 줄인다.</li><li>시장앵커의 잔차를 경마장·배당 8–15·pace conflict별로 train/validation에서만 모델링한다.</li><li>복합승식은 조합별 pre-race odds/pool을 확보한 뒤 실제 EDGE를 계산한다.</li><li>확률 calibration과 tail calibration을 rank metric과 별도 목적함수로 점검한다.</li><li>Kelly는 확률 오차를 반영한 shrinkage/fractional Kelly로 제한한다.</li></ol></section>
+
+<section id="workflow"><h2>15. 보고서를 읽는 실전 절차</h2>
+<ol><li><b>데이터 신원:</b> 경로·SHA-256·기간·경마장·행/경주 수를 확인한다.</li><li><b>피처 시간:</b> 각 피처가 베팅시점 이전에 알 수 있었는지 묻는다.</li><li><b>분할:</b> train&lt;valid&lt;test인지, race_id 중복이 없는지 확인한다.</li><li><b>학습 질문:</b> 회귀·pairwise·listwise·시장잔차 중 무엇을 최적화했는지 본다.</li><li><b>확률:</b> score를 probability로 어떻게 바꿨고 합 1 검사를 했는지 본다.</li><li><b>선택:</b> 모델·임계값·승식이 validation에서 잠겼는지 본다.</li><li><b>결과:</b> 점추정뿐 아니라 CI·MDD·Sharpe·표본 수·최고환급 의존을 본다.</li><li><b>시장비교:</b> 같은 경주·같은 베팅 수·같은 기간의 대조군인지 본다.</li><li><b>한계:</b> 패배 조합의 사전배당, 시장충격, test 재사용 여부를 확인한다.</li><li><b>결론 문장:</b> “개선 확인”, “수익 미확인”, “배치 가능”을 섞지 않는다.</li></ol>
+<div class="callout note"><b>3문장 보고 규칙:</b> ① 무엇을 어떤 OOS에서 측정했는가. ② 점추정과 불확실성은 얼마인가. ③ 그래서 어떤 주장까지 가능하고 무엇은 아직 불가능한가.</div></section>
+
+<section id="exercises"><h2>16. 계산 연습과 해설</h2>
+<h3>문제 1 — 시장확률</h3><p>세 말의 decimal odds가 2, 4, 8이라면 정규화 시장확률은?</p><details><summary>해설 보기</summary><p>역수는 0.5, 0.25, 0.125, 합 0.875다. 따라서 q=(0.5714, 0.2857, 0.1429). 단순 1/odds를 그대로 쓰지 않고 경주 내 정규화한다.</p></details>
+<h3>문제 2 — EDGE와 EV</h3><p>시장 q=12%, 모델 p=18%, odds=8이면?</p><details><summary>해설 보기</summary><p>확률 EDGE는 +6%p. EV는 0.18×8−1=+0.44. 그러나 p가 정확하다는 가정하의 기대값이며, 표본 ROI가 아니다.</p></details>
+<h3>문제 3 — ΔLL</h3><p>시장 LL=1.793694, 모델 LL=1.780611이면 ΔLL은?</p><details><summary>해설 보기</summary><p>1.793694−1.780611=+0.013083. 양수이므로 모델이 낮은 loss다. ROI에 대해서는 아무 계산도 하지 않았으므로 수익결론은 못 낸다.</p></details>
+<h3>문제 4 — Top3</h3><p>실제 [A,B,C], 예측 [B,A,C]면 ordered/unordered exact는?</p><details><summary>해설 보기</summary><p>ordered=0, unordered=1. 세 말 집합은 같지만 순서가 다르다.</p></details>
+<h3>문제 5 — 신뢰구간</h3><p>ROI +9.79%, 95% CI [−46.31%,+74.21%]를 어떻게 쓰나?</p><details><summary>해설 보기</summary><p>“표본 점추정은 +9.79%였으나 구간이 0과 큰 손실을 포함해 95% 수준의 양의 수익은 확인되지 않았다.”라고 쓴다.</p></details>
+<h3>문제 6 — 모델 선택</h3><p>CatBoost NDCG가 최고면 그 모델로 무조건 베팅해야 하나?</p><details><summary>해설 보기</summary><p>아니다. NDCG는 배열 품질이다. 확률보정, 시장대비 ΔLL, 승식별 OOS EV/ROI, 위험지표를 별도 통과해야 한다.</p></details></section>
+
+<section id="glossary"><h2>17. 생소한 용어 사전</h2><dl class="term-grid">
+<dt>OOS</dt><dd>Out-of-Sample, 표본외. 모델·전처리·선택에 사용하지 않은 데이터에서의 평가.</dd>
+<dt>Validation</dt><dd>검증구간. 모델, best iteration, 온도, EDGE 임계값 등 운영 선택을 정하는 데이터.</dd>
+<dt>Test</dt><dd>검증에서 결정한 정책을 최종 평가하는 데이터. 반복해서 선택에 쓰면 더 이상 pristine test가 아니다.</dd>
+<dt>Untouched</dt><dd>선택 과정에서 한 번도 결과를 보지 않은 상태. “파일을 수정하지 않았다”와 다른 뜻이다.</dd>
+<dt>Baseline</dt><dd>새 방법이 실제로 나은지 비교하는 기준선. 이 프로젝트의 강한 baseline은 시장확률이다.</dd>
+<dt>Anchor</dt><dd>앵커. 시장확률을 출발점으로 고정하고 모델이 잔차만 보정하는 구조.</dd>
+<dt>Base Margin</dt><dd>부스팅 초기 raw score. 여기서는 <code>log(q)</code>를 초기값으로 사용한다.</dd>
+<dt>ΔLL</dt><dd>Delta Log Loss. 시장 LL−모델 LL. 양수면 모델 확률정보가 시장보다 좋다.</dd>
+<dt>Likelihood</dt><dd>우도. 주어진 모델·파라미터가 실제 관측결과에 부여한 확률의 곱.</dd>
+<dt>Log loss</dt><dd>실제 발생 사건에 준 확률의 음의 로그. 틀린 확신을 크게 벌한다.</dd>
+<dt>Objective</dt><dd>목적함수. 학습 알고리즘이 줄이거나 늘리도록 설계된 수학적 목표.</dd>
+<dt>Loss</dt><dd>손실함수. 예측이 정답에서 얼마나 나쁜지 나타내는 값. 평가 metric과 같을 수도, 근사일 수도 있다.</dd>
+<dt>Gradient</dt><dd>기울기. 파라미터를 어느 방향으로 바꾸면 loss가 늘거나 줄지 나타내는 미분값.</dd>
+<dt>Hessian</dt><dd>2차 미분 정보. 기울기의 변화율로 Newton형 업데이트 크기를 안정화한다.</dd>
+<dt>Boosting</dt><dd>이전 약한 모델의 오류를 다음 모델이 순차 보정하는 앙상블 방식.</dd>
+<dt>Bagging</dt><dd>다른 표본으로 병렬 학습한 모델을 평균해 분산을 줄이는 방식.</dd>
+<dt>Ensemble</dt><dd>여러 모델을 결합한 예측. 서로 다른 오류가 상쇄될 때 유리하다.</dd>
+<dt>Hyperparameter</dt><dd>학습 전에 정하는 설정. depth, learning rate, tree 수 등. validation에서 선택한다.</dd>
+<dt>Early stopping</dt><dd>validation 성능이 일정 기간 개선되지 않으면 학습을 멈춰 과적합을 줄이는 절차.</dd>
+<dt>Regularization</dt><dd>복잡한 모델에 벌점을 주거나 dropout 등을 써 과적합을 억제하는 방법.</dd>
+<dt>Query/QID</dt><dd>LTR의 비교 그룹 식별자. 이 프로젝트에서는 <code>race_id</code>.</dd>
+<dt>Pointwise</dt><dd>각 말을 독립 표본처럼 보고 값/등급을 예측하는 순위학습 접근.</dd>
+<dt>Pairwise</dt><dd>같은 경주의 두 말 중 누가 앞서는지를 학습하는 접근.</dd>
+<dt>Listwise</dt><dd>한 경주의 전체 순서 또는 순서분포를 한꺼번에 학습하는 접근.</dd>
+<dt>LambdaRank</dt><dd>NDCG 같은 비연속 순위지표의 변화량을 반영한 가상 gradient로 학습하는 방법.</dd>
+<dt>LambdaMART</dt><dd>LambdaRank gradient를 boosted regression trees(MART)에 적용한 모델.</dd>
+<dt>Relevance</dt><dd>LTR에서 높을수록 위에 놓여야 하는 label. 착순을 뒤집어 만든다.</dd>
+<dt>NDCG@5</dt><dd>상위 5개 위치를 더 중시하는 정규화 순위 품질 지표. 적중률이 아니다.</dd>
+<dt>Spearman</dt><dd>두 순위의 단조 관계를 −1~+1로 나타낸 순위상관.</dd>
+<dt>Rank MAE</dt><dd>예측순위와 실제착순의 절대 차이를 말 단위로 평균한 값.</dd>
+<dt>Calibration</dt><dd>예측확률과 실제 장기빈도의 일치 정도.</dd>
+<dt>Discrimination</dt><dd>좋은 말과 나쁜 말을 구분·정렬하는 능력. calibration과 다르다.</dd>
+<dt>Softmax</dt><dd>경주 안의 score를 양의 값으로 바꿔 합 1의 확률로 정규화하는 함수.</dd>
+<dt>Logit</dt><dd>확률 p를 log(p/(1−p))로 바꾼 값. binary 확률의 선형화 축.</dd>
+<dt>Residual</dt><dd>잔차. 실제와 기준예측의 차이. 시장앵커에서는 시장이 설명하지 못한 부분.</dd>
+<dt>EDGE</dt><dd>모델확률과 시장확률/가격 사이의 유리한 차이. 확률 EDGE와 EV EDGE를 구분한다.</dd>
+<dt>ROI</dt><dd>투입액 대비 순이익률. (환급−베팅액)/베팅액.</dd>
+<dt>Hit Rate</dt><dd>베팅 중 적중 비율. 지급배수와 별개라 단독 수익지표가 아니다.</dd>
+<dt>MDD</dt><dd>Max Drawdown. 누적자산 고점 대비 가장 큰 하락폭.</dd>
+<dt>Sharpe Ratio</dt><dd>평균 초과수익을 변동성으로 나눈 위험조정 지표.</dd>
+<dt>Kelly</dt><dd>예측확률과 odds로 장기 로그자산 성장률을 최대화하는 베팅비중 공식.</dd>
+<dt>Bootstrap</dt><dd>관측 블록을 복원추출해 통계량의 표본분포와 신뢰구간을 근사하는 방법.</dd>
+<dt>Confidence Interval</dt><dd>신뢰구간. 반복 표본추출에서 정해진 비율로 참값을 덮도록 만든 구간.</dd>
+<dt>Data Leakage</dt><dd>예측시점에 알 수 없는 결과·미래정보가 학습 입력이나 선택 과정에 섞이는 문제.</dd>
+<dt>Look-ahead Bias</dt><dd>미래 데이터를 과거 의사결정에 사용해 성능을 부풀리는 편향.</dd>
+<dt>Overfitting</dt><dd>학습/탐색 표본의 우연한 패턴까지 외워 새 데이터 성능이 떨어지는 현상.</dd>
+<dt>Preregistration</dt><dd>사전등록. test 결과를 보기 전에 모델·대상·임계값·지표를 문서로 고정하는 것.</dd>
+<dt>Pari-mutuel</dt><dd>공동 pool에서 수수료를 제외한 금액을 적중자들이 나누는 배팅 구조.</dd>
+<dt>Takeout</dt><dd>운영기관이 pool에서 공제하는 비율. 공식 최종환급에 이미 반영되면 재차감 금지.</dd>
+<dt>IIA</dt><dd>Independence of Irrelevant Alternatives. 다른 선택지 변화가 두 선택지 상대비에 영향을 주지 않는다는 PL/logit 가정.</dd>
+<dt>SHAP</dt><dd>예측을 기준값과 피처별 기여로 분해하는 XAI 방법. 연관 설명이지 인과증명은 아니다.</dd>
+<dt>XAI</dt><dd>Explainable AI. 모델이 왜 특정 점수·확률을 냈는지 설명하는 방법군.</dd>
+</dl></section>
+
+<section id="sources"><h2>18. 근거와 더 읽을 자료</h2>
+<h3>18.1 프로젝트 내부 1차 근거</h3><ul class="source-list"><li><code>data/revised_v11.../preprocessing_manifest.json</code> — 피처 141개, 제외열, TE·상관축소 규칙.</li><li><code>preprocessing_validation.json</code> — 기간·행·경주·결측·유한값·경마장 검증 PASS.</li><li><code>src/training/train_full_rank_models.py</code> — 여섯 모델의 실제 objective·group·architecture·metric 계산.</li><li><code>models/revised_v11.../*/model_manifest.json</code> — 실제 best iteration·fit rows·device.</li><li><code>outputs/reports/revised_v11.../logs/01~06</code> — 각 모델 학습 로그.</li><li><code>model_metric_comparison.csv</code> — 착순지표 원수치.</li><li><code>market_anchor/delta_ll_metrics.csv</code> — 시장 LL·모델 LL·ΔLL·CI.</li><li><code>locked_policy_test_results.csv</code> — validation 잠금 7승식 test 결과.</li></ul>
+<h3>18.2 원 논문·공식 문서</h3><ol class="source-list"><li><a href="https://eprints.soton.ac.uk/51679/">Benter (1993), Computer based horse race handicapping and wagering systems</a> — 학술 저장소 서지정보.</li><li><a href="https://gwern.net/doc/statistics/decision/1994-benter.pdf">Benter 논문 PDF</a> — fundamental/public probability 결합과 확률합 1 구조.</li><li><a href="https://doi.org/10.1023/A:1010933404324">Breiman (2001), Random Forests</a>.</li><li><a href="https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html">XGBoost 공식 Learning-to-Rank 문서</a>.</li><li><a href="https://lightgbm.readthedocs.io/en/latest/Parameters.html">LightGBM 공식 LambdaRank 파라미터 문서</a>.</li><li><a href="https://catboost.ai/docs/en/concepts/loss-functions-ranking">CatBoost 공식 ranking objectives 문서</a>.</li><li><a href="https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/">Burges et al. (2005), RankNet</a>.</li><li><a href="https://link.springer.com/article/10.1007/s00180-020-00959-3">Turner et al., PlackettLuce rankings</a>.</li><li><a href="https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1956.tb03809.x">Kelly (1956), A New Interpretation of Information Rate</a>.</li></ol>
+<div class="callout fact"><b>재현성:</b> 이 HTML의 숫자표는 위 CSV/JSON을 실행 시점에 읽어 생성했다. <code>evidence_manifest.json</code>에 각 근거 파일의 SHA-256을 저장했고, <code>validation.json</code>에 목차 링크·필수용어·모델 수·내부 링크 검사를 기록했다.</div></section>
+<footer><hr><p class="small">KRA 경마 퀀트 프로젝트 학습 교재 · generated 2026-08-23 · 실제 베팅 권유가 아니라 연구 결과 해석과 검증을 위한 문서.</p></footer>
+</main></div></body></html>

@@ -1,0 +1,49 @@
+RANK DATA PASS: features=141 rows=33416/11345/11695
+INDEPENDENT UPSET VALIDATION PASS: checks=50
+{
+  "clean_races": {
+    "train": 3101,
+    "valid": 1063,
+    "test": 1068
+  },
+  "selected_features": [
+    "clinic_30d",
+    "tr_plcrate",
+    "hr_last_finpct",
+    "hr_rest_days",
+    "age__pr",
+    "hr_style",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "ow_starts",
+    "hr_plcrate",
+    "jk_winrate",
+    "waterRate",
+    "hr_rest_days__z",
+    "jk_winrate__z",
+    "jk_plcrate",
+    "wgBudam__pr",
+    "hr_style_sd",
+    "jk_starts",
+    "ow_winrate",
+    "train_sec_14",
+    "te_owName",
+    "tr_winrate",
+    "tool_망사눈가면",
+    "hr_winrate__pr",
+    "age",
+    "hr_dist_starts",
+    "wg_diff",
+    "hr_rest_days__pr",
+    "tr_starts"
+  ],
+  "importance_ci_positive_features": [
+    "tr_plcrate",
+    "hr_rest_days",
+    "wgBudam_chg",
+    "hr_plcrate"
+  ],
+  "test_fdr_positive_cells": 0,
+  "locked_fdr_positive_cells": 0,
+  "roi_ge_30pct_cells": 22
+}

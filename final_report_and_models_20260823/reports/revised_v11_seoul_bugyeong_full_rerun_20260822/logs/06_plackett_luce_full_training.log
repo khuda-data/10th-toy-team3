@@ -1,0 +1,19 @@
+MODEL ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\models\revised_v11_seoul_bugyeong_full_rank_20260822
+DATA ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\data\revised_v11_seoul_bugyeong_rank_clean_preprocessed
+RANK DATA PASS: features=141 rows=33416/11345/11695
+epoch=001 loss=1.663838 valid_pairwise=0.653623
+epoch=002 loss=1.625910 valid_pairwise=0.656905
+epoch=003 loss=1.616189 valid_pairwise=0.658189
+epoch=004 loss=1.607067 valid_pairwise=0.661013
+epoch=005 loss=1.602160 valid_pairwise=0.658757
+epoch=006 loss=1.597651 valid_pairwise=0.657143
+epoch=007 loss=1.592874 valid_pairwise=0.656593
+epoch=008 loss=1.585720 valid_pairwise=0.650340
+epoch=009 loss=1.581328 valid_pairwise=0.647956
+epoch=010 loss=1.576205 valid_pairwise=0.650524
+epoch=011 loss=1.571779 valid_pairwise=0.649368
+epoch=012 loss=1.567613 valid_pairwise=0.646874
+EARLY STOP: best_valid_pairwise=0.661013
+VALID RANK: NDCG@5=0.772036 Spearman=0.430978 MAE=2.472585 Top3OrderedExact=0.011152 Top3UnorderedExact=0.065985
+TEST RANK: NDCG@5=0.771865 Spearman=0.436825 MAE=2.481820 Top3OrderedExact=0.015770 Top3UnorderedExact=0.074212
+FULL RANK MODEL TRAINING COMPLETE: plackett_luce_full

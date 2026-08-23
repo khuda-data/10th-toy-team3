@@ -1,0 +1,74 @@
+{
+  "status": "PARTIAL_VALIDATED",
+  "full_run": true,
+  "official_source": "Korea Racing Authority mobile race-result pages",
+  "official_url_templates": {
+    "1": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate={YYYYMMDD}",
+    "3": "https://m.kra.co.kr/race/bukyeong/scoretableAllScoreList.do?rcDate={YYYYMMDD}"
+  },
+  "meet_dates": 599,
+  "target_races": 5343,
+  "parsed_dividend_rows": 58761,
+  "strict_complete_races_checked": 5278,
+  "exact_combination_checks": 21112,
+  "exact_combination_match_failures": 0,
+  "missing_or_mismatched": [],
+  "unavailable_target_races": 1,
+  "unavailable_race_ids": [
+    "20260707_1_02"
+  ],
+  "empty_official_pages": [
+    {
+      "meet": 1,
+      "rcDate": 20260706,
+      "url": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate=20260706",
+      "reason": "no dividend rows on official page"
+    },
+    {
+      "meet": 1,
+      "rcDate": 20260707,
+      "url": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate=20260707",
+      "reason": "no dividend rows on official page"
+    },
+    {
+      "meet": 3,
+      "rcDate": 20260706,
+      "url": "https://m.kra.co.kr/race/bukyeong/scoretableAllScoreList.do?rcDate=20260706",
+      "reason": "no dividend rows on official page"
+    }
+  ],
+  "downloaded_pages": 296,
+  "cached_pages": 303,
+  "venue_coverage": {
+    "1": {
+      "endpoint": "seoul",
+      "target_races": 3167,
+      "parsed_races": 3161,
+      "unavailable_races": 6,
+      "bet_type_rows": {
+        "복연승": 9489,
+        "연승": 9475,
+        "삼쌍승": 3170,
+        "쌍승": 3168,
+        "복승": 3168,
+        "삼복승": 3163,
+        "단승": 3161
+      }
+    },
+    "3": {
+      "endpoint": "bukyeong",
+      "target_races": 2176,
+      "parsed_races": 2174,
+      "unavailable_races": 2,
+      "bet_type_rows": {
+        "복연승": 6540,
+        "연승": 6524,
+        "삼쌍승": 2187,
+        "쌍승": 2181,
+        "복승": 2181,
+        "삼복승": 2180,
+        "단승": 2174
+      }
+    }
+  }
+}

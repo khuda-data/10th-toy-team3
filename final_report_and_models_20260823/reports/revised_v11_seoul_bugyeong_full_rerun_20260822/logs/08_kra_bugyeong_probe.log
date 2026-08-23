@@ -1,0 +1,47 @@
+KRA DIVIDEND FETCH PROGRESS: 1/1
+KRA OFFICIAL DIVIDEND AUDIT PASS
+{
+  "status": "PASS",
+  "full_run": false,
+  "official_source": "Korea Racing Authority mobile race-result pages",
+  "official_url_templates": {
+    "1": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate={YYYYMMDD}",
+    "3": "https://m.kra.co.kr/race/bukyeong/scoretableAllScoreList.do?rcDate={YYYYMMDD}"
+  },
+  "meet_dates": 1,
+  "target_races": 7,
+  "parsed_dividend_rows": 77,
+  "strict_complete_races_checked": 7,
+  "exact_combination_checks": 28,
+  "exact_combination_match_failures": 0,
+  "missing_or_mismatched": [],
+  "unavailable_target_races": 0,
+  "unavailable_race_ids": [],
+  "empty_official_pages": [],
+  "downloaded_pages": 1,
+  "cached_pages": 0,
+  "venue_coverage": {
+    "1": {
+      "endpoint": "seoul",
+      "target_races": 0,
+      "parsed_races": 0,
+      "unavailable_races": 0,
+      "bet_type_rows": {}
+    },
+    "3": {
+      "endpoint": "bukyeong",
+      "target_races": 7,
+      "parsed_races": 7,
+      "unavailable_races": 0,
+      "bet_type_rows": {
+        "����": 21,
+        "������": 21,
+        "�ܽ�": 7,
+        "����": 7,
+        "�ֽ�": 7,
+        "�ﺹ��": 7,
+        "��ֽ�": 7
+      }
+    }
+  }
+}

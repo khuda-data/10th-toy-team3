@@ -1,0 +1,36 @@
+{
+  "status": "DESCRIPTIVE",
+  "selected_lambda": 1.0,
+  "comparisons": [
+    {
+      "left": "first44_selected",
+      "right": "first64",
+      "l1_distance": 0.00864746950401136,
+      "cosine_distance": 0.04108782214843276,
+      "left_weight_sum": 0.010580022571109229,
+      "right_weight_sum": 0.01922749207512059
+    },
+    {
+      "left": "first64",
+      "right": "all92",
+      "l1_distance": 0.0035761726663970186,
+      "cosine_distance": 0.024325797652388514,
+      "left_weight_sum": 0.01922749207512059,
+      "right_weight_sum": 0.01859010175266394
+    },
+    {
+      "left": "first44_selected",
+      "right": "all92",
+      "l1_distance": 0.00801007918155471,
+      "cosine_distance": 0.023428793420358418,
+      "left_weight_sum": 0.010580022571109229,
+      "right_weight_sum": 0.01859010175266394
+    }
+  ],
+  "candidate_weight_std": {
+    "m6": 0.1527254362478003,
+    "xgboost": 0.030564901332416516,
+    "lightgbm": 0.08650471321178564,
+    "deep_mlp_3seed": 0.01375461937013641
+  }
+}

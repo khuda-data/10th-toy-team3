@@ -1,0 +1,12 @@
+﻿check,passed,detail
+raw_file_sha256,True,files=52
+http_status,True,all responses HTTP 200
+credential_not_serialized,True,no query credential in manifest/log
+identity_columns,True,"key=['rcDate', 'requested_meet', 'rcNo', 'chulNo']"
+unique_entry_identity,True,entry_duplicates=0 result_duplicates=0
+entry_result_one_to_one,True,matched=653/653
+strictly_after_prior_cutoff,True,date_min=20260814 prior_cutoff=20260809
+one_winner_per_race,True,races=64 failures=0
+no_unfinished_order,True,ord0_or_nan=0
+closing_q_normalization,True,active_rows=640 max_error=1.110e-16
+summary_row_replay,True,entry=653 result=653

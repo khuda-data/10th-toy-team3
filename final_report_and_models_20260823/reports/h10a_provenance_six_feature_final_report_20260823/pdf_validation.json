@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-08-23T06:56:38.585899+09:00",
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.pdf",
+    "bytes": 492641,
+    "sha256": "8B5973A136B61D0A6A3324C9A1F70F3B38FAB905CBE3CE5EDD19773D0EA20925"
+  },
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.html",
+    "bytes": 84794,
+    "sha256": "7E9CEBC0E647E0494901C81FD1B1292B3A7E342AC8CF06516F03840032E1733D"
+  },
+  "pages": 7,
+  "page_text_lengths": [
+    1695,
+    1546,
+    1351,
+    1412,
+    1311,
+    2319,
+    4233
+  ],
+  "page_sizes_points": [
+    [
+      594.96,
+      841.92
+    ]
+  ],
+  "pdf_link_annotations": 31,
+  "manifest_sources": 29,
+  "manifest_sources_linked": 29,
+  "render_page_dimensions": [
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ],
+    [
+      1240,
+      1754
+    ]
+  ],
+  "render_nonwhite_fractions": [
+    0.34051384853054767,
+    0.182118751609225,
+    0.10351684628682827,
+    0.17229742156177585,
+    0.1482588185529849,
+    0.14904044212307352,
+    0.14183111413543237
+  ],
+  "visual_qa": {
+    "status": "PASS",
+    "inspected_at": "2026-08-23T06:55:00+09:00",
+    "scope": "all 7 pages",
+    "method": "Poppler 150 DPI render; two labeled montages covering pages 1-7; page 7 reviewed again at original rendered resolution",
+    "findings": [
+      "No clipped headings, tables, charts, or page-edge content were observed.",
+      "Korean glyphs, numerical tables, confidence intervals, and both SVG charts rendered legibly.",
+      "The evidence table now shows compact clickable labels and full SHA-256 digests without literal escaped anchor markup.",
+      "The earlier 15-page malformed evidence layout was rejected, corrected, regenerated, and not accepted as final."
+    ],
+    "result": "Final 7-page A4 PDF accepted for layout and legibility."
+  },
+  "checks_total": 19,
+  "checks_passed": 19,
+  "checks_failed": 0,
+  "checks": {
+    "export_status_pass": true,
+    "html_bound_to_export": true,
+    "pdf_bound_to_export": true,
+    "pdf_header": true,
+    "page_count_exact": true,
+    "text_on_every_page": true,
+    "a4_portrait_only": true,
+    "required_report_text_present": true,
+    "no_literal_escaped_anchor_markup": true,
+    "all_manifest_sources_linked_in_pdf": true,
+    "render_manifest_pass": true,
+    "render_source_pdf_bound": true,
+    "render_page_sequence_complete": true,
+    "render_page_artifacts_match": true,
+    "render_page_dimensions_consistent": true,
+    "render_pages_nonblank": true,
+    "montage_coverage_complete": true,
+    "montage_artifacts_match": true,
+    "manual_visual_inspection_all_pages_pass": true
+  },
+  "render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h10a_provenance_six_feature_final_20260823_v2\\render_manifest.json",
+    "bytes": 4252,
+    "sha256": "B0F0278C7351F7B37BA6D6C2B489B8E998648F3A1F025C5E9C709FA3A50A44F3"
+  }
+}

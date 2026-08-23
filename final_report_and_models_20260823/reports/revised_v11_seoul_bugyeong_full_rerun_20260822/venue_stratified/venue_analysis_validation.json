@@ -1,0 +1,3192 @@
+{
+  "status": "PASS",
+  "generated_utc": "2026-08-22T12:30:48.349596+00:00",
+  "passed_checks": 213,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "check": "preprocessing validation is PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "preprocessing manifest contains model features",
+      "status": "PASS"
+    },
+    {
+      "check": "model features exclude manifest-declared market/result columns",
+      "status": "PASS",
+      "evidence": {
+        "feature_count": 141,
+        "intersection": []
+      }
+    },
+    {
+      "check": "test metadata entry IDs are complete",
+      "status": "PASS"
+    },
+    {
+      "check": "test metadata entry IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test metadata race IDs are complete",
+      "status": "PASS"
+    },
+    {
+      "check": "test metadata contains exactly Seoul and Bugyeong",
+      "status": "PASS",
+      "evidence": [
+        {
+          "meet_name": "부경",
+          "rows": 5056,
+          "races": 466
+        },
+        {
+          "meet_name": "서울",
+          "rows": 6639,
+          "races": 635
+        }
+      ]
+    },
+    {
+      "check": "every test race belongs to exactly one venue",
+      "status": "PASS"
+    },
+    {
+      "check": "rank model reload validation is PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "random_forest_rank prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "random_forest_rank prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "random_forest_rank race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "random_forest_rank finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "random_forest_rank recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "xgboost_rank prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "xgboost_rank prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "xgboost_rank race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "xgboost_rank finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "xgboost_rank recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "lightgbm_rank prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "lightgbm_rank prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "lightgbm_rank race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "lightgbm_rank finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "lightgbm_rank recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "catboost_rank prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "catboost_rank prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "catboost_rank race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "catboost_rank finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "catboost_rank recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "deep_ranknet prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "deep_ranknet prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "deep_ranknet race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "deep_ranknet finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "deep_ranknet recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "plackett_luce_full prediction IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "plackett_luce_full prediction membership matches test metadata",
+      "status": "PASS",
+      "evidence": {
+        "prediction_rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "plackett_luce_full race IDs align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "plackett_luce_full finish orders align with metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "plackett_luce_full recomputed overall rank metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "six rank models have overall, Seoul, and Bugyeong rows",
+      "status": "PASS",
+      "evidence": {
+        "rows": 18,
+        "models": 6
+      }
+    },
+    {
+      "check": "anchor probability race IDs align with test metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "all anchor rows map to a venue",
+      "status": "PASS"
+    },
+    {
+      "check": "anchor report contains conditional logit, Base Margin, and ensemble",
+      "status": "PASS",
+      "evidence": [
+        "anchor_ensemble",
+        "anchored_base_margin",
+        "anchored_conditional_logit"
+      ]
+    },
+    {
+      "check": "anchored_conditional_logit anchor test membership matches metadata",
+      "status": "PASS",
+      "evidence": {
+        "rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "anchored_base_margin anchor test membership matches metadata",
+      "status": "PASS",
+      "evidence": {
+        "rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "anchor_ensemble anchor test membership matches metadata",
+      "status": "PASS",
+      "evidence": {
+        "rows": 11695,
+        "metadata_rows": 11695
+      }
+    },
+    {
+      "check": "anchor_ensemble recomputed overall anchor metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "anchored_base_margin recomputed overall anchor metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "anchored_conditional_logit recomputed overall anchor metrics match stored test metrics",
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "check": "all anchor model probabilities sum to one within race",
+      "status": "PASS",
+      "evidence": 1.1102230246251565e-15
+    },
+    {
+      "check": "all anchor market probabilities sum to one within race",
+      "status": "PASS",
+      "evidence": 1.1102230246251565e-15
+    },
+    {
+      "check": "full_rank_locked has exactly one globally locked policy for all seven bet types",
+      "status": "PASS",
+      "evidence": [
+        "단승",
+        "연승",
+        "복승",
+        "쌍승",
+        "삼복승",
+        "삼쌍승",
+        "복연승"
+      ]
+    },
+    {
+      "check": "full_rank_locked/단승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/단승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "random_forest_rank",
+        "bet_type": "단승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 18,
+        "computed_wins": 18,
+        "expected_roi": -0.0305555555555555,
+        "computed_roi": -0.03055555555555556
+      }
+    },
+    {
+      "check": "full_rank_locked/단승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 63,
+        "bugyeong": 45
+      }
+    },
+    {
+      "check": "full_rank_locked/연승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/연승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "xgboost_rank",
+        "bet_type": "연승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 103,
+        "computed_bets": 103,
+        "expected_wins": 47,
+        "computed_wins": 47,
+        "expected_roi": 0.0126213592233009,
+        "computed_roi": 0.012621359223300951
+      }
+    },
+    {
+      "check": "full_rank_locked/연승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 103,
+        "seoul": 67,
+        "bugyeong": 36
+      }
+    },
+    {
+      "check": "full_rank_locked/복승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/복승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "random_forest_rank",
+        "bet_type": "복승",
+        "selection_policy": "positive_edge",
+        "expected_bets": 685,
+        "computed_bets": 685,
+        "expected_wins": 63,
+        "computed_wins": 63,
+        "expected_roi": -0.1764963503649635,
+        "computed_roi": -0.1764963503649635
+      }
+    },
+    {
+      "check": "full_rank_locked/복승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 685,
+        "seoul": 401,
+        "bugyeong": 284
+      }
+    },
+    {
+      "check": "full_rank_locked/쌍승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/쌍승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "random_forest_rank",
+        "bet_type": "쌍승",
+        "selection_policy": "positive_edge",
+        "expected_bets": 688,
+        "computed_bets": 688,
+        "expected_wins": 35,
+        "computed_wins": 35,
+        "expected_roi": -0.1803779069767442,
+        "computed_roi": -0.18037790697674422
+      }
+    },
+    {
+      "check": "full_rank_locked/쌍승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 688,
+        "seoul": 403,
+        "bugyeong": 285
+      }
+    },
+    {
+      "check": "full_rank_locked/삼복승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/삼복승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "xgboost_rank",
+        "bet_type": "삼복승",
+        "selection_policy": "top_30pct_edge",
+        "expected_bets": 324,
+        "computed_bets": 324,
+        "expected_wins": 15,
+        "computed_wins": 15,
+        "expected_roi": -0.2453703703703703,
+        "computed_roi": -0.24537037037037032
+      }
+    },
+    {
+      "check": "full_rank_locked/삼복승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 324,
+        "seoul": 198,
+        "bugyeong": 126
+      }
+    },
+    {
+      "check": "full_rank_locked/삼쌍승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/삼쌍승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "random_forest_rank",
+        "bet_type": "삼쌍승",
+        "selection_policy": "positive_edge",
+        "expected_bets": 752,
+        "computed_bets": 752,
+        "expected_wins": 4,
+        "computed_wins": 4,
+        "expected_roi": -0.665159574468085,
+        "computed_roi": -0.665159574468085
+      }
+    },
+    {
+      "check": "full_rank_locked/삼쌍승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 752,
+        "seoul": 436,
+        "bugyeong": 316
+      }
+    },
+    {
+      "check": "full_rank_locked/복연승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "full_rank_locked/복연승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "lightgbm_rank",
+        "bet_type": "복연승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 10,
+        "computed_wins": 10,
+        "expected_roi": -0.5361111111111112,
+        "computed_roi": -0.5361111111111112
+      }
+    },
+    {
+      "check": "full_rank_locked/복연승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 61,
+        "bugyeong": 47
+      }
+    },
+    {
+      "check": "market_anchor_locked has exactly one globally locked policy for all seven bet types",
+      "status": "PASS",
+      "evidence": [
+        "단승",
+        "연승",
+        "복승",
+        "쌍승",
+        "삼복승",
+        "삼쌍승",
+        "복연승"
+      ]
+    },
+    {
+      "check": "market_anchor_locked/단승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/단승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchored_base_margin",
+        "bet_type": "단승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 45,
+        "computed_wins": 45,
+        "expected_roi": -0.1453703703703703,
+        "computed_roi": -0.14537037037037034
+      }
+    },
+    {
+      "check": "market_anchor_locked/단승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 68,
+        "bugyeong": 40
+      }
+    },
+    {
+      "check": "market_anchor_locked/연승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/연승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchored_base_margin",
+        "bet_type": "연승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 101,
+        "computed_bets": 101,
+        "expected_wins": 74,
+        "computed_wins": 74,
+        "expected_roi": -0.0752475247524752,
+        "computed_roi": -0.07524752475247526
+      }
+    },
+    {
+      "check": "market_anchor_locked/연승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 101,
+        "seoul": 52,
+        "bugyeong": 49
+      }
+    },
+    {
+      "check": "market_anchor_locked/복승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/복승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchor_ensemble",
+        "bet_type": "복승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 34,
+        "computed_wins": 34,
+        "expected_roi": 0.3972222222222222,
+        "computed_roi": 0.3972222222222222
+      }
+    },
+    {
+      "check": "market_anchor_locked/복승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 75,
+        "bugyeong": 33
+      }
+    },
+    {
+      "check": "market_anchor_locked/쌍승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/쌍승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchor_ensemble",
+        "bet_type": "쌍승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 21,
+        "computed_wins": 21,
+        "expected_roi": 0.1675925925925926,
+        "computed_roi": 0.1675925925925926
+      }
+    },
+    {
+      "check": "market_anchor_locked/쌍승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 76,
+        "bugyeong": 32
+      }
+    },
+    {
+      "check": "market_anchor_locked/삼복승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/삼복승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchored_base_margin",
+        "bet_type": "삼복승",
+        "selection_policy": "top_20pct_edge",
+        "expected_bets": 216,
+        "computed_bets": 216,
+        "expected_wins": 34,
+        "computed_wins": 34,
+        "expected_roi": -0.0768518518518518,
+        "computed_roi": -0.07685185185185182
+      }
+    },
+    {
+      "check": "market_anchor_locked/삼복승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 216,
+        "seoul": 141,
+        "bugyeong": 75
+      }
+    },
+    {
+      "check": "market_anchor_locked/삼쌍승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/삼쌍승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchored_base_margin",
+        "bet_type": "삼쌍승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 5,
+        "computed_wins": 5,
+        "expected_roi": -0.3296296296296296,
+        "computed_roi": -0.32962962962962966
+      }
+    },
+    {
+      "check": "market_anchor_locked/삼쌍승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 71,
+        "bugyeong": 37
+      }
+    },
+    {
+      "check": "market_anchor_locked/복연승 has at most one selection per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked/복연승 global locked selection reproduces stored test result",
+      "status": "PASS",
+      "evidence": {
+        "model_key": "anchor_ensemble",
+        "bet_type": "복연승",
+        "selection_policy": "top_10pct_edge",
+        "expected_bets": 108,
+        "computed_bets": 108,
+        "expected_wins": 52,
+        "computed_wins": 52,
+        "expected_roi": 0.1592592592592592,
+        "computed_roi": 0.15925925925925924
+      }
+    },
+    {
+      "check": "market_anchor_locked/복연승 venue rows partition the global locked membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 108,
+        "seoul": 73,
+        "bugyeong": 35
+      }
+    },
+    {
+      "check": "upset global-fraction details contain all seven bet types",
+      "status": "PASS"
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 7,
+        "stored_wins": 7,
+        "computed_roi": 0.40350877192982454,
+        "stored_roi": 0.4035087719298245
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 13,
+        "stored_wins": 13,
+        "computed_roi": 0.1456140350877193,
+        "stored_roi": 0.1456140350877193
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 2,
+        "stored_wins": 2,
+        "computed_roi": -0.16315789473684206,
+        "stored_roi": -0.1631578947368421
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 1,
+        "stored_wins": 1,
+        "computed_roi": -0.3157894736842105,
+        "stored_roi": -0.3157894736842105
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 2,
+        "stored_wins": 2,
+        "computed_roi": 1.1789473684210527,
+        "stored_roi": 1.1789473684210527
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 1,
+        "stored_wins": 1,
+        "computed_roi": 2.692982456140351,
+        "stored_roi": 2.692982456140351
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 57,
+        "stored_bets": 57,
+        "computed_wins": 6,
+        "stored_wins": 6,
+        "computed_roi": 0.11052631578947372,
+        "stored_roi": 0.1105263157894737
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_10pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 8,
+        "stored_wins": 8,
+        "computed_roi": -0.1333333333333333,
+        "stored_roi": -0.1333333333333333
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 24,
+        "stored_wins": 24,
+        "computed_roi": 0.17456140350877192,
+        "stored_roi": 0.1745614035087719
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 7,
+        "stored_wins": 7,
+        "computed_roi": 0.380701754385965,
+        "stored_roi": 0.3807017543859648
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 6,
+        "stored_wins": 6,
+        "computed_roi": 0.7991228070175438,
+        "stored_roi": 0.7991228070175438
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": 0.2666666666666667,
+        "stored_roi": 0.2666666666666667
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 1,
+        "stored_wins": 1,
+        "computed_roi": 0.8464912280701754,
+        "stored_roi": 0.8464912280701754
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 114,
+        "stored_bets": 114,
+        "computed_wins": 13,
+        "stored_wins": 13,
+        "computed_roi": 0.004385964912280717,
+        "stored_roi": 0.0043859649122807
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_20pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 9,
+        "stored_wins": 9,
+        "computed_roi": -0.3736842105263158,
+        "stored_roi": -0.3736842105263157
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 36,
+        "stored_wins": 36,
+        "computed_roi": 0.15847953216374266,
+        "stored_roi": 0.1584795321637427
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 10,
+        "stored_wins": 10,
+        "computed_roi": 0.3,
+        "stored_roi": 0.3
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 9,
+        "stored_wins": 9,
+        "computed_roi": 0.7450292397660818,
+        "stored_roi": 0.7450292397660818
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 4,
+        "stored_wins": 4,
+        "computed_roi": 0.27485380116959063,
+        "stored_roi": 0.2748538011695906
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 2,
+        "stored_wins": 2,
+        "computed_roi": 2.2046783625730995,
+        "stored_roi": 2.2046783625730995
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 171,
+        "stored_bets": 171,
+        "computed_wins": 19,
+        "stored_wins": 19,
+        "computed_roi": 0.05555555555555557,
+        "stored_roi": 0.0555555555555555
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_30pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 11,
+        "stored_wins": 11,
+        "computed_roi": -0.4241228070175438,
+        "stored_roi": -0.4241228070175438
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 42,
+        "stored_wins": 42,
+        "computed_roi": 0.05394736842105264,
+        "stored_roi": 0.0539473684210526
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 11,
+        "stored_wins": 11,
+        "computed_roi": 0.21140350877192987,
+        "stored_roi": 0.2114035087719298
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 10,
+        "stored_wins": 10,
+        "computed_roi": 0.5399122807017543,
+        "stored_roi": 0.5399122807017543
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 6,
+        "stored_wins": 6,
+        "computed_roi": 0.3385964912280701,
+        "stored_roi": 0.3385964912280701
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": 2.9618421052631576,
+        "stored_roi": 2.9618421052631576
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 228,
+        "stored_bets": 228,
+        "computed_wins": 22,
+        "stored_wins": 22,
+        "computed_roi": -0.03289473684210528,
+        "stored_roi": -0.0328947368421052
+      }
+    },
+    {
+      "check": "upset/full_upset_base_margin/top_40pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 7,
+        "stored_wins": 7,
+        "computed_roi": 0.34482758620689663,
+        "stored_roi": 0.3448275862068966
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 16,
+        "stored_wins": 16,
+        "computed_roi": 0.21724137931034482,
+        "stored_roi": 0.2172413793103448
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 4,
+        "stored_wins": 4,
+        "computed_roi": 0.7206896551724138,
+        "stored_roi": 0.7206896551724138
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": 0.9137931034482759,
+        "stored_roi": 0.913793103448276
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 2,
+        "stored_wins": 2,
+        "computed_roi": -0.062068965517241344,
+        "stored_roi": -0.0620689655172413
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 0,
+        "stored_wins": 0,
+        "computed_roi": -1.0,
+        "stored_roi": -1.0
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 58,
+        "stored_bets": 58,
+        "computed_wins": 9,
+        "stored_wins": 9,
+        "computed_roi": 0.3258620689655173,
+        "stored_roi": 0.3258620689655173
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_10pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 9,
+        "stored_wins": 9,
+        "computed_roi": -0.07672413793103446,
+        "stored_roi": -0.0767241379310344
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 30,
+        "stored_wins": 30,
+        "computed_roi": 0.27413793103448275,
+        "stored_roi": 0.2741379310344827
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 8,
+        "stored_wins": 8,
+        "computed_roi": 0.6594827586206896,
+        "stored_roi": 0.6594827586206896
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 7,
+        "stored_wins": 7,
+        "computed_roi": 1.103448275862069,
+        "stored_roi": 1.103448275862069
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": -0.2577586206896551,
+        "stored_roi": -0.2577586206896551
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 1,
+        "stored_wins": 1,
+        "computed_roi": -0.15948275862068967,
+        "stored_roi": -0.1594827586206896
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 116,
+        "stored_bets": 116,
+        "computed_wins": 16,
+        "stored_wins": 16,
+        "computed_roi": 0.23965517241379314,
+        "stored_roi": 0.239655172413793
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_20pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 10,
+        "stored_wins": 10,
+        "computed_roi": -0.30344827586206896,
+        "stored_roi": -0.3034482758620689
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 39,
+        "stored_wins": 39,
+        "computed_roi": 0.19022988505747124,
+        "stored_roi": 0.1902298850574713
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 10,
+        "stored_wins": 10,
+        "computed_roi": 0.5695402298850575,
+        "stored_roi": 0.5695402298850574
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 9,
+        "stored_wins": 9,
+        "computed_roi": 1.0,
+        "stored_roi": 1.0
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": -0.5051724137931034,
+        "stored_roi": -0.5051724137931034
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 1,
+        "stored_wins": 1,
+        "computed_roi": -0.4396551724137931,
+        "stored_roi": -0.4396551724137931
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 174,
+        "stored_bets": 174,
+        "computed_wins": 19,
+        "stored_wins": 19,
+        "computed_roi": 0.25402298850574717,
+        "stored_roi": 0.2540229885057471
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_30pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/단승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 12,
+        "stored_wins": 12,
+        "computed_roi": -0.3353448275862069,
+        "stored_roi": -0.3353448275862069
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/단승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 48,
+        "stored_wins": 48,
+        "computed_roi": 0.10689655172413795,
+        "stored_roi": 0.1068965517241379
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 11,
+        "stored_wins": 11,
+        "computed_roi": 0.2413793103448276,
+        "stored_roi": 0.2413793103448276
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 10,
+        "stored_wins": 10,
+        "computed_roi": 0.5974137931034482,
+        "stored_roi": 0.5974137931034481
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/삼복승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 5,
+        "stored_wins": 5,
+        "computed_roi": 0.014224137931034456,
+        "stored_roi": 0.0142241379310344
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/삼복승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/삼쌍승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 3,
+        "stored_wins": 3,
+        "computed_roi": 2.406465517241379,
+        "stored_roi": 2.406465517241379
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/삼쌍승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/복연승 stored global membership reproduces summary",
+      "status": "PASS",
+      "evidence": {
+        "computed_bets": 232,
+        "stored_bets": 232,
+        "computed_wins": 24,
+        "stored_wins": 24,
+        "computed_roi": 0.22456896551724143,
+        "stored_roi": 0.2245689655172414
+      }
+    },
+    {
+      "check": "upset/selected_upset_base_margin/top_40pct/복연승 venues partition stored global membership",
+      "status": "PASS",
+      "evidence": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      }
+    },
+    {
+      "check": "all upset summary cells were venue-stratified",
+      "status": "PASS",
+      "evidence": {
+        "summary_cells": 56,
+        "observed_cells": 56
+      }
+    },
+    {
+      "check": "every betting row was produced after global membership was fixed",
+      "status": "PASS"
+    },
+    {
+      "check": "no test policy or cutoff was selected within a venue",
+      "status": "PASS",
+      "evidence": {
+        "selection_traces": 70
+      }
+    },
+    {
+      "check": "full_rank_locked output covers all seven bet types",
+      "status": "PASS"
+    },
+    {
+      "check": "market_anchor_locked output covers all seven bet types",
+      "status": "PASS"
+    }
+  ],
+  "test_reselection_performed": false,
+  "selection_trace": [
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "단승",
+      "model_key": "random_forest_rank",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "B691489EB083B94B0F62DEF2E4AB7387456B7FB79650B1D6463AD4A8851A31CD",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 63,
+        "bugyeong": 45
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "연승",
+      "model_key": "xgboost_rank",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1068,
+      "global_selected_rows": 103,
+      "global_selection_sha256": "794B2AB0B46ED7A615E95E40F3CE40F9AED052A7E0DFA14987E905470C14477F",
+      "venue_counts": {
+        "overall": 103,
+        "seoul": 67,
+        "bugyeong": 36
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "복승",
+      "model_key": "random_forest_rank",
+      "selection_policy": "positive_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 685,
+      "global_selection_sha256": "6D0AE449D6144C13240EAD5B6280236FCD3A47F9FF27110FC62BAE1E68BD0C07",
+      "venue_counts": {
+        "overall": 685,
+        "seoul": 401,
+        "bugyeong": 284
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "쌍승",
+      "model_key": "random_forest_rank",
+      "selection_policy": "positive_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 688,
+      "global_selection_sha256": "F27C6D39867A36100B79F534AF48D5D1F1357D2E57FDF03FDE6810A446F0BF86",
+      "venue_counts": {
+        "overall": 688,
+        "seoul": 403,
+        "bugyeong": 285
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "삼복승",
+      "model_key": "xgboost_rank",
+      "selection_policy": "top_30pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 324,
+      "global_selection_sha256": "9F3EC570E7800C632271121818C086AFE49A7F1674176409244FB012FD085B42",
+      "venue_counts": {
+        "overall": 324,
+        "seoul": 198,
+        "bugyeong": 126
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "삼쌍승",
+      "model_key": "random_forest_rank",
+      "selection_policy": "positive_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 752,
+      "global_selection_sha256": "B708BA573CC847BC21F3FDD2C656190BF986E101B4B2503CB1235175CB1E6D48",
+      "venue_counts": {
+        "overall": 752,
+        "seoul": 436,
+        "bugyeong": 316
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "full_rank_locked",
+      "bet_type": "복연승",
+      "model_key": "lightgbm_rank",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "D968C713BA2FE22F77D1DE5A5101FF24343046CD6A7A499F82247A1BD37BC4C8",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 61,
+        "bugyeong": 47
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "단승",
+      "model_key": "anchored_base_margin",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "85A0DA8C5E41D1011BBABB37CACE6EDE0E5D64E9ECD34D2C261D65582E759DA0",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 68,
+        "bugyeong": 40
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "연승",
+      "model_key": "anchored_base_margin",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1068,
+      "global_selected_rows": 101,
+      "global_selection_sha256": "FB2912A4A50A2A08A5232180F485B6A767E2B78B0D5C4567043D22C0A22C2028",
+      "venue_counts": {
+        "overall": 101,
+        "seoul": 52,
+        "bugyeong": 49
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "복승",
+      "model_key": "anchor_ensemble",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "6F998CFB4F60BC5C149518ABF124985F4A7BC9FE696F1091705188EEBEEA7F1E",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 75,
+        "bugyeong": 33
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "쌍승",
+      "model_key": "anchor_ensemble",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "F1044BBCDAB9A08D3159AEB4F8D892F4611C0A0DCA83708992ECB2EA2B621378",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 76,
+        "bugyeong": 32
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "삼복승",
+      "model_key": "anchored_base_margin",
+      "selection_policy": "top_20pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 216,
+      "global_selection_sha256": "80E4B47E089C5634A20DA933B76B16F31A2B01805E025B4DC2B4A3E2EE26F429",
+      "venue_counts": {
+        "overall": 216,
+        "seoul": 141,
+        "bugyeong": 75
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "삼쌍승",
+      "model_key": "anchored_base_margin",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "C9AAE6F8FB4618CC7F74D5F4B6B0905619B37228E146C4C95B81DAEEC08576F0",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 71,
+        "bugyeong": 37
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "market_anchor_locked",
+      "bet_type": "복연승",
+      "model_key": "anchor_ensemble",
+      "selection_policy": "top_10pct_edge",
+      "global_candidate_rows": 1078,
+      "global_selected_rows": 108,
+      "global_selection_sha256": "7810C0DE2330D86181DB54064111D9726E1FDEE0688180FF7B08B138F08C6BCE",
+      "venue_counts": {
+        "overall": 108,
+        "seoul": 73,
+        "bugyeong": 35
+      },
+      "selection_order": "global test pool -> stored locked policy -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "단승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "5DB6B89562C2697A14CFAACA1DCF35A56E954F1E281CFF1BEBFAC19A4184CCBE",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "연승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "5DB6B89562C2697A14CFAACA1DCF35A56E954F1E281CFF1BEBFAC19A4184CCBE",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "5D22A6542C54942CB4EA2F0CB44E75D9275E6A42C41D415F3E14997C858372E9",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "D19543FDE7B1A61D51B957C709FBDE05555855E967C3CF6E2F670BCA5505C586",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "326CAD35602FCC3B90C610D9431D84229AC57A9FC27E3CAAB57A29B737F9E3F1",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "8ED06E57DD42DADAC112D8DD50724E3F817158EE2E90345121FABAD0B1B8F695",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 57,
+      "global_selection_sha256": "5D22A6542C54942CB4EA2F0CB44E75D9275E6A42C41D415F3E14997C858372E9",
+      "venue_counts": {
+        "overall": 57,
+        "seoul": 31,
+        "bugyeong": 26
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "단승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "2C4AD6491A57C0BBBE01C991D525D2ED3793DEB22BCE501109DDBA747E578BDC",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "연승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "2C4AD6491A57C0BBBE01C991D525D2ED3793DEB22BCE501109DDBA747E578BDC",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "5F538F4E29646D91D1B632B3C78183608E34F127EA74CC8E2AECD481395B2003",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "D3C5D0E69935B4E86CC3AD8CAD52F905518FAB8BAB5B9A3BE25AFC672B48EBE5",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "FA90D4892F2F20E2CC8C55133EF882AE7FEDFFCEA645D065DE1B24D8186EC77B",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "C911C1BB246D5031F866E2398C2F3BB27BF9BF8E920CC6F55297633AE352D33B",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 114,
+      "global_selection_sha256": "5F538F4E29646D91D1B632B3C78183608E34F127EA74CC8E2AECD481395B2003",
+      "venue_counts": {
+        "overall": 114,
+        "seoul": 59,
+        "bugyeong": 55
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "단승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "0E95E42DC4FC718D7223987C2442587EB2324F26CAA4429C1A8C724A001957EF",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "연승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "0E95E42DC4FC718D7223987C2442587EB2324F26CAA4429C1A8C724A001957EF",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "D375980D73DE0C3A285F0F45116D4BF1A4B16967EB1BAF451475E6C8980CCD71",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "F5E85610F6336A7E27FF824016155B662D941985B70CAA6019E8750881A026ED",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "0E9B6C65489D37015A57EBDA04681836F6D6375CB7A98152CB1907106D1C4E60",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "71E6AB9F94DEDE72E2CC1FFF83F66FB47B28CA7808A7622BE31FB93DFC6421C8",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 171,
+      "global_selection_sha256": "D375980D73DE0C3A285F0F45116D4BF1A4B16967EB1BAF451475E6C8980CCD71",
+      "venue_counts": {
+        "overall": 171,
+        "seoul": 92,
+        "bugyeong": 79
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "단승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "1C70389DD676F409E7EE00AAFF7CE4ADB89DCA00F96FAB2A77DCFD26C4518E11",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "연승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "1C70389DD676F409E7EE00AAFF7CE4ADB89DCA00F96FAB2A77DCFD26C4518E11",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "복승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "C99127848085AB4E6F12C02D3FF8EAB6C1736E659C80BCDEBBD0A144287C1078",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "D26C21998F36F8365688AF16C801D52FD3EFF47F599716E8DF0782799AE1C580",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "EDCA1EFA7F39294941DEFADE85C43DEBD9B1BC3DC29123F9B32AF4DE77CDB2BF",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "3BF0C44C0804F43D9168772644C4EDC4FBF21E9DEB4D5629E63D214048AE7517",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "full_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 228,
+      "global_selection_sha256": "C99127848085AB4E6F12C02D3FF8EAB6C1736E659C80BCDEBBD0A144287C1078",
+      "venue_counts": {
+        "overall": 228,
+        "seoul": 122,
+        "bugyeong": 106
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "단승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "13EDFEB9559AA314DE4153FACDF6888271CFF57D7237A29B32941C89BEAE891B",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "연승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "13EDFEB9559AA314DE4153FACDF6888271CFF57D7237A29B32941C89BEAE891B",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "CAE75775E37C426DCF2249D64850BED38E195F4945A6B8047B150BA6F13A62C9",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "755C14C23A94B54C02EA4FDE6249F1A949012C04395F7447BCF9FD4D7B29E245",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "B9ED47E84B0E6AD930DAA8A5C59584BFC98EF74353B7A06721E62C02B1F22442",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "B6E55CBE72645E06935FC2F0711105F0EC1E8710F437F8C1D40DE308B32BC066",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_10pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 58,
+      "global_selection_sha256": "CAE75775E37C426DCF2249D64850BED38E195F4945A6B8047B150BA6F13A62C9",
+      "venue_counts": {
+        "overall": 58,
+        "seoul": 34,
+        "bugyeong": 24
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "단승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "7789D15EAC49C474BD9D59CC9963A4B7B547B6D504077A7ECD4ED5BBEF71B19C",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "연승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "7789D15EAC49C474BD9D59CC9963A4B7B547B6D504077A7ECD4ED5BBEF71B19C",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "BA1FBEA19FB2CA5EFE2CD26EC804D6E44A98D475497AD2AD035220ADC2D081D4",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "BC68B70ED577E38199D31DBA379A43151D08E91B1834BCD0E29AF462060A218B",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "554DF61002F7447EFDE61126D329137EA2971C26E37B39062D6507DA7976794C",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "E59D3B7F4161BA9714727CD74148ACC2F55F85CB399824EEEE9A8680010DFB2D",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_20pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 116,
+      "global_selection_sha256": "BA1FBEA19FB2CA5EFE2CD26EC804D6E44A98D475497AD2AD035220ADC2D081D4",
+      "venue_counts": {
+        "overall": 116,
+        "seoul": 62,
+        "bugyeong": 54
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "단승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "F7EBFF567B2BCF1E755B4F411B18087042D942757C4E2A0380238183CF88A035",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "연승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "F7EBFF567B2BCF1E755B4F411B18087042D942757C4E2A0380238183CF88A035",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "999F0561EC6804F8EF9A10F6A1134B486CCD8B3D2DD970D91D3C3CF8FDB30F4D",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "CC9A53D17D68F96F1499125E5624F53ED4FEABEDE3D962D9FDEA198FD66D8077",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "18F14FD598E0114512A1C543032C6293B8F870A5276D1FAD8ECBEC9EF2BF97FB",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "C3F44812619A2823EBA1FB4F0820407B87741EF01AEB99B8440F3BF3848C8E30",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_30pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 174,
+      "global_selection_sha256": "999F0561EC6804F8EF9A10F6A1134B486CCD8B3D2DD970D91D3C3CF8FDB30F4D",
+      "venue_counts": {
+        "overall": 174,
+        "seoul": 91,
+        "bugyeong": 83
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "단승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "AED9012DE7AF55364AC544893095A4D1213C508AC740AB7CCFAA327CC6ADEF85",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "연승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "AED9012DE7AF55364AC544893095A4D1213C508AC740AB7CCFAA327CC6ADEF85",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "복승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "57AE55FB012777EE6183ECD1DAB992BAFC61C8866A16FC6A0D4DD200B0889D89",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "쌍승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "B3E1BECB46B0C61DE24F2128E83FB34298E58B0CBB1E998AC7B2D425ED992653",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "삼복승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "E2F8968DD9B010F423C88DB9109A7DA60F94F6067FA62D6BEBF5DE46FCC7E7F4",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "삼쌍승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "18C96968BEA9F831D410B40FEA63410911D06A75678FC393061A7DF65F08C95C",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    },
+    {
+      "strategy_family": "upset_global_fraction",
+      "model_key": "selected_upset_base_margin",
+      "fraction_label": "top_40pct",
+      "bet_type": "복연승",
+      "global_selected_rows": 232,
+      "global_selection_sha256": "57AE55FB012777EE6183ECD1DAB992BAFC61C8866A16FC6A0D4DD200B0889D89",
+      "venue_counts": {
+        "overall": 232,
+        "seoul": 124,
+        "bugyeong": 108
+      },
+      "selection_order": "stored whole-test fraction membership -> availability audit -> venue partition",
+      "test_reselection_performed": false
+    }
+  ],
+  "inputs": {
+    "test_metadata.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+      "bytes": 1174910,
+      "modified_utc": "2026-08-22T11:45:32.116779+00:00",
+      "sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+    },
+    "preprocessing_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+      "bytes": 11173,
+      "modified_utc": "2026-08-22T11:45:32.193564+00:00",
+      "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+    },
+    "preprocessing_validation.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+      "bytes": 2348,
+      "modified_utc": "2026-08-22T11:45:32.194867+00:00",
+      "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+    },
+    "rank_report/final_validation.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\final_validation.json",
+      "bytes": 24695,
+      "modified_utc": "2026-08-22T11:54:11.251951+00:00",
+      "sha256": "B9CB967F333565AB3BA331FAE0C7FBD08825857243BA5ED34D5826A47F1E21A2"
+    },
+    "rank_model/random_forest_rank/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\test_rank_predictions.csv",
+      "bytes": 1068886,
+      "modified_utc": "2026-08-22T11:49:12.188643+00:00",
+      "sha256": "6ED7697D7989A215FEDA65FD83D014513C52530F6B4815CD0B82D50886102EDB"
+    },
+    "rank_model/random_forest_rank/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\metrics.json",
+      "bytes": 1906,
+      "modified_utc": "2026-08-22T11:49:12.142824+00:00",
+      "sha256": "D0C1CBBE3BBBC5D28BE20DDA4C81AF0EA82D9CE62CD6F11F8D4EFDC45F523FD5"
+    },
+    "rank_model/random_forest_rank/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model_manifest.json",
+      "bytes": 3904,
+      "modified_utc": "2026-08-22T11:49:12.143839+00:00",
+      "sha256": "A2516830E96CA87A878F0CB8C648C060169A4A6BA51FF59F1694C87EB74458EE"
+    },
+    "rank_model/xgboost_rank/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\test_rank_predictions.csv",
+      "bytes": 1066131,
+      "modified_utc": "2026-08-22T11:49:37.826761+00:00",
+      "sha256": "88D1B3B851F183574860EFF809D86E09DE30DCB4859137A2F2BDC510B3589D50"
+    },
+    "rank_model/xgboost_rank/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\metrics.json",
+      "bytes": 1904,
+      "modified_utc": "2026-08-22T11:49:37.783028+00:00",
+      "sha256": "CDFD5C1F7623BA2AD3F1BDEB3DAA12794088E7D784FD17CB10D6953482AA094B"
+    },
+    "rank_model/xgboost_rank/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model_manifest.json",
+      "bytes": 3826,
+      "modified_utc": "2026-08-22T11:49:37.784100+00:00",
+      "sha256": "FB0E142BB867F3CEAED088E758BA4A4BE907C2C6D6FEFAD017EDF60A0A0796C4"
+    },
+    "rank_model/lightgbm_rank/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\test_rank_predictions.csv",
+      "bytes": 1067813,
+      "modified_utc": "2026-08-22T11:49:54.383830+00:00",
+      "sha256": "AAADEB5CC946AD4A02EA3DB45CDACF9B00CE408A90A9F30FA506B9B76AB2F82E"
+    },
+    "rank_model/lightgbm_rank/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\metrics.json",
+      "bytes": 1897,
+      "modified_utc": "2026-08-22T11:49:54.310040+00:00",
+      "sha256": "CA3AE378EA26A8D563663A1C2637690ADC48604369F2D196E9FB884949CAE07E"
+    },
+    "rank_model/lightgbm_rank/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model_manifest.json",
+      "bytes": 3836,
+      "modified_utc": "2026-08-22T11:49:54.312041+00:00",
+      "sha256": "31756B3A09A47D96A92FFCA101FAAFC5443F69EC9A0A99E018F1911A8554B6CA"
+    },
+    "rank_model/catboost_rank/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\test_rank_predictions.csv",
+      "bytes": 1062137,
+      "modified_utc": "2026-08-22T11:52:23.323478+00:00",
+      "sha256": "94B04B94CBD52CA5CCCB97997CEEFC553DFD91BD5018ABB251139D0E8BC7470A"
+    },
+    "rank_model/catboost_rank/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\metrics.json",
+      "bytes": 1903,
+      "modified_utc": "2026-08-22T11:52:23.277801+00:00",
+      "sha256": "E69246E5C908DF1CC3AE5AED6D2B8F1396BAFB7CFF2CCD70ABDD16EB7438AB01"
+    },
+    "rank_model/catboost_rank/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model_manifest.json",
+      "bytes": 3841,
+      "modified_utc": "2026-08-22T11:52:23.278801+00:00",
+      "sha256": "CD5213096FFB57B3F622358F6020FB8A6B524C53FA3A3581790EE1C6D6CD2F59"
+    },
+    "rank_model/deep_ranknet/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\test_rank_predictions.csv",
+      "bytes": 1063411,
+      "modified_utc": "2026-08-22T11:53:02.676641+00:00",
+      "sha256": "1C6656DFCB973B845E0EC28CAEDF89BADF2739BBC5B21E2ACDE68DDDEC2DFC37"
+    },
+    "rank_model/deep_ranknet/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\metrics.json",
+      "bytes": 1906,
+      "modified_utc": "2026-08-22T11:53:02.628869+00:00",
+      "sha256": "F2C903FE7F9477CA9BB80439912B5A5BB1AC55548F2F207CFF964AF51F2922B2"
+    },
+    "rank_model/deep_ranknet/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_manifest.json",
+      "bytes": 3918,
+      "modified_utc": "2026-08-22T11:53:02.630269+00:00",
+      "sha256": "6173B0EF3777D9806BAAFD3B164AD063A5DABBDE64D5F195CF06A369C7F7733B"
+    },
+    "rank_model/plackett_luce_full/test_rank_predictions.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\test_rank_predictions.csv",
+      "bytes": 1064485,
+      "modified_utc": "2026-08-22T11:53:40.944808+00:00",
+      "sha256": "63B374E14671FD8B167810400B0FCF628AF073850A33C93FF61D9525FC63522A"
+    },
+    "rank_model/plackett_luce_full/metrics.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\metrics.json",
+      "bytes": 1906,
+      "modified_utc": "2026-08-22T11:53:40.899942+00:00",
+      "sha256": "862133F3F96736BA871E45D653D87D4E062052679D72E7332F1224A93731F9C0"
+    },
+    "rank_model/plackett_luce_full/model_manifest.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model_manifest.json",
+      "bytes": 3914,
+      "modified_utc": "2026-08-22T11:53:40.901042+00:00",
+      "sha256": "41924B2A8F4891B1CE5C73877445E9EE3F68F2191E23E9BA42B570C621022427"
+    },
+    "anchor/runner_probabilities.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\runner_probabilities.csv",
+      "bytes": 8408115,
+      "modified_utc": "2026-08-22T12:03:00.100850+00:00",
+      "sha256": "2E3B2B07728EFC6A5A4F98A0487ECCB599BCD8BA83CD901A52D869FD12876514"
+    },
+    "anchor/delta_ll_metrics.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv",
+      "bytes": 2154,
+      "modified_utc": "2026-08-22T12:02:59.865288+00:00",
+      "sha256": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6"
+    },
+    "full_rank_locked/selections": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\all_bet_types\\bet_type_edge_analysis\\bet_type_race_selections.csv",
+      "bytes": 84945428,
+      "modified_utc": "2026-08-22T12:00:16.336291+00:00",
+      "sha256": "699D60704D4614837FBE18AB9DF983F5C9ECDED7F6481724003D4CEE182F63B7"
+    },
+    "full_rank_locked/locked_results": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\locked_policy_test_results.csv",
+      "bytes": 4458,
+      "modified_utc": "2026-08-22T12:01:18.115587+00:00",
+      "sha256": "4B984F13248AC46AFE8BF29F7BE937A383019F74955E93B98BAB433959078711"
+    },
+    "market_anchor_locked/selections": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\seven_bet_selections.csv",
+      "bytes": 12964962,
+      "modified_utc": "2026-08-22T12:03:09.169712+00:00",
+      "sha256": "E4DE708AE251D97452DE3A4626F614E4E9732598011AC3C0F63F523BF7FDF19A"
+    },
+    "market_anchor_locked/locked_results": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\locked_test_results.csv",
+      "bytes": 3056,
+      "modified_utc": "2026-08-22T12:03:10.260887+00:00",
+      "sha256": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3"
+    },
+    "upset_global_fraction/selections": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_bet_details.csv",
+      "bytes": 4892662,
+      "modified_utc": "2026-08-22T12:22:43.223065+00:00",
+      "sha256": "C9735F3D130CA9804F252DB64B0C00604D1A5BC7AC5077B220D257391A5B29E9"
+    },
+    "upset_global_fraction/summary": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\upset_bet_summary.csv",
+      "bytes": 53364,
+      "modified_utc": "2026-08-22T12:22:43.228128+00:00",
+      "sha256": "223FDF3342CAA6A1DE5B73AF9CC6C1DAB49BCB96B1533E7AF3EDB03685829077"
+    }
+  },
+  "outputs": {
+    "venue_rank_metrics.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_rank_metrics.csv",
+      "bytes": 7331,
+      "modified_utc": "2026-08-22T12:30:48.295833+00:00",
+      "sha256": "4A884AADA4FA9FE78258700F6C91478B161CA6ABBB3A438ED4E1D7FFE660FB93"
+    },
+    "venue_anchor_metrics.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_anchor_metrics.csv",
+      "bytes": 3188,
+      "modified_utc": "2026-08-22T12:30:48.297843+00:00",
+      "sha256": "BD149ADFA809713B8EA3E45F167DAE6F7C5BB01C716DFA58B019200AE1C635C2"
+    },
+    "venue_betting_metrics.csv": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_betting_metrics.csv",
+      "bytes": 97914,
+      "modified_utc": "2026-08-22T12:30:48.303281+00:00",
+      "sha256": "A2449917588DAE596277576917CC5CB992EAAA91E6D0419A08AD10B80E96AC14"
+    },
+    "venue_analysis.json": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\venue_stratified\\venue_analysis.json",
+      "bytes": 375906,
+      "modified_utc": "2026-08-22T12:30:48.314266+00:00",
+      "sha256": "469F8DA333A234A32AB269F385D3F373C8DC2317202EFDD5799C64F6E1173B26"
+    }
+  },
+  "dynamic_counts": {
+    "test_rows": 11695,
+    "test_races": 1101,
+    "rank_metric_rows": 18,
+    "anchor_metric_rows": 9,
+    "betting_metric_rows": 210,
+    "selection_traces": 70
+  }
+}

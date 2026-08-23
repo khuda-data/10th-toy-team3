@@ -1,0 +1,33 @@
+{
+  "status": "H17_TRAINING_AND_DEPLOYMENT_WEIGHTS_FROZEN_BEFORE_FIRST_TARGET_T5",
+  "frozen_at_kst": "2026-08-23T08:37:43.707649+09:00",
+  "protocol_sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78",
+  "training_artifact_manifest": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/training_artifact_manifest.json",
+    "bytes": 13121,
+    "sha256": "5F61D3457885F841E9A872B98E519390715DBD065583D9963629DB931C65BE01"
+  },
+  "deployment_model": {
+    "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/14_all92_deployment.json",
+    "bytes": 1578,
+    "sha256": "F07F78C257B7D931FDF173F1289EE3AF60109B39883AAC013994C18507888A4E"
+  },
+  "deployment_weights": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+    "bytes": 1778,
+    "sha256": "352A73CDBE92455D64C2F2F27D13A13D38145C175FAC458FF9C174B002FE9F71"
+  },
+  "lambda_selection": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/lambda_selection.json",
+    "bytes": 1060,
+    "sha256": "7BB98C7A5470DB21158014096F8F89EA57216D8EE2FA70322648F6A215713010"
+  },
+  "selected_lambda": 1.0,
+  "actual_optimizer_fit_calls": 14,
+  "first_target_t5_kst": "2026-08-23T10:30:00+09:00",
+  "frozen_before_first_target_t5": true,
+  "split_test_bytes_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

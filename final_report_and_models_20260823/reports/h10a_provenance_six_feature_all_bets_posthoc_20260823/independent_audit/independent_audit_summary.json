@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": 17,
+  "passed": 17,
+  "failed": 0,
+  "failed_checks": [],
+  "replayed_settlement_rows": 448,
+  "replayed_candidate_tickets": 69276,
+  "races": 64,
+  "bet_types": [
+    "단승",
+    "연승",
+    "복승",
+    "쌍승",
+    "삼복승",
+    "삼쌍승",
+    "복연승"
+  ],
+  "source_raw_html_hashes_replayed": 7,
+  "independently_recomputed": [
+    "candidate enumeration",
+    "probability-edge maximizing ticket",
+    "market-proxy top ticket",
+    "event hit",
+    "official final-dividend settlement",
+    "ROI",
+    "daily-block CI",
+    "MDD",
+    "Sharpe",
+    ">30% warning coverage"
+  ],
+  "audited_at": "2026-08-23T06:34:15.243290+09:00"
+}

@@ -1,0 +1,96 @@
+{
+  "status": "BUILT_FROM_H11C_VALID_ONLY_LOCKED_EVIDENCE",
+  "created_at_kst": "2026-08-23T07:32:03.720582+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\index.html",
+    "bytes": 34225,
+    "sha256": "B2A5CCFCB5E92C36196D8163E6461A3A49224BCA8F2ED5C18EED727B0651F85E"
+  },
+  "source_count": 13,
+  "sources": [
+    {
+      "role": "protocol",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\protocol_before_analysis.json",
+      "bytes": 5200,
+      "sha256": "5D17D51E0ADE852D4BFC3920B7C1D093D0E72BE6473F3955F7D0CF19370F08AC"
+    },
+    {
+      "role": "threshold",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\threshold_lock.json",
+      "bytes": 1160,
+      "sha256": "C8952FE023BA53D16453171AD1AF5B5D9AFA037D00C741DF2A30F24BB0BABC63"
+    },
+    {
+      "role": "summary",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\experiment_summary.json",
+      "bytes": 2561,
+      "sha256": "0BF24E2AD73562183382E0791C624927156853B887E95E033DA5D638A0EB70FF"
+    },
+    {
+      "role": "audit",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\independent_validation.json",
+      "bytes": 5555,
+      "sha256": "7D2B140B5D65E4E201F69AC4ECDAB4EF794982C9A8373AE4E4FE33E179448477"
+    },
+    {
+      "role": "audit_checks",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\independent_validation_checks.csv",
+      "bytes": 2582,
+      "sha256": "15B472B50889576A89ACA49EE49A34D99A2D641A55C1E1B168A57FB39126AB38"
+    },
+    {
+      "role": "cutoffs",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_cutoff_metrics.csv",
+      "bytes": 2435,
+      "sha256": "90B934640E17D6B0F679926A1CD75602F15CE5E89E851D19AFED2BB2004428F5"
+    },
+    {
+      "role": "paired",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_paired_metrics.csv",
+      "bytes": 842,
+      "sha256": "60E2D3D47CA69E343DAE5F5AAEBDDE5A8FA6CF7020805CC13F02F4A43CF2C713"
+    },
+    {
+      "role": "bands",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_band_diagnostics.csv",
+      "bytes": 1003,
+      "sha256": "31430DD8F9C04F184248B4AF0CC4F98862581BC56DA14E726893414F67E35E30"
+    },
+    {
+      "role": "tickets",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_ticket_level.csv",
+      "bytes": 223186,
+      "sha256": "37F25A9A9D71362451039C9EAA9C0BCD4102A5FFB34D213D2FF3672328F29A26"
+    },
+    {
+      "role": "execution_log",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\logs\\execution.log",
+      "bytes": 545,
+      "sha256": "A4DBE98F1D3E209C6002BE8136F0A661A9F7AF59DC982D0EF62AEF8136CF7999"
+    },
+    {
+      "role": "phase_log",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\logs\\phase_progress.jsonl",
+      "bytes": 1195,
+      "sha256": "C5365498612A4235D48CDC4F9C3DFF8787EE38BEAB51E0BEAEB4F7051E63EF5B"
+    },
+    {
+      "role": "analysis_source",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_h11c_darkhorse_8_15_valid_lock.py",
+      "bytes": 20467,
+      "sha256": "7F66EC7370818998E5EAD39658926500726EDBAD633ACC56857BEB27DC657E4A"
+    },
+    {
+      "role": "audit_source",
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\validation\\validate_h11c_darkhorse_8_15_valid_lock.py",
+      "bytes": 17372,
+      "sha256": "7CE25121E625EE4BC78D602BBA00B04419FA8FABACD5E7B4EB276E84EC09D283"
+    }
+  ],
+  "forbidden_target_sources_read": [],
+  "target_date_rows_quotes_outcomes_read": 0,
+  "reused_test_read_for_threshold_or_metrics": false,
+  "deployment_status": "NO_GO",
+  "actual_stake": 0,
+  "holm_passed_cutoffs": []
+}

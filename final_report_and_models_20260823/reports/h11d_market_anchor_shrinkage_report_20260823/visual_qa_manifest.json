@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "inspection_type": "manual_visual_review",
+  "inspected_at_kst": "2026-08-23T07:50:06.7376839+09:00",
+  "source_pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.pdf",
+    "bytes": 293339,
+    "sha256": "F637BAEC3A811106CEFF4A28E2B1EC5DF115DC11E654DC3B36EA8BC315B6184E",
+    "pages": 5
+  },
+  "render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\render_manifest.json",
+    "bytes": 2286,
+    "sha256": "82BABFB03845D8DB5467932BCAB55982B827CF01E33AA2B9A83A8CB288E23335"
+  },
+  "scope": "all 5 pages at original rendered resolution plus montages",
+  "original_resolution_pages_inspected": [1, 2, 3, 4, 5],
+  "page_pngs": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\page-1.png",
+      "page": 1,
+      "bytes": 305076,
+      "sha256": "A5CCD3A87DA7BFABE9349DF91DCCE753D5C7B8EAE77E8CD78EEE129ADDFCCE6F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\page-2.png",
+      "page": 2,
+      "bytes": 188384,
+      "sha256": "1A84FECC6A82742B9EDC04285749D961F1BA63CCFE2716143FC370A4696C7B14"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\page-3.png",
+      "page": 3,
+      "bytes": 193015,
+      "sha256": "EA7023D449C51280225A157F65D8C4CF01AE790C05697155F08374E23F48E66C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\page-4.png",
+      "page": 4,
+      "bytes": 262682,
+      "sha256": "AB1F73A61FFA56FDF9CF71286FC452B0ADA7078C757D16916F3A2B438EDAC2CB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\page-5.png",
+      "page": 5,
+      "bytes": 227447,
+      "sha256": "3E72143B2CCE4AA5BA8DB1146668256DF60C6971026A646F3C49ACE338D896CE"
+    }
+  ],
+  "montages": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h11d_market_anchor_shrinkage_report_20260823\\montage-01.png",
+      "pages": [1, 2, 3, 4, 5],
+      "bytes": 883648,
+      "sha256": "DC591B12B08745671E13A3DE034CFD6E071865A95692A7509EF764E5438DEFC7"
+    }
+  ],
+  "checks": {
+    "all_pages_inspected": true,
+    "no_clipped_text": true,
+    "no_overlapping_text_or_objects": true,
+    "no_broken_korean_glyphs_or_black_squares": true,
+    "tables_fit_page_width": true,
+    "chart_labels_and_series_legible": true,
+    "consistent_typography_spacing_and_margins": true,
+    "section_transitions_clear": true,
+    "no_unintended_blank_or_near_blank_intermediate_page": true,
+    "color_contrast_legible": true,
+    "evidence_hash_table_legible_at_original_resolution": true,
+    "previous_page4_excess_blank_space_resolved": true
+  },
+  "notes": [
+    "The first six-page render exposed an unintended near-blank page 4 caused by a forced page break. The forced break was removed and the final five-page PDF was re-exported and fully re-rendered.",
+    "After the PDF text-extraction validator was corrected, pages 1-4 retained byte-identical PNG hashes; page 5 and the new montage were inspected again at original rendered resolution.",
+    "Page 5 intentionally leaves whitespace after the complete evidence table; no content is clipped or omitted."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "validator": {
+    "path": "src/validation/validate_prospective_delta_ll_power.py",
+    "sha256": "97565D79B6743872922AC0BA70E9711711AB2EB20F02A268582135D575800F86"
+  },
+  "bound_files": [
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/independent_validation_checks.csv",
+      "sha256": "FA23B0949AC93948C665A28CA5A56D24F16E402377268C7E8F6F798EC39116BF",
+      "bytes": 10491
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/independent_validation.json",
+      "sha256": "2718BA0A84E375DE9B3D5BD13297B18834542B4298AA41F2F50996A65489DE87",
+      "bytes": 759
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/research_state_after_validation.json",
+      "sha256": "80D7073FA9A99463772B04E90E520DE0B84423AF36B90B62A6932FE6727CD9B6",
+      "bytes": 455
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/output_manifest.json",
+      "sha256": "00C611E33F4A0C0A5E28F422DE3778C0A0F3345B1B83F20CFFB600522ED1F020",
+      "bytes": 4028
+    }
+  ],
+  "idempotence_contract": "CREATE_ONCE_THEN_REUSE_EXACT_NO_OVERWRITE",
+  "target_20260823_reads": 0,
+  "test_analysis_reads": 0
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 7,
+  "checks_passed": 7,
+  "checks_failed": 0,
+  "formula_gradient_hessian_replay": "PASS",
+  "probability_metric_replay": "PASS",
+  "bootstrap_holm_replay": "PASS",
+  "kelly_replay": "PASS",
+  "result_interpretation": {
+    "proper_score": "calibration improves unadjusted log loss and Brier versus uncalibrated, but no Holm endpoint passes and market superiority is unconfirmed",
+    "sizing": "calibrated Kelly loses more than uncalibrated Kelly; probability calibration alone does not create an economic edge",
+    "stake": 0
+  },
+  "confirmation_status": "retrospective rolling OOS, not pristine independent confirmation",
+  "elapsed_seconds": 0.09664344787597656
+}

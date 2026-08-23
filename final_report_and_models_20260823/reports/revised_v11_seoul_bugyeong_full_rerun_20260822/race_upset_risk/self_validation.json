@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "generated_utc": "2026-08-22T12:50:45.565431+00:00",
+  "checks_passed": 42,
+  "checks_total": 42,
+  "checks": [
+    {
+      "check": "v11 manifest has 141 clean features",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly 141 base features loaded",
+      "status": "PASS",
+      "evidence": 141
+    },
+    {
+      "check": "no manifest-listed market/result column in base features",
+      "status": "PASS"
+    },
+    {
+      "check": "final reference hash matches v11 manifest",
+      "status": "PASS",
+      "evidence": {
+        "expected": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+        "actual": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: train data",
+      "status": "PASS",
+      "evidence": {
+        "split": "train",
+        "kind": "data",
+        "expected": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "actual": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: train metadata",
+      "status": "PASS",
+      "evidence": {
+        "split": "train",
+        "kind": "metadata",
+        "expected": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "actual": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: valid data",
+      "status": "PASS",
+      "evidence": {
+        "split": "valid",
+        "kind": "data",
+        "expected": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "actual": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: valid metadata",
+      "status": "PASS",
+      "evidence": {
+        "split": "valid",
+        "kind": "metadata",
+        "expected": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "actual": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: test data",
+      "status": "PASS",
+      "evidence": {
+        "split": "test",
+        "kind": "data",
+        "expected": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "actual": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE"
+      }
+    },
+    {
+      "check": "input hash matches v11 manifest: test metadata",
+      "status": "PASS",
+      "evidence": {
+        "split": "test",
+        "kind": "metadata",
+        "expected": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "actual": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+      }
+    },
+    {
+      "check": "every model feature aggregates one of the 141 clean features",
+      "status": "PASS"
+    },
+    {
+      "check": "all race aggregate matrices are finite",
+      "status": "PASS"
+    },
+    {
+      "check": "internal tuning is chronological",
+      "status": "PASS"
+    },
+    {
+      "check": "tuning uses no validation/test",
+      "status": "PASS"
+    },
+    {
+      "check": "all calibration OOF folds are expanding-window chronological",
+      "status": "PASS"
+    },
+    {
+      "check": "calibrator OOF races belong only to train",
+      "status": "PASS"
+    },
+    {
+      "check": "eight risk thresholds are derived only from validation",
+      "status": "PASS"
+    },
+    {
+      "check": "reference q matches normalized inverse final odds",
+      "status": "PASS",
+      "evidence": {
+        "reference_joined_entries": 56456,
+        "eligible_races": 5342,
+        "excluded_races": 1,
+        "q_vs_normalized_inverse_odds_max_abs_error": 2.7755575615628914e-16,
+        "eligible_q_sum_max_abs_error": 1.1102230246251565e-15
+      }
+    },
+    {
+      "check": "eligible race market probabilities sum to one",
+      "status": "PASS",
+      "evidence": {
+        "reference_joined_entries": 56456,
+        "eligible_races": 5342,
+        "excluded_races": 1,
+        "q_vs_normalized_inverse_odds_max_abs_error": 2.7755575615628914e-16,
+        "eligible_q_sum_max_abs_error": 1.1102230246251565e-15
+      }
+    },
+    {
+      "check": "one label row per race",
+      "status": "PASS"
+    },
+    {
+      "check": "every eligible upset label follows the stated average-rank rule",
+      "status": "PASS"
+    },
+    {
+      "check": "every eligible market upset baseline is a probability",
+      "status": "PASS"
+    },
+    {
+      "check": "only Seoul and Bugyeong labels are present",
+      "status": "PASS"
+    },
+    {
+      "check": "every eligible probability has a binary label",
+      "status": "PASS"
+    },
+    {
+      "check": "all model probabilities are within [0,1]",
+      "status": "PASS"
+    },
+    {
+      "check": "saved model/calibrator reload reproduces probabilities",
+      "status": "PASS",
+      "evidence": 0.0
+    },
+    {
+      "check": "aggregate gain importance sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "base-feature gain importance sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "all ROC-AUC values are valid",
+      "status": "PASS"
+    },
+    {
+      "check": "all PR-AUC values are valid",
+      "status": "PASS"
+    },
+    {
+      "check": "all Brier values are valid",
+      "status": "PASS"
+    },
+    {
+      "check": "all ECE values are valid",
+      "status": "PASS"
+    },
+    {
+      "check": "risk-band date bootstrap produced valid lift samples",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: high_10pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: low_10pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: high_20pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: low_20pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: high_30pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: low_30pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: high_40pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test applies frozen threshold unchanged: low_40pct",
+      "status": "PASS"
+    },
+    {
+      "check": "test is evaluation-only and was not used for fit/tuning/calibration/thresholds",
+      "status": "PASS",
+      "evidence": {
+        "model_fit": "train eligible races only",
+        "tuning": "train internal chronological holdout only",
+        "calibration": "train expanding-window OOF only",
+        "thresholds": "validation calibrated probabilities only",
+        "test": "one-pass exploratory evaluation only"
+      }
+    }
+  ],
+  "reload_max_abs_probability_error": 0.0,
+  "test_confirmation_status": "exploratory_reuse_not_pristine_confirmation"
+}

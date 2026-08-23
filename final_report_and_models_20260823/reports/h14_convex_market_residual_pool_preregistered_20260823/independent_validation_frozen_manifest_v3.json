@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_PASS_WITH_LIMITATIONS",
+  "created_at_kst": "2026-08-23T08:25:08.513187+09:00",
+  "validator_sha256": "5E9938FB3B3FF4CF668334E5B680F2FD997657CF8E1624A35B74D65E5C84E1DA",
+  "training_freeze_sha256": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B",
+  "artifacts": [
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_frozen_before_first_t5_v3.json",
+      "bytes": 26366,
+      "sha256": "7C5625003D0EBA093FDECB250C5FF8BAAFB0C7021101F31ED0FD7C16267818C4"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_frozen_checks_v3.csv",
+      "bytes": 14279,
+      "sha256": "42098D0A517AB8FF94506AF27B92A4C0946815DFB0A437288ACA19F0AF4568B8"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/logs/independent_validation_frozen_v3.log",
+      "bytes": 210,
+      "sha256": "CCFFAFC89EF71B7606EF5DEE335C8E4ACD715EA21C8033E4DAB027903DE09511"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation_attempt1_failure.json",
+      "bytes": 988,
+      "sha256": "9B8FE0297156BC5E244AC4ABD86812B816195D14C05CBAE8A1243E8B5E15FEB8"
+    }
+  ],
+  "target_20260823_sources_read": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "live_stake": 0
+}

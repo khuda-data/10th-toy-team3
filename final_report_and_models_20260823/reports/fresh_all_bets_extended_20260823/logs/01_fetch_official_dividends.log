@@ -1,0 +1,9 @@
+2026-08-23 05:19:28,750 | INFO | PHASE 01 PASS | goal=official settlement evidence only; races=64 date-meet cells=7 source_sha=2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A
+2026-08-23 05:19:29,195 | INFO | PHASE 02 PROGRESS | page=1/7 meet=3 date=20260814 source=download parsed_rows=88
+2026-08-23 05:19:29,634 | INFO | PHASE 02 PROGRESS | page=2/7 meet=1 date=20260815 source=download parsed_rows=110
+2026-08-23 05:19:30,094 | INFO | PHASE 02 PROGRESS | page=3/7 meet=1 date=20260816 source=download parsed_rows=110
+2026-08-23 05:19:30,511 | INFO | PHASE 02 PROGRESS | page=4/7 meet=3 date=20260816 source=download parsed_rows=77
+2026-08-23 05:19:31,028 | INFO | PHASE 02 PROGRESS | page=5/7 meet=1 date=20260817 source=download parsed_rows=121
+2026-08-23 05:19:31,435 | INFO | PHASE 02 PROGRESS | page=6/7 meet=3 date=20260821 source=download parsed_rows=88
+2026-08-23 05:19:31,847 | INFO | PHASE 02 PROGRESS | page=7/7 meet=1 date=20260822 source=download parsed_rows=110
+2026-08-23 05:19:31,924 | INFO | PHASE 03 PASS | races=64 rows=704 checks=448 raw_sha_recorded=True elapsed=3.19s

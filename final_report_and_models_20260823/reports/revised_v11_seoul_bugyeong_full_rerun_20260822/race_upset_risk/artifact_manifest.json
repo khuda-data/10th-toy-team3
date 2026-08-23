@@ -1,0 +1,109 @@
+{
+  "generated_utc": "2026-08-22T12:50:45.727035+00:00",
+  "root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk",
+  "self_hash_omitted": true,
+  "artifacts": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\aggregate_feature_importance.csv",
+      "bytes": 35431,
+      "modified_utc": "2026-08-22T12:50:45.411860+00:00",
+      "sha256": "30592D9D19427AB9FCA0448ED67E97438491FAE78961A6AC9A2997ACBA27CDCF"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\base_feature_importance.csv",
+      "bytes": 7624,
+      "modified_utc": "2026-08-22T12:50:45.413096+00:00",
+      "sha256": "3A20DB69B3064F0FEA98B14DA82DD7B747F455247FD554B171F86066D6288E05"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\calibration_bins.csv",
+      "bytes": 9778,
+      "modified_utc": "2026-08-22T12:50:45.405262+00:00",
+      "sha256": "BA2A4993CAF51337F1C6B497BB6253001A70E4960D662C8163A3436AF8B1C2E9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\excluded_races.csv",
+      "bytes": 391,
+      "modified_utc": "2026-08-22T12:50:45.391774+00:00",
+      "sha256": "D650D3BCEC857979E233336FA05F30C55D4E9DDDEFF28EA3E90D395573AD542B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\internal_train_tuning.csv",
+      "bytes": 812,
+      "modified_utc": "2026-08-22T12:50:45.394424+00:00",
+      "sha256": "688BEC176CE80719DA8FA5DB23A0121D5A518735727334D803C75377C476C12C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\metrics_by_split_venue_source.csv",
+      "bytes": 8151,
+      "modified_utc": "2026-08-22T12:50:45.401744+00:00",
+      "sha256": "85C6C54607D2243FF59CC0BAE29D837838DD1069A2C613F4D14938FA6EE865F1"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\model_vs_market_differences.csv",
+      "bytes": 2538,
+      "modified_utc": "2026-08-22T12:50:45.402754+00:00",
+      "sha256": "DC281FDA1462E2E51E673F46744085AE993F0A558E74B3248FEE529416EDE33C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\models\\model_bundle.joblib",
+      "bytes": 378526,
+      "modified_utc": "2026-08-22T12:50:45.339840+00:00",
+      "sha256": "E9B6BB4B7E4D949E4418A678E94F732D398C76E88B545507830CA43005B2B731"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\models\\race_upset_lightgbm.txt",
+      "bytes": 361366,
+      "modified_utc": "2026-08-22T12:50:45.328523+00:00",
+      "sha256": "AE8B1BA18470DB603FE13C8FB6F9407FF2833D663BB058584A08F7701C639DFB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\race_upset_labels.csv",
+      "bytes": 636488,
+      "modified_utc": "2026-08-22T12:50:45.363754+00:00",
+      "sha256": "5509B60D83BB8FEFB795D22C6198AB03432D6297D576A88DC365F7C91B93D17C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\race_upset_probabilities.csv",
+      "bytes": 995565,
+      "modified_utc": "2026-08-22T12:50:45.390269+00:00",
+      "sha256": "3A4929ADBB7C1609439D458E867807E79A87C8D5C83775A2507F1C48CCEBDED3"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\race_upset_risk_report.md",
+      "bytes": 12528,
+      "modified_utc": "2026-08-22T12:50:45.721116+00:00",
+      "sha256": "0923D52C4F92A27B99D8CA3E4855F7EBB81B7A315FF22ED5B7E70BD39A1CA8CD"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\race_upset_risk_result.json",
+      "bytes": 18710,
+      "modified_utc": "2026-08-22T12:50:45.715612+00:00",
+      "sha256": "B8BC121FD7979CF907A1FB91908E74023E0EE5BBB423854EE6BD0D21C019E5A8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\risk_band_lift.csv",
+      "bytes": 15559,
+      "modified_utc": "2026-08-22T12:50:45.408756+00:00",
+      "sha256": "212C51CB0138B1C7A03DB12686C019E35598D42C519A56EB51B8477F3C97E5BC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\self_validation.json",
+      "bytes": 7325,
+      "modified_utc": "2026-08-22T12:50:45.566122+00:00",
+      "sha256": "A6C6634C6DA84398C38D4E9DCAEFB365D92005E30A6F3D59C70A7EA549A36C63"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\training_expanding_window_oof.csv",
+      "bytes": 90756,
+      "modified_utc": "2026-08-22T12:50:45.399312+00:00",
+      "sha256": "E602B962D1250C8DC96B52E00FB773FEC5E1DB96082D752A6B6CE358B2C3BF54"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\race_upset_risk\\validation_locked_risk_thresholds.csv",
+      "bytes": 1128,
+      "modified_utc": "2026-08-22T12:50:45.406270+00:00",
+      "sha256": "E55A8DBC7AB6105BF38EC5F7024CF4F787E818711FC45D2D7A2BC282B67B83B7"
+    }
+  ]
+}

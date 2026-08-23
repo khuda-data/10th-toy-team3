@@ -1,0 +1,22 @@
+RANK DATA PASS: features=141 rows=33416/11345/11695
+INPUT AUDIT PASS: checks=15, q_error=2.776e-16
+CLOGIT l2=0.1: valid delta LL/race=-0.01275690, converged=True
+CLOGIT l2=1.0: valid delta LL/race=-0.00697597, converged=True
+CLOGIT l2=10.0: valid delta LL/race=-0.00113141, converged=True
+CLOGIT l2=100.0: valid delta LL/race=+0.00531238, converged=True
+BASE MARGIN trees=188: valid delta LL/race=+0.02183326
+SELECTIONS valid: complete
+SELECTIONS test: complete
+MARKET ANCHOR TRAINING AND VALIDATION PASS: checks=21
+                 model_key  delta_ll_per_race  delta_ll_ci_low_daily_block  delta_ll_ci_high_daily_block
+anchored_conditional_logit           0.013974                     0.002318                      0.025063
+      anchored_base_margin           0.013083                     0.006614                      0.019647
+           anchor_ensemble           0.017194                     0.009507                      0.025014
+bet_type            model_key selection_policy  test_bets  test_roi  test_roi_ci_low_daily_block  test_roi_ci_high_daily_block
+      단승 anchored_base_margin   top_10pct_edge        108 -0.145370                    -0.355360                      0.067654
+      연승 anchored_base_margin   top_10pct_edge        101 -0.075248                    -0.170096                      0.023765
+      복승      anchor_ensemble   top_10pct_edge        108  0.397222                    -0.033025                      0.844454
+      쌍승      anchor_ensemble   top_10pct_edge        108  0.167593                    -0.310498                      0.676155
+     삼복승 anchored_base_margin   top_20pct_edge        216 -0.076852                    -0.396291                      0.265154
+     삼쌍승 anchored_base_margin   top_10pct_edge        108 -0.329630                    -0.867368                      0.323479
+     복연승      anchor_ensemble   top_10pct_edge        108  0.159259                    -0.058497                      0.391278

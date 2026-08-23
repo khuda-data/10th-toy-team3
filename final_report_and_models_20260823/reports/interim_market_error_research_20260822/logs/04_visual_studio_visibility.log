@@ -1,0 +1,8 @@
+{
+  "XmlParse": "PASS",
+  "SrcWildcard": true,
+  "OutputWildcard": true,
+  "ReportingFolder": true,
+  "InterimReportFolder": true,
+  "InterimLogFolder": true
+}

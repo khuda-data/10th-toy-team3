@@ -1,0 +1,6 @@
+MODEL ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\models\revised_v11_seoul_bugyeong_full_rank_20260822
+DATA ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\data\revised_v11_seoul_bugyeong_rank_clean_preprocessed
+RANK DATA PASS: features=141 rows=33416/11345/11695
+VALID RANK: NDCG@5=0.773096 Spearman=0.426872 MAE=2.491624 Top3OrderedExact=0.014870 Top3UnorderedExact=0.079926
+TEST RANK: NDCG@5=0.773241 Spearman=0.436575 MAE=2.491832 Top3OrderedExact=0.014842 Top3UnorderedExact=0.073284
+FULL RANK MODEL TRAINING COMPLETE: xgboost_rank

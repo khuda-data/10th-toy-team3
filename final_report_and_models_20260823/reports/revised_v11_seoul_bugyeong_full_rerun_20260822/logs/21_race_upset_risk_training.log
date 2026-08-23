@@ -1,0 +1,5 @@
+PASS: PASS (42/42 checks)
+Base features: 141; aggregate model features: 486
+Eligible races: train=3158, valid=1084, test=1100
+Excluded label races: 1
+Output: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\outputs\reports\revised_v11_seoul_bugyeong_full_rerun_20260822\race_upset_risk

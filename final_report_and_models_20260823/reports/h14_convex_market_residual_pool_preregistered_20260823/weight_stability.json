@@ -1,0 +1,30 @@
+{
+  "status": "DESCRIPTIVE",
+  "comparisons": [
+    {
+      "left": "first44_stability_checkpoint",
+      "right": "first64_locked_late28_model",
+      "l1_distance": 1.1156009474191073,
+      "cosine_distance": 0.5515553178611687,
+      "left_weight_sum": 0.6132321506248106,
+      "right_weight_sum": 1.0
+    },
+    {
+      "left": "first64_locked_late28_model",
+      "right": "all92_deployment",
+      "l1_distance": 0.9127874736530985,
+      "cosine_distance": 0.2808225295324276,
+      "left_weight_sum": 1.0,
+      "right_weight_sum": 1.0000000000000002
+    },
+    {
+      "left": "first44_stability_checkpoint",
+      "right": "all92_deployment",
+      "l1_distance": 0.46038582002201855,
+      "cosine_distance": 0.11639322069939073,
+      "left_weight_sum": 0.6132321506248106,
+      "right_weight_sum": 1.0000000000000002
+    }
+  ],
+  "interpretation_rule": "smaller L1 and cosine distance means more stable weights; no threshold was selected from outcomes"
+}

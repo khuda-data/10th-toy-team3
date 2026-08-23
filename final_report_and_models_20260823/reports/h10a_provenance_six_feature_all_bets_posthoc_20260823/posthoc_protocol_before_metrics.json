@@ -1,0 +1,56 @@
+{
+  "status": "POSTHOC_PROTOCOL_RECORDED_BEFORE_SETTLEMENT_METRICS",
+  "created_at": "2026-08-23T06:32:10.936338+09:00",
+  "goal": "descriptively settle H10A six-feature M6 on all seven KRA bet types using existing official final dividends",
+  "evidence_scope": "already-observed fresh64 optional continuation; posthoc/descriptive only; not pristine confirmation",
+  "model_scope": "H10A M6 six-feature conditional-logit probabilities; no refit and no core H10A artifact alteration in this phase",
+  "column_mapping": {
+    "model_probability": "exact byte-loaded numeric values from H10A fresh64_runner_probabilities.csv:m6_probability",
+    "market_probability": "copied unchanged from H10A fresh64_runner_probabilities.csv:market_probability",
+    "ord": "exact one-to-one join from the existing fresh64 runner outcome file on race_id+entry_id+chulNo",
+    "win": "copied from H10A and verified exactly equal to the outcome source and to (ord == 1)"
+  },
+  "ticket_policy": "one unit per race and bet type on the ticket maximizing model event probability minus closing-win-q proxy event probability",
+  "market_comparator": "highest closing-win-q-derived event probability; direct closing-win q only for win and a proxy for the other six bet types",
+  "fee_treatment": "official final KRA dividend used as gross return; do not deduct 20%/27% again because the final dividend already reflects takeout",
+  "forbidden_interpretations": [
+    "new independent confirmation",
+    "decision-time executable odds",
+    "direct complex-bet market probability",
+    "identified real EV or Kelly sizing",
+    "authorization for live betting"
+  ],
+  "recommended_real_stake": 0,
+  "inputs": {
+    "h10_probabilities": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\fresh64_runner_probabilities.csv",
+      "sha256": "42B68D726CA65D2742524E36F117B221AB264885F4107EC3C064181608DF43ED"
+    },
+    "finish_order_source": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\fresh_runner_probabilities.csv",
+      "sha256": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132"
+    },
+    "h10_summary": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\experiment_summary.json",
+      "sha256": "FAD2AD5247E19964819FEAC07C9244E8ED69A7B459F96929C8CB96DC760AACA3"
+    },
+    "h10_independent_audit": {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\independent_audit\\independent_audit_summary.json",
+      "sha256": "EF5325DB2511EBFBCC5CA9715EE57D404C9A94727102E6EF6B1F7013BE12B785"
+    },
+    "official_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823"
+  },
+  "hard_gates": {
+    "rows": 640,
+    "races": 64,
+    "dates": 6,
+    "exact_join_rows": 640,
+    "duplicate_runner_keys": 0,
+    "winner_label_mismatches": 0,
+    "market_probability_max_difference": 0.0,
+    "model_probability_sum_max_error": 7.771561172376096e-16,
+    "market_probability_sum_max_error": 6.661338147750939e-16,
+    "official_copy_hash_checks_passed": 10,
+    "official_copy_hash_checks_total": 10
+  }
+}

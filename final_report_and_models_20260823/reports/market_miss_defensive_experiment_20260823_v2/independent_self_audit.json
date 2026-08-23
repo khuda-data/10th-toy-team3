@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "v11 manifest has 141 model features",
+      "status": "PASS"
+    },
+    {
+      "check": "market odds/probabilities absent from fundamental feature matrix",
+      "status": "PASS"
+    },
+    {
+      "check": "all model segments are predefined",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly one winner per test race",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__clogit: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__clogit: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__base_margin: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__base_margin: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__ensemble: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_8_15__ensemble: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__clogit: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__clogit: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__base_margin: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__base_margin: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__ensemble: finite probabilities",
+      "status": "PASS"
+    },
+    {
+      "check": "odds_30_plus__ensemble: race probabilities sum to 1",
+      "status": "PASS"
+    },
+    {
+      "check": "reported probability-sum audit passes",
+      "status": "PASS"
+    },
+    {
+      "check": "locked policy bet counts nonnegative",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: segment_discovery_train_only.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: feature_scan_train_only.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: feature_model_tuning_train_only.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: preregistration_before_validation.json",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: validation_probability_metrics.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: validation_policy_grid.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: validation_lock_before_test.json",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: test_probability_metrics.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: locked_test_policy_results.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: feature_importance.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: runner_probabilities_test.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "artifact exists: darkhorse_local_reasons.csv",
+      "status": "PASS"
+    }
+  ],
+  "generated_files": [
+    "segment_discovery_train_only.csv",
+    "feature_scan_train_only.csv",
+    "feature_model_tuning_train_only.csv",
+    "preregistration_before_validation.json",
+    "validation_probability_metrics.csv",
+    "validation_policy_grid.csv",
+    "validation_lock_before_test.json",
+    "test_probability_metrics.csv",
+    "locked_test_policy_results.csv",
+    "feature_importance.csv",
+    "runner_probabilities_test.csv",
+    "darkhorse_local_reasons.csv"
+  ]
+}

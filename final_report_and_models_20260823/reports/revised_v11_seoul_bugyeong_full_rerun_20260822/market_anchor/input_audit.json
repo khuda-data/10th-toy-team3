@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "dataset_root": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "market_reference": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+  "official_dividends": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividends.csv",
+  "market_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "official_dividends_sha256": "1DA22B6C3CAA3C16FFD7E117FBC65F47B0927C3F00FFA857DBFCFFE7A76F5804",
+  "feature_count": 141,
+  "market_columns_in_feature_matrix": [],
+  "q_inverse_odds_max_abs_error": 2.7755575615628914e-16,
+  "dates": {
+    "train": "20230805~20250511",
+    "valid": "20250517~20251227",
+    "test": "20251228~20260809"
+  },
+  "rows": {
+    "train": 33416,
+    "valid": 11345,
+    "test": 11695
+  },
+  "races": {
+    "train": 3158,
+    "valid": 1084,
+    "test": 1101
+  },
+  "checks": [
+    {
+      "check": "feature count matches manifest (141)",
+      "status": "PASS"
+    },
+    {
+      "check": "market/result columns absent from feature matrix",
+      "status": "PASS"
+    },
+    {
+      "check": "all feature matrices finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train before validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation before test",
+      "status": "PASS"
+    },
+    {
+      "check": "train: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "train: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "train: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "test: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "test: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "q equals race-normalized inverse win odds",
+      "status": "PASS"
+    }
+  ]
+}

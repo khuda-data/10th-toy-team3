@@ -1,0 +1,102 @@
+{
+  "created_before_loading_validation_or_test_in_this_process": true,
+  "hypotheses": {
+    "H1": "nonlinear no-odds MLP residual improves normalized market q",
+    "H2": "race-masked self-attention improves over per-runner MLP"
+  },
+  "feature_source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\selected_upset_features.json",
+  "feature_source_sha256": "234579ABE0EF7049E8C1101C8F307CF83D3E5D2B5CD3CC3744C54FCDB371D820",
+  "features": [
+    "clinic_30d",
+    "tr_plcrate",
+    "hr_last_finpct",
+    "hr_rest_days",
+    "age__pr",
+    "hr_style",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "ow_starts",
+    "hr_plcrate",
+    "jk_winrate",
+    "waterRate",
+    "hr_rest_days__z",
+    "jk_winrate__z",
+    "jk_plcrate",
+    "wgBudam__pr",
+    "hr_style_sd",
+    "jk_starts",
+    "ow_winrate",
+    "train_sec_14",
+    "te_owName",
+    "tr_winrate",
+    "tool_망사눈가면",
+    "hr_winrate__pr",
+    "age",
+    "hr_dist_starts",
+    "wg_diff",
+    "hr_rest_days__pr",
+    "tr_starts"
+  ],
+  "market_odds_role": "fixed log(normalized q) offset, retrospective band gate, EDGE, settlement; never neural input",
+  "model_specs": {
+    "deep_mlp": {
+      "kind": "mlp",
+      "lr": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.1
+    },
+    "race_attention": {
+      "kind": "attention",
+      "lr": 0.0005,
+      "weight_decay": 0.01,
+      "dropout": 0.1
+    }
+  },
+  "seeds": [
+    20260823,
+    20260824,
+    20260825
+  ],
+  "train_internal_schedule": {
+    "deep_mlp": {
+      "20260823": 3,
+      "20260824": 4,
+      "20260825": 3
+    },
+    "race_attention": {
+      "20260823": 3,
+      "20260824": 3,
+      "20260825": 3
+    }
+  },
+  "train_internal_split": {
+    "rule": "first 75% unique TRAIN dates fit; final 25% tune",
+    "cut_date": 20241201,
+    "fit_rows": 24668,
+    "fit_races": 2357,
+    "fit_date_min": 20230805,
+    "fit_date_max": 20241130,
+    "tune_rows": 8748,
+    "tune_races": 801,
+    "tune_date_min": 20241201,
+    "tune_date_max": 20250511
+  },
+  "validation_rule": "choose maximum full-race delta LL among MLP, attention and their equal blend; then lock 7-bet policies",
+  "test_status": "exploratory OOS reuse; interval was inspected in earlier project rounds",
+  "direct_EV_loss": "not trained because only closing prices are available; doing so would optimize against a non-executable future price",
+  "train_input_audit": {
+    "split": "train",
+    "rows": 33416,
+    "races": 3158,
+    "date_min": 20230805,
+    "date_max": 20250511,
+    "features": 141,
+    "numeric_feature_nonfinite": 0,
+    "winner_count": 3158,
+    "max_market_probability_sum_error": 4.440892098500626e-16,
+    "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+    "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+  }
+}

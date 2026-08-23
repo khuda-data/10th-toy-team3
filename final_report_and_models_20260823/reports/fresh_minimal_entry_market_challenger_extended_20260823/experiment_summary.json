@@ -1,0 +1,79 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "actual_training_completed": true,
+  "trained_model_files": 1,
+  "historical_rows": 56530,
+  "historical_races": 5350,
+  "historical_date_max": 20260809,
+  "fresh_rows": 640,
+  "fresh_races": 64,
+  "fresh_dates": [
+    20260814,
+    20260815,
+    20260816,
+    20260817,
+    20260821,
+    20260822
+  ],
+  "features": [
+    "age_percentile",
+    "burden_percentile",
+    "burden_change",
+    "sex::거",
+    "sex::수"
+  ],
+  "market_or_outcome_features_in_X": [],
+  "maximum_train_absolute_feature_correlation": 0.40561132567198754,
+  "maximum_fresh_probability_sum_error": 3.3306690738754696e-16,
+  "fresh_delta_ll_vs_closing_market_daily_block": {
+    "estimate": 0.018305727919795442,
+    "ci_low": 0.0018423693688370386,
+    "ci_high": 0.04030907947160277,
+    "p_one_sided": 0.005599440055994401
+  },
+  "fresh_delta_ll_vs_closing_market_race_bootstrap_sensitivity": {
+    "estimate": 0.018305727919795442,
+    "ci_low": -0.0019967466876186475,
+    "ci_high": 0.03802897124228121,
+    "probability_positive": 0.9622
+  },
+  "fresh_model_brier": 0.08022504811353096,
+  "fresh_market_brier": 0.08097110879021491,
+  "fresh_brier_improvement": 0.0007460606766839517,
+  "coefficients": [
+    {
+      "term": "age_percentile",
+      "coefficient": -0.08654320258491256
+    },
+    {
+      "term": "burden_percentile",
+      "coefficient": -0.01607866348714929
+    },
+    {
+      "term": "burden_change",
+      "coefficient": 0.0032207495318017907
+    },
+    {
+      "term": "sex::거",
+      "coefficient": 0.08447102470476027
+    },
+    {
+      "term": "sex::수",
+      "coefficient": 0.05782829505262383
+    }
+  ],
+  "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fresh_minimal_entry_market_challenger_extended_20260823\\minimal_entry_market_challenger.joblib",
+  "model_sha256": "7A885F32285AA437DBBBA9711CE487DB16CD8033399CC810C8AABCF5152BBDCD",
+  "historical_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "fresh_entry_sha256": "7AF17E76EB1F29A4BCD7D7790E3D0F6A2D78E6472F1F677FF56035512DE9126D",
+  "fresh_result_sha256": "2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A",
+  "confirmation_status": "strictly later by date; 6 race days; protocol was created after source availability/completeness inspection, while feature definitions and L2 were fixed without using fresh winner metrics",
+  "not_validated": [
+    "frozen global29/partial30",
+    "decision-time EDGE",
+    "ROI",
+    "all seven bet types"
+  ],
+  "recommended_real_stake": 0,
+  "elapsed_seconds": 0.672806978225708
+}

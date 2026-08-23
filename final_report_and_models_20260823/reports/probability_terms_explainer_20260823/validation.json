@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "contains 95% 수준에서 확인되지",
+      "status": "PASS"
+    },
+    {
+      "check": "contains Validation",
+      "status": "PASS"
+    },
+    {
+      "check": "contains 시장 앵커",
+      "status": "PASS"
+    },
+    {
+      "check": "contains Base Margin",
+      "status": "PASS"
+    },
+    {
+      "check": "contains ΔLL",
+      "status": "PASS"
+    },
+    {
+      "check": "contains LL_model − LL_market",
+      "status": "PASS"
+    },
+    {
+      "check": "contains 8~15배",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive source include",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio recursive output include",
+      "status": "PASS"
+    }
+  ],
+  "report_sha256": "B20987EE1FEEF8E2D29B9E13F4A568D25BB4E36FB41EE9E5E80E0073C2A6CA47",
+  "report_bytes": 10575,
+  "actual_values": {
+    "valid_delta_ll": 0.021833257555457845,
+    "test_delta_ll": 0.01308337243121729,
+    "test_delta_ll_ci": [
+      0.006614488900544429,
+      0.019647000505588375
+    ],
+    "odds_8_15_test_roi": 0.0978723404255319,
+    "odds_8_15_test_roi_ci": [
+      -0.4631053223388305,
+      0.7420657467532464
+    ]
+  },
+  "inputs": {
+    "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\market_anchor\\delta_ll_metrics.csv": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6",
+    "outputs\\reports\\odds_8_15_v11_revalidation_20260823\\summary.json": "9759A61D7F033640E13A0F40A39F2E5F58A2904BC962688B805E5C8AF8172FF5"
+  }
+}

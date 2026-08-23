@@ -1,0 +1,182 @@
+{
+  "status": "BUILT_FROM_VALIDATED_LOCAL_EVIDENCE",
+  "created_at": "2026-08-23T06:53:31.712420+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.html",
+    "bytes": 84794,
+    "sha256": "7E9CEBC0E647E0494901C81FD1B1292B3A7E342AC8CF06516F03840032E1733D"
+  },
+  "source_count": 29,
+  "sources": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\experiment_summary.json",
+      "bytes": 9302,
+      "sha256": "FAD2AD5247E19964819FEAC07C9244E8ED69A7B459F96929C8CB96DC760AACA3"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\transform_manifest.json",
+      "bytes": 4182,
+      "sha256": "C7B25CE9171FC9A84011E57D09A4820CCD5D472662A594FC77C9B39577C02B14"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\endpoint_metrics.csv",
+      "bytes": 1758,
+      "sha256": "2531E73CED8A61D49E3A493D5D1A84617FFFFAC53C3850D49D6DAE29FE8B469A"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\brier_metrics.csv",
+      "bytes": 463,
+      "sha256": "E3A85275D918562A8A9571867C2CC93A4712718F958A007F1F8E0240B8EA6B78"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 535,
+      "sha256": "EF5325DB2511EBFBCC5CA9715EE57D404C9A94727102E6EF6B1F7013BE12B785"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\historical_feature_replay_audit.csv",
+      "bytes": 1287,
+      "sha256": "FAE2F0D0C116A712906279BA0450F269B0B09AFD83EA0E2EA5FB58525A61C474"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\model_coefficients.csv",
+      "bytes": 3847,
+      "sha256": "FC07234CF14574EA86E161D6761F13325C91526A13CB1329AAB2043786BE67C6"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\logs\\execution.log",
+      "bytes": 1947,
+      "sha256": "4860494E71F2DCA2518F87B8155A0EDDBD472D2CEA5276114AD46C1A0AC74DBC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\protocol_before_metrics.json",
+      "bytes": 1649,
+      "sha256": "140E57082C6C1518377479B7CC5AA567FB2AB2540523156B59D782DB3E9B59EF"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\reproduction_commands.txt",
+      "bytes": 1210,
+      "sha256": "917A083B3B7D60ABEAB86648FB25B019BA56A6252024886AB63EABAF6F5677EA"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\fresh_all_bet_summary.json",
+      "bytes": 17775,
+      "sha256": "B37CC4E7FCC2DAF6A51BE7FCFED5CBCBE252135DE1D7B72182F4FC8F64D09D15"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\fresh_all_bet_summary.csv",
+      "bytes": 5374,
+      "sha256": "9B13C791CD70B62DEE0C34B91F0BC1801C44F0AC477CB60E05857F26322F95B3"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\independent_audit\\independent_audit_summary.json",
+      "bytes": 717,
+      "sha256": "03BDEAD3896316FE7F22018A2F827E3191DB00A89DEE4A3E9F4753E9E104F5D9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\paired_advantage\\paired_advantage_summary.csv",
+      "bytes": 1462,
+      "sha256": "EB25DD1E13D4A02B717CC34F5B83D605EC85AB7BDE66EEA8D7036D84ACC1C9A4"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\paired_advantage\\experiment_summary.json",
+      "bytes": 646,
+      "sha256": "2683A2DCB0A0BFFF657BD61E37A916C6A92C74244A5C0C2CD2E0F0C4610717DE"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\paired_advantage\\independent_audit\\independent_audit_summary.json",
+      "bytes": 319,
+      "sha256": "E633D4DA8BA17908C00B317146696AF60A7206E7BCD135DA6CD10BBF8D2E9F16"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\official_dividend_collection_summary.json",
+      "bytes": 1568,
+      "sha256": "20B1B581FE9B5F80AE084F89E0B5982AE59E6D77BF9D8547B5A08B9B2DA54B71"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\posthoc_protocol_before_metrics.json",
+      "bytes": 3541,
+      "sha256": "3192FA7E4BABCED6E8634853F658588F29242FEF1BD781B558EDB1EB736C3DA8"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\settlement_protocol.json",
+      "bytes": 1279,
+      "sha256": "A8CB87ACC74D5B6FAD055AA718B57F9934A0E3AB43F7F486B4F69E63AD7BB6C0"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\fresh_probability_edge_ticket_settlement.csv",
+      "bytes": 155956,
+      "sha256": "424FD1ADD05DAEACB4674FBC37D3ADF57A81819DD84C583429BAB9E0F3A28561"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\logs\\02_evaluate_fresh_all_bets.log",
+      "bytes": 6506,
+      "sha256": "D917731C976B5F09EDDBD1A3811AC6E8EE82F13AE8A98A1BADBAE1B884C2D641"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\logs\\04_paired_advantage.log",
+      "bytes": 678,
+      "sha256": "2D1ED09EEE1C5DBE24A775A899C59F96718BB98DA5F0284330017EC817944F38"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\run_h10a_provenance_six_feature_anchor.py",
+      "bytes": 47629,
+      "sha256": "F099C5DD777D7E45CAE7AD2AE6CBF655D9F70A83699AED401AABE6B3DF524599"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\validate_h10a_provenance_six_feature_anchor.py",
+      "bytes": 29834,
+      "sha256": "189E6C54A588AD13405C72FCE0E6D93778E0F82710923DB71EEC926E0ACE8CC7"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\build_h10a_provenance_six_feature_final_report.py",
+      "bytes": 37977,
+      "sha256": "4E66FBEF0F2701451B7F916E8ECA5308F86E5B3A37ABB1D849E6C52E8619D40B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h10a_provenance_six_feature_final_report.py",
+      "bytes": 21419,
+      "sha256": "CB405078F57E2FC3CE802D031148698D6EF85958706CC2E1B8355491B42E2EDA"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h10a_provenance_six_feature_anchor_20260823\\all_history_to_fresh64.joblib",
+      "bytes": 3201,
+      "sha256": "51E4F942964F1D172517BA0A00956FA640B143085D5AE510CCF3503B32C5F480"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h10a_provenance_six_feature_anchor_20260823\\train_to_valid.joblib",
+      "bytes": 3169,
+      "sha256": "B32585C4128F516E858365AC2B4CFF04A82D64DCC24477C8F3B440FA917DCFFF"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h10a_provenance_six_feature_anchor_20260823\\train_valid_to_test.joblib",
+      "bytes": 3185,
+      "sha256": "F00E9AA5BE885A055E010466C9E0A14B685B585EC2937B61808E1FBEE37DE652"
+    }
+  ],
+  "core_audit_status": "PASS_WITH_LIMITATIONS",
+  "official_settlement_audit_status": "PASS",
+  "paired_audit_status": "PASS_WITH_LIMITATIONS",
+  "deployment_status": "NO_GO",
+  "recommended_real_stake": 0,
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\index.pdf",
+    "bytes": 492641,
+    "sha256": "8B5973A136B61D0A6A3324C9A1F70F3B38FAB905CBE3CE5EDD19773D0EA20925"
+  },
+  "pdf_export_summary": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\pdf_export_summary.json",
+    "bytes": 722,
+    "sha256": "EB61A36B7C671464085EB5A12BCB93574EA3340740284B83C646E9FACD531531"
+  },
+  "pdf_validation": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_final_report_20260823\\pdf_validation.json",
+    "bytes": 3404,
+    "sha256": "A7F34956227EC85817A79D550129419EF52D53EDA142D765E4E2D1E85655E7C7"
+  },
+  "pdf_render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\h10a_provenance_six_feature_final_20260823_v2\\render_manifest.json",
+    "bytes": 4252,
+    "sha256": "B0F0278C7351F7B37BA6D6C2B489B8E998648F3A1F025C5E9C709FA3A50A44F3"
+  }
+}

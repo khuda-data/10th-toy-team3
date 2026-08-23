@@ -1,0 +1,20 @@
+{
+  "html_exists": true,
+  "html_bytes": 116743,
+  "required_sections": true,
+  "contains_market_verdict": true,
+  "contains_all_bet_types": true,
+  "contains_metric_glossary": true,
+  "audits_pass": true,
+  "no_unresolved_nan": true,
+  "evidence_files_exist": true,
+  "debug_failure_disclosed": true,
+  "fresh_collection_disclosed": true,
+  "fresh_feature_blocker_disclosed": true,
+  "fresh_optional_continuation_disclosed": true,
+  "fresh_all_bets_disclosed": true,
+  "fresh_8_15_stress_disclosed": true,
+  "fresh_paired_proxy_scope_disclosed": true,
+  "clinic_ablation_disclosed": true,
+  "status": "PASS"
+}

@@ -1,0 +1,4 @@
+{"timestamp_kst": "2026-08-23T08:40:52.433721+09:00", "status": "PASS", "run_mode": "CREATED_IMMUTABLE", "checks": 268, "invariant": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5", "test_bytes": 0, "target": 0}
+{"timestamp_kst": "2026-08-23T08:41:25.372314+09:00", "status": "PASS", "run_mode": "REUSE_NO_OVERWRITE", "checks": 268, "invariant": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5", "test_bytes": 0, "target": 0}
+{"timestamp_kst": "2026-08-23T08:44:03.001672+09:00", "status": "PASS", "run_mode": "REUSE_NO_OVERWRITE", "checks": 268, "invariant": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5", "test_bytes": 0, "target": 0}
+{"timestamp_kst": "2026-08-23T08:44:30.613590+09:00", "status": "PASS", "run_mode": "REUSE_NO_OVERWRITE", "checks": 268, "invariant": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5", "test_bytes": 0, "target": 0}

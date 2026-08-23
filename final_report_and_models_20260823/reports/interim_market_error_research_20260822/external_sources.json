@@ -1,0 +1,149 @@
+{
+  "R1": {
+    "title": "William Benter, Computer Based Horse Race Handicapping and Wagering Systems: A Report",
+    "url": "https://doi.org/10.1142/9789812819192_0019",
+    "type": "출판사 DOI",
+    "kind": "historical",
+    "note": "시장확률과 기본모형 결합, 보정, 기대수익, Kelly, 복합승식 확률의 고전적 출발점. DOI 10.1142/9789812819192_0019."
+  },
+  "R2": {
+    "title": "Ziemba, Parimutuel Betting Markets: Racetracks and Lotteries Revisited",
+    "url": "https://doi.org/10.1146/annurev-financial-053122-021925",
+    "type": "학술 리뷰",
+    "kind": "peer",
+    "note": "시장효율, 신디케이트, 차익·위험차익, 리베이트, 확률·포트폴리오 최적화를 금융시장 관점에서 정리한 2023 Annual Review 논문이다."
+  },
+  "R3": {
+    "title": "Uhrín et al., Optimal sports betting strategies in practice",
+    "url": "https://academic.oup.com/imaman/article-abstract/32/4/465/6128334",
+    "type": "동료심사",
+    "kind": "peer",
+    "note": "경마·농구·축구의 통일 평가에서 Kelly 변형과 위험통제의 필요성을 실험한다. DOI 10.1093/imaman/dpaa029."
+  },
+  "R4": {
+    "title": "Despons, Peliti & Lacoste, Adaptive strategies in Kelly’s horse races model",
+    "url": "https://arxiv.org/abs/2201.03387",
+    "type": "동료심사판 연결",
+    "kind": "peer",
+    "note": "확률을 모르는 학습 단계에서 Bayesian 적응과 regret를 분석한다. J. Stat. Mech. 2022 093405."
+  },
+  "R5": {
+    "title": "정준형 외, Learning-to-rank 기법을 활용한 서울 경마경기 순위 예측",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003075791",
+    "type": "동료심사",
+    "kind": "peer",
+    "note": "Point-wise와 pair-wise LTR을 비교하고 CatBoost Ranker 및 Shapley 변수 해석을 보고한다. DOI 10.5351/KJAS.2024.37.2.239."
+  },
+  "R6": {
+    "title": "소유빈 외, 머신러닝 기반 LTR 경마 예측 및 웹 서비스 개발",
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003266151",
+    "type": "동료심사",
+    "kind": "peer",
+    "note": "KRA 9,140건, Listwise LambdaRank, CatBoost NDCG 0.8895·MAP 0.4204를 보고한다. DOI 10.9708/jksci.2025.30.11.311."
+  },
+  "R7": {
+    "title": "Sugiura, Leakage-aware race-level upset-risk diagnostics",
+    "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1922250/full",
+    "type": "동료심사",
+    "kind": "peer",
+    "note": "시간분할·누수감사·검증 전용 선택을 지킨 4,556경주 독립 테스트 이변위험 진단 연구. DOI 10.3389/frai.2026.1922250."
+  },
+  "R8": {
+    "title": "Hanyu et al., Are Final Market Prices Sufficient for Information Aggregation?",
+    "url": "https://arxiv.org/abs/2509.14645",
+    "type": "프리프린트",
+    "kind": "working",
+    "note": "일본 경마의 중간 배당 궤적을 사용해 막판 배당변화와 수익의 관계를 연구한다. 동료심사 완료 논문으로 간주하지 않는다."
+  },
+  "R9": {
+    "title": "Gonçalves et al., Convolutional Attention in Betting Exchange Markets",
+    "url": "https://arxiv.org/abs/2510.16008",
+    "type": "프리프린트",
+    "kind": "working",
+    "note": "Betfair 영국 단승의 pre-live L3 호가와 딥러닝 자동 거래 프레임워크. 예측 성능과 실전 순이익은 구분해야 한다."
+  },
+  "R10": {
+    "title": "Terawong & Cliff, XGBoost Learning of Dynamic Wager Placement",
+    "url": "https://arxiv.org/abs/2401.06086",
+    "type": "시뮬레이션 연구",
+    "kind": "working",
+    "note": "Bristol Betting Exchange 에이전트 기반 모형 안에서 XGBoost 전략을 검증한다. 실제 돈 시장의 증거가 아니다."
+  },
+  "I1": {
+    "title": "California Horse Racing Board — Elite Turf Club CAW Q&A",
+    "url": "https://www.chrb.ca.gov/misc_docs/Computer_Assisted_Wagering.pdf",
+    "type": "규제기관 공개 회사진술",
+    "kind": "official",
+    "note": "회원·인프라·handle·host fee·서비스 수수료와 막판 CAW 표본을 설명한다. 작성자는 Elite이므로 독립감사와 구분한다."
+  },
+  "I2": {
+    "title": "CHRB meeting transcript — CAW economics and rebates",
+    "url": "https://www.chrb.ca.gov/DocumentRequestor2.aspx?Category=BOARDMTGTRANS&DocumentID=00051659&SubCategory=",
+    "type": "공식 회의록",
+    "kind": "official",
+    "note": "리베이트를 포함한 CAW 경제를 설명한 공개 회의록. 설명용 숫자를 감사 실적으로 오인하지 않는다."
+  },
+  "I3": {
+    "title": "NYRA to implement new guardrails for CAW activity",
+    "url": "https://prodv2.nyra.com/belmont/news/nyra-to-implement-new-guardrails-for-caw-activity/",
+    "type": "시행체 공식",
+    "kind": "official",
+    "note": "2026년 CAW 속도 정의와 출발 전 베팅 제한을 공개했다."
+  },
+  "I4": {
+    "title": "Betfair Exchange commission calculation",
+    "url": "https://support.betfair.com/app/answers/detail/a_id/413/",
+    "type": "회사 공식 규칙",
+    "kind": "official",
+    "note": "시장별 순이익에 대한 거래소 수수료 산식을 설명한다."
+  },
+  "I5": {
+    "title": "Flutter 2025 Form 10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1635327/000163532726000005/flut-20251231.htm",
+    "type": "SEC 공시",
+    "kind": "audited",
+    "note": "Exchange 수수료와 pari-mutuel 베팅액 비율 수익의 회계 구조를 설명한다."
+  },
+  "I6": {
+    "title": "Churchill Downs Incorporated 2025 Form 10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/20212/000002021226000025/chdn-20251231.htm",
+    "type": "SEC 공시",
+    "kind": "audited",
+    "note": "TwinSpires, United Tote, Exacta와 Wagering Services and Solutions 매출 구조를 공개한다."
+  },
+  "I7": {
+    "title": "HKJC Annual Report 2024/25",
+    "url": "https://corporate.hkjc.com/corporate/common/annualreport/pdf/HKJC_AR2025_Full.pdf",
+    "type": "기관 연차보고서",
+    "kind": "audited",
+    "note": "경마 turnover, income after duty, commingling·World Pool 성장 수치를 제공한다."
+  },
+  "I8": {
+    "title": "World Pool bet types and deductions",
+    "url": "https://worldpool.hkjc.com/en-US/about/bet-types/",
+    "type": "공식 상품 규칙",
+    "kind": "official",
+    "note": "승식별 공제율과 상품 정의. KRA 수수료와는 별개 시장이다."
+  },
+  "I9": {
+    "title": "BetMakers FY2025 annual report",
+    "url": "https://announcements.asx.com.au/asxpdf/20250828/pdf/06ngsbhk486whn.pdf",
+    "type": "ASX 공시",
+    "kind": "audited",
+    "note": "데이터·가격·토트·리스크관리 B2B 수익과 부문 매출을 공개한다."
+  },
+  "I10": {
+    "title": "Colossus Bets — Pools and Cash Out as a Service",
+    "url": "https://corporate.colossusbets.com/pools",
+    "type": "회사 공식 상품",
+    "kind": "official",
+    "note": "조합 풀, 잭팟, cash-out, B2B 기술 상품 구조. 회사 수익률의 독립감사 자료는 아니다."
+  },
+  "L1": {
+    "title": "국가법령정보센터 — 한국마사회법 제48조",
+    "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0048&lsiSeq=265371&urlMode=lsScJoRltInfoR",
+    "type": "법령 원문",
+    "kind": "official",
+    "note": "유사 경마, 구매대행·알선과 시스템 제공 관련 제한. 이 보고서는 법률 자문이 아니다."
+  }
+}

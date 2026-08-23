@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 9,
+  "passed": 9,
+  "failed": 0,
+  "failed_checks": [],
+  "replayed_rows": 283,
+  "replayed_candidates": 1183,
+  "operational_definition": "all constituents 8<=closing winOdds<15",
+  "audited_at": "2026-08-23T05:23:18.117781+09:00"
+}

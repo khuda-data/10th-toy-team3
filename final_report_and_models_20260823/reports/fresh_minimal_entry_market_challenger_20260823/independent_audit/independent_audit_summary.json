@@ -1,0 +1,24 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 8,
+  "checks_passed": 8,
+  "checks_failed": 0,
+  "transform_and_probability_replay": "PASS",
+  "bootstrap_replay": "PASS",
+  "fresh_delta_ll": 0.004138571284801769,
+  "fresh_delta_ll_daily_ci": [
+    -0.001297579959215207,
+    0.013380028399630628
+  ],
+  "fresh_dates": 2,
+  "fresh_market_advantage_daily_block_ci_positive": false,
+  "fresh_market_advantage_race_bootstrap_ci_positive": false,
+  "fresh_day_clusters": 2,
+  "daily_exact_signflip_p_one_sided": 0.5,
+  "daily_exact_signflip_assumption": "independent day clusters with sign-symmetric cluster sums",
+  "leave_one_day_out_all_positive": false,
+  "interpretation": "uncertainty includes zero; market superiority is not confirmed",
+  "confirmation_scope": "a distinct strict-entry minimal model on later dates; not a frozen global29/partial30 validation and not an executable-price test",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T05:20:24.398999+09:00"
+}

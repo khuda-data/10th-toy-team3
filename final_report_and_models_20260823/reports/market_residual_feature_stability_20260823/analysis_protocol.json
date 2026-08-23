@@ -1,0 +1,13 @@
+{
+  "created_before_extraction": "2026-08-23T04:51:22.595624+09:00",
+  "scope": "coefficient stability of market-anchored residual terms across all eight expanding fits",
+  "model_keys": [
+    "global_29_residual",
+    "partial_8_15",
+    "partial_30_plus"
+  ],
+  "importance_definition": "within-fold abs(coefficient) / sum abs(coefficients)",
+  "stable_term_rule": "mean normalized importance > 0.5% and identical non-zero sign in all 8 fits",
+  "causal_interpretation_allowed": false,
+  "future_model_selection_allowed_from_this_descriptive_audit": false
+}

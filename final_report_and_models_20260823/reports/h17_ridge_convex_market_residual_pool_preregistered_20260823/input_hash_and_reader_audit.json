@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "reader": "unbuffered exact-block reader; stops after fourth VALID member block",
+  "source_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_runner_probabilities.csv",
+  "source_bytes": 14056057,
+  "source_sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+  "full_source_sha256_recomputed_by_h14": false,
+  "blocks_decoded_and_parsed": [
+    "m6",
+    "xgboost",
+    "lightgbm",
+    "deep_mlp_3seed"
+  ],
+  "rows_per_block": 11345,
+  "total_valid_rows_decoded_and_parsed": 45380,
+  "valid_ensemble_rows_read_or_parsed": 0,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_rows_read_or_parsed": 0,
+  "byte_position_after_fourth_valid_member": 5392493,
+  "readline_calls_after_fourth_member": 0,
+  "exact_alignment_fields": [
+    "rcDate",
+    "race_id",
+    "entry_id",
+    "win",
+    "q"
+  ],
+  "ordered_alignment_exact_across_members": true,
+  "q_sum_max_error": 8.881784197001252e-16,
+  "member_probability_sum_max_errors": {
+    "m6": 8.881784197001252e-16,
+    "xgboost": 1.1102230246251565e-15,
+    "lightgbm": 9.992007221626409e-16,
+    "deep_mlp_3seed": 9.992007221626409e-16
+  },
+  "prefix_checks": [
+    {
+      "member": "m6",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "xgboost",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "lightgbm",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    },
+    {
+      "member": "deep_mlp_3seed",
+      "rows_decoded_and_parsed": 11345,
+      "prefix_pass": true
+    }
+  ],
+  "full_source_sha256_recomputed_by_h17": false,
+  "protocol": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+    "bytes": 5619,
+    "sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78"
+  },
+  "h14_helper": {
+    "path": "src/training/train_h14_convex_market_residual_pool.py",
+    "bytes": 44408,
+    "sha256": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+  },
+  "bound_upstream": [
+    {
+      "name": "h11b_training_protocol",
+      "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/protocol_before_fit.json",
+      "expected_sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B",
+      "actual_sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B",
+      "pass": true
+    },
+    {
+      "name": "h11b_freeze",
+      "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/freeze_complete.json",
+      "expected_sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16",
+      "actual_sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16",
+      "pass": true
+    },
+    {
+      "name": "h14_protocol",
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+      "expected_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+      "actual_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+      "pass": true
+    },
+    {
+      "name": "h14_deployment_weights",
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+      "expected_sha256": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E",
+      "actual_sha256": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E",
+      "pass": true
+    }
+  ],
+  "rows": 11345,
+  "races": 1084,
+  "dates": 92,
+  "ordinary_feature_columns": [],
+  "q_role": "market base margin/offset only",
+  "split_test_bytes_read": 0,
+  "target_20260823_sources_read": 0,
+  "outcome_result_dividend_settlement_sources_read": 0,
+  "roi_ticket_kelly_sources_read": 0,
+  "live_stake": 0
+}

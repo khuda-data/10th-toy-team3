@@ -1,0 +1,20 @@
+{
+  "status": "LOCKED_BEFORE_FITTING_CALIBRATORS",
+  "created_at": "2026-08-23T04:37:19.187137+09:00",
+  "source_experiment": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fixed_lock_rolling_stability_20260823",
+  "source_candidates_sha256": "6BBEE7135B4100A609E80722261D06477F1C4519FCD95E7F5CE7B1EE8997B454",
+  "source_selections_sha256": "14BD234B2491C795FF179DAF6662A71C5EDE36371B5894E8BE150D4427E53172",
+  "equation": "logit(p_cal)=logit(q_place)+a+gamma*(logit(p_model)-logit(q_place))",
+  "regularization_l2": 1.0,
+  "analytic_gradient_and_hessian": true,
+  "fit_rule": "for each P5-P8, use only rolling-OOS candidates from earlier folds",
+  "selection_rule": "unchanged original fixed VALID threshold; calibration only changes probability and Kelly size",
+  "primary_endpoints": [
+    "calibrated log loss improvement versus uncalibrated",
+    "calibrated log loss improvement versus market q_place",
+    "calibrated Brier improvement versus uncalibrated",
+    "calibrated Brier improvement versus market q_place"
+  ],
+  "multiplicity": "Holm FWER across four calibration endpoints",
+  "confirmation_status": "retrospective rolling OOS; not pristine independent confirmation"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-08-23T05:56:17.668524+09:00",
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\market_probability_advantage_deep_research_20260823\\index.pdf",
+    "bytes": 1184348,
+    "modified": "2026-08-23T05:54:06.125217+09:00",
+    "sha256": "F9D7246BBDA679DE6ED3556C5AE1E50FE09F3C2CBFD0A7E435BB4990A2F0BFC0"
+  },
+  "pages": 42,
+  "text_pages": 42,
+  "page_sizes_points": [
+    [
+      594.96,
+      841.92
+    ]
+  ],
+  "checks": {
+    "pdf_header": true,
+    "positive_page_count": true,
+    "text_on_every_page": true,
+    "a4_portrait_only": true,
+    "render_manifest_pass": true,
+    "visual_inspection_pass": true,
+    "visual_scope_all_pages": true,
+    "render_page_count_matches_pdf": true,
+    "render_page_sequence_complete": true,
+    "render_page_artifacts_match": true,
+    "montage_page_coverage_complete": true,
+    "montage_artifacts_match": true,
+    "source_pdf_path_matches": true,
+    "source_pdf_size_matches": true,
+    "source_pdf_hash_matches": true,
+    "post_export_page_hash_identity": true
+  },
+  "render_manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\market_probability_final_20260823_v6\\render_manifest.json",
+    "bytes": 16726,
+    "modified": "2026-08-23T05:55:24.463086+09:00",
+    "sha256": "05321B0FBC7D904FF565E013F53AF9A0CC7FFE3F0E498FEA71C11F454905C9C0"
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "inspected_at": "2026-08-23T05:55:10.1810661+09:00",
+    "scope": "all 42 pages",
+    "method": "Seven 2x3 montages covering pages 1-42 were manually inspected. After the chronological exporter rewrote the PDF, all 42 Poppler-rendered page PNG SHA-256 values matched the previously inspected render exactly.",
+    "prior_review_manifest": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\tmp\\pdfs\\market_probability_final_20260823_v5\\render_manifest.json",
+    "page_hash_comparison": {
+      "matched_pages": 42,
+      "different_pages": 0
+    },
+    "checks": {
+      "clipping": "PASS",
+      "overlap": "PASS",
+      "korean_glyphs": "PASS",
+      "table_legibility": "PASS",
+      "blank_pages": "PASS",
+      "cover_section_transitions_final_page": "PASS"
+    },
+    "observations": "No clipped tables or SHA columns, overlapping rows or sentences, missing Korean glyphs, unreadable charts or footnotes, or unintended blank pages were observed. Page 42 is a sparse but intentional final source-grade section, not a blank page."
+  }
+}

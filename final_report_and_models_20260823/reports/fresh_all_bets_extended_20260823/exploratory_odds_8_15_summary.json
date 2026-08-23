@@ -1,0 +1,35 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "purpose": "retained historical 8-to-15 closing-odds hypothesis, descriptive fresh settlement",
+  "operational_definition": "all constituent horses in each ticket satisfy 8 <= closing winOdds < 15",
+  "source_races": 64,
+  "settled_ticket_rows": 283,
+  "races_by_bet_type": {
+    "단승": 56,
+    "연승": 56,
+    "복승": 45,
+    "쌍승": 45,
+    "삼복승": 18,
+    "삼쌍승": 18,
+    "복연승": 45
+  },
+  "eligible_horse_count_distribution": {
+    "0": 8,
+    "1": 11,
+    "2": 27,
+    "3": 9,
+    "4": 6,
+    "5": 3
+  },
+  "candidate_tickets_evaluated": 1183,
+  "probability_input_sha256": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132",
+  "official_dividend_input_sha256": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E",
+  "point_roi_above_30pct_cells": [],
+  "profit_confirmed_bet_types": [],
+  "decision_time_prices_available": false,
+  "actual_complex_market_edge_or_ev_identifiable": false,
+  "fee_treatment": "official final dividend; no additional takeout deduction",
+  "recommended_real_stake": 0,
+  "interpretation": "Post-hoc closing-odds exploration only; do not treat as prospective confirmation.",
+  "elapsed_seconds": 0.24986600875854492
+}

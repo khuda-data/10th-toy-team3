@@ -1,0 +1,92 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "analysis_script": {
+    "path": "src/training/analyze_prospective_delta_ll_power.py",
+    "sha256": "D2A2DA6C4E5247819062E0C05143F33479DDDDCBC94296948730CFA75B0AAE1E"
+  },
+  "files": [
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/pre_protocol_incident.json",
+      "bytes": 1936,
+      "sha256": "54CBD971A7BB4B243930A2801F315D2D8EFEB41DE60962BEAC33C68FD5EC1A1E"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/protocol_before_analysis.json",
+      "bytes": 7588,
+      "sha256": "16153BE07ABCC72ED07628E610CC82A50139FED866D28BC39A2D6FB4BFF412C0"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/race_winner_delta_ll.csv",
+      "bytes": 352452,
+      "sha256": "A029D87A9805A5239C89EFDCFA7F18D14F4961718C931DDD6AA429F6648357B5"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/daily_winner_delta_ll.csv",
+      "bytes": 17693,
+      "sha256": "C498F55B9A4A54D7C2674DA8F854FA6143FC1C3A729173AF7887067C46CD17E8"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/model_delta_ll_diagnostics.csv",
+      "bytes": 2262,
+      "sha256": "FAC2CD54315C12427250B7A21B3E0790391AAC4DC637453703F8B8C81F4424F3"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/autocorrelation_diagnostics.csv",
+      "bytes": 3991,
+      "sha256": "3EF8AC98666F8558D15B5FAC723072BF2C613C6454E1F140F9A5B730911C3683"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/normal_power_requirements.csv",
+      "bytes": 8386,
+      "sha256": "299DC746F70D1458A3851683ABA37A5A4DC4C5D4A5BB17DAE4F1923926159DF4"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/today_one_day_17_race_power.csv",
+      "bytes": 5226,
+      "sha256": "646497D74153585DE5D172918FDDD35703894ECE3DC53FFC93740B8004CB267E"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/moving_block_bootstrap_power.csv",
+      "bytes": 735741,
+      "sha256": "43460E08B5B5C1B94B019762CD5FFC6ECA29F9CA9E4535C7CB060FB53D06A689"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/input_and_reader_audit.json",
+      "bytes": 4018,
+      "sha256": "77B26576129D498667B28B67561A910F52ED4CE212B2417F29DEED4579F8C479"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/roi_endpoint_availability.json",
+      "bytes": 572,
+      "sha256": "71921BAF343C23BC5DFFBB73B13CBCDD826BEA959C5C91A2E61687E8AB8686F4"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/analysis_summary.json",
+      "bytes": 12078,
+      "sha256": "A0F0C6C1C8371AB5B6B223DE84FD9B19C33440F915E541F1DF4F83C9E68FB5AE"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/research_state.json",
+      "bytes": 451,
+      "sha256": "CD83DA9F4486CCF2EF4E5F92754D41D457A56418C7373A0A66C0248ABAFE6C5F"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/root_integration_summary.md",
+      "bytes": 2640,
+      "sha256": "BA72256A6DB7B4D61CADEC5F0C473C35D808FDDBB77091ABAB82214C031E0919"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/logs/phase_progress.jsonl",
+      "bytes": 636,
+      "sha256": "5957082180813EFA28C9462432FE43514E5797C5FCC1969D77773B34938FE9DD"
+    },
+    {
+      "path": "outputs/reports/prospective_power_design_preregistered_20260823/logs/execution.log",
+      "bytes": 604,
+      "sha256": "20512BB773031F76DA529D53B1C8666FF0D1605CDB9CE632E1E7F7E2FBF058D2"
+    }
+  ],
+  "test_analysis_reads": 0,
+  "target_20260823_reads": 0,
+  "live_stake": 0
+}

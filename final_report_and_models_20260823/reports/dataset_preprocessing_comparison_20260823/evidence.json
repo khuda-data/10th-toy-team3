@@ -1,0 +1,1258 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "comparison_basis": [
+    "correlation redundancy",
+    "numeric encoding",
+    "scaling",
+    "missing/infinite handling",
+    "race integrity"
+  ],
+  "winner": "current_revised_v11",
+  "winner_reason": "only materialized model matrix with zero nonnumeric/missing/infinite cells and explicit train-only |Pearson|>=0.95 pruning to zero remaining pairs",
+  "git_legacy": [
+    {
+      "dataset": "v1_base",
+      "status": "legacy_read_only",
+      "rows": 32888,
+      "columns": 111,
+      "string_columns_in_file": 22,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "jkNo",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 75,
+        "pairs_abs_ge_0_95": 0,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9424878470456214,
+        "top_pairs": [
+          {
+            "feature_a": "buga1",
+            "feature_b": "chaksun1",
+            "abs_corr": 0.9424878470456214
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9292808376643564
+          },
+          {
+            "feature_a": "hr_last_dist",
+            "feature_b": "is_debut",
+            "abs_corr": 0.904878947663151
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9015009865851569
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.8924698636667389
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.873233208745282
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8699588950417194
+          },
+          {
+            "feature_a": "age",
+            "feature_b": "birthday",
+            "abs_corr": 0.8688324828481826
+          },
+          {
+            "feature_a": "hr_resid",
+            "feature_b": "hr_resid__z",
+            "abs_corr": 0.8641362440767205
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.8285472899744082
+          },
+          {
+            "feature_a": "wgBudam",
+            "feature_b": "wgBudam__z",
+            "abs_corr": 0.8129091941193171
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_plcrate",
+            "abs_corr": 0.8095642915449419
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 75,
+        "standardized_columns": 0,
+        "unit_interval_columns": 22,
+        "max_abs_mean": 38600868.25889902,
+        "max_abs_std_minus_one": 62511675.3621482
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v1_base\\train.csv.gz",
+          "bytes": 5848162,
+          "sha256": "1CC6B061EF6D63D80E540744DA46308DEAC5F9FCBAF6A8A261FC1B9863354B58"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v1_base\\valid.csv.gz",
+          "bytes": 2123315,
+          "sha256": "54ED5F061FD0B0D369A632F8C47318A3348043FF1453AF85E9AD2CE0E1334B04"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v1_base\\test.csv.gz",
+          "bytes": 2155141,
+          "sha256": "77E9129F13B0CD988A116321C4B83FD2143C13D37553C1B4AB0A8C47F4E98CD9"
+        }
+      ],
+      "complete_race_warning": false
+    },
+    {
+      "dataset": "v2_standard",
+      "status": "legacy_read_only",
+      "rows": 32888,
+      "columns": 111,
+      "string_columns_in_file": 22,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "jkNo",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 75,
+        "pairs_abs_ge_0_95": 0,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9424878470456138,
+        "top_pairs": [
+          {
+            "feature_a": "buga1",
+            "feature_b": "chaksun1",
+            "abs_corr": 0.9424878470456138
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9292808376643552
+          },
+          {
+            "feature_a": "hr_last_dist",
+            "feature_b": "is_debut",
+            "abs_corr": 0.9048789476631629
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9015009865851619
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.89246986366674
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8732332087452718
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8699588950417158
+          },
+          {
+            "feature_a": "age",
+            "feature_b": "birthday",
+            "abs_corr": 0.8688324828478
+          },
+          {
+            "feature_a": "hr_resid",
+            "feature_b": "hr_resid__z",
+            "abs_corr": 0.8641362440767245
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.8285472899744086
+          },
+          {
+            "feature_a": "wgBudam",
+            "feature_b": "wgBudam__z",
+            "abs_corr": 0.8129091941193063
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_plcrate",
+            "abs_corr": 0.8095642915449311
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 75,
+        "standardized_columns": 73,
+        "unit_interval_columns": 1,
+        "max_abs_mean": 5.848092885878699,
+        "max_abs_std_minus_one": 2.1418393511211886
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v2_standard\\train.csv.gz",
+          "bytes": 8494611,
+          "sha256": "91219F79A8E3FABA20E2B499560D116DE930CD57B50CC3B86F60D723D15FE3E2"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v2_standard\\valid.csv.gz",
+          "bytes": 3014220,
+          "sha256": "3E9B00AF91F4BC8651A236380C9B65017050AAF575E5411F67A96466D177B254"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v2_standard\\test.csv.gz",
+          "bytes": 3051644,
+          "sha256": "C7CA3CC60B5DC7C0E88480DCC3B40A0FE6FE92ADE980E56B292480FCF9C2F994"
+        }
+      ],
+      "complete_race_warning": false
+    },
+    {
+      "dataset": "v3_minmax",
+      "status": "legacy_read_only",
+      "rows": 32888,
+      "columns": 111,
+      "string_columns_in_file": 22,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "jkNo",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 75,
+        "pairs_abs_ge_0_95": 0,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9424878470456195,
+        "top_pairs": [
+          {
+            "feature_a": "buga1",
+            "feature_b": "chaksun1",
+            "abs_corr": 0.9424878470456195
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9292808376643527
+          },
+          {
+            "feature_a": "hr_last_dist",
+            "feature_b": "is_debut",
+            "abs_corr": 0.9048789476631532
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9015009865851579
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.8924698636667392
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8732332087452848
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8699588950417145
+          },
+          {
+            "feature_a": "age",
+            "feature_b": "birthday",
+            "abs_corr": 0.8688324828478103
+          },
+          {
+            "feature_a": "hr_resid",
+            "feature_b": "hr_resid__z",
+            "abs_corr": 0.8641362440767213
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.8285472899744045
+          },
+          {
+            "feature_a": "wgBudam",
+            "feature_b": "wgBudam__z",
+            "abs_corr": 0.8129091941193104
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_plcrate",
+            "abs_corr": 0.8095642915449419
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 75,
+        "standardized_columns": 0,
+        "unit_interval_columns": 74,
+        "max_abs_mean": 5.848092885878699,
+        "max_abs_std_minus_one": 2.1418393511211886
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v3_minmax\\train.csv.gz",
+          "bytes": 6743002,
+          "sha256": "0965205183969702307BF4FFDAD6DFE4107415AE3A1F68A08A8760FA5A33E692"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v3_minmax\\valid.csv.gz",
+          "bytes": 2429955,
+          "sha256": "5F81DFD77062B54471E0D3B9BA1A0501FDFF7663E97E10F71BC9823FCA7A33B2"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v3_minmax\\test.csv.gz",
+          "bytes": 2470666,
+          "sha256": "A721A773B8478E0818AF9B8EC9369078C3D2C17915EBE128EF9478AFC82FE25A"
+        }
+      ],
+      "complete_race_warning": false
+    },
+    {
+      "dataset": "v4_robust",
+      "status": "legacy_read_only",
+      "rows": 32888,
+      "columns": 111,
+      "string_columns_in_file": 22,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "jkNo",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 75,
+        "pairs_abs_ge_0_95": 0,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9424878470456257,
+        "top_pairs": [
+          {
+            "feature_a": "buga1",
+            "feature_b": "chaksun1",
+            "abs_corr": 0.9424878470456257
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9292808376643538
+          },
+          {
+            "feature_a": "hr_last_dist",
+            "feature_b": "is_debut",
+            "abs_corr": 0.9048789476631515
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9015009865851571
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.8924698636667422
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8732332087452788
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8699588950417176
+          },
+          {
+            "feature_a": "age",
+            "feature_b": "birthday",
+            "abs_corr": 0.8688324828478057
+          },
+          {
+            "feature_a": "hr_resid",
+            "feature_b": "hr_resid__z",
+            "abs_corr": 0.864136244076721
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.8285472899743987
+          },
+          {
+            "feature_a": "wgBudam",
+            "feature_b": "wgBudam__z",
+            "abs_corr": 0.812909194119303
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_plcrate",
+            "abs_corr": 0.8095642915449315
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 75,
+        "standardized_columns": 0,
+        "unit_interval_columns": 8,
+        "max_abs_mean": 463726.6384885675,
+        "max_abs_std_minus_one": 2874159.1773012946
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v4_robust\\train.csv.gz",
+          "bytes": 7003876,
+          "sha256": "253FE5D0D4E5464E88A7A73700AEED07F8EA0A296E772C1E0695C752916D5E74"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v4_robust\\valid.csv.gz",
+          "bytes": 2464466,
+          "sha256": "9800BCDE41CFB8A87223B904DD311137E201207EA4FF8AEF5875CA4775A52D15"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v4_robust\\test.csv.gz",
+          "bytes": 2496345,
+          "sha256": "EE76F52ED20EC60DE7323A638E59B74E574BC6FE2F4620B38B921C739CA57A76"
+        }
+      ],
+      "complete_race_warning": false
+    },
+    {
+      "dataset": "v5_base_no_outlier",
+      "status": "forbidden_model_input",
+      "rows": 4176,
+      "columns": 111,
+      "string_columns_in_file": 21,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 72,
+        "pairs_abs_ge_0_95": 2,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9907227818330763,
+        "top_pairs": [
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9907227818330763
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.965669531557652
+          },
+          {
+            "feature_a": "rating_na",
+            "feature_b": "spRating",
+            "abs_corr": 0.9363228738979246
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "rating_na",
+            "abs_corr": 0.920934591000896
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "spRating",
+            "abs_corr": 0.9208358255311813
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "rating",
+            "abs_corr": 0.9156145026402064
+          },
+          {
+            "feature_a": "hr_style",
+            "feature_b": "style_vs_race",
+            "abs_corr": 0.9032622004639154
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.9022810388325577
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8986010100220966
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8890389230272555
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.88887706800623
+          },
+          {
+            "feature_a": "train_runs_14",
+            "feature_b": "train_runs_14__z",
+            "abs_corr": 0.8816884856918363
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 72,
+        "standardized_columns": 0,
+        "unit_interval_columns": 21,
+        "max_abs_mean": 24345373.80699894,
+        "max_abs_std_minus_one": 8424266.714476291
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v5_base_no_outlier\\train.csv.gz",
+          "bytes": 1216969,
+          "sha256": "4669E9EC00E9BDFF451C9970B59299BFD5C3C4973B7A51461E7B4BCC68F96FC2"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v5_base_no_outlier\\valid.csv.gz",
+          "bytes": 114833,
+          "sha256": "4F50E1F079B3F57C00C9CD88932879480B7E8D523A603F9006412B99D2F9BAEF"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v5_base_no_outlier\\test.csv.gz",
+          "bytes": 34758,
+          "sha256": "52CF6002F1A7D120871DE070FF28266D1E15A899E51276174367FC1E99D5057C"
+        }
+      ],
+      "complete_race_warning": true
+    },
+    {
+      "dataset": "v6_standard_no_outlier",
+      "status": "forbidden_model_input",
+      "rows": 4176,
+      "columns": 111,
+      "string_columns_in_file": 21,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 72,
+        "pairs_abs_ge_0_95": 2,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9907227818330795,
+        "top_pairs": [
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9907227818330795
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9656695315576508
+          },
+          {
+            "feature_a": "rating_na",
+            "feature_b": "spRating",
+            "abs_corr": 0.9363228738979249
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "rating_na",
+            "abs_corr": 0.920934591000898
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "spRating",
+            "abs_corr": 0.920835825531186
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "rating",
+            "abs_corr": 0.9156145026402066
+          },
+          {
+            "feature_a": "hr_style",
+            "feature_b": "style_vs_race",
+            "abs_corr": 0.9032622004639158
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.9022810388325568
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8986010100220974
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8890389230272528
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.8888770680062337
+          },
+          {
+            "feature_a": "train_runs_14",
+            "feature_b": "train_runs_14__z",
+            "abs_corr": 0.8816884856918351
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 72,
+        "standardized_columns": 70,
+        "unit_interval_columns": 1,
+        "max_abs_mean": 5.886002120890774,
+        "max_abs_std_minus_one": 2.1365605217620636
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v6_standard_no_outlier\\train.csv.gz",
+          "bytes": 1715732,
+          "sha256": "C7C0FB912DD1B17B44DB916D1C16EDA1378FEE1DF1E0576E73D8F74BD7099BAB"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v6_standard_no_outlier\\valid.csv.gz",
+          "bytes": 157115,
+          "sha256": "3013C5FC150A774E7A2C76578813CD38955255E690AF4B6FF4BA8252C0A74753"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v6_standard_no_outlier\\test.csv.gz",
+          "bytes": 47243,
+          "sha256": "C91C3D611F65DD647727712B1E4E5DB5E88960CA4BBFB6D0FD8AB04DB07CE472"
+        }
+      ],
+      "complete_race_warning": true
+    },
+    {
+      "dataset": "v7_minmax_no_outlier",
+      "status": "forbidden_model_input",
+      "rows": 4176,
+      "columns": 111,
+      "string_columns_in_file": 21,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 72,
+        "pairs_abs_ge_0_95": 2,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9907227818330784,
+        "top_pairs": [
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9907227818330784
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.9656695315576562
+          },
+          {
+            "feature_a": "rating_na",
+            "feature_b": "spRating",
+            "abs_corr": 0.9363228738979231
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "rating_na",
+            "abs_corr": 0.9209345910008983
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "spRating",
+            "abs_corr": 0.9208358255311826
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "rating",
+            "abs_corr": 0.9156145026402068
+          },
+          {
+            "feature_a": "hr_style",
+            "feature_b": "style_vs_race",
+            "abs_corr": 0.9032622004639151
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.9022810388325528
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.8986010100220995
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8890389230272527
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.8888770680062352
+          },
+          {
+            "feature_a": "train_runs_14",
+            "feature_b": "train_runs_14__z",
+            "abs_corr": 0.8816884856918371
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 72,
+        "standardized_columns": 0,
+        "unit_interval_columns": 71,
+        "max_abs_mean": 5.886002120890774,
+        "max_abs_std_minus_one": 2.1365605217620636
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v7_minmax_no_outlier\\train.csv.gz",
+          "bytes": 1411198,
+          "sha256": "8B7620E81852DF3D85E587F2119EA26D752A0ABF5DF65C58959947118FC92AC7"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v7_minmax_no_outlier\\valid.csv.gz",
+          "bytes": 130459,
+          "sha256": "FFBCD934BE1E449FF59D11117AC5D266E16B659B49323C9EF56347B55D912191"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v7_minmax_no_outlier\\test.csv.gz",
+          "bytes": 39196,
+          "sha256": "D0FA65385DE3C1A9460BB0D3BBD9B6AC9690D6E40BD2DD0E2BBE5655C5EBAA3D"
+        }
+      ],
+      "complete_race_warning": true
+    },
+    {
+      "dataset": "v8_robust_no_outlier",
+      "status": "forbidden_model_input",
+      "rows": 4176,
+      "columns": 111,
+      "string_columns_in_file": 21,
+      "string_column_names": [
+        "ageCond",
+        "budam",
+        "hrName",
+        "jkName",
+        "meet",
+        "name",
+        "owName",
+        "prizeCond",
+        "rank",
+        "rcDay",
+        "rcName",
+        "sex",
+        "trName",
+        "track",
+        "weather",
+        "wgBudamBigo",
+        "race_id",
+        "entry_id",
+        "born",
+        "tool_set",
+        "fold"
+      ],
+      "missing_cells": 0,
+      "infinite_numeric_cells": 0,
+      "train_correlation": {
+        "numeric_nonconstant_columns": 72,
+        "pairs_abs_ge_0_95": 2,
+        "pairs_abs_ge_0_999999": 0,
+        "maximum_abs_pairwise_correlation": 0.9907227818330829,
+        "top_pairs": [
+          {
+            "feature_a": "rating",
+            "feature_b": "spRating",
+            "abs_corr": 0.9907227818330829
+          },
+          {
+            "feature_a": "race_front_n",
+            "feature_b": "race_front_ratio",
+            "abs_corr": 0.965669531557652
+          },
+          {
+            "feature_a": "rating_na",
+            "feature_b": "spRating",
+            "abs_corr": 0.9363228738979247
+          },
+          {
+            "feature_a": "rating",
+            "feature_b": "rating_na",
+            "abs_corr": 0.9209345910008969
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "spRating",
+            "abs_corr": 0.9208358255311836
+          },
+          {
+            "feature_a": "chaksun1",
+            "feature_b": "rating",
+            "abs_corr": 0.9156145026402045
+          },
+          {
+            "feature_a": "hr_style",
+            "feature_b": "style_vs_race",
+            "abs_corr": 0.9032622004639126
+          },
+          {
+            "feature_a": "tr_winrate",
+            "feature_b": "tr_winrate__z",
+            "abs_corr": 0.9022810388325565
+          },
+          {
+            "feature_a": "jk_winrate",
+            "feature_b": "jk_winrate__z",
+            "abs_corr": 0.898601010022097
+          },
+          {
+            "feature_a": "wg",
+            "feature_b": "wg__z",
+            "abs_corr": 0.8890389230272508
+          },
+          {
+            "feature_a": "wg_diff",
+            "feature_b": "wg_diff__z",
+            "abs_corr": 0.888877068006233
+          },
+          {
+            "feature_a": "train_runs_14",
+            "feature_b": "train_runs_14__z",
+            "abs_corr": 0.8816884856918344
+          }
+        ]
+      },
+      "train_scaling": {
+        "candidate_numeric_nonconstant": 72,
+        "standardized_columns": 0,
+        "unit_interval_columns": 7,
+        "max_abs_mean": 5.886002120890774,
+        "max_abs_std_minus_one": 2.1365605217620636
+      },
+      "hashes": [
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v8_robust_no_outlier\\train.csv.gz",
+          "bytes": 1407122,
+          "sha256": "80F1A59027C32326D2672B805D2BF55900955F8B2952C782884D01A311FC2678"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v8_robust_no_outlier\\valid.csv.gz",
+          "bytes": 128917,
+          "sha256": "71FED6E69A4BF00BEA615159A254CCD3CFEDBE09BCBC12558E350D54F4B6316E"
+        },
+        {
+          "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\data\\전처리_데이터셋\\v8_robust_no_outlier\\test.csv.gz",
+          "bytes": 38921,
+          "sha256": "1FFA0CB9560E7D2D7E41990FBB6F89C41CF05C0BB948AC38323CB96E88E91070"
+        }
+      ],
+      "complete_race_warning": true
+    }
+  ],
+  "git_canonical": {
+    "dataset": "Git canonical Seoul interim + runtime preprocessor",
+    "rows": 32888,
+    "races": 3172,
+    "source_columns": 162,
+    "registered_pre_race_features": 112,
+    "source_string_feature_columns": 13,
+    "source_missing_feature_cells": 100754,
+    "train_rows": 19617,
+    "transformed_feature_columns": 554,
+    "transformed_non_numeric_columns": 0,
+    "transformed_nan_cells": 0,
+    "transformed_infinite_cells": 0,
+    "scaled_numeric_max_abs_mean": 1.1449238752246756e-13,
+    "scaled_numeric_max_abs_std_minus_one": 2.220446049250313e-16,
+    "train_numeric_correlation_before_transform": {
+      "numeric_nonconstant_columns": 99,
+      "pairs_abs_ge_0_95": 25,
+      "pairs_abs_ge_0_999999": 4,
+      "maximum_abs_pairwise_correlation": 1.0000000000000064,
+      "top_pairs": [
+        {
+          "feature_a": "chaksun1",
+          "feature_b": "chaksun2",
+          "abs_corr": 1.0000000000000064
+        },
+        {
+          "feature_a": "buga1",
+          "feature_b": "buga2",
+          "abs_corr": 1.0
+        },
+        {
+          "feature_a": "buga1",
+          "feature_b": "buga3",
+          "abs_corr": 0.999999999999996
+        },
+        {
+          "feature_a": "buga2",
+          "feature_b": "buga3",
+          "abs_corr": 0.999999999999996
+        },
+        {
+          "feature_a": "chaksun2",
+          "feature_b": "chaksun5",
+          "abs_corr": 0.9992751129819529
+        },
+        {
+          "feature_a": "chaksun1",
+          "feature_b": "chaksun5",
+          "abs_corr": 0.9992751129819518
+        },
+        {
+          "feature_a": "chaksun4",
+          "feature_b": "chaksun5",
+          "abs_corr": 0.9968833340856896
+        },
+        {
+          "feature_a": "chaksun2",
+          "feature_b": "chaksun3",
+          "abs_corr": 0.9963088427726807
+        },
+        {
+          "feature_a": "chaksun1",
+          "feature_b": "chaksun3",
+          "abs_corr": 0.9963088427726778
+        },
+        {
+          "feature_a": "n_run",
+          "feature_b": "dusu",
+          "abs_corr": 0.9938880856302648
+        },
+        {
+          "feature_a": "chaksun2",
+          "feature_b": "chaksun4",
+          "abs_corr": 0.9931574464295352
+        },
+        {
+          "feature_a": "chaksun1",
+          "feature_b": "chaksun4",
+          "abs_corr": 0.9931574464295335
+        }
+      ]
+    },
+    "correlation_pruning_implemented": false,
+    "onehot_reference_level_dropped": false,
+    "preprocessing_fit_scope": "training fold at pipeline fit; source code uses sklearn Pipeline",
+    "hashes": [
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\src\\3_시장대조\\시장확률보정\\data\\interim\\seoul_entries.csv.gz",
+        "bytes": 14068027,
+        "sha256": "A95666AD5D6DC140397431FF01C36234B93204D550410FEC7262D335B6745350"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\src\\3_시장대조\\시장확률보정\\data\\interim\\split_manifest.csv",
+        "bytes": 151868,
+        "sha256": "DEBB78D1C8F8B2DCD7E99DAC3C079378087D04ABC86240DFDD596CD972475F65"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\src\\3_시장대조\\시장확률보정\\data\\manifests\\feature_registry.json",
+        "bytes": 33220,
+        "sha256": "F1C92BF348EEFBA22C2680B3DDAEBF0211AFB36EA09963430A57EFF93654CDC6"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\.codex_export\\10th-toy-team3\\src\\3_시장대조\\시장확률보정\\src\\features\\preprocess.py",
+        "bytes": 3922,
+        "sha256": "5CD648FDFF20E9B8E87472A072E79F277FAA70136E1E25D56D48C8EF08C7A406"
+      }
+    ]
+  },
+  "current_v11": {
+    "dataset": "current revised_v11 Seoul+Bugyeong materialized model matrix",
+    "rows": 56456,
+    "races": 5343,
+    "model_features": 141,
+    "non_numeric_feature_columns": 0,
+    "missing_feature_cells": 0,
+    "infinite_feature_cells": 0,
+    "train_correlation_direct_recheck": {
+      "numeric_nonconstant_columns": 141,
+      "pairs_abs_ge_0_95": 0,
+      "pairs_abs_ge_0_999999": 0,
+      "maximum_abs_pairwise_correlation": 0.9378611763704204,
+      "top_pairs": [
+        {
+          "feature_a": "jk_winrate__z",
+          "feature_b": "jk_winrate__pr",
+          "abs_corr": 0.9378611763704204
+        },
+        {
+          "feature_a": "rating",
+          "feature_b": "hr_prev_rating",
+          "abs_corr": 0.9282328191244901
+        },
+        {
+          "feature_a": "jk_winrate",
+          "feature_b": "te_jkName",
+          "abs_corr": 0.9118461298073556
+        },
+        {
+          "feature_a": "hr_winrate__z",
+          "feature_b": "hr_winrate__pr",
+          "abs_corr": 0.9085738329248805
+        },
+        {
+          "feature_a": "hr_style",
+          "feature_b": "style_vs_race",
+          "abs_corr": 0.9027754535091946
+        },
+        {
+          "feature_a": "tr_winrate__z",
+          "feature_b": "te_trName",
+          "abs_corr": 0.9004184832815619
+        },
+        {
+          "feature_a": "oh_budam_핸디캡",
+          "feature_b": "rating__pr__missing",
+          "abs_corr": 0.8937464024310551
+        },
+        {
+          "feature_a": "jk_winrate__z",
+          "feature_b": "te_jkName",
+          "abs_corr": 0.8905734334576242
+        },
+        {
+          "feature_a": "race_style_sd__missing",
+          "feature_b": "oh_meet_부경",
+          "abs_corr": 0.8894666340239342
+        },
+        {
+          "feature_a": "hr_style__missing",
+          "feature_b": "race_style_sd__missing",
+          "abs_corr": 0.8873384540618053
+        },
+        {
+          "feature_a": "jk_winrate",
+          "feature_b": "jk_winrate__z",
+          "abs_corr": 0.8802342321571428
+        },
+        {
+          "feature_a": "wg",
+          "feature_b": "wg__z",
+          "abs_corr": 0.8728852669728762
+        }
+      ]
+    },
+    "reported_high_pairs_before": 16,
+    "reported_high_pairs_after": 0,
+    "reported_exact_duplicate_pairs_after": [],
+    "train_scaling_direct_recheck": {
+      "candidate_numeric_nonconstant": 141,
+      "standardized_columns": 127,
+      "unit_interval_columns": 14,
+      "max_abs_mean": 0.37574814460138856,
+      "max_abs_std_minus_one": 0.9774505096674696
+    },
+    "correlation_pruning_implemented": true,
+    "onehot_reference_level_dropped": true,
+    "train_fitted": "all imputation, scaling, target encoding, correlation pruning, and reference decisions use training data only",
+    "pool_features_removed": [
+      "winAmt",
+      "plcAmt",
+      "totalAmt",
+      "log_winAmt",
+      "liq_per_horse"
+    ],
+    "all_split_numeric_reported": true,
+    "hashes": [
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_manifest.json",
+        "bytes": 11173,
+        "sha256": "309AE27C17535364B21443FBDA2C8333AEDDC9A6ED3D375DCD27A20063D93F25"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\preprocessing_validation.json",
+        "bytes": 2348,
+        "sha256": "C3B36201429B7067C6F7C84E3E43610DA0267519605815E066E50AB8F227DE98"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 85442937,
+        "sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 28957996,
+        "sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA"
+      },
+      {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "bytes": 29861350,
+        "sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE"
+      }
+    ]
+  },
+  "limitations": [
+    "Git canonical is an interim source plus runtime transformer, while v11 is a materialized model matrix; both file-level and end-to-end views are reported.",
+    "Tree models do not require standard scaling; Git intentionally disables scaling for XGBoost/ranking models.",
+    "Pairwise Pearson pruning does not prove absence of nonlinear redundancy or multivariate collinearity.",
+    "Current v11 has seven test races with invalid finish-order labels, but those are excluded race-wise from rank evaluation and are not feature missingness."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.html",
+    "bytes": 63186,
+    "sha256": "AE52E19257ED7CA290C6A11D914F0BF0B4D8B55746CD7C885B5B1849EBC778BD"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.pdf",
+    "bytes": 293339,
+    "sha256": "F637BAEC3A811106CEFF4A28E2B1EC5DF115DC11E654DC3B36EA8BC315B6184E",
+    "pages": 5,
+    "text_pages": 5,
+    "page_sizes": [
+      [
+        594.96,
+        841.92
+      ]
+    ]
+  }
+}

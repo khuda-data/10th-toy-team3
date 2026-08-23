@@ -1,0 +1,9 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 53,
+  "checks_passed": 53,
+  "checks_failed": 0,
+  "scope": "independent arithmetic, race/day bootstrap, exact sign-flip and Holm replay; prices remain non-executable",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T05:27:34.311434+09:00"
+}

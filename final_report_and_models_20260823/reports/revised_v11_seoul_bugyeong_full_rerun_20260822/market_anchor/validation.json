@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "passed_checks": 21,
+  "checks": [
+    {
+      "check": "feature count matches manifest (141)",
+      "status": "PASS"
+    },
+    {
+      "check": "market/result columns absent from feature matrix",
+      "status": "PASS"
+    },
+    {
+      "check": "all feature matrices finite",
+      "status": "PASS"
+    },
+    {
+      "check": "train before validation",
+      "status": "PASS"
+    },
+    {
+      "check": "validation before test",
+      "status": "PASS"
+    },
+    {
+      "check": "train: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "train: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "train: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "valid: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "test: one winner per race",
+      "status": "PASS"
+    },
+    {
+      "check": "test: q sums to one",
+      "status": "PASS"
+    },
+    {
+      "check": "test: entry_id unique",
+      "status": "PASS"
+    },
+    {
+      "check": "q equals race-normalized inverse win odds",
+      "status": "PASS"
+    },
+    {
+      "check": "conditional logit artifact reload reproduces test",
+      "status": "PASS"
+    },
+    {
+      "check": "Base Margin artifact reload reproduces test",
+      "status": "PASS"
+    },
+    {
+      "check": "all anchored race probability sums equal one",
+      "status": "PASS"
+    },
+    {
+      "check": "all seven bet types have locked test result",
+      "status": "PASS"
+    },
+    {
+      "check": "test combination official-dividend coverage=1077 races",
+      "status": "PASS"
+    },
+    {
+      "check": "test policies evaluated only after validation candidates exist",
+      "status": "PASS"
+    }
+  ],
+  "model_artifacts": {
+    "anchored_base_margin.joblib": {
+      "bytes": 272692,
+      "sha256": "DEB361AC1DA9D3860B669EE98DD287C25D11415F2C38E6780F2AD126694B7804"
+    },
+    "anchored_conditional_logit.joblib": {
+      "bytes": 4008,
+      "sha256": "6EA16DACC895055D898004770B3A7A53C1766266F32282661D288156B75F58C4"
+    }
+  },
+  "result_hashes": {
+    "comparison_vs_full_rank.csv": "D10E6025579C02000FBA51032EC559A9DC237EBBC224B4A325730FCF307F13FE",
+    "delta_ll_metrics.csv": "D5B62C3D776200AA675FC26BF439945761656E13F1303E2E60E088D9C96D0BE6",
+    "delta_ll_race_contributions.csv": "6336E406643884F4516254522FC358D05E380C178E9519E871E07BCE28170AE9",
+    "feature_importance.csv": "DD6305D1C39B9640C2E4F960EF41B9A59A9F4E91F154172BE47584C6C9203738",
+    "historical_delta_ll_comparison.csv": "E7641C5C77D1F4C9BDC4FE2395BCAF49E8BEFD39BABFA470DB042CABB18446F1",
+    "hyperparameter_selection.csv": "91B283F7118B604FC81B7A111CC7EF143E1469DA9D4EE51A156A36E0EB44412D",
+    "locked_test_results.csv": "1DF419C9191FBCF35BBA4D7A878969A6352F54FE0F24D90290FC1F77C209EAB3",
+    "market_baseline.csv": "A127EE4AC91F528BA84D6B19765FE3B0D1AD2B5A812283E6A6F26F65E65ADA28",
+    "runner_probabilities.csv": "2E3B2B07728EFC6A5A4F98A0487ECCB599BCD8BA83CD901A52D869FD12876514",
+    "seven_bet_selections.csv": "E4DE708AE251D97452DE3A4626F614E4E9732598011AC3C0F63F523BF7FDF19A",
+    "validation_test_policy_grid.csv": "1072CC0904E0FBE807DA7433EE92646C6F42F61DEF5467E6F88767D2117ABBF9"
+  },
+  "runtime": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "roi_30pct_warnings": [
+    {
+      "bet_type": "복승",
+      "model_key": "anchor_ensemble",
+      "test_roi": 0.3972222222222222
+    }
+  ]
+}

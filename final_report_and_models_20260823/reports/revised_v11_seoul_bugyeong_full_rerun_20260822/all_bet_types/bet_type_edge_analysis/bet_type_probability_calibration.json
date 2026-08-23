@@ -1,0 +1,64 @@
+{
+  "random_forest_rank": {
+    "fit_split": "validation only",
+    "temperature": 0.11736980795647892,
+    "valid_winner_log_loss_before": 2.2480608285334727,
+    "valid_winner_log_loss_after": 1.9438894283757955,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model.joblib"
+    ]
+  },
+  "xgboost_rank": {
+    "fit_split": "validation only",
+    "temperature": 0.672135232231184,
+    "valid_winner_log_loss_before": 1.9702831229686817,
+    "valid_winner_log_loss_after": 1.933322246109004,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model.json"
+    ]
+  },
+  "lightgbm_rank": {
+    "fit_split": "validation only",
+    "temperature": 0.4727808593009358,
+    "valid_winner_log_loss_before": 2.049601402146839,
+    "valid_winner_log_loss_after": 1.9514141051116491,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model.txt"
+    ]
+  },
+  "catboost_rank": {
+    "fit_split": "validation only",
+    "temperature": 0.6276899842202885,
+    "valid_winner_log_loss_before": 1.9745650215846795,
+    "valid_winner_log_loss_after": 1.9242866671889904,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model.cbm"
+    ]
+  },
+  "deep_ranknet": {
+    "fit_split": "validation only",
+    "temperature": 0.6319192147313807,
+    "valid_winner_log_loss_before": 1.9992899391845824,
+    "valid_winner_log_loss_after": 1.9510498129218117,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed0.pt",
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed1.pt",
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed2.pt"
+    ]
+  },
+  "plackett_luce_full": {
+    "fit_split": "validation only",
+    "temperature": 0.5565523818819154,
+    "valid_winner_log_loss_before": 2.0450326146053905,
+    "valid_winner_log_loss_after": 1.977765536884907,
+    "optimizer_success": true,
+    "model_artifacts": [
+      "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model.pt"
+    ]
+  }
+}

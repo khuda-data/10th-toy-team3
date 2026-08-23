@@ -1,0 +1,23 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 11,
+  "checks_passed": 11,
+  "checks_failed": 0,
+  "fresh_rows": 653,
+  "fresh_active_runners": 640,
+  "fresh_races": 64,
+  "date_min": 20260814,
+  "date_max": 20260822,
+  "venues": [
+    1,
+    3
+  ],
+  "market_probability_sum_max_error": 1.1102230246251565e-16,
+  "independent_from_v11_by_date": true,
+  "model_scoring_ready": false,
+  "model_scoring_blocker": "frozen v11 feature vector and train-fitted transform cannot yet be reproduced from the two authorized APIs",
+  "execution_price_ready": false,
+  "execution_price_blocker": "winOdds is a result/closing field, not a timestamped decision-time quote",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T05:17:50.749454+09:00"
+}

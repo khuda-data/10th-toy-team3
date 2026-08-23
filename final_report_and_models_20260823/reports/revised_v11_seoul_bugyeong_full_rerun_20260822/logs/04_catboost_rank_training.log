@@ -1,0 +1,17 @@
+MODEL ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\models\revised_v11_seoul_bugyeong_full_rank_20260822
+DATA ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\data\revised_v11_seoul_bugyeong_rank_clean_preprocessed
+RANK DATA PASS: features=141 rows=33416/11345/11695
+0:	test: 0.7360379	best: 0.7360379 (0)	total: 288ms	remaining: 11m 58s
+200:	test: 0.7719043	best: 0.7719527 (199)	total: 29.5s	remaining: 5m 37s
+400:	test: 0.7759253	best: 0.7760684 (391)	total: 58.1s	remaining: 5m 4s
+600:	test: 0.7767139	best: 0.7772453 (554)	total: 1m 26s	remaining: 4m 34s
+800:	test: 0.7770779	best: 0.7777359 (767)	total: 1m 55s	remaining: 4m 4s
+Stopped by overfitting detector  (150 iterations wait)
+
+bestTest = 0.7777359219
+bestIteration = 767
+
+Shrink model to first 768 iterations.
+VALID RANK: NDCG@5=0.777736 Spearman=0.445865 MAE=2.432181 Top3OrderedExact=0.014870 Top3UnorderedExact=0.081784
+TEST RANK: NDCG@5=0.778036 Spearman=0.455303 MAE=2.439987 Top3OrderedExact=0.013915 Top3UnorderedExact=0.072356
+FULL RANK MODEL TRAINING COMPLETE: catboost_rank

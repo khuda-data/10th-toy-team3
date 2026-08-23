@@ -1,0 +1,628 @@
+{
+  "status": "PASS",
+  "validated_at_kst": "2026-08-23T07:33:53.175562+09:00",
+  "validator_independence": "does not import the report builder or H11C analysis module",
+  "forbidden_target_sources_read": [],
+  "report_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_valid_lock_report_20260823\\index.html",
+  "report_sha256": "B2A5CCFCB5E92C36196D8163E6461A3A49224BCA8F2ED5C18EED727B0651F85E",
+  "report_bytes": 34225,
+  "checks_total": 62,
+  "checks_passed": 62,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "required_files_exist",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "doctype_and_korean_language",
+      "status": "PASS",
+      "observed": "ko",
+      "expected": "ko with HTML5 doctype"
+    },
+    {
+      "check": "utf8_meta",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "present"
+    },
+    {
+      "check": "viewport_meta",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "present"
+    },
+    {
+      "check": "report_title",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "exact title"
+    },
+    {
+      "check": "a4_page_css",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "A4 portrait"
+    },
+    {
+      "check": "print_css",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "print layout rules"
+    },
+    {
+      "check": "no_external_resources",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "table_and_caption_counts",
+      "status": "PASS",
+      "observed": [
+        6,
+        6
+      ],
+      "expected": [
+        6,
+        6
+      ]
+    },
+    {
+      "check": "accessible_svg_counts",
+      "status": "PASS",
+      "observed": [
+        2,
+        2,
+        2
+      ],
+      "expected": "2 SVGs with title and desc"
+    },
+    {
+      "check": "metric_section_precedes_conclusion",
+      "status": "PASS",
+      "observed": [
+        "1. 먼저 읽는 지표와 공식",
+        "2. 결론을 먼저 말하면: NO-GO, 실제 베팅액 0"
+      ],
+      "expected": [
+        "metrics first",
+        "conclusion second"
+      ]
+    },
+    {
+      "check": "market_q_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "normalized inverse odds formula"
+    },
+    {
+      "check": "edge_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "p minus q"
+    },
+    {
+      "check": "brier_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "formula and direction"
+    },
+    {
+      "check": "ece_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "10-bin formula"
+    },
+    {
+      "check": "roi_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "return formula"
+    },
+    {
+      "check": "paired_delta_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "H11B minus q control"
+    },
+    {
+      "check": "ci_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "day block bootstrap"
+    },
+    {
+      "check": "holm_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "four-endpoint Holm"
+    },
+    {
+      "check": "mdd_sharpe_definition",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "definitions plus limitation"
+    },
+    {
+      "check": "protocol_precedes_threshold_and_metrics",
+      "status": "PASS",
+      "observed": [
+        "2026-08-23T07:03:45.007916+09:00",
+        "2026-08-23T07:08:11.412575+09:00",
+        "2026-08-23T07:08:12.105836+09:00"
+      ],
+      "expected": "strict order"
+    },
+    {
+      "check": "protocol_frozen_status",
+      "status": "PASS",
+      "observed": "FROZEN_BEFORE_VALID_SELECTION_METRICS_AND_BEFORE_TARGET_T5_QUOTES",
+      "expected": "frozen before metrics and T-5"
+    },
+    {
+      "check": "threshold_frozen_status",
+      "status": "PASS",
+      "observed": "FROZEN_BEFORE_OUTCOME_DIAGNOSTICS_AND_BEFORE_TARGET_T5_QUOTES",
+      "expected": "frozen before diagnostics and T-5"
+    },
+    {
+      "check": "protocol_hash_chain",
+      "status": "PASS",
+      "observed": [
+        "5D17D51E0ADE852D4BFC3920B7C1D093D0E72BE6473F3955F7D0CF19370F08AC",
+        "5D17D51E0ADE852D4BFC3920B7C1D093D0E72BE6473F3955F7D0CF19370F08AC",
+        "5D17D51E0ADE852D4BFC3920B7C1D093D0E72BE6473F3955F7D0CF19370F08AC"
+      ],
+      "expected": "all equal"
+    },
+    {
+      "check": "threshold_hash_chain",
+      "status": "PASS",
+      "observed": "C8952FE023BA53D16453171AD1AF5B5D9AFA037D00C741DF2A30F24BB0BABC63",
+      "expected": "C8952FE023BA53D16453171AD1AF5B5D9AFA037D00C741DF2A30F24BB0BABC63"
+    },
+    {
+      "check": "valid_scope_exact",
+      "status": "PASS",
+      "observed": {
+        "split": "valid",
+        "date_min": 20250517,
+        "date_max": 20251227,
+        "rows": 11345,
+        "races": 1084
+      },
+      "expected": "VALID 20250517..20251227, 11345 rows, 1084 races"
+    },
+    {
+      "check": "target_and_reused_test_read_zero",
+      "status": "PASS",
+      "observed": [
+        0,
+        0,
+        false
+      ],
+      "expected": [
+        0,
+        0,
+        false
+      ]
+    },
+    {
+      "check": "report_scope_disclosure",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "target/test/selection limitations"
+    },
+    {
+      "check": "positive_edge_candidate_count",
+      "status": "PASS",
+      "observed": [
+        863,
+        true
+      ],
+      "expected": [
+        863,
+        true
+      ]
+    },
+    {
+      "check": "four_thresholds_exact",
+      "status": "PASS",
+      "observed": {
+        "top10": 0.00971383826280178,
+        "top20": 0.00704490430932916,
+        "top30": 0.0054443101557894395,
+        "top40": 0.004175157327552718
+      },
+      "expected": {
+        "top10": 0.00971383826280178,
+        "top20": 0.00704490430932916,
+        "top30": 0.0054443101557894395,
+        "top40": 0.004175157327552718
+      }
+    },
+    {
+      "check": "thresholds_rendered",
+      "status": "PASS",
+      "observed": [
+        "0.009713838",
+        "0.007044904",
+        "0.005444310",
+        "0.004175157"
+      ],
+      "expected": "all visible"
+    },
+    {
+      "check": "lower_half_not_imposed",
+      "status": "PASS",
+      "observed": false,
+      "expected": false
+    },
+    {
+      "check": "historical_joint_research_rationale",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "retain 8-15 as historical hypothesis"
+    },
+    {
+      "check": "primary_band_scope",
+      "status": "PASS",
+      "observed": [
+        2022,
+        971
+      ],
+      "expected": [
+        2022,
+        971
+      ]
+    },
+    {
+      "check": "brier_values_exact",
+      "status": "PASS",
+      "observed": [
+        0.06799974749746047,
+        0.06805532911674537
+      ],
+      "expected": [
+        0.06799974749746047,
+        0.06805532911674537
+      ]
+    },
+    {
+      "check": "brier_small_positive_improvement_disclosed",
+      "status": "PASS",
+      "observed": 5.558161928490013e-05,
+      "expected": "small positive and qualified"
+    },
+    {
+      "check": "ece_market_better",
+      "status": "PASS",
+      "observed": [
+        0.005920343690057818,
+        0.0008465108117916874
+      ],
+      "expected": "H11B worse"
+    },
+    {
+      "check": "same_ticket_counts",
+      "status": "PASS",
+      "observed": [
+        [
+          "top10",
+          "87",
+          "87"
+        ],
+        [
+          "top20",
+          "173",
+          "173"
+        ],
+        [
+          "top30",
+          "259",
+          "259"
+        ],
+        [
+          "top40",
+          "345",
+          "345"
+        ]
+      ],
+      "expected": "equal by cutoff"
+    },
+    {
+      "check": "h11b_roi_negative_all_four",
+      "status": "PASS",
+      "observed": [
+        -0.10459770114942524,
+        -0.08959537572254338,
+        -0.1293436293436293,
+        -0.033623188405797075
+      ],
+      "expected": "all below zero"
+    },
+    {
+      "check": "q_control_roi_positive_all_four",
+      "status": "PASS",
+      "observed": [
+        0.1045977011494253,
+        0.03410404624277459,
+        0.09498069498069502,
+        0.015362318840579732
+      ],
+      "expected": "all above zero"
+    },
+    {
+      "check": "h11b_hit_rate_lower_all_four",
+      "status": "PASS",
+      "observed": [
+        [
+          "top10",
+          "0.09195402298850575",
+          "0.12643678160919541"
+        ],
+        [
+          "top20",
+          "0.09248554913294797",
+          "0.11560693641618497"
+        ],
+        [
+          "top30",
+          "0.0888030888030888",
+          "0.11969111969111969"
+        ],
+        [
+          "top40",
+          "0.09855072463768116",
+          "0.11014492753623188"
+        ]
+      ],
+      "expected": "H11B lower"
+    },
+    {
+      "check": "h11b_mdd_worse_all_four",
+      "status": "PASS",
+      "observed": [
+        [
+          "top10",
+          "33.56321839080459",
+          "26.436781609195403"
+        ],
+        [
+          "top20",
+          "31.213872832369944",
+          "18.439306358381504"
+        ],
+        [
+          "top30",
+          "29.652509652509657",
+          "15.096525096525097"
+        ],
+        [
+          "top40",
+          "20.81159420289855",
+          "15.101449275362318"
+        ]
+      ],
+      "expected": "H11B higher MDD"
+    },
+    {
+      "check": "paired_delta_negative_all_four",
+      "status": "PASS",
+      "observed": [
+        -0.20919540229885053,
+        -0.12369942196531791,
+        -0.22432432432432436,
+        -0.04898550724637682
+      ],
+      "expected": "all negative"
+    },
+    {
+      "check": "paired_ci_contains_zero_all_four",
+      "status": "PASS",
+      "observed": [
+        [
+          "top10",
+          "-0.9178175591531755",
+          "0.5348341681332067"
+        ],
+        [
+          "top20",
+          "-0.5582881090008258",
+          "0.3298303924551258"
+        ],
+        [
+          "top30",
+          "-0.5482335224538014",
+          "0.09360162895927585"
+        ],
+        [
+          "top40",
+          "-0.30798110007465834",
+          "0.21209506570126033"
+        ]
+      ],
+      "expected": "all contain zero"
+    },
+    {
+      "check": "holm_zero_of_four",
+      "status": "PASS",
+      "observed": [
+        "False",
+        "False",
+        "False",
+        "False"
+      ],
+      "expected": "all false"
+    },
+    {
+      "check": "paired_values_rendered",
+      "status": "PASS",
+      "observed": "four values",
+      "expected": "all visible"
+    },
+    {
+      "check": "roi_values_rendered",
+      "status": "PASS",
+      "observed": "four pairs",
+      "expected": "all visible"
+    },
+    {
+      "check": "no_go_and_stake_zero",
+      "status": "PASS",
+      "observed": [
+        "NO_GO",
+        0
+      ],
+      "expected": [
+        "NO_GO",
+        0
+      ]
+    },
+    {
+      "check": "closing_odds_non_executable_disclosure",
+      "status": "PASS",
+      "observed": "present",
+      "expected": "price and fee limitations"
+    },
+    {
+      "check": "prospective_stopping_rule",
+      "status": "PASS",
+      "observed": {
+        "minimum_independent_race_days": 20,
+        "minimum_primary_band_candidate_runners": 500,
+        "decision": "do not claim confirmation until both minima are reached; continue reporting all accumulated blocks without optional deletion"
+      },
+      "expected": "20 days and 500 candidates"
+    },
+    {
+      "check": "source_audit_pass_18_of_18",
+      "status": "PASS",
+      "observed": [
+        "PASS",
+        18,
+        18,
+        0
+      ],
+      "expected": [
+        "PASS",
+        18,
+        18,
+        0
+      ]
+    },
+    {
+      "check": "source_audit_forbidden_reads_empty",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "ticket_rows_exact",
+      "status": "PASS",
+      "observed": 1728,
+      "expected": 1728
+    },
+    {
+      "check": "manifest_status_and_decision",
+      "status": "PASS",
+      "observed": [
+        "BUILT_FROM_H11C_VALID_ONLY_LOCKED_EVIDENCE",
+        "NO_GO",
+        0
+      ],
+      "expected": [
+        "BUILT_FROM_H11C_VALID_ONLY_LOCKED_EVIDENCE",
+        "NO_GO",
+        0
+      ]
+    },
+    {
+      "check": "manifest_report_hash_and_bytes",
+      "status": "PASS",
+      "observed": [
+        "B2A5CCFCB5E92C36196D8163E6461A3A49224BCA8F2ED5C18EED727B0651F85E",
+        34225
+      ],
+      "expected": [
+        "B2A5CCFCB5E92C36196D8163E6461A3A49224BCA8F2ED5C18EED727B0651F85E",
+        34225
+      ]
+    },
+    {
+      "check": "manifest_exact_allowed_sources",
+      "status": "PASS",
+      "observed": [
+        13,
+        13
+      ],
+      "expected": [
+        13,
+        13
+      ]
+    },
+    {
+      "check": "manifest_source_hashes_match",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "manifest_no_target_or_test_reads",
+      "status": "PASS",
+      "observed": [
+        [],
+        0,
+        false
+      ],
+      "expected": [
+        [],
+        0,
+        false
+      ]
+    },
+    {
+      "check": "no_target_capture_path_in_inputs",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "local_evidence_link_count",
+      "status": "PASS",
+      "observed": 13,
+      "expected": 13
+    },
+    {
+      "check": "all_local_evidence_links_resolve",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "linked_paths_equal_allowed_sources",
+      "status": "PASS",
+      "observed": [
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\protocol_before_analysis.json",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\threshold_lock.json",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\experiment_summary.json",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\independent_validation.json",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\independent_validation_checks.csv",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_cutoff_metrics.csv",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_paired_metrics.csv",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_band_diagnostics.csv",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\valid_ticket_level.csv",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\logs\\execution.log",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11c_darkhorse_8_15_preregistered_20260823\\logs\\phase_progress.jsonl",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\analyze_h11c_darkhorse_8_15_valid_lock.py",
+        "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\validation\\validate_h11c_darkhorse_8_15_valid_lock.py"
+      ],
+      "expected": "exact allowed set"
+    }
+  ],
+  "recommended_real_stake": 0,
+  "deployment_status": "NO_GO"
+}

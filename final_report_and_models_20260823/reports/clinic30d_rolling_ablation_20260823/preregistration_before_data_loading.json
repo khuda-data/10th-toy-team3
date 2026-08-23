@@ -1,0 +1,63 @@
+{
+  "status": "LOCKED_BEFORE_DATA_LOADING_IN_THIS_PROCESS",
+  "created_at": "2026-08-23T04:54:42.325335+09:00",
+  "hypothesis": "removing clinic_30d from the global and 8-15 interaction residual models reduces rolling OOS winner log score",
+  "feature": "clinic_30d",
+  "folds": [
+    {
+      "fold": "P1_valid_202505_06",
+      "eval_start": 20250517,
+      "eval_end": 20250630,
+      "primary": false
+    },
+    {
+      "fold": "P2_valid_202507_08",
+      "eval_start": 20250701,
+      "eval_end": 20250831,
+      "primary": false
+    },
+    {
+      "fold": "P3_valid_202509_10",
+      "eval_start": 20250901,
+      "eval_end": 20251031,
+      "primary": false
+    },
+    {
+      "fold": "P4_valid_202511_12",
+      "eval_start": 20251101,
+      "eval_end": 20251227,
+      "primary": false
+    },
+    {
+      "fold": "P5_test_202512_02",
+      "eval_start": 20251228,
+      "eval_end": 20260228,
+      "primary": true
+    },
+    {
+      "fold": "P6_test_202603_04",
+      "eval_start": 20260301,
+      "eval_end": 20260430,
+      "primary": true
+    },
+    {
+      "fold": "P7_test_202605_06",
+      "eval_start": 20260501,
+      "eval_end": 20260630,
+      "primary": true
+    },
+    {
+      "fold": "P8_test_202607_08",
+      "eval_start": 20260701,
+      "eval_end": 20260809,
+      "primary": true
+    }
+  ],
+  "primary_inference": "P5-P8 only",
+  "endpoints": [
+    "global_full minus global_without_clinic",
+    "partial8_full minus partial8_without_clinic"
+  ],
+  "multiplicity": "Holm FWER for the two clinic ablation endpoints",
+  "confirmation_status": "retrospective exploratory ablation on previously inspected dates"
+}

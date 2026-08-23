@@ -1,0 +1,20 @@
+{
+  "status": "POST_HOC_EXPLORATORY_HISTORICAL_HYPOTHESIS",
+  "created_at": "2026-08-23T05:21:54.373420+09:00",
+  "odds_band": {
+    "lower_inclusive": 8.0,
+    "upper_exclusive": 15.0
+  },
+  "ticket_eligibility": "every constituent horse has 8 <= result-file closing winOdds < 15",
+  "selection": "among eligible tickets, maximize model event probability minus closing-win-q proxy event probability",
+  "market_comparator": "among the same eligible tickets, maximize closing-win-q proxy event probability",
+  "no_bet_rule": "skip a race/bet type when too few eligible horses exist to form the ticket",
+  "settlement": "official KRA final dividend, one-unit flat stake, no takeout double deduction",
+  "limitations": [
+    "closing win odds have no documented executable timestamp",
+    "complex-bet pre-race combination prices are unavailable",
+    "the band is a retained historical hypothesis, not fresh preregistration",
+    "different bet types have different race counts"
+  ],
+  "recommended_real_stake": 0
+}

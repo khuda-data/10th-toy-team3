@@ -1,0 +1,1645 @@
+{
+  "status": "PASS",
+  "frozen_at_kst": "2026-08-23T08:40:52.414616+09:00",
+  "freeze_behavior": "IMMUTABLE_REUSE_NO_OVERWRITE",
+  "scientific_invariant_sha256": "4345659913352B41426EA16CEADEA1CE4A88A7F06B2CC9F73CC453DD1BC824E5",
+  "scientific": {
+    "status": "PASS",
+    "validator_independent_no_trainer_import": true,
+    "protocol_sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78",
+    "checks_total": 268,
+    "checks_passed": 268,
+    "checks_failed": 0,
+    "checks": [
+      {
+        "check_id": 1,
+        "check": "protocol_sha256",
+        "status": "PASS",
+        "detail": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78"
+      },
+      {
+        "check_id": 2,
+        "check": "protocol_status",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 3,
+        "check": "source_size_without_full_hash",
+        "status": "PASS",
+        "detail": "14056057"
+      },
+      {
+        "check_id": 4,
+        "check": "source_attestation",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 5,
+        "check": "source_full_hash_forbidden",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 6,
+        "check": "freeze_status",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 7,
+        "check": "freeze_protocol",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 8,
+        "check": "freeze_before_first_t5",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 9,
+        "check": "manifest_hash_bound",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 10,
+        "check": "manifest_bytes_bound",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 11,
+        "check": "manifest_fit_count",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 12,
+        "check": "manifest_forbidden_zero_split_test_bytes_read",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "check_id": 13,
+        "check": "manifest_forbidden_zero_split_test_rows_read_or_parsed",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "check_id": 14,
+        "check": "manifest_forbidden_zero_target_20260823_sources_read",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "check_id": 15,
+        "check": "manifest_forbidden_zero_outcome_result_dividend_settlement_sources_read",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "check_id": 16,
+        "check": "manifest_forbidden_zero_roi_ticket_kelly_sources_read",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "check_id": 17,
+        "check": "manifest_live_stake_zero",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 18,
+        "check": "artifact_exists_input_hash_and_reader_audit.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 19,
+        "check": "artifact_bytes_input_hash_and_reader_audit.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 20,
+        "check": "artifact_hash_input_hash_and_reader_audit.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 21,
+        "check": "artifact_exists_date_split.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 22,
+        "check": "artifact_bytes_date_split.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 23,
+        "check": "artifact_hash_date_split.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 24,
+        "check": "artifact_exists_date_split.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 25,
+        "check": "artifact_bytes_date_split.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 26,
+        "check": "artifact_hash_date_split.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 27,
+        "check": "artifact_exists_finite_difference_gradient_test.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 28,
+        "check": "artifact_bytes_finite_difference_gradient_test.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 29,
+        "check": "artifact_hash_finite_difference_gradient_test.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 30,
+        "check": "artifact_exists_lambda_grid.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 31,
+        "check": "artifact_bytes_lambda_grid.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 32,
+        "check": "artifact_hash_lambda_grid.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 33,
+        "check": "artifact_exists_next20_daily_losses.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 34,
+        "check": "artifact_bytes_next20_daily_losses.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 35,
+        "check": "artifact_hash_next20_daily_losses.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 36,
+        "check": "artifact_exists_lambda_selection.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 37,
+        "check": "artifact_bytes_lambda_selection.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 38,
+        "check": "artifact_hash_lambda_selection.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 39,
+        "check": "artifact_exists_fitted_weights.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 40,
+        "check": "artifact_bytes_fitted_weights.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 41,
+        "check": "artifact_hash_fitted_weights.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 42,
+        "check": "artifact_exists_weight_stability.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 43,
+        "check": "artifact_bytes_weight_stability.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 44,
+        "check": "artifact_hash_weight_stability.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 45,
+        "check": "artifact_exists_weight_stability.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 46,
+        "check": "artifact_bytes_weight_stability.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 47,
+        "check": "artifact_hash_weight_stability.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 48,
+        "check": "artifact_exists_late28_predictions.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 49,
+        "check": "artifact_bytes_late28_predictions.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 50,
+        "check": "artifact_hash_late28_predictions.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 51,
+        "check": "artifact_exists_late28_metrics.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 52,
+        "check": "artifact_bytes_late28_metrics.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 53,
+        "check": "artifact_hash_late28_metrics.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 54,
+        "check": "artifact_exists_late28_metrics.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 55,
+        "check": "artifact_bytes_late28_metrics.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 56,
+        "check": "artifact_hash_late28_metrics.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 57,
+        "check": "artifact_exists_all92_fitted_probabilities.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 58,
+        "check": "artifact_bytes_all92_fitted_probabilities.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 59,
+        "check": "artifact_hash_all92_fitted_probabilities.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 60,
+        "check": "artifact_exists_optimizer_fit_manifest.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 61,
+        "check": "artifact_bytes_optimizer_fit_manifest.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 62,
+        "check": "artifact_hash_optimizer_fit_manifest.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 63,
+        "check": "artifact_exists_deployment_weights.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 64,
+        "check": "artifact_bytes_deployment_weights.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 65,
+        "check": "artifact_hash_deployment_weights.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 66,
+        "check": "artifact_exists_experiment_summary.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 67,
+        "check": "artifact_bytes_experiment_summary.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 68,
+        "check": "artifact_hash_experiment_summary.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 69,
+        "check": "artifact_exists_execution.log",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 70,
+        "check": "artifact_bytes_execution.log",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 71,
+        "check": "artifact_hash_execution.log",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 72,
+        "check": "artifact_exists_phase_progress.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 73,
+        "check": "artifact_bytes_phase_progress.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 74,
+        "check": "artifact_hash_phase_progress.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 75,
+        "check": "artifact_exists_fit_operations.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 76,
+        "check": "artifact_bytes_fit_operations.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 77,
+        "check": "artifact_hash_fit_operations.jsonl",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 78,
+        "check": "artifact_exists_01_first44_lambda_0.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 79,
+        "check": "artifact_bytes_01_first44_lambda_0.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 80,
+        "check": "artifact_hash_01_first44_lambda_0.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 81,
+        "check": "artifact_exists_02_first44_lambda_1em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 82,
+        "check": "artifact_bytes_02_first44_lambda_1em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 83,
+        "check": "artifact_hash_02_first44_lambda_1em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 84,
+        "check": "artifact_exists_03_first44_lambda_3em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 85,
+        "check": "artifact_bytes_03_first44_lambda_3em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 86,
+        "check": "artifact_hash_03_first44_lambda_3em05.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 87,
+        "check": "artifact_exists_04_first44_lambda_0p0001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 88,
+        "check": "artifact_bytes_04_first44_lambda_0p0001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 89,
+        "check": "artifact_hash_04_first44_lambda_0p0001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 90,
+        "check": "artifact_exists_05_first44_lambda_0p0003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 91,
+        "check": "artifact_bytes_05_first44_lambda_0p0003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 92,
+        "check": "artifact_hash_05_first44_lambda_0p0003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 93,
+        "check": "artifact_exists_06_first44_lambda_0p001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 94,
+        "check": "artifact_bytes_06_first44_lambda_0p001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 95,
+        "check": "artifact_hash_06_first44_lambda_0p001.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 96,
+        "check": "artifact_exists_07_first44_lambda_0p003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 97,
+        "check": "artifact_bytes_07_first44_lambda_0p003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 98,
+        "check": "artifact_hash_07_first44_lambda_0p003.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 99,
+        "check": "artifact_exists_08_first44_lambda_0p01.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 100,
+        "check": "artifact_bytes_08_first44_lambda_0p01.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 101,
+        "check": "artifact_hash_08_first44_lambda_0p01.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 102,
+        "check": "artifact_exists_09_first44_lambda_0p03.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 103,
+        "check": "artifact_bytes_09_first44_lambda_0p03.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 104,
+        "check": "artifact_hash_09_first44_lambda_0p03.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 105,
+        "check": "artifact_exists_10_first44_lambda_0p1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 106,
+        "check": "artifact_bytes_10_first44_lambda_0p1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 107,
+        "check": "artifact_hash_10_first44_lambda_0p1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 108,
+        "check": "artifact_exists_11_first44_lambda_0p3.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 109,
+        "check": "artifact_bytes_11_first44_lambda_0p3.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 110,
+        "check": "artifact_hash_11_first44_lambda_0p3.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 111,
+        "check": "artifact_exists_12_first44_lambda_1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 112,
+        "check": "artifact_bytes_12_first44_lambda_1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 113,
+        "check": "artifact_hash_12_first44_lambda_1.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 114,
+        "check": "artifact_exists_13_first64_selected_lambda.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 115,
+        "check": "artifact_bytes_13_first64_selected_lambda.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 116,
+        "check": "artifact_hash_13_first64_selected_lambda.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 117,
+        "check": "artifact_exists_14_all92_deployment.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 118,
+        "check": "artifact_bytes_14_all92_deployment.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 119,
+        "check": "artifact_hash_14_all92_deployment.csv",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 120,
+        "check": "artifact_exists_01_first44_lambda_0.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 121,
+        "check": "artifact_bytes_01_first44_lambda_0.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 122,
+        "check": "artifact_hash_01_first44_lambda_0.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 123,
+        "check": "artifact_exists_02_first44_lambda_1em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 124,
+        "check": "artifact_bytes_02_first44_lambda_1em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 125,
+        "check": "artifact_hash_02_first44_lambda_1em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 126,
+        "check": "artifact_exists_03_first44_lambda_3em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 127,
+        "check": "artifact_bytes_03_first44_lambda_3em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 128,
+        "check": "artifact_hash_03_first44_lambda_3em05.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 129,
+        "check": "artifact_exists_04_first44_lambda_0p0001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 130,
+        "check": "artifact_bytes_04_first44_lambda_0p0001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 131,
+        "check": "artifact_hash_04_first44_lambda_0p0001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 132,
+        "check": "artifact_exists_05_first44_lambda_0p0003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 133,
+        "check": "artifact_bytes_05_first44_lambda_0p0003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 134,
+        "check": "artifact_hash_05_first44_lambda_0p0003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 135,
+        "check": "artifact_exists_06_first44_lambda_0p001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 136,
+        "check": "artifact_bytes_06_first44_lambda_0p001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 137,
+        "check": "artifact_hash_06_first44_lambda_0p001.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 138,
+        "check": "artifact_exists_07_first44_lambda_0p003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 139,
+        "check": "artifact_bytes_07_first44_lambda_0p003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 140,
+        "check": "artifact_hash_07_first44_lambda_0p003.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 141,
+        "check": "artifact_exists_08_first44_lambda_0p01.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 142,
+        "check": "artifact_bytes_08_first44_lambda_0p01.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 143,
+        "check": "artifact_hash_08_first44_lambda_0p01.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 144,
+        "check": "artifact_exists_09_first44_lambda_0p03.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 145,
+        "check": "artifact_bytes_09_first44_lambda_0p03.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 146,
+        "check": "artifact_hash_09_first44_lambda_0p03.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 147,
+        "check": "artifact_exists_10_first44_lambda_0p1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 148,
+        "check": "artifact_bytes_10_first44_lambda_0p1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 149,
+        "check": "artifact_hash_10_first44_lambda_0p1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 150,
+        "check": "artifact_exists_11_first44_lambda_0p3.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 151,
+        "check": "artifact_bytes_11_first44_lambda_0p3.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 152,
+        "check": "artifact_hash_11_first44_lambda_0p3.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 153,
+        "check": "artifact_exists_12_first44_lambda_1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 154,
+        "check": "artifact_bytes_12_first44_lambda_1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 155,
+        "check": "artifact_hash_12_first44_lambda_1.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 156,
+        "check": "artifact_exists_13_first64_selected_lambda.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 157,
+        "check": "artifact_bytes_13_first64_selected_lambda.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 158,
+        "check": "artifact_hash_13_first64_selected_lambda.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 159,
+        "check": "artifact_exists_14_all92_deployment.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 160,
+        "check": "artifact_bytes_14_all92_deployment.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 161,
+        "check": "artifact_hash_14_all92_deployment.json",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 162,
+        "check": "exact_rows",
+        "status": "PASS",
+        "detail": "11345"
+      },
+      {
+        "check_id": 163,
+        "check": "exact_races",
+        "status": "PASS",
+        "detail": "1084"
+      },
+      {
+        "check_id": 164,
+        "check": "exact_dates",
+        "status": "PASS",
+        "detail": "92"
+      },
+      {
+        "check_id": 165,
+        "check": "strict_chronology",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 166,
+        "check": "reader_stopped_after_fourth_valid",
+        "status": "PASS",
+        "detail": "5392493"
+      },
+      {
+        "check_id": 167,
+        "check": "one_winner_per_race",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 168,
+        "check": "q_sum",
+        "status": "PASS",
+        "detail": "1.1102230246251565e-15"
+      },
+      {
+        "check_id": 169,
+        "check": "member_sum_m6",
+        "status": "PASS",
+        "detail": "1.1102230246251565e-15"
+      },
+      {
+        "check_id": 170,
+        "check": "member_sum_xgboost",
+        "status": "PASS",
+        "detail": "1.2212453270876722e-15"
+      },
+      {
+        "check_id": 171,
+        "check": "member_sum_lightgbm",
+        "status": "PASS",
+        "detail": "9.992007221626409e-16"
+      },
+      {
+        "check_id": 172,
+        "check": "member_sum_deep_mlp_3seed",
+        "status": "PASS",
+        "detail": "8.881784197001252e-16"
+      },
+      {
+        "check_id": 173,
+        "check": "independent_gradient_fd",
+        "status": "PASS",
+        "detail": "9.018969685664624e-11"
+      },
+      {
+        "check_id": 174,
+        "check": "gradient_artifact_objective",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 175,
+        "check": "gradient_artifact_error",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 176,
+        "check": "fit_count_exact_14",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 177,
+        "check": "fit_numbers_exact",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 178,
+        "check": "candidate_lambdas_exact",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 179,
+        "check": "all_slsqp",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 180,
+        "check": "all_analytic_gradient",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 181,
+        "check": "all_optimizer_success",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 182,
+        "check": "candidate_scope_first44",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 183,
+        "check": "fit13_scope_first64",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 184,
+        "check": "fit14_scope_all92",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 185,
+        "check": "weights_nonnegative_fit1",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 186,
+        "check": "weights_sum_fit1",
+        "status": "PASS",
+        "detail": "0.6132318538885665"
+      },
+      {
+        "check_id": 187,
+        "check": "market_exponent_identity_fit1",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 188,
+        "check": "penalized_objective_fit1",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 189,
+        "check": "weights_nonnegative_fit2",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 190,
+        "check": "weights_sum_fit2",
+        "status": "PASS",
+        "detail": "0.6128372240434322"
+      },
+      {
+        "check_id": 191,
+        "check": "market_exponent_identity_fit2",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 192,
+        "check": "penalized_objective_fit2",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 193,
+        "check": "weights_nonnegative_fit3",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 194,
+        "check": "weights_sum_fit3",
+        "status": "PASS",
+        "detail": "0.6120804300513041"
+      },
+      {
+        "check_id": 195,
+        "check": "market_exponent_identity_fit3",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 196,
+        "check": "penalized_objective_fit3",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 197,
+        "check": "weights_nonnegative_fit4",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 198,
+        "check": "weights_sum_fit4",
+        "status": "PASS",
+        "detail": "0.6093987861369435"
+      },
+      {
+        "check_id": 199,
+        "check": "market_exponent_identity_fit4",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 200,
+        "check": "penalized_objective_fit4",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 201,
+        "check": "weights_nonnegative_fit5",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 202,
+        "check": "weights_sum_fit5",
+        "status": "PASS",
+        "detail": "0.6016917675929366"
+      },
+      {
+        "check_id": 203,
+        "check": "market_exponent_identity_fit5",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 204,
+        "check": "penalized_objective_fit5",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 205,
+        "check": "weights_nonnegative_fit6",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 206,
+        "check": "weights_sum_fit6",
+        "status": "PASS",
+        "detail": "0.5750496975606426"
+      },
+      {
+        "check_id": 207,
+        "check": "market_exponent_identity_fit6",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 208,
+        "check": "penalized_objective_fit6",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 209,
+        "check": "weights_nonnegative_fit7",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 210,
+        "check": "weights_sum_fit7",
+        "status": "PASS",
+        "detail": "0.50782362147193"
+      },
+      {
+        "check_id": 211,
+        "check": "market_exponent_identity_fit7",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 212,
+        "check": "penalized_objective_fit7",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 213,
+        "check": "weights_nonnegative_fit8",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 214,
+        "check": "weights_sum_fit8",
+        "status": "PASS",
+        "detail": "0.3721407508183744"
+      },
+      {
+        "check_id": 215,
+        "check": "market_exponent_identity_fit8",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 216,
+        "check": "penalized_objective_fit8",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 217,
+        "check": "weights_nonnegative_fit9",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 218,
+        "check": "weights_sum_fit9",
+        "status": "PASS",
+        "detail": "0.21901101387242577"
+      },
+      {
+        "check_id": 219,
+        "check": "market_exponent_identity_fit9",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 220,
+        "check": "penalized_objective_fit9",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 221,
+        "check": "weights_nonnegative_fit10",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 222,
+        "check": "weights_sum_fit10",
+        "status": "PASS",
+        "detail": "0.09033046548443982"
+      },
+      {
+        "check_id": 223,
+        "check": "market_exponent_identity_fit10",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 224,
+        "check": "penalized_objective_fit10",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 225,
+        "check": "weights_nonnegative_fit11",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 226,
+        "check": "weights_sum_fit11",
+        "status": "PASS",
+        "detail": "0.03376311170815945"
+      },
+      {
+        "check_id": 227,
+        "check": "market_exponent_identity_fit11",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 228,
+        "check": "penalized_objective_fit11",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 229,
+        "check": "weights_nonnegative_fit12",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 230,
+        "check": "weights_sum_fit12",
+        "status": "PASS",
+        "detail": "0.010580022571109229"
+      },
+      {
+        "check_id": 231,
+        "check": "market_exponent_identity_fit12",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 232,
+        "check": "penalized_objective_fit12",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 233,
+        "check": "weights_nonnegative_fit13",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 234,
+        "check": "weights_sum_fit13",
+        "status": "PASS",
+        "detail": "0.01922749207512059"
+      },
+      {
+        "check_id": 235,
+        "check": "market_exponent_identity_fit13",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 236,
+        "check": "penalized_objective_fit13",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 237,
+        "check": "weights_nonnegative_fit14",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 238,
+        "check": "weights_sum_fit14",
+        "status": "PASS",
+        "detail": "0.01859010175266394"
+      },
+      {
+        "check_id": 239,
+        "check": "market_exponent_identity_fit14",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 240,
+        "check": "penalized_objective_fit14",
+        "status": "PASS",
+        "detail": "0.0"
+      },
+      {
+        "check_id": 241,
+        "check": "daily_rows_12x20",
+        "status": "PASS",
+        "detail": "240"
+      },
+      {
+        "check_id": 242,
+        "check": "grid_rows_12",
+        "status": "PASS",
+        "detail": "12"
+      },
+      {
+        "check_id": 243,
+        "check": "next20_daily_losses_recomputed",
+        "status": "PASS",
+        "detail": "4.440892098500626e-16"
+      },
+      {
+        "check_id": 244,
+        "check": "one_se_minimum_lambda",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 245,
+        "check": "one_se_threshold",
+        "status": "PASS",
+        "detail": "4.440892098500626e-16"
+      },
+      {
+        "check_id": 246,
+        "check": "one_se_largest_lambda",
+        "status": "PASS",
+        "detail": "1.0"
+      },
+      {
+        "check_id": 247,
+        "check": "late28_selection_false",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 248,
+        "check": "fit13_selected_lambda",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 249,
+        "check": "fit14_selected_lambda",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 250,
+        "check": "late28_row_count",
+        "status": "PASS",
+        "detail": "3707"
+      },
+      {
+        "check_id": 251,
+        "check": "late28_h17_probability_replay",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 252,
+        "check": "late28_h17_sum",
+        "status": "PASS",
+        "detail": "4.440892098500626e-16"
+      },
+      {
+        "check_id": 253,
+        "check": "late28_reused_not_independent",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 254,
+        "check": "late28_not_selection",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 255,
+        "check": "late28_nll_recomputed",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 256,
+        "check": "late28_delta_ll_q",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 257,
+        "check": "late28_delta_ll_equal",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 258,
+        "check": "late28_brier",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 259,
+        "check": "late28_top1",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 260,
+        "check": "all92_row_count",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 261,
+        "check": "all92_probability_replay",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 262,
+        "check": "all92_sum",
+        "status": "PASS",
+        "detail": "4.440892098500626e-16"
+      },
+      {
+        "check_id": 263,
+        "check": "deployment_selected_lambda",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 264,
+        "check": "deployment_weights_identity",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 265,
+        "check": "target_access_zero",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 266,
+        "check": "test_bytes_zero",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 267,
+        "check": "test_rows_zero",
+        "status": "PASS",
+        "detail": ""
+      },
+      {
+        "check_id": 268,
+        "check": "stake_zero",
+        "status": "PASS",
+        "detail": ""
+      }
+    ],
+    "recomputed": {
+      "gradient_max_error": 9.018969685664624e-11,
+      "selected_lambda": 1.0,
+      "late28_delta_ll_vs_q": 8.365875078131246e-05,
+      "late28_delta_ll_vs_equal": -0.002194703580268298,
+      "all92_probability_sum_max_error": 4.440892098500626e-16
+    },
+    "reader_audit": {
+      "valid_blocks_decoded": [
+        "m6",
+        "xgboost",
+        "lightgbm",
+        "deep_mlp_3seed"
+      ],
+      "rows_per_block": 11345,
+      "split_test_bytes_read": 0,
+      "split_test_rows_read_or_parsed": 0,
+      "target_20260823_sources_read": 0,
+      "source_full_hash_recomputed": false
+    },
+    "live_stake": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all runner odds joined",
+      "status": "PASS"
+    },
+    {
+      "check": "validation model selection only",
+      "status": "PASS"
+    },
+    {
+      "check": "three candidate models",
+      "status": "PASS"
+    },
+    {
+      "check": "test policy rows",
+      "status": "PASS"
+    },
+    {
+      "check": "visual studio output include",
+      "status": "PASS"
+    }
+  ],
+  "report_sha256": "1335856CD9C5239E4F010EBBFF4B55BF3EC3D71F157F5A0B90B9BAB2F6BE8070",
+  "report_bytes": 4976,
+  "result_rows": 18,
+  "joined_runner_rows": 69120
+}

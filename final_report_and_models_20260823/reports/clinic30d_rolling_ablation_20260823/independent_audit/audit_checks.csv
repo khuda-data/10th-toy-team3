@@ -1,0 +1,8 @@
+﻿check,passed,detail
+model_file_count,True,files=8
+ablation_artifact_identity,True,feature presence matches model key and all fits converged
+chronology,True,folds=8
+probability_sums,True,max_error=1.221e-15
+winner_delta_replay,True,max_error=3.464e-14; tolerance=1e-12
+bootstrap_holm_replay,True,max_error=7.936e-17
+brier_replay,True,max_error=8.327e-17

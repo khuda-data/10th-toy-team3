@@ -1,0 +1,2 @@
+2026-08-23 05:20:38,223 | INFO | PASS_WITH_LIMITATIONS | exact=6 blocked=23 checks=10/10
+2026-08-23 05:28:52,400 | INFO | PASS_WITH_LIMITATIONS | provenance_ready=6 blocked=23 numeric_replay=false checks=11/11

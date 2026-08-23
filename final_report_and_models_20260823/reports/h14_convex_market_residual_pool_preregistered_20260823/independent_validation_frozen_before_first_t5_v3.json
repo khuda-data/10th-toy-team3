@@ -1,0 +1,878 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "validated_at_kst": "2026-08-23T08:25:08.513187+09:00",
+  "validator_independent_of_trainer_import": true,
+  "scope": "H14 VALID-only training and reused late28 descriptive evaluation",
+  "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+  "trainer": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\training\\train_h14_convex_market_residual_pool.py",
+    "bytes": 44408,
+    "sha256": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+  },
+  "validator": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\validation\\validate_h14_convex_market_residual_pool.py",
+    "bytes": 37818,
+    "sha256": "5E9938FB3B3FF4CF668334E5B680F2FD997657CF8E1624A35B74D65E5C84E1DA"
+  },
+  "actual_optimizer_fit_calls": 3,
+  "independent_reader": {
+    "valid_rows_per_block": 11345,
+    "blocks": [
+      "m6",
+      "xgboost",
+      "lightgbm",
+      "deep_mlp_3seed"
+    ],
+    "byte_position_after_fourth_block": 5392493,
+    "readline_calls_after_fourth_block": 0,
+    "split_test_rows_read_or_parsed": 0
+  },
+  "result_access_audit": {
+    "target_20260823_score_quote_outcome_result_dividend_settlement_sources_read": 0,
+    "split_test_rows_read_or_parsed": 0,
+    "roi_ticket_kelly_sources_read": 0,
+    "network_calls": 0,
+    "live_stake": 0
+  },
+  "constraints": {
+    "first44_stability_checkpoint": {
+      "minimum": 0.0,
+      "sum": 0.6132321506248106,
+      "market_exponent": 0.3867678493751894
+    },
+    "first64_locked_late28_model": {
+      "minimum": 2.3946258647807302e-17,
+      "sum": 1.0,
+      "market_exponent": 0.0
+    },
+    "all92_deployment": {
+      "minimum": 0.0,
+      "sum": 1.0000000000000002,
+      "market_exponent": -2.220446049250313e-16
+    }
+  },
+  "late28_comparisons": {
+    "h14_vs_market_q": {
+      "delta_log_likelihood_per_race": 0.0022630070727323254,
+      "daily_block_bootstrap_ci95_low": -0.0034751617323864987,
+      "daily_block_bootstrap_ci95_high": 0.008439256005363356,
+      "paired_day_sign_flip_p_one_sided": 0.23027697230276972,
+      "daily_blocks": 28,
+      "races": 340
+    },
+    "h14_vs_h11b_equal_arithmetic_ensemble": {
+      "delta_log_likelihood_per_race": -1.535525831681735e-05,
+      "daily_block_bootstrap_ci95_low": -0.0018604644020553357,
+      "daily_block_bootstrap_ci95_high": 0.002022027389618565,
+      "paired_day_sign_flip_p_one_sided": 0.5070492950704929,
+      "daily_blocks": 28,
+      "races": 340
+    },
+    "h14_vs_h13_frozen_first64_log_pool": {
+      "delta_log_likelihood_per_race": 0.0002567347040859077,
+      "daily_block_bootstrap_ci95_low": -0.0006036777912626329,
+      "daily_block_bootstrap_ci95_high": 0.001114231196812235,
+      "paired_day_sign_flip_p_one_sided": 0.29247075292470753,
+      "daily_blocks": 28,
+      "races": 340
+    }
+  },
+  "checks_total": 72,
+  "checks_passed": 72,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "validator_does_not_import_trainer",
+      "status": "PASS",
+      "observed": "trainer absent from sys.modules",
+      "expected": "independent"
+    },
+    {
+      "check": "trainer_ast_parses",
+      "status": "PASS",
+      "observed": "valid AST",
+      "expected": "valid AST"
+    },
+    {
+      "check": "protocol_sha_unchanged",
+      "status": "PASS",
+      "observed": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+      "expected": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"
+    },
+    {
+      "check": "protocol_status",
+      "status": "PASS",
+      "observed": "H14_ADAPTIVE_FOLLOWUP_PREREGISTERED_BEFORE_TRAINING_AND_FIRST_REAL_T5",
+      "expected": "H14 adaptive frozen status"
+    },
+    {
+      "check": "protocol_requires_three_fits",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "check": "protocol_adaptive_disclosure",
+      "status": "PASS",
+      "observed": {
+        "h13_observed_before_this_protocol": true,
+        "h13_late28_delta_ll_vs_q": 0.0020062723686464176,
+        "h13_late28_ci_included_zero": true,
+        "h13_late28_delta_ll_vs_equal_ensemble": -0.00027208996240272505,
+        "h13_weight_instability_observed": true,
+        "consequence": "H14 is an explicitly adaptive exploratory follow-up. Its reused historical late28 result cannot be independent evidence; only later prospective data can evaluate it."
+      },
+      "expected": "H13 observed and CI included zero"
+    },
+    {
+      "check": "protocol_forbids_test_and_target",
+      "status": "PASS",
+      "observed": {
+        "split": "VALID only",
+        "model_blocks": [
+          "m6",
+          "xgboost",
+          "lightgbm",
+          "deep_mlp_3seed"
+        ],
+        "rows_per_block": 11345,
+        "reader": "unbuffered exact-block reader that stops immediately after the fourth VALID member block and never reads the TEST block",
+        "required_alignment": "rcDate, race_id, entry_id, win, and q must match exactly across all four member blocks",
+        "split_test_rows_read_or_parsed": 0,
+        "target_20260823_sources_read": 0
+      },
+      "expected": "both zero"
+    },
+    {
+      "check": "trainer_has_one_minimize_call_site",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "check": "trainer_minimize_method_slsqp",
+      "status": "PASS",
+      "observed": "minimize(objective, INITIAL_WEIGHTS.copy(), method='SLSQP', jac=True, bounds=[(0.0, None)] * len(MEMBERS), constraints=[{'type': 'ineq', 'fun': lambda weights: 1.0 - float(np.sum(weights)), 'jac': lambda weights: -np.ones_like(weights, dtype=float)}], callback=callback, options={'maxiter': 2000, 'ftol': 1e-12, 'disp': False})",
+      "expected": "SLSQP"
+    },
+    {
+      "check": "trainer_minimize_analytic_jacobian",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "trainer_minimize_has_nonnegative_bounds",
+      "status": "PASS",
+      "observed": true,
+      "expected": "w>=0"
+    },
+    {
+      "check": "trainer_minimize_has_sum_inequality",
+      "status": "PASS",
+      "observed": "sum constraint source found",
+      "expected": "1-sum(w)>=0"
+    },
+    {
+      "check": "trainer_formula_uses_log_q_plus_residual",
+      "status": "PASS",
+      "observed": "formula source found",
+      "expected": "log(q)+residual@w"
+    },
+    {
+      "check": "trainer_gradient_formula",
+      "status": "PASS",
+      "observed": "analytic conditional-logit gradient source found",
+      "expected": "sum expected residual minus winner residual"
+    },
+    {
+      "check": "trainer_fit_spec_has_exact_three_scopes",
+      "status": "PASS",
+      "observed": "three frozen names",
+      "expected": "first44/first64/all92"
+    },
+    {
+      "check": "trainer_has_no_forbidden_target_test_path",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "trainer_has_no_network_call",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "source_size_without_full_hash",
+      "status": "PASS",
+      "observed": 14056057,
+      "expected": 14056057
+    },
+    {
+      "check": "source_attestation_not_recomputed",
+      "status": "PASS",
+      "observed": {
+        "full_hash": false,
+        "attestation": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC"
+      },
+      "expected": {
+        "full_hash": false,
+        "attestation": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC"
+      }
+    },
+    {
+      "check": "independent_valid_rows",
+      "status": "PASS",
+      "observed": {
+        "rows": 11345,
+        "splits": [
+          "valid"
+        ]
+      },
+      "expected": {
+        "rows": 11345,
+        "splits": [
+          "valid"
+        ]
+      }
+    },
+    {
+      "check": "independent_four_member_blocks",
+      "status": "PASS",
+      "observed": [
+        11345,
+        4
+      ],
+      "expected": [
+        11345,
+        4
+      ]
+    },
+    {
+      "check": "reader_byte_boundary_matches",
+      "status": "PASS",
+      "observed": 5392493,
+      "expected": 5392493
+    },
+    {
+      "check": "reader_never_requests_fifth_line",
+      "status": "PASS",
+      "observed": {
+        "after_fourth": 0,
+        "test": 0
+      },
+      "expected": {
+        "after_fourth": 0,
+        "test": 0
+      }
+    },
+    {
+      "check": "one_winner_per_race",
+      "status": "PASS",
+      "observed": {
+        "winners": 1084,
+        "races": 1084
+      },
+      "expected": "equal and one per race"
+    },
+    {
+      "check": "input_probability_sums",
+      "status": "PASS",
+      "observed": {
+        "q": 1.1102230246251565e-15,
+        "m6": 1.1102230246251565e-15,
+        "xgboost": 1.2212453270876722e-15,
+        "lightgbm": 9.992007221626409e-16,
+        "deep_mlp_3seed": 8.881784197001252e-16
+      },
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "input_positive_finite",
+      "status": "PASS",
+      "observed": "positive finite",
+      "expected": "positive finite"
+    },
+    {
+      "check": "exact_92_dates",
+      "status": "PASS",
+      "observed": 92,
+      "expected": 92
+    },
+    {
+      "check": "date_split_44_64_28",
+      "status": "PASS",
+      "observed": [
+        44,
+        64,
+        28
+      ],
+      "expected": [
+        44,
+        64,
+        28
+      ]
+    },
+    {
+      "check": "strict_chronological_boundary",
+      "status": "PASS",
+      "observed": {
+        "first44_max": 20250830,
+        "next20_min": 20250831,
+        "first64_max": 20251024,
+        "late28_min": 20251025
+      },
+      "expected": "strict"
+    },
+    {
+      "check": "saved_date_split_exact",
+      "status": "PASS",
+      "observed": "saved lists equal independent lists",
+      "expected": true
+    },
+    {
+      "check": "late28_declared_reused",
+      "status": "PASS",
+      "observed": {
+        "split": "NOT_INDEPENDENT_REUSED_VALID_ALREADY_INSPECTED_BY_H11D_AND_H13",
+        "metrics": "NOT_INDEPENDENT_REUSED_VALID_ALREADY_INSPECTED_BY_H11D_AND_H13"
+      },
+      "expected": "reused VALID disclosure"
+    },
+    {
+      "check": "independent_gradient_finite_difference",
+      "status": "PASS",
+      "observed": 8.794809758932987e-11,
+      "expected": "<=1e-6"
+    },
+    {
+      "check": "saved_gradient_matches",
+      "status": "PASS",
+      "observed": {
+        "independent_error": 8.794809758932987e-11,
+        "saved_error": 8.794809758932987e-11
+      },
+      "expected": "exact within tolerances"
+    },
+    {
+      "check": "actual_optimizer_fit_count_exact_three",
+      "status": "PASS",
+      "observed": {
+        "manifest": 3,
+        "records": 3,
+        "summary": 3,
+        "freeze": 3
+      },
+      "expected": "all 3"
+    },
+    {
+      "check": "optimizer_calls_successful_slsqp_analytic",
+      "status": "PASS",
+      "observed": [
+        {
+          "name": "first44_stability_checkpoint",
+          "success": true,
+          "method": "SLSQP",
+          "jac": true
+        },
+        {
+          "name": "first64_locked_late28_model",
+          "success": true,
+          "method": "SLSQP",
+          "jac": true
+        },
+        {
+          "name": "all92_deployment",
+          "success": true,
+          "method": "SLSQP",
+          "jac": true
+        }
+      ],
+      "expected": "all successful SLSQP analytic"
+    },
+    {
+      "check": "optimizer_fit_numbers_unique_1_2_3",
+      "status": "PASS",
+      "observed": [
+        1,
+        2,
+        3
+      ],
+      "expected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "check": "all_weights_nonnegative",
+      "status": "PASS",
+      "observed": {
+        "first44_stability_checkpoint": {
+          "minimum": 0.0,
+          "sum": 0.6132321506248106,
+          "market_exponent": 0.3867678493751894
+        },
+        "first64_locked_late28_model": {
+          "minimum": 2.3946258647807302e-17,
+          "sum": 1.0,
+          "market_exponent": 0.0
+        },
+        "all92_deployment": {
+          "minimum": 0.0,
+          "sum": 1.0000000000000002,
+          "market_exponent": -2.220446049250313e-16
+        }
+      },
+      "expected": "minimum >= -1e-12"
+    },
+    {
+      "check": "all_weight_sums_at_most_one",
+      "status": "PASS",
+      "observed": {
+        "first44_stability_checkpoint": {
+          "minimum": 0.0,
+          "sum": 0.6132321506248106,
+          "market_exponent": 0.3867678493751894
+        },
+        "first64_locked_late28_model": {
+          "minimum": 2.3946258647807302e-17,
+          "sum": 1.0,
+          "market_exponent": 0.0
+        },
+        "all92_deployment": {
+          "minimum": 0.0,
+          "sum": 1.0000000000000002,
+          "market_exponent": -2.220446049250313e-16
+        }
+      },
+      "expected": "sum <= 1+1e-12"
+    },
+    {
+      "check": "all_market_exponents_nonnegative_with_roundoff",
+      "status": "PASS",
+      "observed": {
+        "first44_stability_checkpoint": {
+          "minimum": 0.0,
+          "sum": 0.6132321506248106,
+          "market_exponent": 0.3867678493751894
+        },
+        "first64_locked_late28_model": {
+          "minimum": 2.3946258647807302e-17,
+          "sum": 1.0,
+          "market_exponent": 0.0
+        },
+        "all92_deployment": {
+          "minimum": 0.0,
+          "sum": 1.0000000000000002,
+          "market_exponent": -2.220446049250313e-16
+        }
+      },
+      "expected": "1-sum(w) >= -1e-12"
+    },
+    {
+      "check": "fit_scope_dates_44_64_92",
+      "status": "PASS",
+      "observed": [
+        44,
+        64,
+        92
+      ],
+      "expected": [
+        44,
+        64,
+        92
+      ]
+    },
+    {
+      "check": "optimizer_trace_count_three",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "check": "optimizer_traces_nonempty",
+      "status": "PASS",
+      "observed": [
+        {
+          "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/01_first44_stability_checkpoint.csv",
+          "bytes": 10800,
+          "sha256": "40651EAFFF69E2B5316FB9568EFDEAD7C36E0198AB137CEF578D6E7DF97B8B49"
+        },
+        {
+          "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/02_first64_locked_late28_model.csv",
+          "bytes": 7451,
+          "sha256": "D905AC08F37B467A771416F3E14E6A5E73B358A2134C7539C5E6DBA206F09794"
+        },
+        {
+          "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/optimizer_traces/03_all92_deployment.csv",
+          "bytes": 6144,
+          "sha256": "074C87A2B489C8BE6536037A35E5A8060094EC5DCE268FD525B32B6A65E96EFC"
+        }
+      ],
+      "expected": "hash and bytes match"
+    },
+    {
+      "check": "fit_operation_log_exact_three",
+      "status": "PASS",
+      "observed": [
+        1,
+        2,
+        3
+      ],
+      "expected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "check": "model_reload_weights:first44_stability_checkpoint",
+      "status": "PASS",
+      "observed": 0.0,
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "model_scope:first44_stability_checkpoint",
+      "status": "PASS",
+      "observed": {
+        "rows": 5102,
+        "races": 507,
+        "dates": 44,
+        "date_min": 20250517,
+        "date_max": 20250830
+      },
+      "expected": "dates=44"
+    },
+    {
+      "check": "model_q_not_ordinary_x:first44_stability_checkpoint",
+      "status": "PASS",
+      "observed": {
+        "ordinary_features": [],
+        "q_role": "coefficient-one market base margin/offset"
+      },
+      "expected": "no X; q base margin"
+    },
+    {
+      "check": "model_reload_weights:first64_locked_late28_model",
+      "status": "PASS",
+      "observed": 0.0,
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "model_scope:first64_locked_late28_model",
+      "status": "PASS",
+      "observed": {
+        "rows": 7638,
+        "races": 744,
+        "dates": 64,
+        "date_min": 20250517,
+        "date_max": 20251024
+      },
+      "expected": "dates=64"
+    },
+    {
+      "check": "model_q_not_ordinary_x:first64_locked_late28_model",
+      "status": "PASS",
+      "observed": {
+        "ordinary_features": [],
+        "q_role": "coefficient-one market base margin/offset"
+      },
+      "expected": "no X; q base margin"
+    },
+    {
+      "check": "model_reload_weights:all92_deployment",
+      "status": "PASS",
+      "observed": 0.0,
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "model_scope:all92_deployment",
+      "status": "PASS",
+      "observed": {
+        "rows": 11345,
+        "races": 1084,
+        "dates": 92,
+        "date_min": 20250517,
+        "date_max": 20251227
+      },
+      "expected": "dates=92"
+    },
+    {
+      "check": "model_q_not_ordinary_x:all92_deployment",
+      "status": "PASS",
+      "observed": {
+        "ordinary_features": [],
+        "q_role": "coefficient-one market base margin/offset"
+      },
+      "expected": "no X; q base margin"
+    },
+    {
+      "check": "late28_probability_sums",
+      "status": "PASS",
+      "observed": {
+        "h14_convex_pool": 4.440892098500626e-16,
+        "market_q": 9.992007221626409e-16,
+        "h11b_equal_arithmetic_ensemble": 2.220446049250313e-16,
+        "h13_frozen_first64_log_pool": 4.440892098500626e-16
+      },
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "late28_prediction_identity_exact",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "late28_prediction_values_recompute",
+      "status": "PASS",
+      "observed": {
+        "h14": 1.1102230246251565e-16,
+        "q": 1.1102230246251565e-16,
+        "equal": 1.1102230246251565e-16,
+        "h13": 1.1102230246251565e-16
+      },
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "late28_metrics_recompute",
+      "status": "PASS",
+      "observed": {
+        "h14_convex_pool": {
+          "winner_conditional_nll": 0.0,
+          "runner_brier": 0.0,
+          "ece10_equal_width": 0.0,
+          "race_top1_hit_rate": 0.0,
+          "maximum_race_probability_sum_error": 0.0
+        },
+        "market_q": {
+          "winner_conditional_nll": 0.0,
+          "runner_brier": 0.0,
+          "ece10_equal_width": 0.0,
+          "race_top1_hit_rate": 0.0,
+          "maximum_race_probability_sum_error": 0.0
+        },
+        "h11b_equal_arithmetic_ensemble": {
+          "winner_conditional_nll": 0.0,
+          "runner_brier": 0.0,
+          "ece10_equal_width": 0.0,
+          "race_top1_hit_rate": 0.0,
+          "maximum_race_probability_sum_error": 0.0
+        },
+        "h13_frozen_first64_log_pool": {
+          "winner_conditional_nll": 0.0,
+          "runner_brier": 0.0,
+          "ece10_equal_width": 0.0,
+          "race_top1_hit_rate": 0.0,
+          "maximum_race_probability_sum_error": 0.0
+        }
+      },
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "late28_delta_ci_signflip_recompute",
+      "status": "PASS",
+      "observed": {
+        "h14_vs_market_q": {
+          "delta_log_likelihood_per_race": 0.0,
+          "daily_block_bootstrap_ci95_low": 0.0,
+          "daily_block_bootstrap_ci95_high": 0.0,
+          "paired_day_sign_flip_p_one_sided": 0.0,
+          "daily_blocks": 0.0,
+          "races": 0.0
+        },
+        "h14_vs_h11b_equal_arithmetic_ensemble": {
+          "delta_log_likelihood_per_race": 0.0,
+          "daily_block_bootstrap_ci95_low": 0.0,
+          "daily_block_bootstrap_ci95_high": 0.0,
+          "paired_day_sign_flip_p_one_sided": 0.0,
+          "daily_blocks": 0.0,
+          "races": 0.0
+        },
+        "h14_vs_h13_frozen_first64_log_pool": {
+          "delta_log_likelihood_per_race": 0.0,
+          "daily_block_bootstrap_ci95_low": 0.0,
+          "daily_block_bootstrap_ci95_high": 0.0,
+          "paired_day_sign_flip_p_one_sided": 0.0,
+          "daily_blocks": 0.0,
+          "races": 0.0
+        }
+      },
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "late28_no_roi_ticket_claim",
+      "status": "PASS",
+      "observed": {
+        "roi": false,
+        "claim": "NONE_FROM_REUSED_HISTORICAL_VALID"
+      },
+      "expected": {
+        "roi": false,
+        "claim": "NONE_FROM_REUSED_HISTORICAL_VALID"
+      }
+    },
+    {
+      "check": "all92_prediction_recompute",
+      "status": "PASS",
+      "observed": 1.1102230246251565e-16,
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "all92_probability_sums",
+      "status": "PASS",
+      "observed": 4.440892098500626e-16,
+      "expected": "<= 1e-12"
+    },
+    {
+      "check": "training_manifest_artifact_hashes",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "training_manifest_protocol_hash",
+      "status": "PASS",
+      "observed": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+        "bytes": 4350,
+        "sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"
+      },
+      "expected": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43"
+    },
+    {
+      "check": "training_manifest_trainer_hash",
+      "status": "PASS",
+      "observed": {
+        "path": "src/training/train_h14_convex_market_residual_pool.py",
+        "bytes": 44408,
+        "sha256": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+      },
+      "expected": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+    },
+    {
+      "check": "training_manifest_forbidden_access_zero",
+      "status": "PASS",
+      "observed": {
+        "split_test_rows_read_or_parsed": 0,
+        "target_20260823_sources_read": 0,
+        "outcome_result_dividend_settlement_sources_read": 0,
+        "roi_ticket_kelly_sources_read": 0
+      },
+      "expected": "all zero"
+    },
+    {
+      "check": "freeze_binds_training_manifest",
+      "status": "PASS",
+      "observed": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/training_artifact_manifest.json",
+        "bytes": 6603,
+        "sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21"
+      },
+      "expected": {
+        "sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21",
+        "bytes": 6603
+      }
+    },
+    {
+      "check": "freeze_binds_deployment_model",
+      "status": "PASS",
+      "observed": {
+        "path": "models/h14_convex_market_residual_pool_preregistered_20260823/all92_deployment.json",
+        "bytes": 1434,
+        "sha256": "06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"
+      },
+      "expected": "06B19C98586A9EA775B311E66A7AEE0EC97AE4055A2FC7291F10EDAC8C6DC4AE"
+    },
+    {
+      "check": "freeze_binds_deployment_weights",
+      "status": "PASS",
+      "observed": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+        "bytes": 1625,
+        "sha256": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E"
+      },
+      "expected": "3B6419AE39039A9DC39EC45342C75B3A95E71DBE2DD8CBDDF03328353423AB6E"
+    },
+    {
+      "check": "protocol_precedes_all_fits",
+      "status": "PASS",
+      "observed": {
+        "protocol": "2026-08-23T07:57:27.659826+09:00",
+        "first_fit": "2026-08-23T08:09:44.630063+09:00"
+      },
+      "expected": "protocol strictly earlier"
+    },
+    {
+      "check": "freeze_precedes_first_t5",
+      "status": "PASS",
+      "observed": {
+        "frozen": "2026-08-23T08:09:45.493163+09:00",
+        "first_t5": "2026-08-23T10:30:00+09:00"
+      },
+      "expected": "frozen < first T-5"
+    },
+    {
+      "check": "freeze_test_target_stake_zero",
+      "status": "PASS",
+      "observed": {
+        "test": 0,
+        "target": 0,
+        "stake": 0
+      },
+      "expected": "0/0/0"
+    },
+    {
+      "check": "research_state_final",
+      "status": "PASS",
+      "observed": {
+        "status": "H14_TRAINING_AND_DEPLOYMENT_FROZEN",
+        "updated_at_kst": "2026-08-23T08:09:45.493163+09:00",
+        "actual_optimizer_fit_calls": 3,
+        "training_artifact_manifest_sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21",
+        "freeze_complete_sha256_pending_self_reference": true,
+        "split_test_rows_read_or_parsed": 0,
+        "target_20260823_sources_read": 0,
+        "live_stake": 0
+      },
+      "expected": "frozen / 3 fits"
+    },
+    {
+      "check": "post_freeze_state_attestation",
+      "status": "PASS",
+      "observed": {
+        "status": "PASS",
+        "research_state": {
+          "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/research_state.json",
+          "bytes": 413,
+          "sha256": "4EDA8229D63E6182D82321597FCF28E2EECA663A6EC7FD0B03874ED964CC4C5B"
+        },
+        "freeze_complete": {
+          "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/freeze_complete.json",
+          "bytes": 1205,
+          "sha256": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B"
+        },
+        "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+        "target_20260823_sources_read": 0,
+        "live_stake": 0
+      },
+      "expected": {
+        "research_state_sha": "4EDA8229D63E6182D82321597FCF28E2EECA663A6EC7FD0B03874ED964CC4C5B",
+        "freeze_sha": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B"
+      }
+    }
+  ],
+  "limitations": [
+    "H14 is adaptive after H13; late28 is reused VALID and cannot establish independent advantage.",
+    "The all92 model is a pre-T5 parameter freeze, not a target-date performance result.",
+    "No TEST or 20260823 target source was read; no ROI, ticket, Kelly, or live stake was evaluated."
+  ],
+  "legacy_ephemeral_validation_disclosure": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/independent_validation.json",
+    "sha256_observed_before_stable_freeze": "E3D67560F980D24E352DF553752A55DDAD43F2CB60BED113E82A95632E57932E",
+    "reason_not_used_for_future_binding": "validated_at_kst made this legacy artifact change on every rerun"
+  }
+}

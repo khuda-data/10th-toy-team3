@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "dataset": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed",
+  "model_root": "models\\revised_v11_seoul_bugyeong_full_rank_20260822",
+  "bet_types": [
+    "단승",
+    "연승",
+    "복승",
+    "쌍승",
+    "삼복승",
+    "삼쌍승",
+    "복연승"
+  ],
+  "evaluation_races": "complete_1_to_n only",
+  "selection_policy": "one selection per race from the top-ranked runner(s)",
+  "model_probability": "validation-temperature-calibrated within-race probability with Plackett-Luce/Harville extension",
+  "direct_market_probability_bet_types": [
+    "단승",
+    "연승"
+  ],
+  "actual_roi_bet_types": [
+    "단승",
+    "연승",
+    "복승",
+    "쌍승",
+    "삼복승",
+    "삼쌍승",
+    "복연승"
+  ],
+  "actual_roi_sources": {
+    "단승": "supplied winOdds",
+    "연승": "supplied plcOdds",
+    "복승": "official KRA winning dividend",
+    "쌍승": "official KRA winning dividend",
+    "삼복승": "official KRA winning dividend",
+    "삼쌍승": "official KRA winning dividend",
+    "복연승": "official KRA winning pair dividend"
+  },
+  "proxy_only_bet_types": [
+    "복승",
+    "쌍승",
+    "삼복승",
+    "삼쌍승",
+    "복연승"
+  ],
+  "proxy_warning": "q-derived Harville probabilities are not actual combination-pool market probabilities",
+  "official_dividend_file": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividends.csv",
+  "combination_market_probability_limit": "actual ROI is identifiable, but actual combination-market EDGE remains unavailable because only winning dividends are published in the joined file",
+  "top3_definitions": {
+    "ordered": "predicted first/second/third exactly match actual first/second/third",
+    "unordered": "set of predicted top three equals set of actual top three"
+  },
+  "rows_written": 258342,
+  "bootstrap_repeats": 2000
+}

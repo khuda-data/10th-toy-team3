@@ -1,0 +1,10 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "phase": "POWER_DESIGN_ANALYSIS_COMPLETE_PENDING_INDEPENDENT_VALIDATION",
+  "protocol_frozen": true,
+  "analysis_complete": true,
+  "independent_validation_complete": false,
+  "target_20260823_reads": 0,
+  "test_analysis_reads": 0,
+  "next": "Run the independent validator twice and preserve exact hashes, then use this only to preregister a multi-day forward collection horizon."
+}

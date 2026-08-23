@@ -1,0 +1,9 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 9,
+  "checks_passed": 9,
+  "checks_failed": 0,
+  "arithmetic_replay": "PASS",
+  "scope": "descriptive robustness only; no fresh policy selection or executable-price validation",
+  "completed_at": "2026-08-23T05:24:16.413054+09:00"
+}

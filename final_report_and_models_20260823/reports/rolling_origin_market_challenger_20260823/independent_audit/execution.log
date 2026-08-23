@@ -1,0 +1,16 @@
+2026-08-23 04:29:15,913 | INFO | AUDIT A START | protocol, chronology, thresholds and model hashes
+2026-08-23 04:29:15,962 | INFO | AUDIT A PASS | folds=4
+2026-08-23 04:29:15,962 | INFO | AUDIT B START | probability sums, log scores, Brier and bootstrap
+2026-08-23 04:29:16,082 | INFO | AUDIT B PASS | races=2185
+2026-08-23 04:29:16,082 | INFO | AUDIT C START | selected ticket settlement, direct odds and Kelly
+2026-08-23 04:29:16,673 | INFO | AUDIT C PASS | bets=366
+2026-08-23 04:29:16,673 | INFO | AUDIT D START | final evidence verdict
+2026-08-23 04:29:16,682 | INFO | AUDIT D PASS_WITH_LIMITATIONS | 9/9 checks
+2026-08-23 04:41:41,413 | INFO | AUDIT A START | protocol, chronology, thresholds and model hashes
+2026-08-23 04:41:41,460 | INFO | AUDIT A PASS | folds=4
+2026-08-23 04:41:41,460 | INFO | AUDIT B START | probability sums, log scores, Brier and bootstrap
+2026-08-23 04:41:41,579 | INFO | AUDIT B PASS | races=2185
+2026-08-23 04:41:41,579 | INFO | AUDIT C START | selected ticket settlement, direct odds and Kelly
+2026-08-23 04:41:42,145 | INFO | AUDIT C PASS | bets=366
+2026-08-23 04:41:42,145 | INFO | AUDIT D START | final evidence verdict
+2026-08-23 04:41:42,155 | INFO | AUDIT D PASS_WITH_LIMITATIONS | 9/9 checks

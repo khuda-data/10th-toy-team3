@@ -1,0 +1,24 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 9,
+  "checks_passed": 9,
+  "checks_failed": 0,
+  "chronology_threshold_model_audit": "PASS",
+  "probability_recomputation": "PASS",
+  "direct_place_settlement": "PASS",
+  "bootstrap_recomputation": "PASS",
+  "kelly_recomputation": "PASS",
+  "leakage_assessment": {
+    "future_rows_in_fold_fit": false,
+    "raw_market_columns_in_141_base_features": false,
+    "closing_odds_used_as_offset_and_gate": true,
+    "test_dates_previously_inspected": true,
+    "verdict": "no arithmetic or within-fold look-ahead detected; closing-price and prior-inspection limitations remain"
+  },
+  "high_return_warning": {
+    "kelly_total_return": 0.3356822393405394,
+    "interpretation": "cumulative return, not flat-stake ROI; still non-deployable because probabilities are overconfident and closing odds are not executable quotes"
+  },
+  "confirmation_status": "retrospective rolling OOS, not pristine independent confirmation",
+  "elapsed_seconds": 0.7407290935516357
+}

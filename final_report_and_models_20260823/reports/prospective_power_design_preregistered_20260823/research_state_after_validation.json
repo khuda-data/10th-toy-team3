@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION",
+  "phase": "POWER_DESIGN_INDEPENDENT_VALIDATION_COMPLETE",
+  "analysis_complete": true,
+  "independent_validation_complete": true,
+  "checks_passed": 109,
+  "checks_failed": 0,
+  "target_20260823_reads": 0,
+  "test_analysis_reads": 0,
+  "next": "Use sensitivity results to freeze a multi-day forward collection boundary; do not use this reused VALID sub-study as confirmation.",
+  "live_stake": 0
+}

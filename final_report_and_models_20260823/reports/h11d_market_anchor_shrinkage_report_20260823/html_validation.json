@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "validated_at_kst": "2026-08-23T07:52:23.736130+09:00",
+  "validator_independence": "does not import report builder or H11D analyzer",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.html",
+    "bytes": 63186,
+    "sha256": "AE52E19257ED7CA290C6A11D914F0BF0B4D8B55746CD7C885B5B1849EBC778BD"
+  },
+  "manifest": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\report_manifest.json",
+    "bytes": 6093,
+    "sha256": "92401509BDB42063ED89B486ADA5D0D821C857F9724FFEC5919DC85973AB45A6"
+  },
+  "sources": 17,
+  "sections": [
+    "definitions",
+    "verdict",
+    "design",
+    "results",
+    "uncertainty",
+    "freeze",
+    "io",
+    "audit",
+    "evidence"
+  ],
+  "tables": 5,
+  "svg": 1,
+  "test_rows_decoded_parsed_materialized_or_used": 0,
+  "physical_test_region_byte_stream_disclosed": true,
+  "target_access": 0,
+  "live_stake": 0,
+  "checks_total": 21,
+  "checks_passed": 21,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "manifest_status",
+      "passed": true,
+      "detail": "BUILT_FROM_H11D_VALID_ONLY_EVIDENCE"
+    },
+    {
+      "name": "manifest_report_hash_and_size",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_report_20260823\\index.html",
+        "bytes": 63186,
+        "sha256": "AE52E19257ED7CA290C6A11D914F0BF0B4D8B55746CD7C885B5B1849EBC778BD"
+      }
+    },
+    {
+      "name": "protected_hashes",
+      "passed": true,
+      "detail": {
+        "protocol": "E6D5C6D960BA391C6E00926C43090DFC595BB63886B3B83160E394D96737D873",
+        "frozen": "B2BF4F77F14A06ACAD5502BC9AF9B90287C80502ECCB773872DBC3D961A0579C"
+      }
+    },
+    {
+      "name": "scope_guards",
+      "passed": true,
+      "detail": {
+        "reused_test_rows_decoded_parsed_materialized_or_used": 0,
+        "external_full_file_checksum_byte_stream_occurred": true,
+        "strict_whole_turn_test_region_physical_byte_io_zero": false,
+        "target_20260823_access": 0,
+        "live_stake": 0,
+        "deployment_status": "DIAGNOSTIC_ONLY_NOT_CONFIRMED"
+      }
+    },
+    {
+      "name": "source_allowlist_hashes_and_sizes",
+      "passed": true,
+      "detail": {
+        "count": 17,
+        "failures": [],
+        "unsafe": []
+      }
+    },
+    {
+      "name": "no_target_or_settlement_sources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "historical_source_csv_not_report_source",
+      "passed": true,
+      "detail": [
+        "protocol_before_analysis.json",
+        "allowed_input_audit.json",
+        "date_split.json",
+        "alpha_grid_development.csv",
+        "alpha_grid_all_valid_deployment.csv",
+        "late_valid_metrics.json",
+        "late_valid_calibrated_predictions.csv",
+        "frozen_alpha.json",
+        "experiment_summary.json",
+        "physical_byte_io_disclosure.json",
+        "manifest.json",
+        "independent_validation.json",
+        "independent_validation_checks.csv",
+        "execution.log",
+        "build_h11d_market_anchor_shrinkage_report.py",
+        "validate_h11d_market_anchor_shrinkage_report.py",
+        "validate_h11d_market_anchor_shrinkage_report_pdf.py"
+      ]
+    },
+    {
+      "name": "korean_and_section_order",
+      "passed": true,
+      "detail": {
+        "lang": "ko",
+        "sections": [
+          "definitions",
+          "verdict",
+          "design",
+          "results",
+          "uncertainty",
+          "freeze",
+          "io",
+          "audit",
+          "evidence"
+        ]
+      }
+    },
+    {
+      "name": "unique_ids",
+      "passed": true,
+      "detail": {
+        "ids": 13,
+        "unique": 13
+      }
+    },
+    {
+      "name": "tables_and_accessible_svg",
+      "passed": true,
+      "detail": {
+        "tables": 5,
+        "svg": [
+          {
+            "role": "img",
+            "aria": "alpha-title alpha-desc",
+            "title": true,
+            "desc": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "no_external_resources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "a4_print_css",
+      "passed": true,
+      "detail": "A4 print CSS"
+    },
+    {
+      "name": "required_factual_text",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_overclaim",
+      "passed": true,
+      "detail": "negative/limited conclusion"
+    },
+    {
+      "name": "no_escaped_markup_visible",
+      "passed": true,
+      "detail": "anchor markup"
+    },
+    {
+      "name": "local_links_resolve",
+      "passed": true,
+      "detail": {
+        "unsafe": [],
+        "broken": []
+      }
+    },
+    {
+      "name": "all_sources_clickable",
+      "passed": true,
+      "detail": {
+        "expected": 17,
+        "linked": 17,
+        "missing": []
+      }
+    },
+    {
+      "name": "embedded_evidence_exact",
+      "passed": true,
+      "detail": "exact JSON equality"
+    },
+    {
+      "name": "locked_late_valid_numbers",
+      "passed": true,
+      "detail": {
+        "alpha": 1.05,
+        "rows": 3707,
+        "races": 340,
+        "dates": 28,
+        "date_min": 20251025,
+        "date_max": 20251227,
+        "delta_ll_per_race_vs_q": 0.002288606922595226,
+        "delta_ll_daily_block_ci_low": -0.0038387509290628433,
+        "delta_ll_daily_block_ci_high": 0.008967281015036249,
+        "paired_sign_flip_p_value_by_date": 0.49775022497750226,
+        "model_brier": 0.06800560021173765,
+        "market_brier": 0.06819370956498481,
+        "brier_improvement_vs_q": 0.0001881093532471595,
+        "ece10_equal_width": 0.008573245871521541,
+        "top1_race_hit_rate": 0.40588235294117647,
+        "maximum_race_probability_sum_error": 2.220446049250313e-16,
+        "daily_blocks": 28,
+        "bootstrap_replicates": 10000,
+        "sign_flip_replicates": 10000,
+        "uncertainty_seed": 20260823,
+        "ece_bins": [
+          {
+            "bin": 1,
+            "lower_inclusive": 0.0,
+            "upper_exclusive_except_last": 0.1,
+            "rows": 2653,
+            "mean_probability": 0.03343400300145313,
+            "observed_rate": 0.03128533735393894,
+            "weighted_absolute_gap": 0.0015377420995023366
+          },
+          {
+            "bin": 2,
+            "lower_inclusive": 0.1,
+            "upper_exclusive_except_last": 0.2,
+            "rows": 544,
+            "mean_probability": 0.14064883040549864,
+            "observed_rate": 0.15441176470588236,
+            "weighted_absolute_gap": 0.002019702255033381
+          },
+          {
+            "bin": 3,
+            "lower_inclusive": 0.2,
+            "upper_exclusive_except_last": 0.30000000000000004,
+            "rows": 242,
+            "mean_probability": 0.2441875122722809,
+            "observed_rate": 0.2231404958677686,
+            "weighted_absolute_gap": 0.0013739892014815144
+          },
+          {
+            "bin": 4,
+            "lower_inclusive": 0.30000000000000004,
+            "upper_exclusive_except_last": 0.4,
+            "rows": 129,
+            "mean_probability": 0.34709417023284383,
+            "observed_rate": 0.31007751937984496,
+            "weighted_absolute_gap": 0.0012881435014936216
+          },
+          {
+            "bin": 5,
+            "lower_inclusive": 0.4,
+            "upper_exclusive_except_last": 0.5,
+            "rows": 72,
+            "mean_probability": 0.44714039697651387,
+            "observed_rate": 0.5138888888888888,
+            "weighted_absolute_gap": 0.0012964368539765305
+          },
+          {
+            "bin": 6,
+            "lower_inclusive": 0.5,
+            "upper_exclusive_except_last": 0.6000000000000001,
+            "rows": 47,
+            "mean_probability": 0.5423297337639205,
+            "observed_rate": 0.5957446808510638,
+            "weighted_absolute_gap": 0.0006772329412181649
+          },
+          {
+            "bin": 7,
+            "lower_inclusive": 0.6000000000000001,
+            "upper_exclusive_except_last": 0.7000000000000001,
+            "rows": 16,
+            "mean_probability": 0.6450984581300736,
+            "observed_rate": 0.625,
+            "weighted_absolute_gap": 8.674813328329583e-05
+          },
+          {
+            "bin": 8,
+            "lower_inclusive": 0.7000000000000001,
+            "upper_exclusive_except_last": 0.8,
+            "rows": 4,
+            "mean_probability": 0.7282297418325748,
+            "observed_rate": 1.0,
+            "weighted_absolute_gap": 0.0002932508855326951
+          },
+          {
+            "bin": 9,
+            "lower_inclusive": 0.8,
+            "upper_exclusive_except_last": 0.9,
+            "rows": 0,
+            "mean_probability": null,
+            "observed_rate": null,
+            "weighted_absolute_gap": 0.0
+          },
+          {
+            "bin": 10,
+            "lower_inclusive": 0.9,
+            "upper_exclusive_except_last": 1.0,
+            "rows": 0,
+            "mean_probability": null,
+            "observed_rate": null,
+            "weighted_absolute_gap": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "deployment_freeze_and_stake",
+      "passed": true,
+      "detail": {
+        "status": "FROZEN_BEFORE_ANY_TARGET_T5_SCORE_READ",
+        "frozen_at_kst": "2026-08-23T07:28:38.702683+09:00",
+        "deployment_alpha": 1.06,
+        "all_valid_objective_delta_ll_per_race_vs_q": 0.002426242260825868,
+        "selection_formula": "p_i(alpha)=softmax_r(log(q_i)+alpha*(log(p_raw_i)-log(q_i)))",
+        "selection_grid": {
+          "start": 0.0,
+          "stop_inclusive": 1.5,
+          "step": 0.01,
+          "tie_break": "smallest alpha"
+        },
+        "selection_objective": "maximize mean per-race delta log likelihood versus q on development dates",
+        "all_valid_rows": 11345,
+        "all_valid_races": 1084,
+        "all_valid_dates": 92,
+        "protocol_sha256": "E6D5C6D960BA391C6E00926C43090DFC595BB63886B3B83160E394D96737D873",
+        "source_prediction_sha256_from_protocol": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+        "split_test_rows_read": 0,
+        "target_20260823_scores_read": 0,
+        "target_outcomes_results_or_settlement_read": 0,
+        "market_or_odds_in_ordinary_X": false,
+        "live_stake": 0
+      }
+    },
+    {
+      "name": "physical_io_disclosure_exact",
+      "passed": true,
+      "detail": {
+        "status": "DISCLOSED_PHYSICAL_BYTE_IO_SCOPE_DEVIATION",
+        "disclosed_at_kst": null,
+        "disclosure_timestamp_note": "No exact disclosure timestamp was captured inside the artifact; none is inferred.",
+        "occurrence_time": {
+          "exact_occurred_at_kst": null,
+          "exact_time_retained_in_artifact": false,
+          "known_after": "2026-08-23T07:19:15.6716365+09:00",
+          "known_before": "2026-08-23T07:28:02.110177+09:00",
+          "basis": "The command occurred after the preregistration protocol was read and before the analyzer PHASE 00 timestamp; no more precise command timestamp was retained, so none is inferred."
+        },
+        "command_category": "PowerShell Get-FileHash -Algorithm SHA256 over the frozen historical_runner_probabilities.csv",
+        "command_count": 1,
+        "source_path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_runner_probabilities.csv",
+        "digest_only_output": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+        "physical_io": {
+          "entire_csv_streamed_as_bytes_for_hash": true,
+          "test_region_bytes_physically_streamed": true,
+          "strict_whole_turn_test_region_physical_byte_io_zero": false
+        },
+        "analytical_access": {
+          "test_rows_decoded": 0,
+          "test_rows_csv_parsed": 0,
+          "test_rows_materialized": 0,
+          "test_fields_or_values_displayed": 0,
+          "test_rows_used_in_metrics": 0,
+          "test_rows_used_in_alpha_selection": 0,
+          "test_rows_used_in_any_branch_or_decision": 0
+        },
+        "target_20260823_access": {
+          "score_files_read": 0,
+          "outcome_files_read": 0,
+          "result_files_read": 0,
+          "dividend_files_read": 0,
+          "settlement_files_read": 0
+        },
+        "impact_assessment": {
+          "digest_matched_preregistered_source_sha256": true,
+          "test_information_available_to_metric_or_selection_code": false,
+          "h11d_alpha_or_metric_influence": "NONE: the command returned only the whole-file digest; no TEST row or field value was decoded, displayed, parsed, materialized, or passed to H11D analysis.",
+          "strict_rule_conclusion": "The strong claim of zero physical byte I/O over the TEST region is withdrawn. The narrower and relevant analytical claim of zero TEST row decoding, parsing, materialization, metric use, or selection use remains supported."
+        },
+        "corrective_action": "The analyzer and independent validator use an unbuffered fixed-block reader and stop before the first TEST row. Future H11D reruns must authenticate the source hash from the preregistered protocol without recomputing a full-file checksum."
+      }
+    }
+  ]
+}

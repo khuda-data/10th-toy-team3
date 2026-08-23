@@ -1,0 +1,45 @@
+MODEL ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\models\revised_v11_seoul_bugyeong_full_rank_20260822
+DATA ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\data\revised_v11_seoul_bugyeong_rank_clean_preprocessed
+RANK DATA PASS: features=141 rows=33416/11345/11695
+DEEPRANK MEMBER 1/3
+epoch=001 loss=0.643753 valid_pairwise=0.653843
+epoch=002 loss=0.619858 valid_pairwise=0.657804
+epoch=003 loss=0.611179 valid_pairwise=0.656887
+epoch=004 loss=0.607883 valid_pairwise=0.659344
+epoch=005 loss=0.602581 valid_pairwise=0.654356
+epoch=006 loss=0.598383 valid_pairwise=0.657510
+epoch=007 loss=0.596323 valid_pairwise=0.654008
+epoch=008 loss=0.591433 valid_pairwise=0.658519
+epoch=009 loss=0.588259 valid_pairwise=0.653843
+epoch=010 loss=0.586216 valid_pairwise=0.654539
+epoch=011 loss=0.582333 valid_pairwise=0.653201
+epoch=012 loss=0.578926 valid_pairwise=0.654539
+EARLY STOP: best_valid_pairwise=0.659344
+DEEPRANK MEMBER 2/3
+epoch=001 loss=0.645295 valid_pairwise=0.658115
+epoch=002 loss=0.618087 valid_pairwise=0.658647
+epoch=003 loss=0.611024 valid_pairwise=0.662150
+epoch=004 loss=0.606553 valid_pairwise=0.660572
+epoch=005 loss=0.603290 valid_pairwise=0.657932
+epoch=006 loss=0.599170 valid_pairwise=0.656025
+epoch=007 loss=0.594773 valid_pairwise=0.655365
+epoch=008 loss=0.591551 valid_pairwise=0.656006
+epoch=009 loss=0.590276 valid_pairwise=0.656722
+epoch=010 loss=0.585020 valid_pairwise=0.654228
+epoch=011 loss=0.581075 valid_pairwise=0.655016
+EARLY STOP: best_valid_pairwise=0.662150
+DEEPRANK MEMBER 3/3
+epoch=001 loss=0.641972 valid_pairwise=0.660279
+epoch=002 loss=0.618216 valid_pairwise=0.662590
+epoch=003 loss=0.610947 valid_pairwise=0.661728
+epoch=004 loss=0.605840 valid_pairwise=0.661086
+epoch=005 loss=0.601877 valid_pairwise=0.658299
+epoch=006 loss=0.597860 valid_pairwise=0.659344
+epoch=007 loss=0.594891 valid_pairwise=0.656868
+epoch=008 loss=0.590547 valid_pairwise=0.656465
+epoch=009 loss=0.587812 valid_pairwise=0.654925
+epoch=010 loss=0.584631 valid_pairwise=0.653366
+EARLY STOP: best_valid_pairwise=0.662590
+VALID RANK: NDCG@5=0.774837 Spearman=0.435970 MAE=2.461150 Top3OrderedExact=0.013011 Top3UnorderedExact=0.072491
+TEST RANK: NDCG@5=0.775170 Spearman=0.444988 MAE=2.467096 Top3OrderedExact=0.015770 Top3UnorderedExact=0.077922
+FULL RANK MODEL TRAINING COMPLETE: deep_ranknet

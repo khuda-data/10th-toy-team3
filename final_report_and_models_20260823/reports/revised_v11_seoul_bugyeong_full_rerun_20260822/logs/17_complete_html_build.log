@@ -1,0 +1,57 @@
+COMPLETE HTML BUILT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\outputs\reports\revised_v11_seoul_bugyeong_full_rerun_20260822\complete_report\index.html
+{
+  "generated_at": "2026-08-22T21:40:21+09:00",
+  "conclusion": "Market information improvement confirmed; deployable profitability not confirmed.",
+  "dataset": {
+    "rows": 56456,
+    "races": 5343,
+    "features": 141,
+    "venues": [
+      "����",
+      "�ΰ�"
+    ],
+    "reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+  },
+  "rank": {
+    "best_ndcg_model": "CatBoost YetiRank",
+    "best_test_ndcg_at_5": 0.778035945383817,
+    "best_test_spearman": 0.4553030268638837,
+    "best_test_rank_mae": 2.439986501412461,
+    "reload_checks": 203
+  },
+  "anchor": {
+    "ensemble_test_delta_ll": {
+      "races": "1101",
+      "delta_ll_per_race": "0.017194340801853756",
+      "delta_ll_ci_low_daily_block": "0.00950731349536466",
+      "delta_ll_ci_high_daily_block": "0.025013720796707464"
+    }
+  },
+  "upset": {
+    "selected_feature_count": 29,
+    "importance_ci_positive_count": 4,
+    "test_fdr_positive_cells": 0,
+    "locked_fdr_positive_cells": 0
+  },
+  "venue": {
+    "validation_checks": 213,
+    "betting_cells": 210,
+    "roi_ci_positive_cells": 0
+  },
+  "official_dividends": {
+    "status": "PARTIAL_VALIDATED",
+    "exact_combination_checks": 21112,
+    "mismatches": 0,
+    "unavailable_complete_races": 1
+  },
+  "validation_statuses": {
+    "dataset preprocessing": "PASS",
+    "rank dataset audit": "PASS",
+    "rank model reload": "PASS",
+    "rank report": "PASS",
+    "anchor primary": "PASS",
+    "anchor independent": "PASS",
+    "upset independent": "PASS",
+    "venue independent": "PASS"
+  }
+}

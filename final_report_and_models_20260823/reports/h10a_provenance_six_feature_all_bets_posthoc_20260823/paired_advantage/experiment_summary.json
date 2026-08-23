@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "races": 64,
+  "dates": 6,
+  "settlement_rows": 448,
+  "holm_5pct_paired_advantage_bet_types": [],
+  "direct_market_comparator_bet_types": [
+    "단승"
+  ],
+  "proxy_comparator_bet_types": [
+    "연승",
+    "복승",
+    "쌍승",
+    "삼복승",
+    "삼쌍승",
+    "복연승"
+  ],
+  "exact_signflip_resolution": "1/64 with 6 day clusters",
+  "interpretation": "all prices are closing/result prices; complex comparators are not actual combination markets; no result is deployment evidence",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T06:32:39.200633+09:00"
+}

@@ -1,0 +1,10 @@
+﻿check,status,detail
+preregistration_present,PASS,LOCKED_BEFORE_THIS_PROCESS_EVALUATED_FOLDS
+four_fold_manifests,PASS,4
+threshold_chronology_model_replay,PASS,{'PASS': 4}
+raw_market_features_absent_from_base_matrix,PASS,[]
+probability_recomputation,PASS,{'PASS': 12}
+direct_place_settlement_replay,PASS,"{'bets': 366, 'max_error': 4.440892098500626e-16}"
+aggregate_returns_equity_kelly_replay,PASS,"{'model_roi': 8.673617379884035e-17, 'market_roi': 5.551115123125783e-17, 'paired_roi': 2.7755575615628914e-17, 'flat_1pct_total_return': 1.3877787807814457e-17, 'flat_1pct_mdd': 0.0, 'per_bet_sharpe': 0.0, 'kelly_bets': 0.0, 'kelly_total_return': 1.3322676295501878e-15, 'kelly_mdd': 0.0, 'kelly_sharpe': 8.881784197001252e-16, 'mean_kelly_fraction': 6.938893903907228e-18}"
+bootstrap_exact_replay,PASS,"{'partial30_vs_market': 1.4094628242311558e-16, 'partial30_vs_global': 2.7755575615628914e-17, 'place_absolute_roi': 3.469446951953614e-18, 'place_paired_roi': 5.551115123125783e-17}"
+actual_training_and_model_files,PASS,"{'fits': 32, 'models': 4}"

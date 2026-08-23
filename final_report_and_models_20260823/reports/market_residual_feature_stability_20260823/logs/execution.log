@@ -1,0 +1,3 @@
+2026-08-23 04:51:22,596 | INFO | PHASE 01 PASS | protocol frozen, model_files=8
+2026-08-23 04:51:23,269 | INFO | PHASE 02 PASS | extracted rows=816; raw market/outcome terms=0
+2026-08-23 04:51:23,292 | INFO | PHASE 03 PASS_WITH_LIMITATIONS | stable=77 partial8_band_stable=7

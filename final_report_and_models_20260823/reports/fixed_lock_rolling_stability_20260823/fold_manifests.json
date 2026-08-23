@@ -1,0 +1,178 @@
+[
+  {
+    "fold": "P1_valid_202505_06",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "winners": 3158
+    },
+    "evaluation": {
+      "rows": 2340,
+      "races": 232,
+      "date_min": 20250517,
+      "date_max": 20250629,
+      "winners": 232
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P1_valid_202505_06_models.joblib",
+    "model_sha256": "D06690469C65422BCD41C6D478710DF02AB2DB6D5581DFD878F872C9A81E3019",
+    "selected_place_bets": 35
+  },
+  {
+    "fold": "P2_valid_202507_08",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 35756,
+      "races": 3390,
+      "date_min": 20230805,
+      "date_max": 20250629,
+      "winners": 3390
+    },
+    "evaluation": {
+      "rows": 2944,
+      "races": 292,
+      "date_min": 20250704,
+      "date_max": 20250831,
+      "winners": 292
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P2_valid_202507_08_models.joblib",
+    "model_sha256": "458D0C6F71ACA8148E485AD53145679363B19043DC0B11531C061D356C70E85A",
+    "selected_place_bets": 50
+  },
+  {
+    "fold": "P3_valid_202509_10",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 38700,
+      "races": 3682,
+      "date_min": 20230805,
+      "date_max": 20250831,
+      "winners": 3682
+    },
+    "evaluation": {
+      "rows": 2763,
+      "races": 256,
+      "date_min": 20250905,
+      "date_max": 20251031,
+      "winners": 256
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P3_valid_202509_10_models.joblib",
+    "model_sha256": "ECC3A45FDF8E8886F1B2FFC577430392EFD3AEB02FBCB76C5742964DD1CC666F",
+    "selected_place_bets": 59
+  },
+  {
+    "fold": "P4_valid_202511_12",
+    "primary_test_fold": false,
+    "fit": {
+      "rows": 41463,
+      "races": 3938,
+      "date_min": 20230805,
+      "date_max": 20251031,
+      "winners": 3938
+    },
+    "evaluation": {
+      "rows": 3298,
+      "races": 304,
+      "date_min": 20251101,
+      "date_max": 20251227,
+      "winners": 304
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P4_valid_202511_12_models.joblib",
+    "model_sha256": "CDFD6D8040A427D950BFACC0F14EDB07E89BF52C3A4A8FF928BABC4D2B482A8B",
+    "selected_place_bets": 51
+  },
+  {
+    "fold": "P5_test_202512_02",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 44761,
+      "races": 4242,
+      "date_min": 20230805,
+      "date_max": 20251227,
+      "winners": 4242
+    },
+    "evaluation": {
+      "rows": 3214,
+      "races": 295,
+      "date_min": 20251228,
+      "date_max": 20260228,
+      "winners": 295
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P5_test_202512_02_models.joblib",
+    "model_sha256": "872B82BFA65807CC4542B5C473A971DB17A67E605AC398ECA2A4F137CD44D038",
+    "selected_place_bets": 52
+  },
+  {
+    "fold": "P6_test_202603_04",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 47975,
+      "races": 4537,
+      "date_min": 20230805,
+      "date_max": 20260228,
+      "winners": 4537
+    },
+    "evaluation": {
+      "rows": 3448,
+      "races": 313,
+      "date_min": 20260301,
+      "date_max": 20260426,
+      "winners": 313
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P6_test_202603_04_models.joblib",
+    "model_sha256": "5DA01A88A8BA6A74B5A49FC86ABE06CC3E7A24950D05F0DBD34C435779172B7C",
+    "selected_place_bets": 55
+  },
+  {
+    "fold": "P7_test_202605_06",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 51423,
+      "races": 4850,
+      "date_min": 20230805,
+      "date_max": 20260426,
+      "winners": 4850
+    },
+    "evaluation": {
+      "rows": 3169,
+      "races": 310,
+      "date_min": 20260501,
+      "date_max": 20260628,
+      "winners": 310
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P7_test_202605_06_models.joblib",
+    "model_sha256": "CF68473B9C49678B5AFBD42DAE6F02028D4D624F802DB1ECB391ABE5E8189275",
+    "selected_place_bets": 54
+  },
+  {
+    "fold": "P8_test_202607_08",
+    "primary_test_fold": true,
+    "fit": {
+      "rows": 54592,
+      "races": 5160,
+      "date_min": 20230805,
+      "date_max": 20260628,
+      "winners": 5160
+    },
+    "evaluation": {
+      "rows": 1864,
+      "races": 183,
+      "date_min": 20260703,
+      "date_max": 20260809,
+      "winners": 183
+    },
+    "chronology_pass": true,
+    "model_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\fixed_lock_rolling_stability_20260823\\P8_test_202607_08_models.joblib",
+    "model_sha256": "1082AC86A4886BF6133949EBFA445D2A5C622C4CD570D19240D990B054280D94",
+    "selected_place_bets": 39
+  }
+]

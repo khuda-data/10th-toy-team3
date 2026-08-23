@@ -1,0 +1,41 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "analysis_role": "post-hoc robustness decomposition; no policy or hyperparameter selection",
+  "rows": 640,
+  "races": 64,
+  "dates": 6,
+  "overall_delta_ll": 0.01830572791979548,
+  "positive_dates": 4,
+  "negative_dates": 2,
+  "positive_venues": 2,
+  "negative_venues": 0,
+  "largest_positive_race": {
+    "race_id": "20260815_1_10",
+    "delta_ll": 0.19809498328169406
+  },
+  "largest_negative_race": {
+    "race_id": "20260822_1_08",
+    "delta_ll": -0.26492367574476106
+  },
+  "delta_ll_without_largest_positive_race": 0.015451930215638364,
+  "delta_ll_without_largest_negative_race": 0.02280143273986781,
+  "odds_8_15_runner_calibration": {
+    "odds_band": "8-15",
+    "runners": 131,
+    "races_represented": 56,
+    "actual_wins": 10,
+    "market_expected_wins": 9.750978767012736,
+    "model_expected_wins": 9.577619015663856,
+    "actual_minus_market_expected": 0.24902123298726409,
+    "actual_minus_model_expected": 0.4223809843361437,
+    "market_brier": 0.07017856088485827,
+    "model_brier": 0.07065018003609554,
+    "brier_improvement": -0.0004716191512372653,
+    "mean_probability_edge": -0.00132335688052579
+  },
+  "probability_sum_max_error": 7.771561172376096e-16,
+  "runner_probabilities_sha256": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132",
+  "interpretation_limit": "closing odds are not decision-time prices; band summaries are descriptive and multiple, not confirmatory",
+  "recommended_real_stake": 0,
+  "completed_at": "2026-08-23T05:24:15.567585+09:00"
+}

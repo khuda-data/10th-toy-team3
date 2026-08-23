@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "research_state": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/research_state.json",
+    "bytes": 413,
+    "sha256": "4EDA8229D63E6182D82321597FCF28E2EECA663A6EC7FD0B03874ED964CC4C5B"
+  },
+  "freeze_complete": {
+    "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/freeze_complete.json",
+    "bytes": 1205,
+    "sha256": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B"
+  },
+  "protocol_sha256": "0CAB66C5047B32A2A50CAD1210A7A766355779BE9F0170E704F2AD6C3C331A43",
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

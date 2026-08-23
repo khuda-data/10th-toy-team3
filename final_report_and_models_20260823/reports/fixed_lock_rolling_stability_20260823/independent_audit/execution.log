@@ -1,0 +1,16 @@
+2026-08-23 04:34:12,469 | INFO | AUDIT A START | fixed lock, folds, chronology and model files
+2026-08-23 04:34:12,522 | INFO | AUDIT A PASS | folds=8 threshold=+0.070960384380
+2026-08-23 04:34:12,522 | INFO | AUDIT B START | every race once, probability sum and fold metric replay
+2026-08-23 04:34:12,664 | INFO | AUDIT B PASS | primary races=1101
+2026-08-23 04:34:12,664 | INFO | AUDIT C START | direct place settlement and primary test pooling
+2026-08-23 04:34:13,233 | INFO | AUDIT C PASS | primary test bets=200
+2026-08-23 04:34:13,233 | INFO | AUDIT D START | hypotheses, robustness and final verdict
+2026-08-23 04:34:13,252 | INFO | AUDIT D FAIL | 10/11
+2026-08-23 04:34:48,105 | INFO | AUDIT A START | fixed lock, folds, chronology and model files
+2026-08-23 04:34:48,129 | INFO | AUDIT A PASS | folds=8 threshold=+0.070960384380
+2026-08-23 04:34:48,129 | INFO | AUDIT B START | every race once, probability sum and fold metric replay
+2026-08-23 04:34:48,247 | INFO | AUDIT B PASS | primary races=1101
+2026-08-23 04:34:48,247 | INFO | AUDIT C START | direct place settlement and primary test pooling
+2026-08-23 04:34:48,833 | INFO | AUDIT C PASS | primary test bets=200
+2026-08-23 04:34:48,833 | INFO | AUDIT D START | hypotheses, robustness and final verdict
+2026-08-23 04:34:48,840 | INFO | AUDIT D PASS_WITH_LIMITATIONS | 11/11

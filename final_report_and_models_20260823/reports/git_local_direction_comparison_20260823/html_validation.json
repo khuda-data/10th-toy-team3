@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "contains: 경영 요약",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 지표 설명",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 데이터셋은 문제없는가?",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 프로젝트 비교",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 심화 추론과 연구 인사이트",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 솔직한 우열 판정과 반대 근거",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 권고 진행 방향",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: NO-GO",
+      "status": "PASS"
+    },
+    {
+      "check": "contains: 964bd9a7ab7e36247fc5a7e5ffd04f9ec02439491b1dacaef7918eb0aae80195",
+      "status": "PASS"
+    },
+    {
+      "check": "html doctype",
+      "status": "PASS"
+    },
+    {
+      "check": "evidence summary exists",
+      "status": "PASS"
+    },
+    {
+      "check": "report nontrivial size",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio includes reporting source recursively",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual Studio includes report outputs recursively",
+      "status": "PASS"
+    }
+  ],
+  "passed": 14,
+  "failed": 0,
+  "report_sha256": "3817b91ceb2da571c4d1137cb3b9b265da52c019e3d172e276093986db5c95a3",
+  "report_bytes": 23294
+}

@@ -1,0 +1,8 @@
+﻿split,model_key,model,bet_type,selection_policy,fraction,validation_bets,validation_wins,unit_profit,validation_roi,validation_roi_ci_low,validation_roi_ci_high,bootstrap_probability_positive,profit_confirmed_95pct,policy_order
+valid,random_forest_rank,Random Forest rank regression,단승,top_10pct_edge,0.1,108,26,25.100000000000005,0.2324074074074074,-0.2472453703703704,0.8046296296296297,0.811,False,0
+valid,random_forest_rank,Random Forest rank regression,복승,positive_edge,,724,65,223.39999999999992,0.3085635359116021,-0.3536049723756906,1.4323618784530383,0.657,False,3
+valid,lightgbm_rank,LightGBM LambdaRank,복연승,top_10pct_edge,0.1,108,24,13.199999999999996,0.1222222222222221,-0.3407638888888889,0.6129861111111109,0.647,False,0
+valid,xgboost_rank,XGBoost NDCG ranker,삼복승,top_30pct_edge,0.3,323,26,102.4,0.3170278637770898,-0.2907430340557275,1.0681191950464397,0.8005,False,2
+valid,random_forest_rank,Random Forest rank regression,삼쌍승,positive_edge,,834,9,2490.7,2.986450839328537,-0.8333033573141487,10.24427458033573,0.654,False,3
+valid,random_forest_rank,Random Forest rank regression,쌍승,positive_edge,,765,40,637.7000000000002,0.8335947712418302,-0.3761699346405228,2.9118104575163373,0.7435,False,3
+valid,xgboost_rank,XGBoost NDCG ranker,연승,top_10pct_edge,0.1,102,47,7.900000000000004,0.0774509803921569,-0.1872794117647059,0.3362745098039215,0.737,False,0

@@ -1,0 +1,7 @@
+{"phase":"PREREGISTRATION","status":"COMPLETE_AFTER_DISCLOSED_INCIDENT","target_reads":0}
+{"phase":"ALLOWLIST_INPUT_AUDIT","status":"COMPLETE","valid_rows":3707,"test_analysis_reads":0}
+{"phase":"WINNER_DELTA_LL_AGGREGATION","status":"COMPLETE","races":340,"dates":28}
+{"phase":"NORMAL_POWER","status":"COMPLETE","fixed_effects":[0.001,0.0025,0.005,0.01]}
+{"phase":"MOVING_DAY_BLOCK_BOOTSTRAP","status":"COMPLETE","replicates":20000,"block_lengths":[1,3,5]}
+{"phase":"ROI_ENDPOINT","status":"NOT_IDENTIFIABLE","settled_return_observations":0}
+{"phase":"ANALYSIS","status":"PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION","live_stake":0}

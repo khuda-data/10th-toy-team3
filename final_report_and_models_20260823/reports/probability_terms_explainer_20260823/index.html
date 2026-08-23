@@ -1,0 +1,71 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>95% 신뢰수준·Validation·시장 앵커·Base Margin·ΔLL 설명</title><style>
+body{margin:0;background:#f5f7fb;color:#17202a;font-family:'Segoe UI','Noto Sans KR',sans-serif;line-height:1.72}header{background:linear-gradient(120deg,#102a43,#176b87);color:white;padding:48px max(24px,calc((100vw - 1050px)/2))}main{max-width:1050px;margin:auto;padding:24px}section{background:white;border:1px solid #d9e2ec;border-radius:16px;padding:26px;margin:17px 0}.formula{background:#102a43;color:#e8f4ff;border-radius:11px;padding:15px;overflow-x:auto;font:15px/1.7 Consolas,'Cascadia Mono',monospace;white-space:pre-wrap}.example{border-left:6px solid #176b87;background:#eef8fb}.warn{border-left:6px solid #b7791f;background:#fffaf0}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid #d9e2ec;text-align:left;vertical-align:top}th{background:#edf4f7}code{background:#e9eff5;padding:2px 5px;border-radius:5px}.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:11px}.step{border:1px solid #d9e2ec;border-radius:11px;padding:15px}.step b{font-size:20px;color:#176b87;display:block}</style></head><body>
+<header><h1>확률모델 핵심 용어와 수식</h1><p>“95% 수준에서 확인되지 않았다” · validation · 시장 앵커 · Base Margin · ΔLL</p></header><main>
+<section><h2>한눈에 보는 관계</h2><div class="flow"><div class="step"><b>① 시장확률 q</b>배당을 경주 내 확률로 정규화</div><div class="step"><b>② 앵커</b>모델 출발점을 log(q)로 고정</div><div class="step"><b>③ Base Margin</b>트리가 시장의 잔차오류 f(x)를 학습</div><div class="step"><b>④ Validation</b>트리 수·모델·EDGE 문턱 선택</div><div class="step"><b>⑤ ΔLL</b>시장보다 확률이 좋아졌는지 측정</div><div class="step"><b>⑥ 95% CI</b>그 개선·수익이 표본변동을 넘는지 판정</div></div></section>
+
+<section><h2>1. “95% 수준에서 확인되지 않았습니다”의 정확한 뜻</h2><p>관심 대상이 ROI라면 귀무 기준은 <strong>ROI = 0</strong>이다. 표본 ROI를 <code>θ̂</code>라 하고 95% 신뢰구간을 <code>[L,U]</code>라 하면 현재 프로젝트 판정은 다음과 같다.</p>
+<div class="formula">수익 확인:        L &gt; 0
+손실 확인:        U &lt; 0
+양·음 어느 쪽도 미확정: L ≤ 0 ≤ U</div>
+<p><strong>“확인되지 않았다”는 “효과가 0이다” 또는 “전략이 반드시 손실이다”라는 뜻이 아니다.</strong> 관측 표본만으로는 양의 수익과 0 또는 음의 수익을 충분히 구분할 만큼 오차 범위가 좁지 않다는 뜻이다.</p>
+<p>빈도주의 95% 신뢰구간의 엄밀한 의미는 “같은 데이터 생성·추정 절차를 무한히 반복하면 그렇게 만든 구간 약 95%가 고정된 참값을 포함한다”이다. 계산 후의 특정 구간에 참값이 들어갈 확률이 95%라고 직접 말하는 것은 엄밀한 빈도주의 해석이 아니다.</p>
+<div class="formula">일자 블록 부트스트랩
+1. 서로 다른 경주일 d₁,…,d_D를 복원추출한다.
+2. 선택된 날짜 안의 모든 베팅을 함께 가져와 ROIᵇ를 계산한다.
+3. b=1,…,5000을 반복한다.
+4. CI₉₅ = [ROI의 2.5백분위, ROI의 97.5백분위]</div>
+<div class="example"><h3>이번 8~15배 예</h3><p>validation 고정 정책의 test ROI는 <strong>+9.79%</strong>지만 CI는 <strong>[-46.31%, +74.21%]</strong>이다. 0을 포함하므로 양의 점추정은 있지만 수익은 95% 수준에서 확인되지 않았다. 부트스트랩에서 ROI가 양수였던 비율도 60.88%로 95%에 미달한다.</p></div></section>
+
+<section><h2>2. Validation이란 무엇인가</h2><p>validation은 <strong>정답을 보면서 모델·하이퍼파라미터·정책을 선택하는 중간 기간</strong>이다. test는 그 선택이 끝난 뒤 한 번 평가하는 기간이다.</p>
+<div class="formula">시간 순서
+Train:      모델 파라미터 학습
+Validation: 모델/트리 수/L2/EDGE 문턱 선택
+Test:       선택을 고정한 최종 표본외 평가
+
+필수 조건: max(date_train) &lt; min(date_validation) &lt; min(date_test)</div>
+<p>이번 실행에서는 validation ΔLL이 조건부 로짓 +0.005312, Base Margin <strong>+0.021833</strong>, 앙상블 +0.017756였기 때문에 Base Margin을 선택했다. test에서 앙상블 숫자가 더 좋아도 사후에 승자를 바꾸지 않았다.</p>
+<p>validation을 여러 번 보고 계속 모델을 고치면 그 기간도 사실상 train이 된다. test도 여러 차례 확인하면 더 이상 깨끗한 최종시험이 아니다. 현재 test는 이미 반복 관찰됐기 때문에 이번 결론은 탐색적 재검증이다.</p></section>
+
+<section><h2>3. 시장 앵커(anchor)란 무엇인가</h2><p>앵커는 모델이 시장을 버리고 처음부터 새 확률을 만드는 대신, <strong>시장확률을 출발점으로 고정하고 시장이 놓친 부분만 수정</strong>하게 하는 구조다.</p>
+<div class="formula">말 i의 배당을 Oᵢ라 할 때 원시 역배당:       aᵢ = 1 / Oᵢ
+경주 내 정규화 시장확률:                        qᵢ = aᵢ / Σⱼaⱼ
+
+시장 앵커 모델의 점수:                         ηᵢ = log(qᵢ) + f(xᵢ)
+경주 내 최종 승리확률:                         pᵢ = exp(ηᵢ) / Σⱼ exp(ηⱼ)
+따라서                                             Σᵢpᵢ = 1</div>
+<p><code>f(x)=0</code>이면 <code>p=q</code>여서 모델은 시장과 완전히 같다. <code>f(x)&gt;0</code>이면 시장이 해당 말의 비시장 피처 정보를 과소평가했다고 모델이 수정하고, <code>f(x)&lt;0</code>이면 과대평가했다고 수정한다.</p>
+<p>여기서 배당은 일반 입력 피처가 아니라 계수가 1로 고정된 <strong>offset</strong>이다. 따라서 트리는 시장이 이미 설명한 인기도를 다시 처음부터 학습하는 대신 시장의 잔차오류에 집중한다.</p></section>
+
+<section><h2>4. Base Margin이란 무엇인가</h2><p>boosting에서 <strong>base margin</strong>은 첫 번째 트리를 만들기 전 각 관측치가 이미 가지고 있는 초기 원점수(raw score)다. 일반 모델은 이를 0이나 전체 평균으로 시작하지만, 우리 모델은 말 i의 초기 점수를 <code>log(qᵢ)</code>로 둔다.</p>
+<div class="formula">초기값:                 ηᵢ⁽⁰⁾ = log(qᵢ)
+t번째 확률:              pᵢ⁽ᵗ⁾ = softmax_race(η⁽ᵗ⁾)ᵢ
+승자표시:                 yᵢ ∈ {0,1}
+gradient:                gᵢ = yᵢ − pᵢ
+hessian 근사:             hᵢ = pᵢ(1−pᵢ)
+트리 잎의 Newton 보정값:   w_leaf = Σᵢ∈leaf gᵢ / (Σᵢ∈leaf hᵢ + λ)
+갱신:                     ηᵢ⁽ᵗ⁺¹⁾ = ηᵢ⁽ᵗ⁾ + learning_rate × w_leaf
+
+최종:                     ηᵢ = log(qᵢ) + Σₜ learning_rate × treeₜ(xᵢ)</div>
+<p>조건부 로짓 앵커가 <code>f(x)=βᵀx</code>인 선형 수정이라면, Base Margin은 <code>f(x)</code>를 여러 얕은 트리로 만들어 비선형 효과와 상호작용을 표현한다. 예를 들어 “비 오는 날 × 특정 거리 × 선행형”처럼 한 변수씩 더해서는 표현하기 어려운 조합을 분기 구조로 잡을 수 있다.</p>
+<p>이번 모델은 validation에서 트리 수 <strong>188개</strong>를 선택했고, 그 뒤 train+validation을 합쳐 같은 188개로 다시 적합한 후 test를 예측했다.</p></section>
+
+<section><h2>5. ΔLL(델타 로그우도)이란 무엇인가</h2><p>한 경주 r의 실제 승자를 <code>wᵣ</code>라 하면 시장과 모델이 실제 승자에게 준 확률의 로그를 비교한다.</p>
+<div class="formula">시장 로그우도:       LL_market = Σᵣ log(qᵣ,wᵣ)
+모델 로그우도:       LL_model  = Σᵣ log(pᵣ,wᵣ)
+
+경주당 ΔLL = (LL_model − LL_market) / R
+           = (1/R) Σᵣ [log(pᵣ,wᵣ) − log(qᵣ,wᵣ)]
+           = LogLoss_market − LogLoss_model</div>
+<table><thead><tr><th>ΔLL</th><th>뜻</th></tr></thead><tbody><tr><td>&gt; 0</td><td>모델이 실제 승자에게 시장보다 평균적으로 더 높은 로그확률을 부여했다.</td></tr><tr><td>= 0</td><td>시장과 같은 정보량이다.</td></tr><tr><td>&lt; 0</td><td>시장보다 확률분포가 나빠졌다.</td></tr></tbody></table>
+<div class="example"><h3>이번 Base Margin 수치</h3><p>validation ΔLL은 <strong>+0.021833/경주</strong>였고, 고정 후 test ΔLL은 <strong>+0.013083/경주</strong>, 95% CI는 <strong>[+0.006614, +0.019647]</strong>였다. CI 전체가 0보다 커서 시장 대비 확률정보 개선은 95% 기준으로 확인됐다.</p><p><code>exp(ΔLL)−1</code>로 보면 실제 승자에 대한 기하평균 우도비 개선은 약 <strong>1.32%/경주</strong>다. 이것은 ROI 1.32%라는 뜻이 아니다.</p></div></section>
+
+<section class="warn"><h2>6. 가장 흔한 혼동</h2><table><thead><tr><th>잘못된 해석</th><th>정확한 해석</th></tr></thead><tbody>
+<tr><td>ΔLL이 양수면 돈을 번다</td><td>확률분포가 더 정확하다는 뜻일 뿐, 공제·배당·선택·분산을 넘었다는 보장은 없다.</td></tr>
+<tr><td>95% 미확정이면 전략이 무효다</td><td>효과가 없을 수도 있고 표본이 부족할 수도 있다. 점추정·CI 폭·표본 수를 함께 본다.</td></tr>
+<tr><td>validation 성능이 최종 성능이다</td><td>validation은 선택용이다. 최종 성능은 고정된 test 또는 새 미래 OOS에서 측정한다.</td></tr>
+<tr><td>앵커 모델은 배당을 일반 피처로 학습한다</td><td>여기서는 log(q)를 계수 1의 고정 offset으로 사용하고 비시장 피처로 잔차만 학습한다.</td></tr>
+<tr><td>Base Margin은 단순 절편이다</td><td>각 말마다 다른 시장 log(q)를 초기 raw score로 주는 벡터형 출발점이다.</td></tr>
+</tbody></table></section>
+
+<section><h2>7. 이번 프로젝트에서의 최종 문장</h2><p><strong>Base Margin 시장 앵커는 시장보다 확률분포를 유의하게 개선했다. 그러나 8~15배·EDGE 상위 5%를 포함한 현재 베팅 결과의 절대 ROI는 95% 수준에서 아직 확인되지 않았다.</strong> 확률정보 우위와 수익성 우위는 별개의 검정이다.</p></section>
+</main></body></html>

@@ -1,0 +1,424 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "dataset audit 40/40",
+      "status": "PASS"
+    },
+    {
+      "check": "six-model reload validation PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "six models reloaded",
+      "status": "PASS"
+    },
+    {
+      "check": "preprocessing PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "seven-bet evaluation PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "all seven bet types present",
+      "status": "PASS"
+    },
+    {
+      "check": "official winning-combination mismatches=0",
+      "status": "PASS"
+    },
+    {
+      "check": "market reference SHA-256 locked",
+      "status": "PASS"
+    },
+    {
+      "check": "odds/market/result features excluded",
+      "status": "PASS"
+    },
+    {
+      "check": "random_forest_rank fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "xgboost_rank fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "lightgbm_rank fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "catboost_rank fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "deep_ranknet fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "plackett_luce_full fresh completion log",
+      "status": "PASS"
+    },
+    {
+      "check": "all normalized probabilities finite",
+      "status": "PASS"
+    },
+    {
+      "check": "every race probability sum equals 1 within 1e-10",
+      "status": "PASS"
+    },
+    {
+      "check": "selection rows contain seven bet types",
+      "status": "PASS"
+    },
+    {
+      "check": "one locked test policy per bet type",
+      "status": "PASS"
+    },
+    {
+      "check": "seven models/ensemble by seven bet types locked",
+      "status": "PASS"
+    }
+  ],
+  "passed_checks": 20,
+  "profit_confirmed_bet_types": [],
+  "roi_30pct_warnings": [
+    {
+      "bet_type": "복승",
+      "model": "Random Forest",
+      "selection_policy": "positive_edge",
+      "validation_roi": 0.3085635359116021,
+      "test_roi": -0.1764963503649635,
+      "warning": "ROI>=30% observed in policy selection; validation-to-test collapse and wide CI indicate overfit/variance risk. Not deployable evidence."
+    },
+    {
+      "bet_type": "쌍승",
+      "model": "Random Forest",
+      "selection_policy": "positive_edge",
+      "validation_roi": 0.8335947712418302,
+      "test_roi": -0.1803779069767442,
+      "warning": "ROI>=30% observed in policy selection; validation-to-test collapse and wide CI indicate overfit/variance risk. Not deployable evidence."
+    },
+    {
+      "bet_type": "삼복승",
+      "model": "XGBoost Ranker",
+      "selection_policy": "top_30pct_edge",
+      "validation_roi": 0.3170278637770898,
+      "test_roi": -0.24537037037037038,
+      "warning": "ROI>=30% observed in policy selection; validation-to-test collapse and wide CI indicate overfit/variance risk. Not deployable evidence."
+    },
+    {
+      "bet_type": "삼쌍승",
+      "model": "Random Forest",
+      "selection_policy": "positive_edge",
+      "validation_roi": 2.986450839328537,
+      "test_roi": -0.665159574468085,
+      "warning": "ROI>=30% observed in policy selection; validation-to-test collapse and wide CI indicate overfit/variance risk. Not deployable evidence."
+    }
+  ],
+  "input_hashes": {
+    "market_reference": {
+      "path": "C:\\Users\\user\\Downloads\\final (2).csv.gz",
+      "sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+    },
+    "official_dividends": {
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\kra_official_dividends\\kra_official_dividends.csv",
+      "sha256": "1DA22B6C3CAA3C16FFD7E117FBC65F47B0927C3F00FFA857DBFCFFE7A76F5804"
+    },
+    "dataset_files": {
+      "train": {
+        "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+        "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+        "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+        "rows": 33416,
+        "races": 3158,
+        "valid_rank_rows": 33416,
+        "invalid_rank_rows": 0,
+        "date_min": 20230805,
+        "date_max": 20250511,
+        "rank_group_status_races": {
+          "complete_1_to_n": 3125,
+          "tied_or_gapped": 33
+        }
+      },
+      "valid": {
+        "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+        "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+        "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+        "rows": 11345,
+        "races": 1084,
+        "valid_rank_rows": 11345,
+        "invalid_rank_rows": 0,
+        "date_min": 20250517,
+        "date_max": 20251227,
+        "rank_group_status_races": {
+          "complete_1_to_n": 1076,
+          "tied_or_gapped": 8
+        }
+      },
+      "test": {
+        "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+        "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+        "data_sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+        "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+        "rows": 11695,
+        "races": 1101,
+        "valid_rank_rows": 11650,
+        "invalid_rank_rows": 45,
+        "date_min": 20251228,
+        "date_max": 20260809,
+        "rank_group_status_races": {
+          "complete_1_to_n": 1078,
+          "tied_or_gapped": 16,
+          "invalid_zero_or_nan": 7
+        }
+      }
+    }
+  },
+  "model_artifacts": [
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\feature_importance_full.csv",
+      "bytes": 4634,
+      "sha256": "740CACA474C49CF6E685E003FA6192E6C1E2944BD260DD32C1E2B931424E946F"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\metrics.json",
+      "bytes": 1903,
+      "sha256": "E69246E5C908DF1CC3AE5AED6D2B8F1396BAFB7CFF2CCD70ABDD16EB7438AB01"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model.cbm",
+      "bytes": 1715736,
+      "sha256": "77F48AC10DCEC6E1F7C2F0FE4B3883DE7872B2DE431C94E29BE6E27DE245A039"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\model_manifest.json",
+      "bytes": 3841,
+      "sha256": "CD5213096FFB57B3F622358F6020FB8A6B524C53FA3A3581790EE1C6D6CD2F59"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\test_rank_predictions.csv",
+      "bytes": 1062137,
+      "sha256": "94B04B94CBD52CA5CCCB97997CEEFC553DFD91BD5018ABB251139D0E8BC7470A"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\catboost_rank\\valid_rank_predictions.csv",
+      "bytes": 1028360,
+      "sha256": "E523D8690FBC0E41AB9AC14067E54AB9D4937C441D2A5A049A934F9D31202BA9"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\feature_importance_full.csv",
+      "bytes": 5302,
+      "sha256": "AFA15D0D39EDF7066B88D65A2A461015BCC98FD1EC0112EBE9672E67BA01E859"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\metrics.json",
+      "bytes": 1906,
+      "sha256": "F2C903FE7F9477CA9BB80439912B5A5BB1AC55548F2F207CFF964AF51F2922B2"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_manifest.json",
+      "bytes": 3918,
+      "sha256": "6173B0EF3777D9806BAAFD3B164AD063A5DABBDE64D5F195CF06A369C7F7733B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed0.pt",
+      "bytes": 289611,
+      "sha256": "5A694960611545E4E6F4B242C0CA00B2CF3A3AB0CF15EAEA9EA14DA836D65F2B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed1.pt",
+      "bytes": 289611,
+      "sha256": "69438C34F197838AD089DC20AA196FF88825489EEE564A113EF161C0AFD46D28"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\model_seed2.pt",
+      "bytes": 289611,
+      "sha256": "92304330FC36DE47E7505198231ABE4012F811FF6F814FE7C6705A3E187E4AFD"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\test_rank_predictions.csv",
+      "bytes": 1063411,
+      "sha256": "1C6656DFCB973B845E0EC28CAEDF89BADF2739BBC5B21E2ACDE68DDDEC2DFC37"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\deep_ranknet\\valid_rank_predictions.csv",
+      "bytes": 1029446,
+      "sha256": "2C3CE4A296465332DF92688BE75C5C9263BE33AA8C2C8F336E7CDC65A12B19A9"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\feature_importance_full.csv",
+      "bytes": 4450,
+      "sha256": "5C8FB7FF981EDE0AEFD97F9F4A6B3533CBA8C10BF4FE2E489EFA1E3098897325"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\metrics.json",
+      "bytes": 1897,
+      "sha256": "CA3AE378EA26A8D563663A1C2637690ADC48604369F2D196E9FB884949CAE07E"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model.txt",
+      "bytes": 760032,
+      "sha256": "42CEF0535C8AD34A08A7149C04946D7F6D03DF06D7ADB9A7D18FA3270EE8046A"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\model_manifest.json",
+      "bytes": 3836,
+      "sha256": "31756B3A09A47D96A92FFCA101FAAFC5443F69EC9A0A99E018F1911A8554B6CA"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\test_rank_predictions.csv",
+      "bytes": 1067813,
+      "sha256": "AAADEB5CC946AD4A02EA3DB45CDACF9B00CE408A90A9F30FA506B9B76AB2F82E"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\lightgbm_rank\\valid_rank_predictions.csv",
+      "bytes": 1033376,
+      "sha256": "025F6492EF01EE358F26609019E1EF74D8A350A65F7982CA5899883B14B0E56B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\feature_importance_full.csv",
+      "bytes": 5316,
+      "sha256": "2B489243F81AD296D3F1BC7A53FBBB09A669AAC1C863316AF61E4E6565D9CA70"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\metrics.json",
+      "bytes": 1906,
+      "sha256": "862133F3F96736BA871E45D653D87D4E062052679D72E7332F1224A93731F9C0"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model.pt",
+      "bytes": 288647,
+      "sha256": "569B87781C4B89DCE47EAAEE27BF825A4A9A75B012DC68180F3E2BCACFABB3ED"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\model_manifest.json",
+      "bytes": 3914,
+      "sha256": "41924B2A8F4891B1CE5C73877445E9EE3F68F2191E23E9BA42B570C621022427"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\test_rank_predictions.csv",
+      "bytes": 1064485,
+      "sha256": "63B374E14671FD8B167810400B0FCF628AF073850A33C93FF61D9525FC63522A"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\plackett_luce_full\\valid_rank_predictions.csv",
+      "bytes": 1030169,
+      "sha256": "6869B9276F3BA0BD48CBE9A1A7B6D074398637560654E09691308724FCD9755B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\feature_importance_full.csv",
+      "bytes": 5019,
+      "sha256": "B05A99A29E86EEB4E3A763E0D6370ACF3662FD5B9CC453A875599B0DA3A853E9"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\metrics.json",
+      "bytes": 1906,
+      "sha256": "D0C1CBBE3BBBC5D28BE20DDA4C81AF0EA82D9CE62CD6F11F8D4EFDC45F523FD5"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model.joblib",
+      "bytes": 94813921,
+      "sha256": "9113491AC1C8057603F9BC557F60D595CE5B78A374197EE147E0047C9930B431"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\model_manifest.json",
+      "bytes": 3904,
+      "sha256": "A2516830E96CA87A878F0CB8C648C060169A4A6BA51FF59F1694C87EB74458EE"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\test_rank_predictions.csv",
+      "bytes": 1068886,
+      "sha256": "6ED7697D7989A215FEDA65FD83D014513C52530F6B4815CD0B82D50886102EDB"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\random_forest_rank\\valid_rank_predictions.csv",
+      "bytes": 1034388,
+      "sha256": "B979DA28724A0BD3E175DB3404D22A0768D6446A6E6DF8426A8A44580E4D9CC9"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\feature_importance_full.csv",
+      "bytes": 5127,
+      "sha256": "B32B24D6AFFEFC43241DD3D60AD1F390A1CBB9CF4EA056A21F452F4144A4CF2C"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\metrics.json",
+      "bytes": 1904,
+      "sha256": "CDFD5C1F7623BA2AD3F1BDEB3DAA12794088E7D784FD17CB10D6953482AA094B"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model.json",
+      "bytes": 3351817,
+      "sha256": "8EF76EEC934EAA81F5343CBCCAEC8BA5AD00191864AB3472BD29C93F300039A5"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\model_manifest.json",
+      "bytes": 3826,
+      "sha256": "FB0E142BB867F3CEAED088E758BA4A4BE907C2C6D6FEFAD017EDF60A0A0796C4"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\test_rank_predictions.csv",
+      "bytes": 1066131,
+      "sha256": "88D1B3B851F183574860EFF809D86E09DE30DCB4859137A2F2BDC510B3589D50"
+    },
+    {
+      "path": "models\\revised_v11_seoul_bugyeong_full_rank_20260822\\xgboost_rank\\valid_rank_predictions.csv",
+      "bytes": 1031636,
+      "sha256": "AAAAE94DBC7D31980269BD78F2547BC076504145D1A4992697FEC446E045D50A"
+    }
+  ],
+  "training_logs": [
+    {
+      "model_key": "random_forest_rank",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\01_random_forest_rank_training.log",
+      "bytes": 599,
+      "modified_time": 1787399352.2174118,
+      "sha256": "DFACA946ECEA2AA4FA8BBDA6EC9203ABAE46E919899EDA9488290DA9A0A20D59"
+    },
+    {
+      "model_key": "xgboost_rank",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\02_xgboost_rank_training.log",
+      "bytes": 593,
+      "modified_time": 1787399377.8382304,
+      "sha256": "E35E40D8E7D5123FA9539DE7D1EFFFA37A37BB1DD6F51F5878A2FAB6796B4C92"
+    },
+    {
+      "model_key": "lightgbm_rank",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\03_lightgbm_rank_training.log",
+      "bytes": 682,
+      "modified_time": 1787399394.3902557,
+      "sha256": "66897A52265E0A83E935F1120930034D1BD50B2590B0AA4DCD000D55B7DAE7A1"
+    },
+    {
+      "model_key": "catboost_rank",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\04_catboost_rank_training.log",
+      "bytes": 1111,
+      "modified_time": 1787399544.7055936,
+      "sha256": "8CAE2A78AEDFC4B442AFC43AF548F1AD26D3606846AAF836C030402F21129A8E"
+    },
+    {
+      "model_key": "deep_ranknet",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\05_deep_ranknet_training.log",
+      "bytes": 2399,
+      "modified_time": 1787399582.6809232,
+      "sha256": "05A27C19EABDDB74B3B0FAD789CA35000F5EB3E76ADC906FAE7FF218D5E27A5B"
+    },
+    {
+      "model_key": "plackett_luce_full",
+      "path": "outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\logs\\06_plackett_luce_full_training.log",
+      "bytes": 1229,
+      "modified_time": 1787399620.950262,
+      "sha256": "D22F1C7A9B8935337ECB540AC69FDA2C2525B9C90559B92955E1CBA0EE45E7F9"
+    }
+  ],
+  "runtime": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  }
+}

@@ -1,0 +1,4 @@
+{"phase": "01_train_only_discovery", "status": "PASS", "elapsed_seconds": 9.194235801696777, "timestamp_epoch": 1787423188.0318136, "segments": ["odds_8_15", "odds_30_plus"], "plans": 2}
+{"phase": "02_validation_train_and_lock", "status": "PASS", "elapsed_seconds": 62.73738193511963, "timestamp_epoch": 1787423250.7703664, "models": 6, "locks": 14}
+{"phase": "03_locked_test_evaluation", "status": "PASS", "elapsed_seconds": 61.56791543960571, "timestamp_epoch": 1787423312.3390677, "models": 6, "policy_cells": 14}
+{"phase": "04_audit_and_summary", "status": "PASS", "elapsed_seconds": 0.01967024803161621, "timestamp_epoch": 1787423312.3594143, "warnings": 4}

@@ -1,0 +1,43 @@
+{
+  "selection_scope": "TRAIN A/B only",
+  "threshold_rule": "positive importance share > 0.005 and minimum of 3 repeats > 0",
+  "threshold": 0.005,
+  "source_feature_count": 29,
+  "selected_feature_count": 9,
+  "selected_features": [
+    "clinic_30d",
+    "hr_dist_starts",
+    "hr_rest_days__pr",
+    "hr_last_finpct",
+    "tr_winrate",
+    "jk_winrate",
+    "hr_style",
+    "tr_plcrate",
+    "hr_plcrate"
+  ],
+  "blocks": {
+    "rule": "first 50% unique dates / next 25% / final 25%",
+    "cut_a": 20240621,
+    "cut_b": 20241201,
+    "A": {
+      "rows": 16730,
+      "races": 1584,
+      "date_min": 20230805,
+      "date_max": 20240616
+    },
+    "B": {
+      "rows": 7938,
+      "races": 773,
+      "date_min": 20240621,
+      "date_max": 20241130
+    },
+    "C": {
+      "rows": 8748,
+      "races": 801,
+      "date_min": 20241201,
+      "date_max": 20250511
+    }
+  },
+  "importance_file": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\train_B_permutation_importance.csv",
+  "test_or_validation_used_for_selection": false
+}

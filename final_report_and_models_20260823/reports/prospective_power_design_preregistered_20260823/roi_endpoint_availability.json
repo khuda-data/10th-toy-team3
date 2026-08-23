@@ -1,0 +1,13 @@
+{
+  "status": "NOT_IDENTIFIABLE_ZERO_SETTLED_RETURN_OBSERVATIONS",
+  "allowlisted_input_rows": 14828,
+  "settled_ticket_return_observations": 0,
+  "payout_or_return_columns_found": [],
+  "required_days": null,
+  "required_races": null,
+  "today_17_race_roi_power": null,
+  "reason": "The exact allowlisted VALID probability files contain no settled ticket stakes, returns, or official dividends. ROI variance and power cannot be estimated without inventing data.",
+  "roi_inference_performed": false,
+  "kelly_inference_performed": false,
+  "live_stake": 0
+}

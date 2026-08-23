@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "html": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_freeze_report_20260823\\index.html",
+    "bytes": 97351,
+    "sha256": "80D05399EC5E47FC68BF574C37EBC8A62E16BF07AAC54D4718CEF8C68105EF71"
+  },
+  "pdf": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_freeze_report_20260823\\index.pdf",
+    "bytes": 428744,
+    "sha256": "552E4F195D5A3C1E74D1B2DB65B2B170FF62A1061E8EE7915DAE3B13D400C1B2",
+    "pages": 6,
+    "text_pages": 6,
+    "page_sizes": [
+      [
+        594.96,
+        841.92
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preprocessing_pass": true,
+    "six_metric_rows": true,
+    "six_model_manifests": true,
+    "all_toc_targets_exist": true,
+    "all_internal_links_resolve": true,
+    "has_korean_language": true,
+    "has_responsive_viewport": true,
+    "has_print_css": true,
+    "has_tables": true,
+    "has_model_sections": true,
+    "has_requested_oos_explanation": true,
+    "has_core_terms": true,
+    "has_formulas": true,
+    "probability_sum_error_machine_precision": true,
+    "visual_studio_recursive_source_rule": true,
+    "visual_studio_recursive_output_rule": true
+  },
+  "toc_sections": 19,
+  "table_count": 12,
+  "formula_count": 26,
+  "model_metric_rows": 6,
+  "max_probability_sum_error": 4.440892098500626e-16,
+  "html_bytes": 62286
+}

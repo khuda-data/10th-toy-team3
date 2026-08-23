@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 7,
+  "checks_passed": 7,
+  "checks_failed": 0,
+  "model_artifact_replay": "PASS",
+  "probability_sum_replay": "PASS",
+  "bootstrap_holm_replay": "PASS",
+  "interpretation": "clinic30d has positive point increments but both CIs include zero; importance stability is not incremental-value confirmation",
+  "confirmation_status": "retrospective reused-TEST audit, not independent replication",
+  "completed_at": "2026-08-23T04:55:59.947183+09:00"
+}

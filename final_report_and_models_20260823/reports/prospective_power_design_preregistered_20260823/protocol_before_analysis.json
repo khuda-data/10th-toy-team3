@@ -1,0 +1,140 @@
+{
+  "status": "PREREGISTERED_AFTER_DISCLOSED_AGGREGATE_TEST_METADATA_READ",
+  "study": "PROSPECTIVE_DELTA_LL_POWER_AND_MULTI_DAY_SAMPLE_DESIGN",
+  "frozen_at_kst": "2026-08-23T08:44:51.1367488+09:00",
+  "purpose": "Quantify how little evidential power a one-day 17-race forward holdout has for detecting market-relative winner log-likelihood improvements, and design reproducible multi-day prospective collection sizes.",
+  "hypothesis": "A one-day 17-race holdout has insufficient power for small market-relative delta log-likelihood effects; multiple independently collected race-days are required.",
+  "evidence_class": "SENSITIVITY_DESIGN_ONLY_NOT_CONFIRMATION_NOT_MODEL_SELECTION",
+  "pre_protocol_incident": {
+    "path": "outputs/reports/prospective_power_design_preregistered_20260823/pre_protocol_incident.json",
+    "sha256": "54CBD971A7BB4B243930A2801F315D2D8EFEB41DE60962BEAC33C68FD5EC1A1E",
+    "effect_on_status": "All outputs must remain PASS_WITH_DISCLOSED_PROTOCOL_DEVIATION. They cannot be promoted to confirmation."
+  },
+  "exact_analytic_input_allowlist": [
+    {
+      "path": "outputs/reports/h11d_market_anchor_shrinkage_preregistered_20260823/late_valid_calibrated_predictions.csv",
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11d_market_anchor_shrinkage_preregistered_20260823\\late_valid_calibrated_predictions.csv",
+      "sha256": "6371C18D7FB1FE93CE6E6C675F8B6ED088B6989309F858770453153021628FB5",
+      "bytes": 770093,
+      "last_write_time_utc": "2026-08-22T22:28:37.1925848Z",
+      "rows": 3707,
+      "unique_dates": 28,
+      "date_min": 20251025,
+      "date_max": 20251227,
+      "split": "VALID_LATE28_REUSED_DESCRIPTIVE"
+    },
+    {
+      "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/late28_predictions.csv",
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h13_market_anchor_nonnegative_log_pool_preregistered_20260823\\late28_predictions.csv",
+      "sha256": "EC509A730DB0884DCCA0A57066826AC22C5E1398B7B2B2FFB53DAA68DD50EA43",
+      "bytes": 852735,
+      "last_write_time_utc": "2026-08-22T22:52:17.1112039Z",
+      "rows": 3707,
+      "unique_dates": 28,
+      "date_min": 20251025,
+      "date_max": 20251227,
+      "split": "VALID_LATE28_REUSED_DESCRIPTIVE"
+    },
+    {
+      "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_predictions.csv",
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h14_convex_market_residual_pool_preregistered_20260823\\late28_predictions.csv",
+      "sha256": "23B866877461AF72F01665D551D5B9340D3AAFD3234D8F8E1D1D4BAF599526CF",
+      "bytes": 929973,
+      "last_write_time_utc": "2026-08-22T23:09:45.3151867Z",
+      "rows": 3707,
+      "unique_dates": 28,
+      "date_min": 20251025,
+      "date_max": 20251227,
+      "split": "VALID_LATE28_REUSED_DESCRIPTIVE"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_predictions.csv",
+      "absolute_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h17_ridge_convex_market_residual_pool_preregistered_20260823\\late28_predictions.csv",
+      "sha256": "13E39129F6BA434DF4189B3FCBE24A860EE22D83527FB5D5EB880921D770BC70",
+      "bytes": 1091000,
+      "last_write_time_utc": "2026-08-22T23:37:43.3786587Z",
+      "rows": 3707,
+      "unique_dates": 28,
+      "date_min": 20251025,
+      "date_max": 20251227,
+      "split": "VALID_LATE28_REUSED_DESCRIPTIVE"
+    }
+  ],
+  "forbidden_inputs": {
+    "explicit_excluded_file": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_probability_metrics.csv",
+    "all_split_test_paths": true,
+    "all_20260823_target_quote_result_dividend_paths": true,
+    "network_access": false,
+    "reader_policy": "FAIL_CLOSED_EXACT_ALLOWLIST_ONLY"
+  },
+  "model_probability_columns": {
+    "h11b_m6": "h17:p_m6",
+    "h11b_xgboost": "h17:p_xgboost",
+    "h11b_lightgbm": "h17:p_lightgbm",
+    "h11b_deep_mlp_3seed": "h17:p_deep_mlp_3seed",
+    "h11b_equal_ensemble": "h17:p_h11b_equal_arithmetic_ensemble",
+    "h11d_alpha_anchor": "h11d:p_alpha",
+    "h13_nonnegative_log_pool": "h13:p_h13_log_pool",
+    "h14_convex_residual_pool": "h14:p_h14_convex_pool",
+    "h17_ridge_convex_pool": "h17:p_h17_ridge_convex_pool"
+  },
+  "join_and_integrity_rules": {
+    "keys": ["rcDate", "race_id", "entry_id"],
+    "winner_rule": "exactly one row with win==1 per race",
+    "probability_rule": "0 < q and p <= 1 and each probability sums to 1 within race within numerical tolerance",
+    "cross_file_rule": "keys, win, q, row count, race count, and date set must match exactly"
+  },
+  "endpoint": {
+    "race_winner_delta_ll": "log(p_model_of_actual_winner) - log(q_of_actual_winner)",
+    "daily_delta_ll": "arithmetic mean of race_winner_delta_ll within rcDate",
+    "reported_location": ["pooled race mean", "unweighted daily mean"],
+    "reported_dispersion": ["race SD", "daily SD", "ordered-day lag-1 through lag-5 autocorrelation"]
+  },
+  "normal_approximation": {
+    "test": "one-sided z approximation for mean delta LL > 0",
+    "alpha": 0.05,
+    "target_power": [0.8, 0.9],
+    "fixed_true_effects_per_race": [0.001, 0.0025, 0.005, 0.01],
+    "required_days_formula": "ceil(((z_(1-alpha)+z_power)*daily_sd/effect)^2)",
+    "required_independent_races_formula": "ceil(((z_(1-alpha)+z_power)*race_sd/effect)^2)",
+    "implied_races_from_days": "ceil(required_days * observed_mean_races_per_day)",
+    "observed_effect_sensitivity": "computed only when the observed unweighted daily mean is > 0; otherwise N/A",
+    "today_design": "one race-day and 17 races; day-block and optimistic independent-race power are both reported separately"
+  },
+  "bootstrap_simulation": {
+    "method": "centered circular moving-day-block bootstrap",
+    "block_lengths_days": [1, 3, 5],
+    "replicates": 20000,
+    "seed": 2026082317,
+    "null_threshold": "empirical 95th percentile of centered bootstrap mean",
+    "power": "Pr(centered bootstrap mean + fixed effect > null threshold)",
+    "design_days": "deterministic union of 1, 17, 28, 56, 112 and 0.5x, 1x, 1.5x, 2x each model/effect normal required-day estimate",
+    "observed_effect": "same simulation added only when observed daily mean > 0"
+  },
+  "roi_endpoint": {
+    "policy": "No ROI, payout, Kelly, or profitability inference without settled ticket returns/dividends in the allowlisted data.",
+    "expected_output_when_absent": "NOT_IDENTIFIABLE_ZERO_SETTLED_RETURN_OBSERVATIONS",
+    "no_imputation": true
+  },
+  "planned_outputs": [
+    "daily_winner_delta_ll.csv",
+    "model_delta_ll_diagnostics.csv",
+    "autocorrelation_diagnostics.csv",
+    "normal_power_requirements.csv",
+    "today_one_day_17_race_power.csv",
+    "moving_block_bootstrap_power.csv",
+    "roi_endpoint_availability.json",
+    "analysis_summary.json",
+    "output_manifest.json",
+    "research_state.json",
+    "root_integration_summary.md",
+    "logs/phase_progress.jsonl",
+    "logs/execution.log"
+  ],
+  "claim_boundary": [
+    "This reuses VALID late28 and cannot confirm a model or market advantage.",
+    "It is a sample-size sensitivity design, not a post-hoc selection exercise.",
+    "The disclosed pre-protocol aggregate TEST read permanently prevents a clean PASS label for this sub-study.",
+    "No 20260823 quote, result, dividend, or target outcome may be read."
+  ]
+}

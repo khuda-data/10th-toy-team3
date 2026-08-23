@@ -1,0 +1,76 @@
+{
+  "created_before_loading_validation_or_test_in_this_process": true,
+  "hypothesis": "features with stable TRAIN-only >0.5% market-residual importance improve generalization",
+  "selection": {
+    "selection_scope": "TRAIN A/B only",
+    "threshold_rule": "positive importance share > 0.005 and minimum of 3 repeats > 0",
+    "threshold": 0.005,
+    "source_feature_count": 29,
+    "selected_feature_count": 9,
+    "selected_features": [
+      "clinic_30d",
+      "hr_dist_starts",
+      "hr_rest_days__pr",
+      "hr_last_finpct",
+      "tr_winrate",
+      "jk_winrate",
+      "hr_style",
+      "tr_plcrate",
+      "hr_plcrate"
+    ],
+    "blocks": {
+      "rule": "first 50% unique dates / next 25% / final 25%",
+      "cut_a": 20240621,
+      "cut_b": 20241201,
+      "A": {
+        "rows": 16730,
+        "races": 1584,
+        "date_min": 20230805,
+        "date_max": 20240616
+      },
+      "B": {
+        "rows": 7938,
+        "races": 773,
+        "date_min": 20240621,
+        "date_max": 20241130
+      },
+      "C": {
+        "rows": 8748,
+        "races": 801,
+        "date_min": 20241201,
+        "date_max": 20250511
+      }
+    },
+    "importance_file": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\sparse_deep_residual_challenger_20260823\\train_B_permutation_importance.csv",
+    "test_or_validation_used_for_selection": false
+  },
+  "sparse_epoch_schedule": {
+    "20260823": 6,
+    "20260824": 2,
+    "20260825": 7
+  },
+  "architecture": {
+    "kind": "mlp",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "dropout": 0.1
+  },
+  "market_odds_role": "log q offset only; no odds in neural feature matrix",
+  "validation_rule": "evaluate sparse primary against previously locked dense comparator; lock sparse betting policies",
+  "test_status": "exploratory reuse because historical TEST has already been inspected",
+  "train_input_audit": {
+    "split": "train",
+    "rows": 33416,
+    "races": 3158,
+    "date_min": 20230805,
+    "date_max": 20250511,
+    "features": 141,
+    "numeric_feature_nonfinite": 0,
+    "winner_count": 3158,
+    "max_market_probability_sum_error": 4.440892098500626e-16,
+    "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+    "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+  }
+}

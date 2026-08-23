@@ -1,0 +1,25 @@
+{
+  "status": "LOCKED_BEFORE_MODEL_METRICS_WERE_COMPUTED",
+  "created_at": "2026-08-23T05:05:41.177324+09:00",
+  "historical_cutoff": 20260809,
+  "raw_entry_inputs": [
+    "age",
+    "sex",
+    "wgBudam",
+    "hrNo"
+  ],
+  "fixed_feature_definitions": {
+    "age_percentile": "within active race average-rank percentile of entry-sheet age",
+    "burden_percentile": "within active race average-rank percentile of entry-sheet wgBudam",
+    "burden_change": "current entry-sheet wgBudam minus the horse's most recent prior wgBudam; train median for first observation",
+    "sex_dummies": "train categories, most prevalent train category dropped, unknown category all-zero"
+  },
+  "model": "market-anchored conditional logit: softmax_r(log closing_q + X beta)",
+  "l2": 100.0,
+  "hyperparameter_tuning": "none",
+  "primary_endpoint": "fresh mean winner log(model_probability / closing_market_q)",
+  "primary_uncertainty": "race-day block bootstrap; only two fresh dates, therefore highly discrete and low power",
+  "data_inspection_disclosure": "fresh source schema and completion counts were inspected before this protocol; winner identities and model metrics were not used for feature or L2 selection",
+  "relationship_to_frozen_models": "separate minimal model, not a global29/partial30 replication",
+  "execution_status": "retrospective probability benchmark only; closing odds are not executable snapshots"
+}

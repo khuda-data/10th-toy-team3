@@ -1,0 +1,87 @@
+{
+  "status": "H14_ADAPTIVE_FOLLOWUP_PREREGISTERED_BEFORE_TRAINING_AND_FIRST_REAL_T5",
+  "created_at_kst": "2026-08-23T07:57:27.6598263+09:00",
+  "target_date": 20260823,
+  "first_real_t5_due_kst": "2026-08-23T10:30:00+09:00",
+  "goal_check": "test a structurally regularized market-anchored residual pool after H13 showed unstable unconstrained weights; no betting or ROI tuning",
+  "adaptive_origin_disclosure": {
+    "h13_observed_before_this_protocol": true,
+    "h13_late28_delta_ll_vs_q": 0.0020062723686464176,
+    "h13_late28_ci_included_zero": true,
+    "h13_late28_delta_ll_vs_equal_ensemble": -0.00027208996240272505,
+    "h13_weight_instability_observed": true,
+    "consequence": "H14 is an explicitly adaptive exploratory follow-up. Its reused historical late28 result cannot be independent evidence; only later prospective data can evaluate it."
+  },
+  "frozen_h11b_sources": {
+    "training_protocol": {
+      "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/protocol_before_fit.json",
+      "sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B"
+    },
+    "freeze_complete": {
+      "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/freeze_complete.json",
+      "sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16"
+    },
+    "historical_predictions": {
+      "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_runner_probabilities.csv",
+      "sha256_authenticated_from_frozen_h11b": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+      "full_hash_recomputation_forbidden": true
+    }
+  },
+  "allowed_input_scope": {
+    "split": "VALID only",
+    "model_blocks": [
+      "m6",
+      "xgboost",
+      "lightgbm",
+      "deep_mlp_3seed"
+    ],
+    "rows_per_block": 11345,
+    "reader": "unbuffered exact-block reader that stops immediately after the fourth VALID member block and never reads the TEST block",
+    "required_alignment": "rcDate, race_id, entry_id, win, and q must match exactly across all four member blocks",
+    "split_test_rows_read_or_parsed": 0,
+    "target_20260823_sources_read": 0
+  },
+  "model": {
+    "name": "H14 convex market-residual log pool",
+    "formula": "p_w(i)=softmax_r(log(q_i)+sum_m w_m*log(p_m(i)/q_i))",
+    "equivalent_log_pool": "p_w is proportional to q_i^(1-sum_m w_m) times product_m p_m(i)^w_m",
+    "constraints": "w_m >= 0 for every member and sum_m w_m <= 1, so the equivalent market exponent is nonnegative",
+    "ordinary_features": "none; q is the coefficient-one base margin and member probabilities contribute only market residuals",
+    "objective": "mean race winner conditional negative log likelihood",
+    "optimizer": "scipy.optimize.minimize SLSQP with analytic gradient",
+    "initial_weights": [
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "hyperparameters_selected_from_outcomes": "none",
+    "gradient_check": "central finite difference, epsilon 1e-6, maximum absolute error <=1e-6"
+  },
+  "chronological_fits": {
+    "date_count": 92,
+    "first44": "fit one stability checkpoint",
+    "first64": "fit one locked model and evaluate once on last28 dates",
+    "last28": "descriptive reused evaluation only; already inspected by H11D and H13",
+    "all92": "fit one deployment model and freeze before first target T-5",
+    "expected_actual_optimizer_fit_calls": 3
+  },
+  "locked_historical_metrics": [
+    "Delta LL per race versus q",
+    "Delta LL per race versus fixed H11B equal arithmetic ensemble",
+    "Delta LL per race versus the frozen H13 first64 log pool",
+    "daily-block bootstrap sensitivity interval and paired day sign-flip p-value",
+    "runner Brier, fixed ten-bin ECE, top-one hit rate, probability sum error",
+    "first44, first64, and all92 weight vectors plus L1 and cosine stability"
+  ],
+  "deployment_and_claims": {
+    "target_scoring": "a separate result-blind protocol and watcher are required after the all92 weights freeze",
+    "ticket_or_roi_tuning": false,
+    "kelly": false,
+    "market_advantage_claim": "none from reused historical dates",
+    "single_day_confirmation": false,
+    "live_stake": 0
+  },
+  "target_scores_quotes_outcomes_results_dividends_or_settlement_read_at_protocol_creation": 0,
+  "split_test_rows_read_or_parsed_at_protocol_creation": 0
+}

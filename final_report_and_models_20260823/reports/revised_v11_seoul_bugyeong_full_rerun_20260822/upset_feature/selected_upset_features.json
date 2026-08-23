@@ -1,0 +1,57 @@
+{
+  "selection_scope": "train-internal chronological holdout only",
+  "importance_split": {
+    "fit_dates": [
+      "20230805",
+      "20241101"
+    ],
+    "tune_dates": [
+      "20241102",
+      "20241229"
+    ],
+    "importance_dates": [
+      "20250103",
+      "20250511"
+    ],
+    "fit_races": 2158,
+    "tune_races": 313,
+    "importance_races": 630,
+    "n_trees": 24
+  },
+  "importance_method": "drop in mean top-10/20/30/40% realized upset edge place-q_plc",
+  "upset_universe": "pop_pct >= 0.5; stored upset_B target is place == 1",
+  "positive_importance_weight_threshold": 0.005,
+  "permutation_repeats": 20,
+  "selected_feature_count": 29,
+  "selected_features": [
+    "clinic_30d",
+    "tr_plcrate",
+    "hr_last_finpct",
+    "hr_rest_days",
+    "age__pr",
+    "hr_style",
+    "oh_sex_암",
+    "wgBudam_chg",
+    "ow_starts",
+    "hr_plcrate",
+    "jk_winrate",
+    "waterRate",
+    "hr_rest_days__z",
+    "jk_winrate__z",
+    "jk_plcrate",
+    "wgBudam__pr",
+    "hr_style_sd",
+    "jk_starts",
+    "ow_winrate",
+    "train_sec_14",
+    "te_owName",
+    "tr_winrate",
+    "tool_망사눈가면",
+    "hr_winrate__pr",
+    "age",
+    "hr_dist_starts",
+    "wg_diff",
+    "hr_rest_days__pr",
+    "tr_starts"
+  ]
+}

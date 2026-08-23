@@ -1,0 +1,1347 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>마사회 모바일</title>
+	<link rel="stylesheet" type="text/css" href="/css/common02.css" />
+	<link rel="stylesheet" type="text/css" href="/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.3.css" />
+	<link rel="stylesheet" type="text/css" href="/css/busan.css" />
+	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript" src="/js/iscroll.js"></script>
+	<script type="text/javascript" src="/js/site/device_webbridge.js"></script>
+    <script type="text/javascript" src="/js/jquery.datePicker.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+    	$.datepicker.setDefaults({
+        	'showMonthAfterYear': true
+        	,'dayNamesMin': ['일','월','화','수','목','금','토','일']
+        	,'monthNamesShort': ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+        	,'dateFormat':'yy-mm-dd'
+        	,'changeYear': true
+        	,'changeMonth': true
+        	,onSelect: function (dateText,inst){
+        	    $('#showDate').html(dateText);
+        	}
+    	});
+    	$('#searchDate1').datepicker();
+    	$('#searchDate').click(function (){
+    	    $('#searchDate1').datepicker('show');
+    	});
+	});
+	function goView(raceArea,rcDate,rcNo){
+		rcDate=rcDate.split("/").join("");
+		document.pageForm1.rcNo.value=rcNo;
+		document.pageForm1.rcDate.value=rcDate;
+		document.pageForm1.action="/race/bukyeong/scoretableScoreList.do";
+		document.pageForm1.submit();
+	}
+
+	function goPage(){
+		var search = document.pageForm.searchDate1.value;
+		if(search == ""){
+			alert("경주일자를 입력해 주십시오");
+			$('#searchDate1').datepicker('show');
+			return false;
+		}
+		search = search.split("-").join("");
+		document.pageForm.rcDate.value = search;
+		document.pageForm.rcNo.value = "";
+		document.pageForm.submit();
+	}
+	
+	//마적사항으로 이동
+	function formSubmit3(hrNo){
+	    document.pageform3.hrNo.value = hrNo;
+	    document.pageform3.submit();
+	}
+
+	// 경주영상 fiveplayer 호출
+	function playVod(meet, rc_date, rc_no, type){
+		$.ajax({
+			type : "POST",
+			url : "/VodPlayer.do",
+			dataType : "json",
+			data : {
+				"meet" : meet,
+				"rc_date" : rc_date,
+				"rc_no" : rc_no,
+				"type" : type
+			},
+			async : false,
+			success : function(data){
+				if(data.result1 != ""){
+					location.href = data.result1;
+				}else{
+					alert("동영상 재생에 실패하였습니다.");
+				}
+			}
+		});
+	}
+	</script>
+</head>
+
+<body class="layout-fixed" onload="">
+	<dl id="skip">
+		<dt>바로가기 메뉴</dt>
+		<dd><a href="#container">본문 바로가기</a></dd>
+		<dd><a href="#footer">하단영역 바로가기</a></dd>
+	</dl>
+<div id="contbody_scroll">
+	<div id="contwrap">
+
+	
+<header>
+<div class="header_wrap">
+	<a href="javascript:history.go(-1);" class="back"><img src="/images/button/btn_back.png" alt="뒤로가기"></a>
+	<h1 class="title">경주성적</h1>
+		<div class="menu">
+	<a href="/race/bukyeong/main.do"><img class="btn_home" src="/images/button/btn_home.png" alt="홈" /></a>
+	<button id="rnb_menu" class="rnb_menu"><img class="btn_menu" src="/images/button/btn_menu.png" alt="메뉴열기" /></button>
+</div>
+</div>
+</header>
+	
+<script type="text/javascript">
+	function initSide(){
+		var obj = $.cookie('MOBI_LOGIN');
+        if(obj == '01'){
+            result = '고객님 환영합니다.';
+            resultbtn = "<a href=\"/logOut.do\"><img class=\"btn_logout\" src=\"/images/button/btn_logout.png\" alt=\"로그아웃\" style=\"margin-top:7px\" /></a>";
+        }else{
+        	result = '로그인하세요.';
+            resultbtn = "<a href=\"/login.do\"><img class=\"btn_logout\" src=\"/images/button/btn_login2.png\" alt=\"로그인\" style=\"margin-top:7px\" /></a>"
+        }
+        $('#checkLogin').html(result);
+        $('#logInOut').html(resultbtn);
+	}
+</script>
+<!-- mobile right menu start -->
+<div id="rnb_open">
+	<div class="js-iscroll">
+		<div class="typelogin_wrap">
+            <p class="message_txt" id="checkLogin"></p>
+            <div class="btn">
+            	<div id="logInOut" class="btn_logout2"></div>
+            </div>
+		</div>
+		<ul class="inmenulist_wrap">
+			<li><a href="/mypage/seoul/interestRace.do">관심정보</a></li>
+			<li><a href="/mypage/seoul/interestRaceScore.do">경주성적</a></li>
+			<li></li>
+			<!-- <li><a href="/mypage/reqExperience.do">체험/강좌</a></li> -->
+		</ul>
+		<ul class="rnblist_wrap">
+			<li><a href="#">한국마사회</a>
+				<ul class="inlist">
+					<li><a href="/main.do"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+					<li><a href="http://www.kra.co.kr/board/pr/skr021.do?menuId=skr02_skr021" rel="external">공지사항</a></li>
+					<li><a href="http://www.kra.co.kr/board/co/skr0623.do?menuId=skr06_skr062_skr0623" rel="external">CEO소식</a></li>
+					<li><a href="http://www.kra.co.kr/pr/so/ac/01/prsoac0101.do?menuId=skr02_skr027_skr0272" target="_blank" title="새창열림">사회공헌</a></li>
+					<li><a href="http://park.kra.co.kr/cms/guide/horse-museum/info/seoul?menuId=park01_park013_park0135" target="_blank" title="새창열림">말박물관</a></li>
+                    <li><a href="http://ebid.kra.co.kr/main/home.do?strToken=XXXXX"  target="_blank" title="새창열림">전자입찰</a></li>
+                    <li><a href="http://recruit.kra.co.kr" rel="external">채용정보</a></li>
+					<li><a href="/comp/novice/noviceMain.do">초보자가이드</a></li>
+					<li><a href="http://www.kra.co.kr/voc/park/transInfo1.do?menuId=skr0385" target="_blank" title="새창열림">오시는길</a></li>
+				</ul>
+			</li>
+			<li><a href="#">경마정보</a>
+				<ul class="arealist_wrap">
+					<li class="current"><a href="#">서울경마</a>
+						<ul class="inlist">
+							<li><a href="/race/seoul/main.do"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="/race/seoul/chulmapyoChange.do">경마속보</a></li>
+							<li><a href="/race/seoul/chulmaDetailInfoList.do">출전정보</a></li>
+							<li><a href="/race/seoul/scoretableAllScoreList.do">경주성적</a></li>
+							<li><a href="/race/seoul/racingTrainCheckList.do">출발정보</a></li>
+							<li><a href="/race/seoul/horsenameKinds.do">경주마 정보</a></li>
+							<li><a href="/race/seoul/jockeyListActive.do">기수 정보</a></li>
+							<li><a href="/race/seoul/profileTrainerListActive.do">조교사 정보</a></li>
+							<!--li><a href="/race/seoul/raceoper.do">경마개최일정</a></li-->
+							<li><a href="/race/seoul/noticeBoardList.do">공지사항</a></li>
+							<li><a href="#KRA">&nbsp;</a></li>
+						</ul>
+					</li>
+					<li><a href="#">부산경남</a>
+						<ul class="inlist">
+							<li><a href="/race/bukyeong/main.do"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="/race/bukyeong/chulmapyoChange.do">경마속보</a></li>
+							<li><a href="/race/bukyeong/chulmaDetailInfoList.do">출전정보</a></li>
+							<li><a href="/race/bukyeong/scoretableAllScoreList.do">경주성적</a></li>
+							<li><a href="/race/bukyeong/racingTrainCheckList.do">출발정보</a></li>
+							<li><a href="/race/bukyeong/horsenameKinds.do">경주마 정보</a></li>
+							<li><a href="/race/bukyeong/jockeyListActive.do">기수 정보</a></li>
+							<li><a href="/race/bukyeong/profileTrainerListActive.do">조교사 정보</a></li>
+							<!--li><a href="/race/bukyeong/raceoper.do">경마개최일정</a></li-->
+							<li><a href="/race/bukyeong/noticeBoardList.do">공지사항</a></li>
+							<li><a href="#KRA">&nbsp;</a></li>
+						</ul>
+					</li>
+					<li><a href="#">제주경마</a>
+						<ul class="inlist">
+							<li><a href="/race/jeju/main.do"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="/race/jeju/chulmapyoChange.do">경마속보</a></li>
+							<li><a href="/race/jeju/chulmaDetailInfoList.do">출전정보</a></li>
+							<li><a href="/race/jeju/scoretableAllScoreList.do">경주성적</a></li>
+							<li><a href="/race/jeju/racingTrainCheckList.do">출발정보</a></li>
+							<li><a href="/race/jeju/horsenameKinds.do">경주마 정보</a></li>
+							<li><a href="/race/jeju/jockeyListActive.do">기수 정보</a></li>
+							<li><a href="/race/jeju/profileTrainerListActive.do">조교사 정보</a></li>
+							<!--li><a href="/race/jeju/raceoper.do">경마개최일정</a></li-->
+							<li><a href="/race/jeju/noticeBoardList.do">공지사항</a></li>
+							<li><a href="#KRA">&nbsp;</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="https://park.kra.co.kr/" rel="external">렛츠런파크</a>
+				<ul class="arealist_wrap">
+					<!-- 		<li class="current"><a href="#">서울</a>
+						<ul class="inlist">
+							<li><a href="https://park.kra.co.kr/main/seoul"  rel="external"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="https://park.kra.co.kr/facilities/seoul?menuId=park01_park014_park0141"  rel="external">공원안내</a></li>
+							<li><a href="https://park.kra.co.kr/park/rental-facilities/info/seoul?menuId=park01_park015_park0151" rel="external">시설물 대관</a></li>
+							<li><a href="https://park.kra.co.kr/facilities/seoul?menuId=park01_park014_park0141" rel="external">시설안내</a></li>
+							<li><a href="https://park.kra.co.kr/visit/notice/seoul?gubun=%EC%84%9C%EC%9A%B8" rel="external">공지사항</a></li>
+						</ul>
+					</li>
+					<li><a href="#">부산경남</a>
+						<ul class="inlist">
+							<li><a href="https://park.kra.co.kr/main/busan"  rel="external"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="https://park.kra.co.kr/cms/guide/directions/busan?menuId=park03_park033_park0331" rel="external">공원안내</a></li>
+							<li><a href="https://park.kra.co.kr/park/rental-facilities/info/busan?menuId=park03_park035_park03515" rel="external">시설물 대관</a></li>
+							<li><a href="https://park.kra.co.kr/facilities/busan?menuId=park03_park034_park0341" rel="external">시설안내</a></li>
+							<li><a href="https://park.kra.co.kr/guide/map/busan?menuId=park03_park033_park0332" rel="external">테마공원</a></li>
+							<li><a href="#">&nbsp;</a></li>
+						</ul>
+					</li>
+					<li><a href="#">제주</a>
+						<ul class="inlist">
+							<li><a href="https://park.kra.co.kr/main/jeju"  rel="external"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+							<li><a href="https://park.kra.co.kr/cms/guide/guide/jeju?menuId=park02_park023_park0231" rel="external">공원안내</a></li>
+							<li><a href="https://park.kra.co.kr/park/rental-facilities/info/jeju?menuId=park02_park025_park0251" rel="external">시설물 대관</a></li>
+							<li><a href="https://park.kra.co.kr/facilities/jeju?menuId=park02_park024_park0241" rel="external">시설안내</a></li>
+							<li><a href="https://park.kra.co.kr/guide/map/jeju?menuId=park02_park023_park0238" rel="external">테마공원</a></li>
+							<li><a href="#">&nbsp;</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			</li>
+			<li><a href="http://cc.kra.co.kr"  rel="external">지사&middot;문화센터 </a>
+			</li>
+
+			<li><a href="#">고객광장</a>
+				<ul class="inlist">
+					<li><a href="https://www.kra.co.kr/voc/voiceMain.do?menuId=skr03_skr038"  target="_blank" title="새 창 열림"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+					<li><a href="http://www.kra.co.kr/op/vm/de/il/01/opvmdeil0101.do?menuId=skr0383_skr03836" target="_blank" title="새 창 열림" >불법경마전담신고센터</a></li>
+					<li><a href="https://www.kra.co.kr/op/vm/de/de/opvmdede01.do?menuId=skr0383_skr03831" target="_blank" title="새 창 열림">부패행위신고</a></li>
+					<li><a href="https://park.kra.co.kr/visit/lost/lost-items/seoul?menuId=park01_park012_park0126" target="_blank"  title="새 창 열림" >분실물 찾기(서울)</a></li>
+					<li><a href="https://park.kra.co.kr/visit/lost/lost-items/busan?menuId=park03_park032_park0324" target="_blank"  title="새 창 열림" >분실물 찾기(부산경남)</a></li>
+					<li><a href="https://park.kra.co.kr/visit/lost/lost-items/jeju?menuId=park02_park022_park0224" target="_blank"  title="새 창 열림" >분실물 찾기(제주)</a></li>
+					<li><a href="https://cc.kra.co.kr/ccc/cs/lost/list.do" target="_blank"  title="새 창 열림" >분실물 찾기(지사)</a></li>
+                    <li><a href="https://www.kra.co.kr/opinion/otherOpinionList.do"  rel="external">경마고객광장</a></li>
+				</ul>
+			</li>
+			<li><a href="#">유캔센터</a>
+				<ul class="inlist">
+					<li><a href="https://www.kra.co.kr/ucan/ucanMain.do" target="_blank" title="새 창 열림"><img class="btn_logout" src="/images/icon/icon_home.png" alt="home" /> 홈</a></li>
+					<li><a href="https://www.kra.co.kr/ucan/ucanIntro.do?menuId=skr0384_skr03841" target="_blank" title="새 창 열림">센터소개</a></li>
+					<li><a href="https://www.kra.co.kr/op/vm/uc/ad/01/opvmucad0101.do?menuId=skr0384_skr03845" target="_blank" title="새 창 열림"> 상담가이드</a></li>
+					<li><a href="https://www.kra.co.kr/ucan/selfTest.do?menuId=skr0384_skr03847" target="_blank" title="새 창 열림">자가진단</a></li>
+					<li><a href="https://www.kra.co.kr/op/vm/uc/ga/01/opvmucga0101.do?menuId=skr0384_skr03846" target="_blank" title="새 창 열림">도박의이해</a></li>
+					<li><a></a></li>
+				</ul>
+			</li>
+		</ul>
+		<button class="rnb_closed"><img src="/images/button/btn_close.png" alt="닫기" /></button>
+	</div>
+</div>
+<!-- mobile right menu end!! -->
+<script type="text/javascript">
+$(document).ready(function(){
+    initSide();
+});
+</script>
+
+	<form name="pageForm" id="pageForm" action="/race/bukyeong/scoretableAllScoreList.do" method="post" onsubmit="return false;">
+	<input type="hidden" name="param" value="/race/bukyeong/scoretableAllScoreList.do" />
+	<input type="hidden" name="rcNo" id="rcNo" value="8"/>
+	<input type="hidden" name="rcDate" id="rcDate" value="20250822"/>
+	<input type="hidden" name="meet" id="meet" value="3"/>
+		<section id="container">
+			<div class="tablist_wrap">
+			<h2 class="hide">탭메뉴</h2>
+				<ul class="tablist ty01">
+					<li class="current"><a href="/race/bukyeong/scoretableDailyList.do">경주성적표</a></li>
+					<li><a href="/race/bukyeong/honoredList.do">대상경주우승마</a></li>
+					<li><a href="/race/bukyeong/recordKinds.do">등급/거리최고기록</a></li>
+				</ul>
+			</div>
+			<ul class="tablist02">
+				<li><a href="/race/seoul/scoretableDailyList.do">서울</a></li>
+				<li class="current"><a href="/race/bukyeong/scoretableDailyList.do">영남</a></li>
+				<li><a href="/race/jeju/scoretableDailyList.do">제주</a></li>
+			</ul>
+
+			<div class="contgap_wrap">
+				<div class="list_tinputserch">
+					<div class="inputs">
+						<div class="ty_wrap04">
+							<div class="calendar_select">
+							
+								<a href="#" onclick="window.location.href='/race/bukyeong/scoretableAllScoreList.do?rcDate=20250817'; return false;" data-role="button"  data-inline="true" class="date_prev">
+								<img src="/images/button/btn_date_prev.png" alt="이전" /></a>
+							
+							
+								<span class="txt">25.08.22( 금 )</span>
+							
+								<a href="#" onclick="window.location.href='/race/bukyeong/scoretableAllScoreList.do?rcDate=20250824'; return false;" data-role="button"  data-inline="true" class="date_next">
+								<img src="/images/button/btn_date_next.png" alt="다음" /></a>
+							
+							
+							</div>
+						</div>
+						<span class="word_spacing">-</span>
+						<div class="ty_wrap05">
+							<div class="calendar_select">
+								<span class="date_text" id="showDate">연도-월</span>
+		                        <input type="hidden" name="" id="searchDate1" />
+								<a href="#" id="searchDate" class="date_calendar"><img src="/images/button/btn_calendar.png" alt="달력검색" /></a>
+							</div>
+						</div>
+						<span class="word_spacing">-</span>
+						<a href="javascript:goPage()" class="serch_btn"><img src="/images/button/btn_serch02.png"  alt="조회" /></a>
+					</div>
+				</div>
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 1R 국6등급 1000M 별정A 일반 11:25</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>7</td>
+								<td><a href="#" onclick="formSubmit3('0053441'); return false;">트윈레인보우</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>31</td>
+								<td>서승운</td>
+								<td></td>
+								<td>510(8)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>9</td>
+								<td><a href="#" onclick="formSubmit3('0053471'); return false;">그랑트리</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>4</td>
+								<td>진겸</td>
+								<td>5</td>
+								<td>447(-10)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>1</td>
+								<td><a href="#" onclick="formSubmit3('0052875'); return false;">아임더원</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>16</td>
+								<td>신윤섭</td>
+								<td>6</td>
+								<td>461(3)</td>
+							</tr>
+		
+							<tr >
+								<td>3</td>
+								<td>4</td>
+								<td><a href="#" onclick="formSubmit3('0053154'); return false;">보령의신용</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>6</td>
+								<td>다나카</td>
+								<td>동순위</td>
+								<td>467(10)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','1')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑦ 1.7 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑦ 1.1 ⑨ 1.5 ① 12.2 ④ 1.4 </li>
+					<li>복승식&nbsp;:&nbsp;⑦⑨ 2.8 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑦⑨ 4.4 </li>
+					<li>복연식&nbsp;:&nbsp;⑦⑨ 1.7 ⑦① 12.1 ⑦④ 1.5 ⑨① 15.9 ⑨④ 3.0 ①④ 33.1 </li>
+					<li>삼복식&nbsp;:&nbsp;⑦⑨① 47.8 ⑦⑨④ 4.7 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑦⑨① 119.3 ⑦⑨④ 11.4 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 2R 국6등급 1300M 별정A 일반 12:30</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>7</td>
+								<td><a href="#" onclick="formSubmit3('0050798'); return false;">감동의돌파</a></td>
+								<td>54</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>33</td>
+								<td>서강주</td>
+								<td></td>
+								<td>451(10)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>4</td>
+								<td><a href="#" onclick="formSubmit3('0051556'); return false;">파이널히트</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>16</td>
+								<td>이효식</td>
+								<td>6</td>
+								<td>428(7)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>3</td>
+								<td><a href="#" onclick="formSubmit3('0047556'); return false;">백팔보은</a></td>
+								<td>54</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>12</td>
+								<td>권오찬</td>
+								<td>½</td>
+								<td>470(-7)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','2')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑦ 3.5 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑦ 1.3 ④ 2.9 ③ 1.6 </li>
+					<li>복승식&nbsp;:&nbsp;⑦④ 23.0 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑦④ 35.9 </li>
+					<li>복연식&nbsp;:&nbsp;⑦④ 6.8 ⑦③ 3.5 ④③ 6.8 </li>
+					<li>삼복식&nbsp;:&nbsp;⑦④③ 26.7 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑦④③ 168.7 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 3R 국6등급 1300M 별정A 일반 13:35</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>1</td>
+								<td><a href="#" onclick="formSubmit3('0053115'); return false;">블루오키드</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>8</td>
+								<td>진겸</td>
+								<td></td>
+								<td>459(-1)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>2</td>
+								<td><a href="#" onclick="formSubmit3('0051943'); return false;">신천프리덤</a></td>
+								<td>54</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>2</td>
+								<td>서강주</td>
+								<td>3</td>
+								<td>446(-3)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>5</td>
+								<td><a href="#" onclick="formSubmit3('0051547'); return false;">레이스마린</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>22</td>
+								<td>송경윤</td>
+								<td>5</td>
+								<td>509(17)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','3')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;① 4.1 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;① 1.5 ② 8.2 ⑤ 1.8 </li>
+					<li>복승식&nbsp;:&nbsp;①② 55.6 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;①② 76.1 </li>
+					<li>복연식&nbsp;:&nbsp;①② 13.5 ①⑤ 4.2 ②⑤ 28.6 </li>
+					<li>삼복식&nbsp;:&nbsp;①②⑤ 88.9 </li>
+					<li>삼쌍식&nbsp;:&nbsp;①②⑤ 622.9 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 4R 국6등급 1400M 별정A 일반 14:25</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>8</td>
+								<td><a href="#" onclick="formSubmit3('0050870'); return false;">헤비듀티</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>24</td>
+								<td>전진구</td>
+								<td></td>
+								<td>494(4)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>9</td>
+								<td><a href="#" onclick="formSubmit3('0052414'); return false;">벌마위너</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>1</td>
+								<td>정도윤</td>
+								<td>½</td>
+								<td>464(8)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>7</td>
+								<td><a href="#" onclick="formSubmit3('0051534'); return false;">크루엘라</a></td>
+								<td>54</td>
+                                <td>
+                                    
+                                    
+                                </td>
+								<td>28</td>
+								<td>권오찬</td>
+								<td>6</td>
+								<td>491(-5)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','4')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑧ 4.3 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑧ 1.7 ⑨ 1.2 ⑦ 2.3 </li>
+					<li>복승식&nbsp;:&nbsp;⑧⑨ 4.8 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑧⑨ 12.8 </li>
+					<li>복연식&nbsp;:&nbsp;⑧⑨ 2.3 ⑧⑦ 5.6 ⑨⑦ 3.8 </li>
+					<li>삼복식&nbsp;:&nbsp;⑧⑨⑦ 10.9 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑧⑨⑦ 72.7 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 5R 혼4등급 1800M 핸디캡 일반 15:15</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>7</td>
+								<td><a href="#" onclick="formSubmit3('0046831'); return false;">네버기브업</a></td>
+								<td>58</td>
+                                <td>
+                                    
+                                    50
+                                </td>
+								<td>3</td>
+								<td>김혜선</td>
+								<td></td>
+								<td>499(-3)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>4</td>
+								<td><a href="#" onclick="formSubmit3('0050975'); return false;">플라잉더칸</a></td>
+								<td>52</td>
+                                <td>
+                                    
+                                    35
+                                </td>
+								<td>15</td>
+								<td>다실바</td>
+								<td>2½</td>
+								<td>451(-6)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>3</td>
+								<td><a href="#" onclick="formSubmit3('0051498'); return false;">라이트챔프</a></td>
+								<td>52</td>
+                                <td>
+                                    
+                                    42
+                                </td>
+								<td>4</td>
+								<td>서승운</td>
+								<td>4</td>
+								<td>465(2)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','5')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑦ 2.2 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑦ 1.4 ④ 1.4 ③ 1.6 </li>
+					<li>복승식&nbsp;:&nbsp;⑦④ 4.8 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑦④ 8.1 </li>
+					<li>복연식&nbsp;:&nbsp;⑦④ 2.0 ⑦③ 2.4 ④③ 2.7 </li>
+					<li>삼복식&nbsp;:&nbsp;⑦④③ 5.7 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑦④③ 19.2 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 6R 혼3등급 1200M 핸디캡 일반 16:05</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>1</td>
+								<td><a href="#" onclick="formSubmit3('0050930'); return false;">유림세상</a></td>
+								<td>52</td>
+                                <td>
+                                    
+                                    53
+                                </td>
+								<td>28</td>
+								<td>서승운</td>
+								<td></td>
+								<td>455(2)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>2</td>
+								<td><a href="#" onclick="formSubmit3('0042342'); return false;">어메이징풋</a></td>
+								<td>51</td>
+                                <td>
+                                    
+                                    47
+                                </td>
+								<td>12</td>
+								<td>권오찬</td>
+								<td>4</td>
+								<td>459(-4)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>7</td>
+								<td><a href="#" onclick="formSubmit3('0047295'); return false;">아잔타</a></td>
+								<td>54</td>
+                                <td>
+                                    
+                                    61
+                                </td>
+								<td>1</td>
+								<td>박재이</td>
+								<td>1¾</td>
+								<td>489(2)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','6')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;① 2.7 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;① 1.3 ② 4.2 ⑦ 1.7 </li>
+					<li>복승식&nbsp;:&nbsp;①② 31.9 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;①② 43.6 </li>
+					<li>복연식&nbsp;:&nbsp;①② 6.4 ①⑦ 2.7 ②⑦ 18.5 </li>
+					<li>삼복식&nbsp;:&nbsp;①②⑦ 53.5 </li>
+					<li>삼쌍식&nbsp;:&nbsp;①②⑦ 295.4 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 7R 국5등급 1200M 핸디캡 일반 17:00</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>8</td>
+								<td><a href="#" onclick="formSubmit3('0050814'); return false;">짝사랑</a></td>
+								<td>53</td>
+                                <td>
+                                    
+                                    28
+                                </td>
+								<td>13</td>
+								<td>채상현</td>
+								<td></td>
+								<td>478(7)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>10</td>
+								<td><a href="#" onclick="formSubmit3('0052501'); return false;">닥터매터스</a></td>
+								<td>53.5</td>
+                                <td>
+                                    
+                                    29
+                                </td>
+								<td>1</td>
+								<td>정도윤</td>
+								<td>½</td>
+								<td>435(-1)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>3</td>
+								<td><a href="#" onclick="formSubmit3('0046355'); return false;">그랜드드림</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    32
+                                </td>
+								<td>10</td>
+								<td>서승운</td>
+								<td>코</td>
+								<td>504(4)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','7')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑧ 11.1 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑧ 2.3 ⑩ 2.5 ③ 1.4 </li>
+					<li>복승식&nbsp;:&nbsp;⑧⑩ 50.1 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑧⑩ 129.4 </li>
+					<li>복연식&nbsp;:&nbsp;⑧⑩ 9.6 ⑧③ 5.3 ⑩③ 5.8 </li>
+					<li>삼복식&nbsp;:&nbsp;⑧⑩③ 53.7 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑧⑩③ 496.7 </li>
+				</ul>
+		
+		
+				
+				
+				
+				
+				
+				<div class="datetit_wrap03">
+				  <div style="height: 22px; padding-top: 10px;">
+				    <p class="tit">25.08.22(금) 8R 국5등급 1600M 핸디캡 일반 18:00</p>
+				  </div>
+				  
+				</div>
+				<div class="tbllist_wrap">
+					<table class="tbllist">
+						<colgroup>
+							<col style="width:5%">
+							<col style="width:8%">
+							<col>
+							<col style="width:10%">
+							<col style="width:10%">
+							<col style="width:6%">
+							<col style="width:17%">
+							<col style="width:8%">
+  							<col style="width:15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>마번</th>
+								<th>마명</th>
+								<th>중량</th>
+								<th>레이팅</th>
+								<th>조</th>
+								<th>기수명</th>
+								<th>도착차</th>
+								<th>마체중</th>
+							</tr>
+						</thead>
+						<tbody>
+		
+							<tr class="even">
+								<td>1</td>
+								<td>8</td>
+								<td><a href="#" onclick="formSubmit3('0050984'); return false;">마통령</a></td>
+								<td>56.5</td>
+                                <td>
+                                    
+                                    29
+                                </td>
+								<td>3</td>
+								<td>진겸</td>
+								<td></td>
+								<td>506(0)</td>
+							</tr>
+		
+							<tr >
+								<td>2</td>
+								<td>9</td>
+								<td><a href="#" onclick="formSubmit3('0046906'); return false;">상임스타</a></td>
+								<td>53</td>
+                                <td>
+                                    
+                                    26
+                                </td>
+								<td>20</td>
+								<td>전진구</td>
+								<td>5</td>
+								<td>442(1)</td>
+							</tr>
+		
+							<tr class="even">
+								<td>3</td>
+								<td>5</td>
+								<td><a href="#" onclick="formSubmit3('0050927'); return false;">파워타임</a></td>
+								<td>57</td>
+                                <td>
+                                    
+                                    30
+                                </td>
+								<td>33</td>
+								<td>다나카</td>
+								<td>¾</td>
+								<td>488(-4)</td>
+							</tr>
+		
+						</tbody>
+					</table>
+				</div>
+				<div class="distribution_wrap">
+					<p class="tit">배당률</p>
+					<p class="btn">
+						<a href="javascript:goView('bukyeong','20250822','8')"><img src="/images/button/btn_detail_record.png" alt="상세성적" /></a>
+					</p>
+				</div>
+		
+				<ul class="tblinfo_list">
+					<li>단승식&nbsp;:&nbsp;⑧ 1.8 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;연승식&nbsp;:&nbsp;⑧ 1.1 ⑨ 3.9 ⑤ 2.4 </li>
+					<li>복승식&nbsp;:&nbsp;⑧⑨ 11.2 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;쌍승식&nbsp;:&nbsp;⑧⑨ 15.7 </li>
+					<li>복연식&nbsp;:&nbsp;⑧⑨ 3.9 ⑧⑤ 2.7 ⑨⑤ 20.2 </li>
+					<li>삼복식&nbsp;:&nbsp;⑧⑨⑤ 24.5 </li>
+					<li>삼쌍식&nbsp;:&nbsp;⑧⑨⑤ 103.9 </li>
+				</ul>
+		
+		
+				
+				</div>
+			</section>
+		</form>
+	</div>
+	
+
+
+
+<script type="text/javascript">
+// 로그인 여부 체크
+$(document).ready(function(){
+    $("span#spanFootLogin").load("/ssoUser.do");
+    
+    
+    //경마정보 화면일경우 PC에서 경마정보로 이동 처리
+    var pathNm = location.pathname;
+    pathNm = pathNm.split("/"); 
+    if("" != pathNm && null != pathNm){
+    	if("race" == pathNm[1]){
+    		$("#raceLink").prop('href', 'https://race.kra.co.kr/');
+    	}else{
+    		$("#raceLink").prop('href', 'http://www.kra.co.kr/main.do?mobi=y');
+    	}
+    }
+});
+
+// 즐겨찾기정보를 app에 전달
+function footerSendTitleApp(){
+    return menuGetName('RC010108010100');
+}
+
+function goLoginFooter(){
+    var footerForm=document.footerForm;
+    var nowLocation=window.location.toString();
+    footerForm.retUrl.value = nowLocation;
+    document.footerForm.submit();
+}
+
+
+function memberMsg(){
+	alert("홈페이지 장기미로그인 고객정보 분리보관 작업으로 회원정보 신규가입 및 변경이 불가합니다.\n작업기간는  9월 9일 18시 -  9월 9일 20시입니다.\n감사합니다.");
+	return false;
+}
+
+
+
+</script>
+<footer>
+    <form name="footerForm" id="footerForm" action="/login.do">
+        <input type="hidden" name="retUrl" value="">
+        <input type="hidden" name="retParam" value="&rcDate=20250822">
+
+        <ul class="fmenu_list">
+            <li><a href="https://www.kra.co.kr/voc/voiceMain.do?menuId=skr03_skr038"  target="_blank" title="새 창 열림" >고객광장</a></li>
+            <li><a href="http://www.kra.co.kr/voc/park/transInfo1.do?menuId=skr0385"  target="_blank" title="새 창 열림">교통·약도</a></li>
+            <li><a href="/comp/view/kraAppList.do">APP다운로드</a></li>
+            <li><a href="http://www.kra.co.kr/op/vm/de/de/opvmdede01.do?menuId=skr03_skr038_skr0383" target="_blank" title="새 창 열림">부패행위신고</a></li>
+        </ul>
+        <div style="height: 125px;overflow: auto;">
+        <p class="fsns_txt">
+            소셜네트워크 SNS
+            <a href="http://blog.naver.com/letsrun2014"  target="_blank" title="새 창 열림" class="ico_naver"><img src="/images/button/btn_naver.png" alt="네이버" /></a>
+            <a href="http://www.facebook.com/letsrunpark"  target="_blank" title="새 창 열림"><img src="/images/button/btn_facebook.png" alt="페이스북" /></a>
+        </p>
+        <p class="fcopyright_txt">
+        	<span id="hol1" style="color:#c4c4c4;font-size:11px;">
+	         	<a href="https://www.kra.co.kr/board/op/smypg06.do" rel="external" class="tel">이용약관 |</a>
+	            <a href="http://www.kra.co.kr/etc/personPolicy.do" rel="external" class="tel"><span style="color: lime; font-size: 12px; font-weight: 600;">개인정보처리방침</span> | </a>매주 토·일 휴무 <br/>
+            </span>
+        	<span id="hol2" style="color:#c4c4c4;font-size:11px;">
+	         	<a href="https://www.kra.co.kr/board/op/smypg06.do" rel="external" class="tel">이용약관 |</a>
+	            <a href="http://www.kra.co.kr/etc/personPolicy.do" rel="external" class="tel"><span style="color: lime; font-size: 12px; font-weight: 600;">개인정보처리방침</span> | </a>매주 월·화 휴무 <br/>
+            </span>
+           대표전화 : <a href="tel:1566-3333" class="tel">1566-3333</a>  |  경마정보 : <a href="tel:1566-9977" class="tel">1566-9977</a><br />COPYRIGHT 2018 KRA CORPORATION ALL RIGHT RESERVED
+        </p>
+        <div class="fbtn_wrap">
+
+           <!--  <a href="javascript:history.go(-1);"><img src="/images/button/btn_prev.png" alt="이전" /></a> -->
+            <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+            <script type="text/javascript">
+                var resultArr = new Array();
+                var returnUrl = window.location.href;
+
+                resultArr.push('<a href="/login.do"><img src="/images/button/btn_login.png" alt="로그인" /></a>');
+                resultArr.push('<a href="http://www.kra.co.kr/memb/joinGuide.do" rel="external"><img src="/images/button/btn_join.png" alt="회원가입" /></a>');
+                
+                try{
+                    var obj = $.cookie('MOBI_LOGIN');
+                    if(obj == '01'){
+                        resultArr = new Array();
+                        resultArr.push('<a href="javascript:history.go(-1);"><img src="/images/button/btn_prev.png" alt="이전" /></a>');
+                        resultArr.push('<a href="/logOut.do"><img src="/images/button/btn_logout.png" alt="로그아웃" /></a>');
+                    }
+                }catch(e){}
+                document.write(resultArr.join(''));
+            </script> 
+            
+            <a href="http://www.kra.co.kr/main.do?mobi=y" rel="external" id="raceLink"><img src="/images/button/btn_pc.png" alt="PC화면" /></a>
+            <a href="#"><img src="/images/button/btn_top.png" alt="맨위로" /></a>
+        </div>
+        </div>
+    </form>
+</footer>
+
+<script type="text/javascript">
+$(function(){
+    var contwrapHeight = $("#contwrap").innerHeight();
+
+    $(window).on("resize", function(){
+        var width  = $(window).width();
+        var height = $(window).height();
+
+        if( contwrapHeight < $(window).height() ){
+            $('html, body').addClass('layout-main');
+        }else{
+            $('html, body').removeClass('layout-main');
+        }
+    })
+    .trigger("resize");
+});
+
+function gopc() {
+	var exdate = new Date();
+	exdate.setMinutes(exdate.getMinutes() + 1);
+	document.cookie = "st=H;" + "expires=" + exdate.toUTCString();
+	document.location.href="http://test.intra.kra.co.kr:8051";
+}
+
+var d = new Date();
+var year = d.getFullYear();
+var month = d.getMonth() + 1;
+var day = d.getDate();
+var hour = d.getHours();
+var min = d.getMinutes();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+if (hour < 10) hour = "0" + hour;
+if (min < 10) min = "0" + min;
+
+var today = "" + year + month + day + hour;
+var todays = "" + year + month + day + hour + min;
+
+if (today >= "2020102600") {
+	$("#hol1").hide();
+	$("#hol2").show();
+} else {
+	$("#hol1").show();
+	$("#hol2").hide();
+}
+
+if (todays >= "202511030900" && todays <= "202511031800" ) {
+	document.location.href = "/systemNotice.html";
+}
+
+</script>
+
+</div>
+<form name="pageForm1" id="pageForm1" action="/race/seoul/scoretableScoreList.do" method="get"  onsubmit="return false;;">
+	<input type="hidden" name="rcNo" id="rcNo" value="8"/>
+	<input type="hidden" name="rcDate" id="rcDate" value="20250822"/>
+</form>
+<form id="pageform3" name="pageform3" method="post" action="/race/bukyeong/horseItem.do" >
+    <input type="hidden" name="hrNo" value=""/>
+    <input type="hidden" name="meet" value="3"/>
+</form>
+
+</body>
+</html>

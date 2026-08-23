@@ -1,0 +1,187 @@
+{
+  "created_before_loading_validation_or_test_in_this_process": true,
+  "confirmation_status": "exploratory because historical test through 2026-08-09 was inspected before this experiment",
+  "primary_inherited_hypothesis": "closing decimal winOdds >=8 and <15",
+  "secondary_train_only_segment": "odds_30_plus",
+  "segment_selection_rule": "maximise minimum B/C gate-only delta LL, consistent-positive bands first",
+  "train_internal_blocks": {
+    "rule": "first 50% unique dates / next 25% / final 25%",
+    "cut_a": 20240621,
+    "cut_b": 20241201,
+    "A": {
+      "rows": 16730,
+      "races": 1584,
+      "date_min": 20230805,
+      "date_max": 20240616
+    },
+    "B": {
+      "rows": 7938,
+      "races": 773,
+      "date_min": 20240621,
+      "date_max": 20241130
+    },
+    "C": {
+      "rows": 8748,
+      "races": 801,
+      "date_min": 20241201,
+      "date_max": 20250511
+    }
+  },
+  "model_plans": [
+    {
+      "segment": "odds_8_15",
+      "feature_selection_pool": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "inherited_core_features": [
+        "tr_plcrate",
+        "hr_rest_days",
+        "wgBudam_chg",
+        "hr_plcrate",
+        "clinic_30d"
+      ],
+      "inherited_core_note": "CI-positive prior upset features plus exploratory clinic_30d",
+      "selected_features": [
+        "tr_plcrate",
+        "hr_rest_days",
+        "wgBudam_chg",
+        "hr_plcrate",
+        "clinic_30d",
+        "train_sec_14",
+        "age__pr",
+        "jk_starts"
+      ],
+      "selected_feature_count": 8,
+      "l2": 100.0,
+      "train_internal_C_delta_ll_per_race": -0.001383324845139416,
+      "train_internal_gate_only_C_delta_ll_per_race": -0.0021060220865671982,
+      "selection_rule": "rank interactions on B after fit A; choose K and L2 by C full-race delta LL"
+    },
+    {
+      "segment": "odds_30_plus",
+      "feature_selection_pool": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "inherited_core_features": [
+        "tr_plcrate",
+        "hr_rest_days",
+        "wgBudam_chg",
+        "hr_plcrate",
+        "clinic_30d"
+      ],
+      "inherited_core_note": "CI-positive prior upset features plus exploratory clinic_30d",
+      "selected_features": [
+        "tr_plcrate",
+        "hr_rest_days",
+        "wgBudam_chg",
+        "hr_plcrate",
+        "clinic_30d"
+      ],
+      "selected_feature_count": 5,
+      "l2": 100.0,
+      "train_internal_C_delta_ll_per_race": 0.0018184887328192593,
+      "train_internal_gate_only_C_delta_ll_per_race": 0.0005260407725849162,
+      "selection_rule": "rank interactions on B after fit A; choose K and L2 by C full-race delta LL"
+    }
+  ],
+  "validation_model_candidates": [
+    "market-anchored conditional logit",
+    "market-anchored Base Margin",
+    "50/50 ensemble"
+  ],
+  "policy_grid": [
+    "all_candidates",
+    "positive_market_edge",
+    "top_10pct_edge",
+    "top_20pct_edge",
+    "top_30pct_edge",
+    "top_40pct_edge"
+  ],
+  "policy_lock_objectives": [
+    "max paired ROI advantage",
+    "max paired ROI-advantage 95% lower bound"
+  ],
+  "min_validation_bets": 60,
+  "primary_probability_endpoint": "daily-block-bootstrap full-race delta LL vs normalized market q",
+  "primary_selection_endpoint": "paired ROI difference on identical races and equal bet counts",
+  "multiple_testing": "Benjamini-Hochberg FDR across locked test cells",
+  "takeout": {
+    "win": 0.2,
+    "multi": 0.27
+  },
+  "closing_odds_limitation": "retrospective final price; not guaranteed executable decision-time price",
+  "train_input_audit": {
+    "split": "train",
+    "rows": 33416,
+    "races": 3158,
+    "date_min": 20230805,
+    "date_max": 20250511,
+    "features": 141,
+    "numeric_feature_nonfinite": 0,
+    "winner_count": 3158,
+    "max_market_probability_sum_error": 4.440892098500626e-16,
+    "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+    "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+  },
+  "prior_feature_evidence_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\revised_v11_seoul_bugyeong_full_rerun_20260822\\upset_feature\\selected_upset_features.json",
+  "prior_feature_evidence_sha256": "234579ABE0EF7049E8C1101C8F307CF83D3E5D2B5CD3CC3744C54FCDB371D820",
+  "market_reference_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195"
+}

@@ -1,0 +1,242 @@
+{
+  "objective": "test whether global residual plus segment interactions improves market probability and defensive betting",
+  "created_before_loading_validation_or_test_in_this_process": true,
+  "market_odds_role": "log(q) offset and structural segment gate only; absent from global fundamental features",
+  "train_blocks": {
+    "rule": "first 75% unique TRAIN dates fit; final 25% tune",
+    "cut": 20241201,
+    "fit": {
+      "rows": 24668,
+      "races": 2357,
+      "date_min": 20230805,
+      "date_max": 20241130
+    },
+    "tune": {
+      "rows": 8748,
+      "races": 801,
+      "date_min": 20241201,
+      "date_max": 20250511
+    }
+  },
+  "model_plans": [
+    {
+      "model_key": "global_29_residual",
+      "bet_segment": "odds_8_15",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.006929546957937621
+    },
+    {
+      "model_key": "partial_8_15",
+      "bet_segment": "odds_8_15",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [
+        {
+          "segment": "odds_8_15",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d",
+            "train_sec_14",
+            "age__pr",
+            "jk_starts"
+          ]
+        }
+      ],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.004989961503708023
+    },
+    {
+      "model_key": "partial_30_plus",
+      "bet_segment": "odds_30_plus",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [
+        {
+          "segment": "odds_30_plus",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d"
+          ]
+        }
+      ],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.008042169370355338
+    },
+    {
+      "model_key": "partial_both",
+      "bet_segment": "odds_8_15",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [
+        {
+          "segment": "odds_8_15",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d",
+            "train_sec_14",
+            "age__pr",
+            "jk_starts"
+          ]
+        },
+        {
+          "segment": "odds_30_plus",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d"
+          ]
+        }
+      ],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.00589287647808822
+    }
+  ],
+  "market_only_baseline": "p proportional to q^beta; beta fit by conditional likelihood",
+  "validation_policy_lock": "same numeric-threshold and paired-market objectives as core experiment",
+  "test_status": "exploratory reuse of historically inspected 2025-12-28 to 2026-08-09 block",
+  "train_input_audit": {
+    "split": "train",
+    "rows": 33416,
+    "races": 3158,
+    "date_min": 20230805,
+    "date_max": 20250511,
+    "features": 141,
+    "numeric_feature_nonfinite": 0,
+    "winner_count": 3158,
+    "max_market_probability_sum_error": 4.440892098500626e-16,
+    "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+    "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+  }
+}

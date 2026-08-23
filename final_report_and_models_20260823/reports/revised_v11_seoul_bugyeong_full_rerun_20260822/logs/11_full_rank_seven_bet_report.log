@@ -1,0 +1,12 @@
+RANK DATA PASS: features=141 rows=33416/11345/11695
+FULL RANK ALL BETS REPORT PASS: checks=20
+BEST VALIDATION MODEL: CatBoost YetiRank test_ndcg_at_5=0.778036
+LOCKED TEST ROI
+bet_type               model selection_policy  test_bets  test_roi  test_roi_ci_low_daily_block  test_roi_ci_high_daily_block  profit_confirmed_95pct
+      �ܽ�       Random Forest   top_10pct_edge        108 -0.030556                    -0.512794                      0.532261                   False
+      ����      XGBoost Ranker   top_10pct_edge        103  0.012621                    -0.264143                      0.295495                   False
+      ����       Random Forest    positive_edge        685 -0.176496                    -0.413171                      0.095362                   False
+      �ֽ�       Random Forest    positive_edge        688 -0.180378                    -0.514163                      0.253696                   False
+     �ﺹ��      XGBoost Ranker   top_30pct_edge        324 -0.245370                    -0.658064                      0.265373                   False
+     ��ֽ�       Random Forest    positive_edge        752 -0.665160                    -0.956633                     -0.218887                   False
+     ������ LightGBM LambdaRank   top_10pct_edge        108 -0.536111                    -0.812152                     -0.207963                   False

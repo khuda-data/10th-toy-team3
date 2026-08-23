@@ -1,0 +1,7 @@
+MODEL ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\models\revised_v11_seoul_bugyeong_full_rank_20260822
+DATA ROOT: C:\Users\user\source\repos\PythonApplication2\PythonApplication2\data\revised_v11_seoul_bugyeong_rank_clean_preprocessed
+RANK DATA PASS: features=141 rows=33416/11345/11695
+[200]	valid_0's ndcg@1: 0.425919	valid_0's ndcg@3: 0.541774	valid_0's ndcg@5: 0.623134
+VALID RANK: NDCG@5=0.764869 Spearman=0.412071 MAE=2.534204 Top3OrderedExact=0.019517 Top3UnorderedExact=0.076208
+TEST RANK: NDCG@5=0.768468 Spearman=0.420647 MAE=2.538521 Top3OrderedExact=0.017625 Top3UnorderedExact=0.068646
+FULL RANK MODEL TRAINING COMPLETE: lightgbm_rank

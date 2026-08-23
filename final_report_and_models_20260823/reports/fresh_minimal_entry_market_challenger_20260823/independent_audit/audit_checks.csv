@@ -1,0 +1,9 @@
+﻿check,passed,detail
+feature_manifest_identity,True,"features=['age_percentile', 'burden_percentile', 'burden_change', 'sex::거', 'sex::수']"
+fresh_strict_date,True,historical_max=20260809 fresh_min=20260816
+entry_only_feature_definitions,True,market/outcome X terms=0
+probability_replay,True,max_error=9.714e-17
+race_probability_sums,True,p=6.661e-16 q=6.661e-16
+bootstrap_replay,True,max_error=1.336e-16
+brier_replay,True,max_error=1.388e-17
+sample_identity,True,rows=261/261 races=27/27 winners=27

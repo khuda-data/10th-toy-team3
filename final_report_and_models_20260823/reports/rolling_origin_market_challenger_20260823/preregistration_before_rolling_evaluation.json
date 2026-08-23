@@ -1,0 +1,239 @@
+{
+  "status": "LOCKED_BEFORE_THIS_PROCESS_EVALUATED_FOLDS",
+  "created_at": "2026-08-23T04:39:50.122899+09:00",
+  "hypotheses": {
+    "H5a": "partial_30_plus rolling OOS delta LL versus market is positive",
+    "H5b": "partial_30_plus rolling OOS log-score increment versus global_29_residual is positive",
+    "H5c": "partial_8_15 place top-20 numeric-threshold policy reduces loss versus q comparator",
+    "H5d": "the same place policy has positive absolute ROI"
+  },
+  "fixed_models": [
+    "global_29_residual",
+    "partial_8_15",
+    "partial_30_plus"
+  ],
+  "fixed_plans": [
+    {
+      "model_key": "global_29_residual",
+      "bet_segment": "odds_8_15",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.006929546957937621
+    },
+    {
+      "model_key": "partial_8_15",
+      "bet_segment": "odds_8_15",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [
+        {
+          "segment": "odds_8_15",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d",
+            "train_sec_14",
+            "age__pr",
+            "jk_starts"
+          ]
+        }
+      ],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.004989961503708023
+    },
+    {
+      "model_key": "partial_30_plus",
+      "bet_segment": "odds_30_plus",
+      "global_features": [
+        "clinic_30d",
+        "tr_plcrate",
+        "hr_last_finpct",
+        "hr_rest_days",
+        "age__pr",
+        "hr_style",
+        "oh_sex_암",
+        "wgBudam_chg",
+        "ow_starts",
+        "hr_plcrate",
+        "jk_winrate",
+        "waterRate",
+        "hr_rest_days__z",
+        "jk_winrate__z",
+        "jk_plcrate",
+        "wgBudam__pr",
+        "hr_style_sd",
+        "jk_starts",
+        "ow_winrate",
+        "train_sec_14",
+        "te_owName",
+        "tr_winrate",
+        "tool_망사눈가면",
+        "hr_winrate__pr",
+        "age",
+        "hr_dist_starts",
+        "wg_diff",
+        "hr_rest_days__pr",
+        "tr_starts"
+      ],
+      "interactions": [
+        {
+          "segment": "odds_30_plus",
+          "features": [
+            "tr_plcrate",
+            "hr_rest_days",
+            "wgBudam_chg",
+            "hr_plcrate",
+            "clinic_30d"
+          ]
+        }
+      ],
+      "l2": 100.0,
+      "train_internal_tune_delta_ll": 0.008042169370355338
+    }
+  ],
+  "folds": [
+    {
+      "fold": "F1_valid_early",
+      "cal_start": 20250101,
+      "cal_end": 20250511,
+      "eval_start": 20250517,
+      "eval_end": 20250831
+    },
+    {
+      "fold": "F2_valid_late",
+      "cal_start": 20250517,
+      "cal_end": 20250831,
+      "eval_start": 20250901,
+      "eval_end": 20251227
+    },
+    {
+      "fold": "F3_test_early",
+      "cal_start": 20250901,
+      "cal_end": 20251227,
+      "eval_start": 20251228,
+      "eval_end": 20260430
+    },
+    {
+      "fold": "F4_test_late",
+      "cal_start": 20251228,
+      "cal_end": 20260430,
+      "eval_start": 20260501,
+      "eval_end": 20260809
+    }
+  ],
+  "bet_policy": "calibration-block 80th percentile numeric place EDGE threshold; no policy-family selection",
+  "multiplicity": "Holm FWER across H5a-H5d",
+  "confirmation_status": "retrospective rolling OOS; dates were inspected in earlier project rounds; not pristine confirmation",
+  "market_role": "closing q offset, odds-band gate, comparator and retrospective settlement",
+  "input_audits": {
+    "train": {
+      "split": "train",
+      "rows": 33416,
+      "races": 3158,
+      "date_min": 20230805,
+      "date_max": 20250511,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 3158,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+      "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+      "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445"
+    },
+    "valid": {
+      "split": "valid",
+      "rows": 11345,
+      "races": 1084,
+      "date_min": 20250517,
+      "date_max": 20251227,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 1084,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+      "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+      "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122"
+    },
+    "test": {
+      "split": "test",
+      "rows": 11695,
+      "races": 1101,
+      "date_min": 20251228,
+      "date_max": 20260809,
+      "features": 141,
+      "numeric_feature_nonfinite": 0,
+      "winner_count": 1101,
+      "max_market_probability_sum_error": 4.440892098500626e-16,
+      "data_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+      "metadata_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+      "data_sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+      "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9"
+    }
+  },
+  "market_sha256": "964BD9A7AB7E36247FC5A7E5FFD04F9EC02439491B1DACAEF7918EB0AAE80195",
+  "official_sha256": "1DA22B6C3CAA3C16FFD7E117FBC65F47B0927C3F00FFA857DBFCFFE7A76F5804"
+}

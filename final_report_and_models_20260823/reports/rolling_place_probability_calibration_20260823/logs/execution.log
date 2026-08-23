@@ -1,0 +1,10 @@
+2026-08-23T04:37:19.176531+09:00 | PHASE 01 START | freeze calibration equation and source folds
+2026-08-23T04:37:19.189275+09:00 | PHASE 01 PASS | protocol written before calibrator fits
+2026-08-23T04:37:19.189657+09:00 | PHASE 02 START | four rolling calibrator fits
+2026-08-23T04:37:19.203570+09:00 | PHASE 02 FIT PASS | P5_test_202512_02 a=+0.000833 gamma=+0.628823
+2026-08-23T04:37:19.213226+09:00 | PHASE 02 FIT PASS | P6_test_202603_04 a=+0.042479 gamma=+0.553014
+2026-08-23T04:37:19.222654+09:00 | PHASE 02 FIT PASS | P7_test_202605_06 a=+0.069838 gamma=+0.519157
+2026-08-23T04:37:19.232840+09:00 | PHASE 02 FIT PASS | P8_test_202607_08 a=+0.043977 gamma=+0.537454
+2026-08-23T04:37:19.245388+09:00 | PHASE 02 PASS | four parameter files saved
+2026-08-23T04:37:19.245927+09:00 | PHASE 03 START | probability scoring, hypothesis tests and Kelly
+2026-08-23T04:37:19.278599+09:00 | PHASE 03 PASS | pooled cal-vs-uncal LL=+0.005231 cal-vs-market LL=+0.001891 Kelly=-0.0081->-0.1883

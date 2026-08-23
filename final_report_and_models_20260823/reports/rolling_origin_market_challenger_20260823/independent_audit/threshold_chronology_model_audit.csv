@@ -1,0 +1,5 @@
+﻿fold,calibration_candidates,evaluation_candidates,threshold_recomputed,threshold_reported,threshold_abs_difference,selected_recomputed,selected_reported,chronology_pass,model_hash_match,status
+F1_valid_early,579,466,0.0926187773482987,0.0926187773482987,0.0,54,54,True,True,PASS
+F2_valid_late,466,491,0.0617666890857044,0.0617666890857044,0.0,136,136,True,True,PASS
+F3_test_early,491,534,0.0843938350714968,0.0843938350714968,0.0,81,81,True,True,PASS
+F4_test_late,534,427,0.0704965956463133,0.0704965956463133,0.0,95,95,True,True,PASS

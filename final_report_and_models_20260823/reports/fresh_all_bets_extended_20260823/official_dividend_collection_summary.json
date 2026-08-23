@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "purpose": "official final settlement evidence, not decision-time pricing",
+  "official_source": "Korea Racing Authority mobile race score-table pages",
+  "source_url_templates": {
+    "1": "https://m.kra.co.kr/race/seoul/scoretableAllScoreList.do?rcDate={YYYYMMDD}",
+    "3": "https://m.kra.co.kr/race/bukyeong/scoretableAllScoreList.do?rcDate={YYYYMMDD}"
+  },
+  "fresh_result_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\data\\raw_fresh_oos_extended_20260823\\result_rows.csv",
+  "fresh_result_sha256": "2B6E2016F1EAE71BCE98B89E6C8F1F0A493ED8F564253C01A7F6EA6167AF166A",
+  "date_meet_cells": 7,
+  "target_races": 64,
+  "parsed_races": 64,
+  "parsed_rows": 704,
+  "bet_type_counts": {
+    "단승": {
+      "races": 64,
+      "rows": 64
+    },
+    "연승": {
+      "races": 64,
+      "rows": 192
+    },
+    "복승": {
+      "races": 64,
+      "rows": 64
+    },
+    "쌍승": {
+      "races": 64,
+      "rows": 64
+    },
+    "복연승": {
+      "races": 64,
+      "rows": 192
+    },
+    "삼복승": {
+      "races": 64,
+      "rows": 64
+    },
+    "삼쌍승": {
+      "races": 64,
+      "rows": 64
+    }
+  },
+  "raw_html_files": 7,
+  "raw_html_sha256_recorded": true,
+  "combination_checks": 448,
+  "combination_failures": [],
+  "fee_treatment": "final KRA dividends already reflect pool takeout; no additional 20%/27% deduction",
+  "decision_time_price_surface_available": false,
+  "recommended_real_stake": 0,
+  "elapsed_seconds": 3.190269708633423
+}

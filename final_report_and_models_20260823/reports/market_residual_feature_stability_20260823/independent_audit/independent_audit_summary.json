@@ -1,0 +1,11 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks_total": 6,
+  "checks_passed": 6,
+  "checks_failed": 0,
+  "coefficient_replay": "PASS",
+  "importance_replay": "PASS",
+  "stable_rule_replay": "PASS",
+  "interpretation": "the audit validates extraction and stability arithmetic only; it does not establish causality or fresh-OOS profitability",
+  "completed_at": "2026-08-23T04:51:24.552054+09:00"
+}

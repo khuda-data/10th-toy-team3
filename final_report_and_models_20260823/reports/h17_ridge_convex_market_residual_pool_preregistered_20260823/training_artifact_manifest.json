@@ -1,0 +1,276 @@
+{
+  "status": "PASS",
+  "created_at_kst": "2026-08-23T08:37:43.448080+09:00",
+  "protocol": {
+    "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/protocol_before_training.json",
+    "bytes": 5619,
+    "sha256": "5E19A19CA41837CAFDB9ABEADC0AA5958EEAC14C8CA17F0323592F530F747A78"
+  },
+  "training_script": {
+    "path": "src/training/train_h17_ridge_convex_market_residual_pool.py",
+    "bytes": 35748,
+    "sha256": "BB140EB2CB51D28A3AD125E8F7766948771C30C3F7CEC01B8BDBC5160F91881C"
+  },
+  "safe_reader_helper": {
+    "path": "src/training/train_h14_convex_market_residual_pool.py",
+    "bytes": 44408,
+    "sha256": "AD3BBD434E7D74C03C2015D20AD4FBE40EDE4AFD45203F345DCA8A8B5EAA6353"
+  },
+  "artifacts": [
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/input_hash_and_reader_audit.json",
+      "bytes": 4118,
+      "sha256": "FFE0DE62B8197F92564E88F2EB2EB95B0130148FF20A8F153ABC145EFF052E4B"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/date_split.csv",
+      "bytes": 4428,
+      "sha256": "97E4619CAFCAF71D1DB82F06F6DE3B2B8F2328939B6D573C55CA3745A689A279"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/date_split.json",
+      "bytes": 2639,
+      "sha256": "5326EF814140AB1997DE1DF54A305BC62C4B46C8EDE294371FCFA0A500BB807F"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/finite_difference_gradient_test.json",
+      "bytes": 696,
+      "sha256": "E247F9F6613E076E942CD53CA07741F04A85E288702566086D8DE18BF6DC6419"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/lambda_grid.csv",
+      "bytes": 3145,
+      "sha256": "4870B4D2681CB50B905A1A5B34524B58C54C32511C602DC211CA08D6E4B1851C"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/next20_daily_losses.csv",
+      "bytes": 11092,
+      "sha256": "66090F04C9480F2F40E1D63D7BCA9CEF2C2A79F07937CDBFA6848C1D7E2CAC44"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/lambda_selection.json",
+      "bytes": 1060,
+      "sha256": "7BB98C7A5470DB21158014096F8F89EA57216D8EE2FA70322648F6A215713010"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/fitted_weights.csv",
+      "bytes": 2860,
+      "sha256": "CB7E9FDF50E47D29BD4C799DDAFB668E895900B142D6F156D280AC28CF30FB20"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/weight_stability.csv",
+      "bytes": 396,
+      "sha256": "631EA96D391D647F2FF5A0FD640E75C651E94E8B088454ECB014F6110BB0F79C"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/weight_stability.json",
+      "bytes": 1046,
+      "sha256": "11D3BB5029BC09F393E90A93EC8642407ECC5F9988DC93028C8A20C1499AEFB9"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_predictions.csv",
+      "bytes": 1091000,
+      "sha256": "13E39129F6BA434DF4189B3FCBE24A860EE22D83527FB5D5EB880921D770BC70"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_metrics.csv",
+      "bytes": 766,
+      "sha256": "7CF3D9BE4AB73244B8EB9AD9FA9004CACE41A1FDDC83183CAD3A476DD43BEF25"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/late28_metrics.json",
+      "bytes": 20462,
+      "sha256": "EDF8046E2F8636BB04B090D6220BAD73CAA9CF6C4E23179A6BC97444391B6034"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/all92_fitted_probabilities.csv",
+      "bytes": 1218427,
+      "sha256": "FDAD5F4F12886D37C6C7BF29169126E73E805873BFEFAE387D026AA017276048"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_fit_manifest.json",
+      "bytes": 23663,
+      "sha256": "4B6C54AC949581BB2FA0EC16A2228EE7F28B669D624BA00EC1912FED2D5C7E84"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/deployment_weights.json",
+      "bytes": 1778,
+      "sha256": "352A73CDBE92455D64C2F2F27D13A13D38145C175FAC458FF9C174B002FE9F71"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/experiment_summary.json",
+      "bytes": 25395,
+      "sha256": "C35CC9D66CA42778D6C08432905D03C62BBA9239406CAA13ED006A9E784B64BA"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/logs/execution.log",
+      "bytes": 491,
+      "sha256": "11DD04FFD26D7C9BB1898B24A406D751AFAFCAA47EE72FF7E747D36E8A1CB155"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/logs/phase_progress.jsonl",
+      "bytes": 3618,
+      "sha256": "F06A0ECB4ABA9C2B5CD8F03728FC96BB738E7B96C942F98E7357D7FA82658AFC"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/logs/fit_operations.jsonl",
+      "bytes": 18288,
+      "sha256": "2897F2E6C3471A2A71A290788C8AF72C473EEFC851BAC6BB58B8221159BE0CA1"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/01_first44_lambda_0.csv",
+      "bytes": 3520,
+      "sha256": "6654DD315699669CD2F6AB2F59F8500C8E9FAF555224F04A3436084F970EC4F1"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/02_first44_lambda_1em05.csv",
+      "bytes": 3451,
+      "sha256": "446CE0C537316E41EEE12CD3DA374E8720BA8F8EBE93CA33578B713047AA19F9"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/03_first44_lambda_3em05.csv",
+      "bytes": 3314,
+      "sha256": "3E6489CEE0C7CB350E9FBB712B76C96C6B64868A927549B942A01C0F8D4C5E3B"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/04_first44_lambda_0p0001.csv",
+      "bytes": 3111,
+      "sha256": "91E809F3880048278232FA95E2BB52D10FB8E43669E9BE29E55DBF43AF7F4D3E"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/05_first44_lambda_0p0003.csv",
+      "bytes": 3144,
+      "sha256": "209C56E4B3F5094C9F6AF50DEDCD02679FEDD1BCF59190D2C4AB48729B3BA39C"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/06_first44_lambda_0p001.csv",
+      "bytes": 4023,
+      "sha256": "FA7529DCD3AB837D4D9FB2F0D007E2A5109718F944DA3E9E95F5A131BC64E40F"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/07_first44_lambda_0p003.csv",
+      "bytes": 4009,
+      "sha256": "B9BAA15B34D2B35F5047D0B395FBB760B6BB1A8EFB2260936DF4A7EC2B390B1F"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/08_first44_lambda_0p01.csv",
+      "bytes": 2324,
+      "sha256": "0AD9CEC001FBE3654092A957C812D79121CBD93976DE257B26765E442B56DC1C"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/09_first44_lambda_0p03.csv",
+      "bytes": 2160,
+      "sha256": "C22C69675FCD905F7668BD29819D5371B5A994B9C6DCEED229B2B69D36B3743F"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/10_first44_lambda_0p1.csv",
+      "bytes": 1831,
+      "sha256": "7877F719990954D4FC32C3E5C50A41F5E33122DBD8AB9D1FE2B0F45CE85EE6CE"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/11_first44_lambda_0p3.csv",
+      "bytes": 1161,
+      "sha256": "E183BA2E9106F3E3D9D7909B91621C8AD889AF70826D20C974CCC2B1379A84C8"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/12_first44_lambda_1.csv",
+      "bytes": 827,
+      "sha256": "8638C1FD07212195EB20C34E16D5BC7BEF67615727CE3E8CBAA7E6A255A3AD34"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/13_first64_selected_lambda.csv",
+      "bytes": 821,
+      "sha256": "2BD0200B3491978092B11EB3FB6AD6F90DFD09B28F4280698625101E971FC051"
+    },
+    {
+      "path": "outputs/reports/h17_ridge_convex_market_residual_pool_preregistered_20260823/optimizer_traces/14_all92_deployment.csv",
+      "bytes": 823,
+      "sha256": "713EB16DC431CA6FEB0042801C319E7BD29C6BAF8DC7A047334D60FFA2CFCCF1"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/01_first44_lambda_0.json",
+      "bytes": 1249,
+      "sha256": "4FCFE5AAAEAA5BBE7C28567BEBBECFD31A509377D0D54DD88A0D72B64865A999"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/02_first44_lambda_1em05.json",
+      "bytes": 1237,
+      "sha256": "9AD07860672703FDF8B30A4E4634D99F01DDC54F24E176EAD8CE16747D59A889"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/03_first44_lambda_3em05.json",
+      "bytes": 1238,
+      "sha256": "35AFEEF03EE30425C307F0DCE1D245F2D7E9D645B168B85F78402F7B44830829"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/04_first44_lambda_0p0001.json",
+      "bytes": 1241,
+      "sha256": "88B674C34BBAB726AC1FB34746FB767E40AA1EE71EC67A48D6E8CC399A167FF3"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/05_first44_lambda_0p0003.json",
+      "bytes": 1258,
+      "sha256": "7D7C32E1EE4B00D3B47CC6CDD48AA0986AE6A5A5587B4AB9162ADA69892F5994"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/06_first44_lambda_0p001.json",
+      "bytes": 1236,
+      "sha256": "D11DD8B5EDB3128163ECD1BDE6736623A00471B20CB4004A521A0A6CD8206852"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/07_first44_lambda_0p003.json",
+      "bytes": 1256,
+      "sha256": "6DE815F20C4D635DFC6502391FD3651965421FE6184CB795ADFAD96AEA5045EC"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/08_first44_lambda_0p01.json",
+      "bytes": 1252,
+      "sha256": "C77F5178A756C1689A1570BF86CCD25434CA5E0B9148D671A7E740452B121C25"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/09_first44_lambda_0p03.json",
+      "bytes": 1254,
+      "sha256": "45546F875BA6F815C639DB6D7A4DB134C192A3D561B7500E0FC1BCB239374CAE"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/10_first44_lambda_0p1.json",
+      "bytes": 1254,
+      "sha256": "D24A41BDC69E3A07AD897F2F3D5C18E597D9E0A31F86873699C47E02334B6928"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/11_first44_lambda_0p3.json",
+      "bytes": 1253,
+      "sha256": "0DB1F52DCF01618095FBC2C2CD4CCB4139FFED90A8DFD821C55EBADF7BB9070E"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/12_first44_lambda_1.json",
+      "bytes": 1257,
+      "sha256": "04F5EAC2EC6531655951F0FC2A4963F683A9BBF69617C0180FE1BB30C98F1212"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/13_first64_selected_lambda.json",
+      "bytes": 1259,
+      "sha256": "C079F3F30B87A41F3EE0ACAC28BD1A95DB71BFC9522B5DD00441AF5230C3CA03"
+    },
+    {
+      "path": "models/h17_ridge_convex_market_residual_pool_preregistered_20260823/14_all92_deployment.json",
+      "bytes": 1578,
+      "sha256": "F07F78C257B7D931FDF173F1289EE3AF60109B39883AAC013994C18507888A4E"
+    }
+  ],
+  "historical_source": {
+    "path": "outputs/reports/h11b_six_feature_multimodel_preregistered_20260823/historical_runner_probabilities.csv",
+    "bytes": 14056057,
+    "sha256_authenticated_not_recomputed": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC",
+    "full_hash_recomputed_by_h17": false
+  },
+  "actual_optimizer_fit_calls": 14,
+  "forbidden_access": {
+    "split_test_bytes_read": 0,
+    "split_test_rows_read_or_parsed": 0,
+    "target_20260823_sources_read": 0,
+    "outcome_result_dividend_settlement_sources_read": 0,
+    "roi_ticket_kelly_sources_read": 0
+  },
+  "live_stake": 0
+}

@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED_BY_BROWSER_SECURITY_POLICY",
+  "attempted_target": "http://127.0.0.1:8765/index.html",
+  "visual_qa_completed": false,
+  "reason": "The in-app browser denied localhost access under its security policy.",
+  "fallback_completed": {
+    "static_html_validation": true,
+    "utf8_decode": true,
+    "structure_and_anchor_validation": true,
+    "local_link_existence_validation": true,
+    "evidence_sha256_validation": true
+  },
+  "claim": "No browser-rendering PASS is asserted. See html_validation.json for completed non-visual checks."
+}

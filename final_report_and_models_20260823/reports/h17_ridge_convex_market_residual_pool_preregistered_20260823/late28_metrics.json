@@ -1,0 +1,626 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "selection_lock_sha256": "7BB98C7A5470DB21158014096F8F89EA57216D8EE2FA70322648F6A215713010",
+  "selected_lambda": 1.0,
+  "evaluation_scope": {
+    "split": "VALID",
+    "rows": 3707,
+    "races": 340,
+    "dates": 28,
+    "date_min": 20251025,
+    "date_max": 20251227,
+    "independence": "NOT_INDEPENDENT_REUSED_VALID_DESCRIPTIVE_ONLY",
+    "used_for_lambda_selection": false
+  },
+  "first64_weights": {
+    "m6": 0.004365606112027179,
+    "xgboost": 0.004483482486077661,
+    "lightgbm": 0.0052707884868256,
+    "deep_mlp_3seed": 0.0051076149901901485
+  },
+  "first64_weight_sum": 0.01922749207512059,
+  "first64_market_exponent": 0.9807725079248795,
+  "baseline_provenance": {
+    "h13": {
+      "freeze": {
+        "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/freeze_complete.json",
+        "bytes": 1152,
+        "sha256": "A1A5081069CF05C0F03575CCB4DBE6DDDB01E87E7BB6F9D4BD300177A6F56597"
+      },
+      "manifest": {
+        "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/training_artifact_manifest.json",
+        "bytes": 4645,
+        "sha256": "3963040689E2EF9F2B3A140267FA2D091D0CE2C4F38E278082C6542A91F25AC1"
+      },
+      "metrics": {
+        "path": "outputs/reports/h13_market_anchor_nonnegative_log_pool_preregistered_20260823/late28_metrics.json",
+        "bytes": 11851,
+        "sha256": "1A6BC1FEDCD8C1BE96D22EF48BA9C7E3386CFEE628B905D87BE1D6487A49397D"
+      },
+      "weights": {
+        "m6": 0.0,
+        "xgboost": 0.2382010590358566,
+        "lightgbm": 0.5847045966394091,
+        "deep_mlp_3seed": 0.32243868987348556
+      }
+    },
+    "h14": {
+      "freeze": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/freeze_complete.json",
+        "bytes": 1205,
+        "sha256": "E58522AEA78E1426A17D8C82F9C25D3E38EB007984B1557ED902AAD7C9190F5B"
+      },
+      "manifest": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/training_artifact_manifest.json",
+        "bytes": 6603,
+        "sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21"
+      },
+      "metrics": {
+        "path": "outputs/reports/h14_convex_market_residual_pool_preregistered_20260823/late28_metrics.json",
+        "bytes": 14674,
+        "sha256": "ED8CD3164B90E197CF488C52A1D333FF1FC0B73FB3B3CE437DAE82C02FDADDD7"
+      },
+      "weights": {
+        "m6": 2.3946258647807302e-17,
+        "xgboost": 0.16298867342303547,
+        "lightgbm": 0.5436062631734508,
+        "deep_mlp_3seed": 0.2934050634035138
+      }
+    }
+  },
+  "metrics_by_model": {
+    "h17_ridge_convex_pool": {
+      "winner_conditional_nll": 1.742079859991458,
+      "runner_brier": 0.06818916397607483,
+      "ece10_equal_width": 0.004536784312357793,
+      "ece_bins": [
+        {
+          "bin": 1,
+          "lower": 0.0,
+          "upper": 0.1,
+          "rows": 2658,
+          "mean_probability": 0.03460547813591604,
+          "observed_rate": 0.03348382242287434,
+          "weighted_absolute_gap": 0.0008042516550485092
+        },
+        {
+          "bin": 2,
+          "lower": 0.1,
+          "upper": 0.2,
+          "rows": 550,
+          "mean_probability": 0.14206367662710837,
+          "observed_rate": 0.14181818181818182,
+          "weighted_absolute_gap": 3.6423562155274425e-05
+        },
+        {
+          "bin": 3,
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "rows": 234,
+          "mean_probability": 0.24413283987241763,
+          "observed_rate": 0.23504273504273504,
+          "weighted_absolute_gap": 0.0005738021392354263
+        },
+        {
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "rows": 137,
+          "mean_probability": 0.3477612611264721,
+          "observed_rate": 0.36496350364963503,
+          "weighted_absolute_gap": 0.0006357451377591913
+        },
+        {
+          "bin": 5,
+          "lower": 0.4,
+          "upper": 0.5,
+          "rows": 71,
+          "mean_probability": 0.4530346783469721,
+          "observed_rate": 0.4084507042253521,
+          "weighted_absolute_gap": 0.0008539147997396863
+        },
+        {
+          "bin": 6,
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "rows": 36,
+          "mean_probability": 0.5403899846140808,
+          "observed_rate": 0.6666666666666666,
+          "weighted_absolute_gap": 0.0012263179265964632
+        },
+        {
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "rows": 18,
+          "mean_probability": 0.6290534420786117,
+          "observed_rate": 0.6666666666666666,
+          "weighted_absolute_gap": 0.00018263772392365497
+        },
+        {
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "rows": 3,
+          "mean_probability": 0.7235920330654103,
+          "observed_rate": 1.0,
+          "weighted_absolute_gap": 0.000223691367899587
+        },
+        {
+          "bin": 9,
+          "lower": 0.8,
+          "upper": 0.9,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        },
+        {
+          "bin": 10,
+          "lower": 0.9,
+          "upper": 1.0,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        }
+      ],
+      "race_top1_hit_rate": 0.40294117647058825,
+      "maximum_race_probability_sum_error": 4.440892098500626e-16
+    },
+    "market_q": {
+      "winner_conditional_nll": 1.7421635187422393,
+      "runner_brier": 0.06819370956498481,
+      "ece10_equal_width": 0.00487404031675163,
+      "ece_bins": [
+        {
+          "bin": 1,
+          "lower": 0.0,
+          "upper": 0.1,
+          "rows": 2657,
+          "mean_probability": 0.03460028154568725,
+          "observed_rate": 0.033496424538953705,
+          "weighted_absolute_gap": 0.0007911918173431417
+        },
+        {
+          "bin": 2,
+          "lower": 0.1,
+          "upper": 0.2,
+          "rows": 551,
+          "mean_probability": 0.14198124112366903,
+          "observed_rate": 0.14156079854809436,
+          "weighted_absolute_gap": 6.249362264408958e-05
+        },
+        {
+          "bin": 3,
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "rows": 234,
+          "mean_probability": 0.24408587668184614,
+          "observed_rate": 0.23504273504273504,
+          "weighted_absolute_gap": 0.0005708376432565411
+        },
+        {
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "rows": 138,
+          "mean_probability": 0.34804459222407,
+          "observed_rate": 0.3695652173913043,
+          "weighted_absolute_gap": 0.0008011454742590594
+        },
+        {
+          "bin": 5,
+          "lower": 0.4,
+          "upper": 0.5,
+          "rows": 70,
+          "mean_probability": 0.4536189522502058,
+          "observed_rate": 0.4,
+          "weighted_absolute_gap": 0.0010124970751320221
+        },
+        {
+          "bin": 6,
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "rows": 36,
+          "mean_probability": 0.5402405752297882,
+          "observed_rate": 0.6666666666666666,
+          "weighted_absolute_gap": 0.0012277688944503976
+        },
+        {
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "rows": 18,
+          "mean_probability": 0.6287247278372284,
+          "observed_rate": 0.6666666666666666,
+          "weighted_absolute_gap": 0.000184233854580493
+        },
+        {
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "rows": 3,
+          "mean_probability": 0.7233689122122078,
+          "observed_rate": 1.0,
+          "weighted_absolute_gap": 0.00022387193508588524
+        },
+        {
+          "bin": 9,
+          "lower": 0.8,
+          "upper": 0.9,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        },
+        {
+          "bin": 10,
+          "lower": 0.9,
+          "upper": 1.0,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        }
+      ],
+      "race_top1_hit_rate": 0.40294117647058825,
+      "maximum_race_probability_sum_error": 9.992007221626409e-16
+    },
+    "h11b_equal_arithmetic_ensemble": {
+      "winner_conditional_nll": 1.7398851564111897,
+      "runner_brier": 0.06801201453919135,
+      "ece10_equal_width": 0.008496534875780379,
+      "ece_bins": [
+        {
+          "bin": 1,
+          "lower": 0.0,
+          "upper": 0.1,
+          "rows": 2651,
+          "mean_probability": 0.03343480738897508,
+          "observed_rate": 0.031308940022632965,
+          "weighted_absolute_gap": 0.0015202790364642412
+        },
+        {
+          "bin": 2,
+          "lower": 0.1,
+          "upper": 0.2,
+          "rows": 548,
+          "mean_probability": 0.14071636330284076,
+          "observed_rate": 0.1551094890510949,
+          "weighted_absolute_gap": 0.0021277132209450403
+        },
+        {
+          "bin": 3,
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "rows": 240,
+          "mean_probability": 0.2444107051977222,
+          "observed_rate": 0.22083333333333333,
+          "weighted_absolute_gap": 0.0015264551517273621
+        },
+        {
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "rows": 130,
+          "mean_probability": 0.3472754038919421,
+          "observed_rate": 0.3153846153846154,
+          "weighted_absolute_gap": 0.0011183713261269156
+        },
+        {
+          "bin": 5,
+          "lower": 0.4,
+          "upper": 0.5,
+          "rows": 72,
+          "mean_probability": 0.44809741719274115,
+          "observed_rate": 0.5138888888888888,
+          "weighted_absolute_gap": 0.0012778489242305459
+        },
+        {
+          "bin": 6,
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "rows": 46,
+          "mean_probability": 0.5427421134926352,
+          "observed_rate": 0.5869565217391305,
+          "weighted_absolute_gap": 0.0005486546477849424
+        },
+        {
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "rows": 16,
+          "mean_probability": 0.6442675781675122,
+          "observed_rate": 0.625,
+          "weighted_absolute_gap": 8.316192357167405e-05
+        },
+        {
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "rows": 4,
+          "mean_probability": 0.727488564811441,
+          "observed_rate": 1.0,
+          "weighted_absolute_gap": 0.00029405064492965636
+        },
+        {
+          "bin": 9,
+          "lower": 0.8,
+          "upper": 0.9,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        },
+        {
+          "bin": 10,
+          "lower": 0.9,
+          "upper": 1.0,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        }
+      ],
+      "race_top1_hit_rate": 0.40588235294117647,
+      "maximum_race_probability_sum_error": 2.220446049250313e-16
+    },
+    "h13_frozen_first64_log_pool": {
+      "winner_conditional_nll": 1.7401572463735928,
+      "runner_brier": 0.06798442897414245,
+      "ece10_equal_width": 0.008094960217603033,
+      "ece_bins": [
+        {
+          "bin": 1,
+          "lower": 0.0,
+          "upper": 0.1,
+          "rows": 2651,
+          "mean_probability": 0.03349527615508139,
+          "observed_rate": 0.03093172387778197,
+          "weighted_absolute_gap": 0.0018332821923713952
+        },
+        {
+          "bin": 2,
+          "lower": 0.1,
+          "upper": 0.2,
+          "rows": 550,
+          "mean_probability": 0.14096495773605613,
+          "observed_rate": 0.15272727272727274,
+          "weighted_absolute_gap": 0.0017451505921686355
+        },
+        {
+          "bin": 3,
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "rows": 237,
+          "mean_probability": 0.2443844831255117,
+          "observed_rate": 0.21940928270042195,
+          "weighted_absolute_gap": 0.0015967419748438817
+        },
+        {
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "rows": 130,
+          "mean_probability": 0.34612233676518683,
+          "observed_rate": 0.33076923076923076,
+          "weighted_absolute_gap": 0.0005384148312582383
+        },
+        {
+          "bin": 5,
+          "lower": 0.4,
+          "upper": 0.5,
+          "rows": 74,
+          "mean_probability": 0.4465454705901216,
+          "observed_rate": 0.5135135135135135,
+          "weighted_absolute_gap": 0.0013368317173809005
+        },
+        {
+          "bin": 6,
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "rows": 45,
+          "mean_probability": 0.5442167460062733,
+          "observed_rate": 0.6,
+          "weighted_absolute_gap": 0.0006771638601882111
+        },
+        {
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "rows": 16,
+          "mean_probability": 0.643312837249118,
+          "observed_rate": 0.625,
+          "weighted_absolute_gap": 7.904111032799798e-05
+        },
+        {
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "rows": 4,
+          "mean_probability": 0.7327865219726477,
+          "observed_rate": 1.0,
+          "weighted_absolute_gap": 0.00028833393906377373
+        },
+        {
+          "bin": 9,
+          "lower": 0.8,
+          "upper": 0.9,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        },
+        {
+          "bin": 10,
+          "lower": 0.9,
+          "upper": 1.0,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        }
+      ],
+      "race_top1_hit_rate": 0.4088235294117647,
+      "maximum_race_probability_sum_error": 4.440892098500626e-16
+    },
+    "h14_frozen_first64_convex_pool": {
+      "winner_conditional_nll": 1.7399005116695068,
+      "runner_brier": 0.06799213305927736,
+      "ece10_equal_width": 0.00811829407188023,
+      "ece_bins": [
+        {
+          "bin": 1,
+          "lower": 0.0,
+          "upper": 0.1,
+          "rows": 2650,
+          "mean_probability": 0.033593504897045344,
+          "observed_rate": 0.030943396226415093,
+          "weighted_absolute_gap": 0.0018944666784920868
+        },
+        {
+          "bin": 2,
+          "lower": 0.1,
+          "upper": 0.2,
+          "rows": 553,
+          "mean_probability": 0.1410807148715044,
+          "observed_rate": 0.15370705244122965,
+          "weighted_absolute_gap": 0.0018835620922735541
+        },
+        {
+          "bin": 3,
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "rows": 234,
+          "mean_probability": 0.2442641252027084,
+          "observed_rate": 0.21794871794871795,
+          "weighted_absolute_gap": 0.0016611290254744445
+        },
+        {
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "rows": 132,
+          "mean_probability": 0.34549754953351486,
+          "observed_rate": 0.3333333333333333,
+          "weighted_absolute_gap": 0.0004331471643981559
+        },
+        {
+          "bin": 5,
+          "lower": 0.4,
+          "upper": 0.5,
+          "rows": 74,
+          "mean_probability": 0.4470148240358889,
+          "observed_rate": 0.5,
+          "weighted_absolute_gap": 0.00105770246057303
+        },
+        {
+          "bin": 6,
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "rows": 44,
+          "mean_probability": 0.5439525799567595,
+          "observed_rate": 0.6136363636363636,
+          "weighted_absolute_gap": 0.0008271072246837289
+        },
+        {
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "rows": 16,
+          "mean_probability": 0.6413117655751327,
+          "observed_rate": 0.625,
+          "weighted_absolute_gap": 7.040416757543111e-05
+        },
+        {
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "rows": 4,
+          "mean_probability": 0.7305240292687174,
+          "observed_rate": 1.0,
+          "weighted_absolute_gap": 0.00029077525840980045
+        },
+        {
+          "bin": 9,
+          "lower": 0.8,
+          "upper": 0.9,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        },
+        {
+          "bin": 10,
+          "lower": 0.9,
+          "upper": 1.0,
+          "rows": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "weighted_absolute_gap": 0.0
+        }
+      ],
+      "race_top1_hit_rate": 0.4088235294117647,
+      "maximum_race_probability_sum_error": 4.440892098500626e-16
+    }
+  },
+  "paired_comparisons": {
+    "h17_vs_market_q": {
+      "comparison": "h17_vs_market_q",
+      "delta_log_likelihood_per_race": 8.365875078149712e-05,
+      "daily_block_bootstrap_ci95_low": -2.952466264242697e-05,
+      "daily_block_bootstrap_ci95_high": 0.0002075055256265518,
+      "paired_day_sign_flip_p_one_sided": 0.09429057094290572,
+      "alternative": "candidate paired mean daily contribution > baseline",
+      "daily_blocks": 28,
+      "races": 340,
+      "bootstrap_replicates": 10000,
+      "sign_flip_replicates": 10000,
+      "random_seed": 20260993
+    },
+    "h17_vs_h11b_equal_arithmetic_ensemble": {
+      "comparison": "h17_vs_equal",
+      "delta_log_likelihood_per_race": -0.0021947035802676457,
+      "daily_block_bootstrap_ci95_low": -0.00839459330677876,
+      "daily_block_bootstrap_ci95_high": 0.0035631768784971716,
+      "paired_day_sign_flip_p_one_sided": 0.7555244475552445,
+      "alternative": "candidate paired mean daily contribution > baseline",
+      "daily_blocks": 28,
+      "races": 340,
+      "bootstrap_replicates": 10000,
+      "sign_flip_replicates": 10000,
+      "random_seed": 20260994
+    },
+    "h17_vs_h13_first64": {
+      "comparison": "h17_vs_h13",
+      "delta_log_likelihood_per_race": -0.0019226136178649201,
+      "daily_block_bootstrap_ci95_low": -0.008683158362473978,
+      "daily_block_bootstrap_ci95_high": 0.004680206133200255,
+      "paired_day_sign_flip_p_one_sided": 0.7056294370562943,
+      "alternative": "candidate paired mean daily contribution > baseline",
+      "daily_blocks": 28,
+      "races": 340,
+      "bootstrap_replicates": 10000,
+      "sign_flip_replicates": 10000,
+      "random_seed": 20260995
+    },
+    "h17_vs_h14_first64": {
+      "comparison": "h17_vs_h14",
+      "delta_log_likelihood_per_race": -0.002179348321950828,
+      "daily_block_bootstrap_ci95_low": -0.008216199730343801,
+      "daily_block_bootstrap_ci95_high": 0.003561821055614862,
+      "paired_day_sign_flip_p_one_sided": 0.7527247275272473,
+      "alternative": "candidate paired mean daily contribution > baseline",
+      "daily_blocks": 28,
+      "races": 340,
+      "bootstrap_replicates": 10000,
+      "sign_flip_replicates": 10000,
+      "random_seed": 20260996
+    }
+  },
+  "roi_ticket_kelly_computed": false,
+  "market_advantage_claim": "NONE_FROM_REUSED_VALID",
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

@@ -1,0 +1,234 @@
+{
+  "status": "BUILT_FROM_FROZEN_OUTCOME_UNTOUCHED_EVIDENCE",
+  "created_at_kst": "2026-08-23T07:14:10.726122+09:00",
+  "report": {
+    "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_freeze_report_20260823\\index.html",
+    "bytes": 97351,
+    "sha256": "80D05399EC5E47FC68BF574C37EBC8A62E16BF07AAC54D4718CEF8C68105EF71"
+  },
+  "source_count": 43,
+  "sources": [
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\custom_gradient_finite_difference_test.json",
+      "bytes": 343,
+      "sha256": "D862122837B8F849D55F6536513473E8BA2846185F70237396FFA12D4C1258D5"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\experiment_summary.json",
+      "bytes": 8678,
+      "sha256": "25B5D46725763BA394C1EEADEB7F9A20DBDFEBCAA1669250AF5FAC064FD9C3C4"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\freeze_complete.json",
+      "bytes": 10319,
+      "sha256": "2CF80EC952DD7FEA512337549943CC0B030B7B8818E63646A97A6B34E2D7CD16"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_feature_replay_audit.csv",
+      "bytes": 1287,
+      "sha256": "FAE2F0D0C116A712906279BA0450F269B0B09AFD83EA0E2EA5FB58525A61C474"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_probability_metrics.csv",
+      "bytes": 2189,
+      "sha256": "A572164647F24D47EC1097C098266299C86D270AA8B7600E0B9978993046DC55"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_runner_probabilities.csv",
+      "bytes": 14056057,
+      "sha256": "3634D5685E8DF11D109664CECD9A6E5F69A10D448D42EF2EB560EE1F390315FC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\historical_six_feature_matrix.csv",
+      "bytes": 10322888,
+      "sha256": "E1380F396CCACC4A2EFC3CB0F413D5DFDFC44CD81CB5D2AFFAB7ADA6BFE81F00"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_prediction_reproduction.csv",
+      "bytes": 831,
+      "sha256": "731935C4454D86BD9E89527F1ADE64519DFE9F77E105E21E7EBE0FF214604F2C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_validation.json",
+      "bytes": 11507,
+      "sha256": "021A9119CEB39E2BBE73F5F0FA50DB48D2A8D022353DE5CA5A7B54F91C78D084"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_validation_checks.csv",
+      "bytes": 4761,
+      "sha256": "FE468F85D711A48FCE3BAD0E0E36B0FD41E08440D5E93E2D89C1E687366DD9D0"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\independent_validation_incident_20260823.json",
+      "bytes": 2072,
+      "sha256": "66EA267A21EC8BA66A3D3902BAFF44A33E89336ACA48DAC58F97775BB02A9139"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\logs\\execution.log",
+      "bytes": 3173,
+      "sha256": "3FF805C7457ABE4508E60C396B5890D62FC5F3771EC2EC831833E843CA26F076"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\logs\\fit_operations.jsonl",
+      "bytes": 2387,
+      "sha256": "8201A161A22025DA10BDF4F79EB3D127CCE443003050DB8073F1AD1F20CD3540"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\logs\\phase_progress.jsonl",
+      "bytes": 4342,
+      "sha256": "A72B168002B2335FB93D9274A5DDBD3EE0B609D023B928A64FEAAAC6352DFAE1"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\member_training_status.csv",
+      "bytes": 216,
+      "sha256": "826B4C59D8D31E53484B3D122118432BD08E3864EB2C9BA31B3725BABF4FED84"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\model_reload_prediction_audit.csv",
+      "bytes": 464,
+      "sha256": "9E23C39D87CEBA0E335629DEE96312CD2F11CFE5454BB1AF9A499EA85A949C5D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\preprocessing_and_provenance_audit.json",
+      "bytes": 1550,
+      "sha256": "C81A0877AF216EF83A95FA19B14724F2632348D5455F351B89425A3622AAA386"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\protocol_before_fit.json",
+      "bytes": 5039,
+      "sha256": "39B235D33C203F00406DF612EAA3FF146B6D1850101EA7D5AC71F9C75EEE551B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\today_card_feature_coverage_audit.json",
+      "bytes": 832,
+      "sha256": "F9B3DC6C5832E677650C075130BFC241288CBAAEC1CB5E83CA53A890C34B878D"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\today_card_transformed_features.csv",
+      "bytes": 36656,
+      "sha256": "6AA35C9D96FD40ACE84C27125BE23D6EDAD618DB983DCC829758CF1CE0C08F17"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\training_manifest.json",
+      "bytes": 998,
+      "sha256": "A48A57A6716C2B4D0B257CB52B3EAE641016C7ED1EC7BCBAD715CFB0CCF1684E"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h11b_six_feature_multimodel_preregistered_20260823\\winner_logscore_contributions.csv",
+      "bytes": 1313196,
+      "sha256": "676A67003E1017BA9C50935E27D16826675D988E96EFA82B4F055F5F45DDC080"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_deep_scaler.joblib",
+      "bytes": 727,
+      "sha256": "B6A39E6F25C8CD1552B4146D4985B8B87E13153B1BA2BABEED25EF1BF190F0A1"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_deep_seed_20260823.pt",
+      "bytes": 10427,
+      "sha256": "28A8EEDE571C802AF5D69BD383C8F2F6BFE16EFAF6658EFDD822026FF0F3A750"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_deep_seed_20260824.pt",
+      "bytes": 10427,
+      "sha256": "69C5D92172EBC66E3E9CC3EB271D6F732F27767CD8B9E1C4A392DB8020D79E0F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_deep_seed_20260825.pt",
+      "bytes": 10427,
+      "sha256": "FADF89A5805CF328F15754AD7AB446649BB6B80025397489F00437A5EEEED6DB"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_lightgbm.txt",
+      "bytes": 195467,
+      "sha256": "97EE39F2B58417C7CCB8AD94157911B926BD15FE7C6445AFF3D0BE9EAA74C1BC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\final_xgboost.json",
+      "bytes": 141144,
+      "sha256": "69DE6257625D74C1E39A93B199A2E93E7939EB65D68E9D0136745FDFEB85FE6C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\preprocessing_bundle.joblib",
+      "bytes": 15545,
+      "sha256": "02EFAFBE1189EDA7B7CF94536F51660A7DB1BF5EF02CB6E96056F9EA40647339"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_deep_scaler.joblib",
+      "bytes": 727,
+      "sha256": "88FF87922E77144AE49752E9C77002305609E7E9573B34FFD7860FDADBC90A99"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_deep_seed_20260823.pt",
+      "bytes": 10413,
+      "sha256": "626536B6C2C4B4258F3E2D4C61D2B94793F4109CE8C85CB9152C8C90F9C506B9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_deep_seed_20260824.pt",
+      "bytes": 10413,
+      "sha256": "F8CDEF78739EC85E083E4BE5926BE2BCC7EEBAF0AE54B416611D990C838339A6"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_deep_seed_20260825.pt",
+      "bytes": 10413,
+      "sha256": "50EE4AAFA3B85B410F445CAE1B40E315132107DC6FEE30930C782C2B0D0C9CBC"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_lightgbm.txt",
+      "bytes": 195171,
+      "sha256": "46CD529F016F4AAED0EE1BD75D0660E2FD6FB373E3AF3CD5B8A95FB6947B0B14"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\test_xgboost.json",
+      "bytes": 130743,
+      "sha256": "8BB0907CC5710C71E037A249AA89D28DA29BB22A31D11D28AAA9FDFB94B9E5A2"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_deep_scaler.joblib",
+      "bytes": 727,
+      "sha256": "01AE74FD074EE92D2D155513E2931FB3EE8E81EDE5666C4FE0A4CAFD1A67ADC9"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_deep_seed_20260823.pt",
+      "bytes": 10497,
+      "sha256": "D83874C09E471D6120458E533E5FF1679DD812E4ADC72F411EE1B64F89261773"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_deep_seed_20260824.pt",
+      "bytes": 10497,
+      "sha256": "EDA71BD84AA2577F39650C57AB12101D40B96788714C93B98A556EE9D42C763F"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_deep_seed_20260825.pt",
+      "bytes": 10497,
+      "sha256": "1CCAE8C030F58F2675A6574FCBB96D994A78208F62327B71E9E58EDF52344DE4"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_lightgbm.txt",
+      "bytes": 195158,
+      "sha256": "F1E322A6FD98BB4E1684FF44A37DBF2CE11FE765706643FCE6002D22EA262E8C"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\models\\h11b_six_feature_multimodel_preregistered_20260823\\validation_xgboost.json",
+      "bytes": 599554,
+      "sha256": "0D51420B2A9686C3AD7B1B744EE356ABC917CB31C75DE219D6DBE98CF9428EB2"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\build_h11b_six_feature_multimodel_freeze_report.py",
+      "bytes": 30297,
+      "sha256": "0D5CBB120D70055D779D4305A36C94C166DC8FE54F58182A6253D7EA75716B1B"
+    },
+    {
+      "path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\src\\reporting\\validate_h11b_six_feature_multimodel_freeze_report.py",
+      "bytes": 23578,
+      "sha256": "970CFF166E8DBE275ED1030C36DBDFDF4993E0D51162110970D97B8960FE8D8F"
+    }
+  ],
+  "forbidden_target_sources_read": [],
+  "target_scores_generated": false,
+  "target_performance_claims": 0,
+  "h11_v1_role": "PRIMARY_IMMUTABLE",
+  "h11b_role": "SECONDARY",
+  "deployment_status": "NO_GO",
+  "recommended_real_stake": 0
+}

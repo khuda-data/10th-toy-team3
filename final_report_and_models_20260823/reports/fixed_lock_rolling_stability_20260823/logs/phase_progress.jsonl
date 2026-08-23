@@ -1,0 +1,10 @@
+{"timestamp": "2026-08-23T04:32:05.032517+09:00", "phase": "01_fixed_protocol", "status": "PASS", "elapsed_seconds": 9.737778425216675, "folds": 8, "threshold": 0.07096038438021385}
+{"timestamp": "2026-08-23T04:32:07.200647+09:00", "phase": "02_P1_valid_202505_06", "status": "PASS", "elapsed_seconds": 2.1660659313201904, "races": 232, "bets": 35}
+{"timestamp": "2026-08-23T04:32:09.776225+09:00", "phase": "02_P2_valid_202507_08", "status": "PASS", "elapsed_seconds": 2.573694944381714, "races": 292, "bets": 50}
+{"timestamp": "2026-08-23T04:32:12.475137+09:00", "phase": "02_P3_valid_202509_10", "status": "PASS", "elapsed_seconds": 2.6973984241485596, "races": 256, "bets": 59}
+{"timestamp": "2026-08-23T04:32:15.655867+09:00", "phase": "02_P4_valid_202511_12", "status": "PASS", "elapsed_seconds": 3.1788876056671143, "races": 304, "bets": 51}
+{"timestamp": "2026-08-23T04:32:18.854740+09:00", "phase": "02_P5_test_202512_02", "status": "PASS", "elapsed_seconds": 3.1973114013671875, "races": 295, "bets": 52}
+{"timestamp": "2026-08-23T04:32:22.243030+09:00", "phase": "02_P6_test_202603_04", "status": "PASS", "elapsed_seconds": 3.3865654468536377, "races": 313, "bets": 55}
+{"timestamp": "2026-08-23T04:32:25.309788+09:00", "phase": "02_P7_test_202605_06", "status": "PASS", "elapsed_seconds": 3.065025568008423, "races": 310, "bets": 54}
+{"timestamp": "2026-08-23T04:32:27.371737+09:00", "phase": "02_P8_test_202607_08", "status": "PASS", "elapsed_seconds": 2.060410976409912, "races": 183, "bets": 39}
+{"timestamp": "2026-08-23T04:32:27.669775+09:00", "phase": "03_test_pool", "status": "PASS", "elapsed_seconds": 0.29650139808654785, "races": 1101, "bets": 200}

@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-08-23T06:32:11.246104+09:00",
+  "protocol_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\posthoc_protocol_before_metrics.json",
+  "protocol_sha256": "3192FA7E4BABCED6E8634853F658588F29242FEF1BD781B558EDB1EB736C3DA8",
+  "compatible_probability_path": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\h10a_m6_fresh64_all_bets_input.csv",
+  "compatible_probability_sha256": "01A577C2622075C77F8383BF3A943D9C7B01D158FDE8639F73DB147414C4A799",
+  "source_hashes_before": {
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\fresh64_runner_probabilities.csv": "42B68D726CA65D2742524E36F117B221AB264885F4107EC3C064181608DF43ED",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\fresh_runner_probabilities.csv": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\experiment_summary.json": "FAD2AD5247E19964819FEAC07C9244E8ED69A7B459F96929C8CB96DC760AACA3",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\independent_audit\\independent_audit_summary.json": "EF5325DB2511EBFBCC5CA9715EE57D404C9A94727102E6EF6B1F7013BE12B785",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_final_dividends.csv": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_source_manifest.csv": "711FA429D17C7AC59DA1DDD435E29DBAA4A531E021DA41B83DF8A27DC3C39989",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_source_manifest.json": "C0914C2192E4B894FBF4C197E0B41208075095CCAECF4A276C23AC5B450C5C7D",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_combination_validation.csv": "8368857CB372FD0C14F6A340E44C1116A9507EB3FF3ED825885A5DEDFBF7E11F",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_dividend_collection_summary.json": "20B1B581FE9B5F80AE084F89E0B5982AE59E6D77BF9D8547B5A08B9B2DA54B71"
+  },
+  "source_hashes_after": {
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\fresh64_runner_probabilities.csv": "42B68D726CA65D2742524E36F117B221AB264885F4107EC3C064181608DF43ED",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_minimal_entry_market_challenger_extended_20260823\\fresh_runner_probabilities.csv": "0814E425CDFF8F42980C93C29B1D7AEF7CE0BD1BB4AEF5F554A828BBE1721132",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\experiment_summary.json": "FAD2AD5247E19964819FEAC07C9244E8ED69A7B459F96929C8CB96DC760AACA3",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_anchor_20260823\\independent_audit\\independent_audit_summary.json": "EF5325DB2511EBFBCC5CA9715EE57D404C9A94727102E6EF6B1F7013BE12B785",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_final_dividends.csv": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_source_manifest.csv": "711FA429D17C7AC59DA1DDD435E29DBAA4A531E021DA41B83DF8A27DC3C39989",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_source_manifest.json": "C0914C2192E4B894FBF4C197E0B41208075095CCAECF4A276C23AC5B450C5C7D",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_combination_validation.csv": "8368857CB372FD0C14F6A340E44C1116A9507EB3FF3ED825885A5DEDFBF7E11F",
+    "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_dividend_collection_summary.json": "20B1B581FE9B5F80AE084F89E0B5982AE59E6D77BF9D8547B5A08B9B2DA54B71"
+  },
+  "source_files_unchanged": true,
+  "official_copy_checks": [
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_final_dividends.csv",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\official_final_dividends.csv",
+      "source_sha256": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E",
+      "target_sha256": "4D02D659A0B1A96EA23F1A609A1215804E4199B4F04C33D5C7C074136D02EC2E",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_combination_validation.csv",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\official_combination_validation.csv",
+      "source_sha256": "8368857CB372FD0C14F6A340E44C1116A9507EB3FF3ED825885A5DEDFBF7E11F",
+      "target_sha256": "8368857CB372FD0C14F6A340E44C1116A9507EB3FF3ED825885A5DEDFBF7E11F",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\official_dividend_collection_summary.json",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\official_dividend_collection_summary.json",
+      "source_sha256": "20B1B581FE9B5F80AE084F89E0B5982AE59E6D77BF9D8547B5A08B9B2DA54B71",
+      "target_sha256": "20B1B581FE9B5F80AE084F89E0B5982AE59E6D77BF9D8547B5A08B9B2DA54B71",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\bukyeong_20260814.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\bukyeong_20260814.html",
+      "source_sha256": "5187982AE7943FC3E1DA7B44C57DEE0A780591B8944E15EEC660613BD568015B",
+      "target_sha256": "5187982AE7943FC3E1DA7B44C57DEE0A780591B8944E15EEC660613BD568015B",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\bukyeong_20260816.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\bukyeong_20260816.html",
+      "source_sha256": "F880502422F2E96229F533473C42B66E4B7C6543070669EF3AF96D7A56E83A2A",
+      "target_sha256": "F880502422F2E96229F533473C42B66E4B7C6543070669EF3AF96D7A56E83A2A",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\bukyeong_20260821.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\bukyeong_20260821.html",
+      "source_sha256": "60B95E442E9E94E55B60478E04449E8C603224240C345F6C308C91ECB799AB4E",
+      "target_sha256": "60B95E442E9E94E55B60478E04449E8C603224240C345F6C308C91ECB799AB4E",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\seoul_20260815.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\seoul_20260815.html",
+      "source_sha256": "15B14C9B708F338B52D8630B270A5650A78441CC15BA43B1F37E3665CEB16D67",
+      "target_sha256": "15B14C9B708F338B52D8630B270A5650A78441CC15BA43B1F37E3665CEB16D67",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\seoul_20260816.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\seoul_20260816.html",
+      "source_sha256": "B2C80D3E3AFCC62410F3FF33ADAA397C90294ECBD6CC45B53B3AA81729CF0412",
+      "target_sha256": "B2C80D3E3AFCC62410F3FF33ADAA397C90294ECBD6CC45B53B3AA81729CF0412",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\seoul_20260817.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\seoul_20260817.html",
+      "source_sha256": "AE1E2E91966E67D880A27A66B9278C34E8ED390E06F2F11413FB7CFD8FA2037F",
+      "target_sha256": "AE1E2E91966E67D880A27A66B9278C34E8ED390E06F2F11413FB7CFD8FA2037F",
+      "identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\fresh_all_bets_extended_20260823\\raw_html\\seoul_20260822.html",
+      "target": "C:\\Users\\user\\source\\repos\\PythonApplication2\\PythonApplication2\\outputs\\reports\\h10a_provenance_six_feature_all_bets_posthoc_20260823\\raw_html\\seoul_20260822.html",
+      "source_sha256": "584E3F8242E4AD6BC9612941AF4265047642494B7041CF7B29A6A6D8911B282B",
+      "target_sha256": "584E3F8242E4AD6BC9612941AF4265047642494B7041CF7B29A6A6D8911B282B",
+      "identical": true
+    }
+  ],
+  "active_manifest_note": "top-level official_source_manifest paths were relocated to the copied raw_html; byte-identical original manifests are in source_copy",
+  "recommended_real_stake": 0
+}

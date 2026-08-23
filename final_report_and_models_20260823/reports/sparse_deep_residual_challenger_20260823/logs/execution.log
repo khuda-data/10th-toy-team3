@@ -1,0 +1,33 @@
+2026-08-23 03:56:11,456 | INFO | PHASE 01 START | TRAIN A/B feature-selection model
+2026-08-23 03:56:22,660 | INFO | REFIT kind=mlp seed=20260823 epochs=3 eval_dLL=+0.003248
+2026-08-23 03:56:22,891 | INFO | REFIT kind=mlp seed=20260824 epochs=3 eval_dLL=+0.006251
+2026-08-23 03:56:23,121 | INFO | REFIT kind=mlp seed=20260825 epochs=3 eval_dLL=+0.002126
+2026-08-23 03:56:29,175 | INFO | PHASE 01 PASS | selected=9/29 | ['clinic_30d', 'hr_dist_starts', 'hr_rest_days__pr', 'hr_last_finpct', 'tr_winrate', 'jk_winrate', 'hr_style', 'tr_plcrate', 'hr_plcrate']
+2026-08-23 03:56:29,175 | INFO | PHASE 02 START | TRAIN A+B -> C sparse epoch tuning
+2026-08-23 03:56:29,355 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=1 loss=1.834638 tune_dLL=+0.002383 *
+2026-08-23 03:56:29,496 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=2 loss=1.830477 tune_dLL=+0.005546 *
+2026-08-23 03:56:29,653 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=3 loss=1.825856 tune_dLL=+0.005753 *
+2026-08-23 03:56:30,148 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=6 loss=1.821203 tune_dLL=+0.005793 *
+2026-08-23 03:56:30,877 | INFO | TRAIN-INTERNAL kind=mlp seed=20260823 epoch=10 loss=1.816371 tune_dLL=+0.003099
+2026-08-23 03:56:31,875 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=1 loss=1.834884 tune_dLL=+0.002311 *
+2026-08-23 03:56:32,065 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=2 loss=1.830628 tune_dLL=+0.004710 *
+2026-08-23 03:56:33,316 | INFO | TRAIN-INTERNAL kind=mlp seed=20260824 epoch=10 loss=1.817736 tune_dLL=+0.002152
+2026-08-23 03:56:33,680 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=1 loss=1.834346 tune_dLL=+0.002109 *
+2026-08-23 03:56:33,821 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=2 loss=1.829966 tune_dLL=+0.005340 *
+2026-08-23 03:56:33,946 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=3 loss=1.826051 tune_dLL=+0.006236 *
+2026-08-23 03:56:34,069 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=4 loss=1.825323 tune_dLL=+0.007903 *
+2026-08-23 03:56:34,455 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=7 loss=1.819458 tune_dLL=+0.008498 *
+2026-08-23 03:56:34,822 | INFO | TRAIN-INTERNAL kind=mlp seed=20260825 epoch=10 loss=1.815718 tune_dLL=+0.006533
+2026-08-23 03:56:35,571 | INFO | PHASE 02 PASS | sparse schedule={20260823: 6, 20260824: 2, 20260825: 7}
+2026-08-23 03:56:35,571 | INFO | PHASE 03 START | VALID sparse refit and policy lock
+2026-08-23 03:56:38,253 | INFO | REFIT kind=mlp seed=20260823 epochs=6 eval_dLL=+0.008261
+2026-08-23 03:56:38,553 | INFO | REFIT kind=mlp seed=20260824 epochs=2 eval_dLL=+0.009285
+2026-08-23 03:56:39,510 | INFO | REFIT kind=mlp seed=20260825 epochs=7 eval_dLL=+0.012251
+2026-08-23 03:56:59,401 | INFO | PHASE 03 PASS | policies=14
+2026-08-23 03:56:59,401 | INFO | PHASE 04 START | TEST after lock and full refit
+2026-08-23 03:57:02,394 | INFO | REFIT kind=mlp seed=20260823 epochs=6 eval_dLL=+0.008624
+2026-08-23 03:57:02,826 | INFO | REFIT kind=mlp seed=20260824 epochs=2 eval_dLL=+0.007059
+2026-08-23 03:57:04,128 | INFO | REFIT kind=mlp seed=20260825 epochs=7 eval_dLL=+0.008208
+2026-08-23 03:57:23,210 | INFO | PHASE 04 PASS | cells=14
+2026-08-23 03:57:23,210 | INFO | PHASE 05 START | result guard
+2026-08-23 03:57:23,232 | INFO | PHASE 05 PASS | elapsed=71.8s

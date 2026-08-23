@@ -1,0 +1,52 @@
+FINAL RANK RUN DATA AUDIT PASS: checks=40
+{
+  "train": {
+    "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\train_metadata.csv",
+    "data_sha256": "B3228DDB785ED9B7F844BFBF76C8184DFAEEE6B35D412137E441CB205250161A",
+    "metadata_sha256": "C21456993E47269E00A5FFDB99217507061142612D862DE2A32670C5638EF445",
+    "rows": 33416,
+    "races": 3158,
+    "valid_rank_rows": 33416,
+    "invalid_rank_rows": 0,
+    "date_min": 20230805,
+    "date_max": 20250511,
+    "rank_group_status_races": {
+      "complete_1_to_n": 3125,
+      "tied_or_gapped": 33
+    }
+  },
+  "valid": {
+    "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\valid_metadata.csv",
+    "data_sha256": "91791C80E391DC3125209E0CE73A8B8759D609CC7B2F58A64A45F91DAC2E67CA",
+    "metadata_sha256": "C6AFF38680D61483D357FDD18D1EFD842EEB144DBC487A263FAF6CD502BA4122",
+    "rows": 11345,
+    "races": 1084,
+    "valid_rank_rows": 11345,
+    "invalid_rank_rows": 0,
+    "date_min": 20250517,
+    "date_max": 20251227,
+    "rank_group_status_races": {
+      "complete_1_to_n": 1076,
+      "tied_or_gapped": 8
+    }
+  },
+  "test": {
+    "data_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_revised_v11_seoul_bugyeong_rank_clean_numeric_scaled.csv",
+    "metadata_file": "data\\revised_v11_seoul_bugyeong_rank_clean_preprocessed\\test_metadata.csv",
+    "data_sha256": "807589DB62BCD4F4D905435FD93F55DDAFFF2FF85788C435BB37358DA87146FE",
+    "metadata_sha256": "13E00579446D8B75348FBD399ABDB1CA5B93A4807D9FBCBBA980CE4EC1B2EFC9",
+    "rows": 11695,
+    "races": 1101,
+    "valid_rank_rows": 11650,
+    "invalid_rank_rows": 45,
+    "date_min": 20251228,
+    "date_max": 20260809,
+    "rank_group_status_races": {
+      "complete_1_to_n": 1078,
+      "tied_or_gapped": 16,
+      "invalid_zero_or_nan": 7
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "H14_TRAINING_AND_DEPLOYMENT_FROZEN",
+  "updated_at_kst": "2026-08-23T08:09:45.493163+09:00",
+  "actual_optimizer_fit_calls": 3,
+  "training_artifact_manifest_sha256": "9DB3E5187815F43C7266236204BB7FCB088E143114AAE20C83FED65E4710CA21",
+  "freeze_complete_sha256_pending_self_reference": true,
+  "split_test_rows_read_or_parsed": 0,
+  "target_20260823_sources_read": 0,
+  "live_stake": 0
+}

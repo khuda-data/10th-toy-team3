@@ -1,21 +1,19 @@
 """
-03_true_holdout.py — 진짜 최종 홀드아웃 검증
+03_true_holdout.py — 기존 test 말단 8주 후행 재평가
 
-기존 test(2025-12-28~2026-08-09)는 이미 01_모델선정.docx와 02번 스크립트의
-Lift/ROI 계산에 그대로 쓰인 구간이라 "미사용 데이터"가 아니다. 그런데
-final.csv에는 이 이후의 새 데이터가 없고 KRA API 키도 설정되어 있지 않아
-새로 수집할 수도 없다.
+기존 test(2025-12-28~2026-08-09)는 이미 선행 분석의 Lift/ROI 계산에 쓰인
+구간이므로 엄밀한 의미의 잠금 Test가 아니다. 이 스크립트는 race_entries.csv.gz의
+기존 test 구간 중 마지막 약 8주를 떼어 시간 후행 성능을 점검한다.
 
-그래서 기존 test 구간의 마지막 ~8주를 별도로 떼어내 "진짜 홀드아웃"으로
-쓴다. 모델은 그 앞부분(train + valid + test 앞부분)만으로 다시 학습하고,
-하이퍼파라미터는 01_build_models.py와 동일하게 고정한다(홀드아웃을 보고
-다시 고르지 않음). 홀드아웃은 한 번만 평가한다.
+모델은 그 앞부분(train + valid + test 앞부분)만으로 다시 학습하고,
+하이퍼파라미터는 01_build_models.py와 동일하게 고정한다. 결과는 시간 안정성
+참고자료로만 사용하며, 완전히 한 번도 열지 않은 외부 검증으로 표현하지 않는다.
 
-실행:
-    python src/model_selection_validation/03_true_holdout.py
+실행(저장소 루트 기준):
+    python "3_수익성/1_준석_최신_신뢰성검증/코드/model_selection_validation/03_true_holdout.py"
 
 출력:
-    results/final_validation/true_holdout_summary.csv
+    results/junseok_final_validation/true_holdout_summary.csv
 """
 
 import logging
@@ -38,7 +36,7 @@ from config import (
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = Path("results/final_validation")
+OUTPUT_DIR = Path(__file__).resolve().parents[4] / "results" / "junseok_final_validation"
 EXCLUDE_COLS = set(ID_COLS + MARKET_COLS + DUAL_MARKET_COLS + OUTCOME_COLS + [TARGET_COL])
 RNG = np.random.default_rng(42)
 N_BOOTSTRAP = 2000
@@ -52,7 +50,7 @@ MODEL_SPECS = {
 
 
 def load_data():
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv(Path(__file__).resolve().parents[4] / "data" / "race_entries.csv.gz", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     df = df.sort_values("rcDate").reset_index(drop=True)
     df["fold"] = assign_time_split(df, date_col="rcDate", ratios=SPLIT_RATIOS)
@@ -96,7 +94,7 @@ def main():
 
     for name, spec in MODEL_SPECS.items():
         logger.info("=" * 60)
-        logger.info(f"[{name}] 홀드아웃 검증")
+        logger.info(f"[{name}] 기존 test 말단 8주 후행 재평가")
 
         sub = df.query(spec["subset_query"]).reset_index(drop=True)
         sub, feature_cols = prep_features(sub.copy())
@@ -134,13 +132,18 @@ def main():
         }
 
         if spec["odds_col"]:
-            odds = df.loc[holdout.index, spec["odds_col"]].values[top_idx]
+            odds = holdout[spec["odds_col"]].to_numpy()[top_idx]
             hit = y_hold[top_idx]
+            selected_race_ids = holdout.iloc[top_idx]["race_id"].astype(str).to_numpy()
             point_roi = roi_of(hit, odds)
 
             boot_rois = np.empty(N_BOOTSTRAP)
+            unique_races = np.unique(selected_race_ids)
             for i in range(N_BOOTSTRAP):
-                idx = RNG.integers(0, k, size=k)
+                sampled_races = RNG.choice(unique_races, size=len(unique_races), replace=True)
+                idx = np.concatenate([
+                    np.flatnonzero(selected_race_ids == race_id) for race_id in sampled_races
+                ])
                 boot_rois[i] = roi_of(hit[idx], odds[idx])
             ci_low, ci_high = np.percentile(boot_rois, [2.5, 97.5])
 
@@ -152,17 +155,23 @@ def main():
             })
         else:
             # 인기마 붕괴: ROI 대신 Lift@10% 자체를 부트스트랩 (원본과 동일한 방식으로 비교 가능하게)
-            def lift_boot(y_arr, p_arr, kk):
+            def lift_boot(y_arr, p_arr):
+                kk = max(1, int(len(y_arr) * TOP_PCT))
                 order_ = np.argsort(-p_arr)
                 top_rate = y_arr[order_[:kk]].mean()
                 base_rate = y_arr.mean()
                 return top_rate / base_rate if base_rate > 0 else np.nan
 
             n_hold = len(holdout)
+            holdout_race_ids = holdout["race_id"].astype(str).to_numpy()
+            unique_races = np.unique(holdout_race_ids)
             boot_lifts = np.empty(N_BOOTSTRAP)
             for i in range(N_BOOTSTRAP):
-                idx = RNG.integers(0, n_hold, size=n_hold)
-                boot_lifts[i] = lift_boot(y_hold[idx], proba[idx], k)
+                sampled_races = RNG.choice(unique_races, size=len(unique_races), replace=True)
+                idx = np.concatenate([
+                    np.flatnonzero(holdout_race_ids == race_id) for race_id in sampled_races
+                ])
+                boot_lifts[i] = lift_boot(y_hold[idx], proba[idx])
             ci_low, ci_high = np.percentile(boot_lifts, [2.5, 97.5])
             includes_one = ci_low <= 1.0 <= ci_high
 
@@ -176,7 +185,7 @@ def main():
         summary_rows.append(row)
 
     pd.DataFrame(summary_rows).to_csv(OUTPUT_DIR / "true_holdout_summary.csv", index=False, encoding="utf-8-sig")
-    logger.info("완료: results/final_validation/true_holdout_summary.csv")
+    logger.info(f"완료: {OUTPUT_DIR / 'true_holdout_summary.csv'}")
 
 
 if __name__ == "__main__":

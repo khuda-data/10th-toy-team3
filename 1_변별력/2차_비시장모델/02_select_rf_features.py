@@ -14,7 +14,9 @@ from pathlib import Path
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 
-from train_market_free_model import FEATURES, fit_transform, read_rows, write_selected
+from train_market_free_model import (
+    FEATURES, OUTPUT_ROOT, fit_transform, read_rows, resolve_version, split_path, write_selected,
+)
 
 
 def rf_model():
@@ -30,9 +32,9 @@ def main():
     parser.add_argument("--min-features", type=int, default=20)
     args = parser.parse_args()
 
-    version = Path(args.version)
-    train_rows = read_rows(version / "train.csv")
-    valid_rows = read_rows(version / "valid.csv")
+    version = resolve_version(args.version)
+    train_rows = read_rows(split_path(version, "train"))
+    valid_rows = read_rows(split_path(version, "valid"))
     header = set(train_rows[0]) & set(valid_rows[0])
     current = [feature for feature in FEATURES if feature in header]
     if args.min_features < 1 or args.min_features > len(current):
@@ -65,7 +67,7 @@ def main():
         record["removed_for_next_round"] = removed
         print(f"   remove: {removed}")
 
-    out = version / "market_free_rf_feature_selection"
+    out = OUTPUT_ROOT / args.version / "market_free_rf_feature_selection"
     out.mkdir(parents=True, exist_ok=True)
     result = {
         "version": args.version,
@@ -81,11 +83,7 @@ def main():
     best_features = best["features"]
     write_selected(train_rows, out / "train_best.csv", best_features)
     write_selected(valid_rows, out / "valid_best.csv", best_features)
-    for name in ("test.csv", "test (1).csv"):
-        test_path = version / name
-        if test_path.exists():
-            write_selected(read_rows(test_path), out / "test_best.csv", best_features)
-            break
+    write_selected(read_rows(split_path(version, "test")), out / "test_best.csv", best_features)
     print("BEST", json.dumps(best, ensure_ascii=False))
 
 

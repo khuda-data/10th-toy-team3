@@ -9,7 +9,9 @@ from pathlib import Path
 from sklearn.metrics import roc_auc_score
 from xgboost import XGBClassifier
 
-from train_market_free_model import FEATURES_50, fit_transform, read_rows, write_selected
+from train_market_free_model import (
+    FEATURES_50, OUTPUT_ROOT, fit_transform, read_rows, resolve_version, split_path, write_selected,
+)
 
 
 def xgb_model():
@@ -27,8 +29,9 @@ def main():
     parser.add_argument("--min-features", type=int, default=30)
     args = parser.parse_args()
 
-    version = Path(args.version)
-    train_rows, valid_rows = read_rows(version / "train.csv"), read_rows(version / "valid.csv")
+    version = resolve_version(args.version)
+    train_rows = read_rows(split_path(version, "train"))
+    valid_rows = read_rows(split_path(version, "valid"))
     available_headers = set(train_rows[0]) & set(valid_rows[0])
     current = [feature for feature in FEATURES_50 if feature in available_headers]
     if args.min_features < 1 or args.min_features > len(current):
@@ -53,17 +56,13 @@ def main():
         record["removed_for_next_round"] = current.pop(least)
         print(f"   remove: {record['removed_for_next_round']}")
 
-    out = version / "market_free_xgb_feature_selection"
+    out = OUTPUT_ROOT / args.version / "market_free_xgb_feature_selection"
     out.mkdir(parents=True, exist_ok=True)
     result = {"version": args.version, "model": "XGBoost recursive backward selection", "best": best, "history": history}
     (out / "selection_results.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     for split, rows in (("train_best.csv", train_rows), ("valid_best.csv", valid_rows)):
         write_selected(rows, out / split, best["features"])
-    for name in ("test.csv", "test (1).csv"):
-        path = version / name
-        if path.exists():
-            write_selected(read_rows(path), out / "test_best.csv", best["features"])
-            break
+    write_selected(read_rows(split_path(version, "test")), out / "test_best.csv", best["features"])
     print("BEST", json.dumps(best, ensure_ascii=False))
 
 

@@ -9,7 +9,8 @@ import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_RAW_PATH = PROJECT_ROOT / "data" / "raw" / "final.csv.gz"
+REPOSITORY_ROOT = PROJECT_ROOT.parent
+DEFAULT_RAW_PATH = REPOSITORY_ROOT / "data" / "race_entries.csv.gz"
 
 # Registration numbers and compound keys must remain strings so leading zeroes
 # are never discarded by pandas' type inference.
@@ -43,7 +44,8 @@ def load_raw(
     Parameters
     ----------
     path:
-        Optional alternative CSV/CSV.GZ path. Defaults to data/raw/final.csv.gz.
+        Optional alternative CSV/CSV.GZ path. Defaults to the repository's
+        data/race_entries.csv.gz.
     columns:
         Optional subset of columns to load.
     """

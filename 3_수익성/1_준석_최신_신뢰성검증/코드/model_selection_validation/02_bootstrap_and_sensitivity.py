@@ -2,20 +2,20 @@
 02_bootstrap_and_sensitivity.py — ROI 부트스트랩 신뢰구간 + 극단값 민감도 분석
 
 01_build_models.py가 만든 test 예측을 이용해:
-  - 다크호스: 상위10% 베팅의 ROI를 부트스트랩(2,000회)으로 95% CI 계산,
+  - 다크호스: 상위10% 베팅의 ROI를 경주 단위 군집 부트스트랩(2,000회)으로 95% CI 계산,
     최고 배당 적중 1건/3건을 제외했을 때 ROI가 어떻게 바뀌는지 비교
   - 인기마 붕괴: "베팅 대상"이 아니라 스크리닝 지표이므로 ROI 대신
     Lift@10%(선별력) 자체를 부트스트랩으로 검증
 
-실행:
-    python src/model_selection_validation/02_bootstrap_and_sensitivity.py
+실행(저장소 루트 기준):
+    python "3_수익성/1_준석_최신_신뢰성검증/코드/model_selection_validation/02_bootstrap_and_sensitivity.py"
 
 출력:
-    results/final_validation/darkhorse_roi_bootstrap.csv
-    results/final_validation/darkhorse_roi_bootstrap_hist.png
-    results/final_validation/darkhorse_sensitivity.csv
-    results/final_validation/bust_lift_bootstrap.csv
-    results/final_validation/bust_lift_bootstrap_hist.png
+    results/junseok_final_validation/darkhorse_roi_bootstrap.csv
+    results/junseok_final_validation/darkhorse_roi_bootstrap_hist.png
+    results/junseok_final_validation/darkhorse_sensitivity.csv
+    results/junseok_final_validation/bust_lift_bootstrap.csv
+    results/junseok_final_validation/bust_lift_bootstrap_hist.png
 """
 
 import logging
@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 plt.rcParams["font.family"] = "Malgun Gothic"
 plt.rcParams["axes.unicode_minus"] = False
 
-OUTPUT_DIR = Path("results/final_validation")
+OUTPUT_DIR = Path(__file__).resolve().parents[4] / "results" / "junseok_final_validation"
 RNG = np.random.default_rng(42)
 N_BOOTSTRAP = 2000
 TOP_PCT = 0.10
@@ -41,6 +41,14 @@ def roi_of(hit, odds):
     """플랫 베팅 ROI(%) — 적중하면 odds배, 실패하면 -100%."""
     returns = np.where(hit == 1, odds, 0.0) - 1.0
     return returns.mean() * 100
+
+
+def cluster_bootstrap_indices(cluster_ids):
+    """경주를 복원추출하고, 선택된 경주에 속한 행을 함께 반환한다."""
+    clusters = np.asarray(cluster_ids).astype(str)
+    unique_clusters = np.unique(clusters)
+    sampled_clusters = RNG.choice(unique_clusters, size=len(unique_clusters), replace=True)
+    return np.concatenate([np.flatnonzero(clusters == cluster) for cluster in sampled_clusters])
 
 
 def darkhorse_analysis():
@@ -53,13 +61,14 @@ def darkhorse_analysis():
 
     hit = top["upset_B"].values
     odds = top["odds"].values
+    race_ids = top["race_id"].values
     point_roi = roi_of(hit, odds)
     logger.info(f"  상위{TOP_PCT:.0%} 베팅 {k}건 | 적중 {int(hit.sum())}건 | 점추정 ROI {point_roi:+.1f}%")
 
     # --- 부트스트랩 CI ---
     boot_rois = np.empty(N_BOOTSTRAP)
     for i in range(N_BOOTSTRAP):
-        idx = RNG.integers(0, k, size=k)
+        idx = cluster_bootstrap_indices(race_ids)
         boot_rois[i] = roi_of(hit[idx], odds[idx])
 
     ci_low, ci_high = np.percentile(boot_rois, [2.5, 97.5])
@@ -123,12 +132,14 @@ def bust_analysis():
     df = pd.read_csv(OUTPUT_DIR / "bust_test_predictions.csv")
     y = df["upset_A"].values
     proba = df["proba"].values
+    race_ids = df["race_id"].values
     n = len(df)
     k = max(1, int(n * TOP_PCT))
 
     def lift(y_arr, p_arr):
+        k_arr = max(1, int(len(y_arr) * TOP_PCT))
         order = np.argsort(-p_arr)
-        top_rate = y_arr[order[:k]].mean()
+        top_rate = y_arr[order[:k_arr]].mean()
         base_rate = y_arr.mean()
         return top_rate / base_rate if base_rate > 0 else np.nan
 
@@ -137,7 +148,7 @@ def bust_analysis():
 
     boot_lifts = np.empty(N_BOOTSTRAP)
     for i in range(N_BOOTSTRAP):
-        idx = RNG.integers(0, n, size=n)
+        idx = cluster_bootstrap_indices(race_ids)
         boot_lifts[i] = lift(y[idx], proba[idx])
 
     ci_low, ci_high = np.percentile(boot_lifts, [2.5, 97.5])

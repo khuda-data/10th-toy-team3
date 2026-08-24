@@ -9,7 +9,9 @@ from pathlib import Path
 from sklearn.metrics import roc_auc_score
 from xgboost import XGBClassifier
 
-from train_market_free_model import FEATURES_50, fit_transform, read_rows
+from train_market_free_model import (
+    FEATURES_50, OUTPUT_ROOT, fit_transform, read_rows, resolve_version, split_path,
+)
 
 
 # Ordered from strongest expected incremental pre-race signal to weaker/contextual signal.
@@ -41,8 +43,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--version", required=True)
     args = parser.parse_args()
-    base = Path(args.version)
-    train, valid = read_rows(base / "train.csv"), read_rows(base / "valid.csv")
+    base = resolve_version(args.version)
+    train = read_rows(split_path(base, "train"))
+    valid = read_rows(split_path(base, "valid"))
     headers = set(train[0]) & set(valid[0])
     y_train = [int(float(row["win"])) for row in train]
     y_valid = [int(float(row["win"])) for row in valid]
@@ -64,7 +67,9 @@ def main():
 
     best = max(results, key=lambda r: r["valid_roc_auc"])
     output = {"version": args.version, "model": "XGBoost curated 50-to-100 feature expansion", "best": best, "results": results}
-    (base / "xgb_50_to_100_feature_search.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    output_path = OUTPUT_ROOT / args.version / "xgb_50_to_100_feature_search.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     print("BEST", json.dumps(best, ensure_ascii=False))
 
 

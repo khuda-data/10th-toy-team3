@@ -14,13 +14,13 @@ reports/5_이변모델_선정/01_모델선정.docx 에 기록된 스펙을 그�
                             class_weight=None, random_state=42)
     다크호스 max_depth=12, 인기마 붕괴 max_depth=8
 
-실행:
-    python src/model_selection_validation/01_build_models.py
+실행(저장소 루트 기준):
+    python "3_수익성/1_준석_최신_신뢰성검증/코드/model_selection_validation/01_build_models.py"
 
 출력:
-    results/final_validation/{darkhorse,bust}_model.pkl
-    results/final_validation/{darkhorse,bust}_test_predictions.csv
-    results/final_validation/lift_summary.csv
+    results/junseok_final_validation/{darkhorse,bust}_model.pkl
+    results/junseok_final_validation/{darkhorse,bust}_test_predictions.csv
+    results/junseok_final_validation/lift_summary.csv
 """
 
 import logging
@@ -44,7 +44,7 @@ from config import (
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = Path("results/final_validation")
+OUTPUT_DIR = Path(__file__).resolve().parents[4] / "results" / "junseok_final_validation"
 
 # 보고서 DROP 목록과 동일 (타겟 정의 + 시장 정보 + 결과 + 식별자)
 EXCLUDE_COLS = set(ID_COLS + MARKET_COLS + DUAL_MARKET_COLS + OUTCOME_COLS + [TARGET_COL])
@@ -66,7 +66,7 @@ MODEL_SPECS = {
 
 
 def load_data():
-    df = pd.read_csv("final.csv", low_memory=False)
+    df = pd.read_csv(Path(__file__).resolve().parents[4] / "data" / "race_entries.csv.gz", low_memory=False)
     df = df[df["meet"] == "서울"].reset_index(drop=True)
     df = df.sort_values("rcDate").reset_index(drop=True)
     df["fold"] = assign_time_split(df, date_col="rcDate", ratios=SPLIT_RATIOS)
@@ -143,10 +143,10 @@ def main():
             pickle.dump({"model": model, "feature_cols": feature_cols}, f)
 
         # 저장: test 예측 (다음 스크립트에서 부트스트랩/민감도 분석에 사용)
-        out = test[["rcDate", spec["target"]]].copy()
+        out = test[["race_id", "rcDate", spec["target"]]].copy()
         out["proba"] = proba
         if spec["odds_col"]:
-            out["odds"] = df.loc[test.index, spec["odds_col"]].values
+            out["odds"] = test[spec["odds_col"]].to_numpy()
         out.to_csv(OUTPUT_DIR / f"{name}_test_predictions.csv", index=False, encoding="utf-8-sig")
 
         summary_rows.append({
@@ -156,7 +156,7 @@ def main():
         })
 
     pd.DataFrame(summary_rows).to_csv(OUTPUT_DIR / "lift_summary.csv", index=False, encoding="utf-8-sig")
-    logger.info("완료: results/final_validation/lift_summary.csv")
+    logger.info(f"완료: {OUTPUT_DIR / 'lift_summary.csv'}")
 
 
 if __name__ == "__main__":

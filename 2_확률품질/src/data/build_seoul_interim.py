@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, BinaryIO
@@ -158,7 +159,7 @@ def write_outputs(
         "manifest_version": 1,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "source": {
-            "path": str(DEFAULT_RAW_PATH.relative_to(PROJECT_ROOT)).replace("\\", "/"),
+            "path": str(Path(os.path.relpath(DEFAULT_RAW_PATH, PROJECT_ROOT))).replace("\\", "/"),
             "sha256": sha256_file(DEFAULT_RAW_PATH),
         },
         "output": {
